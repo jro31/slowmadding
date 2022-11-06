@@ -12,7 +12,9 @@ import {
 } from '@/components/SocialIcons'
 import portraitImage from '@/images/portrait.jpg'
 
-function SocialLink({ className, href, children, icon: Icon }) {
+const Heading = "I'm Jethro. I'm a slowmad."
+
+const SocialLink = ({ className, href, children, icon: Icon }) => {
   return (
     <li className={clsx(className, 'flex')}>
       <Link
@@ -26,7 +28,7 @@ function SocialLink({ className, href, children, icon: Icon }) {
   )
 }
 
-function MailIcon(props) {
+const MailIcon = (props) => {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -37,15 +39,12 @@ function MailIcon(props) {
   )
 }
 
-export default function About() {
+const About = () => {
   return (
     <>
       <Head>
         <title>About - Spencer Sharp</title>
-        <meta
-          name="description"
-          content="I’m Spencer Sharp. I live in New York City, where I design the future."
-        />
+        <meta name="description" content={Heading} />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -61,35 +60,61 @@ export default function About() {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I’m Spencer Sharp. I live in New York City, where I design the
-              future.
+              {Heading}
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
-                I’ve loved making things for as long as I can remember, and
-                wrote my first program when I was 6 years old, just two weeks
-                after my mom brought home the brand new Macintosh LC 550 that I
-                taught myself to type on.
+                That's just a fancy way of saying I'm not grown up enough to
+                settle down and start being an adult yet, but that I'm too lazy
+                to travel properly, so spend several weeks or even months
+                staying everywhere I go.
               </p>
               <p>
-                The only thing I loved more than computers as a kid was space.
-                When I was 8, I climbed the 40-foot oak tree at the back of our
-                yard while wearing my older sister’s motorcycle helmet, counted
-                down from three, and jumped — hoping the tree was tall enough
-                that with just a bit of momentum I’d be able to get to orbit.
+                I work as a freelance software engineer, so I can earn a living
+                from anywhere with an Internet connection.
               </p>
               <p>
-                I spent the next few summers indoors working on a rocket design,
-                while I recovered from the multiple surgeries it took to fix my
-                badly broken legs. It took nine iterations, but when I was 15 I
-                sent my dad’s Blackberry into orbit and was able to transmit a
-                photo back down to our family computer from space.
+                I'm a big believer in not working too much, and have found that
+                I can work two days per week, and still save money, so I don't
+                really do any more.
               </p>
               <p>
-                Today, I’m the founder of Planetaria, where we’re working on
-                civilian space suits and manned shuttle kits you can assemble at
-                home so that the next generation of kids really <em>can</em>{' '}
-                make it to orbit — from the comfort of their own backyards.
+                I'm also vegan, I run, I don't have many friends, I'm scared of
+                commitment, I'm British with German citizenship (thanks Brexit),
+                I do yoga sometimes, and I hate people that smell bad. And that
+                walk slowly. Or that walk the same speed as me, but one metre
+                behind.
+              </p>
+              <p>
+                If you're not the same as at least one of these, then you're
+                probably not going to find much useful on this app. Even if you
+                are the same, you might not going to find much useful on this
+                app.
+              </p>
+              <p>
+                I built this app to write occasional articles about useful
+                things I discovered on my travels, so that I can pass on my
+                wisdom and tell myself that I'm giving back.
+              </p>
+              <p>
+                This isn't a backpacking blog. I've spent more than my share of
+                time living out of a backpack, staying in hostel dorms,
+                Couchsurfing before the perverts ruined it, camping at the side
+                of the road, and even sleeping under the stars occasionally.
+                Which is just a fancy way of saying I slept rough because I was
+                too cheap to pay for a hostel.
+              </p>
+              <p>
+                I cherish those days, but they are long behind me. As a digital
+                nomad, I don't need to save every penny that I can anymore,
+                because I'm making money as I travel. If you're looking for
+                advice on the cheapest way to do things, this probably isn't the
+                app for you.
+              </p>
+              <p>
+                You can also follow me on the socials. I probably won't post
+                anything, and I'll probably ignore you if you message me, but
+                you never know. Give it a shot.
               </p>
             </div>
           </div>
@@ -121,3 +146,5 @@ export default function About() {
     </>
   )
 }
+
+export default About
