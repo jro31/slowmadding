@@ -2,7 +2,7 @@ import Link from 'next/link'
 
 import { Container } from '@/components/Container'
 
-function NavLink({ href, children }) {
+const NavLink = ({ href, children }) => {
   return (
     <Link
       href={href}
@@ -13,7 +13,7 @@ function NavLink({ href, children }) {
   )
 }
 
-export function Footer() {
+export const Footer = () => {
   return (
     <footer className="mt-32">
       <Container.Outer>
@@ -27,7 +27,7 @@ export function Footer() {
                 <NavLink href="/uses">Uses</NavLink>
               </div>
               <p className="text-sm text-zinc-400 dark:text-zinc-500">
-                &copy; {new Date().getFullYear()} Spencer Sharp. All rights
+                &copy; {new Date().getFullYear()} Jethro Williams. All rights
                 reserved.
               </p>
             </div>
