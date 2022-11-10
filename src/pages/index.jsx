@@ -120,10 +120,25 @@ const Home = ({ articles }) => {
 
 export default Home
 
-export async function getStaticProps() {
+export const getStaticProps = async () => {
   if (process.env.NODE_ENV === 'production') {
     await generateRssFeed()
   }
+
+  const fetchFacebookFeed = async () => {
+    const response = await fetch(
+      `https://graph.facebook.com/v14.0/me?fields=feed%7Btype%2Cname%2Cfull_picture%2Cmessage%2Cplace%2Cattachments%2Clink%2Ccreated_time%2Cdescription%7D&limit=10&access_token=${process.env.GRAPH_API_ACCESS_TOKEN}`
+    )
+    const data = await response.json()
+
+    console.log('🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥')
+    console.log(data)
+    console.log('🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥')
+
+    return data
+  }
+
+  const FacebookData = fetchFacebookFeed()
 
   return {
     props: {
