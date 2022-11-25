@@ -5,6 +5,10 @@ const parseFacebookFeed = async () => {
   return parsedFacebookData
 }
 
+// When this token expires, go to https://developers.facebook.com/tools/explorer/
+// Ensure the correct app is chosen, then click the information 'i' next to the access token
+// and click 'Open in Access Token Tool'. Click 'Extend Access Token' and copy the new token
+// to the 'GRAPH_API_ACCESS_TOKEN' env variable.
 const fetchFacebookFeed = async () => {
   // const response = await fetch(
   //   `https://graph.facebook.com/v14.0/me?fields=feed.limit(10)%7Btype%2Cname%2Cfull_picture%2Cmessage%2Cplace%2Cattachments%2Clink%2Ccreated_time%2Cdescription%2Cpermalink_url%7D&access_token=${process.env.GRAPH_API_ACCESS_TOKEN}`
@@ -30,12 +34,25 @@ const facebookPostObject = (post) => {
         platform: 'facebook',
       }
     case 'link':
-      // TODO
-      return {}
+      return {
+        date: post.created_time,
+        title: postTitle('a link', post.place),
+        text: post.name || null,
+        media: post.attachments ? postMedia(post.attachments.data) : null,
+        url: post.permalink_url,
+        platform: 'facebook',
+      }
     case 'photo':
-      // TODO
-      return {}
+      return {
+        date: post.created_time,
+        title: postTitle('a photo', post.place), // TODO: Check that post.place is present for photos with location (didn't have any in the dummy data I was using)
+        text: post.message || null,
+        media: post.attachments ? postMedia(post.attachments.data) : null,
+        url: post.permalink_url,
+        platform: 'facebook',
+      }
     case 'video':
+      // TODO
       return {}
     default:
       return {}
@@ -50,13 +67,20 @@ const postTitleLocation = (place) => {
 
   // TODO: This should link to Google maps with the lat/long in the location
   // Less easy than it should be because of the design of the card
-  return ` from${place.name ? ` ${place.name} in` : ''} ${
-    place.location.city
-  }, ${place.location.country}`
+  return ` from${
+    place.name &&
+    place.name !== `${place.location.city}, ${place.location.country}`
+      ? ` ${place.name} in`
+      : ''
+  } ${place.location.city}, ${place.location.country}`
 }
 
 const postMedia = (attachmentsData) => {
-  const mediaObject = attachmentsData.find((obj) => 'media' in obj)
+  const dataObject = attachmentsData.find((obj) => 'media' in obj)
+  if (!dataObject) return null
+
+  const mediaObject = dataObject.media
+  if (!mediaObject) return null
 
   if ('image' in mediaObject) {
     return {
