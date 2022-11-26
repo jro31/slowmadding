@@ -12,21 +12,18 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
-import { getAllArticles } from '@/lib/getAllArticles'
-import { formatDate } from '@/lib/formatDate'
+import formatDateTime from '@/lib/formatDateTime'
 
 import collateActivity from '@/services/collate-activity'
 
-const Article = ({ article }) => {
+const Activity = ({ activity }) => {
   return (
-    <Card as="article">
-      <Card.Title href={`/articles/${article.slug}`}>
-        {article.title}
-      </Card.Title>
-      <Card.Eyebrow as="time" dateTime={article.date} decorate>
-        {formatDate(article.date)}
+    <Card as="activity">
+      <Card.Title href={activity.url}>{activity.title}</Card.Title>
+      <Card.Eyebrow as="time" dateTime={activity.dateTime} decorate>
+        {formatDateTime(activity.dateTime)}
       </Card.Eyebrow>
-      <Card.Description>{article.description}</Card.Description>
+      <Card.Description>{activity.text}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )
@@ -67,7 +64,7 @@ const Photos = () => {
   )
 }
 
-const Home = ({ articles }) => {
+const Home = ({ activities }) => {
   return (
     <>
       <Head>
@@ -110,8 +107,8 @@ const Home = ({ articles }) => {
       <Container className="mt-24 md:mt-28">
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
           <div className="flex flex-col gap-16">
-            {articles.map((article) => (
-              <Article key={article.slug} article={article} />
+            {activities.map((activity) => (
+              <Activity key={activity.date} activity={activity} />
             ))}
           </div>
         </div>
@@ -129,15 +126,9 @@ export const getStaticProps = async () => {
 
   const collatedActivity = await collateActivity()
 
-  console.log('🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉🙉')
-  console.log(collatedActivity)
-  console.log('👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻👻')
-
   return {
     props: {
-      articles: (await getAllArticles())
-        .slice(0, 4)
-        .map(({ component, ...meta }) => meta),
+      activities: collatedActivity,
     },
   }
 }

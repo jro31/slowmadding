@@ -1,3 +1,5 @@
+// TODO: Add a dynamic sitemap
+
 import { useEffect, useRef } from 'react'
 
 import { Footer } from '@/components/Footer'
