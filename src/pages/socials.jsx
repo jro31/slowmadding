@@ -3,51 +3,44 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoHappyCow from '@/images/logos/happy-cow.svg'
+import logoStrava from '@/images/logos/strava.svg'
+import logoInstagram from '@/images/logos/instagram.svg'
 
-const projects = [
+const platforms = [
   {
-    name: 'Planetaria',
+    name: 'Happy Cow',
     description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+      'Happy Cow is a directory of places around the world to get vegan/vegetarian food. Such a resource is invaluable to me while travelling, so I do what I can to give back by adding photos and reviews of the restaurants that I go to.',
+    link: {
+      href: 'https://www.happycow.net/members/profile/Jrosworld',
+      label: 'happycow.net',
+    },
+    logo: logoHappyCow,
   },
   {
-    name: 'Animaginary',
+    name: 'Strava',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Every time I go somewhere new, I try to find somewhere nice to run, so my most recent activity will give a good idea of where I am in the world.',
+    link: {
+      href: 'https://www.strava.com/athletes/10393790',
+      label: 'strava.com',
+    },
+    logo: logoStrava,
   },
   {
-    name: 'HelioStream',
+    name: 'Instagram',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      "I don't post there often. But that means that the times I do, it's really worth seeing. I might add a picture of my lunch every few months.",
+    link: {
+      href: 'https://www.instagram.com/jethro_31/',
+      label: 'instagram.com',
+    },
+    logo: logoInstagram,
   },
 ]
 
-function LinkIcon(props) {
+const LinkIcon = (props) => {
   return (
     <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
       <path
@@ -58,41 +51,38 @@ function LinkIcon(props) {
   )
 }
 
-export default function Projects() {
+const Socials = () => {
   return (
     <>
       <Head>
-        <title>Projects - Spencer Sharp</title>
-        <meta
-          name="description"
-          content="Things I’ve made trying to put my dent in the universe."
-        />
+        <title>Socials</title>
+        <meta name="description" content="Where to find me" />
       </Head>
       <SimpleLayout
-        title="Things I’ve made trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        title="Where to find me"
+        intro="I'm not a big user of social media. At the time of writing, my last tweet was 6 months ago, my last Instagram post was 11 months ago, and my last Facebook post was 6 years ago. However, you might be able to get an idea of where I am and what I'm doing from the following places."
       >
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {projects.map((project) => (
-            <Card as="li" key={project.name}>
+          {platforms.map((platform) => (
+            <Card as="li" key={platform.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
-                  src={project.logo}
+                  src={platform.logo}
                   alt=""
                   className="h-8 w-8"
                   unoptimized
                 />
               </div>
               <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                <Card.Link href={project.link.href}>{project.name}</Card.Link>
+                <Card.Link href={platform.link.href}>{platform.name}</Card.Link>
               </h2>
-              <Card.Description>{project.description}</Card.Description>
+              <Card.Description>{platform.description}</Card.Description>
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
-                <span className="ml-2">{project.link.label}</span>
+                <span className="ml-2">{platform.link.label}</span>
               </p>
             </Card>
           ))}
@@ -101,3 +91,5 @@ export default function Projects() {
     </>
   )
 }
+
+export default Socials
