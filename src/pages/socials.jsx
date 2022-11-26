@@ -3,11 +3,9 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
 import logoHappyCow from '@/images/logos/happy-cow.svg'
+import logoStrava from '@/images/logos/strava.svg'
+import logoInstagram from '@/images/logos/instagram.svg'
 
 const platforms = [
   {
@@ -21,32 +19,24 @@ const platforms = [
     logo: logoHappyCow,
   },
   {
-    name: 'Animaginary',
+    name: 'Strava',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'Every time I go somewhere new, I try to find somewhere nice to run, so my most recent activity will give a good idea of where I am in the world.',
+    link: {
+      href: 'https://www.strava.com/athletes/10393790',
+      label: 'strava.com',
+    },
+    logo: logoStrava,
   },
   {
-    name: 'HelioStream',
+    name: 'Instagram',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
-  },
-  {
-    name: 'cosmOS',
-    description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
-  },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
+      "I don't post there often. But that means that the times I do, it's really worth seeing. I might add a picture of my lunch every few months.",
+    link: {
+      href: 'https://www.instagram.com/jethro_31/',
+      label: 'instagram.com',
+    },
+    logo: logoInstagram,
   },
 ]
 
@@ -70,7 +60,7 @@ const Socials = () => {
       </Head>
       <SimpleLayout
         title="Where to find me"
-        intro="I'm not a big user of social media. At the time of writing, my last tweet was 6 months ago, my last Instagram post was 11 months ago, and my last Facebook post was 6 years ago. However, you might be able to find me in the following places."
+        intro="I'm not a big user of social media. At the time of writing, my last tweet was 6 months ago, my last Instagram post was 11 months ago, and my last Facebook post was 6 years ago. However, you might be able to get an idea of where I am and what I'm doing from the following places."
       >
         <ul
           role="list"
