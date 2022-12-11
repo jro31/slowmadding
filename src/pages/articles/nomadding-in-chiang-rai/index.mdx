@@ -1,10 +1,31 @@
 import { ArticleLayout } from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
 
 export const meta = {
   author: 'Jethro Williams',
   date: '2022-12-11',
   title: 'Nomadding in Chiang Rai',
   description: 'TODO',
+}
+
+export const saikeawResortDetails = {
+  name: 'Saikaew Resort',
+  dates: {
+    checkIn: 'TODO',
+    checkOut: 'TODO',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/saikaew-resort.html',
+  },
+  price: {
+    currency: 'THB',
+    sections: {
+      room: 10382.36,
+      '7% VAT': 726.77,
+      '10% Property service charge': 1110.91,
+    },
+  },
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -39,7 +60,7 @@ And I could continue down the list through accommodation and transport to beer a
 
 ## Where I stayed
 
-TODO
+<AccommodationTable details={saikeawResortDetails} />
 
 ## Where to get vegan food in Chiang Rai
 
