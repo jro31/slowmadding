@@ -1,3 +1,5 @@
+import formatDateTime from '@/lib/formatDateTime'
+
 const parseFacebookFeed = async () => {
   const facebookData = await fetchFacebookFeed()
   const parsedFacebookData = await parseFacebookData(facebookData)
@@ -28,7 +30,7 @@ const facebookPostObject = (post) => {
   switch (post.type) {
     case 'status':
       return {
-        dateTime: post.created_time,
+        dateTime: formatDateTime(post.created_time),
         title: postTitle('a status update', post.place),
         text: post.message || null,
         media: post.attachments ? postMedia(post.attachments.data) : null,
@@ -37,7 +39,7 @@ const facebookPostObject = (post) => {
       }
     case 'link':
       return {
-        dateTime: post.created_time,
+        dateTime: formatDateTime(post.created_time),
         title: postTitle('a link', post.place),
         text: post.name || null,
         media: post.attachments ? postMedia(post.attachments.data) : null,
@@ -46,7 +48,7 @@ const facebookPostObject = (post) => {
       }
     case 'photo':
       return {
-        dateTime: post.created_time,
+        dateTime: formatDateTime(post.created_time),
         title: postTitle('a photo', post.place), // TODO: Check that post.place is present for photos with location (didn't have any in the dummy data I was using)
         text: post.message || null,
         media: post.attachments ? postMedia(post.attachments.data) : null,

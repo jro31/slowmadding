@@ -12,7 +12,6 @@ import image3 from '@/images/photos/image-3.jpg'
 import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
-import formatDateTime from '@/lib/formatDateTime'
 
 import collateActivity from '@/services/collate-activity'
 
@@ -21,7 +20,7 @@ const Activity = ({ activity }) => {
     <Card as="activity">
       <Card.Title href={activity.url}>{activity.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={activity.dateTime} decorate>
-        {formatDateTime(activity.dateTime)}
+        {activity.dateTime}
       </Card.Eyebrow>
       <Card.Description>{activity.text}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
