@@ -1,12 +1,10 @@
+import ExternalLink from '../ExternalLink'
+
 const TableItem = ({ heading, content, url }) => {
-  const ExternalLink = (props) => {
+  const LinkWrapper = (props) => {
     return (
       <>
-        {url && (
-          <a href={url} target="_blank" rel="noreferrer">
-            {props.children}
-          </a>
-        )}
+        {url && <ExternalLink url={url}>{props.children}</ExternalLink>}
         {!url && props.children}
       </>
     )
@@ -14,11 +12,11 @@ const TableItem = ({ heading, content, url }) => {
 
   return (
     <div className="mb-2 flex flex-col sm:flex-row sm:gap-3">
-      <div className="font-bold">{heading}:</div>
-      <div>
-        <ExternalLink>
+      <div className="shrink grow basis-1/5 font-bold">{heading}:</div>
+      <div className="shrink grow basis-3/5">
+        <LinkWrapper>
           <div dangerouslySetInnerHTML={{ __html: content }} />
-        </ExternalLink>
+        </LinkWrapper>
       </div>
     </div>
   )
