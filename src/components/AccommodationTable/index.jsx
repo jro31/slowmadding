@@ -13,7 +13,8 @@ const AccommodationTable = ({ details }) => {
       {/* TODO: Room type */}
       <PriceBreakdown
         dates={details.dates}
-        currency={details.price.currency}
+        currencyPrefix={details.price.currencyPrefix}
+        currencySuffix={details.price.currencySuffix}
         sectionsObject={details.price.sections}
       />
     </div>

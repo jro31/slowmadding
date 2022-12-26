@@ -17,7 +17,7 @@ const TableItem = ({ heading, content, url }) => {
     if (typeof content === 'object') {
       return Object.entries(content).map((entry) => (
         <div key={entry[0]} className="flex">
-          <p>{entry[0]}:</p>
+          <p>{entry[0]}:&#160;</p>
           <p>{entry[1]}</p>
         </div>
       ))
