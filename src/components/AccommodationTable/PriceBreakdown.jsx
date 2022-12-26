@@ -26,22 +26,38 @@ const PriceBreakdown = ({
   const nightlyPriceString = () =>
     `(${currencyAmount(nightlyPrice())} per night)`
 
-  const parsedSectionsObject = () => {
-    let returnObj = {}
-
-    Object.keys(sectionsObject).map(
-      (key) => (returnObj[key] = currencyAmount(sectionsObject[key]))
-    )
-    returnObj['Total'] = `${currencyAmount(totalPrice)} ${nightlyPriceString()}`
-
-    return returnObj
+  const tableRowString = (item, value, bold = false) => {
+    return `
+      <tr class='[&>td]:first:pt-0 border-b-0 [&:nth-last-child(2)]:border-b-2 [&>td]:py-0.5 [&>td]:[&:nth-last-child(2)]:pb-2 [&>td]:last:py-2 ${
+        bold ? 'font-black' : ''
+      }'>
+        <td>${item}</td>
+        <td>${value}</td>
+      </tr>
+    `
   }
 
-  return (
-    <>
-      <TableItem heading="What I paid:" content={parsedSectionsObject()} />
-    </>
-  )
+  const tableHtml = () => {
+    return `
+      <table>
+        ${Object.keys(sectionsObject)
+          .map((key) =>
+            tableRowString(key, currencyAmount(sectionsObject[key]))
+          )
+          .join('')}
+        ${tableRowString(
+          'Total',
+          `
+            <div>${currencyAmount(totalPrice)}</div>
+            <div class='font-normal'>${nightlyPriceString()}</div>
+          `,
+          true
+        )}
+      </table>
+    `
+  }
+
+  return <TableItem heading="What I paid:" content={tableHtml()} />
 }
 
 export default PriceBreakdown
