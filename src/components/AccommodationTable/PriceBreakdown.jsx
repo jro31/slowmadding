@@ -57,7 +57,7 @@ const PriceBreakdown = ({
     `
   }
 
-  return <TableItem heading="What I paid:" content={tableHtml()} />
+  return <TableItem heading="What I paid" content={tableHtml()} />
 }
 
 export default PriceBreakdown

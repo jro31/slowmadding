@@ -1,4 +1,4 @@
-import formatDateTime from '@/lib/formatDateTime'
+import { formatDateTime } from '@/lib/formatDate'
 
 const parseFacebookFeed = async () => {
   const facebookData = await fetchFacebookFeed()

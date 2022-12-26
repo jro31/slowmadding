@@ -13,8 +13,8 @@ const TableItem = ({ heading, content, url }) => {
   }
 
   return (
-    <div className="flex gap-3">
-      <div className="font-bold">{heading}</div>
+    <div className="mb-2 flex flex-col sm:flex-row sm:gap-3">
+      <div className="font-bold">{heading}:</div>
       <div>
         <ExternalLink>
           <div dangerouslySetInnerHTML={{ __html: content }} />
