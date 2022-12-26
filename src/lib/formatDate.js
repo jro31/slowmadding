@@ -17,7 +17,6 @@ export const formatDate = (dateString, includeOrdinal = false) => {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    timeZone: 'UTC',
   })
 
   if (includeOrdinal) addOrdinal()
@@ -39,4 +38,26 @@ export const formatDateTime = (dateString, includeOrdinal = false) => {
   if (includeOrdinal) addOrdinal()
 
   return formattedDate
+}
+
+export const formatDateRange = (
+  startDateString,
+  endDateString,
+  includeOrdinals = true
+) => {
+  let formattedStartDate = formatDate(startDateString, includeOrdinals)
+  const formattedEndDate = formatDate(endDateString, includeOrdinals)
+
+  if (
+    formattedStartDate.split(' ').slice(-1)[0] ===
+    formattedEndDate.split(' ').slice(-1)[0]
+  ) {
+    formattedStartDate = formattedStartDate.split(' ').slice(0, -1).join(' ')
+
+    if (formattedStartDate.split(' ')[1] === formattedEndDate.split(' ')[1]) {
+      formattedStartDate = formattedStartDate.split(' ').slice(0, -1).join(' ')
+    }
+  }
+
+  return `${formattedStartDate} to ${formattedEndDate}`
 }
