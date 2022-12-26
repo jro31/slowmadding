@@ -1,5 +1,6 @@
 import BookingPlatform from './BookingPlatform'
 import Dates from './Dates'
+import Description from './Description'
 import PriceBreakdown from './PriceBreakdown'
 import RoomType from './RoomType'
 
@@ -21,7 +22,7 @@ const AccommodationTable = ({ details }) => {
           currencySuffix={details.price.currencySuffix}
           sectionsObject={details.price.sections}
         />
-        {/* TODO: Add description/review */}
+        <Description paragraphsArray={details.description} />
       </div>
     </div>
   )
