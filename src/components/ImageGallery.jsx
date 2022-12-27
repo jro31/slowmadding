@@ -19,22 +19,32 @@ const ImageGallery = ({ images }) => {
   console.log(imageIndex)
 
   return (
-    <div>
-      <ChevronLeftIcon
-        className="h-24 w-24"
-        onClick={() => updateImageIndex('left')}
-      />
-      <ChevronRightIcon
-        className="h-24 w-24"
-        onClick={() => updateImageIndex('right')}
-      />
-      <Image
-        src={images[imageIndex].src}
-        alt={images[imageIndex].alt}
-        unoptimized
-      />
+    <>
+      <div className="relative">
+        <div className="absolute flex h-full w-full justify-between">
+          <div
+            onClick={() => updateImageIndex('left')}
+            className="flex basis-1/2 items-center"
+          >
+            <ChevronLeftIcon className="h-24 w-24" />
+          </div>
+          <div
+            onClick={() => updateImageIndex('right')}
+            className="flex basis-1/2 items-center justify-end"
+          >
+            <ChevronRightIcon className="h-24 w-24" />
+          </div>
+        </div>
+        <div>
+          <Image
+            src={images[imageIndex].src}
+            alt={images[imageIndex].alt}
+            unoptimized
+          />
+        </div>
+      </div>
       <p className="text-center">{images[imageIndex].caption}</p>
-    </div>
+    </>
   )
 }
 
