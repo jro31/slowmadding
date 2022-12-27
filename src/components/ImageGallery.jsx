@@ -1,11 +1,16 @@
+// FIXME: There's a momentary flash of an incorrectly sized image when switching between images of different sizes
+// No idea what's causing it, but try adding transitions when scrolling between images. They'd be nice to have anyway, and could fix it.
+
 import { useState } from 'react'
 import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 import useScreenWidth from '@/hooks/use-screen-width'
+import { useEffect } from 'react'
 
 const ImageGallery = ({ images }) => {
   const [imageIndex, setImageIndex] = useState(0)
+  const [galleryHeight, setGalleryHeight] = useState()
   const screenWidth = useScreenWidth()
 
   const firstImageIsShown = () => imageIndex <= 0
@@ -20,21 +25,33 @@ const ImageGallery = ({ images }) => {
     )
   }
 
-  const galleryHeight = () => {
-    if (screenWidth < 640) {
-      return 257 // h-[257px]
-    } else if (screenWidth < 768) {
-      return 384 // h-[384px]
-    } else if (screenWidth < 1024) {
-      return 480 // h-[480px]
-    } else {
-      return 504 // h-[504px]
+  useEffect(() => {
+    const calculateGalleryHeight = () => {
+      if (screenWidth < 640) {
+        if (galleryHeight === 257) return
+
+        setGalleryHeight(257) // h-[257px]
+      } else if (screenWidth < 768) {
+        if (galleryHeight === 384) return
+
+        setGalleryHeight(384) // h-[384px]
+      } else if (screenWidth < 1024) {
+        if (galleryHeight === 480) return
+
+        setGalleryHeight(480) // h-[480px]
+      } else {
+        if (galleryHeight === 504) return
+
+        setGalleryHeight(504) // h-[504px]
+      }
     }
-  }
+
+    calculateGalleryHeight()
+  }, [imageIndex, screenWidth, galleryHeight])
 
   return (
     <>
-      <div className={`relative h-[${galleryHeight()}px]`}>
+      <div className={`relative h-[${galleryHeight}px]`}>
         <div className="absolute flex h-full w-full justify-between">
           {!firstImageIsShown() && (
             <div
@@ -57,7 +74,7 @@ const ImageGallery = ({ images }) => {
           <Image
             src={images[imageIndex].src}
             alt={images[imageIndex].alt}
-            height={galleryHeight()}
+            height={galleryHeight}
             unoptimized
           />
         </div>
