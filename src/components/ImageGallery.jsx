@@ -21,7 +21,6 @@ const ImageGallery = ({ images }) => {
 
   const galleryHeight = () => {
     if (screenWidth < 640) {
-      // TODO: Do these comments work for Tailwind?
       return 257 // h-[257px]
     } else if (screenWidth < 768) {
       return 384 // h-[384px]
