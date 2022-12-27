@@ -1,3 +1,4 @@
+import ImageGallery from '../ImageGallery'
 import BookingPlatform from './BookingPlatform'
 import Dates from './Dates'
 import Description from './Description'
@@ -23,6 +24,7 @@ const AccommodationTable = ({ details }) => {
           sectionsObject={details.price.sections}
         />
         <Description paragraphsArray={details.description} />
+        <ImageGallery images={details.images} />
       </div>
     </div>
   )
