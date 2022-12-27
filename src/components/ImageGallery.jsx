@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
+
 import useScreenWidth from '@/hooks/use-screen-width'
 
 const ImageGallery = ({ images }) => {

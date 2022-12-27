@@ -2,13 +2,19 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 
-import bedImage from './bed.jpeg'
-import deskImage from './desk.jpeg'
-import lakeImage from './lake.jpeg'
-import roomImage from './room.jpeg'
-import selfieImage from './selfie.jpeg'
-import toiletImage from './toilet.jpeg'
-import viewImage from './view.jpeg'
+import ImageGallery from '@/components/ImageGallery'
+
+import saikaewBedImage from './saikaew-resort/bed.jpeg'
+import saikaewDeskImage from './saikaew-resort/desk.jpeg'
+import saikaewLakeImage from './saikaew-resort/lake.jpeg'
+import saikaewRoomImage from './saikaew-resort/room.jpeg'
+import saikaewSelfieImage from './saikaew-resort/selfie.jpeg'
+import saikaewToiletImage from './saikaew-resort/toilet.jpeg'
+import saikaewViewImage from './saikaew-resort/view.jpeg'
+
+import kundaBurgerImage from './kunda/jalapeno-burger.jpeg'
+import kundaBunlessComboImage from './kunda/bunless-combo.jpeg'
+import kundaViewImage from './kunda/view.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -55,42 +61,60 @@ export const saikeawResortDetails = {
   ],
   images: [
     {
-      src: roomImage,
+      src: saikaewRoomImage,
       alt: 'Saikaew Resort double room',
       caption: "With nothing but fish able to see in the room, I didn't bother closing the curtains at nighttime, meaning I woke up to this view everyday."
     },
     {
-      src: viewImage,
+      src: saikaewViewImage,
       alt: 'Saikaew Resort double room balcony',
       caption: 'The balcony, right outside the room window, is the perfect place to sit with a cup of tea, to read a book, or to meditate while listening to the wildlife in the lake.'
     },
     {
-      src: lakeImage,
+      src: saikaewLakeImage,
       alt: 'Saikaew Resort lake',
       caption: 'The lake is teeming with fish, birds and other wildlife.'
     },
     {
-      src: selfieImage,
+      src: saikaewSelfieImage,
       alt: 'Selfie at Saikaew Resort',
       caption: 'A fine example of why I rarely take selfies.'
     },
     {
-      src: bedImage,
+      src: saikaewBedImage,
       alt: 'Saikaew Resort double bed',
       caption: "Where you'll be sleeping."
     },
     {
-      src: deskImage,
+      src: saikaewDeskImage,
       alt: 'Saikaew Resort double room desk',
       caption: 'A comfortable place to sit and work.'
     },
     {
-      src: toiletImage,
+      src: saikaewToiletImage,
       alt: 'Saikaew Resort double room toilet',
       caption: 'You even get a nice, natural toilet.'
     },
   ]
 }
+
+export const kundaImages = [
+  {
+    src: kundaBurgerImage,
+    alt: 'Kunda jalapeño burger',
+    caption: 'The jalapeño burger costs 280 baht.',
+  },
+  {
+    src: kundaBunlessComboImage,
+    alt: 'Kunda bunless combo',
+    caption: 'The bunless combo is a naked burger, a (very delicious) side salad and a drink of your choice (I had a chai tea) for 350 baht.',
+  },
+  {
+    src: kundaViewImage,
+    alt: 'Kunda view',
+    caption: "Not only is the food delicious, you have an amazing view while you're eating.",
+  },
+]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
@@ -128,13 +152,27 @@ And I could continue down the list through accommodation and transport to beer a
 
 ## Where to get vegan food in Chiang Rai
 
-Veganism isn't as common in Thailand as you might expect for a Buddhist country. So in less touristy cities, such as Chiang Rai, vegan offerings can be few and far between. That's especially true if you lack the Thai to order vegan food at the local restaurants.
+Veganism isn't as common in Thailand as you might expect for a Buddhist country, so in less touristy cities such as Chiang Rai, vegan offerings can be few and far between. That's especially true if you lack the Thai to order vegan food at the local restaurants.
 
 So if you've been spoiled by the gluttony of vegan restaurants in tourist hubs like Bangkok and Chiang Mai, it might initially be a bit of a shock how little is obviously on offer in Chiang Rai. However once you settle down and explore a bit, you realise that Chiang Rai does have quite a few good offerings.
 
 <ExternalLink url="https://www.happycow.net/searchmap?s=3&location=Chiang+Rai%2C+Thailand&metric=mi&limit=81&order=rating&lat=19.9072&lng=99.831&zoom=11&page=1">Happy Cow</ExternalLink> is my go-to resource for finding vegan food in most places in the world, and Chiang Rai is no different. Searching for vegan food on local delivery apps like Grab and FoodPanda is an alternative choice. Even if you have no intention of ordering from the app, it can let you know which places offer vegan food.
 
-Chiang Rai's vegan offerings go far beyond what I'll mention here, but my favourite places were:
+Vegan food in Chiang Rai goes far beyond what I'll mention here, but my favourite places were:
+
+### Kunda Vegan Vegetarian
+
+One word comes to mind when I think of Kunda: Clean. And I'm not talking about the premesis.
+
+Chef Lena has a passion for cooking plant-based food that you can sense when you come here. She'll be very open to telling you about the menu the moment you walk through the door, and will tell you about how each ingredient is made on site.
+
+I initially thought the menu looked overpriced when I saw that a burger without any sides starts at 250 baht. After that burger, it felt worth every penny.
+
+The burger, the bun, even the sauce is homemade with love. And when you eat clean food, you just feel better.
+
+<ImageGallery images={kundaImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/kunda-vegan-vegetarian-chaing-rai-138460'>Visit Kunda on Happy Cow</ExternalLink>
 
 TODO
 
