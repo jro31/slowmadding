@@ -1,15 +1,11 @@
-import ImageGallery from '../ImageGallery'
 import BookingPlatform from './BookingPlatform'
 import Dates from './Dates'
-import Description from './Description'
 import PriceBreakdown from './PriceBreakdown'
 import RoomType from './RoomType'
 
 const AccommodationTable = ({ details }) => {
-  // TODO: Add a photo gallery
   return (
     <div>
-      <h3 className="mt-8">{details.name}</h3>
       <div className="flex flex-col gap-5 sm:gap-2">
         <Dates dates={details.dates} />
         <BookingPlatform
@@ -23,8 +19,6 @@ const AccommodationTable = ({ details }) => {
           currencySuffix={details.price.currencySuffix}
           sectionsObject={details.price.sections}
         />
-        <Description paragraphsArray={details.description} />
-        <ImageGallery images={details.images} />
       </div>
     </div>
   )
