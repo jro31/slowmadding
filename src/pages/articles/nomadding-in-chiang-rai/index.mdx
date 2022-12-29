@@ -1,6 +1,6 @@
 import Link from 'next/link'
 
-import { ArticleLayout } from '@/components/ArticleLayout'
+import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
@@ -20,6 +20,15 @@ import kundaViewImage from './kunda/view.jpeg'
 import vegMeUpVampireImage from './veg-me-up/vampire-blood-smoothie-bowl.jpeg'
 import vegMeUpMojito from './veg-me-up/mojito.jpeg'
 import vegMeUpChaochelaImage from './veg-me-up/chaochela-smoothie-bowl.jpeg'
+
+import buffet1 from './oasis/buffet-1.jpeg'
+import buffet2 from './oasis/buffet-2.jpeg'
+import oasis2013Image from './oasis/2013.jpg'
+
+import heavenBurgerVeganBreakfastPlate from './heaven-burger/vegan-breakfast-plate.jpeg'
+import heavenBurgerFriedCrispyMushroom from './heaven-burger/fried-crispy-mushroom.jpeg'
+import heavenBurgerMixedBerrySmoothie from './heaven-burger/mixed-berry-smoothie.jpeg'
+import heavenBurgerAvocadoMushroomSandwich from './heaven-burger/avocado-mushroom-sandwich.jpeg'
 
 import stravaImage from './strava.jpeg'
 
@@ -125,6 +134,47 @@ export const vegMeUpImages = [
   },
 ]
 
+export const oasisImages = [
+  {
+    src: buffet1,
+    alt: 'Oasis Vegetaurant buffet',
+    caption: 'From the buffet, this plate cost me 80 baht.',
+  },
+  {
+    src: buffet2,
+    alt: 'Oasis Vegetaurant buffet',
+    caption: 'This one was 90 baht.',
+  },
+  {
+    src: oasis2013Image,
+    alt: 'Oasis Vegetaurant buffet',
+    caption: 'A throwback to when I ate here in 2013.',
+  },
+]
+
+export const heavenBurgerImages = [
+  {
+    src: heavenBurgerVeganBreakfastPlate,
+    alt: 'Heaven Burger vegan breakfast plate',
+    caption: "This vegan breakfast plate is the most expensive item on the vegan menu, at 179 baht. At first glance, it looks slightly peculiar. Who'd have thought a plate containing mango and baked beans would work? But somehow, it really does.",
+  },
+  {
+    src: heavenBurgerFriedCrispyMushroom,
+    alt: 'Heaven Burger fried crispy mushroom with teriyaki sauce on vegan burger bun',
+    caption: 'This one is fried crisy mushroom with teriyaki sauce on a vegan burger bun, and costs 149 baht.',
+  },
+  {
+    src: heavenBurgerMixedBerrySmoothie,
+    alt: 'Heaven Burger mixed berry smoothie',
+    caption: 'A mixed berry smoothie for 60 baht.',
+  },
+  {
+    src: heavenBurgerAvocadoMushroomSandwich,
+    alt: 'Heaven Burger avocado mushroom sandwich',
+    caption: 'This avocado mushroom sandwich with fries will cost you 129 baht.',
+  },
+]
+
 export const stravaImageArray = [
   {
     src: stravaImage,
@@ -163,6 +213,8 @@ To visit a western restaurant in the capital, you can easily expect to pay over 
 You can get a two-hour Thai massage in Chiang Rai for 300 baht. In Bangkok the best you can hope for is 400 baht, but usually it'll be more than that.
 
 And I could continue down the list through accommodation and transport to beer and clothes.
+
+TODO: Add a gallery of any other Chiang Rai photos you want to show
 
 ## Where I stayed
 
@@ -244,11 +296,33 @@ The smoothie bowls are 185 baht, and the juices are 80 baht each.
 
 ### Oasis Vegetaurant
 
-TODO
+Oasis is your typical "local" Thai vegan restaurant buffet. It has made-to-order food too, but I've never felt the need to order any because the buffet's always been so good. The menu is 100% vegan, so you can order anything with confidence, and if you come here with 100 baht, you'll be leaving with change.
+
+There's at least one other such restaurant in Chiang Rai (<ExternalLink url='https://www.happycow.net/reviews/tamachat-chiang-rai-5147'>Tamachat</ExternalLink> comes to mind), but Oasis holds a special place in my heart, because when I first came to Chiang Rai in 2013, this was my best, and perhaps only source of vegan food.
+
+Now 2022, it hasn't changed a bit. The same decor, the same food, the same great prices.
+
+As with all places of this type, the food isn't going to blow you away. It's more a place that you can come everyday, without a worry that you're overspending. But the quality is certainly good enough that you'll be happy to come back again.
+
+<ImageGallery images={oasisImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/oasis-vegetaurant-chiang-rai-5146'>Visit Oasis Vegetaurant on Happy Cow</ExternalLink>
 
 ### Heaven Burger
 
-TODO
+Although not a vegan, or even vegetarian restaurant, Heaven Burger became my go-to restaurant in Chiang Rai, because despite serving meat, it was completely trustworthy and reliable.
+
+It has an entirely separate vegan menu, and if you order from it, the staff will ask you if you're vegan or vegetarian. Unlike a lot of places, they get the difference, so I never had any concern about what was being served.
+
+Equally important, was that I found in Chiang Rai, the hours that restaurants claim to be open, and the hours that restaurants are open, aren't always the same thing. Heaven Burger was reliable. It says that it's open until 9pm every night, and it always was.
+
+So after a day working on my laptop, when I might not finish until 7:30pm, it was nice to know that I could rely on this place to still be open.
+
+The vegan menu is pretty big, containing 14 items (although the seven non-burger type items weren't always available), so you get plenty of variety if you come here multiple times, as I did. The quality was great, and the most expensive item on the vegan menu was 179 baht (although the burgers start from 129 baht). So you can come here, get a burger and chips with a smoothie, and still pay less than 200 baht.
+
+<ImageGallery images={heavenBurgerImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/heaven-burger-chiang-rai-293904'>Visit Heaven Burger on Happy Cow</ExternalLink>
 
 ## Where to run in Chiang Rai
 
