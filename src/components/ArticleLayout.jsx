@@ -5,7 +5,7 @@ import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
 
-function ArrowLeftIcon(props) {
+const ArrowLeftIcon = (props) => {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
@@ -18,12 +18,12 @@ function ArrowLeftIcon(props) {
   )
 }
 
-export function ArticleLayout({
+const ArticleLayout = ({
   children,
   meta,
   isRssFeed = false,
   previousPathname,
-}) {
+}) => {
   let router = useRouter()
 
   if (isRssFeed) {
@@ -33,7 +33,7 @@ export function ArticleLayout({
   return (
     <>
       <Head>
-        <title>{`${meta.title} - Spencer Sharp`}</title>
+        <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
       </Head>
       <Container className="mt-16 lg:mt-32">
@@ -70,3 +70,5 @@ export function ArticleLayout({
     </>
   )
 }
+
+export default ArticleLayout
