@@ -30,6 +30,7 @@ function Article({ article }) {
       >
         {formatDate(article.date)}
       </Card.Eyebrow>
+      {/* TODO: Add cover image */}
     </article>
   )
 }

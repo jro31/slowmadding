@@ -89,6 +89,8 @@ const Socials = () => {
           ))}
         </ul>
       </SimpleLayout>
+      {/* TODO: Add a section linking to my other apps (at least to jethro.codes). */}
+      {/* TODO: Perhaps also add a 'contact' section below that (although there could also be a separate 'contact' page) */}
     </>
   )
 }

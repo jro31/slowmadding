@@ -13,7 +13,7 @@ import image4 from '@/images/photos/image-4.jpg'
 import image5 from '@/images/photos/image-5.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
-import collateActivity from '@/services/collate-activity'
+import collateActivity from '@/lib/collate-activity'
 
 const Activity = ({ activity }) => {
   return (
@@ -24,6 +24,7 @@ const Activity = ({ activity }) => {
       </Card.Eyebrow>
       <Card.Description>{activity.text}</Card.Description>
       <Card.Cta>Read article</Card.Cta>
+      {/* TODO: Add media */}
     </Card>
   )
 }

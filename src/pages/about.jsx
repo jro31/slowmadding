@@ -198,6 +198,8 @@ const About = () => {
             </div>
           </div>
           <div className="lg:pl-20">
+            {/* TODO: Is there any need for these here? */}
+            {/* I quite like the email, but do I care about Twitter/IG etc? */}
             <ul role="list">
               <SocialLink href="#" icon={TwitterIcon}>
                 Follow on Twitter
