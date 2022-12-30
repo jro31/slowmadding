@@ -17,14 +17,14 @@ import collateActivity from '@/lib/collate-activity'
 
 const Activity = ({ activity }) => {
   return (
-    <Card as="activity">
+    <Card>
       <Card.Title href={activity.url}>{activity.title}</Card.Title>
       <Card.Eyebrow as="time" dateTime={activity.dateTime} decorate>
         {activity.dateTime}
       </Card.Eyebrow>
       <Card.Description>{activity.text}</Card.Description>
+      <Card.Media media={activity.media} href={activity.url} />
       <Card.Cta>Read article</Card.Cta>
-      {/* TODO: Add media */}
     </Card>
   )
 }
@@ -108,7 +108,7 @@ const Home = ({ activities }) => {
         <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
           <div className="flex flex-col gap-16">
             {activities.map((activity) => (
-              <Activity key={activity.date} activity={activity} />
+              <Activity key={activity.title} activity={activity} />
             ))}
           </div>
         </div>

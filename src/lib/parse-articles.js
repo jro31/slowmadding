@@ -11,7 +11,13 @@ const parseArticles = async () => {
       dateTime: formatDateTime(article.date),
       title: article.title,
       text: article.description,
-      media: article.coverImage || null,
+      media: article.coverImage
+        ? {
+            type: 'nextImage',
+            src: article.coverImage.image,
+            alt: article.coverImage.alt,
+          }
+        : null,
       url: `articles/${article.slug}`,
       platform: 'slowmadding',
     }
