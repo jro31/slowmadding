@@ -23,7 +23,7 @@ const Activity = ({ activity }) => {
         {activity.dateTime}
       </Card.Eyebrow>
       <Card.Description>{activity.text}</Card.Description>
-      <Card.Media media={activity.media} href={activity.url} />
+      <Card.Media col="right" media={activity.media} href={activity.url} />
       <Card.Cta>Read article</Card.Cta>
     </Card>
   )

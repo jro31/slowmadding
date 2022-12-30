@@ -29,8 +29,8 @@ export const formatDateTime = (dateString, includeOrdinal = false) => {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    timeZone: 'UTC',
-    timeZoneName: 'short',
+    // timeZone: 'UTC',
+    timeZoneName: 'long',
     hour: 'numeric',
     minute: 'numeric',
   })

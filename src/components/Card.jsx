@@ -18,9 +18,29 @@ const ChevronRightIcon = (props) => {
 const Card = ({ as: Component = 'div', className, children }) => {
   return (
     <Component
-      className={clsx(className, 'group relative flex flex-col items-start')}
+      className={clsx(
+        className,
+        'group relative flex flex-col items-start md:flex-row md:justify-between'
+      )}
     >
-      {children}
+      <div>
+        {children.map((child, index) => {
+          return child.props.col === 'right' ? (
+            <span key={`left-col-item-${index + 1}`} className="md:hidden">
+              {child}
+            </span>
+          ) : (
+            <span key={`left-col-item-${index + 1}`}>{child}</span>
+          )
+        })}
+      </div>
+      <div className="hidden md:block">
+        {children.map((child, index) => {
+          return child.props.col === 'right' ? (
+            <span key={`right-col-item-${index + 1}`}>{child}</span>
+          ) : null
+        })}
+      </div>
     </Component>
   )
 }
