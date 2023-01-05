@@ -1,0 +1,60 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2022-12-29T15:00:00+07:00', // TODO: Update this
+  title: 'Nomadding in Phnom Penh',
+  description: 'What to expect from Phnom Penh as a nomadding city.', // TODO: Update this?
+  // TODO: coverImage: { image: clockTowerImage, alt: 'Chiang Rai Clock Tower' }
+}
+
+export const mResidenceDetails = {
+  dates: {
+    checkIn: '2022-12-16',
+    checkOut: '2023-01-13',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/595464793635869888',
+  },
+  roomType: 'Entire condo hosted by Ratha',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: null,
+    sections: {
+      Room: 690.81,
+      '10% monthly price discount': -69.01,
+      'Cleaning fee': 17.38,
+      'Service fee': 72.60,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### M Residence (room #707)
+
+<AccommodationTable details={mResidenceDetails} />
+
+TODO
+
+## Where to get vegan food in Phnom Penh
+
+TODO
+
+## Where to run in Phnom Penh
+
+TODO
+
+## Being sociable in Phnom Penh
+
+TODO
