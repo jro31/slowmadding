@@ -8,68 +8,12 @@ import { Container } from '@/components/Container'
 import avatarImage from './avatar.jpeg'
 import { Fragment, useEffect, useRef } from 'react'
 
-function CloseIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="m17.25 6.75-10.5 10.5M6.75 6.75l10.5 10.5"
-        fill="none"
-        stroke="currentColor"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
+import CloseIcon from '../icons/CloseIcon'
+import ChevronDownIcon from '../icons/ChevronDownIcon'
+import SunIcon from '../icons/SunIcon'
+import MoonIcon from '../icons/MoonIcon'
 
-function ChevronDownIcon(props) {
-  return (
-    <svg viewBox="0 0 8 6" aria-hidden="true" {...props}>
-      <path
-        d="M1.75 1.75 4 4.25l2.25-2.5"
-        fill="none"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function SunIcon(props) {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      strokeWidth="1.5"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      aria-hidden="true"
-      {...props}
-    >
-      <path d="M8 12.25A4.25 4.25 0 0 1 12.25 8v0a4.25 4.25 0 0 1 4.25 4.25v0a4.25 4.25 0 0 1-4.25 4.25v0A4.25 4.25 0 0 1 8 12.25v0Z" />
-      <path
-        d="M12.25 3v1.5M21.5 12.25H20M18.791 18.791l-1.06-1.06M18.791 5.709l-1.06 1.06M12.25 20v1.5M4.5 12.25H3M6.77 6.77 5.709 5.709M6.77 17.73l-1.061 1.061"
-        fill="none"
-      />
-    </svg>
-  )
-}
-
-function MoonIcon(props) {
-  return (
-    <svg viewBox="0 0 24 24" aria-hidden="true" {...props}>
-      <path
-        d="M17.25 16.22a6.937 6.937 0 0 1-9.47-9.47 7.451 7.451 0 1 0 9.47 9.47ZM12.75 7C17 7 17 2.75 17 2.75S17 7 21.25 7C17 7 17 11.25 17 11.25S17 7 12.75 7Z"
-        strokeWidth="1.5"
-        strokeLinecap="round"
-        strokeLinejoin="round"
-      />
-    </svg>
-  )
-}
-
-function MobileNavItem({ href, children }) {
+const MobileNavItem = ({ href, children }) => {
   return (
     <li>
       <Popover.Button as={Link} href={href} className="block py-2">
@@ -79,7 +23,7 @@ function MobileNavItem({ href, children }) {
   )
 }
 
-function MobileNavigation(props) {
+const MobileNavigation = (props) => {
   return (
     <Popover {...props}>
       <Popover.Button className="group flex items-center rounded-full bg-white/90 px-4 py-2 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10 dark:hover:ring-white/20">
@@ -135,7 +79,7 @@ function MobileNavigation(props) {
   )
 }
 
-function NavItem({ href, children }) {
+const NavItem = ({ href, children }) => {
   let isActive = useRouter().pathname === href
 
   return (
@@ -158,7 +102,7 @@ function NavItem({ href, children }) {
   )
 }
 
-function DesktopNavigation(props) {
+const DesktopNavigation = (props) => {
   return (
     <nav {...props}>
       <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
@@ -172,15 +116,15 @@ function DesktopNavigation(props) {
   )
 }
 
-function ModeToggle() {
-  function disableTransitionsTemporarily() {
+const ModeToggle = () => {
+  const disableTransitionsTemporarily = () => {
     document.documentElement.classList.add('[&_*]:!transition-none')
     window.setTimeout(() => {
       document.documentElement.classList.remove('[&_*]:!transition-none')
     }, 0)
   }
 
-  function toggleMode() {
+  const toggleMode = () => {
     disableTransitionsTemporarily()
 
     let darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)')
@@ -207,13 +151,13 @@ function ModeToggle() {
   )
 }
 
-function clamp(number, a, b) {
+const clamp = (number, a, b) => {
   let min = Math.min(a, b)
   let max = Math.max(a, b)
   return Math.min(Math.max(number, min), max)
 }
 
-function AvatarContainer({ className, ...props }) {
+const AvatarContainer = ({ className, ...props }) => {
   return (
     <div
       className={clsx(
@@ -225,7 +169,7 @@ function AvatarContainer({ className, ...props }) {
   )
 }
 
-function Avatar({ large = false, className, ...props }) {
+const Avatar = ({ large = false, className, ...props }) => {
   return (
     <Link
       href="/"
@@ -247,7 +191,7 @@ function Avatar({ large = false, className, ...props }) {
   )
 }
 
-export function Header() {
+const Header = () => {
   let isHomePage = useRouter().pathname === '/'
 
   let headerRef = useRef()
@@ -258,15 +202,15 @@ export function Header() {
     let downDelay = avatarRef.current?.offsetTop ?? 0
     let upDelay = 64
 
-    function setProperty(property, value) {
+    const setProperty = (property, value) => {
       document.documentElement.style.setProperty(property, value)
     }
 
-    function removeProperty(property) {
+    const removeProperty = (property) => {
       document.documentElement.style.removeProperty(property)
     }
 
-    function updateHeaderStyles() {
+    const updateHeaderStyles = () => {
       let { top, height } = headerRef.current.getBoundingClientRect()
       let scrollY = clamp(
         window.scrollY,
@@ -303,7 +247,7 @@ export function Header() {
       }
     }
 
-    function updateAvatarStyles() {
+    const updateAvatarStyles = () => {
       if (!isHomePage) {
         return
       }
@@ -334,7 +278,7 @@ export function Header() {
       setProperty('--avatar-border-opacity', scale === toScale ? 1 : 0)
     }
 
-    function updateStyles() {
+    const updateStyles = () => {
       updateHeaderStyles()
       updateAvatarStyles()
       isInitial.current = false
@@ -425,3 +369,5 @@ export function Header() {
     </>
   )
 }
+
+export default Header

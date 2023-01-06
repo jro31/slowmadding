@@ -13,7 +13,7 @@ const NavLink = ({ href, children }) => {
   )
 }
 
-export const Footer = () => {
+const Footer = () => {
   return (
     <footer className="mt-32">
       <Container.Outer>
@@ -39,3 +39,5 @@ export const Footer = () => {
     </footer>
   )
 }
+
+export default Footer
