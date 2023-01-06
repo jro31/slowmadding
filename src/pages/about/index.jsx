@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from './portrait.jpg'
 
 const Heading = "I'm Jethro. I'm a slowmad."
 
@@ -65,7 +65,7 @@ const About = () => {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 That's just a fancy way of saying I'm not grown up enough to
-                settle down and start being an adult yet, but that I'm too lazy
+                settle down and start being an adult yet, and that I'm too lazy
                 to travel properly, so spend several weeks or even months
                 staying everywhere I go.
               </p>
@@ -88,7 +88,7 @@ const About = () => {
               <p>
                 If you're not the same as at least one of these, then you're
                 probably not going to find much useful on this app. Even if you
-                are the same, you might not going to find much useful on this
+                are the same, you're still not going to find much useful on this
                 app.
               </p>
               <p>
@@ -112,13 +112,94 @@ const About = () => {
                 app for you.
               </p>
               <p>
-                You can also follow me on the socials. I probably won't post
-                anything, and I'll probably ignore you if you message me, but
-                you never know. Give it a shot.
+                I'm also someone's who has little interest in tourist sites.
+              </p>
+              <p>
+                I derive a lot more enjoyment from just going to places and
+                existing. Interacting with locals, or sometimes just people
+                watching. Just becoming comfortable in the places that I go.
+              </p>
+              <p>
+                That is how I experience the world. So if you're looking for
+                reviews of Machu Pichu or Angkor Wat, you're likely to be left
+                disappointed.
+              </p>
+              <p>
+                I take very few photos, and even fewer selfies (if I want to
+                know what I look like, I'll look in the mirror). So nor will
+                this be a place for tips on places to go for the most Instagram
+                likes.
+              </p>
+              <p>
+                My motivation for nomadding is more simple: Routines are a
+                dangerous thing.
+              </p>
+              <p>
+                Whether this is a general thing, or whether it's more unique to
+                me, I'm unsure. But if you stay in the same place too long, I
+                can become obsessed with my routine.
+              </p>
+              <p>
+                My world can become very small, and I can care about things
+                that, once I take a step back and look at them from a distance,
+                I realise are entirely insignificant.
+              </p>
+              <p>
+                When I lived in Bangkok, I used to take the underground to work
+                everyday.
+              </p>
+              <p>
+                I lived near to a quiet station, and I would travel to work at a
+                quiet time of day. As such, it wasn't uncommon for me to have
+                the entire platform to myself.
+              </p>
+              <p>
+                I would work six days per week, and would get so obsessed with
+                my own world, that I had a spot on the platform, right
+                underneath the air conditioner, that I would stand everyday.
+              </p>
+              <p>
+                If I came into the station and someone was standing in my spot
+                on the platform, it could honestly ruin my day.
+              </p>
+              <p>
+                So on the one hand, I want to be a nomad so that I'm continually
+                moving around, and I don't have the opportunity for my world to
+                become so small as to derive stress from insignificant things.
+              </p>
+              <p>
+                But on the other hand, backpacking, and moving from hostel to
+                hostel every two or three days, can be just as stressful.
+              </p>
+              <p>
+                At that point, you crave a routine. You dream of being settled
+                down and having a nine-to-five job, and to live in a place that
+                you can call home.
+              </p>
+              <p>
+                My personality matches that lifestyle no more than it matches
+                being settled and doing the same thing everyday.
+              </p>
+              <p>
+                Nomadding is my attempt to find the perfect middle-ground.
+                Having weeks or months everywhere I go means that I'm not moving
+                around so much that I long for continuity and routine. I have
+                enough.
+              </p>
+              <p>
+                But at the same time, I don't stay in each place long enough to
+                build-up such a routine that I start to care about things that
+                really don't matter.
+              </p>
+              <p>
+                It is my attempt to find the perfect balance between routine and
+                adventure.
               </p>
             </div>
           </div>
           <div className="lg:pl-20">
+            {/* TODO: Is there any need for these here? */}
+            {/* I quite like the email, but do I care about Twitter/IG etc? */}
             <ul role="list">
               <SocialLink href="#" icon={TwitterIcon}>
                 Follow on Twitter

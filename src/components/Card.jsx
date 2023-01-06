@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import clsx from 'clsx'
 
-function ChevronRightIcon(props) {
+const ChevronRightIcon = (props) => {
   return (
     <svg viewBox="0 0 16 16" fill="none" aria-hidden="true" {...props}>
       <path
@@ -14,7 +14,7 @@ function ChevronRightIcon(props) {
   )
 }
 
-export function Card({ as: Component = 'div', className, children }) {
+const Card = ({ as: Component = 'div', className, children }) => {
   return (
     <Component
       className={clsx(className, 'group relative flex flex-col items-start')}
@@ -92,3 +92,5 @@ Card.Eyebrow = function CardEyebrow({
     </Component>
   )
 }
+
+export { Card }

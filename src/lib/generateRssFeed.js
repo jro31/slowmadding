@@ -1,3 +1,5 @@
+// TODO: Either remove this, or at least test that it still works properly
+
 import ReactDOMServer from 'react-dom/server'
 import { Feed } from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
