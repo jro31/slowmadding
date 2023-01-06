@@ -1,6 +1,5 @@
 import Link from 'next/link'
 import clsx from 'clsx'
-import Image from 'next/image'
 
 const ChevronRightIcon = (props) => {
   return (
@@ -18,29 +17,9 @@ const ChevronRightIcon = (props) => {
 const Card = ({ as: Component = 'div', className, children }) => {
   return (
     <Component
-      className={clsx(
-        className,
-        'group relative flex flex-col items-start md:flex-row md:justify-between'
-      )}
+      className={clsx(className, 'group relative flex flex-col items-start')}
     >
-      <div>
-        {children.map((child, index) => {
-          return child.props.col === 'right' ? (
-            <span key={`left-col-item-${index + 1}`} className="md:hidden">
-              {child}
-            </span>
-          ) : (
-            <span key={`left-col-item-${index + 1}`}>{child}</span>
-          )
-        })}
-      </div>
-      <div className="hidden md:block">
-        {children.map((child, index) => {
-          return child.props.col === 'right' ? (
-            <span key={`right-col-item-${index + 1}`}>{child}</span>
-          ) : null
-        })}
-      </div>
+      {children}
     </Component>
   )
 }
@@ -111,30 +90,6 @@ Card.Eyebrow = function CardEyebrow({
       )}
       {children}
     </Component>
-  )
-}
-
-Card.Media = function CardMedia({ media, href }) {
-  if (!media) return null
-
-  // Update this as other media types are required
-  const mediaComponent = media.type === 'nextImage' && (
-    <div className="z-30 my-2">
-      <Image
-        className="rounded-2xl"
-        height={257}
-        src={media.src}
-        alt={media.alt}
-      />
-    </div>
-  )
-
-  return href ? (
-    <Link href={href} className="z-30">
-      {mediaComponent}
-    </Link>
-  ) : (
-    mediaComponent
   )
 }
 
