@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import SimpleLayout from '@/components/SimpleLayout'
 import logoHappyCow from '@/images/logos/happy-cow.svg'
 import logoStrava from '@/images/logos/strava.svg'
 import logoInstagram from '@/images/logos/instagram.svg'

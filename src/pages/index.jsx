@@ -3,7 +3,7 @@ import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
 
-import { Card } from '@/components/Card'
+import ActivityList from '@/components/ActivityList'
 import { Container } from '@/components/Container'
 import { TwitterIcon, InstagramIcon } from '@/components/SocialIcons'
 import image1 from '@/images/photos/image-1.jpg'
@@ -14,20 +14,6 @@ import image5 from '@/images/photos/image-5.jpg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import collateActivity from '@/lib/collate-activity'
-
-const Activity = ({ activity }) => {
-  return (
-    <Card>
-      <Card.Title href={activity.url}>{activity.title}</Card.Title>
-      <Card.Eyebrow as="time" dateTime={activity.dateTime} decorate>
-        {activity.dateTime}
-      </Card.Eyebrow>
-      <Card.Description>{activity.text}</Card.Description>
-      <Card.Media col="right" media={activity.media} href={activity.url} />
-      <Card.Cta>Read article</Card.Cta>
-    </Card>
-  )
-}
 
 const SocialLink = ({ icon: Icon, ...props }) => {
   return (
@@ -105,13 +91,7 @@ const Home = ({ activities }) => {
       </Container>
       <Photos />
       <Container className="mt-24 md:mt-28">
-        <div className="mx-auto grid max-w-xl grid-cols-1 gap-y-20 lg:max-w-none">
-          <div className="flex flex-col gap-16">
-            {activities.map((activity) => (
-              <Activity key={activity.title} activity={activity} />
-            ))}
-          </div>
-        </div>
+        <ActivityList activities={activities} />
       </Container>
     </>
   )

@@ -1,12 +1,14 @@
-import parseArticles from './parse-articles'
+import { getAllArticles } from './getAllArticles'
 
 // TODO: Add Facebook feed (see src/lib/parse-facebook-feed.js)
 // TODO: Add Happy Cow
 // TODO: Add Strava
 const collateActivity = async () => {
-  const parsedArticles = await parseArticles()
+  const articles = (await getAllArticles()).map(
+    ({ component, ...meta }) => meta
+  )
 
-  return parsedArticles // TODO: Update this to return all activity
+  return articles // TODO: Update this to return all activity
 }
 
 export default collateActivity
