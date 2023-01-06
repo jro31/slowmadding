@@ -10,7 +10,7 @@ import {
   GitHubIcon,
   LinkedInIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/portrait.jpg'
+import portraitImage from './portrait.jpg'
 
 const Heading = "I'm Jethro. I'm a slowmad."
 

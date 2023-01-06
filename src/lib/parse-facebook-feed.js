@@ -29,6 +29,7 @@ const parseFacebookData = (facebookData) =>
 const facebookPostObject = (post) => {
   switch (post.type) {
     case 'status':
+      // FIXME: The object keys have since changed to match the article metadata, so need to be updated here
       return {
         dateTime: formatDateTime(post.created_time),
         title: postTitle('a status update', post.place),
