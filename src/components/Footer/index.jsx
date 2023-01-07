@@ -1,18 +1,6 @@
-import Link from 'next/link'
-
 import { Container } from '@/components/Container'
 import navLinks from '@/lib/navLinks'
-
-const NavLink = ({ href, children }) => {
-  return (
-    <Link
-      href={href}
-      className="transition hover:text-teal-500 dark:hover:text-teal-400"
-    >
-      {children}
-    </Link>
-  )
-}
+import NavLink from './NavLink'
 
 const Footer = () => {
   return (
