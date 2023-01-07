@@ -1,0 +1,108 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+// import ExternalLink from '@/components/ExternalLink'
+// import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2022-12-29T15:00:00+07:00', // TODO: Update this
+  title: 'Nomadding in Bangkok',
+  description: 'What to expect from Bangkok as a nomadding city.',
+}
+
+export const nandhaHotelDetails = {
+  dates: {
+    checkIn: '2022-10-07',
+    checkOut: '2022-10-20',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/home-place.html',
+  },
+  roomType: 'Classic Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12672,
+      '7% VAT': 887.04,
+      '10% Property service charge': 1267.20,
+    },
+  },
+}
+
+export const vCheckInnDetails = {
+  dates: {
+    checkIn: '2022-10-20',
+    checkOut: '2022-11-03',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
+  },
+  roomType: 'Deluxe Double Room with Balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 15308.41,
+      '7% VAT': 1071.59,
+    },
+  },
+}
+
+export const roomQuestDetails = {
+  dates: {
+    checkIn: '2022-12-01',
+    checkOut: '2022-12-16',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Standard King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12249.39,
+      '7% VAT': 857.46,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### Nandha Hotel
+
+<AccommodationTable details={nandhaHotelDetails} />
+
+TODO
+
+### V Check Inn Sukhumvit 22
+
+<AccommodationTable details={vCheckInnDetails} />
+
+TODO
+
+### RoomQuest Sukhumvit 36
+
+<AccommodationTable details={roomQuestDetails} />
+
+TODO
+
+## Where to get vegan food in Bangkok
+
+TODO
+
+## Where to run in Bangkok
+
+TODO
+
+## Being sociable in Bangkok
+
+TODO
