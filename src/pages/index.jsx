@@ -13,7 +13,7 @@ import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norod
 import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
-import collateActivity from '@/lib/collate-activity'
+import collateActivity from '@/lib/collateActivity'
 
 const title = 'Software engineer, digital nomad, failed writer.'
 const description =
