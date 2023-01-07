@@ -1,3 +1,7 @@
+// TODO: Need this?
+// Not currently used, but initially used in the 'Speaking' and 'Uses' pages
+// Kept because it could be useful for creating timeline (see how it works in the template app)
+
 import { useId } from 'react'
 
 export function Section({ title, children }) {
