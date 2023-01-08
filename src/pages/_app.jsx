@@ -1,4 +1,3 @@
-// TODO: Add a dynamic sitemap
 // TODO: Add a 'timeline' page, that visualises my nomadding over time
 // TODO: Update favicon
 

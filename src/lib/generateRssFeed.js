@@ -1,4 +1,7 @@
-// TODO: Either remove this, or at least test that it still works properly
+// TODO: Remove this?
+// If you are going to keep it:
+// 1) Test that it works
+// 2) You'll need to uncomment the relevant lines in src/pages/index.jsx
 
 import ReactDOMServer from 'react-dom/server'
 import { Feed } from 'feed'
