@@ -2,7 +2,7 @@ import Image from 'next/image'
 import Head from 'next/head'
 
 import { Card } from '@/components/Card'
-import { SimpleLayout } from '@/components/SimpleLayout'
+import SimpleLayout from '@/components/SimpleLayout'
 import logoHappyCow from '@/images/logos/happy-cow.svg'
 import logoStrava from '@/images/logos/strava.svg'
 import logoInstagram from '@/images/logos/instagram.svg'
@@ -81,6 +81,7 @@ const Socials = () => {
                 <Card.Link href={platform.link.href}>{platform.name}</Card.Link>
               </h2>
               <Card.Description>{platform.description}</Card.Description>
+              {/* FIXME: The links of adjacent cards should be aligned. Presently the link position is determined by the length of the text. */}
               <p className="relative z-10 mt-6 flex text-sm font-medium text-zinc-400 transition group-hover:text-teal-500 dark:text-zinc-200">
                 <LinkIcon className="h-6 w-6 flex-none" />
                 <span className="ml-2">{platform.link.label}</span>

@@ -1,10 +1,11 @@
 // TODO: Add a dynamic sitemap
 // TODO: Add a 'timeline' page, that visualises my nomadding over time
+// TODO: Update favicon
 
 import { useEffect, useRef } from 'react'
 
-import { Footer } from '@/components/Footer'
-import { Header } from '@/components/Header'
+import Footer from '@/components/Footer'
+import Header from '@/components/Header'
 
 import '@/styles/tailwind.css'
 import 'focus-visible'
