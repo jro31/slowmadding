@@ -1,23 +1,40 @@
 import glob from 'fast-glob'
 import * as path from 'path'
 
-async function importArticle(articleFilename) {
-  let { meta, default: component } = await import(
+const importArticle = async (articleFilename, pathOnly = false) => {
+  const { meta, default: component } = await import(
     `../pages/articles/${articleFilename}`
   )
+  const url = `/articles/${articleFilename.replace(/(\/index)?\.mdx$/, '')}`
+
+  if (pathOnly) return url
+
   return {
-    url: `/articles/${articleFilename.replace(/(\/index)?\.mdx$/, '')}`,
+    url: url,
     ...meta,
     component,
   }
 }
 
-export async function getAllArticles() {
-  let articleFilenames = await glob(['*.mdx', '*/index.mdx'], {
+const fetchArticleFilenames = async () =>
+  await glob(['*.mdx', '*/index.mdx'], {
     cwd: path.join(process.cwd(), 'src/pages/articles'),
   })
 
-  let articles = await Promise.all(articleFilenames.map(importArticle))
+export const getAllArticles = async () => {
+  const articleFilenames = await fetchArticleFilenames()
+
+  const articles = await Promise.all(articleFilenames.map(importArticle))
 
   return articles.sort((a, z) => new Date(z.date) - new Date(a.date))
+}
+
+export const getAllArticlePaths = async () => {
+  const articleFilenames = await fetchArticleFilenames()
+
+  const articlePaths = await Promise.all(
+    articleFilenames.map((filename) => importArticle(filename, true))
+  )
+
+  return articlePaths
 }
