@@ -10,9 +10,10 @@ const PriceBreakdown = ({
   const numberOfNights = useNumberOfNights()
 
   const currencyAmount = (amount) =>
-    `${currencyPrefix ? currencyPrefix : ''}${parseFloat(
-      amount.toFixed(2)
-    ).toLocaleString('en-GB')}${currencySuffix ? ` ${currencySuffix}` : ''}`
+    `${currencyPrefix ? currencyPrefix : ''}${amount.toLocaleString('en-GB', {
+      maximumFractionDigits: 2,
+      minimumFractionDigits: 2,
+    })}${currencySuffix ? ` ${currencySuffix}` : ''}`
 
   const totalPrice = Object.values(sectionsObject).reduce(
     (acc, curr) => acc + curr,
