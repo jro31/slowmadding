@@ -1,13 +1,18 @@
-const suffixes = ['st', 'nd', 'rd', 'th']
-
 let formattedDate
+
+const suffix = (day) => {
+  const suffixes = ['st', 'nd', 'rd', 'th']
+
+  if (day.length > 1 && day.slice(0, 1) == 1) return suffixes[3]
+
+  return suffixes[
+    day.slice(-1) >= 4 || day.slice(-1) == 0 ? 3 : day.slice(-1) - 1
+  ]
+}
 
 const addOrdinal = () => {
   const dayAsString = formattedDate.split(' ')[0]
-  const dayAsNumber = parseInt(dayAsString)
-  const dayOrdinalDigit = dayAsNumber.toString().slice(-1)
-  const suffix = suffixes[dayOrdinalDigit >= 4 ? 3 : dayOrdinalDigit - 1]
-  const suffixedDay = `${dayAsNumber}${suffix}`
+  const suffixedDay = `${dayAsString}${suffix(dayAsString)}`
 
   formattedDate = formattedDate.replace(dayAsString, suffixedDay)
 }
