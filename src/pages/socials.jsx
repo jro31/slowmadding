@@ -78,8 +78,7 @@ const Socials = () => {
                   />
                 </div>
                 <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
-                  {/* FIXME: These should open in a new tab */}
-                  <Card.Link href={platform.link.href}>
+                  <Card.Link href={platform.link.href} target="_blank">
                     {platform.name}
                   </Card.Link>
                 </h2>
