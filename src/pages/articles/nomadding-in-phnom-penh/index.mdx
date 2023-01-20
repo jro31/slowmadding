@@ -5,6 +5,11 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import mResidenceRoomImage from './m-residence/room.jpeg'
+import mResidenceYogaMatImage from './m-residence/yoga-mat.jpeg'
+import mResidencePoolImage from './m-residence/pool.jpeg'
+import mResidenceGymImage from './m-residence/gym.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2022-12-29T15:00:00+07:00', // TODO: Update this
@@ -34,9 +39,34 @@ export const mResidenceDetails = {
   },
 }
 
+export const mResidenceImages = [
+  {
+    src: mResidenceRoomImage,
+    alt: 'M Residence studio room',
+    caption: 'The studio. At least you can watch TV from in bed.',
+  },
+  {
+    src: mResidenceYogaMatImage,
+    alt: 'Doing yoga at M Residence',
+    caption: "By moving the coffee table into the kitchen, you could just about make enough space to do yoga. As long as you don't need to stretch-out to the side too much anyway.",
+  },
+  {
+    src: mResidencePoolImage,
+    alt: 'The rooftop pool at M Residence',
+    caption: "The practicality of the pool is questionable, but it does look nice.",
+  },
+  {
+    src: mResidenceGymImage,
+    alt: 'The gym at M Residence',
+    caption: "Although lacking in equipment, it was nice to have a gym in the building.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
+
+- Cambodia has been bought by China
 
 ## Where I stayed
 
@@ -68,7 +98,7 @@ Prior to staying here I'd used Airbnb very sparingly, and never for a stay of lo
 
 Answer: Never.
 
-I never want to be too important to clean up after myself, but I do draw the line at having to buy all the clearning products and equipment myself, when I'm only going to be here for a month. And with no cleaner either, the room just got slowly grimier throughout my stay.
+I never want to be too important to clean up after myself, but I do draw the line at having to buy all the clearning products and equipment myself, when I'm only going to be there for a month. And with no cleaner either, the room just got slowly grimier throughout my stay.
 
 That's not to say it's a bad place. It's not. The main reason that I chose to stay here over everywhere else I looked at was the location. And the location is perfect.
 
@@ -76,9 +106,9 @@ There are great restaurants nearby, you're only a five-minute walk from Statue o
 
 Literally right across the street. Good luck sleeping when the World Cup final's on, but it's also not a bad place to get a beer and watch some football. They have a load of screens, so if you want to watch Everton lose in the last minute to Wolves with the commentary of the simultaneous Newcastle vs Leicester game blasting over the loud speakers, then this is the place for you.
 
-When I lived in Bangkok, I used to rent a condo where the size was written into the contract as (just under) 29m(squared). I've always assumed therefore, that measurement was accurate. It was quite a compact place, but it had one bedroom, a good kitchen, and a dining area within the living room.
+When I lived in Bangkok, I used to rent a condo where the size was written into the contract as (just under) 29m&#178;. I've always assumed therefore, that measurement was accurate. It was quite a compact place, but it had one bedroom, a good kitchen, and a dining area within the living room.
 
-So when I stay somewhere that describes itself as 35m(squared), but it's a studio without any dining area and almost no free space, I'm slightly dubious. It felt significantly smaller than my Bangkok condo, to the point that I had to rearrange the furniture just to have the space to do yoga.
+So when I stay somewhere that describes itself as 35m&#178;, but it's a studio without any dining area and almost no free space, I'm slightly dubious. It felt significantly smaller than my Bangkok condo, to the point that I had to rearrange the furniture just to have the space to do yoga.
 
 I'd push the coffee table into the kitchen area, and I'd *still* find myself cramped between the fridge and the bathroom.
 
@@ -92,7 +122,21 @@ Of more practical value, the floor below has a pretty nice gym. It's slightly il
 
 As it's seldom used by other guests, I never found myself waiting for the bench, although there were multiple times that other people were waiting for me, which sucked for them because I had loads of sets to do.
 
+The most egregious thing that happened during my stay, is that the owner, via the front-desk staff, takes a $30 key depost when you check-in. That is to be returned to you when you return the key on checkout.
+
+I made it abundantly clear to the owner that I was checking-out early in the morning (about 6:30am), and he assured me that he had arranged it so that my deposit would be returned to me by the front-desk staff.
+
+Of course, 6:30am comes on the day I'm checking-out, and the guy on reception has no clue about any deposit, and recommends that I keep the key instead.
+
+I did that, and after a lot of back and forth, I eventually came to an agreement with the landlord that he'd refund me $30 through Airbnb, and then I'd return the key to him when next in Phnom Penh.
+
+This is the very short version of that story, and I'd pay significantly more than $30 to not have to go through the stress and hassle endured to get back that deposit.
+
 So all in all... you could do worse. The furnishings in the room are nice, the TV is really good, the shower is hot and powerful, the AC works efficiently, and I'll stress again how great the location is. It just doesn't feel homely. It feels like someone wants to do the bare minimum in order to make as much money off Airbnb as they can.
+
+I wouldn't stay here again. That doesn't mean you shouldn't.
+
+<ImageGallery images={mResidenceImages} />
 
 ## Where to get vegan food in Phnom Penh
 
