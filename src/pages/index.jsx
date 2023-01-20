@@ -11,7 +11,7 @@ import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-ni
 import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
 import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norodom-at-night.jpeg'
 import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
-import { generateRssFeed } from '@/lib/generateRssFeed'
+// import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import collateActivity from '@/lib/collateActivity'
 
@@ -119,9 +119,9 @@ const Home = ({ activities }) => {
 export default Home
 
 export const getStaticProps = async () => {
-  if (process.env.NODE_ENV === 'production') {
-    await generateRssFeed()
-  }
+  // if (process.env.NODE_ENV === 'production') {
+  //   await generateRssFeed()
+  // }
 
   const collatedActivity = await collateActivity()
 
