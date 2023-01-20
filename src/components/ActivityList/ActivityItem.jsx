@@ -24,7 +24,6 @@ const ActivityItem = ({ activity }) => {
       >
         {formatDate(activity.date)}
       </Card.Eyebrow>
-      {/* TODO: Add cover image */}
     </article>
   )
 }
