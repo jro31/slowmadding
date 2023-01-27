@@ -5,7 +5,6 @@ import clsx from 'clsx'
 
 import ActivityList from '@/components/ActivityList'
 import { Container } from '@/components/Container'
-import { TwitterIcon, InstagramIcon } from '@/components/SocialIcons'
 import yogaInTheParkImage from '@/images/homepage-photos/yoga-in-the-park.jpeg'
 import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-night.jpeg'
 import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
@@ -92,20 +91,6 @@ const Home = ({ activities }) => {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {description}
           </p>
-          <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            {/* TODO: Add Facebook */}
-            {/* TODO: Add Strava */}
-          </div>
         </div>
       </Container>
       <Photos />

@@ -4,12 +4,6 @@ import Link from 'next/link'
 import clsx from 'clsx'
 
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
 import portraitImage from './portrait.jpg'
 
 const Heading = "I'm Jethro. I'm a digital nomad."
@@ -43,7 +37,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About - Spencer Sharp</title>
+        <title>About - Jethro Williams</title>
         <meta name="description" content={Heading} />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -180,27 +174,9 @@ const About = () => {
             </div>
           </div>
           <div className="lg:pl-20">
-            {/* TODO: Is there any need for these here? */}
-            {/* I quite like the email, but do I care about Twitter/IG etc? */}
             <ul role="list">
-              <SocialLink href="#" icon={TwitterIcon}>
-                Follow on Twitter
-              </SocialLink>
-              <SocialLink href="#" icon={InstagramIcon} className="mt-4">
-                Follow on Instagram
-              </SocialLink>
-              <SocialLink href="#" icon={GitHubIcon} className="mt-4">
-                Follow on GitHub
-              </SocialLink>
-              <SocialLink href="#" icon={LinkedInIcon} className="mt-4">
-                Follow on LinkedIn
-              </SocialLink>
-              <SocialLink
-                href="mailto:spencer@planetaria.tech"
-                icon={MailIcon}
-                className="mt-8 border-t border-zinc-100 pt-8 dark:border-zinc-700/40"
-              >
-                spencer@planetaria.tech
+              <SocialLink href="mailto:contact@slowmadding.com" icon={MailIcon}>
+                contact@slowmadding.com
               </SocialLink>
             </ul>
           </div>
