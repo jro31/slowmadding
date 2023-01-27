@@ -10,7 +10,7 @@ import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-ni
 import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
 import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norodom-at-night.jpeg'
 import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
-// import { generateRssFeed } from '@/lib/generateRssFeed'
+import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import collateActivity from '@/lib/collateActivity'
 
@@ -40,14 +40,6 @@ const images = [
     alt: 'The lake at Saikaew Resort in Chiang Rai',
   },
 ]
-
-const SocialLink = ({ icon: Icon, ...props }) => {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
-  )
-}
 
 const Photos = () => {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -104,9 +96,9 @@ const Home = ({ activities }) => {
 export default Home
 
 export const getStaticProps = async () => {
-  // if (process.env.NODE_ENV === 'production') {
-  //   await generateRssFeed()
-  // }
+  if (process.env.NODE_ENV === 'production') {
+    await generateRssFeed()
+  }
 
   // TODO: Update this to only return the last (10) activities
   const collatedActivity = await collateActivity()
