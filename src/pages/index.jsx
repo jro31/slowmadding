@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import Head from 'next/head'
-import Link from 'next/link'
 import clsx from 'clsx'
 
 import ActivityList from '@/components/ActivityList'
