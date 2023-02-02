@@ -51,7 +51,6 @@ const ArticleLayout = ({
             )}
             <article>
               <header className="flex flex-col">
-                {/* TODO: Automatically add a links list to any level 2 headers */}
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                   {meta.title}
                 </h1>
