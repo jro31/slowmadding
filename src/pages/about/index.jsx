@@ -65,19 +65,15 @@ const About = () => {
               </p>
               <p>
                 I work as a freelance software engineer, so I can earn a living
-                from anywhere with an Internet connection.
-              </p>
-              <p>
-                I'm a big believer in not working too much, and have found that
-                I can work two days per week, and still save money, so I don't
-                really do any more.
+                from anywhere with an Internet connection. I'm a big believer in
+                not working too much, and have found that I can work two days
+                per week, and still save money, so I don't really do any more.
               </p>
               <p>
                 I'm also vegan, I run, I don't have many friends, I'm scared of
                 commitment, I'm British with German citizenship (thanks Brexit),
-                I do yoga sometimes, and I hate people that smell bad. And that
-                walk slowly. Or that walk the same speed as me, but one metre
-                behind.
+                I do yoga sometimes, and I hate people that walk slowly. Or that
+                walk the same speed as me, but one metre behind.
               </p>
               <p>
                 If you're not the same as at least one of these, then you're
@@ -95,26 +91,21 @@ const About = () => {
                 time living out of a backpack, staying in hostel dorms,
                 Couchsurfing before the perverts ruined it, camping at the side
                 of the road, and even sleeping under the stars occasionally,
-                which is another I slept rough because I was too cheap to pay
-                for a hostel.
+                which is another way of saying I slept rough because I was too
+                cheap to pay for a hostel.
               </p>
               <p>
                 I cherish those days, but they are long behind me. As a digital
-                nomad, I don't need to save every penny that I can anymore,
-                because I'm making money as I travel. If you're looking for
-                advice on the cheapest way to do things, this isn't the place
-                for you.
+                nomad, I don't need to save every penny that I can, because I'm
+                making money as I travel. If you're looking for advice on the
+                cheapest way to do things, this isn't the place for you.
               </p>
               <p>
-                I'm also someone's who has little interest in tourist sites.
-              </p>
-              <p>
-                I derive a lot more enjoyment from just going to places and
+                I'm also someone who has little interest in tourist sites. I
+                derive a lot more enjoyment from just going to places and
                 existing. Interacting with locals, or sometimes just people
                 watching. Just becoming comfortable in the places that I go.
-              </p>
-              <p>
-                That is how I experience the world. So don't come here looking
+                That is how I experience the world, so don't come here looking
                 for reviews of Machu Picchu or Angkor Wat.
               </p>
               <p>
@@ -127,8 +118,8 @@ const About = () => {
               <p>
                 I find that if I stay in the same place too long, I become
                 obsessed with my routine. My world can become very small, and I
-                can care about things that, once I take a step back and look at
-                them from a distance, I realise are entirely insignificant.
+                care about things that, once I take a step back and look at them
+                from a distance, I realise are entirely insignificant.
               </p>
               <p>
                 When I lived in Bangkok, I used to take the underground to work
@@ -142,6 +133,10 @@ const About = () => {
                 underneath the air conditioner, that I would stand everyday. If
                 I came into the station and someone was standing in my spot on
                 the platform, it would ruin my day.
+              </p>
+              <p>
+                That's what I mean when I say I would become too obsessed with
+                my routine and would care about insignificant things.
               </p>
               <p>
                 So on the one hand, I want to be a nomad so that I'm continually
@@ -162,10 +157,10 @@ const About = () => {
               <p>
                 Nomadding is my attempt to find the perfect middle-ground.
                 Having weeks or months everywhere I go means that I'm not moving
-                around so much that I long for continuity and routine. I have
-                enough. But at the same time, I don't stay in each place long
-                enough to build-up such a routine that I start to care about
-                things that really don't matter.
+                around so much that I long for continuity and routine, but at
+                the same time, I don't stay in each place long enough to
+                build-up such a routine that I start to care about things that
+                really don't matter.
               </p>
               <p>
                 It is my attempt to find the perfect balance between routine and

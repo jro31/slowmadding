@@ -78,7 +78,11 @@ const ImageGallery = ({ images }) => {
             height={galleryHeight}
             unoptimized
           /> */}
-          <img src={images[imageIndex].src.src} alt={images[imageIndex].alt} />
+          <img
+            src={images[imageIndex].src.src}
+            alt={images[imageIndex].alt}
+            className="h-full"
+          />
         </div>
       </div>
       <LinkWrapper url={images[imageIndex].url}>

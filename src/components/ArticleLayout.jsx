@@ -51,7 +51,6 @@ const ArticleLayout = ({
             )}
             <article>
               <header className="flex flex-col">
-                {/* TODO: Automatically add a links list to any level 2 headers */}
                 <h1 className="mt-6 text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
                   {meta.title}
                 </h1>
@@ -64,6 +63,13 @@ const ArticleLayout = ({
                 </time>
               </header>
               <Prose className="mt-8">{children}</Prose>
+              {meta.updated && (
+                <div className="flex flex-row-reverse items-center">
+                  <div className="mr-3 text-base italic text-zinc-400 dark:text-zinc-500">
+                    Updated <time>{formatDate(meta.updated, true)}</time>
+                  </div>
+                </div>
+              )}
             </article>
           </div>
         </div>
