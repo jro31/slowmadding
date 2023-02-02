@@ -1,14 +1,31 @@
 import Link from 'next/link'
 
 import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+
+import dewyHouseBedImage from './dewy-house/bed.jpeg'
+import dewyHouseDeskAndKitchenImage from './dewy-house/desk-and-kitchen.jpeg'
+import dewyHouseBathroomImage from './dewy-house/bathroom.jpeg'
 
 import reformKafeBerryLoveSmoothieBowlImage from './reform-kafe/berry-love-smoothie-bowl.jpeg'
 import reformKafeMushroomCheeseBurgerImage from './reform-kafe/mushroom-cheese-burger.jpeg'
 import reformKafePancakesImage from './reform-kafe/pancakes.jpeg'
 import reformKafeBananaSmoothieImage from './reform-kafe/banana-smoothie.jpeg'
+import reformKafeTablesImage from './reform-kafe/tables.jpeg'
 import reformKafeFrenchBreadSandwichImage from './reform-kafe/french-bread-sandwich.jpeg'
+
+import kinphakCafeVeganRedPorkWithRiceImage from './kinphak-cafe/vegan-red-pork-with-rice.jpeg'
+import kinphakCafeKhowSoiImage from './kinphak-cafe/khow-soi.jpeg'
+import kinphakCafeFriedRiceWithVegetablesImage from './kinphak-cafe/fried-rice-with-vegetables.jpeg'
+
+import salsaKitchenVeganCarnitasImage from './salsa-kitchen/vegan-carnitas.jpeg'
+
+import runningStravaImage from './running/strava.jpeg'
+import runningLakeImage from './running/lake.jpeg'
+
+import yogaInTheParkGroupPhotoImage from './yoga-in-the-park/group-photo.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -16,6 +33,45 @@ export const meta = {
   title: 'Nomadding in Chiang Mai',
   description: 'What to expect when nomadding in Chiang Mai.',
 }
+
+export const dewyHouseDetails = {
+  dates: {
+    checkIn: '2022-11-03',
+    checkOut: '2022-11-17',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/dewyhouse.html',
+  },
+  roomType: 'Deluxe Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 13650,
+      '7% VAT': 955.50,
+      '1% City tax': 136.50,
+    },
+  },
+}
+
+export const dewyHouseImages = [
+  {
+    src: dewyHouseBedImage,
+    alt: 'DewyHouse bed',
+    caption: "The bed is comfortable and there's good space in front of it to do yoga.",
+  },
+  {
+    src: dewyHouseDeskAndKitchenImage,
+    alt: 'DewyHouse room',
+    caption: "There's a decent desk to work at, and although the kitchen lacks and practical value, it's at least nice to have the space.",
+  },
+  {
+    src: dewyHouseBathroomImage,
+    alt: 'DewyHouse bathroom',
+    caption: "There aren't any taps to fill it up with, but it's always nice to have a bathtub I guess.",
+  }
+]
 
 export const reformKafeImages = [
   {
@@ -36,13 +92,66 @@ export const reformKafeImages = [
   {
     src: reformKafeBananaSmoothieImage,
     alt: 'Banana smoothie at Reform Kafe',
-    caption: "A banana smoothie for 95 baht.",
+    caption: 'A banana smoothie for 95 baht.',
+  },
+  {
+    src: reformKafeTablesImage,
+    alt: 'Reform Kafe restaurant',
+    caption: 'Some of the tables are right next to this water feature, which makes them an incredibly relaxing place to sit.',
   },
   {
     src: reformKafeFrenchBreadSandwichImage,
     alt: 'French bread sandwich at Reform Kafe',
     caption: 'French bread sandwich for 165 baht.',
   },
+]
+
+export const kinphakCafeImages = [
+  {
+    src: kinphakCafeVeganRedPorkWithRiceImage,
+    alt: 'Vegan red pork with rice at Kinphak Cafe',
+    caption: 'Vegan red pork with rice for 60 baht.',
+  },
+  {
+    src: kinphakCafeKhowSoiImage,
+    alt: 'Khow Soi at Kinphak Cafe',
+    caption: 'Khow soi is one of the first things I think of when I think of Northern Thai food. This vegan khow soi costs 50 baht.',
+  },
+  {
+    src: kinphakCafeFriedRiceWithVegetablesImage,
+    alt: 'Fried brown rice with 5 colour vegetables at Kinphak Cafe',
+    caption: 'Fried brown rice with 5 colour vegetables costs 50 baht.',
+  }
+]
+
+export const salsaKitchenImages = [
+  {
+    src: salsaKitchenVeganCarnitasImage,
+    alt: 'Vegan carnitas at Salsa Kitchen',
+    caption: 'These vegan carnitas and guacamole soft tacos were so good that I neglected to try most of the other vegan options, opting to have these every time. They cost 249 baht.',
+  }
+]
+
+export const runnningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Strava map',
+    caption: 'My first run in Chiang Mai',
+    url: 'https://www.strava.com/activities/8069804856',
+  },
+  {
+    src: runningLakeImage,
+    alt: 'Chiang Mai University lake',
+    caption: "The lake at Chiang Mai University is a beautiful place to come regadless of if you're running here or not.",
+  }
+]
+
+export const yogaInTheParkImages = [
+  {
+    src: yogaInTheParkGroupPhotoImage,
+    alt: 'Yoga in the Park',
+    caption: 'Yoga in the Park',
+  }
 ]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -75,7 +184,13 @@ Hopefully this is a temporary blip, and in a couple of years once it's had the t
 
 ## Where I stayed
 
+### DewyHouse
+
+<AccommodationTable details={dewyHouseDetails} />
+
 TODO
+
+<ImageGallery images={dewyHouseImages} />
 
 ## Where to get vegan food in Chiang Mai
 
@@ -103,14 +218,36 @@ A relaxing place to come and sit, very friendly and efficient staff, it's reason
 
 TODO
 
+<ImageGallery images={kinphakCafeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/cmu-vegan-kinphak-cafe-chiang-mai-179233'>Visit Kinphak Cafe on Happy Cow</ExternalLink>
+
 ### Salsa Kitchen
 
 TODO
+
+<ImageGallery images={salsaKitchenImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/salsa-kitchen-chiang-mai-99467'>Visit Salsa Kitchen on Happy Cow</ExternalLink>
 
 ## Where to run in Chiang Mai
 
 TODO
 
+<ImageGallery images={runnningImages} />
+
 ## Being sociable in Chiang Mai
+
+TODO
+
+### Yoga in the park
+
+TODO
+
+<ImageGallery images={yogaInTheParkImages} />
+
+### Chiang Mai language exchange party
+
+https://www.facebook.com/groups/349933706518867
 
 TODO

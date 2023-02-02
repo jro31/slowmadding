@@ -5,7 +5,7 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import clockTowerImage from './clock-tower.jpeg'
+import cityClockTowerImage from './city/clock-tower.jpeg'
 
 import saikaewBedImage from './saikaew-resort/bed.jpeg'
 import saikaewDeskImage from './saikaew-resort/desk.jpeg'
@@ -32,7 +32,7 @@ import heavenBurgerFriedCrispyMushroom from './heaven-burger/fried-crispy-mushro
 import heavenBurgerMixedBerrySmoothie from './heaven-burger/mixed-berry-smoothie.jpeg'
 import heavenBurgerAvocadoMushroomSandwich from './heaven-burger/avocado-mushroom-sandwich.jpeg'
 
-import stravaImage from './strava.jpeg'
+import runningStravaImage from './running/strava.jpeg'
 
 {/* TODO: Remove 'author' from here and other articles - Pretty sure it's not used anywhere */}
 export const meta = {
@@ -65,7 +65,7 @@ export const saikeawResortDetails = {
 
 export const cityImages = [
   {
-    src: clockTowerImage,
+    src: cityClockTowerImage,
     alt: 'Chiang Rai clock tower',
     caption: 'The Chiang Rai clock tower marks the centre of the city.'
   }
@@ -186,12 +186,12 @@ export const heavenBurgerImages = [
   },
 ]
 
-export const stravaImageArray = [
+export const runningImages = [
   {
-    src: stravaImage,
+    src: runningStravaImage,
     alt: 'Strava map',
     caption: 'My first run in Chiang Rai',
-    url: 'https://strava.app.link/MIpYVOd65vb',
+    url: 'https://www.strava.com/activities/8137341605',
   },
 ]
 
@@ -343,7 +343,7 @@ I was so happy running here that it was the only place that I ran in Chiang Rai,
 
 However, if you want a big, open space, void of vehicles, within the city itself, this is exactly what you're looking for.
 
-<ImageGallery images={stravaImageArray} />
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Chiang Rai
 
