@@ -1,6 +1,8 @@
 import Link from 'next/link'
 
 import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -9,11 +11,37 @@ export const meta = {
   description: 'What to expect when nomadding in Ho Chi Minh City.',
 }
 
+export const rivergateResidenceDetails = {
+  dates: {
+    checkIn: '2023-01-13',
+    checkOut: '2023-02-10',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/26011961',
+  },
+  roomType: 'Entire condo hosted by Micheal',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: null,
+    sections: {
+      Room: 754.34,
+      '6% weekly price discount': -45.21,
+      'Cleaning fee': 6.52,
+      'Service fee': 81.30,
+    },
+  },
+}
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
 ## Where I stayed
+
+### Rivergate Residence (room #11.13)
+
+<AccommodationTable details={rivergateResidenceDetails} />
 
 TODO
 
@@ -36,6 +64,34 @@ Such places do exist, but you may find yourself going to them more often that yo
 TODO
 
 ## Where to run in Ho Chi Minh City
+
+I'll be blunt: This is not a running-friendly city.
+
+When I booked my room, I looked at a map and thought that Tao Dan Park park would be a short enough walk and of a sufficient size to go running. And while it was the best of a very uninspiring list of places that I ran while I was here, I found out the hard way that it's not always open to the public.
+
+From when I arrived, the park was closed in preparation for Tet (Vietnamese New Year) celebrations more than a week away, so in the mean time I had to find alternatives.
+
+Places that I heard about as potentially being good for running, were <ExternalLink url='https://goo.gl/maps/aoMJcbvKr9YMoL8S8'>Sala Park Urban area</ExternalLink>, <ExternalLink url='https://goo.gl/maps/PHT1cUtQS3jRN19q6'>Vinhomes Central Park</ExternalLink> and <ExternalLink url='https://goo.gl/maps/DLkdDh2fSxpeyLRM7'>Phu Tho Stadium</ExternalLink>. All were sufficiently far from where I was staying that I didn't try running in them.
+
+Instead I tried to find alternatives closer to home, with dubious results. None were very enjoyab le places to run, so I ran as little as I felt I could get away with while in Ho Chi Minh, while still maintaining some remnants of fitness.
+
+### District 4 riverside
+
+I never saw anyone else running down the riverside, but being right across the road from my room, and with no roads to cross and no motorbikes on the path, it seemed as good as anywhere else to go running.
+
+Unfortunately, with a main road on one side and the very polluted river on the other, it didn't exactly feel like I was running in fresh air. To make it worse, there were spots along the route that had clearly been earmarked as the designated peeing spots, because you'd be running along and suddenly get hit in the face by this overwhelming stench of urine.
+
+Certain areas of the path, particularly under bridges, also house many homeless people, which isn't really a problem. I didn't at any point feel unsafe, just a bit bad that I was going running through the place that they call home.
+
+My starting point was mid-way along the river. I began by going south-west until the path ran out. I then turned around and went north-east until I met the same fate. I then turned around and went south-west again until I was back where I started. That came to just over 5km, so for all its flaws, the one advantage this route has over the other places on this list is that you don't have to cross the same ground over and over and over again. And if you're staying where I'm staying, and convenience is a factor to you, then you can't get a more convenient route than this. It's right outside the building. Still not a run I'd recommend though.
+
+TODO
+
+### September 23rd Park
+
+TODO
+
+### Tao Dan Park
 
 TODO
 
