@@ -1,8 +1,5 @@
-// FIXME: There's a momentary flash of an incorrectly sized image when switching between images of different sizes
-// No idea what's causing it, but try adding transitions when scrolling between images. They'd be nice to have anyway, and could fix it.
-
 import { useEffect, useState } from 'react'
-import Image from 'next/image'
+// import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 import useScreenWidth from '@/hooks/use-screen-width'
@@ -75,11 +72,16 @@ const ImageGallery = ({ images }) => {
           )}
         </div>
         <div className="flex h-full items-center justify-center">
-          <Image
+          {/* <Image
             src={images[imageIndex].src}
             alt={images[imageIndex].alt}
             height={galleryHeight}
             unoptimized
+          /> */}
+          <img
+            src={images[imageIndex].src.src}
+            alt={images[imageIndex].alt}
+            className="h-full"
           />
         </div>
       </div>
