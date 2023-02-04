@@ -5,7 +5,7 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import clockTowerImage from './clock-tower.jpeg'
+import cityClockTowerImage from './city/clock-tower.jpeg'
 
 import saikaewBedImage from './saikaew-resort/bed.jpeg'
 import saikaewDeskImage from './saikaew-resort/desk.jpeg'
@@ -32,13 +32,14 @@ import heavenBurgerFriedCrispyMushroom from './heaven-burger/fried-crispy-mushro
 import heavenBurgerMixedBerrySmoothie from './heaven-burger/mixed-berry-smoothie.jpeg'
 import heavenBurgerAvocadoMushroomSandwich from './heaven-burger/avocado-mushroom-sandwich.jpeg'
 
-import stravaImage from './strava.jpeg'
+import runningStravaImage from './running/strava.jpeg'
 
+{/* TODO: Remove 'author' from here and other articles - Pretty sure it's not used anywhere */}
 export const meta = {
   author: 'Jethro Williams',
-  date: '2022-12-29T15:00:00+07:00', // TODO: Update this
+  date: '2023-01-27T15:18:15+07:00',
   title: 'Nomadding in Chiang Rai',
-  description: 'What to expect from Chiang Rai as a nomadding city.',
+  description: 'What to expect when nomadding in Chiang Rai.',
 }
 
 export const saikeawResortDetails = {
@@ -64,7 +65,7 @@ export const saikeawResortDetails = {
 
 export const cityImages = [
   {
-    src: clockTowerImage,
+    src: cityClockTowerImage,
     alt: 'Chiang Rai clock tower',
     caption: 'The Chiang Rai clock tower marks the centre of the city.'
   }
@@ -74,7 +75,7 @@ export const saikaewResortImages = [
   {
     src: saikaewRoomImage,
     alt: 'Saikaew Resort double room',
-    caption: "With nothing but fish able to see in the room, I didn't bother closing the curtains at nighttime, meaning I woke up to this view everyday.",
+    caption: "With nothing but fish able to see in the room, I didn't bother closing the curtains at night, meaning I woke up to this view everyday.",
   },
   {
     src: saikaewViewImage,
@@ -171,7 +172,7 @@ export const heavenBurgerImages = [
   {
     src: heavenBurgerFriedCrispyMushroom,
     alt: 'Heaven Burger fried crispy mushroom with teriyaki sauce on vegan burger bun',
-    caption: 'This one is fried crisy mushroom with teriyaki sauce on a vegan burger bun, and costs 149 baht.',
+    caption: 'This one is fried crispy mushroom with teriyaki sauce on a vegan burger bun, and costs 149 baht.',
   },
   {
     src: heavenBurgerMixedBerrySmoothie,
@@ -185,18 +186,18 @@ export const heavenBurgerImages = [
   },
 ]
 
-export const stravaImageArray = [
+export const runningImages = [
   {
-    src: stravaImage,
+    src: runningStravaImage,
     alt: 'Strava map',
     caption: 'My first run in Chiang Rai',
-    url: 'https://strava.app.link/MIpYVOd65vb',
+    url: 'https://www.strava.com/activities/8137341605',
   },
 ]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Chiang Rai is largely avoided by tourists. Or those that do visit, just give it a day or two as an aside from Chiang Mai, in order to visit the famed white temple, but few come to Chiang Rai as the destination in itself. A mistake which allows it to retain its small-town charm.
+Chiang Rai is largely avoided by tourists. Or those that do visit just give it a day or two as an aside from Chiang Mai, in order to visit the famed white temple, but few come to Chiang Rai as the destination in itself. A mistake which allows it to retain its small-town charm.
 
 It's a very modest, peaceful place. Tourism hasn't gripped it with any significance. Nor has capitalism.
 
@@ -230,7 +231,7 @@ If you're like me and you need to have occasional solitude to unwind, where you'
 
 The rooms are all on the edge of the lake that gives this property its serenity. You'll have a balcony that goes into the lake, where you can just sit and drink tea, or read a book, or smoke some weed, or do yoga or meditate.
 
-I spent hours everyday just sat there, decompressing. Emptying my mind.
+I spent hours everyday just sat there, decompressing and emptying my mind.
 
 If you can stomach staying away from your phone and turning off your other devices, you'll leave here as relaxed as you've been for a very long time.
 
@@ -238,15 +239,15 @@ The room itself is somewhat rustic, but that adds to the charm. It has air condi
 
 Occasional wildlife might greet you in your room. Harmless tokay geckos that you find everywhere in Thailand are the most common visitors, but I welcomed in some spiders too, as being next to still water, mosquitos populate the lake in the evenings.
 
-As long as you're mindful to close your doors in the evening, they aren't a problem though. There is a fan that can be pointed at your bed, and this will prevent any mosquitos that did make it into your room and that escaped the spiders, from landing on you during the night, as they still air to land.
+As long as you're mindful to close your doors, they aren't a problem. There is a fan that can be pointed at your bed, and this will prevent any mosquitos that did make it into your room and that escaped the spiders, from landing on you during the night, as they need still air to land.
 
-I did also have a neighbour knock on my door to tell me that he'd just seen a very big snake. That wasn't very welcome, as I was about to go on the balcony and meditate, so could have done without the thought of a large snake in the back of my mind. I never saw it though.
+I also had a neighbour knock on my door to tell me that he'd just seen a very big snake. That wasn't very welcome, as I was about to go on the balcony and meditate, so could have done without the thought of a large snake in the back of my mind. I never saw it though.
 
 The rooms are cleaned daily, and I really appreciated the location of this resort. You're about a 25 minute walk from the centre of town. A perfectly pleasant, if unremarkable walk. But being this far out of the centre gives you a much more "local" experience. You're too far from the nearest 7-11 to go there for all your needs, so you get to know the local shops and businesses instead. And if you run, it's less than 10 minutes before you're at the old airport (more on that <Link href='#where-to-run-in-chiang-rai'>below</Link>).
 
-If I had one minor grievance with this place, it's that it's home to three very lovely, but very yappy dogs. 90% of the time they're quiet. But if something sets them off when you're sat on your balcony, the 15-minutes that they're barking for does detract from the serenity a little.
+If I had one minor grievance with this place, it's that it's home to three very lovely, but very yappy dogs. 90% of the time they're quiet, but if something sets them off when you're sat on your balcony, the 15-minutes that they're barking for does detract from the serenity a little.
 
-It's a minor issue. I treasure the time that I stayed here, for how at peace I felt by the time I left. If I'm ever in Thailand and the world starts to feel like it's getting on top of me, this is the place I'll come to unwind and let it all go.
+It's a minor issue. I treasure the time that I stayed here for how at peace I felt by the time I left. If I'm ever in Thailand and the world starts to feel like it's getting on top of me, this is the place I'll come to unwind and let it all go.
 
 <ImageGallery images={saikaewResortImages} />
 
@@ -256,7 +257,7 @@ Veganism isn't as common in Thailand as you might expect for a Buddhist country,
 
 So if you've been spoiled by the gluttony of vegan restaurants in tourist hubs like Bangkok and Chiang Mai, it might initially be a bit of a shock how little is obviously on offer in Chiang Rai. However once you settle down and explore a bit, you realise that Chiang Rai does have quite a few good restaurants selling vegan food.
 
-<ExternalLink url="https://www.happycow.net/searchmap?s=3&location=Chiang+Rai%2C+Thailand&metric=mi&limit=81&order=rating&lat=19.9072&lng=99.831&zoom=11&page=1">Happy Cow</ExternalLink> is my go-to resource for finding vegan restaurants in most places in the world, and Chiang Rai is no different. Searching for vegan food on local delivery apps like Grab and FoodPanda is an alternative choice. Even if you have no intention of ordering from the app, it can let you know which places offer vegan food. It's also worth noting the fruit market. It's a short walk from the bus station, and sells whole fruits, but also some pre-cut fruit, sometimes sold mixed as a sort of fruit salad (expect to pay about 50 baht). Getting one of these with some nuts and seeds from 7-11, and you've got a substantial and healthy meal.
+<ExternalLink url="https://www.happycow.net/searchmap?s=3&location=Chiang+Rai%2C+Thailand&metric=mi&limit=81&order=rating&lat=19.9072&lng=99.831&zoom=11&page=1">Happy Cow</ExternalLink> is my go-to resource for finding vegan restaurants in most places in the world, and Chiang Rai is no different. Searching for vegan food on local delivery apps like Grab and FoodPanda is an alternative choice. Even if you have no intention of ordering from the app, it can let you know which places offer vegan food. It's also worth noting the fruit market. It's a short walk from the bus station, and sells whole fruits, but also some pre-cut fruit, often mixed into fruit salad (expect to pay about 50 baht). Getting one of these with some nuts and seeds from 7-11, and you've got a substantial and healthy meal.
 
 Vegan restaurants in Chiang Rai go beyond what I'll mention here, but my favourite places were:
 
@@ -276,9 +277,9 @@ The burger, the bun, even the sauce is homemade with love. And when you eat clea
 
 ### Veg Me Up
 
-This is a juice bar/smoothie bowl cafe, rather than a restaurant. But it makes my list of vegan restaurants in Chiang Rai, just because it was the best place I found to get a my fruit fix.
+This is a juice bar/smoothie bowl cafe rather than a restaurant, but it makes my list of vegan restaurants in Chiang Rai, just because it was the best place I found to get a my fruit fix.
 
-I like to eat a good amount of fruit daily, or at the very least on every other day. There are street vendors sporadically dotted around Chiang Rai selling the usual fruits such as pineapple, watermelon and papaya, and then you can also go to the fruit market. But when you're in the mood for something a little more, Chiang Rai can leave you lacking.
+I like to eat a good amount of fruit everyday, or at the very least on every other day. There are street vendors sporadically dotted around Chiang Rai selling the usual fruits such as pineapple, watermelon and papaya, and then you can also go to the fruit market. But when you're in the mood for something a little more, Chiang Rai can leave you lacking.
 
 Except for Veg Me Up.
 
@@ -342,13 +343,13 @@ I was so happy running here that it was the only place that I ran in Chiang Rai,
 
 However, if you want a big, open space, void of vehicles, within the city itself, this is exactly what you're looking for.
 
-<ImageGallery images={stravaImageArray} />
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Chiang Rai
 
-The whole reason that I opted to come to Chiang Rai, was that after a month in Bangkok and two weeks in Chiang Mai, I wanted a bit of a cleanse of all the tourism. So I didn't come here with the intention of being sociable.
+The whole reason that I opted to come to Chiang Rai, was that after a month in Bangkok and two weeks in Chiang Mai, I wanted a bit of a cleanse of all the tourism, so I didn't come here with the intention of being sociable.
 
-Which was lucky, because the lack of opportunities to be sociable is perhaps the one downside of being here.
+Which is lucky, because the lack of opportunities to be sociable is perhaps the one downside of being here.
 
 I'm not someone who's really confident enough to start conversations with strangers, particularly when sober. So for me to meet people, I do much better at events designed with that purpose. In Bangkok for example, there's an endless line of Meetup events and Facebook groups exactly for that purpose.
 

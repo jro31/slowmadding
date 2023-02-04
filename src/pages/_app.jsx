@@ -1,5 +1,4 @@
 // TODO: Add a 'timeline' page, that visualises my nomadding over time
-// TODO: Update favicon
 
 import { useEffect, useRef } from 'react'
 
