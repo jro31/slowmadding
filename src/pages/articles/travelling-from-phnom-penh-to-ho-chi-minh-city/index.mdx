@@ -2,7 +2,11 @@ import Link from 'next/link'
 
 import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
-// import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/ImageGallery'
+
+import giantIbisPhnomPenhTicketOfficeImage from './giant-ibis-phnom-penh-ticket-office.jpeg'
+
+import giantIbisChargingPortsImage from './giant-ibis-charging-ports.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -10,6 +14,22 @@ export const meta = {
   title: 'Travelling from Phnom Penh to Ho Chi Minh City',
   description: 'Everything you need to know if you want to travel from Phnom Penh to Saigon/Ho Chi Minh City',
 }
+
+export const giantIbisPhnomPenhTicketOfficeImages = [
+  {
+    src: giantIbisPhnomPenhTicketOfficeImage,
+    alt: 'Giant Ibis Phnom Penh ticket office',
+    caption: 'The Giant Ibis ticket office in Phnom Penh'
+  }
+]
+
+export const giantIbisChargingPortsImages = [
+  {
+    src: giantIbisChargingPortsImage,
+    alt: 'Giant Ibis charging ports',
+    caption: 'Only the window seats have charging ports next to them.'
+  }
+]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
@@ -25,7 +45,29 @@ This article is split into three sections:
 
 ## Getting a Vietnam visa
 
-TODO
+At the time of writing, visa-free travel to Vietnam was available to 22 countries, including the UK, however not including the US, Canada, Australia or New Zealand (lol). The number of days entry permitted on a visa exemption varies by country, but for most is 15 days.
+
+By applying for a tourist visa, you'll be permitted to stay in Vietnam for 30 days, so unless you know that you're going to need less than 15, I'd recommend applying for a tourist visa.
+
+Also worth noting that for my trip from Phnom Penh to Ho Chi Minh, there was one person on the bus trying to enter Vietnam on a visa exemption. Although he got in eventually, he was held to the back of the line and the border agent looked very apprehensive about letting him in at all, so be wary.
+
+For most travellers entering as a tourist, you're going to want to arrange a tourist visa in advance. While this can also be done with a travel agent, you can apply online and it's a fairly straight forward process, but note that it takes 3 working days. I applied on a Friday, and it wasn't until the following Wednesday that I had my visa, so don't leave it until the last minute.
+
+To apply, visit the <ExternalLink url='https://evisa.xuatnhapcanh.gov.vn/en_US/web/guest/trang-chu-ttdt'>online portal</ExternalLink>. From here you're going to click through a couple of pages until you get to the application form.
+
+For me, by far the hardest part of this form was setting up my phone to take an acceptable photograph. As all recent passport photos I had were with long hair, but I'd since cut it all off, I needed a new picture so had to put my phone on a book, which was on two pillows, which were on a chair that was on a table, just to get the right height. Then after five hundredth attempt, where I finally wasn't pulling a stupid face, I had an acceptable photograph. You will also need a clear photograph of the details page of your passport.
+
+The rest of the form is fairly self-explanatory with the exception that **you must select the correct entry checkpoint**. It's really not clear which you should select and for this part Google wasn't much help. I ended up just looking at the most obvious road between Phnom Penh and Ho Chi Minh on Google Maps, and picking the entry point off there.
+
+On the assumption that you're taking a bus from Phnom Penh to Ho Chi Minh City, then you want to select **Moc Bai Landport**. You selection here is the _only_ entry point through which you'll be allowed to enter Vietnam, so it is imperetive that you choose correctly.
+
+You must also select your exit checkpoint. This doesn't appear on the final visa that you're issued, and I'd be very surprised if they prevent people from leaving the country because they selected the wrong exit checkpoint (I might be wrong), so if you don't know your exit port at the time of application, just select the most likely one.
+
+Once you've paid the $25 fee, you'll receive an email including your registration code. With this code you can go onto the <ExternalLink url='https://evisa.xuatnhapcanh.gov.vn/tra-cuu-thi-thuc'>E-visa page</ExternalLink> to check your application status, but until the visa is issued, it doesn't give much information, other that your application is pending.
+
+After what should be no more than three working days, you'll receive another email titled _'E - visa Vietnam: Announcement result'_. This email will simply prompt you to go to the same E-visa page as above and to enter your registration code to login, although now your application status should be listed as _'Granted visa'_, and there will be a link to print your visa.
+
+You do need a paper copy of this visa for when you get to the border, so make sure to print it off. As I'll detail below, you'll be able to do so when buying a bus ticket.
 
 ## Travelling to Ho Chi Minh City
 
@@ -37,13 +79,13 @@ What I couldn't decide, was whether this was very smart marketing from them with
 
 Having now travelled with them, I'm going to go out on a limb and say that it's not the latter.
 
-Were they bad? I've had worse, but it was hardly the luxury travel that all these articles claimed it to be.
+Were they bad? I've had worse, but it was hardly the luxury travel that all these articles promised.
 
 Firstly to buy a ticket, you *can* buy online at <ExternalLink url='https://www.giantibis.com/'>giantibis.com</ExternalLink>. Their site is absolute garbage on mobile, so if you are going to book online, make sure to do it on a computer. Personally though, I still prefer to buy tickets in person because it gives you the opportunity to ask any questions about travel time, the border crossing, the number of stops etc., that you can't get online. I'll do my best to answer all those questions here, but even just for printing-off and checking over my Vietnam visa to make sure it had all the details correct, it was worth going into the ticket office.
 
 And it gets a little confusing, because the place where you buy the ticket is no longer where you catch the bus. The ticket office is located <ExternalLink url='https://goo.gl/maps/eVdWcRdebnHKTk8QA'>here</ExternalLink>. A ticket from Phnom Penh to Ho Chi Minh City is $39, and you can pay by card. The staff speak pretty good English and are very helpful in answering any questions you have. Be mindful that there are a lot of surrounding businesses offering bus tickets, so be sure to go into the one for Giant Ibis.
 
-TODO: Add photo of ticket office
+<ImageGallery images={giantIbisPhnomPenhTicketOfficeImages} />
 
 The place that you catch the bus is <ExternalLink url='https://goo.gl/maps/PAuvgadUBtMUo7jW8'>here</ExternalLink>. It's a little out of the way, but a tuk-tuk can get you there pretty quickly. There isn't much going on once you've crossed the river, so you shouldn't expect to any traffic.
 
@@ -59,7 +101,7 @@ Not this time, I didn't get any of that done. I spent the entire journey leaning
 
 I always go for aisle seats. I like to have the freedom to stretch-out a bit more, and the freedom to get up quickly and at a moment's notice. Particularly when we arrive or when we stop somewhere, I don't want to be waiting for the person in the seat next to me to be polite and let everyone else past, I just want to get out. However, with Giant Ibis I would recommend getting a window seat, for the simple reason that only the window seats have electical ports to charge your devices.
 
-TODO: Add photo of charging ports
+<ImageGallery images={giantIbisChargingPortsImages} />
 
 I was able to thread my charger underneath the seat so that I could charge my phone while sitting in the aisle seat, but it certainly wasn't as comfortable as being right next to the plug, so if you have any intention of using your phone to watch movies, then get the window.
 
