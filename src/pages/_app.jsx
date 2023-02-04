@@ -1,5 +1,3 @@
-// TODO: Add a 'timeline' page, that visualises my nomadding over time
-
 import { useEffect, useRef } from 'react'
 
 import Footer from '@/components/Footer'
