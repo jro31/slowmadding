@@ -1,3 +1,9 @@
+// TODO: Update this so that all images load by default?
+// So, for example, the images are all present, but hidden
+// This would have 2 benefits:
+// 1) They would load instantly when scrolling through the image gallery
+// 2) All images would be available for Google; presently only the first image appears in the page source
+
 import { useEffect, useState } from 'react'
 // import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
