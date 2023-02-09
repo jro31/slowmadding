@@ -60,7 +60,7 @@ const Socials = () => {
       </Head>
       <SimpleLayout
         title="Where to find me"
-        intro="I'm not a big user of social media. I don't have Twitter, Snapchat or TikTok, my last Facebook post was more than 6 years ago, and I've deleted Instagram from my phone. However, you might be able to get an idea of where I am and what I'm doing from the following places."
+        intro="I'm not a big user of social media. I don't have Twitter, Snapchat or TikTok, my last Facebook post was more than 6 years ago, and I've deleted Instagram from my phone. However, you might be able to find me in the following places."
       >
         <ul
           role="list"
