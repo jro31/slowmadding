@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About - Jethro Williams</title>
+        <title>About</title>
         <meta name="description" content={Heading} />
       </Head>
       <Container className="mt-16 sm:mt-32">
