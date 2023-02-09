@@ -10,7 +10,7 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import ActivityList from '@/components/ActivityList'
 
 const title =
-  "The good, the bad and the ugly of what I've learned being a nomad"
+  "The good, the bad and the ugly of what I've learned being a digital nomad."
 const description =
   'My thoughts on the best places in the world to sit in a dark room on your computer.'
 
@@ -21,7 +21,7 @@ export default function ArticlesIndex({ articles }) {
         <title>Articles</title>
         <meta name="description" content={`${title} ${description}`} />
       </Head>
-      <SimpleLayout title={title} intro={description}>
+      <SimpleLayout title={title}>
         <ActivityList activities={articles} />
       </SimpleLayout>
     </>

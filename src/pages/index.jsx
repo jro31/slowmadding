@@ -13,7 +13,7 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import collateActivity from '@/lib/collateActivity'
 
-const title = 'Software engineer, digital nomad, failed writer.'
+const title = 'Software engineer, digital nomad, insipid writer.'
 const description =
   "I'm Jethro, a nomadic software engineer. I spend my life moving around to some of the most amazing places in the world, then sit in my room coding all day. These are my stories."
 
@@ -77,7 +77,7 @@ const Home = ({ activities }) => {
       <Container className="mt-9">
         <div className="max-w-2xl">
           <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-            Software engineer, digital nomad, failed writer.
+            {title}
           </h1>
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {description}
