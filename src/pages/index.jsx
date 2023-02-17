@@ -99,12 +99,11 @@ export const getStaticProps = async () => {
     await generateRssFeed()
   }
 
-  // TODO: Update this to only return the last (10) activities
   const collatedActivity = await collateActivity()
 
   return {
     props: {
-      activities: collatedActivity,
+      activities: collatedActivity.slice(0, 5),
     },
   }
 }
