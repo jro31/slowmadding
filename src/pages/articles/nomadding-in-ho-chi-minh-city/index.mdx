@@ -5,12 +5,18 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import rivergateResidenceBedImage from './rivergate-residence/bed.jpeg'
+import rivergateResidenceRoomImage from './rivergate-residence/room.jpeg'
+import rivergateResidenceDeskImage from './rivergate-residence/desk.jpeg'
+import rivergateResidenceRivergateResidenceImage from './rivergate-residence/rivergate-residence.jpeg'
+
 import filthyVeganSundayRoastImage from './filthy-vegan/sunday-roast.jpeg'
 import filthyVeganFullEnglishImage from './filthy-vegan/full-english.jpeg'
 import filthyVeganPizzaImage from './filthy-vegan/pizza.jpeg'
 import filthyVeganBurgerImage from './filthy-vegan/burger.jpeg'
 import filthyVeganBrownieImage from './filthy-vegan/brownie.jpeg'
 import filthyVeganSausageRollImage from './filthy-vegan/sausage-roll.jpeg'
+import filthyVeganOutsideImage from './filthy-vegan/outside.jpeg'
 
 import tueTinChayQuanRiceWithMeatImage from './tue-tin-chay-quan/rice-with-meat.jpeg'
 import tueTinChayQuanSpringRollsImage from './tue-tin-chay-quan/spring-rolls.jpeg'
@@ -23,6 +29,10 @@ import theJoiFactoryVeganBigBiteImage from './the-joi-factory/vegan-big-bite.jpe
 import theJoiFactoryHealthyHeartSmoothieImage from './the-joi-factory/healthy-heart-smoothie.jpeg'
 import theJoiFactoryVeganMiQuangImage from './the-joi-factory/vegan-mi-quang.jpeg'
 import theJoiFactoryBanhMiBiChaImage from './the-joi-factory/banh-mi-bi-cha.jpeg'
+
+import runningDistrict4RiversideStravaImage from './running/district-4-riverside-strava.jpeg'
+import runningSeptember23rdParkStravaImage from './running/september-23rd-park-strava.jpeg'
+import runningTaoDanParkStravaImage from './running/tao-dan-park-strava.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -52,6 +62,29 @@ export const rivergateResidenceDetails = {
     },
   },
 }
+
+export const rivergateResidenceImages = [
+  {
+    src: rivergateResidenceBedImage,
+    alt: 'Rivergate Residence bed',
+    caption: 'You have a double bed, and I quite liked some of the artwork.',
+  },
+  {
+    src: rivergateResidenceRoomImage,
+    alt: 'Rivergate Residence room',
+    caption: "It's a fairly spacious room for a studio. I was able to do (slightly cramped) yoga in the space between the bed and the TV.",
+  },
+  {
+    src: rivergateResidenceDeskImage,
+    alt: 'Rivergate Residence desk',
+    caption: "I've had worse places to setup for the day.",
+  },
+  {
+    src: rivergateResidenceRivergateResidenceImage,
+    alt: 'Rivergate Residence from outside',
+    caption: "On the ground floor there's a WinMart and a 7-11, so getting essentials is easy.",
+  },
+]
 
 export const filthyVeganImages = [
   {
@@ -84,6 +117,11 @@ export const filthyVeganImages = [
     alt: 'Filthy Vegan sausage roll with chips, beans and gravy',
     caption: 'Sausage roll with chips, beans and gravy. Classic Vietnamese food for 230,000 VND.',
   },
+  {
+    src: filthyVeganOutsideImage,
+    alt: 'Filthy Vegan from outside',
+    caption: "Filthy Vegan is on the second floor. It can feel slightly like you're walking into someone's house, but the locals who work downstairs are very welcoming, then you'll see a staircase to your right as you go in."
+  }
 ]
 
 export const tueTinChayQuanImages = [
@@ -142,6 +180,27 @@ export const theJoiFactoryImages = [
   },
 ]
 
+export const runningImages = [
+  {
+    src: runningDistrict4RiversideStravaImage,
+    alt: 'District 4 riverside Strava map',
+    caption: 'My run along the district 4 riverside',
+    url: 'https://www.strava.com/activities/8415478622',
+  },
+  {
+    src: runningSeptember23rdParkStravaImage,
+    alt: 'September 23rd Park Strava map',
+    caption: 'September 23rd Park',
+    url: 'https://www.strava.com/activities/8468754705',
+  },
+  {
+    src: runningTaoDanParkStravaImage,
+    alt: 'Tao Dan Park Strava map',
+    caption: 'My Tao Dan Park run',
+    url: 'https://www.strava.com/activities/8496310046',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -161,6 +220,8 @@ It certainly wasn't for me, but if you're into overpriced food and pretentiousne
 <AccommodationTable details={rivergateResidenceDetails} />
 
 TODO
+
+<ImageGallery images={rivergateResidenceImages} />
 
 ## Where to get vegan food in Ho Chi Minh City
 
@@ -220,13 +281,13 @@ If you want to do any cooking while you're in Ho Chi Minh, then Thái Hòa is th
 
 I'll be blunt: This is not a running-friendly city.
 
-When I booked my room, I looked at a map and thought that Tao Dan Park park would be a short enough walk and of a sufficient size to go running. And while it was the best of a very uninspiring list of places that I ran while I was here, I found out the hard way that it's not always open to the public.
+When I booked my room, I looked at a map and thought that Tao Dan Park park would be a short enough walk and of sufficient size to go running. And while it was the best of a very uninspiring list of places that I ran while I was here, I found out the hard way that it's not always open to the public.
 
 From when I arrived, the park was closed in preparation for Tet (Vietnamese New Year) celebrations more than a week away, so in the mean time I had to find alternatives.
 
 Places that I heard about as potentially being good for running, were <ExternalLink url='https://goo.gl/maps/aoMJcbvKr9YMoL8S8'>Sala Park Urban area</ExternalLink>, <ExternalLink url='https://goo.gl/maps/PHT1cUtQS3jRN19q6'>Vinhomes Central Park</ExternalLink> and <ExternalLink url='https://goo.gl/maps/DLkdDh2fSxpeyLRM7'>Phu Tho Stadium</ExternalLink>. All were sufficiently far from where I was staying that I didn't try running in them.
 
-Instead I tried to find alternatives closer to home, with dubious results. None were very enjoyab le places to run, so I ran as little as I felt I could get away with while in Ho Chi Minh, while still maintaining some remnants of fitness.
+Instead I tried to find alternatives closer to home, with dubious results. None were very enjoyable places to run, so I ran as little as I felt I could get away with while in Ho Chi Minh, while still maintaining some remnants of fitness.
 
 ### District 4 riverside
 
@@ -236,9 +297,7 @@ Unfortunately, with a main road on one side and the very polluted river on the o
 
 Certain areas of the path, particularly under bridges, also house many homeless people, which isn't really a problem. I didn't at any point feel unsafe, just a bit bad that I was going running through the place that they call home.
 
-My starting point was mid-way along the river. I began by going south-west until the path ran out. I then turned around and went north-east until I met the same fate. I then turned around and went south-west again until I was back where I started. That came to just over 5km, so for all its flaws, the one advantage this route has over the other places on this list is that you don't have to cross the same ground over and over and over again. And if you're staying where I'm staying, and convenience is a factor to you, then you can't get a more convenient route than this. It's right outside the building. Still not a run I'd recommend though.
-
-TODO
+My starting point was mid-way along the river. I began by going south-west until the path ran out. I then turned around and went north-east until I met the same fate. I then turned around and went south-west again until I was back where I started. That came to just over 5km, so for all its flaws, the one advantage this route has over the other places on this list is that you don't have to cross the same ground over and over and over again. And if you're staying where I was staying and convenience is a factor to you, then you can't get a more convenient route than this. It's right outside the building. Still not a run I'd recommend.
 
 ### September 23rd Park
 
@@ -247,6 +306,8 @@ TODO
 ### Tao Dan Park
 
 TODO
+
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Ho Chi Minh City
 
