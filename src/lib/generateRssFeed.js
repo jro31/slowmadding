@@ -1,8 +1,3 @@
-// TODO: Remove this?
-// If you are going to keep it:
-// 1) Test that it works
-// 2) You'll need to uncomment the relevant lines in src/pages/index.jsx
-
 import ReactDOMServer from 'react-dom/server'
 import { Feed } from 'feed'
 import { mkdir, writeFile } from 'fs/promises'
@@ -13,13 +8,14 @@ export async function generateRssFeed() {
   let articles = await getAllArticles()
   let siteUrl = process.env.NEXT_PUBLIC_SITE_URL
   let author = {
-    name: 'Spencer Sharp',
-    email: 'spencer@planetaria.tech',
+    name: 'Jethro Williams',
+    email: 'contact@slowmadding.com',
   }
 
   let feed = new Feed({
     title: author.name,
-    description: 'Your blog description',
+    description:
+      'My thoughts on the best places in the world to sit in a dark room on your computer',
     author,
     id: siteUrl,
     link: siteUrl,
@@ -33,7 +29,7 @@ export async function generateRssFeed() {
   })
 
   for (let article of articles) {
-    let url = `${siteUrl}/articles/${article.slug}`
+    let url = `${siteUrl}${article.url}`
     let html = ReactDOMServer.renderToStaticMarkup(
       <article.component isRssFeed />
     )
