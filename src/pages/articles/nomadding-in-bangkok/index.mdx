@@ -1,7 +1,13 @@
 import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
-// import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/ImageGallery'
+
+import nandhaHotelRoomImage from './nandha-hotel/room.jpeg'
+
+import vCheckInnDeskImage from './v-check-inn/desk.jpeg'
+import vCheckInnBedImage from './v-check-inn/bed.jpeg'
+import vCheckInnBalconyImage from './v-check-inn/balcony.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -71,6 +77,32 @@ export const roomQuestDetails = {
   },
 }
 
+export const nandhaHotelImages = [
+  {
+    src: nandhaHotelRoomImage,
+    alt: 'Nandha Hotel Classic Superior Double Room',
+    caption: "It's a pretty big room. Plenty of space for exercise.",
+  }
+]
+
+export const vCheckInnImages = [
+  {
+    src: vCheckInnDeskImage,
+    alt: 'V Check Inn desk',
+    caption: 'The desk was a good place to setup your laptop and work for the day.'
+  },
+  {
+    src: vCheckInnBedImage,
+    alt: 'V Check Inn bed',
+    caption: 'Comfortable bed.'
+  },
+  {
+    src: vCheckInnBalconyImage,
+    alt: 'V Check Inn balcony',
+    caption: "The standout feature of the room was the balcony. It was huge, and you got a great view. I'd often come out here to eat, or to sit and think."
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -85,7 +117,7 @@ The first is that although in 95% of cases you can rent an Airbnb or equivalent 
 
 You won't face any legal repercussions; it is the landlord who is renting to you illegally. But you may well be kicked-out of the building that you're staying at and find yourself homeless.
 
-When I was living in Bangkok, the building I lived at strictly enforced this law. There were signs everywhere, telling short-term renters that they were not welcome and were there illegally, and every year when I renewed my contract with the landlord, getting the juristic office to reactivate my keycard for another year was a massive hassle of them reading over the contract and checking my passport.
+When I was living in Bangkok, the building I lived at strictly enforced this law. There were signs everywhere telling short-term renters that they were not welcome and were there illegally, and every year when I renewed my contract with the landlord, getting the juristic office to reactivate my keycard for another year was a massive hassle of them reading over the contract and checking my passport.
 
 I didn't mind it, because as a long-term resident, I didn't want the property to be used as a hotel. But it also highlighted to me the risks of using Airbnb in Thailand.
 
@@ -105,11 +137,15 @@ How strictly you choose to abide by this law is up to you. But within reason, I 
 
 TODO
 
+<ImageGallery images={nandhaHotelImages} />
+
 ### V Check Inn Sukhumvit 22
 
 <AccommodationTable details={vCheckInnDetails} />
 
 TODO
+
+<ImageGallery images={vCheckInnImages} />
 
 ### RoomQuest Sukhumvit 36
 
