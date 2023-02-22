@@ -5,6 +5,8 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import citySunsetImage from './city/sunset.jpeg'
+
 import rivergateResidenceBedImage from './rivergate-residence/bed.jpeg'
 import rivergateResidenceRoomImage from './rivergate-residence/room.jpeg'
 import rivergateResidenceDeskImage from './rivergate-residence/desk.jpeg'
@@ -34,6 +36,8 @@ import runningDistrict4RiversideStravaImage from './running/district-4-riverside
 import runningSeptember23rdParkStravaImage from './running/september-23rd-park-strava.jpeg'
 import runningTaoDanParkStravaImage from './running/tao-dan-park-strava.jpeg'
 
+import socialisingWalkingStreetImage from './socialising/walking-street.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-01-27T15:00:00+07:00', // TODO: Update this
@@ -62,6 +66,14 @@ export const rivergateResidenceDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: citySunsetImage,
+    alt: 'Sunset taken from Rivergate Residence',
+    caption: 'Sunset over Ho Chi Minh City, taken from the 7th floor of Rivergate Residence.'
+  }
+]
 
 export const rivergateResidenceImages = [
   {
@@ -201,11 +213,19 @@ export const runningImages = [
   },
 ]
 
+export const socialisingImages = [
+  {
+    src: socialisingWalkingStreetImage,
+    alt: 'Partying on Bui Vien Walking Street',
+    caption: "On Bui Vien Walking Street. I'm not sure why no one else looks happy."
+  }
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-TODO: Add miscellaneous HCMC photos?
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
@@ -312,3 +332,5 @@ TODO
 ## Being sociable in Ho Chi Minh City
 
 TODO
+
+<ImageGallery images={socialisingImages} />
