@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+import { renderToString } from 'react-dom/server'
+
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
+
+import useArticleHeadings from '@/hooks/use-article-headings'
 
 const ArrowLeftIcon = (props) => {
   return (
@@ -24,6 +28,17 @@ const ArticleLayout = ({
   isRssFeed = false,
   previousPathname,
 }) => {
+  const articleHeadings = useArticleHeadings()
+
+  const contentString = renderToString(children)
+  console.log(contentString)
+
+  articleHeadings(contentString)
+
+  // It is possible to isolate article headings, as done above
+  // It should therefore be possible to automatically add a menu that links to each heading at the top of each article
+  // Probably in a separate hook, which uses useArticleHeadings
+
   let router = useRouter()
 
   if (isRssFeed) {
