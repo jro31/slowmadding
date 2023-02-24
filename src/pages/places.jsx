@@ -33,12 +33,12 @@ const Places = () => {
         />
       </Head>
       <SimpleLayout
-        title="Where I've been and what I thought of it"
+        title="Where I've been as a digital nomad and what I thought of it"
         intro="A summary of digital nomad destinations."
       >
         <div className="no-scrollbar relative overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 dark:border-zinc-700/40">
-          <div className="grid w-full grid-cols-[100px_repeat(6,200px)] items-center justify-items-center">
-            <div className="sticky left-0 h-full w-full bg-white pl-6 dark:bg-zinc-900"></div>
+          <div className="grid w-min grid-cols-[minmax(min-content,1fr)_repeat(6,minmax(150px,2fr))] items-center justify-items-center">
+            <div className="sticky left-0 h-full w-full bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900"></div>
             <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
               Affordable
             </div>
@@ -57,7 +57,7 @@ const Places = () => {
             <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
               Affordable
             </div>
-            <div className="sticky left-0 w-full justify-self-start bg-white pl-6 dark:bg-zinc-900">
+            <div className="sticky left-0 w-full justify-self-start bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900">
               <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 Bangkok
               </div>
