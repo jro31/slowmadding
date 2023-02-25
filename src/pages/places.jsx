@@ -1,9 +1,13 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
 
+import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { XCircleIcon } from '@heroicons/react/24/outline'
+
 import SimpleLayout from '@/components/SimpleLayout'
 
 const thailand = 'Thailand'
+const vietnam = 'Vietnam'
 
 const place = 'place'
 const country = 'country'
@@ -64,11 +68,40 @@ const placesData = [
     },
     [articlePath]: '',
   },
+  {
+    [place]: 'Ho Chi Minh City',
+    [country]: vietnam,
+    [lastVisited]: '2023',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+      },
+      [internet]: {
+        [verdict]: false,
+      },
+      [running]: {
+        [verdict]: false,
+      },
+      [veganFood]: {
+        [verdict]: true,
+      },
+      [safe]: {
+        [verdict]: true,
+      },
+      [social]: {
+        [verdict]: true,
+      },
+      [walking]: {
+        [verdict]: false,
+      },
+    },
+    [articlePath]: '',
+  },
 ]
 
-const gridColsClass = `grid-cols-[minmax(min-content,1fr)_repeat(${
+const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
-},minmax(150px,2fr))]` // grid-cols-[minmax(min-content,1fr)_repeat(7,minmax(150px,2fr))]
+},minmax(150px,2fr))]` // grid-cols-[minmax(159px,1fr)_repeat(7,minmax(150px,2fr))]
 
 const Places = () => {
   return (
@@ -97,30 +130,41 @@ const Places = () => {
                 {heading}
               </div>
             ))}
-            {placesData.map((placeData) => (
-              <Fragment key={`${placeData[place]}-${placeData[country]}-data`}>
-                <div className="sticky left-0 w-full justify-self-start bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900">
-                  <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                    {placeData[place]}
+            {placesData
+              .sort((a, b) =>
+                a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0
+              )
+              .map((placeData) => (
+                <Fragment
+                  key={`${placeData[place]}-${placeData[country]}-data`}
+                >
+                  <div className="sticky left-0 w-full justify-self-start bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900">
+                    <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                      {placeData[place]}
+                    </div>
+                    <div className="text-xs text-zinc-500 dark:text-zinc-400">
+                      {placeData[country]}
+                    </div>
                   </div>
-                  <div className="text-xs text-zinc-500 dark:text-zinc-400">
-                    {placeData[country]}
-                  </div>
-                </div>
-                {Object.keys(placeData[criteria]).map((criterion) => (
-                  <div
-                    key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
-                  >
-                    {placeData[criteria][criterion][verdict] ? '✅' : '❌'}
-                  </div>
-                ))}
-              </Fragment>
-            ))}
+                  {Object.keys(placeData[criteria]).map((criterion) => (
+                    <div
+                      key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
+                    >
+                      {placeData[criteria][criterion][verdict] ? (
+                        <CheckCircleIcon className="h-8 w-8 text-zinc-900 dark:text-zinc-100" />
+                      ) : (
+                        <XCircleIcon className="h-8 w-8 text-zinc-500 dark:text-zinc-400" />
+                      )}
+                    </div>
+                  ))}
+                </Fragment>
+              ))}
           </div>
         </div>
 
-        {/* TODO: Add a table - This displays the 'verdicts' as ✅ or ❌. Hover over an icon to display the description */}
-        {/* It'd be cool for smaller screens, if the left column stays in place while the rest of the table scrolls horizontally */}
+        {/* TODO: Give the table a maximum height (something smaller than 100vh, although perhaps also give a min for very small screens (like a landscape mobile)), then stick the headings to the top of it when scrolling vertically (just like the place is stuck to the left when scrolling horizontally) */}
+        {/* That way when it grows sufficiently, or when on a smaller screen, you'll be able to see what criteria you're looking at */}
+        {/* TODO: Hover over an icon to display the description? */}
         {/* TODO: Add a section about each place, with the verdict and description for each criteria. Possibly also add a summary here. */}
       </SimpleLayout>
     </>
