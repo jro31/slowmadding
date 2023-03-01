@@ -6,98 +6,14 @@ import { XCircleIcon } from '@heroicons/react/24/outline'
 
 import SimpleLayout from '@/components/SimpleLayout'
 
-const thailand = 'Thailand'
-const vietnam = 'Vietnam'
-
-const place = 'place'
-const country = 'country'
-const lastVisited = 'lastVisited'
-const criteria = 'criteria'
-const articlePath = 'articlePath'
-
-const affordable = 'affordable'
-const internet = 'internet'
-const running = 'running'
-const veganFood = 'veganFood'
-const safe = 'safe'
-const social = 'social'
-const walking = 'walking'
-
-const verdict = 'verdict'
-const description = 'description'
-
-const criteriaHeadings = {
-  [affordable]: 'Affordable',
-  [internet]: 'Fast and reliable Internet',
-  [running]: 'Good places to run',
-  [veganFood]: 'Good availability and variety of vegan food',
-  [safe]: 'Safe',
-  [social]: 'Sufficient social opportunities',
-  [walking]: 'Pleasant to walk around',
-}
-
-const placesData = [
-  {
-    [place]: 'Bangkok',
-    [country]: thailand,
-    [lastVisited]: '2022',
-    [criteria]: {
-      [affordable]: {
-        [verdict]: true,
-        [description]: 'Bangkok is very affordable because...',
-      },
-      [internet]: {
-        [verdict]: true,
-        [description]: 'The Internet in Bangkok is...',
-      },
-      [running]: {
-        [verdict]: true,
-      },
-      [veganFood]: {
-        [verdict]: true,
-      },
-      [safe]: {
-        [verdict]: true,
-      },
-      [social]: {
-        [verdict]: true,
-      },
-      [walking]: {
-        [verdict]: true,
-      },
-    },
-    [articlePath]: '',
-  },
-  {
-    [place]: 'Ho Chi Minh City',
-    [country]: vietnam,
-    [lastVisited]: '2023',
-    [criteria]: {
-      [affordable]: {
-        [verdict]: true,
-      },
-      [internet]: {
-        [verdict]: false,
-      },
-      [running]: {
-        [verdict]: false,
-      },
-      [veganFood]: {
-        [verdict]: true,
-      },
-      [safe]: {
-        [verdict]: true,
-      },
-      [social]: {
-        [verdict]: true,
-      },
-      [walking]: {
-        [verdict]: false,
-      },
-    },
-    [articlePath]: '',
-  },
-]
+import {
+  country,
+  criteria,
+  criteriaHeadings,
+  place,
+  placesData,
+  verdict,
+} from '@/lib/placesData'
 
 const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
