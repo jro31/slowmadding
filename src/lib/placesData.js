@@ -17,7 +17,7 @@ const social = 'social'
 const walking = 'walking'
 
 export const verdict = 'verdict'
-const description = 'description'
+export const description = 'description'
 
 export const criteriaHeadings = {
   [affordable]: 'Affordable',
@@ -206,4 +206,4 @@ export const placesData = [
     },
     [articlePath]: '',
   },
-]
+].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))
