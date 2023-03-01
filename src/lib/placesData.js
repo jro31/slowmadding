@@ -6,7 +6,7 @@ export const place = 'place'
 export const country = 'country'
 const lastVisited = 'lastVisited'
 export const criteria = 'criteria'
-const articlePath = 'articlePath'
+export const articlePath = 'articlePath'
 
 const affordable = 'affordable'
 const internet = 'internet'
@@ -59,7 +59,7 @@ export const placesData = [
         [verdict]: true,
       },
     },
-    [articlePath]: '',
+    [articlePath]: '#',
   },
   {
     [place]: 'Chiang Mai',
@@ -88,7 +88,7 @@ export const placesData = [
         [verdict]: false,
       },
     },
-    [articlePath]: '',
+    [articlePath]: null,
   },
   {
     [place]: 'Chiang Rai',
@@ -117,7 +117,7 @@ export const placesData = [
         [verdict]: true,
       },
     },
-    [articlePath]: '',
+    [articlePath]: null,
   },
   {
     [place]: 'Ho Chi Minh City',
@@ -146,7 +146,7 @@ export const placesData = [
         [verdict]: false,
       },
     },
-    [articlePath]: '',
+    [articlePath]: null,
   },
   {
     [place]: 'Phnom Penh',
@@ -175,7 +175,7 @@ export const placesData = [
         [verdict]: false,
       },
     },
-    [articlePath]: '',
+    [articlePath]: null,
   },
   {
     [place]: 'Siem Reap',
@@ -204,6 +204,6 @@ export const placesData = [
         [verdict]: true,
       },
     },
-    [articlePath]: '',
+    [articlePath]: null,
   },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))

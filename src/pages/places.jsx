@@ -7,6 +7,7 @@ import { XCircleIcon } from '@heroicons/react/24/outline'
 import SimpleLayout from '@/components/SimpleLayout'
 
 import {
+  articlePath,
   country,
   criteria,
   criteriaHeadings,
@@ -32,7 +33,8 @@ const placeDataContainsDescription = (placeData) =>
     .flat()
     .includes(description)
 
-// What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
+// TODO: What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
+// WOuld be even cooler if when mousing-over a verdict icon, that place and criteria were highlighted (and all the cells in between?)
 const PlacesTable = () => {
   return (
     // Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether.
@@ -124,21 +126,30 @@ const PlaceSection = ({ placeData, children }) => {
       aria-labelledby={titleId}
       className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
     >
-      <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
-        {/* TODO: Should link to the article URL if one exists */}
-        {/* Or perhaps it should actually be the entire card that links to it, like with articles except this includes the left section */}
-        <h2 id={titleId} className="flex flex-col">
-          <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
-            {placeData[place]}
-          </span>
-          <span className="text-xs text-zinc-500 dark:text-zinc-400">
-            {placeData[country]}
-          </span>
-        </h2>
-
+      <div className="group relative grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+        <PlaceSectionHeadingContainer
+          articlePath={placeData[articlePath] || null}
+        >
+          <h2 id={titleId} className="flex flex-col">
+            <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
+              {placeData[place]}
+            </span>
+            <span className="text-xs text-zinc-500 dark:text-zinc-400">
+              {placeData[country]}
+            </span>
+          </h2>
+        </PlaceSectionHeadingContainer>
         <div className="md:col-span-3">{children}</div>
       </div>
     </section>
+  )
+}
+
+const PlaceSectionHeadingContainer = ({ articlePath, children }) => {
+  return articlePath ? (
+    <Card.Link href={articlePath}>{children}</Card.Link>
+  ) : (
+    children
   )
 }
 
