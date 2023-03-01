@@ -33,7 +33,8 @@ const Places = () => {
         title="Where I've been as a digital nomad and what I thought of it"
         intro="A massive oversimplification of each place as a digital nomad destination."
       >
-        <div className="no-scrollbar relative h-[75vh] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40">
+        {/* Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether. */}
+        <div className="no-scrollbar relative h-[75vh] max-h-[34rem] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40">
           <div
             className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
           >
