@@ -51,7 +51,7 @@ const LinkIcon = (props) => {
   )
 }
 
-const Socials = (props) => {
+const Socials = () => {
   return (
     <>
       <Head>
@@ -66,7 +66,7 @@ const Socials = (props) => {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {props.platforms.map((platform) => (
+          {platforms.map((platform) => (
             <Card as="li" key={platform.name} className="justify-between">
               <div>
                 <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
@@ -98,11 +98,3 @@ const Socials = (props) => {
 }
 
 export default Socials
-
-export const getStaticProps = async () => {
-  return {
-    props: {
-      platforms: platforms,
-    },
-  }
-}
