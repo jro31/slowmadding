@@ -33,15 +33,15 @@ const Places = () => {
         title="Where I've been as a digital nomad and what I thought of it"
         intro="A massive oversimplification of each place as a digital nomad destination."
       >
-        <div className="no-scrollbar relative overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 dark:border-zinc-700/40">
+        <div className="no-scrollbar relative h-[75vh] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40">
           <div
             className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
           >
-            <div className="sticky left-0 h-full w-full bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900"></div>
+            <div className="sticky left-0 top-0 z-10 h-full w-full bg-white px-6 pt-6 dark:bg-zinc-900"></div>
             {Object.values(criteriaHeadings).map((heading) => (
               <div
                 key={`${heading}-table-heading`}
-                className="self-end text-center text-sm font-medium text-zinc-900 dark:text-zinc-100"
+                className="sticky top-0 h-full bg-white pt-6 text-center text-sm font-medium text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100"
               >
                 {heading}
               </div>
@@ -54,7 +54,7 @@ const Places = () => {
                 <Fragment
                   key={`${placeData[place]}-${placeData[country]}-data`}
                 >
-                  <div className="sticky left-0 w-full justify-self-start bg-gradient-to-r from-white via-white to-transparent px-6 dark:from-zinc-900 dark:via-zinc-900">
+                  <div className="sticky left-0 w-full justify-self-start bg-white px-6 dark:bg-zinc-900">
                     <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                       {placeData[place]}
                     </div>

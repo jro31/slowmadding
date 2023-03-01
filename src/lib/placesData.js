@@ -62,6 +62,64 @@ export const placesData = [
     [articlePath]: '',
   },
   {
+    [place]: 'Chiang Mai',
+    [country]: thailand,
+    [lastVisited]: '2022',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+      },
+      [internet]: {
+        [verdict]: true,
+      },
+      [running]: {
+        [verdict]: false,
+      },
+      [veganFood]: {
+        [verdict]: true,
+      },
+      [safe]: {
+        [verdict]: true,
+      },
+      [social]: {
+        [verdict]: true,
+      },
+      [walking]: {
+        [verdict]: false,
+      },
+    },
+    [articlePath]: '',
+  },
+  {
+    [place]: 'Chiang Rai',
+    [country]: thailand,
+    [lastVisited]: '2022',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+      },
+      [internet]: {
+        [verdict]: true,
+      },
+      [running]: {
+        [verdict]: true,
+      },
+      [veganFood]: {
+        [verdict]: false,
+      },
+      [safe]: {
+        [verdict]: true,
+      },
+      [social]: {
+        [verdict]: false,
+      },
+      [walking]: {
+        [verdict]: true,
+      },
+    },
+    [articlePath]: '',
+  },
+  {
     [place]: 'Ho Chi Minh City',
     [country]: vietnam,
     [lastVisited]: '2023',
@@ -115,6 +173,35 @@ export const placesData = [
       },
       [walking]: {
         [verdict]: false,
+      },
+    },
+    [articlePath]: '',
+  },
+  {
+    [place]: 'Siem Reap',
+    [country]: cambodia,
+    [lastVisited]: '2023',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+      },
+      [internet]: {
+        [verdict]: true,
+      },
+      [running]: {
+        [verdict]: true,
+      },
+      [veganFood]: {
+        [verdict]: true,
+      },
+      [safe]: {
+        [verdict]: true,
+      },
+      [social]: {
+        [verdict]: true,
+      },
+      [walking]: {
+        [verdict]: true,
       },
     },
     [articlePath]: '',
