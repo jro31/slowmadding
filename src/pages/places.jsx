@@ -32,6 +32,7 @@ const placeDataContainsDescription = (placeData) =>
     .flat()
     .includes(description)
 
+// What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
 const PlacesTable = () => {
   return (
     // Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether.
@@ -64,17 +65,23 @@ const PlacesTable = () => {
               <div
                 key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
               >
-                {placeData[criteria][criterion][verdict] ? (
-                  <CheckCircleIcon className="h-8 w-8 text-zinc-900 dark:text-zinc-100" />
-                ) : (
-                  <XCircleIcon className="h-8 w-8 text-zinc-500 dark:text-zinc-400" />
-                )}
+                <VerdictIcon
+                  verdict={placeData[criteria][criterion][verdict]}
+                />
               </div>
             ))}
           </Fragment>
         ))}
       </div>
     </div>
+  )
+}
+
+const VerdictIcon = ({ verdict }) => {
+  return verdict ? (
+    <CheckCircleIcon className="h-8 w-8 text-zinc-900 dark:text-zinc-100" />
+  ) : (
+    <XCircleIcon className="h-8 w-8 text-zinc-500 dark:text-zinc-400" />
   )
 }
 
@@ -95,6 +102,7 @@ const PlacesDetails = () => {
                       <PlaceDetail
                         key={`${placeData[place]}-${placeData[country]}-${criterion}-details`}
                         criterion={criterion}
+                        verdict={placeData[criteria][criterion][verdict]}
                       >
                         {placeData[criteria][criterion][description]}
                       </PlaceDetail>
@@ -117,6 +125,8 @@ const PlaceSection = ({ placeData, children }) => {
       className="md:border-l md:border-zinc-100 md:pl-6 md:dark:border-zinc-700/40"
     >
       <div className="grid max-w-3xl grid-cols-1 items-baseline gap-y-8 md:grid-cols-4">
+        {/* TODO: Should link to the article URL if one exists */}
+        {/* Or perhaps it should actually be the entire card that links to it, like with articles except this includes the left section */}
         <h2 id={titleId} className="flex flex-col">
           <span className="text-sm font-semibold text-zinc-800 dark:text-zinc-100">
             {placeData[place]}
@@ -132,10 +142,13 @@ const PlaceSection = ({ placeData, children }) => {
   )
 }
 
-const PlaceDetail = ({ criterion, children }) => {
+const PlaceDetail = ({ criterion, verdict, children }) => {
   return (
     <Card as="li">
-      <Card.Title as="h3">{criteriaHeadings[criterion]}</Card.Title>
+      <div className="flex gap-3">
+        <Card.Title as="h3">{criteriaHeadings[criterion]}</Card.Title>
+        <VerdictIcon verdict={verdict} />
+      </div>
       <Card.Description>{children}</Card.Description>
     </Card>
   )
@@ -158,7 +171,7 @@ const Places = () => {
         <PlacesTable />
         <PlacesDetails />
         {/* TODO: Hover over an icon to display the description? / Or perhaps link to that section in the description */}
-        {/* TODO: Add a section about each place, with the verdict and description for each criteria. Possibly also add a summary here. */}
+        {/* TODO: The 'lastVisited' date isn't currently used anywhere. Either use it, or remove it from the placesData */}
       </SimpleLayout>
     </>
   )
