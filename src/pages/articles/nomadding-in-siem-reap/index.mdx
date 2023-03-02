@@ -5,8 +5,17 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityWheelchairFriendlyImage from './city/wheelchair-friendly.jpeg'
+
 import chhaysPlaceToiletPaperImage from './chhays-place/toilet-paper.jpeg'
 import chhaysPlaceRoadImage from './chhays-place/road.jpeg'
+
+import angkorMarketStorefrontImage from './angkor-market/storefront.jpeg'
+import angkorMarketVeganCheeseImage from './angkor-market/vegan-cheese.jpeg'
+import angkorMarketVeganMayoImage from './angkor-market/vegan-mayo.jpeg'
+
+import duckbarAndMinimartKillerPool1Image from './duckbar-and-minimart/killer-pool-1.jpeg'
+import duckbarAndMinimartKillerPool2Image from './duckbar-and-minimart/killer-pool-2.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -35,17 +44,56 @@ export const chhaysPlaceDetails = {
   },
 }
 
+export const cityImages = [
+  {
+    src: cityWheelchairFriendlyImage,
+    alt: 'Wheelchair friendly street with bicycle lane in Siem Reap',
+    caption: 'Siem Reap has an extensive network of wheelchair friendly pavements and bicycle lanes.',
+  },
+]
+
 export const chhaysPlaceImages = [
   {
     src: chhaysPlaceToiletPaperImage,
     alt: "Toilet paper dispenser at Chhay's place",
-    caption: 'For that authentic public toilet experience at home. If I had to make one criticism of this place, this is it.'
+    caption: 'For that authentic public toilet experience at home. If I had to make one criticism of this place, this is it.',
   },
   {
     src: chhaysPlaceRoadImage,
     alt: "The road to Chhay's place",
-    caption: 'It can be quite a hard place to find. You turn down this road between the school on your right, and the partially constructed white building on your left, walk to the end of the road (about 200 metres), turn right and walk about 10 more metres, and the Airbnb is on your left.'
+    caption: 'It can be quite a hard place to find. You turn down this road between the school on your right, and the partially constructed white building on your left, walk to the end of the road (about 200 metres), turn right and walk about 10 more metres, and the Airbnb is on your left.',
+  },
+]
+
+export const angkorMarketImages = [
+  {
+    src: angkorMarketStorefrontImage,
+    alt: 'Angkor Market Siem Reap storefront',
+    caption: 'Angkor Market from the outside.',
+  },
+  {
+    src: angkorMarketVeganCheeseImage,
+    alt: 'Angkor Market vegan cheese',
+    caption: "This is the only supermarket in South-East Asia I've found that sells vegan cheese, albeit rather expensively. The Cheddar flavour block is $6.90, and the slices are $6.50.",
+  },
+  {
+    src: angkorMarketVeganMayoImage,
+    alt: 'Angkor Market vegan mayo',
+    caption: 'They also have vegan mayo and vegan aioli, whatever that is, priced $5.70.'
   }
+]
+
+export const duckbarAndMinimartImages = [
+  {
+    src: duckbarAndMinimartKillerPool1Image,
+    alt: 'Duckbar and Minimart killer pool',
+    caption: "The inaugural killer pool night at Duckbar and Minimart.",
+  },
+  {
+    src: duckbarAndMinimartKillerPool2Image,
+    alt: 'Duckbar and Minimart killer pool',
+    caption: "I'm not sure what he's aiming at either.",
+  },
 ]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -74,6 +122,8 @@ I will add the caveat that there is very little here resmbling Khmer culture. Pe
 
 TODO: Add more?
 
+<ImageGallery images={cityImages} />
+
 ## Where I stayed
 
 ### Modern Furnished Apartment In Siem Reap Center
@@ -95,6 +145,14 @@ Whenever I go somewhere new, I'll look up loads of restaurants that I want to go
 On coming to Siem Reap, as usual I saved a list of places I wanted to eat at. There were [21] different restaurants on my list. Except this time, I promised myself that I wouldn't go back to any of them, until I'd been to each one once...
 
 TODO
+
+### Angkor Market
+
+TODO
+
+<ImageGallery images={angkorMarketImages} />
+
+<ExternalLink url='https://goo.gl/maps/YkZN1xW9LWcW93hc7'>View Angkor Market on Google Maps</ExternalLink>
 
 ## Where to run in Siem Reap
 
@@ -136,6 +194,6 @@ The one downside, for me at least, is that seemingly every other person here was
 
 It's an open store/bar, and very well ventilated, but I still found that part of it slightly unpleasant. Not enough to stop me going back again though.
 
-<ExternalLink url='https://www.facebook.com/profile.php?id=100089051799134'>Visit Duckbar and Minimart on Facebook</ExternalLink>
+<ImageGallery images={duckbarAndMinimartImages} />
 
-TODO
+<ExternalLink url='https://www.facebook.com/profile.php?id=100089051799134'>Visit Duckbar and Minimart on Facebook</ExternalLink>
