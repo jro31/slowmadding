@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-// import Image from 'next/image'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 import useScreenWidth from '@/hooks/use-screen-width'
@@ -72,17 +71,16 @@ const ImageGallery = ({ images }) => {
           )}
         </div>
         <div className="flex h-full items-center justify-center">
-          {/* <Image
-            src={images[imageIndex].src}
-            alt={images[imageIndex].alt}
-            height={galleryHeight}
-            unoptimized
-          /> */}
-          <img
-            src={images[imageIndex].src.src}
-            alt={images[imageIndex].alt}
-            className="h-full"
-          />
+          {images.map((image, index) => (
+            <img
+              key={image.src.src}
+              src={image.src.src}
+              alt={image.alt}
+              className={`h-full w-auto${
+                index === imageIndex ? '' : ' hidden'
+              }`}
+            />
+          ))}
         </div>
       </div>
       <LinkWrapper url={images[imageIndex].url}>

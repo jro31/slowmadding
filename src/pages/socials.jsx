@@ -11,7 +11,7 @@ const platforms = [
   {
     name: 'Happy Cow',
     description:
-      'Happy Cow is a directory of places around the world to get vegan/vegetarian food. Such a resource is invaluable to me while travelling, so I do what I can to give back by adding photos and reviews of the restaurants that I go to.',
+      'Happy Cow is a directory of places around the world to get vegan/vegetarian food. Such a resource is invaluable to me while travelling, so I do what I can to give back by adding photos and reviews of the restaurants that I go to. This is probably my most active social media.',
     link: {
       href: 'https://www.happycow.net/members/profile/Jrosworld',
       label: 'happycow.net',
@@ -31,7 +31,7 @@ const platforms = [
   {
     name: 'Instagram',
     description:
-      "I don't post there often. But that means that the times I do, it's really worth seeing. I might add a picture of my lunch every few months.",
+      "I don't post there often, but that means that every time I do, it's really worth seeing. I add a picture of my lunch every few months.",
     link: {
       href: 'https://www.instagram.com/jethro_31/',
       label: 'instagram.com',
@@ -60,7 +60,7 @@ const Socials = () => {
       </Head>
       <SimpleLayout
         title="Where to find me"
-        intro="I'm not a big user of social media. At the time of writing, my last tweet was 6 months ago, my last Instagram post was 11 months ago, and my last Facebook post was 6 years ago. However, you might be able to get an idea of where I am and what I'm doing from the following places."
+        intro="I'm not a big user of social media. I don't have Twitter, Snapchat or TikTok, my last Facebook post was more than 6 years ago, and I've deleted Instagram from my phone. However, you might be able to find me in the following places."
       >
         <ul
           role="list"
@@ -72,7 +72,8 @@ const Socials = () => {
                 <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                   <Image
                     src={platform.logo}
-                    alt=""
+                    alt={`${platform.name} logo`}
+                    title=""
                     className="h-8 w-8"
                     unoptimized
                   />
@@ -92,8 +93,6 @@ const Socials = () => {
           ))}
         </ul>
       </SimpleLayout>
-      {/* TODO: Add a section linking to my other apps (at least to jethro.codes). */}
-      {/* TODO: Perhaps also add a 'contact' section below that (although there could also be a separate 'contact' page) */}
     </>
   )
 }

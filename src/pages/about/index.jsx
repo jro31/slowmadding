@@ -6,7 +6,7 @@ import clsx from 'clsx'
 import { Container } from '@/components/Container'
 import portraitImage from './portrait.jpg'
 
-const Heading = "I'm Jethro. I'm a digital nomad."
+const Heading = "I'm Jethro, I'm a digital nomad."
 
 const SocialLink = ({ className, href, children, icon: Icon }) => {
   return (
@@ -37,7 +37,7 @@ const About = () => {
   return (
     <>
       <Head>
-        <title>About - Jethro Williams</title>
+        <title>About</title>
         <meta name="description" content={Heading} />
       </Head>
       <Container className="mt-16 sm:mt-32">
@@ -46,7 +46,7 @@ const About = () => {
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <Image
                 src={portraitImage}
-                alt=""
+                alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 sizes="(min-width: 1024px) 32rem, 20rem"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
@@ -59,7 +59,7 @@ const About = () => {
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
               <p>
                 That's just a fancy way of saying I'm not grown up enough to
-                settle down and start being an adult yet, and that I'm too lazy
+                settle down and start being an adult yet, but that I'm too lazy
                 to travel properly, so spend several weeks or even months
                 staying everywhere I go.
               </p>
@@ -67,7 +67,7 @@ const About = () => {
                 I work as a freelance software engineer, so I can earn a living
                 from anywhere with an Internet connection. I'm a big believer in
                 not working too much, and have found that I can work two days
-                per week, and still save money, so I don't really do any more.
+                per week and still save money, so I don't really do any more.
               </p>
               <p>
                 I'm also vegan, I run, I don't have many friends, I'm scared of
@@ -87,16 +87,16 @@ const About = () => {
                 myself that I'm doing some good in the world.
               </p>
               <p>
-                This isn't a backpacking blog. I've spent more than my share of
-                time living out of a backpack, staying in hostel dorms,
-                Couchsurfing before the perverts ruined it, camping at the side
-                of the road, and even sleeping under the stars occasionally,
-                which is another way of saying I slept rough because I was too
-                cheap to pay for a hostel.
+                This isn't a backpacking blog. I've paid my dues as a
+                backpacker, with years of staying in hostel dorms, Couchsurfing
+                before the perverts ruined it, camping at the side of the road,
+                and even sleeping under the stars occasionally, which is another
+                way of saying I slept rough because I was too cheap to pay for a
+                hostel.
               </p>
               <p>
                 I cherish those days, but they are long behind me. As a digital
-                nomad, I don't need to save every penny that I can, because I'm
+                nomad, I don't need to save every penny that I can because I'm
                 making money as I travel. If you're looking for advice on the
                 cheapest way to do things, this isn't the place for you.
               </p>
@@ -117,7 +117,7 @@ const About = () => {
               </p>
               <p>
                 I find that if I stay in the same place too long, I become
-                obsessed with my routine. My world can become very small, and I
+                obsessed with my routine. My world becomes very small, and I
                 care about things that, once I take a step back and look at them
                 from a distance, I realise are entirely insignificant.
               </p>
@@ -132,35 +132,28 @@ const About = () => {
                 my own world, that I had a spot on the platform, right
                 underneath the air conditioner, that I would stand everyday. If
                 I came into the station and someone was standing in my spot on
-                the platform, it would ruin my day.
-              </p>
-              <p>
-                That's what I mean when I say I would become too obsessed with
-                my routine and would care about insignificant things.
+                the platform, it would ruin my day. That's what I mean when I
+                say I become too obsessed with my routine and care about
+                insignificant things.
               </p>
               <p>
                 So on the one hand, I want to be a nomad so that I'm continually
                 moving around, and I don't have the opportunity for my world to
-                become so small that I care about insignificant things. But on
-                the other hand, backpacking, and moving from hostel to hostel
-                every two or three days, can be just as stressful.
-              </p>
-              <p>
-                At that point, you crave a routine. You dream of being settled
-                down and having a nine-to-five job, and to live in a place that
-                you can call home.
-              </p>
-              <p>
-                My personality matches that lifestyle no more than it matches
-                being settled and doing the same thing everyday.
+                become so small that I care about things that don't matter, but
+                on the other, backpacking, and moving from hostel to hostel
+                every two or three days can be just as stressful. At that point,
+                you crave a routine. You dream of being settled down and having
+                a nine-to-five job, and to live in a place that you can call
+                home. My personality matches that lifestyle no more than it
+                matches being settled and doing the same thing everyday.
               </p>
               <p>
                 Nomadding is my attempt to find the perfect middle-ground.
                 Having weeks or months everywhere I go means that I'm not moving
-                around so much that I long for continuity and routine, but at
-                the same time, I don't stay in each place long enough to
-                build-up such a routine that I start to care about things that
-                really don't matter.
+                around so much that I long for continuity and routine, but that
+                I don't stay in each place long enough to build-up such a
+                routine that I start to care about things that really don't
+                matter.
               </p>
               <p>
                 It is my attempt to find the perfect balance between routine and
