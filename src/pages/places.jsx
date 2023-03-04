@@ -5,6 +5,7 @@ import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { XCircleIcon } from '@heroicons/react/24/outline'
 
 import SimpleLayout from '@/components/SimpleLayout'
+import { Card } from '@/components/Card'
 
 import {
   articlePath,
@@ -16,7 +17,6 @@ import {
   placesData,
   verdict,
 } from '@/lib/placesData'
-import { Card } from '@/components/Card'
 
 const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
