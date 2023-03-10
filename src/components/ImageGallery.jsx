@@ -76,7 +76,9 @@ const ImageGallery = ({ images }) => {
               key={image.src.src}
               src={image.src.src}
               alt={image.alt}
-              className={`h-full${index === imageIndex ? '' : ' hidden'}`}
+              className={`h-full w-auto${
+                index === imageIndex ? '' : ' hidden'
+              }`}
             />
           ))}
         </div>
