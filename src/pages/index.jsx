@@ -103,7 +103,7 @@ export const getStaticProps = async () => {
 
   return {
     props: {
-      activities: collatedActivity.slice(0, 5),
+      activities: collatedActivity.slice(0, 4),
     },
   }
 }
