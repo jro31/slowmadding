@@ -9,6 +9,9 @@ import vCheckInnDeskImage from './v-check-inn/desk.jpeg'
 import vCheckInnBedImage from './v-check-inn/bed.jpeg'
 import vCheckInnBalconyImage from './v-check-inn/balcony.jpeg'
 
+import roomQuestStandardRoomBedImage from './room-quest/standard-room-bed.jpeg'
+import roomQuestStandardRoomDeskImage from './room-quest/standard-room-desk.jpeg'
+
 import parvenaHotelSathornRoomImage from './parvena-hotel-sathorn/room.jpeg'
 import parvenaHotelSathornBathroomImage from './parvena-hotel-sathorn/bathroom.jpeg'
 import parvenaHotelSathornDeskImage from './parvena-hotel-sathorn/desk.jpeg'
@@ -132,6 +135,19 @@ export const vCheckInnImages = [
   },
 ]
 
+export const roomQuestImages = [
+  {
+    src: roomQuestStandardRoomBedImage,
+    alt: 'RoomQuest Sukhumvit 36 standard king room bed',
+    caption: 'The standard king room. For the uninspiring ruler.',
+  },
+  {
+    src: roomQuestStandardRoomDeskImage,
+    alt: 'RoomQuest Sukhumvit 36 standard king room desk and TV',
+    caption: "There's just enough space between the bed and the TV to exercise in the standard king room.",
+  },
+]
+
 export const parvenaHotelSathornImages = [
   {
     src: parvenaHotelSathornRoomImage,
@@ -156,7 +172,7 @@ export const parvenaHotelSathornImages = [
   {
     src: parvenaHotelSathornShowerPictureImage,
     alt: 'Parvena Hotel Sathorn shower picture',
-    caption: "This was an interesting choice of art to put in the shower. I don't hate it.",
+    caption: "It's an interesting choice of art to put in the shower. I don't hate it.",
   },
   {
     src: parvenaHotelSathornOutsideImage,
@@ -166,7 +182,7 @@ export const parvenaHotelSathornImages = [
   {
     src: parvenaHotelSathornWeedDonutsImage,
     alt: 'Leaf Cannabis Cafe vegan donuts',
-    caption: "There are several weed shops in the area surrounding the hotel. These vegan cannabis donuts came from 'Leaf Cannabis Cafe', which is about a three-minute walk. They make watching Netflix much more fun."
+    caption: "There are several weed shops in the area surrounding the hotel. These vegan cannabis donuts came from 'Leaf Cannabis Cafe', which is about a three-minute walk away. They make watching Netflix more fun."
   }
 ]
 
@@ -239,6 +255,10 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 <AccommodationTable details={roomQuestDetails} />
 
 TODO
+
+TODO: Add more images
+
+<ImageGallery images={roomQuestImages} />
 
 ### Parvena Hotel Sathorn
 
