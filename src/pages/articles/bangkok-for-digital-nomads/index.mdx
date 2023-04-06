@@ -22,7 +22,7 @@ import parvenaHotelSathornWeedDonutsImage from './parvena-hotel-sathorn/weed-don
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-03-16T15:00:00+07:00', // TODO: Update this
+  date: '2023-04-06T15:00:00+07:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
   description: "Bangkok is the travel hub of South-East Asia, but people often use it as nothing more than a stepping stone to get to Thailand's beaches or to Chiang Mai. How does it fare for the digital nomad who chooses to stop here?",
 }
@@ -68,7 +68,7 @@ export const vCheckInnDetails = {
   },
 }
 
-export const roomQuestDetails = {
+export const roomQuestFirstStayDetails = {
   dates: {
     checkIn: '2022-12-01',
     checkOut: '2022-12-16',
@@ -84,6 +84,25 @@ export const roomQuestDetails = {
     sections: {
       Room: 12249.39,
       '7% VAT': 857.46,
+    },
+  },
+}
+
+export const roomQuestSecondStayDetails = {
+  dates: {
+    checkIn: '2023-04-06',
+    checkOut: '2023-04-20',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      'Room (including taxes and fees)': 11912.46,
     },
   },
 }
@@ -252,7 +271,9 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 
 ### RoomQuest Sukhumvit 36
 
-<AccommodationTable details={roomQuestDetails} />
+<AccommodationTable details={roomQuestFirstStayDetails} />
+
+<AccommodationTable details={roomQuestSecondStayDetails} />
 
 TODO
 
