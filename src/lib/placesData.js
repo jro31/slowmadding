@@ -165,27 +165,41 @@ export const placesData = [
     [criteria]: {
       [affordable]: {
         [verdict]: true,
+        [description]:
+          'I paid around 825,000 VND for a studio apartment, food starts at around 40,000 VND for a plate of food in a local restaurant, although expect to pay more like 150,000 VND in a western restaurant, a beer in a bar will typically be 50,000 VND, although you can get large beers on street bars for 20,000 VND.',
       },
       [internet]: {
         [verdict]: false,
+        [description]:
+          'It was perfectly fast when it worked, but I found it to be unreliable. Doing an hour-long video call, you can expect to drop-out on occasion.',
       },
       [running]: {
         [verdict]: false,
+        [description]:
+          "I ran in three different places and found them all unenjoyable. The pavements are too congested to run along and the roads are busy making them hard to cross and causing a lot of pollution. Probably the worst running city I've ever been toString.",
       },
       [veganFood]: {
         [verdict]: true,
+        [description]:
+          "There are loads of vegan restaurants here, and many more that have vegan options. Mostly the serve Vietnamese food; there aren't so many choices for vegan western food.",
       },
       [safe]: {
         [verdict]: true,
+        [description]:
+          'Apart from crossing the road, I at no point felt my safety was in jeopardy here, and I was out late quite a lot.',
       },
       [social]: {
         [verdict]: true,
+        [description]:
+          'There are several regular events designed for meeting people on MeetUp.',
       },
       [walking]: {
         [verdict]: false,
+        [description]:
+          'The pavement are full or motorcycles and vendors, and the roads are busy and difficult to cross.',
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/ho-chi-minh-city-for-digital-nomads',
   },
   {
     [place]: 'Huahin',
@@ -225,7 +239,7 @@ export const placesData = [
       [walking]: {
         [verdict]: true,
         [description]:
-          "It's a very easy and pleasant place to walk around, and if you don't fancy walking along the road, as the town's long and thin, you can walk along the beach to where you want to go.",
+          "Pavements line the main roads, side roads are quiet, pollution is a non-issue, and if you don't fancy walking along the road, as the town's long and thin you can walk along the beach to where you want to go.",
       },
     },
     [articlePath]: null,
@@ -237,24 +251,38 @@ export const placesData = [
     [criteria]: {
       [affordable]: {
         [verdict]: true,
+        [description]:
+          'I was paying less than $32/night for an apartment, expect to pay around $7 for a plate of food in a western restaurant, a beer in a bar will typically be $1.',
       },
       [internet]: {
         [verdict]: true,
+        [description]:
+          'I consistently had a connection fast enough to make video calls.',
       },
       [running]: {
-        [verdict]: true,
+        [verdict]: false,
+        [description]:
+          "Neak Banh Tuek Park is a nice place to run, but it's the only one and it's quite small. I'd have liked more variety.",
       },
       [veganFood]: {
         [verdict]: true,
+        [description]:
+          "There's a small number of nice vegan restaurants, and plenty of other restaurants with vegan options on the menu.",
       },
       [safe]: {
         [verdict]: true,
+        [description]:
+          'Some areas felt slightly sketchy to walk around at night time, but I never experienced anything untoward, so maybe it was all in my head.',
       },
       [social]: {
         [verdict]: false,
+        [description]:
+          'There are a small number of organised events for meeting people, but not very much. I had better luck just sitting in bars and chatting to people.',
       },
       [walking]: {
         [verdict]: false,
+        [description]:
+          "The already uneven pavements are used as car parks or as restaurants, so you're often forced to walk in the road. Some areas feel pretty grim to walk around.",
       },
     },
     [articlePath]: '/articles/nomadding-in-phnom-penh',
@@ -266,26 +294,39 @@ export const placesData = [
     [criteria]: {
       [affordable]: {
         [verdict]: true,
+        [description]:
+          'I paid less than $25/night for a huge apartment, expect to pay $4 to $6 for a plate of food in a western restaurant, beers in a bar will typically cost $1, but you can pay as little as 50¢ if you hunt around.',
       },
       [internet]: {
         [verdict]: true,
+        [description]:
+          "At no point in my room was I unable to get a connection on which I couldn't make a video call.",
       },
       [running]: {
         [verdict]: true,
+        [description]:
+          'The streets are wide and quiet so you can run pretty much anywhere.',
       },
       [veganFood]: {
         [verdict]: true,
+        [description]:
+          "There's only one fully-vegan restaurant in town, but many places have vegan options, and the quality of food is really, really good.",
       },
       [safe]: {
         [verdict]: true,
+        [description]:
+          'I saw nothing here to make me question my safety, even when walking around at night. Some soi dogs bark when you walk down side roads at night, but none ever got close to attacking me',
       },
       [social]: {
-        [verdict]: true,
+        [verdict]: false,
+        [description]:
+          "It's a very chatty city, so meeting people in bars/restaurants is easy, but there aren't many organised social events for meeting new people.",
       },
       [walking]: {
         [verdict]: true,
+        [description]: 'Wide, empty pavements and low amounts of traffic.',
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))

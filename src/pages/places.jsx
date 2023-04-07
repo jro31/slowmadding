@@ -38,6 +38,7 @@ const placeDataContainsDescription = (placeData) =>
 const PlacesTable = () => {
   return (
     // Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether.
+    // FIXME: Does the table scroll for users with a mouse? Add scroll arrows just to be safe?
     <div className="no-scrollbar relative h-[75vh] max-h-[34rem] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40">
       <div
         className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
