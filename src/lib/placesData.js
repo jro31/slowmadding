@@ -188,6 +188,49 @@ export const placesData = [
     [articlePath]: null,
   },
   {
+    [place]: 'Huahin',
+    [country]: thailand,
+    [lastVisited]: '2023',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          "I had a pretty big room for 871 baht per night. Beers in a bar are around 80 baht, although I had them as cheap as 50 baht. For a meal/drink in a western restaurant you'll pay around 250 to 300 baht.",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'The Internet in my room was utter garbage, but the saving grace is I had good 5G coverage everywhere in Huahin, so as long as you can tether to your phone, Internet coverage here is solid.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I didn't do this myself due to injury).",
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There's one really good vegan restaurant, but beyond that Huahin is pretty lacking in options for vegans. You won't go hungry, but you might go back to the same places several times.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'I felt entirely safe wandering around the streets in the middle of the night.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "Huahin is a very easy place to go and sit in a bar by yourself and meet people, but in terms of organised events to meet new people, I didn't find anything here.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "It's a very easy and pleasant place to walk around, and if you don't fancy walking along the road, as the town's long and thin, you can walk along the beach to where you want to go.",
+      },
+    },
+    [articlePath]: null,
+  },
+  {
     [place]: 'Phnom Penh',
     [country]: cambodia,
     [lastVisited]: '2023',
