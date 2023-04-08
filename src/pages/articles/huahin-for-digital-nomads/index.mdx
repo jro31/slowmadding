@@ -5,11 +5,28 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityBeachImage from './city/beach.jpeg'
+import cityBaanYokmhaneeViewImage from './city/baan-yokmhanee-view.jpeg'
 import citySprainedAnkleImage from './city/sprained-ankle.jpeg'
+
+import baanYokmhaneeRoomFromEntranceImage from './baan-yokmhanee/room-from-entrance.jpeg'
+import baanYokmhaneeRoomFromBalconyImage from './baan-yokmhanee/room-from-balcony.jpeg'
+import baanYokmhaneeKitchenImage from './baan-yokmhanee/kitchen.jpeg'
+import baanYokmhaneeDesksImage from './baan-yokmhanee/desks.jpeg'
+import baanYokmhaneeBalconyViewImage from './baan-yokmhanee/balcony-view.jpeg'
+import baanYokmhaneeOutsideImage from './baan-yokmhanee/outside.jpeg'
+
+import huahinVeganGlazedCauliflowerImage from './huahin-vegan/glazed-cauliflower.jpeg'
+import huahinVeganCreamyCashewTofuSaladImage from './huahin-vegan/creamy-cashew-tofu-salad.jpeg'
+import huahinVeganTortillaPizzasImage from './huahin-vegan/tortilla-pizzas.jpeg'
+import huahinVeganBerryBangImage from './huahin-vegan/berry-bang.jpeg'
+import huahinVeganStirFriedTofuImage from './huahin-vegan/stir-fried-tofu.jpeg'
+import huahinVeganOutsideImage from './huahin-vegan/outside.jpeg'
+import huahinVeganMacAndCheeseImage from './huahin-vegan/mac-and-cheese.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-03-24T16:45:00+07:00', // TODO: Update this
+  date: '2023-04-08T16:45:00+07:00', // TODO: Update this
   title: 'Huahin for Digital Nomads',
   description: '', // TODO
 }
@@ -37,9 +54,90 @@ export const baanYokmhaneeDetails = {
 
 export const cityImages = [
   {
+    src: cityBeachImage,
+    alt: 'Huahin Beach',
+    caption: 'On the beach a short walk from where I was staying.',
+  },
+  {
+    src: cityBaanYokmhaneeViewImage,
+    alt: 'The view from Baan Yokmhanee',
+    caption: 'The view from just outside my room.'
+  },
+  {
     src: citySprainedAnkleImage,
     alt: 'Sprained ankle in Huahin',
     caption: "Pretty sure it's not supposed to look like that.",
+  },
+]
+
+export const baanYokmhaneeImages = [
+  {
+    src: baanYokmhaneeRoomFromEntranceImage,
+    alt: 'Baan Yokmhanee room',
+    caption: "The room is huge. Great for anyone who doesn't have a sprained ankle.",
+  },
+  {
+    src: baanYokmhaneeRoomFromBalconyImage,
+    alt: 'Baan Yokmhanee room',
+    caption: 'As well as the main room, it has a separate bathroom and a separate "kitchen area".',
+  },
+  {
+    src: baanYokmhaneeKitchenImage,
+    alt: 'Baan Yokmhanee kitchen',
+    caption: 'I say "kitchen area" because it\'s somewhat ill-equipped as there are no cooking facilities. There\'s a fridge, a sink, some plates/bowls/cuttlery and (out of shot) a boiling water dispenser (I don\'t know what they\'re called; not a kettle but one of those things you find in conference rooms that keeps the water warm and pours it out when you press a button).',
+  },
+  {
+    src: baanYokmhaneeDesksImage,
+    alt: 'Baan Yokmhanee desks and wardrobe',
+    caption: "You have one table to eat at, one to work at, and a large wardrobe in between in case you come here with someone else and don't want to look at them.",
+  },
+  {
+    src: baanYokmhaneeBalconyViewImage,
+    alt: 'Baan Yokmhanee balcony view',
+    caption: "The view from the balcony is... alright. Nice car park."
+  },
+  {
+    src: baanYokmhaneeOutsideImage,
+    alt: 'Baan Yokmhanee from outside',
+    caption: 'Baan Yokmhanee from outside.',
+  },
+]
+
+export const huahinVeganImages = [
+  {
+    src: huahinVeganGlazedCauliflowerImage,
+    alt: 'Huahin Vegan glazed cauliflower with vegan parmesan cheese',
+    caption: 'Glazed cauliflower with vegan parmesan cheese for 145 baht. Cauliflower never tasted so good.',
+  },
+  {
+    src: huahinVeganCreamyCashewTofuSaladImage,
+    alt: 'Huahin Vegan creamy cashew tofu salad',
+    caption: 'There are plenty of healthy options on the menu. This creamy cashew tofu salad costs 150 baht.',
+  },
+  {
+    src: huahinVeganTortillaPizzasImage,
+    alt: 'Huahin Vegan tortilla pizza',
+    caption: "For some reason when I ordered a tortilla pizza with tofu cheese, I expected something different. I wasn't disappointed though, there were actually two of them and they were really good, despite being slightly challenging to eat. They cost 150 baht.",
+  },
+  {
+    src: huahinVeganBerryBangImage,
+    alt: 'Huahin Vegan berry bang smoothie',
+    caption: 'One of many smoothies on offer here. This berry bang smoothie costs 120 baht.',
+  },
+  {
+    src: huahinVeganStirFriedTofuImage,
+    alt: 'Huahin Vegan stir-fried tofu with teriyaki sauce',
+    caption: 'Stir-fried tofu with teriyaki sauce for 150 baht.',
+  },
+  {
+    src: huahinVeganOutsideImage,
+    alt: 'Huahin Vegan from outside',
+    caption: "Although located in a shopping mall, it's in the corner of the shopping mall so is also visible from the street, especially at night.",
+  },
+  {
+    src: huahinVeganMacAndCheeseImage,
+    alt: 'Huahin Vegan mac and cheese with spinach',
+    caption: "Vegan mac and cheese with spinach for 150 baht. You can't see it, but there's actually a lot of spinach under there.",
   },
 ]
 
@@ -75,9 +173,17 @@ The Internet here is fucking dog shit. I loved everything else about this place.
 
 TODO
 
+<ImageGallery images={baanYokmhaneeImages} />
+
 ## Where to get vegan food in Huahin
 
+### Huahin Vegan Cafe & Wine
+
 TODO
+
+<ImageGallery images={huahinVeganImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/hua-hin-vegan-cafe-hua-hin-95513'>Visit Huahin Vegan on Happy Cow</ExternalLink>
 
 ## Where to run in Huahin
 
