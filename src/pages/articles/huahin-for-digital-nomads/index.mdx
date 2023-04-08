@@ -24,6 +24,8 @@ import huahinVeganStirFriedTofuImage from './huahin-vegan/stir-fried-tofu.jpeg'
 import huahinVeganOutsideImage from './huahin-vegan/outside.jpeg'
 import huahinVeganMacAndCheeseImage from './huahin-vegan/mac-and-cheese.jpeg'
 
+import runningStravaImage from './running/strava.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-04-08T16:45:00+07:00', // TODO: Update this
@@ -141,6 +143,15 @@ export const huahinVeganImages = [
   },
 ]
 
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Huahin beach Strava map',
+    caption: 'It was fun while it lasted.',
+    url: 'https://www.strava.com/activities/8767224942',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 When you think of the prototypical sexpat destinations in Thailand, you immediately think of Pattaya and Patong (in Phuket). Huahin is famous for being the favoured holiday destination of the late king Rama IX. When foreigners want to go to the beach, they go to Samui or Phuket, when Thai people want to go to the beach, they go to Huahin. That's the way I've always viewed it.
@@ -187,7 +198,11 @@ TODO
 
 ## Where to run in Huahin
 
+Despite being rendered a cripple for most of my visit, I did get one run in...
+
 TODO
+
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Huahin
 
