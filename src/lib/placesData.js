@@ -329,4 +329,47 @@ export const placesData = [
     },
     [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
+  {
+    [place]: 'Udon Thani',
+    [country]: thailand,
+    [lastVisited]: '2023',
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I paid 762 baht per night for a studio in a really, really nice hotel. Many local restaurants offer meals for around 50 baht. A day pass at my nearest gym was 160 baht.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'Wifi download speeds of around 150mbps and upload speeds of almost 300mbps on a reliable connection in my hotel, with 5G available everywhere I went in town.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Nong Prachak lake has a circumference of about 3.1km, and has a running track the entire way around.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are some vegan restaurants, and some others with vegan options so you won't go hungry, but they aren't as numerous as I'd like. I found myself eating in the same places several times.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "I walked everywhere I went here, including at night. Didn't experience any problems or feel like I might.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          'No events on Meetup or Facebook, and no other obvious ways of meeting people other than going and sitting in a bar.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Pavements everywhere and most are walkable, just occasionally being blocked by vehicles/street businesses (although they are very uneven).',
+      },
+    },
+    [articlePath]: null,
+  },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))
