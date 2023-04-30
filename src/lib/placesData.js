@@ -4,7 +4,6 @@ const vietnam = 'Vietnam'
 
 export const place = 'place'
 export const country = 'country'
-const lastVisited = 'lastVisited'
 export const criteria = 'criteria'
 export const articlePath = 'articlePath'
 
@@ -34,7 +33,6 @@ export const placesData = [
   {
     [place]: 'Bangkok',
     [country]: thailand,
-    [lastVisited]: '2022',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -64,7 +62,7 @@ export const placesData = [
       [social]: {
         [verdict]: true,
         [description]:
-          "There's an embarrassment of Meetup events in Bangkok. On Meetup alone you'll be able to find something that interests you pretty 7 days per week. Plus, there's plenty of lonely old men sat around in bars to chat to.",
+          "There's an embarrassment of Meetup events in Bangkok. On Meetup alone you'll be able to find something that interests you pretty much 7 days per week. Plus, there's plenty of lonely old men sat around in bars to chat to.",
       },
       [walking]: {
         [verdict]: true,
@@ -77,7 +75,6 @@ export const placesData = [
   {
     [place]: 'Chiang Mai',
     [country]: thailand,
-    [lastVisited]: '2022',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -86,7 +83,8 @@ export const placesData = [
       },
       [internet]: {
         [verdict]: true,
-        [description]: 'Fast and reliable.',
+        [description]:
+          'Absolutely no issues during my stay. Reliable connection fast enough for video calls.',
       },
       [running]: {
         [verdict]: false,
@@ -101,7 +99,7 @@ export const placesData = [
       [safe]: {
         [verdict]: true,
         [description]:
-          "Apart from some quite hard to cross roads, this is a very safe city. I haven't felt unsafe or had any issues walking around in the middle of the night.",
+          "Apart from some quite hard to cross roads, this is a very safe city. I didn't feel unsafe or have any issues walking around in the middle of the night.",
       },
       [social]: {
         [verdict]: true,
@@ -119,7 +117,6 @@ export const placesData = [
   {
     [place]: 'Chiang Rai',
     [country]: thailand,
-    [lastVisited]: '2022',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -129,7 +126,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          "It was fast and I didn't have an issue while I was here.",
+          'Despite being out of the city centre, the connection was consistent and fast enough for video calls.',
       },
       [running]: {
         [verdict]: true,
@@ -161,32 +158,31 @@ export const placesData = [
   {
     [place]: 'Ho Chi Minh City',
     [country]: vietnam,
-    [lastVisited]: '2023',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
         [description]:
-          'I paid around 825,000 VND for a studio apartment, food starts at around 40,000 VND for a plate of food in a local restaurant, although expect to pay more like 150,000 VND in a western restaurant, a beer in a bar will typically be 50,000 VND, although you can get large beers on street bars for 20,000 VND.',
+          'I paid around 825,000 VND for a studio apartment, food starts at around 40,000 VND for a meal in a local restaurant, although expect to pay more like 150,000 VND in a western restaurant, a beer in a bar will typically be 50,000 VND although you can get large beers at street bars for 20,000 VND.',
       },
       [internet]: {
         [verdict]: false,
         [description]:
-          'It was perfectly fast when it worked, but I found it to be unreliable. Doing an hour-long video call, you can expect to drop-out on occasion.',
+          "It was perfectly fast when it worked, but I found it to be unstable. Doing an hour-long video call, I'd expect to drop-out a couple of times.",
       },
       [running]: {
         [verdict]: false,
         [description]:
-          "I ran in three different places and found them all unenjoyable. The pavements are too congested to run along and the roads are busy making them hard to cross and causing a lot of pollution. Probably the worst running city I've ever been toString.",
+          "I ran in three different places and found them all unenjoyable. The pavements are too congested to run along and the roads are busy making them hard to cross and causing a lot of pollution. Probably the worst running city I've ever been to.",
       },
       [veganFood]: {
         [verdict]: true,
         [description]:
-          "There are loads of vegan restaurants here, and many more that have vegan options. Mostly the serve Vietnamese food; there aren't so many choices for vegan western food.",
+          "There are loads of vegan restaurants here, and many more that have vegan options. Mostly they serve Vietnamese food; there aren't so many choices for vegan western food.",
       },
       [safe]: {
         [verdict]: true,
         [description]:
-          'Apart from crossing the road, I at no point felt my safety was in jeopardy here, and I was out late quite a lot.',
+          'Apart from crossing the road, at no point I felt my safety was in jeopardy here, and I was out late quite a lot.',
       },
       [social]: {
         [verdict]: true,
@@ -204,7 +200,6 @@ export const placesData = [
   {
     [place]: 'Huahin',
     [country]: thailand,
-    [lastVisited]: '2023',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -212,19 +207,19 @@ export const placesData = [
           "I had a pretty big room for 871 baht per night. Beers in a bar are around 80 baht, although I had them as cheap as 50 baht. For a meal/drink in a western restaurant you'll pay around 250 to 300 baht.",
       },
       [internet]: {
-        [verdict]: true,
+        [verdict]: false,
         [description]:
-          'The Internet in my room was utter garbage, but the saving grace is I had good 5G coverage everywhere in Huahin, so as long as you can tether to your phone, Internet coverage here is solid.',
+          "The Internet in my room was utter garbage. The saving grace was I had good 5G coverage everywhere in Huahin, so as long as you can tether to your phone it's not an issue.",
       },
       [running]: {
         [verdict]: true,
         [description]:
-          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I didn't do this myself due to injury).",
+          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I didn't do this due to injury).",
       },
       [veganFood]: {
         [verdict]: false,
         [description]:
-          "There's one really good vegan restaurant, but beyond that Huahin is pretty lacking in options for vegans. You won't go hungry, but you might go back to the same places several times.",
+          "There's one really good vegan restaurant, but beyond that Huahin is pretty lacking in options for vegans. You won't go hungry, but you might have to go back to the same places several times.",
       },
       [safe]: {
         [verdict]: true,
@@ -247,7 +242,6 @@ export const placesData = [
   {
     [place]: 'Phnom Penh',
     [country]: cambodia,
-    [lastVisited]: '2023',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -277,7 +271,7 @@ export const placesData = [
       [social]: {
         [verdict]: false,
         [description]:
-          'There are a small number of organised events for meeting people, but not very much. I had better luck just sitting in bars and chatting to people.',
+          'There are a small number of organised events for meeting people, but not very many. I had better luck just sitting in bars and chatting to people.',
       },
       [walking]: {
         [verdict]: false,
@@ -290,7 +284,6 @@ export const placesData = [
   {
     [place]: 'Siem Reap',
     [country]: cambodia,
-    [lastVisited]: '2023',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -332,12 +325,11 @@ export const placesData = [
   {
     [place]: 'Udon Thani',
     [country]: thailand,
-    [lastVisited]: '2023',
     [criteria]: {
       [affordable]: {
         [verdict]: true,
         [description]:
-          'I paid 762 baht per night for a studio in a really, really nice hotel. Many local restaurants offer meals for around 50 baht. A day pass at my nearest gym was 160 baht.',
+          'I paid 762 baht per night for a studio in a really, really nice hotel, many local restaurants offer meals for around 50 baht, a day pass at my nearest gym was 160 baht, expect to pay around 80 baht for a beer in a bar.',
       },
       [internet]: {
         [verdict]: true,

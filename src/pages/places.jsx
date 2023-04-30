@@ -1,5 +1,6 @@
 import { Fragment } from 'react'
 import Head from 'next/head'
+import Link from 'next/link'
 
 import { CheckCircleIcon } from '@heroicons/react/20/solid'
 import { XCircleIcon } from '@heroicons/react/24/outline'
@@ -56,14 +57,14 @@ const PlacesTable = () => {
           <Fragment
             key={`${placeData[place]}-${placeData[country]}-table-data`}
           >
-            <div className="sticky left-0 w-full justify-self-start bg-white px-6 dark:bg-zinc-900">
+            <PlacesTablePlaceTag placeData={placeData}>
               <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
                 {placeData[place]}
               </div>
               <div className="text-xs text-zinc-500 dark:text-zinc-400">
                 {placeData[country]}
               </div>
-            </div>
+            </PlacesTablePlaceTag>
             {Object.keys(placeData[criteria]).map((criterion) => (
               <div
                 key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
@@ -77,6 +78,19 @@ const PlacesTable = () => {
         ))}
       </div>
     </div>
+  )
+}
+
+const PlacesTablePlaceTag = ({ placeData, children }) => {
+  const classNames =
+    'sticky left-0 w-full justify-self-start bg-white px-6 dark:bg-zinc-900'
+
+  return placeDataContainsDescription(placeData) ? (
+    <Link href={`#${placeDataDetaislId(placeData)}`} className={classNames}>
+      {children}
+    </Link>
+  ) : (
+    <div className={classNames}>{children}</div>
   )
 }
 
@@ -183,7 +197,6 @@ const Places = () => {
         <PlacesTable />
         <PlacesDetails />
         {/* TODO: Hover over an icon to display the description? / Or perhaps link to that section in the description */}
-        {/* TODO: The 'lastVisited' date isn't currently used anywhere. Either use it, or remove it from the placesData */}
       </SimpleLayout>
     </>
   )
