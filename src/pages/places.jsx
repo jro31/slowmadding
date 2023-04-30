@@ -62,7 +62,7 @@ const PlacesTable = () => {
       </div>
       <div
         ref={placesTableRef}
-        className="no-scrollbar relative h-[75vh] max-h-[38rem] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
+        className="no-scrollbar relative h-[75vh] max-h-[38rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
       >
         <div
           className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
