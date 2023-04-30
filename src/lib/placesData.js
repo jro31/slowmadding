@@ -112,7 +112,7 @@ export const placesData = [
           'The pollution here just sits, and some of the busy roads are a pain to cross.',
       },
     },
-    [articlePath]: '/articles/nomadding-in-chiang-mai',
+    [articlePath]: '/articles/chiang-mai-for-digital-nomads',
   },
   {
     [place]: 'Chiang Rai',
@@ -153,7 +153,7 @@ export const placesData = [
           'The roads are quiet enough here that I felt comfortable walking and running along the side of the road in places that there were no pavements.',
       },
     },
-    [articlePath]: '/articles/nomadding-in-chiang-rai',
+    [articlePath]: '/articles/chiang-rai-for-digital-nomads',
   },
   {
     [place]: 'Ho Chi Minh City',
@@ -279,7 +279,7 @@ export const placesData = [
           "The already uneven pavements are used as car parks or as restaurants, so you're often forced to walk in the road. Some areas feel pretty grim to walk around.",
       },
     },
-    [articlePath]: '/articles/nomadding-in-phnom-penh',
+    [articlePath]: '/articles/phnom-penh-for-digital-nomads',
   },
   {
     [place]: 'Siem Reap',
