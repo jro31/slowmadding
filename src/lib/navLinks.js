@@ -12,6 +12,10 @@ const navLinks = [
     text: 'Articles',
   },
   {
+    path: '/places',
+    text: 'Places',
+  },
+  {
     path: '/socials',
     text: 'Socials',
   },
