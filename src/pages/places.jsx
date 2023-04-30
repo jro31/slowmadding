@@ -1,8 +1,8 @@
-import { Fragment } from 'react'
+import { Fragment, useRef } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
 
-import { CheckCircleIcon } from '@heroicons/react/20/solid'
+import { CheckCircleIcon, PlayIcon } from '@heroicons/react/20/solid'
 import { XCircleIcon } from '@heroicons/react/24/outline'
 
 import SimpleLayout from '@/components/SimpleLayout'
@@ -37,47 +37,72 @@ const placeDataContainsDescription = (placeData) =>
 // TODO: What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
 // WOuld be even cooler if when mousing-over a verdict icon, that place and criteria were highlighted (and all the cells in between?)
 const PlacesTable = () => {
+  const placesTableRef = useRef()
+
+  const scrollTableLeft = () => {
+    placesTableRef.current.scrollLeft = placesTableRef.current.scrollLeft - 158
+  }
+
+  const scrollTableRight = () => {
+    placesTableRef.current.scrollLeft = placesTableRef.current.scrollLeft + 158
+  }
+
   return (
     // Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether.
-    // FIXME: Does the table scroll for users with a mouse? Add scroll arrows just to be safe?
-    <div className="no-scrollbar relative h-[75vh] max-h-[34rem] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40">
-      <div
-        className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
-      >
-        <div className="sticky left-0 top-0 z-10 h-full w-full bg-white px-6 pt-6 dark:bg-zinc-900"></div>
-        {Object.values(criteriaHeadings).map((heading) => (
-          <div
-            key={`${heading}-table-heading`}
-            className="sticky top-0 h-full bg-white pt-6 text-center text-sm font-medium text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100"
-          >
-            {heading}
-          </div>
-        ))}
-        {placesData.map((placeData) => (
-          <Fragment
-            key={`${placeData[place]}-${placeData[country]}-table-data`}
-          >
-            <PlacesTablePlaceTag placeData={placeData}>
-              <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
-                {placeData[place]}
-              </div>
-              <div className="text-xs text-zinc-500 dark:text-zinc-400">
-                {placeData[country]}
-              </div>
-            </PlacesTablePlaceTag>
-            {Object.keys(placeData[criteria]).map((criterion) => (
-              <div
-                key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
-              >
-                <VerdictIcon
-                  verdict={placeData[criteria][criterion][verdict]}
-                />
-              </div>
-            ))}
-          </Fragment>
-        ))}
+    <>
+      <div className="mb-1 flex cursor-pointer justify-end gap-1">
+        <PlayIcon
+          onClick={scrollTableLeft}
+          className="h-6 w-4 rotate-180 text-zinc-500 dark:text-zinc-400"
+        />
+        <PlayIcon
+          onClick={scrollTableRight}
+          className="h-6 w-4 text-zinc-500 dark:text-zinc-400"
+        />
       </div>
-    </div>
+      <div
+        ref={placesTableRef}
+        className="no-scrollbar relative h-[75vh] max-h-[38rem] overflow-scroll rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
+      >
+        <div
+          className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
+        >
+          <div className="sticky left-0 top-0 z-10 h-full w-full bg-white px-6 pt-6 dark:bg-zinc-900"></div>
+          {Object.values(criteriaHeadings).map((heading) => (
+            <div
+              key={`${heading}-table-heading`}
+              className="sticky top-0 h-full bg-white pt-6 text-center text-sm font-medium text-zinc-900 dark:bg-zinc-900 dark:text-zinc-100"
+            >
+              {heading}
+            </div>
+          ))}
+          {placesData.map((placeData) => (
+            <Fragment
+              key={`${placeData[place]}-${placeData[country]}-table-data`}
+            >
+              <PlacesTablePlaceTag placeData={placeData}>
+                <div className="text-sm font-medium text-zinc-900 dark:text-zinc-100">
+                  {placeData[place]}
+                </div>
+                <div className="text-xs text-zinc-500 dark:text-zinc-400">
+                  {placeData[country]}
+                </div>
+              </PlacesTablePlaceTag>
+              {Object.keys(placeData[criteria]).map((criterion) => (
+                <div
+                  key={`${placeData[place]}-${placeData[country]}-${criterion}-data`}
+                >
+                  <VerdictIcon
+                    verdict={placeData[criteria][criterion][verdict]}
+                    title={placeData[criteria][criterion][description]}
+                  />
+                </div>
+              ))}
+            </Fragment>
+          ))}
+        </div>
+      </div>
+    </>
   )
 }
 
@@ -94,11 +119,17 @@ const PlacesTablePlaceTag = ({ placeData, children }) => {
   )
 }
 
-const VerdictIcon = ({ verdict }) => {
+const VerdictIcon = ({ verdict, title }) => {
   return verdict ? (
-    <CheckCircleIcon className="h-8 w-8 text-zinc-900 dark:text-zinc-100" />
+    <CheckCircleIcon
+      className="h-8 w-8 text-zinc-900 dark:text-zinc-100"
+      title={title}
+    />
   ) : (
-    <XCircleIcon className="h-8 w-8 text-zinc-500 dark:text-zinc-400" />
+    <XCircleIcon
+      className="h-8 w-8 text-zinc-500 dark:text-zinc-400"
+      title={title}
+    />
   )
 }
 
@@ -196,7 +227,6 @@ const Places = () => {
       >
         <PlacesTable />
         <PlacesDetails />
-        {/* TODO: Hover over an icon to display the description? / Or perhaps link to that section in the description */}
       </SimpleLayout>
     </>
   )

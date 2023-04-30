@@ -237,7 +237,7 @@ export const placesData = [
           "Pavements line the main roads, side roads are quiet, pollution is a non-issue, and if you don't fancy walking along the road, as the town's long and thin you can walk along the beach to where you want to go.",
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/huahin-for-digital-nomads',
   },
   {
     [place]: 'Phnom Penh',
