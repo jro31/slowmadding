@@ -193,9 +193,11 @@ const PlaceSection = ({ placeData, children }) => {
 
 const PlaceSectionHeadingContainer = ({ articlePath, children }) => {
   return articlePath ? (
-    <Card.Link href={articlePath}>{children}</Card.Link>
+    <Card.Link className="sticky top-0" href={articlePath}>
+      {children}
+    </Card.Link>
   ) : (
-    children
+    <div className="sticky top-0">{children}</div>
   )
 }
 
