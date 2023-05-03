@@ -1,4 +1,8 @@
 import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import vannSavathImage from './vann-savath.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -6,6 +10,14 @@ export const meta = {
   title: 'Getting a Cambodian tourist visa and extending it (in Siem Reap)',
   description: '', // TODO
 }
+
+export const vannSavathImages = [
+  {
+    src: vannSavathImage,
+    alt: 'Vann Savath travel agency in Siem Reap',
+    caption: "Vann Savath",
+  },
+]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
@@ -76,6 +88,50 @@ That's a very hard sell if I'm trying to board a flight having just overstayed i
 
 ## How to extend a Cambodian tourist visa (in Siem Reap)
 
-TODO
+Once I'd decided on extending my Cambodian tourist visa, I had to figure-out how. And it turns out that the only place you can do this is Phnom Penh. I was in Siem Reap. Great.
+
+Luckily you don't have to do it yourself; an agent can do it for you. For a fee. I asked around town how much this should cost, and everyone said an agency would charge $60, so when the first agency I went into only asked for $50, I was sold.
+
+This agency was <ExternalLink url='https://goo.gl/maps/ioQcY1Lg3HnqP9127'>Vann Savath</ExternalLink> in the centre of Siem Reap, a short walk from Pub Street. It's basically just one woman sitting behind a desk, but she knows her shit. I had to give her my passport, $50, and possibly a passport-sized photo. I'm don't remember about that last one, I keep a stock of passport photos to hand for whenever I need them, and I _think_ I did here... but I'm not sure.
+
+I also handed her my phone and my phone number. She did something on an app on her phone, a verification code got sent to mine, she did something with it. Not too sure what was going on there, but it all worked. I left her my passport, and she said she'd call me when it was ready.
+
+It's worth noting that the extension process takes 7 working days. I handed in my passport on a Wednesday, and I didn't get it back until the Saturday 10 days later, so if you need your passport for travel or any other reason, be mindful of this.
+
+If you're doing an extension at the end of your first visa and you don't want to overstay, the date that matters to immigration is the date that your passport arrives at the immigration office in Phnom Penh. The date that the extension is processed is irrelevant.
+
+For example, if your first visa expires on December 15th and your passport arrives at the immigration office in Phnom Penh on or before December 15th, then even if your extension isn't processed until December 20th, you haven't broken any rules. If your passport arrives on December 16th or afterwards, then it will be considered an overstay, which may affect your eligibility for an extension (not sure how strict this is).
+
+That's pretty much all there is to it. The agent handles everything for you. Like all immigration procedures, it's rather a pointless process, but this is the game you have to play for a life of travel.
+
+<ImageGallery images={vannSavathImages} />
+
+## Was it the right decision to get a visa extension?
+
+Who can say for sure?
+
+Financially, no. The cost of overstaying for two days would have been $20, but I paid $50 for the extension, so I paid an extra $30 just to stay within the rules.
+
+I was slightly dubious about leaving my passport with an agent who was then responsible for transporting it to Phnom Penh and back. My biggest fear was that it'd get lost in transit, but there were no issues so in that sense it was a good decision.
+
+Would I have encountered other issues either boarding my flight to Thailand, or getting potentially banned from re-entering Cambodia if I hadn't done the extension?
+
+I think almost certainly not, but who knows? For me the extra $30 was worth it just to mitigate the 1% of either of these happening.
+
+In terms of going through immigration when leaving Cambodia, if anything the visa extension raised suspicion because they couldn't understand why I'd got an extension only to stay for two more days.
+
+I've been travelling for half my life and I never have any problems at immigration, except in Cambodia. For some reason Cambodian border officials hate me. I'm not a fan of theirs either.
+
+As well as being unable to count to 30, they aren't very good at copying things. My name had been added to my visa as 'Jethro Citizen'. They'd copied my first name, but rather than writing my second name, instead copied from the next line which said 'British Citizen', so according to Cambodia, my name is now 'Jethro Citizen'.
+
+I quite like it.
+
+Worse still was that they couldn't actually understand their own visas. I'd been in Cambodia in December, left to Vietnam for a month, then come back in February and got this extension. That meant there were three different documents in my passport, and they really had trouble reading the dates on them.
+
+I had two of them interrogating me as I tried to leave the country, and they kept on asking me why I'd been in Cambodia since December.
+
+_"I haven't,"_ I kept on telling them. _"I left in January and came back a month ago."_
+
+They couldn't get it. Eventually I got through, but not before they did a lot of typing on their computer while looking up at me disparagingly, so my intent to get a visa extension in order to mitigate getting any black marks for re-entering Cambodia might have been in [vein]. So in truth, this visa extension seemed to raise more suspicion about my intent in Cambodia than it did aid a smooth transition out of the country, so it was probably a waste of $30. If you ever find yourself in the same situation, I think I'd advise to just overstay.
 
 
