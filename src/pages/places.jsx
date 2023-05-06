@@ -24,9 +24,9 @@ const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
 },minmax(150px,2fr))]` // grid-cols-[minmax(159px,1fr)_repeat(7,minmax(150px,2fr))]
 
 const placeDataDetaislId = (placeData) =>
-  `${placeData[place].toLowerCase()}-${placeData[
-    country
-  ].toLowerCase()}-details`
+  `${placeData[place].replaceAll(' ', '-').toLowerCase()}-${placeData[country]
+    .replaceAll(' ', '-')
+    .toLowerCase()}-details`
 
 const placeDataContainsDescription = (placeData) =>
   Object.keys(placeData[criteria])
