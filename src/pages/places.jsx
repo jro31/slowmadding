@@ -34,8 +34,6 @@ const placeDataContainsDescription = (placeData) =>
     .flat()
     .includes(description)
 
-// TODO: What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
-// WOuld be even cooler if when mousing-over a verdict icon, that place and criteria were highlighted (and all the cells in between?)
 const PlacesTable = () => {
   const placesTableRef = useRef()
 
@@ -193,11 +191,9 @@ const PlaceSection = ({ placeData, children }) => {
 
 const PlaceSectionHeadingContainer = ({ articlePath, children }) => {
   return articlePath ? (
-    <Card.Link className="sticky top-0" href={articlePath}>
-      {children}
-    </Card.Link>
+    <Card.Link href={articlePath}>{children}</Card.Link>
   ) : (
-    <div className="sticky top-0">{children}</div>
+    <div>{children}</div>
   )
 }
 
