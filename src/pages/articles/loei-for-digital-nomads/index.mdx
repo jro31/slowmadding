@@ -1,0 +1,56 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-05-06T17:30:00+07:00', // TODO: Update this
+  title: 'Loei for Digital Nomads',
+  description: "", // TODO
+}
+
+export const loeiHuenHaoHugHomeAndResortDetails = {
+  dates: {
+    checkIn: '2023-05-04',
+    checkOut: '2023-05-11',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/loei-huen-hao-hug-home-amp-resort.html',
+  },
+  roomType: 'Queen room with balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 6214.95,
+      '7% VAT': 435.05,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add city images
+
+## Where I stayed
+
+### Saikaew Resort
+
+<AccommodationTable details={loeiHuenHaoHugHomeAndResortDetails} />
+
+TODO
+
+## Where to get vegan food in Loei
+
+TODO
+
+## Where to run in Loei
+
+TODO
+
+## Being sociable in Loei
+
+TODO
