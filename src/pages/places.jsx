@@ -24,9 +24,9 @@ const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
 },minmax(150px,2fr))]` // grid-cols-[minmax(159px,1fr)_repeat(7,minmax(150px,2fr))]
 
 const placeDataDetaislId = (placeData) =>
-  `${placeData[place].toLowerCase()}-${placeData[
-    country
-  ].toLowerCase()}-details`
+  `${placeData[place].replaceAll(' ', '-').toLowerCase()}-${placeData[country]
+    .replaceAll(' ', '-')
+    .toLowerCase()}-details`
 
 const placeDataContainsDescription = (placeData) =>
   Object.keys(placeData[criteria])
@@ -34,8 +34,6 @@ const placeDataContainsDescription = (placeData) =>
     .flat()
     .includes(description)
 
-// TODO: What would be cool is if mousing over a table heading (place or criteria), that entire row/column was highlighted
-// WOuld be even cooler if when mousing-over a verdict icon, that place and criteria were highlighted (and all the cells in between?)
 const PlacesTable = () => {
   const placesTableRef = useRef()
 
@@ -193,11 +191,9 @@ const PlaceSection = ({ placeData, children }) => {
 
 const PlaceSectionHeadingContainer = ({ articlePath, children }) => {
   return articlePath ? (
-    <Card.Link className="sticky top-0" href={articlePath}>
-      {children}
-    </Card.Link>
+    <Card.Link href={articlePath}>{children}</Card.Link>
   ) : (
-    <div className="sticky top-0">{children}</div>
+    <div>{children}</div>
   )
 }
 
