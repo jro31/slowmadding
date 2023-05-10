@@ -2,6 +2,18 @@ import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ImageGallery from '@/components/ImageGallery'
 
+import jamjureeHomeOutsideImage from './jamjuree-home/outside.jpeg'
+import jamjureeHomeApartmentImage from './jamjuree-home/apartment.jpeg'
+import jamjureeHomeBedImage from './jamjuree-home/bed.jpeg'
+import jamjureeHomeKitchenImage from './jamjuree-home/kitchen.jpeg'
+import jamjureeHomeBathroomImage from './jamjuree-home/bathroom.jpeg'
+import jamjureeHomeBalconyImage from './jamjuree-home/balcony.jpeg'
+import jamjureeHomeDownstairsCommonAreaImage from './jamjuree-home/downstairs-common-area.jpeg'
+import jamjureeHomeAHomeIsMadeOfLoveAndDreamsImage from './jamjuree-home/a-home-is-made-of-love-and-dreams.jpeg'
+import jamjureeHomeUpstairsCommonAreaImage from './jamjuree-home/upstairs-common-area.jpeg'
+import jamjureeHomeBreakfastImage from './jamjuree-home/breakfast.jpeg'
+import jamjureeHomeGreenTeaImage from './jamjuree-home/green-tea.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-04-26T15:18:15+07:00', // TODO: Update this
@@ -28,9 +40,71 @@ export const jamjureeHomeDetails = {
   },
 }
 
+export const jamjureeHomeImages = [
+  {
+    src: jamjureeHomeOutsideImage,
+    alt: 'Jamjuree Home Udon Thani',
+    caption: 'Jamjuree Home hiding behind an umbrella.',
+  },
+  {
+    src: jamjureeHomeApartmentImage,
+    alt: 'Jamjuree Home family studio',
+    caption: "The room was called a studio, but that's being pretty modest. When there's a wall separating the bedroom from the rest of the apartment, that's a one-bedroom in my opinion.",
+  },
+  {
+    src: jamjureeHomeBedImage,
+    alt: 'Jamjuree Home family studio bed',
+    caption: "The bed was comfortable and came with two elephants.",
+  },
+  {
+    src: jamjureeHomeKitchenImage,
+    alt: 'Jamjuree Home family studio kitchen',
+    caption: 'Other than a microwave there were no cooking facilities in the kitchen, but it was still nice to have plates, bowls, cutlery, a large fridge, a place to wash up, and somewhere to sit and eat (as well as alternative place to sit and work when I got tired of sitting at the desk in the bedroom).',
+  },
+  {
+    src: jamjureeHomeBathroomImage,
+    alt: 'Jamjuree Home family studio bathroom',
+    caption: 'The bathroom was nice and the shower was hot and powerful.',
+  },
+  {
+    src: jamjureeHomeBalconyImage,
+    alt: 'Jamjuree Home family studio balcony',
+    caption: 'As well as large balcony in the common area, you have a private balcony in your room.',
+  },
+  {
+    src: jamjureeHomeDownstairsCommonAreaImage,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: 'There is a huge common area that spans two floors.',
+  },
+  {
+    src: jamjureeHomeAHomeIsMadeOfLoveAndDreamsImage,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: '"A home is made of love and dreams." I don\'t really know what that means, but it sounds nice. In the downstairs common area.',
+  },
+  {
+    src: jamjureeHomeUpstairsCommonAreaImage,
+    alt: 'Jamjuree Home upstairs common area',
+    caption: 'The upstairs common area includes even more seating and a large balcony.',
+  },
+  {
+    src: jamjureeHomeBreakfastImage,
+    alt: 'Jamjuree Home breakfast',
+    caption: 'Breakfast is provided everyday between 8am and 10:30am. The owner understands what vegan means so made a me a salad, a potato and mushroom soup and (not pictured) a small fruit salad and a small vegan cake every morning.',
+  },
+  {
+    src: jamjureeHomeGreenTeaImage,
+    alt: 'Jamjuree Home green tea',
+    caption: 'Breakfast also included a very fancy green tea. Great way to start the day.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-TODO
+Welcome to my new favourite place in the world. Fuck you Siem Reap!
+
+To understand why I loved it here so much, you have to understand the mindset that I came here with. If you're not someone that likes long, boring stories and you just want to get into the meat and bones of Udon Thani, I suggest you [skip this section](#). [ADD LINK]
+
+Oh, you're still here. Well then let's take a journey.
 
 TODO: Add city images
 
@@ -45,6 +119,8 @@ The first thing to say is that on Agoda I booked a standard bedroom. It was on a
 That in itself is a good summary of this hotel; I absolutely loved it...
 
 TODO
+
+<ImageGallery images={jamjureeHomeImages} />
 
 ## Where to get vegan food in Udon Thani
 
