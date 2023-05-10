@@ -35,6 +35,9 @@ import maeyaVeganPanangCurryImage from './maeya/vegan-panang-curry.jpeg'
 import maeyaVeganFriedTofuImage from './maeya/vegan-fried-tofu.jpeg'
 import maeyaVeganStirFriedMorningGloryImage from './maeya/vegan-stir-fried-morning-glory.jpeg'
 
+import runningStravaImage from './running/strava.jpeg'
+import runningNongPrajakParkImage from './running/nong-prajak-park.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-04-26T15:18:15+07:00', // TODO: Update this
@@ -213,6 +216,20 @@ export const maeyaImages = [
   }
 ]
 
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Nong Prajak Park Strava map',
+    caption: 'My first run in Udon Thani',
+    url: 'https://www.strava.com/activities/8928631847',
+  },
+  {
+    src: runningNongPrajakParkImage,
+    alt: 'Nong Prajak Park running track',
+    caption: "There are separated running and cycling tracks that go the entire way around the lake (this is actually the cycling track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 Welcome to my new favourite place in the world. Fuck you Siem Reap!
@@ -221,7 +238,7 @@ To understand why I loved it here so much, you have to understand the mindset th
 
 Oh, you're still here. Well then let's take a journey.
 
-TODO: Add city images
+TODO: Add city images. Delete any you don't use.
 
 ## Where I stayed
 
@@ -268,6 +285,8 @@ TODO
 ## Where to run in Udon Thani
 
 TODO
+
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Udon Thani
 
