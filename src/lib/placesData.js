@@ -240,6 +240,48 @@ export const placesData = [
     [articlePath]: '/articles/huahin-for-digital-nomads',
   },
   {
+    [place]: 'Loei',
+    [country]: thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I paid 950 baht per night for my room, meals in local restaurants are typically 40 baht.',
+      },
+      [internet]: {
+        [verdict]: false,
+        [description]:
+          'At the guesthouse I was staying at, the router barely reached into the room so would continually disconnect. I had to tether to my 5G whenever I needed a reliable connection.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Kut Kong Public Park is a viable place to run, and the Loei Provincial Hall has a 400m track in its grounds. There are also long cycle lanes that can be used for running.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are two local 'jay' restaurants. That is all I found, and they're both closed in the evenings and on Sundays.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'At no point did I feel even remotely unsafe here. Everyone here is very friendly.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "I didn't see another foreigner during my week here, and when I went to the one supposed western pub in town on a Saturday evening it was closed.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "As long as you can stomach the heat, everywhere in town is comfortably walkable. Most roads have pavements, and traffic is insufficient to feel unsafe on those that don't. You might get barked at by dogs on quieter roads, but none felt a serious threat.",
+      },
+    },
+    [articlePath]: null,
+  },
+  {
     [place]: 'Phnom Penh',
     [country]: cambodia,
     [criteria]: {
