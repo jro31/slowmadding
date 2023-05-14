@@ -3,6 +3,10 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityKutPongPublicParkBridgeImage from './city/kut-pong-public-park-bridge.jpeg'
+import cityClockImage from './city/clock.jpeg'
+import cityKutPongPublicParkDinosaurImage from './city/kut-pong-public-park-dinosaur.jpeg'
+
 import loeiHuenHaoHugHomeAndResortBedAndDeskImage from './loei-huen-hao-hug-home-and-resort/bed-and-desk.jpeg'
 import loeiHuenHaoHugHomeAndResortBedAndTvImage from './loei-huen-hao-hug-home-and-resort/bed-and-tv.jpeg'
 import loeiHuenHaoHugHomeAndResortKitchenImage from './loei-huen-hao-hug-home-and-resort/kitchen.jpeg'
@@ -28,6 +32,11 @@ import raanJKohStirFriedVeganPorkDuckAndChickenImage from './raan-j-koh/stir-fri
 import jayImBuunFromTheBuffetWithRiceImage from './jay-im-buun/from-the-buffet-with-rice.jpeg'
 import jayImBuunOutsideImage from './jay-im-buun/outside.jpeg'
 import jayImBuunFromTheBuffetWithoutRiceImage from './jay-im-buun/from-the-buffet-without-rice.jpeg'
+
+import runningStravaImage from './running/strava.jpeg'
+import runningLoeiProvincialHallRunningTrackImage from './running/loei-provincial-hall-running-track.jpeg'
+
+import laundryLaundretteImage from './laundry/laundrette.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -55,6 +64,24 @@ export const loeiHuenHaoHugHomeAndResortDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityKutPongPublicParkBridgeImage,
+    alt: 'View from the Kut Pong Public Park bridge',
+    caption: 'Loei is surrounded by mountains. This photo was taken looking east from the bridge to Kut Pong Public Park.',
+  },
+  {
+    src: cityClockImage,
+    alt: 'Loei clock',
+    caption: "Nice clock. I couldn't find any more information about it, but it's definitely a clock.",
+  },
+  {
+    src: cityKutPongPublicParkDinosaurImage,
+    alt: 'Kut Pong Public Park dinosaur',
+    caption: "Dinosaur in Kut Pong Public Park. Don't worry, it's not real.",
+  },
+]
 
 export const loeiHuenHaoHugHomeAndResortImages = [
   {
@@ -178,11 +205,33 @@ export const jayImBuunImages = [
   },
 ]
 
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Loei Provincial Hall Stava map',
+    caption: 'My first run at the Loei Provincial Hall',
+    url: 'https://www.strava.com/activities/9013136776',
+  },
+  {
+    src: runningLoeiProvincialHallRunningTrackImage,
+    alt: 'Loei Provincial Hall running track',
+    caption: "The track at the Loei Provincial Hall. Technically it's a cycling track, but I didn't see any bikes on it, and I'm not sure why anyone would want to cycle around such a short track with tight corners anyway.",
+  }
+]
+
+export const laundryImages = [
+  {
+    src: laundryLaundretteImage,
+    alt: 'Laundrette in Loei',
+    caption: "There isn't any English signage and the ladies that work here don't speak a word of English, but I was able to get by with my broken Thai. This was the only place that I found in Loei where I could drop-off my laundry to be cleaned.",
+  }
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-TODO: Add city images
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
@@ -237,6 +286,14 @@ TODO
 ## Where to run in Loei
 
 TODO
+
+<ImageGallery images={runningImages} />
+
+## Where to do laundry in Loei
+
+TODO
+
+<ImageGallery images={laundryImages} />
 
 ## Being sociable in Loei
 
