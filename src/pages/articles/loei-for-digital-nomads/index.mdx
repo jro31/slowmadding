@@ -2,6 +2,15 @@ import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ImageGallery from '@/components/ImageGallery'
 
+import loeiHuenHaoHugHomeAndResortBedAndDeskImage from './loei-huen-hao-hug-home-and-resort/bed-and-desk.jpeg'
+import loeiHuenHaoHugHomeAndResortBedAndTvImage from './loei-huen-hao-hug-home-and-resort/bed-and-tv.jpeg'
+import loeiHuenHaoHugHomeAndResortKitchenImage from './loei-huen-hao-hug-home-and-resort/kitchen.jpeg'
+import loeiHuenHaoHugHomeAndResortBathroomImage from './loei-huen-hao-hug-home-and-resort/bathroom.jpeg'
+import loeiHuenHaoHugHomeAndResortShowersImage from './loei-huen-hao-hug-home-and-resort/showers.jpeg'
+import loeiHuenHaoHugHomeAndResortBalconyImage from './loei-huen-hao-hug-home-and-resort/balcony.jpeg'
+import loeiHuenHaoHugHomeAndResortFrontDoorImage from './loei-huen-hao-hug-home-and-resort/front-door.jpeg'
+import loeiHuenHaoHugHomeAndResortGroundsImage from './loei-huen-hao-hug-home-and-resort/grounds.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-05-06T17:30:00+07:00', // TODO: Update this
@@ -29,6 +38,49 @@ export const loeiHuenHaoHugHomeAndResortDetails = {
   },
 }
 
+export const loeiHuenHaoHugHomeAndResortImages = [
+  {
+    src: loeiHuenHaoHugHomeAndResortBedAndDeskImage,
+    alt: 'Loei Huen Hao Hug Home and Resort bed and desk',
+    caption: 'You get a desk and chair next to the bed, which is a good place to setup with your laptop.',
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortBedAndTvImage,
+    alt: 'Loei Huen Hao Hug Home and Resort bed and TV',
+    caption: 'At the other end of the bed you have a TV and a completely unnecessary surface.',
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortKitchenImage,
+    alt: 'Loei Huen Hao Hug Home and Resort kitchen',
+    caption: 'There are no cooking facilities in the kitchen (not even a microwave), but you do get a sink, some plates, bowls and cutlery (in the cupboard under the sink), a large fridge with ice compartment, and behind the separator to the right of the fridge is a hot water dispenser and some mugs for making tea/coffee.',
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortBathroomImage,
+    alt: 'Loei Huen Hao Hug Home and Resort bathroom',
+    caption: 'The bathroom is decent enough, apart from the drying rack being right above the toilet paper holder.',
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortShowersImage,
+    alt: 'Loei Huen Hao Hug Home and Resort showers',
+    caption: "I don't really know why there are three showers though. For when you want to be really, really clean I guess.",
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortBalconyImage,
+    alt: 'Loei Huen Hao Hug Home and Resort showers',
+    caption: "You have a semi-private balcony out the back of the room. Gates separate each room's balcony, so you can never be quite sure of your privacy as anyone can appear outside the French doors at the back of the room, as the cleaner does at least once per day when sweeping out there.",
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortFrontDoorImage,
+    alt: 'Loei Huen Hao Hug Home and Resort front door',
+    caption: 'You have some more outside space at the front of the room.',
+  },
+  {
+    src: loeiHuenHaoHugHomeAndResortGroundsImage,
+    alt: 'Loei Huen Hao Hug Home and Resort grounds',
+    caption: 'The grounds have many tamarind trees, which makes it a very pleasant place to sit outside.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -42,6 +94,8 @@ TODO: Add city images
 <AccommodationTable details={loeiHuenHaoHugHomeAndResortDetails} />
 
 TODO
+
+<ImageGallery images={loeiHuenHaoHugHomeAndResortImages} />
 
 ## Where to get vegan food in Loei
 
