@@ -3,6 +3,12 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityFountainRoundaboutImage from './city/fountain-roundabout.jpeg'
+import cityCityMuseumImage from './city/city-museum.jpeg'
+import citySquirrelImage from './city/squirrel.jpeg'
+import cityPervyClinicImage from './city/pervy-clinic.jpeg'
+import cityMachimawasTempleImage from './city/machimawas-temple.jpeg'
+
 import jamjureeHomeOutsideImage from './jamjuree-home/outside.jpeg'
 import jamjureeHomeApartmentImage from './jamjuree-home/apartment.jpeg'
 import jamjureeHomeBedImage from './jamjuree-home/bed.jpeg'
@@ -64,6 +70,34 @@ export const jamjureeHomeDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityFountainRoundaboutImage,
+    alt: 'Udon Thani Fountain Roundabout',
+    caption: 'The aptly named Fountain Roundabout.',
+  },
+  {
+    src: cityCityMuseumImage,
+    alt: 'Udon Thani City Museum at night',
+    caption: 'The Udon Thani City Museum at night, taken from the running track around Nong Prajak Park.',
+  },
+  {
+    src: citySquirrelImage,
+    alt: 'Squirrel',
+    caption: "The squirrels in Udon Thani are almost yellow. I've never seen that anywhere before.",
+  },
+  {
+    src: cityPervyClinicImage,
+    alt: 'Per-V Clinic',
+    caption: 'The pervy clinic.',
+  },
+  {
+    src: cityMachimawasTempleImage,
+    alt: 'Machinawas Temple',
+    caption: "Machinawas Temple. I didn't go in, I just thought this was a nice photo.",
+  },
+]
 
 export const jamjureeHomeImages = [
   {
@@ -256,7 +290,7 @@ I got off the plane, checked-into my room, and wandered around town for several 
 
 There's literally one road (and surrounding area) of bars, and that seems to be where all of the overweight white men spend their time. They're confined to this area, and the rest of the city's lovely.
 
-TODO: Add city images. Delete any you don't use.
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
@@ -346,10 +380,24 @@ It's the kind of restaurant where, were I in a place of vegan abundance like Ban
 
 ## Where to run in Udon Thani
 
-TODO: Include how you were feeling when you arrived in Udon
+I saw other places that looked viable for running in Udon, but none as good as Nong Prajak Park, and as I was staying so nearby, this is where I went for all five of my runs here.
+
+It's a lake with a 3.1km circumference that has a running track and separated cycling track all the way around it. In the evenings it gets quite crowded, but come here in the daytime and you'll have the whole thing to yourself. It got consistently to 40°C at lunchtime while I was here, and for some reason other people don't like running then, so if you enjoy saunas and want to work on your tan at the same time, it's perfect.
+
+You don't get much shade. I'd arrived here was a bad ankle and a fever, and running with no shade on a bad ankle with a fever in 40°C is a great way to test your mettle and find out what you're made of.
+
+Turns out I'm not made of very much as I only made it two laps, but it's still an absolutely lovely place to run. I would highly recommend finding somewhere to stay that's nearby when coming to Udon. Definitely the highlight of the city for me.
 
 <ImageGallery images={runningImages} />
 
 ## Being sociable in Udon Thani
 
-TODO
+I found no pre-organised events to attend in Udon, so if you're here alone and you want to go out, you're more or less limited to wandering to the town centre and finding a bar. I did that twice and had a surprising amount of fun.
+
+What I realised is that some people I'd met on that first night out, I also saw in completely separate bars on that second night out. There's a community of expats in Udon, presumably who're married to locals (I know that's the case for some that I met), who go around all the bars and drink everyday.
+
+The only bars I found were all on or around Samphan Thamit Alley, which is a fairly long road lined with bars with one complex of even more bars at the north end, and another complex a short walk from the south end.
+
+These bars are aimed entirely at foreigners, so many have hostesses, but there are normal bars. Most close at midnight but as I found the hard way, if you wander around this area you'll be able to find somewhere that'll serve you alcohol for as long as you can keep drinking it.
+
+That's the hangover sorted.
