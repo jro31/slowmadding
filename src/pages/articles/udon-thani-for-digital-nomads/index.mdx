@@ -1,0 +1,401 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import cityFountainRoundaboutImage from './city/fountain-roundabout.jpeg'
+import cityCityMuseumImage from './city/city-museum.jpeg'
+import citySquirrelImage from './city/squirrel.jpeg'
+import cityPervyClinicImage from './city/pervy-clinic.jpeg'
+import cityMachimawasTempleImage from './city/machimawas-temple.jpeg'
+
+import jamjureeHomeOutsideImage from './jamjuree-home/outside.jpeg'
+import jamjureeHomeApartmentImage from './jamjuree-home/apartment.jpeg'
+import jamjureeHomeBedImage from './jamjuree-home/bed.jpeg'
+import jamjureeHomeKitchenImage from './jamjuree-home/kitchen.jpeg'
+import jamjureeHomeBathroomImage from './jamjuree-home/bathroom.jpeg'
+import jamjureeHomeBalconyImage from './jamjuree-home/balcony.jpeg'
+import jamjureeHomeDownstairsCommonAreaImage from './jamjuree-home/downstairs-common-area.jpeg'
+import jamjureeHomeAHomeIsMadeOfLoveAndDreamsImage from './jamjuree-home/a-home-is-made-of-love-and-dreams.jpeg'
+import jamjureeHomeUpstairsCommonAreaImage from './jamjuree-home/upstairs-common-area.jpeg'
+import jamjureeHomeBreakfastImage from './jamjuree-home/breakfast.jpeg'
+import jamjureeHomeGreenTeaImage from './jamjuree-home/green-tea.jpeg'
+import jamjureeHomeFitGymUdonImage from './jamjuree-home/fit-gym-udon.jpeg'
+
+import primanisChannaMasalaImage from './primanis/channa-masala.jpeg'
+import primanisVegetableCurriesMenuImage from './primanis/vegetable-curries-menu.jpeg'
+import primanisYellowDalImage from './primanis/yellow-dal.jpeg'
+import primanisInsideImage from './primanis/inside.jpeg'
+import primanisAlooJeeraImage from './primanis/aloo-jeera.jpeg'
+
+import zingZingCheTwoChoicesFromTheBuffetImage from './zing-zing-che/two-choices-from-the-buffet.jpeg'
+import zingZingCheMenuImage from './zing-zing-che/menu.jpeg'
+import zingZingChePadThaiImage from './zing-zing-che/pad-thai.jpeg'
+import zingZingCheShopImage from './zing-zing-che/shop.jpeg'
+import zingZingCheThreeChoicesFromTheBuffetImage from './zing-zing-che/three-choices-from-the-buffet.jpeg'
+import zingZingCheInsideImage from './zing-zing-che/inside.jpeg'
+import zingZingCheOutsideImage from './zing-zing-che/outside.jpeg'
+import zingZingCheSrisuFriedBananaImage from './zing-zing-che/srisu-fried-banana.jpeg'
+import zingZingCheSrisuFriedBananaDessertsImage from './zing-zing-che/srisu-fried-banana-desserts.jpeg'
+
+import maeyaVeganPanangCurryImage from './maeya/vegan-panang-curry.jpeg'
+import maeyaVeganFriedTofuImage from './maeya/vegan-fried-tofu.jpeg'
+import maeyaVeganStirFriedMorningGloryImage from './maeya/vegan-stir-fried-morning-glory.jpeg'
+
+import runningStravaImage from './running/strava.jpeg'
+import runningNongPrajakParkImage from './running/nong-prajak-park.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-06-08T16:00:00+01:00',
+  title: 'Udon Thani for Digital Nomads',
+  description: "Udon Thani is one of the four 'big' cities located in Thailand's Isaan region, a huge area of the country largely ignored by foreign tourists. Not being ruined by tourism, Udon retains the friendliness that Thailand is famous for. Don't dismiss it just because everyone else does.",
+}
+
+export const jamjureeHomeDetails = {
+  dates: {
+    checkIn: '2023-04-20',
+    checkOut: '2023-05-04',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/jamjuree-home/hotel/udon-thani-th.html',
+  },
+  roomType: 'Family Studio',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      'Room (including taxes and fees)': 10668.56,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: cityFountainRoundaboutImage,
+    alt: 'Udon Thani Fountain Roundabout',
+    caption: 'The aptly named Fountain Roundabout.',
+  },
+  {
+    src: cityCityMuseumImage,
+    alt: 'Udon Thani City Museum at night',
+    caption: 'The Udon Thani City Museum at night, taken from the running track around Nong Prajak Park.',
+  },
+  {
+    src: citySquirrelImage,
+    alt: 'Squirrel',
+    caption: "The squirrels in Udon Thani are almost yellow. I've never seen that anywhere before.",
+  },
+  {
+    src: cityPervyClinicImage,
+    alt: 'Per-V Clinic',
+    caption: 'The pervy clinic.',
+  },
+  {
+    src: cityMachimawasTempleImage,
+    alt: 'Machinawas Temple',
+    caption: "Machinawas Temple. I didn't go in, I just thought this was a nice photo.",
+  },
+]
+
+export const jamjureeHomeImages = [
+  {
+    src: jamjureeHomeOutsideImage,
+    alt: 'Jamjuree Home Udon Thani',
+    caption: 'Jamjuree Home behind an umbrella.',
+  },
+  {
+    src: jamjureeHomeApartmentImage,
+    alt: 'Jamjuree Home family studio',
+    caption: "The room was called a studio, but that's being pretty modest. When there's a wall separating the bedroom from the rest of the apartment, that's a one-bedroom in my opinion.",
+  },
+  {
+    src: jamjureeHomeBedImage,
+    alt: 'Jamjuree Home family studio bed',
+    caption: "The bed was comfortable and came with two elephants.",
+  },
+  {
+    src: jamjureeHomeKitchenImage,
+    alt: 'Jamjuree Home family studio kitchen',
+    caption: 'Other than a microwave there were no cooking facilities in the kitchen, but it was still nice to have plates, bowls, cutlery, a large fridge, a place to wash up, and somewhere to sit and eat (as well as alternative place to sit and work when I got tired of sitting at the desk in the bedroom).',
+  },
+  {
+    src: jamjureeHomeBathroomImage,
+    alt: 'Jamjuree Home family studio bathroom',
+    caption: 'The bathroom was nice and the shower was hot and powerful.',
+  },
+  {
+    src: jamjureeHomeBalconyImage,
+    alt: 'Jamjuree Home family studio balcony',
+    caption: 'As well as the large balcony in the common area, you have a private balcony in your room.',
+  },
+  {
+    src: jamjureeHomeDownstairsCommonAreaImage,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: 'There is a huge common area that spans two floors.',
+  },
+  {
+    src: jamjureeHomeAHomeIsMadeOfLoveAndDreamsImage,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: '"A home is made of love and dreams." I don\'t really know what that means, but it sounds nice. In the downstairs common area.',
+  },
+  {
+    src: jamjureeHomeUpstairsCommonAreaImage,
+    alt: 'Jamjuree Home upstairs common area',
+    caption: 'The upstairs common area includes even more seating and a large balcony.',
+  },
+  {
+    src: jamjureeHomeBreakfastImage,
+    alt: 'Jamjuree Home breakfast',
+    caption: 'Breakfast is provided everyday between 8am and 10:30am. The owner understands what vegan means so made a me a salad, a potato and mushroom soup and (not pictured) a small fruit salad and a small vegan cake every morning.',
+  },
+  {
+    src: jamjureeHomeGreenTeaImage,
+    alt: 'Jamjuree Home green tea',
+    caption: 'Breakfast also included a very fancy green tea. Great way to start the day.',
+  },
+  {
+    src: jamjureeHomeFitGymUdonImage,
+    alt: 'Fit Gym Udon',
+    caption: 'Fit Gym Udon is a short walk away, and is a really good place for a workout.',
+  },
+]
+
+export const primanisImages = [
+  {
+    src: primanisChannaMasalaImage,
+    alt: "Primani's channa masala",
+    caption: 'Anything with chickpeas in makes me happy. This channa masala costs 150 baht.',
+  },
+  {
+    src: primanisVegetableCurriesMenuImage,
+    alt: "Primani's vegetable curries menu",
+    caption: "Primani's serves meat, but they have a list of vegetarian curries. Of these, numbers 28 to 31 are natively vegan, and number 33 can be made vegan by replacing the paneer with potato. They also have three types of vegan rice (plain, jeera and garlic) and a couple of vegan breads (chapati and something else), so while not spoiled for choice, there's enough to keep you happy.",
+  },
+  {
+    src: primanisYellowDalImage,
+    alt: "Primani's yellow dal",
+    caption: 'I always appreciate when my curry comes in a bucket. This yellow dal costs 140 baht.',
+  },
+  {
+    src: primanisInsideImage,
+    alt: "Inside Primani's",
+    caption: 'They have quite nice decor, but despite music playing, the atmosphere is eerily quiet. I always came here alone, but I witnessed others come in groups and start whispering to each other once they got inside.',
+  },
+  {
+    src: primanisAlooJeeraImage,
+    alt: "Primani's aloo jeera",
+    caption: 'The aloo jeera also costs 140 baht.',
+  },
+]
+
+export const zingZingCheImages = [
+  {
+    src: zingZingCheTwoChoicesFromTheBuffetImage,
+    alt: 'Zing Zing Che (ชิ้งชิงเจ) buffet',
+    caption: 'There are a couple of options when coming here. Either point and hope from the buffet, or order from the a la carte menu. These are a couple of point and hope choices. One is a green curry, and the other some kind of rice ball that is really, really good. Altogether it cost 85 baht.',
+  },
+  {
+    src: zingZingCheMenuImage,
+    alt: 'Zing Zing Che (ชิ้งชิงเจ) menu',
+    caption: "The woman who runs this restaurant and the man (presumably her husband) who helps out don't speak a word of English, but the a la carte menu is translated, so if you don't speak Thai, pointing at the menu is sufficient.",
+  },
+  {
+    src: zingZingChePadThaiImage,
+    alt: 'Zing Zing Che (ชิ้งชิงเจ) pad Thai',
+    caption: 'Pad Thai from the a la carte menu. The taste was pretty good. The presentation was less so. It costs 50 baht.',
+  },
+  {
+    src: zingZingCheShopImage,
+    alt: 'Zing Zing Che (ชิ้งชิงเจ) shop',
+    caption: "They also have a little shop selling vegan items to cook with. The black bowls on the left of the top shelf are instant 'just add hot water' noodles. I didn't try them, but if you are staying somewhere without a kitchen but want to be able to eat at home, these would be an option. They cost 80 baht each.",
+  },
+  {
+    src: zingZingCheThreeChoicesFromTheBuffetImage,
+    alt: 'Zing Zing Che (ชิ้งชิงเจ) buffet',
+    caption: "Three point and hope choices. Two were good (the two closest ones), the one behind was not, but if something tastes that bad, it has to be good for you, right? It was made of green leaves, so I'm sure it was. All of this came to 120 baht.",
+  },
+  {
+    src: zingZingCheInsideImage,
+    alt: 'Inside Zing Zing Che (ชิ้งชิงเจ)',
+    caption: "Inside. It's a small, family-run restaurant.",
+  },
+  {
+    src: zingZingCheOutsideImage,
+    alt: 'Outside Zing Zing Che (ชิ้งชิงเจ)',
+    caption: "From outside look for the yellow 'jay' (เจ) sign.",
+  },
+  {
+    src: zingZingCheSrisuFriedBananaImage,
+    alt: 'Srisu Fried Banana',
+    caption: "Completely unrelated to Zing Zing Che, but often located just outside (about a 30 second walk south) is this 'jay' dessert vendor that Google Translate tells me is called 'Srisu Fried Banana.' I added her stand to Happy Cow while I was here, but as yet it hasn't been approved (and may not be seeing as the location isn't exactly reliable). If you come to Zing Zing Che and she happens to be here, the desserts she sells are really good.",
+  },
+  {
+    src: zingZingCheSrisuFriedBananaDessertsImage,
+    alt: 'Srisu Fried Banana desserts',
+    caption: 'The desserts from Srisu Fried Banana come in a bag, but I took them back to my room and put them on a plate. The orange ones are 2 baht each. No idea what they are, but they taste nice. The big one is filled with banana and some other stuff, and costs 10 baht. The brown ones were 15 baht for seven. Some were filled with banana, others with something else. I think sweet potato. This whole plate cost 35 baht.',
+  },
+]
+
+export const maeyaImages = [
+  {
+    src: maeyaVeganPanangCurryImage,
+    alt: 'Maeya vegan panang curry with rice',
+    caption: 'The menu at Maeya has four pages of vegetarian choices, with many clearly marked vegan options. This vegan panang curry with rice costs 69 baht.',
+  },
+  {
+    src: maeyaVeganFriedTofuImage,
+    alt: 'Maeya vegan fried tofu',
+    caption: "You may think that all fried tofu is vegan. I've learned that lesson the hard way. Luckily this vegan fried tofu is clearly marked on the menu, so no worries here. It costs 90 baht."
+  },
+  {
+    src: maeyaVeganStirFriedMorningGloryImage,
+    alt: 'Maeya vegan stir fried morning glory',
+    caption: "And just to prove I can eat healthily sometimes, a plate of vegan stir fried morning glory for 95 baht. Don't scoff at those chillies either, they gave me a good run for my money.",
+  }
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Nong Prajak Park Strava map',
+    caption: 'My first run in Udon Thani',
+    url: 'https://www.strava.com/activities/8928631847',
+  },
+  {
+    src: runningNongPrajakParkImage,
+    alt: 'Nong Prajak Park running track',
+    caption: "There are separated running and cycling tracks that go the entire way around the lake (this is actually the cycling track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Welcome to my new favourite place in the world. Fuck you Siem Reap!
+
+I had loved absolutely everything about being a digital nomad up to the point I came to Udon Thani. The seven months prior had given me the most consistent happiness I've known in my life, but within that context I arrived in Udon Thani feeling as down as I had done at any other point as a digital nomad, because I'd firstly injured my ankle, then got sick, then had a really bad hangover after Songkran (alright, I can't really complain about that one). I derive a lot of my happiness from being mobile and active, and when that is inhibited, it can test the resolve of my smile, so arriving in Udon I needed a little boost.
+
+That's exactly what I got.
+
+It's one of the big four cities in Thailand's Isaan region; a region representing about a third of the Thai population, but like anywhere that's not Bangkok, Chiang Mai or somewhere with a beach, it basically gets ignored by tourists. That can either be a very good thing or a very bad thing, and you don't really find out which until you get here.
+
+I knew very little prior to coming here, but was dubious when in the departure lounge for my flight from Bangkok, I spotted four overweight, balding, middle-aged white men, each by themselves sipping a can of beer.
+
+It wasn't even 11am.
+
+The reason that's a concern is Thailand's worst kept secret, the existence of which is continually denied by officials, is its sex tourism. Congregations of balding white men drinking beer in the morning is usually a good indication of that, and seeing four of them in the departure lounge for my flight did make me question what kind of place I was going to. Luckily that fear was misplaced.
+
+I got off the plane, checked-into my room, and wandered around town for several hours without seeing another foreigner. It was an amazingly friendly place. Lots of people came up and talked to me, and everyone just seemed genuinely happy. It was only on inadvertently wandering down Samphan Thamit Alley, ironically nearby to the Pervy clinic, that I was all... _"oh, this is where all the foriengers are."_
+
+There's literally one road (and surrounding area) of bars, and that seems to be where all of the overweight white men spend their time. They're confined to this area, and the rest of the city's lovely.
+
+<ImageGallery images={cityImages} />
+
+## Where I stayed
+
+### Jamjuree Home
+
+<AccommodationTable details={jamjureeHomeDetails} />
+
+The most important thing when you go somewhere is booking the right accommodation. If you're like me and you work from your room, then you're going to be spending a lot of time there, so you need to get it right. And boy did I?
+
+Jamjuree Home is more a homestay than a hotel, although the guests have a segregated area which consists of four rooms and a large, two-floor common area. Udon Thani is a non-touristy city, and I was here in the low season of a post-covid world. That meant for much of my stay I was the only guest. I arrived here having booked a standard bedroom, but the hotel owner, who's one of the sweetest people I've ever met, offered to upgrade me to the family studio that you see in the details above at no extra charge.
+
+I'd say that calling it a studio is being modest. The bedroom is separated from the kitchen by a wall. Surely that makes it a one bedroom. Semantics aside, it's a really, really lovely place.
+
+As well as the owner, there's one member of staff, and they are amazingly considerate. They make an effort to clean the room at times you're out, and at one point I mentioned to the owner that I was going to Loei after Udon, and asked if she knew anything about how/where to get the bus. She didn't.
+
+Not only did she come back ten minutes later having called around the bus companies and having written down the bus times for me, but on the day I checked-out, a week or so later, she did the exact same thing again. All from an off-the-cuff comment I made one day.
+
+Breakfast is included, and this was definitely a highlight for me. When I checked-in the owner asked me about breakfast, and on telling her I was vegan there was no hesitation in saying what food she'd be able to prepare. I never had to mention it again, and each morning she made me a breakfast that consisted of a vegan potato and mushroom soup, a salad, some fruit, a vegan cake, and the fanciest pot of green tea I've ever had.
+
+Having grown tired of the shitty or non-existent cups that hotels provide, by this stage of being a digital nomad I'd bought my own cup that I carried around in my suitcase. As I'd often be staying in rooms with nothing more than a hand towel, I never really cleaned it properly. It was turning green.
+
+Whilst staying here I'd wake up in the morning, have a cup of green tea out of my dirty travel mug, then go down to breakfast and be served the most beautiful pot of green tea you can imagine. It'd be in a glass pot with a glass lid on a glass stand with a glass cup and a glass saucer, and one of those things that you pour the tea through to filter it, which itself has a stand, and its stand has a stand. Prior to staying here, if a tea bag had a string on it I'd think it was posh. I have the same rule for tampons. This took it to a whole other level.
+
+Breakfast was served from 8am to 10:30am each day. Having got into the habit of not eating until lunch prior to coming here, I'd come down at 10:29 after doing my morning yoga, and it was really the perfect way to start the day.
+
+The room was so comfortable, and pretty spacious for what I'm used to. It includes a balcony and a sort of kitchen. No cooking facilities other than a microwave, but a large fridge, a sink, a hot water dispenser and some plates and cutlery, as well as a small table with a couple of chairs.
+
+The common area is huge, especially considering I was the only guest most of the time, and has many other sofas/chairs to sit on, and another balcony. The one downside is the common area isn't air conditioned, so got pretty hot during the daytime, although they did give me a fan for when I was sitting out here coding one day, which made it bearable. The property also has a nice garden which includes some seating. It's a great place to sit until you've stopped sweating after a run.
+
+All of this would make it an amazing place to stay, but perhaps the best thing about Jamjuree Home is the location. You're about a 30-minute walk from the city centre, which puts you in a more local, slightly quieter area, but it's a comfortable walk in for when you do go into town. You have a couple of local 'jay' (vegan) restaurants nearby, as well as a 7-11 and some other convenience stores, and I went to the nearby <ExternalLink url='https://goo.gl/maps/H1NSMQvBwVb25u6NA'>Fit Gym</ExternalLink> three times during my stay, which is a huge, well-equipped but not very well attended gym that costs just 160 baht for a day pass. The crown jewel of Udon Thani though, is Nong Prajak Park, which is just a short walk from Jamjuree Home.
+
+Nong Prajak Park is more a lake than a park, but it has a cycle path and separated running track all the way around its 3.1km circumference. It's the perfect place to come for a run or a walk when you need exercise, or it's nice to just come and sit by the water. Having it so nearby is the cherry on top.
+
+<ImageGallery images={jamjureeHomeImages} />
+
+## Where to get vegan food in Udon Thani
+
+If there's one criticism I could level at Udon Thani, this would be it. While there is _some_ vegan food available here, it lacks in variety.
+
+I love Thai food as much as the next man. That's a lie, I think Thai food's very overrated, but Thai people get upset when I say that. It's something that I like to eat sometimes. It's not something that I like to eat all the time.
+
+What I found in Udon is that there's only one restaurant for non-Thai vegan food: Primani's.
+
+### Primani's
+
+Because this was the only place I found in Udon to get non-Thai vegan food, I ate here more than the quality justifies, including getting delivery off FoodPanda a couple of times. That doesn't mean it's a bad place, but it won't blow you away either.
+
+The atmosphere in the restaurant is very curious. It feels kind of like eating in a library, and despite music playing I'd see people come in and start whispering to each other. I'm not sure how they managed to cultivate such an atmosphere.
+
+The menu consists of four curries that are natively vegan, and one more that can be made vegan. These aren't marked on the menu, but the owner speaks fluent English and understands what vegan means, so just ask about anything you're unsure of. The quality is decent, and you can expect to pay around 250 baht for a curry, some rice, a chapati and a bottle of water.
+
+<ImageGallery images={primanisImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/primanis-udon-thani-169637'>Visit Primani's on Happy Cow</ExternalLink>
+
+### Zing Zing Che
+
+Being the closest vegan restaurant to where I was staying, I came here a few times. It's a typical point-and-hope local family run 'jay' buffet, although they also have a menu on the wall that's translated into English.
+
+No one here speaks a word of English, but you can get by pointing at the buffet if you lack the Thai to communicate. As always with this kind of place, the buffet's a bit hit-and-miss. Some things on offer tasted amazing, others less so, but it's very cheap, so you can afford a few misses.
+
+Entirely unrelated to Zing Zing Che, but often located very nearby is a vegan dessert vendor selling some deep fried goodies. I got a plateful of desserts from her for 35 baht, so I definitely recommend paying here a visit if she's around when you come here.
+
+<ImageGallery images={zingZingCheImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/zing-zing-che-udon-thani-311981'>Visit Zing Zing Che on Happy Cow</ExternalLink>
+
+### Maeya
+
+I didn't really like Maeya. At which point you may be thinking _"well why are you including it in your recommended restaurants then?"_ And that is a good question.
+
+It's because it's easy.
+
+Unlike other restaurants in Udon, it's reliably open at the times it's supposed to be, the menu is translated into English, and vegan options are clearly marked. So when you want to go somewhere, know exactly what you're ordering, and be able to just point at the menu, this is it.
+
+It's a bit of a mill, in that they just churn-out food with little regard for the experience or the service. What I mean is that one person takes your order, another brings you one dish, another the next, someone else the bill etc. It's not personal. Someone will put a plate down in front of you without saying much, and you'll never see them again.
+
+It's not a place to come for the atmosphere, but the food is mostly good. I got one dish (vegan fried wanton in gravy sauce) that was absolutely foul, mainly because the gravy was this horrible gloop that felt and tasted nothing like what I think of gravy as. Everything else was decent.
+
+It's the kind of restaurant where, were I in a place of vegan abundance like Bangkok, I wouldn't give it a second look. As it is, I came here multiple times just because of how barren Udon is for vegans.
+
+<ImageGallery images={maeyaImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/maeya-udon-thani-218001'>Visit Maeya on Happy Cow</ExternalLink>
+
+## Where to run in Udon Thani
+
+I saw other places that looked viable for running in Udon, but none as good as Nong Prajak Park, and as I was staying so nearby, this is where I went for all five of my runs here.
+
+It's a lake with a 3.1km circumference that has a running track and separated cycling track all the way around it. In the evenings it gets quite crowded, but come here in the daytime and you'll have the whole thing to yourself. It got consistently to 40°C at lunchtime while I was here, and for some reason other people don't like running then. But if you're like me and enjoy saunas and want to work on your tan at the same time, it's perfect.
+
+You don't get much shade. I'd arrived here was a bad ankle and a fever, and running with no shade on a bad ankle with a fever in 40°C is a great way to test your mettle and find out what you're made of.
+
+Turns out I'm not made of very much as I only made it two laps, but it's still an absolutely lovely place to run. I would highly recommend finding somewhere to stay that's nearby when coming to Udon. Definitely the highlight of the city for me.
+
+<ImageGallery images={runningImages} />
+
+## Being sociable in Udon Thani
+
+I found no pre-organised events to attend in Udon, so if you're here alone and you want to go out, you're more or less limited to wandering to the town centre and finding a bar. I did that twice and had a surprising amount of fun.
+
+What I realised is that some people I'd met on that first night out, I also saw in completely separate bars on that second night out. There's a community of expats in Udon, many of whom are married to locals, who seem to go around all the bars and drink everyday.
+
+The only bars I found were all on or around Samphan Thamit Alley, which is a fairly long road lined with bars with one complex of even more bars at the north end, and another complex a short walk from the south end.
+
+These bars are aimed entirely at foreigners, so many have hostesses, but there are also normal bars. Most close at midnight but as I found the hard way, if you wander around this area you'll be able to find somewhere that'll serve you alcohol for as long as you can keep drinking it.
+
+That's the hangover sorted then.
