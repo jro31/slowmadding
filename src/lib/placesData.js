@@ -279,7 +279,7 @@ export const placesData = [
           "As long as you can stomach the heat, everywhere in town is comfortably walkable. Most roads have pavements, and traffic is insufficient to feel unsafe on those that don't. You might get barked at by dogs on quieter roads, but none felt a serious threat.",
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/loei-for-digital-nomads',
   },
   {
     [place]: 'Phnom Penh',
@@ -404,6 +404,6 @@ export const placesData = [
           'Pavements everywhere and most are walkable, just occasionally being blocked by vehicles/street businesses (although they are very uneven).',
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/udon-thani-for-digital-nomads',
   },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))
