@@ -1,0 +1,57 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-06-16T16:30:00+03:00',
+  title: 'Bucharest for Digital Nomads',
+  description: '', // TODO
+}
+
+export const saikeawResortDetails = {
+  dates: {
+    checkIn: '2023-06-14',
+    checkOut: '2023-07-13',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/746858708994370465',
+  },
+  roomType: 'Entire condo hosted by Alexandru',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'lei',
+    sections: {
+      Room: 8178.00,
+      '45% monthly price discount': -3680.10,
+      'Service fee': 501.85,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add city images
+
+## Where I stayed
+
+### Flexible Check-In/Out apartment
+
+<AccommodationTable details={saikeawResortDetails} />
+
+TODO
+
+## Where to get vegan food in Bucharest
+
+TODO
+
+## Where to run in Bucharest
+
+TODO
+
+## Being sociable in Bucharest
+
+TODO
