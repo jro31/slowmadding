@@ -104,7 +104,7 @@ export const placesData = [
       [social]: {
         [verdict]: true,
         [description]:
-          'There are multiple Facebook event here designed to meet new people.',
+          'There are several Facebook events here specifically for meeting new people.',
       },
       [walking]: {
         [verdict]: false,
@@ -335,7 +335,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          "At no point in my room was I unable to get a connection on which I couldn't make a video call.",
+          'At no point in my room was I unable to get a connection on which I could make video calls.',
       },
       [running]: {
         [verdict]: true,
