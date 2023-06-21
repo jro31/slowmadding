@@ -11,6 +11,9 @@ import vCheckInnBalconyImage from './v-check-inn/balcony.jpeg'
 
 import roomQuestStandardRoomBedImage from './room-quest/standard-room-bed.jpeg'
 import roomQuestStandardRoomDeskImage from './room-quest/standard-room-desk.jpeg'
+import roomQuestSuperiorRoomBedImage from './room-quest/superior-room-bed.jpeg'
+import roomQuestSuperiorRoomDeskImage from './room-quest/superior-room-desk.jpeg'
+import roomQuestSuperiorRoomBathroomImage from './room-quest/superior-room-bathroom.jpeg'
 
 import parvenaHotelSathornRoomImage from './parvena-hotel-sathorn/room.jpeg'
 import parvenaHotelSathornBathroomImage from './parvena-hotel-sathorn/bathroom.jpeg'
@@ -107,6 +110,25 @@ export const roomQuestSecondStayDetails = {
   },
 }
 
+export const roomQuestThirdStayDetails = {
+  dates: {
+    checkIn: '2023-05-11',
+    checkOut: '2023-05-24',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      'Room (including taxes and fees)': 11515.92,
+    },
+  },
+}
+
 export const parvenaHotelSathornDetails = {
   dates: {
     checkIn: '2023-03-11',
@@ -164,6 +186,21 @@ export const roomQuestImages = [
     src: roomQuestStandardRoomDeskImage,
     alt: 'RoomQuest Sukhumvit 36 standard king room desk and TV',
     caption: "There's just enough space between the bed and the TV to exercise in the standard king room.",
+  },
+  {
+    src: roomQuestSuperiorRoomBedImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room',
+    caption: "There's a noticeable jump-up in size if you get the superior double room. As well as the sofa, you have more empty space to do yoga.",
+  },
+  {
+    src: roomQuestSuperiorRoomDeskImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room desk and TV',
+    caption: "The TV's bigger in the superior double room too. At a guess I'd say it's 55\".",
+  },
+  {
+    src: roomQuestSuperiorRoomBathroomImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room bathroom',
+    caption: "The bathroom's just as bad.",
   },
 ]
 
@@ -279,9 +316,17 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 
 <AccommodationTable details={roomQuestSecondStayDetails} />
 
-TODO
+<AccommodationTable details={roomQuestThirdStayDetails} />
 
-TODO: Add more images
+You might think that because I stayed here three times, it's because I really loved this place. The truth is that it's no better than any other hotel on this list, and I'm not sure why I kept coming back. It's cheap, that helps, but was the room nicer than the other hotels listed here? Not really. Did it have more facilities? Nope. Was it at least cleaner? No, it was filthy. Was the location better?
+
+I did like the location because, despite being in Thong Lor, it didn't feel very touristy. Unlike at other hotels here, I could walk down the street from RoomQuest without being pestered for a massage, and there's a large 7-11 very nearby. Other than that the location is ok, but not amazing. It's _just_ walking distance from Benchakitti Park (about a 40 minute walk) which is a good place to go running, but every other hotel on this list has somewhere closer. There are a couple of good vegan restaurants within easy walking distance, but again, that's nothing special for this list. In truth, I don't know why I kept on coming back.
+
+The staff were all lovely (apart from the moody woman who works the night-shift), but there was an incredibly high turnover. They only had three receptionists employed at any one time, and I saw at least six of them during my stays. Not surprising really, because they all have to work twelve-hour shifts day-after-day. I'd quit pretty quickly too. It has a pool, but on my first stay here I was recommended not to swim in it because it's turned green. It's not a pool you can really sit next to, and it's too small to swim in, so in my six weeks here, I didn't see a single person in it. It just sits there behind reception anonymously. I guess the reason I kept coming back, is it does the essential things well.
+
+It has really, really fast wifi; I clocked a 555mb/s download speed when I did a speed test here, and in the superior rooms, the TV is huge. At a guess I'd say 55" (I used to own a 55" TV and these looked the same size). It may sound superficial, but that's all I really need.
+
+If I have a comfortable bed, good air-conditioning, fast wifi and a big TV, that's pretty much all I look for. I don't care that the room's dirty. I don't care that it has no worthwhile facilities. It does the essential things well. And when it does the essential things well and it's cheap then... well why pay more?
 
 <ImageGallery images={roomQuestImages} />
 
