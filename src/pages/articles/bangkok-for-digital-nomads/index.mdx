@@ -23,6 +23,12 @@ import parvenaHotelSathornShowerPictureImage from './parvena-hotel-sathorn/showe
 import parvenaHotelSathornOutsideImage from './parvena-hotel-sathorn/outside.jpeg'
 import parvenaHotelSathornWeedDonutsImage from './parvena-hotel-sathorn/weed-donuts.jpeg'
 
+import bonitaBonitaClubSandwichImage from './bonita/bonita-club-sandwich.jpeg'
+import bonitaFullEnglishBreakfastImage from './bonita/full-english-breakfast.jpeg'
+import bonitaNewLocationImage from './bonita/new-location.jpeg'
+import bonitaOriginalLocationImage from './bonita/original-location.jpeg'
+import bonitaGarlicBreadImage from './bonita/garlic-bread.jpeg'
+
 import veganerieVeganerieCheeseBurgerImage from './veganerie/veganerie-cheese-burger.jpeg'
 import veganerieStrawberryAndBananaFrenchToastImage from './veganerie/strawberry-and-banana-french-toast.jpeg'
 import veganerieCaesarWrapImage from './veganerie/caesar-wrap.jpeg'
@@ -254,6 +260,34 @@ export const parvenaHotelSathornImages = [
   }
 ]
 
+export const bonitaImages = [
+  {
+    src: bonitaBonitaClubSandwichImage,
+    alt: 'Bonita Cafe and Social Club Bonita club sandwich',
+    caption: "The Bonita club sandwich, taken in 2015 but just as good today. It'll cost you 290 baht.",
+  },
+  {
+    src: bonitaFullEnglishBreakfastImage,
+    alt: 'Bonita Cafe and Social Club full English breakfast',
+    caption: "A full English breakfast for 295 baht, taken in January 2014. I'm realising I don't have many recent photos.",
+  },
+  {
+    src: bonitaNewLocationImage,
+    alt: 'Bonita Cafe and Social Club from outside',
+    caption: 'The new (since 2015) location, taken in 2016.',
+  },
+  {
+    src: bonitaOriginalLocationImage,
+    alt: 'Bonita Cafe and Social Club old location',
+    caption: "Just for good measure, this was the location up to 2015 on Pan Street.",
+  },
+  {
+    src: bonitaGarlicBreadImage,
+    alt: 'Bonita Cafe and Social Club garlic bread',
+    caption: 'Garlic bread for 100 baht',
+  },
+]
+
 export const veganerieImages = [
   {
     src: veganerieVeganerieCheeseBurgerImage,
@@ -460,7 +494,7 @@ It has since moved to a new location not far from the first, but apart from that
 
 Because of this nostalgia I perhaps view Bonita with rose-tinted spectacles, but even now I recommend it as one of the best vegan restaurants in Bangkok and should definitely be on your list of places to eat when in Bangkok.
 
-TODO: Add photos
+<ImageGallery images={bonitaImages} />
 
 <ExternalLink url='https://www.happycow.net/reviews/bonita-cafe-and-social-club-bangkok-32850'>Visit Bonita Cafe and Social Club on Happy Cow</ExternalLink>
 
