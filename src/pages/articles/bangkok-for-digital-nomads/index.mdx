@@ -50,6 +50,14 @@ import veganerieMacAndCheeseImage from './veganerie/mac-and-cheese.jpeg'
 import veganerieYogurtStrawberryChocolateCakeImage from './veganerie/yogurt-strawberry-chocolate-cake.jpeg'
 import veganerieMercuryVilleImage from './veganerie/mercury-ville.jpeg'
 
+import veganoVeganGermanFrankfurterSausagePizzaImage from './vegano/vegan-german-frankfurter-sausage-pizza.jpeg'
+import veganoVeganFourCheesePizzaImage from './vegano/vegan-four-cheese-pizza.jpeg'
+import veganoVeganCheeseAndVegetablePizzaImage from './vegano/vegan-cheese-and-vegetable-pizza.jpeg'
+
+import theVeganTablePlantaroniPizzaImage from './the-vegan-table/plantaroni-pizza.jpeg'
+import theVeganTableSausageRucolaAndMediterraneanPizzasImage from './the-vegan-table/sausage-rucola-and-mediterranean-pizzas.jpeg'
+import theVeganTablePassionPowerSmoothieImage from './the-vegan-table/passion-power-smoothie.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-04-06T15:00:00+07:00', // TODO: Update this
@@ -398,6 +406,42 @@ export const veganerieImages = [
   },
 ]
 
+export const veganoImages = [
+  {
+    src: veganoVeganGermanFrankfurterSausagePizzaImage,
+    alt: 'Vegano 12" vegan German frankfurter sausage pizza',
+    caption: "50% of Vegano's menu is vegan. Pizzas come by the slice (which is actually a small pizza), 12-inch, or 15-inch. This 12\" vegan German frankfurter sausage pizza will cost you 380 baht (plus 7% tax).",
+  },
+  {
+    src: veganoVeganFourCheesePizzaImage,
+    alt: 'Vegano 12" vegan four cheese pizza',
+    caption: "This 12\" vegan four cheese pizza wasn't as rich as I was expecting it to be. It also costs 380 baht (plus 7% tax).",
+  },
+  {
+    src: veganoVeganCheeseAndVegetablePizzaImage,
+    alt: 'Vegano 12" vegan cheese and vegetable pizza',
+    caption: "The cheapest vegan pizza on the menu that's not a margherita is the vegan cheese and vegetable pizza. This 12\" costs 340 baht (plus 7% tax).",
+  },
+]
+
+export const theVeganTableImages = [
+  {
+    src: theVeganTablePlantaroniPizzaImage,
+    alt: 'The Vegan Table plantaroni pizza',
+    caption: 'The plantaroni pizza will usually cost 349 baht (plus 10% service charge), however...',
+  },
+  {
+    src: theVeganTableSausageRucolaAndMediterraneanPizzasImage,
+    alt: 'The Vegan Table sausage rucola and Mediterranean pizzas',
+    caption: "...at the time of writing and for at least the 8 months prior, they had a Friday promotion of 2-4-1 pizzas, so I got this sausage rucola pizza and this Mediterranean pizza for just 399 baht (plus 10% service charge). I ate them both and felt very sick, I don't recommend it.",
+  },
+  {
+    src: theVeganTablePassionPowerSmoothieImage,
+    alt: 'The Vegan Table passion power smoothie',
+    caption: 'They also do smoothies. This passion power smoothie costs 149 baht (plus 10% service charge).',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 I first came here in 2011 as a tourist and stayed in Silom and Wongwian Yai. In the first half of 2012 I was studying here and had an apartment in Phasi Charoen, then by the end of 2012 I was working and living in Ladprao. I came back as tourist at the beginning of 2015 and stayed in Sutthisan, then came back properly by the end of 2015 to work, and lived in Sathorn, and have since come back as a digital nomad staying in Phrom Pong, Khlong Toei, Thong Lor and a different part of Sathorn.
@@ -409,6 +453,8 @@ Thailand has some of the fastest Internet in the world, and that all starts with
 Green space is fairly limited, but there are a couple of nice parks in Bangkok which I'll detail in the running section. Although it would be nice if there were fewer cars and more trees, you do have spaces to escape the traffic, and although it still has a way to go, Bangkok's rail network is ever expanding and its bus network, which goes to every corner of the city but has in the past been hard for foreigners to figure-out, is becoming ever more accessible.
 
 Bangkok is a big, bustling, dirty city that has everything you could ever want. Knowing where to find it is another matter.
+
+TODO: Add city images
 
 ## Which area to stay in Bangkok
 
@@ -580,11 +626,25 @@ The menu varies by location (although the Benchasiri Park, Nana and Silom all ha
 
 ### Vegano
 
-TODO
+Slightly confusingly, Vegano isn't a vegan restaurant. When you go in, the menu is up on the wall. The right side of it is all vegan, while the left half contains animal produce, so it's 50% vegan. I recommend it primarily for the pizzas, which are the best vegan pizzas I've ever had, but don't dismiss the pastas or sandwiches either. The pasta especially is great for a cheap delivery dinner.
+
+10 of the vegan pasta dishes only cost 190 baht and are available on FoodPanda, so if you want something quick, cheap and relatively healthy (you can select wholewheat pasta) delivered to your room, it's a great option.
+
+It's the pizza that really stands-out though. There are 9 vegan choices, which are each available as a slice (which is actually a small pizza), as a 12-inch pizza, or as a 15-inch pizza. 12 inches is sufficient as a decent-sized meal, and ranges in price from 280 baht (plus 7% tax) for a margherita, to 380 baht (plus 7% tax) for most others, which includes 'vegan chicken and mushroom' and 'vegan tuna, onion and capers' pizzas. On the majority of my visits here I was given a free slice of another type of pizza, with the staff pointing at the sign which says "Free pizza slice for a Google review" as they gave it to me. I guess I'm not very memorable, because I'd left them a review after my first visit, but they kept on giving me free pizza.
+
+<ImageGallery images={veganoImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/vegano-bangkok-303229'>Visit Vegano on Happy Cow</ExternalLink>
 
 ### The Vegan Table
 
-TODO
+The Vegan Table is a slightly curious place. Unlike Vegano, it actually is fully vegan. You can come here and order anything on the menu without a worry. The reason I find it curious is I really don't know what it is. Every time I came here was for food, and that was the case for everyone else I saw, but it doesn't feel like a restaurant. It feels more like a cocktail bar. However, given the location in Nana, I don't know why anyone would stay here for the evening after they've finished their meal, because there are so many other bars in the area selling drinks significantly cheaper.
+
+The food was always excellent though, despite the weird dynamic, so I definitely recommend coming here, especially for the pizza. I'll always back a vegan restaurant, and I will never hate on people for trying new things, but I don't think they've got this one quite right yet. Until they decide that they're either a restaurant or a bar, the feeling is going to be a little odd.
+
+<ImageGallery images={theVeganTableImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/the-vegan-table-bangkok-275727'>Visit The Vegan Table on Happy Cow</ExternalLink>
 
 ## The best vegan fast food in Bangkok
 
