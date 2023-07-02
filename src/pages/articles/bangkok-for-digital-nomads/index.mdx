@@ -103,6 +103,10 @@ import pacoInsideImage from './paco/inside.jpeg'
 import pacoDecorImage from './paco/decor.jpeg'
 import pacoBlackSmoothieBowlImage from './paco/black-smoothie-bowl.jpeg'
 
+import socialBangkokVeganMeetupImage from './social/bangkok-vegan-meetup.jpeg'
+import socialLumpiniRunningClubBangkokImage from './social/lumpini-running-club-bangkok.jpeg'
+import socialBkkMeetAndMingleImage from './social/bkk-meet-and-mingle.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-04-06T15:00:00+07:00', // TODO: Update this
@@ -700,6 +704,24 @@ export const pacoImages = [
   },
 ]
 
+export const socialImages = [
+  {
+    src: socialBangkokVeganMeetupImage,
+    alt: 'Bangkok Vegan Meetup',
+    caption: "I'm really good at showing up to places and getting drunk. I'm really bad at remembering any photos of that night, so the few I have were sourced from other people. The is from the 'Bangkok Vegan Meetup' Christmas dinner 2022.",
+  },
+  {
+    src: socialLumpiniRunningClubBangkokImage,
+    alt: 'Lumpini Running Club Bangkok',
+    caption: "The 'Lumpini Running Club Bangkok' run in Lumphini Park every Tuesday and Thursday. It's a good way to meet new people, assert your dominance by running more quickly than them, and then go out and get dinner together.",
+  },
+  {
+    src: socialBkkMeetAndMingleImage,
+    alt: 'BKK Meet and Mingle',
+    caption: "This was the inaugural 'BKK Meet and Mingle' meetup, which took place at 'Mowgli Day & Night Restaurant' in May 2023. It was intended to be a weekly meetup, although looking just now, it seems to have died-out. Which is a shame, it was quite fun.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 I first came here in 2011 as a tourist and stayed in Silom and Wongwian Yai. In the first half of 2012 I was studying here and had an apartment in Phasi Charoen, then by the end of 2012 I was working and living in Ladprao. I came back as tourist at the beginning of 2015 and stayed in Sutthisan, then came back properly by the end of 2015 to work, and lived in Sathorn, and have since come back as a digital nomad staying in Phrom Pong, Khlong Toei, Thong Lor and a different part of Sathorn.
@@ -985,3 +1007,5 @@ TODO
 ## Being sociable in Bangkok
 
 TODO
+
+<ImageGallery images={socialImages} />
