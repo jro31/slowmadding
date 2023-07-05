@@ -1,0 +1,1124 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import cityBangkokAtNightImage from './city/bangkok-at-night.jpeg'
+import citySunsetImage from './city/sunset.jpeg'
+import cityForTheNationPartyBillboardImage from './city/for-the-nation-party-billboard.jpeg'
+
+import accommodationCondolettePixelTouristWarningSignImage from './accommodation/condolette-pixel-tourist-warning-sign.jpeg'
+
+import nandhaHotelRoomImage from './nandha-hotel/room.jpeg'
+
+import vCheckInnDeskImage from './v-check-inn/desk.jpeg'
+import vCheckInnBedImage from './v-check-inn/bed.jpeg'
+import vCheckInnBalconyImage from './v-check-inn/balcony.jpeg'
+
+import roomQuestStandardRoomBedImage from './room-quest/standard-room-bed.jpeg'
+import roomQuestStandardRoomDeskImage from './room-quest/standard-room-desk.jpeg'
+import roomQuestSuperiorRoomBedImage from './room-quest/superior-room-bed.jpeg'
+import roomQuestSuperiorRoomDeskImage from './room-quest/superior-room-desk.jpeg'
+import roomQuestSuperiorRoomBathroomImage from './room-quest/superior-room-bathroom.jpeg'
+
+import parvenaHotelSathornRoomImage from './parvena-hotel-sathorn/room.jpeg'
+import parvenaHotelSathornBathroomImage from './parvena-hotel-sathorn/bathroom.jpeg'
+import parvenaHotelSathornDeskImage from './parvena-hotel-sathorn/desk.jpeg'
+import parvenaHotelSathornBalconyImage from './parvena-hotel-sathorn/balcony.jpeg'
+import parvenaHotelSathornShowerPictureImage from './parvena-hotel-sathorn/shower-picture.jpeg'
+import parvenaHotelSathornOutsideImage from './parvena-hotel-sathorn/outside.jpeg'
+import parvenaHotelSathornWeedDonutsImage from './parvena-hotel-sathorn/weed-donuts.jpeg'
+
+import bonitaBonitaClubSandwichImage from './bonita/bonita-club-sandwich.jpeg'
+import bonitaFullEnglishBreakfastImage from './bonita/full-english-breakfast.jpeg'
+import bonitaNewLocationImage from './bonita/new-location.jpeg'
+import bonitaOriginalLocationImage from './bonita/original-location.jpeg'
+import bonitaGarlicBreadImage from './bonita/garlic-bread.jpeg'
+
+import mayVeggieHomeBbqCheeseBurgerImage from './may-veggie-home/bbq-cheese-burger.jpeg'
+import mayVeggieHomeSlicedAvocadoSaladImage from './may-veggie-home/sliced-avocado-salad.jpeg'
+import mayVeggieHomeVeganTeriyakiBurgerImage from './may-veggie-home/vegan-teriyaki-burger.jpeg'
+import mayVeggieHomeMayVeggieHomeImage from './may-veggie-home/may-veggie-home.jpeg'
+import mayVeggieHomeMayVeggieHomeExpressImage from './may-veggie-home/may-veggie-home-express.jpeg'
+import mayVeggieHomeMaysVeggieBurgerImage from './may-veggie-home/mays-veggie-burger.jpeg'
+import mayVeggieHomeVegetarianFishImage from './may-veggie-home/vegetarian-fish.jpeg'
+import mayVeggieHomeTofuSaladImage from './may-veggie-home/tofu-salad.jpeg'
+
+import veganerieVeganerieCheeseBurgerImage from './veganerie/veganerie-cheese-burger.jpeg'
+import veganerieStrawberryAndBananaFrenchToastImage from './veganerie/strawberry-and-banana-french-toast.jpeg'
+import veganerieCaesarWrapImage from './veganerie/caesar-wrap.jpeg'
+import veganerieGreenCurryAndRiceberryImage from './veganerie/green-curry-and-riceberry.jpeg'
+import veganerieJapaneseCurryRiceBowlImage from './veganerie/japanese-curry-rice-bowl.jpeg'
+import veganerieFullEnglishBreakfastImage from './veganerie/full-english-breakfast.jpeg'
+import veganerieCrunchyMonkeySmoothieBowlImage from './veganerie/crunchy-monkey-smoothie-bowl.jpeg'
+import veganerieMixedBerryYogurtSmoothieImage from './veganerie/mixed-berry-yogurt-smoothie.jpeg'
+import veganerieMacAndCheeseImage from './veganerie/mac-and-cheese.jpeg'
+import veganerieYogurtStrawberryChocolateCakeImage from './veganerie/yogurt-strawberry-chocolate-cake.jpeg'
+import veganerieMercuryVilleImage from './veganerie/mercury-ville.jpeg'
+
+import veganoVeganGermanFrankfurterSausagePizzaImage from './vegano/vegan-german-frankfurter-sausage-pizza.jpeg'
+import veganoVeganFourCheesePizzaImage from './vegano/vegan-four-cheese-pizza.jpeg'
+import veganoVeganCheeseAndVegetablePizzaImage from './vegano/vegan-cheese-and-vegetable-pizza.jpeg'
+
+import theVeganTablePlantaroniPizzaImage from './the-vegan-table/plantaroni-pizza.jpeg'
+import theVeganTableSausageRucolaAndMediterraneanPizzasImage from './the-vegan-table/sausage-rucola-and-mediterranean-pizzas.jpeg'
+import theVeganTablePassionPowerSmoothieImage from './the-vegan-table/passion-power-smoothie.jpeg'
+
+import altEaterySuperKaleSaladWithYuzuDressingImage from './alt-eatery/super-kale-salad-with-yuzu-dressing.jpeg'
+import altEateryTenderGarlicRiceImage from './alt-eatery/tender-garlic-rice.jpeg'
+import altEateryCrispyCroquetteImage from './alt-eatery/crispy-croquette.jpeg'
+import altEateryAntioxidantMixberryFrappeImage from './alt-eatery/antioxidant-mixberry-frappe.jpeg'
+import altEateryAlmondJoyDonutImage from './alt-eatery/almond-joy-donut.jpeg'
+import altEateryAltBeefUfoBurgerSetImage from './alt-eatery/alt-beef-ufo-burger-set.jpeg'
+import altEaterySweetcornLatteImage from './alt-eatery/sweetcorn-latte.jpeg'
+import altEateryCheesyMeatyLasagneImage from './alt-eatery/cheesy-meaty-lasagne.jpeg'
+import altEateryPumpkinSaladImage from './alt-eatery/pumpkin-salad.jpeg'
+import altEateryTheSaucyMotzPizzaImage from './alt-eatery/the-saucy-motz-pizza.jpeg'
+import altEateryAltSignatureBreakfastImage from './alt-eatery/alt-signature-breakfast.jpeg'
+import altEateryHummusFriesImage from './alt-eatery/hummus-fries.jpeg'
+
+import soVeganFourChoicesFromTheBuffetImage from './so-vegan/four-choices-from-the-buffet.jpeg'
+import soVeganVeganBurgerImage from './so-vegan/vegan-burger.jpeg'
+import soVeganVeganHotDogImage from './so-vegan/vegan-hot-dog.jpeg'
+import soVeganNoriFrenchFriesImage from './so-vegan/nori-french-fries.jpeg'
+import soVeganLoadsFromTheBuffetImage from './so-vegan/loads-from-the-buffet.jpeg'
+
+import kaekKaoKuaKaoSoi27Image from './kaek-kao-kua/kao-soi-27.jpeg'
+import kaekKaoKuaMamaMoosupTomYumImage from './kaek-kao-kua/mama-moosup-tom-yum.jpeg'
+import kaekKaoKuaKaekKeeKuiImage from './kaek-kao-kua/kaek-kee-kui.jpeg'
+import kaekKaoKuaBuildYourOwnBowlImage from './kaek-kao-kua/build-your-own-bowl.jpeg'
+import kaekKaoKuaBameeMoodaengImage from './kaek-kao-kua/bamee-moodaeng.jpeg'
+import kaekKaoKuaCreamyTomYumImage from './kaek-kao-kua/creamy-tom-yum.jpeg'
+
+import bartelsGrilledVeganOnionSoupImage from './bartels/grilled-vegan-onion-soup.jpeg'
+import bartelsVeganSpicycadoImage from './bartels/vegan-spicycado.jpeg'
+import bartelsTropicalBlueSmoothieImage from './bartels/tropical-blue-smoothie.jpeg'
+import bartelsGrilledVeganOhSweetTomatoImage from './bartels/grilled-vegan-oh-sweet-tomato.jpeg'
+import bartelsGreenSmoothieImage from './bartels/green-smoothie.jpeg'
+import bartelsVeganGrilledCubanoImage from './bartels/vegan-grilled-cubano.jpeg'
+
+import vibeVeganPestoPastaImage from './vibe/vegan-pesto-pasta.jpeg'
+import vibeVeganMixedBerrySmoothieBowlImage from './vibe/vegan-mixed-berry-smoothie-bowl.jpeg'
+import vibeVeganMixedVeggiePizzaImage from './vibe/vegan-mixed-veggie-pizza.jpeg'
+import vibeVeganCroissantWithSausageAndOrangeJuiceImage from './vibe/vegan-croissant-with-sausage-and-orange-juice.jpeg'
+import vibeVeganBreakfastSetImage from './vibe/vegan-breakfast-set.jpeg'
+import vibeJasmineGreenTeaImage from './vibe/jasmine-green-tea.jpeg'
+
+import pacoPacoSmoothieBowlImage from './paco/paco-smoothie-bowl.jpeg'
+import pacoInsideImage from './paco/inside.jpeg'
+import pacoDecorImage from './paco/decor.jpeg'
+import pacoBlackSmoothieBowlImage from './paco/black-smoothie-bowl.jpeg'
+
+import runningBenchasiriParkStravaImage from './running/benchasiri-park-strava.jpeg'
+import runningLumphiniParkStravaImage from './running/lumphini-park-strava.jpeg'
+import runningBenchakittiParkStravaImage from './running/benchakitti-park-strava.jpeg'
+import runningBenchakittiForestParkStravaImage from './running/benchakitti-forest-park-strava.jpeg'
+import runningGreenMileStravaImage from './running/green-mile-strava.jpeg'
+
+import socialBangkokVeganMeetupImage from './social/bangkok-vegan-meetup.jpeg'
+import socialLumpiniRunningClubBangkokImage from './social/lumpini-running-club-bangkok.jpeg'
+import socialBkkMeetAndMingleImage from './social/bkk-meet-and-mingle.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-07-05T21:00:00+03:00',
+  title: 'Bangkok for Digital Nomads',
+  description: "Bangkok is the travel hub of South-East Asia, but people often use it as nothing more than a stepping stone to get to Thailand's beaches or to Chiang Mai. How does it fare for the digital nomad who chooses to stop here?",
+}
+
+export const nandhaHotelDetails = {
+  dates: {
+    checkIn: '2022-10-07',
+    checkOut: '2022-10-20',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/home-place.html',
+  },
+  roomType: 'Classic Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12672,
+      '7% VAT': 887.04,
+      '10% Property service charge': 1267.20,
+    },
+  },
+}
+
+export const vCheckInnDetails = {
+  dates: {
+    checkIn: '2022-10-20',
+    checkOut: '2022-11-03',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
+  },
+  roomType: 'Deluxe Double Room with Balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 15308.41,
+      '7% VAT': 1071.59,
+    },
+  },
+}
+
+export const roomQuestFirstStayDetails = {
+  dates: {
+    checkIn: '2022-12-01',
+    checkOut: '2022-12-16',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Standard King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12249.39,
+      '7% VAT': 857.46,
+    },
+  },
+}
+
+export const roomQuestSecondStayDetails = {
+  dates: {
+    checkIn: '2023-04-06',
+    checkOut: '2023-04-20',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      'Room (including taxes and fees)': 11912.46,
+    },
+  },
+}
+
+export const roomQuestThirdStayDetails = {
+  dates: {
+    checkIn: '2023-05-11',
+    checkOut: '2023-05-24',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      'Room (including taxes and fees)': 11515.92,
+    },
+  },
+}
+
+export const parvenaHotelSathornDetails = {
+  dates: {
+    checkIn: '2023-03-11',
+    checkOut: '2023-03-23',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
+  },
+  roomType: 'Standard Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 8175.70,
+      '7% VAT': 572.30,
+      '10% Property service charge': 874.80,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: cityBangkokAtNightImage,
+    alt: 'Bangkok at night',
+    caption: "Bangkok's a colourful city, even at night. This is the non-Sukhumvit end of Sukhumvit soi 22, taken from the balcony of the V Check Inn hotel. ",
+  },
+  {
+    src: citySunsetImage,
+    alt: 'Bangkok sunset',
+    caption: 'The great thing about all the pollution in Bangkok is you get some amazing sunsets. This one was taken from the balcony of my room during my second stay at RoomQuest Sukhumvit 36.',
+  },
+  {
+    src: cityForTheNationPartyBillboardImage,
+    alt: 'For the Nation Party billboard',
+    caption: 'I was here during the run-up to election. There were some interesting campaign promises.',
+  },
+]
+
+export const accommodationImages = [
+  {
+    src: accommodationCondolettePixelTouristWarningSignImage,
+    alt: 'Condolette Pixel tourist warning sign',
+    caption: 'From the building that I lived in from 2015 to 2018, this is the not very welcoming warning sign that greeted any tourists who tried to stay there short-term.',
+  }
+]
+
+export const nandhaHotelImages = [
+  {
+    src: nandhaHotelRoomImage,
+    alt: 'Nandha Hotel Classic Superior Double Room',
+    caption: "It's a pretty big room. Plenty of space for exercise.",
+  }
+]
+
+export const vCheckInnImages = [
+  {
+    src: vCheckInnDeskImage,
+    alt: 'V Check Inn desk',
+    caption: 'The desk is a good place to setup your laptop and work for the day.'
+  },
+  {
+    src: vCheckInnBedImage,
+    alt: 'V Check Inn bed',
+    caption: 'The bed was comfortable enough.',
+  },
+  {
+    src: vCheckInnBalconyImage,
+    alt: 'V Check Inn balcony',
+    caption: "The standout feature of the room is the balcony. It's huge and you get a great view. I'd often come out here to eat, or to sit and think."
+  },
+]
+
+export const roomQuestImages = [
+  {
+    src: roomQuestStandardRoomBedImage,
+    alt: 'RoomQuest Sukhumvit 36 standard king room bed',
+    caption: 'The standard king room. For the uninspiring ruler.',
+  },
+  {
+    src: roomQuestStandardRoomDeskImage,
+    alt: 'RoomQuest Sukhumvit 36 standard king room desk and TV',
+    caption: "There's just enough space between the bed and the TV to exercise in the standard king room.",
+  },
+  {
+    src: roomQuestSuperiorRoomBedImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room',
+    caption: "There's a noticeable jump-up in size if you get the superior double room. As well as the sofa, you have more empty space to do yoga.",
+  },
+  {
+    src: roomQuestSuperiorRoomDeskImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room desk and TV',
+    caption: "The TV's bigger in the superior double room too. At a guess I'd say it's 55\".",
+  },
+  {
+    src: roomQuestSuperiorRoomBathroomImage,
+    alt: 'RoomQuest Sukhumvit 36 superior double room bathroom',
+    caption: "The bathroom's just as bad.",
+  },
+]
+
+export const parvenaHotelSathornImages = [
+  {
+    src: parvenaHotelSathornRoomImage,
+    alt: 'Parvena Hotel Sathorn room',
+    caption: "It's an alright-sized room, and the bed is comfortable.",
+  },
+  {
+    src: parvenaHotelSathornBathroomImage,
+    alt: 'Parvena Hotel Sathorn bathroom',
+    caption: "The bathroom... if you couldn't tell.",
+  },
+  {
+    src: parvenaHotelSathornDeskImage,
+    alt: 'Parvena Hotel Sathorn desk',
+    caption: "The world's not most comfortable desk.",
+  },
+  {
+    src: parvenaHotelSathornBalconyImage,
+    alt: 'Parvena Hotel Sathorn balcony',
+    caption: "There's a decent view from the balcony.",
+  },
+  {
+    src: parvenaHotelSathornShowerPictureImage,
+    alt: 'Parvena Hotel Sathorn shower picture',
+    caption: "It's an interesting choice of art to put in the shower. I don't hate it.",
+  },
+  {
+    src: parvenaHotelSathornOutsideImage,
+    alt: 'Parvena Hotel Sathorn from outside',
+    caption: 'Parvena Hotel Sathorn. That tuk-tuk is always sittng there and takes guests anywhere within 3 miles of the hotel for free.',
+  },
+  {
+    src: parvenaHotelSathornWeedDonutsImage,
+    alt: 'Leaf Cannabis Cafe vegan donuts',
+    caption: "There are several weed shops in the area surrounding the hotel. These vegan cannabis donuts came from 'Leaf Cannabis Cafe', which is about a three-minute walk away. They make watching Netflix more fun."
+  }
+]
+
+export const bonitaImages = [
+  {
+    src: bonitaBonitaClubSandwichImage,
+    alt: 'Bonita Cafe and Social Club Bonita club sandwich',
+    caption: "The Bonita club sandwich, taken in 2015 but just as good today. It'll cost you 290 baht.",
+  },
+  {
+    src: bonitaFullEnglishBreakfastImage,
+    alt: 'Bonita Cafe and Social Club full English breakfast',
+    caption: "A full English breakfast for 295 baht, taken in January 2014. I'm realising I don't have many recent photos.",
+  },
+  {
+    src: bonitaNewLocationImage,
+    alt: 'Bonita Cafe and Social Club from outside',
+    caption: 'The new (since 2015) location, taken in 2016.',
+  },
+  {
+    src: bonitaOriginalLocationImage,
+    alt: 'Bonita Cafe and Social Club old location',
+    caption: "Just for good measure, this was the location up to 2015 on Pan Street.",
+  },
+  {
+    src: bonitaGarlicBreadImage,
+    alt: 'Bonita Cafe and Social Club garlic bread',
+    caption: 'Garlic bread for 100 baht',
+  },
+]
+
+export const mayVeggieHomeImages = [
+  {
+    src: mayVeggieHomeBbqCheeseBurgerImage,
+    alt: 'May Veggie Home BBQ cheese burger',
+    caption: "The BBQ cheese burger, taken in 2018. I remember when it got added to the menu. It was a good day.",
+  },
+  {
+    src: mayVeggieHomeSlicedAvocadoSaladImage,
+    alt: 'May Veggie Home sliced avocado salad',
+    caption: 'The sliced avocado salad in 2015.',
+  },
+  {
+    src: mayVeggieHomeVeganTeriyakiBurgerImage,
+    alt: 'May Veggie Home vegan teriyaki burger',
+    caption: "This vegan teriyaki burger was the last thing I ate at the main May location in October 2022. I haven't been back since, I hate their new location. It costs 179 baht (plus 7% tax).",
+  },
+  {
+    src: mayVeggieHomeMayVeggieHomeImage,
+    alt: 'May Veggie Home from outside',
+    caption: 'While it might be a pain to get to, their current location is nice when you finally get here.',
+  },
+  {
+    src: mayVeggieHomeMayVeggieHomeExpressImage,
+    alt: 'May Veggie Home Express',
+    caption: "For the people who don't want to haul themselves all the way out to the main location, May Veggie Home Express is a viable substitute. It's not as nice and the menu is limited, but it's much easier to get to.",
+  },
+  {
+    src: mayVeggieHomeMaysVeggieBurgerImage,
+    alt: "May Veggie Home May's veggie burger",
+    caption: "May's veggie burger, their signature burger, will cost you 170 baht (plus 7% tax).",
+  },
+  {
+    src: mayVeggieHomeVegetarianFishImage,
+    alt: 'May Veggie Home vegetarian fish',
+    caption: "I had the vegetarian fish back in 2015. It's amazing how looking at a picture of some food you ate 8 years ago can take you right back there.",
+  },
+  {
+    src: mayVeggieHomeTofuSaladImage,
+    alt: 'May Veggie Home tofu salad',
+    caption: 'I also got this tofu salad then. That was a good day.',
+  },
+]
+
+export const veganerieImages = [
+  {
+    src: veganerieVeganerieCheeseBurgerImage,
+    alt: 'Veganerie Cheese Burger',
+    caption: 'The Veganerie cheese burger is a little pricey at 310 baht, but worth every penny.',
+  },
+  {
+    src: veganerieStrawberryAndBananaFrenchToastImage,
+    alt: 'Veganerie strawberry and banana French toast',
+    caption: "Taken at the now defunct Mercury Ville branch in February 2015, this strawberry and banana French toast would have cost you 185 baht. I'm not sure if it's available on the present-day menu.",
+  },
+  {
+    src: veganerieCaesarWrapImage,
+    alt: 'Veganerie Concept caesar wrap',
+    caption: "One item that definitely is available is this Caesar wrap, taken at Veganerie Concept behind Benchasiri Park in May 2023. It'll cost you 195 baht.",
+  },
+  {
+    src: veganerieGreenCurryAndRiceberryImage,
+    alt: 'Veganerie green curry and riceberry',
+    caption: 'While I primarily recommend Veganerie for its western food and desserts, it does some great Asian food too, including this green curry and riceberry for 210 baht.',
+  },
+  {
+    src: veganerieJapaneseCurryRiceBowlImage,
+    alt: 'Veganerie Japanese curry rice bowl',
+    caption: "It's not just Thai food either. This Japanese curry rice bowl, taken at the Nana branch, is just 169 baht by itself, or 199 baht with a drink.",
+  },
+  {
+    src: veganerieFullEnglishBreakfastImage,
+    alt: 'Veganerie full English breakfast',
+    caption: 'Back when I still lived in Bangkok in 2018, I had this vegan full English, which is still on the menu today.',
+  },
+  {
+    src: veganerieCrunchyMonkeySmoothieBowlImage,
+    alt: 'Veganerie crunchy monkey smoothie bowl',
+    caption: 'They also offer a small selection of healthy smoothie bowls, including this crunchy monkey smoothie bowl for 240 baht.',
+  },
+  {
+    src: veganerieMixedBerryYogurtSmoothieImage,
+    alt: 'Veganerie mixed berry yogurt smoothie',
+    caption: 'The selection of smoothies is vast and a mix of healthy and less so. This mixed berry yogurt smoothie would probably be considered the latter. I have no regrets. 155 baht.',
+  },
+  {
+    src: veganerieMacAndCheeseImage,
+    alt: 'Veganerie mac and cheese',
+    caption: 'I generally avoid buying pasta in restaurants, because for some reason despite being such a cheap product, restaurants are really stingy with the portions. I can eat three times this much. Nevertheless, it did taste good. This mac and cheese, taken at the Silom branch, will cost you 235 baht.',
+  },
+  {
+    src: veganerieYogurtStrawberryChocolateCakeImage,
+    alt: 'Veganerie yogurt, strawberry, chocolate cake',
+    caption: 'Harking back for a simpler time, this yogurt, strawberry, chocolate cake was taken on my very first visit to a Veganerie, at the Mercury Ville branch in January 2015. Back then it cost 135 baht.',
+  },
+  {
+    src: veganerieMercuryVilleImage,
+    alt: 'Veganerie Mercury Ville',
+    caption: 'Veganerie Mercury Ville. Where it all started.',
+  },
+]
+
+export const veganoImages = [
+  {
+    src: veganoVeganGermanFrankfurterSausagePizzaImage,
+    alt: 'Vegano 12" vegan German frankfurter sausage pizza',
+    caption: "50% of Vegano's menu is vegan. Pizzas come by the slice (which is actually a small pizza), 12-inch, or 15-inch. This 12\" vegan German frankfurter sausage pizza will cost you 380 baht (plus 7% tax).",
+  },
+  {
+    src: veganoVeganFourCheesePizzaImage,
+    alt: 'Vegano 12" vegan four cheese pizza',
+    caption: "This 12\" vegan four cheese pizza wasn't as rich as I was expecting it to be. It also costs 380 baht (plus 7% tax).",
+  },
+  {
+    src: veganoVeganCheeseAndVegetablePizzaImage,
+    alt: 'Vegano 12" vegan cheese and vegetable pizza',
+    caption: "The cheapest vegan pizza on the menu that's not a margherita is the vegan cheese and vegetable pizza. This 12\" costs 340 baht (plus 7% tax).",
+  },
+]
+
+export const theVeganTableImages = [
+  {
+    src: theVeganTablePlantaroniPizzaImage,
+    alt: 'The Vegan Table plantaroni pizza',
+    caption: 'The plantaroni pizza will usually cost 349 baht (plus 10% service charge), however...',
+  },
+  {
+    src: theVeganTableSausageRucolaAndMediterraneanPizzasImage,
+    alt: 'The Vegan Table sausage rucola and Mediterranean pizzas',
+    caption: "...at the time of writing and for at least the 8 months prior, they had a Friday promotion of 2-4-1 pizzas, so I got this sausage rucola pizza and this Mediterranean pizza for just 399 baht (plus 10% service charge). I ate them both and felt very sick, I don't recommend it.",
+  },
+  {
+    src: theVeganTablePassionPowerSmoothieImage,
+    alt: 'The Vegan Table passion power smoothie',
+    caption: 'They also do smoothies. This passion power smoothie costs 149 baht (plus 10% service charge).',
+  },
+]
+
+export const altEateryImages = [
+  {
+    src: altEaterySuperKaleSaladWithYuzuDressingImage,
+    alt: 'alt.Eatery super kale salad with yuzu dressing',
+    caption: "Although I'd consider alt to be a fast food place, it does have some healthy options, such as this 'Super kale salad with yuzu dressing', which costs 145 baht.",
+  },
+  {
+    src: altEateryTenderGarlicRiceImage,
+    alt: 'alt.Eatery tender garlic rice',
+    caption: 'Main dishes start at 125 baht, so you can get a good feed without breaking the bank. This tender garlic rice will cost you 135 baht.',
+  },
+  {
+    src: altEateryCrispyCroquetteImage,
+    alt: 'alt.Eatery crispy croquette',
+    caption: 'Sides are even cheaper. These crispy croquettes are 99 baht.',
+  },
+  {
+    src: altEateryAntioxidantMixberryFrappeImage,
+    alt: 'alt.Eatery anitoxidant mixberry frappe',
+    caption: "I wouldn't say that they have any healthy drinks on the menu (apart from water), but this antioxidant mixberry frappe could be worse. It costs 95 baht.",
+  },
+  {
+    src: altEateryAlmondJoyDonutImage,
+    alt: 'alt.Eatery almond joy donut',
+    caption: 'alt has a very wide selection of desserts, especially donuts. An almond joy donut will cost you 49 baht.',
+  },
+  {
+    src: altEateryAltBeefUfoBurgerSetImage,
+    alt: 'alt.Eatery alt.Beef UFO burger set',
+    caption: "This is the 'alt.Beef UFO burger set'. Their burgers come as UFOs. I don't know why more restaurants don't do that, it makes it much more fun. The set includes fries and a small salad for 225 baht.",
+  },
+  {
+    src: altEaterySweetcornLatteImage,
+    alt: 'alt.Eatery sweetcorn latter',
+    caption: 'Back when the menu was still fun you could get a sweetcorn latte for 109 baht.',
+  },
+  {
+    src: altEateryCheesyMeatyLasagneImage,
+    alt: 'alt.Eatery cheesy meaty lasagne',
+    caption: "The cheesy, meaty lasagne that doesn't contain any cheese or meat for 170 baht.",
+  },
+  {
+    src: altEateryPumpkinSaladImage,
+    alt: 'alt.Eatery pumpkin salad',
+    caption: 'Another of the salads is this pumpkin salad at 125 baht.',
+  },
+  {
+    src: altEateryTheSaucyMotzPizzaImage,
+    alt: 'alt.Eatery the saucy motz pizza half',
+    caption: "Although alt do pizzas, they're definitely not their forte (see above for better pizza places). You can buy half pizzas, like this 'The saucy motz' pizza half for 200 baht, or a whole pizza will cost you double.",
+  },
+  {
+    src: altEateryAltSignatureBreakfastImage,
+    alt: 'alt.Eatery alt.Signature breakfast',
+    caption: "Despite being called the 'alt.Signature breakfast', I think this breakfast is a temporary offering, as it never made it onto the main menu when I was there. If it is still available, it's pretty good and costs 260 baht (or 299 baht with a drink).",
+  },
+  {
+    src: altEateryHummusFriesImage,
+    alt: 'alt.Eatery hummus fries',
+    caption: 'Pretty much a meal in itself, humms fries are 89 baht.',
+  },
+]
+
+export const soVeganImages = [
+  {
+    src: soVeganFourChoicesFromTheBuffetImage,
+    alt: 'So Vegan rice with four choices from the buffet',
+    caption: "Although they do made-to-order food, So Vegan is primarily a place where you'll pick from the buffet. These four choices plus rice include a vegan fried egg, and cost 75 baht.",
+  },
+  {
+    src: soVeganVeganBurgerImage,
+    alt: 'So Vegan vegan burger',
+    caption: 'The uniqueness of So Vegan is that it offers vegan food at Thai food prices, including western options like this vegan burger for 89 baht.',
+  },
+  {
+    src: soVeganVeganHotDogImage,
+    alt: 'So Vegan vegan hot dog',
+    caption: 'A vegan hot dog costs just 69 baht (nice).',
+  },
+  {
+    src: soVeganNoriFrenchFriesImage,
+    alt: 'So Vegan nori French fries',
+    caption: 'Nori French fries are also 69 baht (nice).',
+  },
+  {
+    src: soVeganLoadsFromTheBuffetImage,
+    alt: 'So Vegan buffet',
+    caption: "I was pretty hungry on this visit so just got them to pile a load of stuff onto the rice that you can't see underneath. This plate cost 95 baht.",
+  },
+]
+
+export const kaekKaoKuaImages = [
+  {
+    src: kaekKaoKuaKaoSoi27Image,
+    alt: 'Kaek Kao Kua Kao Soi 27',
+    caption: 'At 149 baht, the Kao Soi 27 bowl (creamy coconut curry with tofu, mushrooms, onions and pickled veggies) is the most expensive menu item outside of build-your-own. I added the vegan pork for an extra 30 baht.',
+  },
+  {
+    src: kaekKaoKuaMamaMoosupTomYumImage,
+    alt: 'Kaek Kao Kua Mama Moosup Tom Yum',
+    caption: "The Mama Moosup tom yum is yardlong beans with omnimeat and vegan fish balls. This was the first time I'd ever had omnimeat, and it was disconcertingly realistic. I had to check it was actually vegan. This costs 109 baht.",
+  },
+  {
+    src: kaekKaoKuaKaekKeeKuiImage,
+    alt: 'Kaek Kao Kua Kaek Kee Kui',
+    caption: "When Kaew Kao Kua serves kaek kee kui you pretty much give up and accept whatever comes. Luckily it's pretty good and translates to morning glory, tofu, bean sprouts, mushrooms and peanut butter, which I had made with brown rice noodles. It'll cost you 89 baht.",
+  },
+  {
+    src: kaekKaoKuaBuildYourOwnBowlImage,
+    alt: 'Kaek Kao Kua build your own bowl',
+    caption: 'This is my build-your-own-bowl for 178 baht. It includes two types of noodles, vegan pork, tofu, morning glory, kale, mushrooms and tom yum.',
+  },
+  {
+    src: kaekKaoKuaBameeMoodaengImage,
+    alt: 'Kaek Kao Kua bamee moodaeng',
+    caption: 'The bamee moodaeng is marinated vegan pork with Chinese kale. It costs 99 baht.',
+  },
+  {
+    src: kaekKaoKuaCreamyTomYumImage,
+    alt: 'Kaek Kao Kua creamy tom yum',
+    caption: "When creamy tom yum is the easiest to understand name, then they aren't making life easy. It's a coconut curry with two types of tofu, two types of mushroom, bean sprouts, yardlong beans, lime and cilantro, and will cost you 129 baht.",
+  },
+]
+
+export const bartelsImages = [
+  {
+    src: bartelsGrilledVeganOnionSoupImage,
+    alt: 'Bartels grilled vegan onion soup toastie',
+    caption: "This is the grilled vegan onion soup toastie. I don't understand either, but it tastes alright and only costs 200 baht.",
+  },
+  {
+    src: bartelsVeganSpicycadoImage,
+    alt: 'Bartels vegan spicycado sandwich',
+    caption: 'As well as toasties, they do several cold vegan sandwiches. This is the vegan spicycado sandwich (🤷‍♂️) for 270 baht.',
+  },
+  {
+    src: bartelsTropicalBlueSmoothieImage,
+    alt: 'Bartels tropical blue smoothie',
+    caption: "If you're after something healthier, they do smoothies and smoothie bowls. This tropical blue smoothie made with coconut milk will cost you 180 baht.",
+  },
+  {
+    src: bartelsGrilledVeganOhSweetTomatoImage,
+    alt: 'Bartels grilled vegan oh sweet tomato toastie',
+    caption: "The grilled vegan oh sweet tomato toastie. They're better at making sandwiches than naming them. It costs 250 baht.",
+  },
+  {
+    src: bartelsGreenSmoothieImage,
+    alt: 'Bartels green smoothie',
+    caption: 'This is the green smoothie made with apple juice for 180 baht. Yes, that is a giant leaf in my drink.',
+  },
+  {
+    src: bartelsVeganGrilledCubanoImage,
+    alt: 'Bartels vegan grilled cubano toastie',
+    caption: 'For some reason, on my first visit to both the Sukhumvit branch and to the Sathorn branch I got the vegan grilled Cubano made with vegan sausage. It was good both times. This is the one from the Sathorn branch, and costs 270 baht.',
+  },
+]
+
+export const vibeImages = [
+  {
+    src: vibeVeganPestoPastaImage,
+    alt: 'Vibe vegan pesto pasta',
+    caption: "The portions aren't huge at Vibe, like you'd expect at a coffee shop, but the quality is really good. This vegan pesto pasta costs 189 baht.",
+  },
+  {
+    src: vibeVeganMixedBerrySmoothieBowlImage,
+    alt: 'Vibe vegan mixed berry smoothie bowl',
+    caption: 'They have some healthy offerings on the menu. The vegan mixed berry smoothie bowl is 249 baht.',
+  },
+  {
+    src: vibeVeganMixedVeggiePizzaImage,
+    alt: 'Vibe vegan mixed veggie pizza',
+    caption: "The world's smallest pizza, although for 195 baht I wasn't expecting it to be big.",
+  },
+  {
+    src: vibeVeganCroissantWithSausageAndOrangeJuiceImage,
+    alt: 'Vibe vegan croissant with sausage and orange juice',
+    caption: 'A vegan croissant with vegan sausage and an orange juice is a good way to start the day. As a set it costs 189 baht. Pro tip: Get another vegan croissant to take away,',
+  },
+  {
+    src: vibeVeganBreakfastSetImage,
+    alt: 'Vibe vegan breakfast set',
+    caption: 'The vegan breakfast set is 249 baht.',
+  },
+  {
+    src: vibeJasmineGreenTeaImage,
+    alt: 'Vibe jasmine green tea',
+    caption: 'If you know me then you know I get through a lot of green tea. A lot. Here a jasmine green tea is 75 baht.',
+  },
+]
+
+export const pacoImages = [
+  {
+    src: pacoPacoSmoothieBowlImage,
+    alt: 'Paco Paco smoothie bowl',
+    caption: "The 'Paco' smoothie bowl is made with blackberry, blueberry, banana, dunaliella salina and pineapple, and costs 320 baht.",
+  },
+  {
+    src: pacoInsideImage,
+    alt: 'Paco interior',
+    caption: "It's a really quaint little place, with some interesting decor.",
+  },
+  {
+    src: pacoDecorImage,
+    alt: 'Paco decor',
+    caption: 'Napkin?',
+  },
+  {
+    src: pacoBlackSmoothieBowlImage,
+    alt: 'Paco black smoothie bowl',
+    caption: "The 'Black' smoothie bowl (I don't know how they come up with these names) is made with raspberry, blackberry, blueberry, banana and pineapple, and will set you back 290 baht.",
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningBenchasiriParkStravaImage,
+    alt: 'Benchasiri Park running Strava',
+    caption: "The Benchasiri Park run. You can't really get lost on this one, just go around the outside.",
+    url: 'https://www.strava.com/activities/9122804003',
+  },
+  {
+    src: runningLumphiniParkStravaImage,
+    alt: 'Lumphini Park running Strava',
+    caption: "Lumphini Park. It's pretty clear as you're running it, but this is the standard running route around Lumphini.",
+    url: 'https://www.strava.com/activities/7991751358',
+  },
+  {
+    src: runningBenchakittiParkStravaImage,
+    alt: 'Benchakitti Park running Strava',
+    caption: "Benchakitti Park. There's a marked running track the entire way around, although people walking will often ignore these markings.",
+    url: 'https://www.strava.com/activities/7999468155',
+  },
+  {
+    src: runningBenchakittiForestParkStravaImage,
+    alt: 'Benchakitt Forest Park running Strava',
+    caption: 'This run combines Benchakitti Park (on the right) with Benchakitti Forest Park including the Benchakitti Forest Park Skywalk (the zig-zaggy diagonal line that starts at the top-left of the map), and the first part of the Green Mile (the flat horizontal line at the top of the map).',
+    url: 'https://www.strava.com/activities/8246246586',
+  },
+  {
+    src: runningGreenMileStravaImage,
+    alt: 'Green Mile running Strava',
+    caption: "Bringing it all together, this run starts at the south end of Benchakitti Park. It does half a lap of the lake before veering off and onto the Green Mile, which takes you all the way over to Lumphini Park without having to cross any roads. There's then one lap of Lumphini before going back onto the Green Mile, and just over halfway along, turning onto the Benchakitti Forest Park Skywalk, and finally back to Benchakitti Park. If you were to stop where you started, at the south end of Benchakitti Park, it's roughly a 7.7km run, without crossing a single road. If you want to extend the route, you can add on laps of Lumphini Park, or as I did here, add on laps of Benchakitti Park until you've gone as far as you want.",
+    url: 'https://www.strava.com/activities/8034699881',
+  },
+]
+
+export const socialImages = [
+  {
+    src: socialBangkokVeganMeetupImage,
+    alt: 'Bangkok Vegan Meetup',
+    caption: "I'm really good at showing up to places and getting drunk. I'm really bad at remembering to take any photos of that night, so the few I have were sourced from other people. The is from the 'Bangkok Vegan Meetup' Christmas dinner 2022.",
+  },
+  {
+    src: socialLumpiniRunningClubBangkokImage,
+    alt: 'Lumpini Running Club Bangkok',
+    caption: "The 'Lumpini Running Club Bangkok' run in Lumphini Park every Tuesday and Thursday. It's a good way to meet new people, assert your dominance by running more quickly than them, and then go out and get dinner together.",
+  },
+  {
+    src: socialBkkMeetAndMingleImage,
+    alt: 'BKK Meet and Mingle',
+    caption: "This was the inaugural 'BKK Meet and Mingle' meetup, which took place at 'Mowgli Day & Night Restaurant' in May 2023. It was intended to be a weekly meetup, although looking now, it seems to have died-out, which is a shame. It was quite fun.",
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+I first came to Bangkok in 2011 as a tourist and stayed in Silom and Wongwian Yai. In the first half of 2012 I was studying here and had an apartment in Phasi Charoen, then by the end of 2012 I was working and living in Ladprao. I came back as tourist at the beginning of 2015 and stayed in Sutthisan, then came back properly at the end of 2015 to work and lived in Sathorn, and have since come back as a digital nomad staying in Phrom Pong, Khlong Toei, Thong Lor and a different part of Sathorn.
+
+Staying in all these areas and wearing all these hats, I know Bangkok better than anywhere else in the world but I'm going to do my best to keep this article just about being a digital nomad here. I apologise if I stray.
+
+Thailand has some of the fastest Internet in the world, and that all starts with Bangkok. Good luck finding anywhere in the city that you can't get a 5G connection, so you're never going to have trouble connecting to video calls. The Meetup community here is absolutely thriving, so pretty much seven days per week you'll be able to find Meetup events that suit your taste, and even without the mass of Meetup groups and Facebook events, it's not a hard city to meet people by just going and sitting in a bar.
+
+Green space is fairly limited, but there are a couple of nice parks in Bangkok which I'll detail in the running section. Although it would be nice if there were fewer cars and more trees, you do have spaces to escape the traffic, and although it still has a way to go, Bangkok's rail network is ever expanding and its bus network, which goes to every corner of the city but has in the past been hard for foreigners, is becoming ever more accessible.
+
+Bangkok is a big, bustling, dirty city that has everything you could ever want. Knowing where to find it is another matter.
+
+<ImageGallery images={cityImages} />
+
+## Which area to stay in Bangkok
+
+Bangkok centres around Sukhumvit. Other people will dispute that, claiming that Siam or even Silom are the centre of Bangkok, and that's ok. They're allowed to be wrong. When coming to Bangkok for the first time and trying to figure-out where to stay, start with Sukhumvit (around the Terminal 21 shopping mall) and work outwards from there until you find what you're looking for.
+
+If you head north-west just a few hundred metres, you'll get to Nana, which is the horribly touristy area favoured by sexpats and which has many bars catering to them. If you're coming here for daytime drinking and prostitutes, you need look no further.
+
+Continue north-west from there another kilometre and you'll make it to Siam. If you love shopping, and particularly shopping malls, then this is your dream. Siam Paragon and Central World are two of best known hi-so shopping malls in the area, and MBK is great for a faux Thai experience.
+
+If instead you go south-east from Sukhumvit, the further you travel the more you'll be in areas favoured by expats over tourists. Firstly you'll be in Phrom Pong. I recommend this area, particularly to someone coming to Bangkok for the first time. You're away from the extreme tourism, but you're still in an area that a lot of tourists choose to stay in so everything is very easy and there'll be things that, as a digital nomad, will be useful.
+
+Beyond Phrom Pong you get to Thong Lo, and then to Ekkamai. Both areas are heavily favoured by expats so are great if you want to meet foreigners living rather than visitng Bangkok. Travelling on from there things will get more local and less expensive. On Nut is a place where many expats who want to live a bit more cheaply choose to stay.
+
+Going south-west from Suhumvit you're going to reach the Sathorn/Silom area. Silom was once a bustling area of the city, but coming back since the pandemic it's died a bit. I love Sathorn and lived there for more than three years. You're still near enough to the central parts of the city, but can also find some peace. It's not a cheap area to stay if you're a digital nomad on a budget though.
+
+Heading north from Sukhumit, you'll get to areas of the city that are visited much less by tourists, but that still feel like the city centre. Rama 9 has some more shopping malls but there isn't too much more there. I lived in Ladprao for a couple of years, and it feels like its own city, having its own downtown area around Phahon Yothin, and for years I wanted to live in the area between Saphan Kwai and Ari. I always thought it was the perfect area, bustling with life but only a short walk from Chattuchak Park, away from all the tourists but within easy reach of some fun bars around Victory Monument or in Ladprao.
+
+Unfortunately it's so void of tourists that I've never been able to find anywhere that I actually want to stay there as a digital nomad. If I ever live in Bangkok again though, it'll definitely be on my list.
+
+If you like staying in big cities, then Bangkok has exactly what you're looking for. The trouble is finding it, especially if you've never been here before. I'd recommend avoiding the Khao San Road and Nana areas as they're both unpleasantly touristy. They can be easily visited for a night out, but I wouldn't want to stay in them. Other than that, many areas of the city have positives. If you've never been here before and you're completely unsure, then around Phrom Pong/Thong Lo is a safe option. Neither are the most exciting, but you'll have everything you need nearby and almost everyone you encounter will speak English.
+
+## Where I stayed
+
+Before looking for somewhere to stay in Thailand, you should be aware that rentals of less than 30 days are illegal at any property that is not registered as a hotel.
+
+In Thailand, the way that the law is written and the way that the law is enforced do not strictly align, and many people will rent privately from landlords for less than 30 days without issue. However, there are a couple of reasons why I avoid doing this, and why the places that I stayed at are all registered hotels.
+
+The first is that although in 95% of cases you can rent an Airbnb or equivalent for less than 30 days without issue, in the other 5% (I made up those numbers) you will run into problems. That might just be an over-enthusiastic security guard who takes a little financial encouragment to look the other way, or you may find the building management kicking you out. You won't face any legal repercussions; it is the landlord who is renting to you illegally, but you may well be evicted from the building that you're staying in and find yourself homeless.
+
+When I was living in Sathorn, the building I lived in strictly enforced this law. There were signs everywhere telling short-term renters that they were not welcome and that they were there illegally, and every year when I renewed my contract with the landlord, getting the juristic office to reactivate my keycard for another year was a massive hassle of them reading over my contract and checking my passport.
+
+I didn't mind it because as a long-term resident I didn't want the property to be used as a hotel, but it also highlighted to me the risks of using Airbnb in Thailand. The Internet is littered with examples of people who rented-out a short-term Airbnb, only to find themselves homeless when the building management wouldn't let them stay. <ExternalLink url='https://www.reddit.com/r/Thailand/comments/zy06ln/did_anyone_go_through_this_guard_didnt_allow_us/'>This is one</ExternalLink>, there are many more.
+
+The other reason to avoid these illegal rentals is that if you plan on doing a visa extension in Bangkok, you are often required to have a TM30. That is a form completed by the owner/manager of the property in which you are staying, reporting that you are staying there. Essentially, the Thai authorities want to track where you sleep on every night that you're in the country, and the TM30 form is how they do that.
+
+If you are staying in a property illegally, the landlord will not be able to complete this TM30 form which will subsequently preclude you from getting a visa extension. A simple work around is to check-into a hostel for one night on the day you go to immigration to get the visa extension, and have them complete the TM30, but it's an added hassle/expense that you will face when renting illegally.
+
+How strictly you choose to abide by this law is up to you, but it's worth being aware that short-term rentals in Thailand are illegal. Below therefore, are the hotels that I stayed at in Bangkok, in the absence of a willingness to use Airbnb.
+
+<ImageGallery images={accommodationImages} />
+
+### Nandha Hotel
+
+<AccommodationTable details={nandhaHotelDetails} />
+
+Nandha will forever hold the title of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them. As a place to start, it really isn't bad. The room was big, with ample space to do yoga and other exercise. Out of shot of the below photo is a table with a couple of chairs that was a great place to setup my laptop on days that I was working.
+
+It's on Sukhumvit soi 33, which is a really easy location. It's no more than 10 minutes walking to get to Phrom Pong BTS station, and not too much further in the other direction to get to Sukhumvit MRT, so you're really in the centre of things. There are shopping malls including supermarkets nearby, and it's walking distance to both Benchasiri Park and Benchakitti Park; both good places to run.
+
+It's a bike-themed hotel, which I don't understand. That means that instead of having a doorbell on the door, it has a bike bell. The bike bell on your door is entirely indistinguishable from the bike bell on every door on that floor, so it's impossible to know if someone is trying to get into your room or not. That's annoying. Other than that the bike theme was peculiar, but insignificant.
+
+There's a cafe on the ground floor but it doesn't offer anything vegan, so I didn't eat there during my stay. And it's worth noting that if you want your room cleaned, on the back of the 'Do not disturb' sign is a 'Please clean my room' sign. I didn't realise this, so it was only after I'd been here for a week and no one had even been in to change the bin that I went to reception to ask why. Turns out if you don't put this sign out, they just ignore you.
+
+Other than that I can't fault this place. The wifi was fast, it was very comfortable and I thought the cost was really fair. I'd happily stay here again.
+
+<ImageGallery images={nandhaHotelImages} />
+
+### V Check Inn Sukhumvit 22
+
+<AccommodationTable details={vCheckInnDetails} />
+
+I got attracted to this place by the large balcony, which is only available for the 5th floor rooms. If you can get one of those then this is a really good value hotel.
+
+It's located at the non-Sukhumvit end of Sukhumvit soi 22. That's a pretty long soi, of which the other end is a massive tourist trap of bars and massage parlours. Once you get down to this end though you're away from all that. There's a collection of street vendors and a 7-11 behind the hotel, and you can walk to the Queen Sirikit end of Benchakitti Park in about 15 minutes. If you want to avoid the touristy end of soi 22, there are a couple of roads you can cut-down to get onto soi 24 instead, which comes out right next to Phrom Pong BTS. Asok BTS, and Sukhumvit and Queen Sirikit MRT stations are also easily walkable.
+
+The room itself is decent. The bed is comfortable and the balcony is a great place if you need some time to sit and think (smoke weed), or if you just want to eat some food.
+
+A couple of small grievances that I had were that they don't clean the room automatically, you have to specifically ask someone on the front desk. That's fine, except there's not always someone there, so if your bin's full you end up waiting 10 minutes for them to come back from the bathroom, just to ask someone to make up the room.
+
+The other frustration was that there is a very loud water pump. I'm used to sleeping in loud places, but it was significant enough that it bugged me when I first arrived. It goes on for a few seconds, off for a few seconds, on for a few seconds, off for a few seconds, all day and all night long. Like anything consistent, by my second day here it had become background noise and it never stopped me from sleeping again, but if you do get easily disturbed, it's something to consider.
+
+I'd definitely be willing to stay here again in a pinch. It was perfectly comfortable, I liked the location and the local amenities, and I enjoyed chatting with the owners.
+
+<ImageGallery images={vCheckInnImages} />
+
+### RoomQuest Sukhumvit 36
+
+<AccommodationTable details={roomQuestFirstStayDetails} />
+
+<AccommodationTable details={roomQuestSecondStayDetails} />
+
+<AccommodationTable details={roomQuestThirdStayDetails} />
+
+You might think that because I stayed here three times, I really loved this place. The truth is that it's no better than any other hotel on this list, and I'm not sure why I kept coming back. It's cheap, that helps, but was the room nicer than the other hotels listed here? Not really. Did it have more facilities? Nope. Was it at least cleaner? No, it was filthy. Was the location better?
+
+I did like the location because, despite being in Thong Lor, it doesn't feel overrun with foreigners. Unlike at other hotels here, I could walk down the street from RoomQuest without being pestered for a massage, and there's a large 7-11 very nearby. Other than that the location is ok, but not amazing. It's _just_ walking distance from Benchakitti Park (about a 40 minute walk) which is a good place to go running, but every other hotel on this list has somewhere closer. There are a couple of good vegan restaurants within easy walking distance, but again, that's nothing special for this list. In truth, I don't know why I kept on coming back.
+
+The staff were all lovely (apart from the moody woman who works the night-shift), but there was an incredibly high turnover. They only have three receptionists employed at any one time, and I saw at least six of them during my stays. Not surprising really, because they all have to work twelve-hour shifts day-after-day. I'd quit pretty quickly if someone tried to make me work twelve hours too. It has a pool, but on my first stay here I was recommended not to swim in it because it's turned green. It's not a pool you can really sit next to either, so in my six weeks here, I didn't see a single person in it. It just sits there behind reception anonymously.
+
+I guess the reason I kept coming back, is it does the essential things well. It has really, really fast wifi; I clocked a 555mb/s download speed when I did a speed test here, and in the superior rooms, the TV is huge. At a guess I'd say 55". I used to own a 55" TV and these looked the same. It may sound superficial, but that's all I really need.
+
+If I have a comfortable bed, good air-conditioning, fast wifi and a big TV, that's pretty much all I look for. I don't care that the room's dirty. I don't care that it has no worthwhile facilities. It does the essential things well. And when it does the essential things well and it's cheap then... well why pay more?
+
+<ImageGallery images={roomQuestImages} />
+
+### Parvena Hotel Sathorn
+
+<AccommodationTable details={parvenaHotelSathornDetails} />
+
+I used to live about a 20-minute walk from here. Despite being so close, I wouldn't come to this area very often. My work was in a different direction, the city centre was in a different direction, the supermarkets I went to were in a different direction. I just had very little reason to come here, but every time I did I always thought to myself _"Wow! What a fun, vibrant area."_ Then I wouldn't come back for another six months. Now with the freedom of a digital nomad, I decided that I'd stay here and get to know this area properly, and it really is a great area.
+
+Although there are a few expats mulling around, as there are everywhere in Bangkok, it's a pretty local area. There's loads going on with street food and other vendors lining all along the road outside the hotel, which gives it a very bustling, fun vibe. It also means that you can get everything you need just metres from the hotel entrance. There's a 7-11 twenty metres away, and if you're willing to walk for five minutes you'll pass five of them. There's also a fully vegan restaurant (Bai Plu House) just a couple of minutes away, a nice coffee shop with vegan options (Bartels) that opened in January 2023, which is a lovely place to sit with a book, several laundrettes within easy walk, quite a few weed shops, and if you're willing to venture a bit further, you can get to Silom and all it offers. And for those who're really lazy, the hotel offers a free tuk-tuk to anywhere within 3 miles (which includes Silom or Lumphini MRT stations). I only used this service once, preferring to walk because as I said, it's a nice area to just be in.
+
+As for the hotel itself, I liked it. I was up on the top (8th) floor, so had good views and was well away from the traffic below, not that noise really bothers me much nowadays. The room is spacious enough, even if not huge. I had the space to do yoga, the bed was comfy, it included a large fridge and had a kettle (although you have to provide your own tea/coffee and cups). The TV was a decent size and quality, the AC worked really well, it has a balcony that's big enough to sit on, and the shower is hot and powerful.
+
+For all the above I loved this place, however there are a couple of deal-breakers that would stop me from staying again.
+
+Firstly, for some inexplicable reason the Internet connection requires you to go through a sign-in page. You know the kind? Back when the Internet was a new thing and hotels would charge guests by the hour, you'd have to sign-in to track your usage. Well despite having unlimited Internet here, they've not done away with the sign-in page, which is an absolute pain because anytime you put your device to sleep you'll find yourself having to sign-in again. Every time I turn on my laptop, I have to go through the sign-in page. Every time I look at my phone after a few minutes away, I have to go through the sign-in page. Every time I turned on my Apple TV I had to sign-in again, and to sign-in on my Apple TV I had to use my iPhone, so just watching a few minutes of Netflix became an arduous process.
+
+Worse still was that although this wifi had a respectable download speed (typically around 68mbps in the speed tests I did), the upload speed was atrocious. The fastest of the many speed tests I did was 4.53mbps. What that basically means is you can watch Netflix without a problem, and you can work on your laptop, but the second you need to make a video call you'll continually be dropping-out. It was so bad that I just tethered my laptop to my mobile hotspot to make video calls (AIS 5G has great reception in the hotel).
+
+The second reason that I wouldn't return here is that although it has a desk and chair to work at, it is the most uncomfortable desk and chair I think I've ever sat at, and I have pretty low standards. As a digital nomad on a modest budget, I have to be ok with working from almost anywhere. Even if I have a good desk, I spend 50% of my time working either in bed, or on the sofa if one is available. The other 50% I like to sit at a desk though, to give my body alignment some variety. Here I used the desk for nothing but video calls, and spent 100% of my time working from my bed because the desk was so uncomfortable. I'm not sure why. It definitely didn't help that the chair was flat and made from wood, although that's not too uncommon. The height of the desk just didn't work with the chair though, and despite having a laptop stand to raise the height of my machine, I found myself getting a sore back within minutes.
+
+It's honestly a shame that two such easily fixable things ruin this place. Thailand has some of the fastest Internet in the world and in Bangkok especially, getting a good connection is not very hard. And furniture much better than this is so cheap here. As a digital nomad what two things do you need? A moderately comfortable place to work, and a good Internet connection. This hotel offers neither, so despite having so much good going for it, in particular the area that it's in, I wouldn't stay here again. At least not as a digital nomad.
+
+<ImageGallery images={parvenaHotelSathornImages} />
+
+## Where to get vegan food in Bangkok
+
+According to <ExternalLink url='https://www.happycow.net/vegtopics/travel/top-vegan-friendly-cities'>a 2022 Happy Cow article</ExternalLink>, Bangkok is the 7th most vegan-friendly city in the world. I first lived in Bangkok as a vegan back in 2012, and back then it really wasn't. The consequence of that is I got to watch this city grow into the vegan superpower it is today, and have a knowledge of Bangkok as a vegan city about as extensive as anyone. I want to keep this article somewhat concise, but at the same time I don't want to waste that knowledge, so this is my quick list of the best of vegan Bangkok.
+
+## The best vegan restaurants in Bangkok
+
+### Bonita Cafe and Social Club
+
+Bonita is what I think of as the OG vegan restaurant in Bangkok. It only opened in 2012, so I'm sure it wasn't the first, but it was the first that I went to, and back then there really wasn't much else vegan-friendly in this city.
+
+It has since moved to a new location, but apart from that it remains the same restaurant it was back in 2012, with the same menu, which consists of things like a full-English breakfast, burgers, sandwiches and desserts.
+
+Because of this nostalgia I perhaps view Bonita with rose-tinted spectacles, but even now I recommend it as one of the best vegan restaurants here and should definitely be on your list of places to eat at when in Bangkok.
+
+<ImageGallery images={bonitaImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/bonita-cafe-and-social-club-bangkok-32850'>Visit Bonita Cafe and Social Club on Happy Cow</ExternalLink>
+
+### May Veggie Home
+
+Another vegan restaurant that I fondly remember as being here before it was cool, is May.
+
+I first discovered May in its Asok location, a two-minute walk from Asok BTS/Sukhumvit MRT stations, where it's easy to get to from anywhere in the city, so it was a great meeting place. I've never found out why they moved because I was out of the country at the time, but they've since relocated to a spot about a 10-minute walk from Punnawithi BTS station, which is far too out of the way to be regularly visited, unless you're staying nearby.
+
+Perhaps because of this, they've also since opened a smaller 'May Veggie Home Express' branch about a 10-minute walk from Asok BTS but that's not nearly as nice. It's counter-service and the menu is greatly reduced compared to the main restaurant.
+
+That being said, I'd still recommend making the trip to their main restaurant during your time in Bangkok. It's one of the better value places in Bangkok to get vegan Western food (you can get a vegan burger with fries for 170 baht), and I've never had a bad meal here in any location.
+
+<ImageGallery images={mayVeggieHomeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/may-veggie-home-bangkok-28511'>Visit May Veggie Home on Happy Cow</ExternalLink>
+
+### Veganerie
+
+My first visit to Veganerie was in January 2015, when it was a solitary vegan cake shop on the 4th floor of the not very desirable Mercury Ville shopping mall. Back then it opened my eyes to how truly good vegan desserts can be. Since that point they've expanded to what I can only describe as a vegan empire in Bangkok.
+
+The first branch that expanded beyond desserts was Veganerie Concept behind Benchasiri Park. I went here for the first time in 2017, and it's still my favourite branch, but they've since added branches of various types in Silom, Nana, Siam Paragon, Em Quartier and other locations that I haven't yet been to. The Mercury Ville location is mercifully no longer there.
+
+The menu varies by location (although the Benchasiri Park, Nana and Silom branches all have the same menu), but it's a perfect mix of healthy dishes like smoothie bowls and salads, western food like burgers and wraps, smoothies, milkshakes, and of course some amazing desserts. And given how they're expanding with the design of world domination, they're likely to have a branch nearby to where you're staying.
+
+<ImageGallery images={veganerieImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/veganerie-bangkok-69631'>Visit Veganerie Concept on Happy Cow</ExternalLink>
+
+## The best vegan pizza in Bangkok
+
+### Vegano
+
+Slightly confusingly, Vegano isn't a vegan restaurant. When you go in, the menu is up on the wall. The right side of it is all vegan, while the left half contains animal produce, so it's 50% vegan. I recommend Vegano primarily for the pizzas, which are the best vegan pizzas I've ever had, but don't dismiss the pastas or sandwiches either. The pasta especially is great for a cheap delivery dinner.
+
+10 of the vegan pasta dishes only cost 190 baht and are available on FoodPanda, so if you want something quick, cheap and relatively healthy (you can select wholewheat pasta) delivered to your room, it's a great option.
+
+The pizza is what really stands-out. There are 9 vegan choices, which are each available as a slice (which is actually a small pizza), as a 12-inch pizza, or as a 15-inch pizza. 12 inches is sufficient as a decent-sized meal, and ranges in price from 280 baht (plus 7% tax) for a margherita, to 380 baht (plus 7% tax) for most others, which includes 'vegan chicken and mushroom' and 'vegan tuna, onion and capers' pizzas. On the majority of my visits here I was given a random free slice of pizza, with the staff pointing at the sign which says "Free pizza slice for a Google review" as they gave it to me. I guess I'm not very memorable, because I'd left them a review after my first visit, but they kept on giving me free pizza.
+
+<ImageGallery images={veganoImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/vegano-bangkok-303229'>Visit Vegano on Happy Cow</ExternalLink>
+
+### The Vegan Table
+
+The Vegan Table is a slightly curious place. Unlike Vegano, it actually is fully vegan. You can come here and order anything on the menu with impunity. The reason I find it curious is I really don't know what it is. Every time I came here was for food, and that was the case for everyone else I saw, but it doesn't feel like a restaurant. It feels more like a cocktail bar. However, given the location in Nana, I don't know why anyone would stay here for the evening after they've finished their meal, because there are so many other bars in the area selling drinks significantly cheaper.
+
+The food was always excellent though, despite the weird dynamic, so I definitely recommend coming here, especially for the pizza. I'll always back a vegan restaurant, and I will never hate on people for trying new things, but I don't think they've got this one quite right yet. Until they decide that they're either a restaurant or a bar, the feeling is going to be a little odd.
+
+<ImageGallery images={theVeganTableImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/the-vegan-table-bangkok-275727'>Visit The Vegan Table on Happy Cow</ExternalLink>
+
+## The best vegan fast food in Bangkok
+
+### alt.Eatery
+
+alt.Eatery is just a 10-minute walk and the nearest vegan restaurant to the RoomQuest Sukhumvit 36 hotel which, if you look above, I stayed at for a total of six weeks. A consequence of that, is that I came to alt roughly every other day for those six weeks and ate almost everything on the menu, so I'm pretty well placed to judge it.
+
+It's a unique place. The decor and menu feel like its intention is to be very family friendly, but you don't actually see many kids in here, just a lot of adults sitting around in the bright colours. It's a very happy vibe though, so I like it.
+
+At one point in time, the menu was completely out there and had all these weird and unique options like a sweetcorn latte or an 'evil monster brioche'. I enjoyed the extravagance, but I guess to have a wider appeal they toned it down and removed a lot of the more imaginitive items. Even after this eccenticity purge, it's still a menu like you won't find anywhere else.
+
+I would consider it fast food, because... well it's quite quick, and your food gets brought to you on a tray, and if you want to you can order/pay at the counter (although they also have table service), but that doesn't necessarily mean it's all unhealthy. There are salads and other healthy options if you don't want junk food.
+
+The servings are _quite_ small, so I'd typically come here and have four things, including a drink. That would cost me in the region of 450 baht, and would be a really decent meal. It was especially good after a long run in the Bangkok heat, when I'm at my most hungry and in need of fast calories because the service is so quick and they have a large selection of donuts and other desserts. There is also a shop on site, but beware that the shop isn't fully vegan; some of the items it sells contain dairy (the restaurant is fully vegan).
+
+Definitely one of my favourite places to eat in Bangkok. Even if it doesn't sound your cup of tea (it's not a place to come for a fancy meal), I'd recommend paying it a visit, for the uniqueness if nothing else.
+
+<ImageGallery images={altEateryImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/alt-eatery-bangkok-291321'>Visit alt.Eatery on Happy Cow</ExternalLink>
+
+## The best cheap vegan food in Bangkok
+
+### So Vegan
+
+Thailand is littered with 'jay' restaurants that offer local vegan food at very low prices. What makes So Vegan different is that it also offers western food at those same low prices, for example a hot dog here will cost you just 69 baht.
+
+It's primarily a place with a point-and-hope buffet; most times I come here that's what I'll get. Coming late in the day however, you might want to consider getting something made to order whilst the buffet offerings are sparse and rather old.
+
+There are apparently three branches of this chain in Bangkok, although I've only been to the one on the ground floor of Gateway Ekkamai. It's around a sort of food court area, and the one major downside to this restaurant and this food court in general is the lack of seating. It can be a bit of a pain if you want to get something to eat in, although they do offer takeaway if there is no seating available. For the price though, it's worth chancing it. If you come here with 100 baht in your pocket you can leave full and with change.
+
+<ImageGallery images={soVeganImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/so-vegan-gateway-ekkamai-bangkok-155172'>Visit So Vegan on Happy Cow</ExternalLink>
+
+### Kaek Kao Kua
+
+Kaek Kao Kua, or KKK for short, is a fairly new and very inconspicuous family-run restaurant down Sukhumvit 27. The seating area is outside only, and is basically on a raised platform in their front driveway.
+
+The menu is vegan variations of typical Thai dishes such as Tom Yum and Khao Soi, and ranges from 89 baht to 149 baht, although they've recently added a 'Build your own bowl' option to the menu, from which I managed to spend 178 baht the one time I got it.
+
+It's fully vegan, so you can order anything on the menu without worrying. If you're in the area, it's a really nice little place to come at lunchtime. Each bowl is a meal, so for 89 baht you can leave pretty satisfied.
+
+<ImageGallery images={kaekKaoKuaImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/kaek-kao-kua-bangkok-204020'>Visit Kaek Kao Kua on Happy Cow</ExternalLink>
+
+## The best places to get vegan food and relax for a while (or sit on your laptop)
+
+### Bartels
+
+I'm not the kind of digital nomad who likes working from cafes. In truth, I don't think anyone who actually wants to get any work done is. Whenever I see people sitting in coffee shops on their laptop, they spend more time looking-up to see who's noticed them than they do actually working. That being said, I can appreciate having somewhere pleasant to sit for an hour or two with a book, or to listen to a podcast. And when I want somewhere comfortable with good food, Bartels is my top choice.
+
+They have two branches in Bangkok, one on Sukhumvit Road between BTS Thong Lor and BTS Phrom Pong, and one on Sathron soi 3. Both of these locations are coincidentally easy walking distance from two of the hotels I stayed at (above), which gave me plenty of opportunity to have almost everything vegan on the menu, and it was all good.
+
+Bartels is a bakery. They bake all their bread on-site, and as such, most of the menu is bread-based, dominated by sandwiches and toasties. They serve meat, but there are several vegan options to try, all clearly marked, and the quality really is good. For good measure they also sell smoothies and smoothie bowls. It's a great place to sit and unwind for a couple of hours.
+
+<ImageGallery images={bartelsImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/bartels-bangkok-291030'>Visit Bartels on Happy Cow</ExternalLink>
+
+### Vibe
+
+Vibe is a vegetarian coffee shop on Sukhumvit soi 36, with many clearly-marked vegan options on their extensive menu. The food is high quality, although the portions small, so I wouldn't suggest coming here for a big feed. For something small though, it's great and I really loved it for the big, comfortable chairs.
+
+Being a two-minute walk from the RoomQuest hotel that I stayed at for 6 weeks, I came to Vibe a lot, and it unironically just has a nice Vibe to it, where you can chill-out with a podcast or read a book, or just look out of their floor-to-ceiling windows at the world going by outside.
+
+<ImageGallery images={vibeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/vibe-bangkok-207866'>Visit Vibe on Happy Cow</ExternalLink>
+
+## The best smoothie bowls in Bangkok
+
+### Paco
+
+I feel obliged to include Paco in this article. I first went there in October '22 and left them a 5-star review on Happy Cow because the smoothie bowls here are amazing.
+
+It's a quaint, very unique little restaurant in a detached building that reminds me of an old-school American diner. The furniture and decor generates this very unique vibe that makes it worth visiting before you even see their extensive list of colourful, healthy and delicious smoothie bowls. Yet, despite having so much going for it, since I left my 5-star review, not a single other person has reviewed them.
+
+I'll be blunt, the location kind of sucks. It's down Sukhumvit soi 49, which can easily be reached from BTS Thong Lor or BTS Phrom Pong. Soi 49 isn't the most pleasant soi to walk down though, and it's a bit of a way down there. I wouldn't think less of you for taking a motorcycle. However you get here, it's worth it.
+
+You can get smoothie bowls at many different restaurants in Bangkok, but they're as good here as at any of them.
+
+<ImageGallery images={pacoImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/paco-bangkok-179492'>Visit Paco on Happy Cow</ExternalLink>
+
+## Where to run in Bangkok
+
+Bangkok has a couple of really good places to run; other than that it's pretty dire. Although you'll see people who do, the amount of congestion of both pedestrians and cars make running along the street an absolute no-go for me.
+
+Many areas are congested with people, the pavements are littered with motorcycles, the surface is really uneven, there are so many cars that the pollution makes it unpleasant, and those same cars make crossing the road a pain. I would recommend avoiding running anywhere but in the local parks.
+
+I lived in Ladprao back in the pre-smartphone age (or at least before I got my first smartphone in 2014). That matters, because up in that area of the city you have three closely connected parks. Chatuchak Park is the best known of these, but it is connected to Queen Sirikit Park and Wachirabenchathat Park. If you're in that area, this is a great place to run, but the consequence of me not owning a smartphone when I lived there, is I don't have any Strava maps I can share of my routes.
+
+As a new tourist in Bangkok, it's unlikely that you'll be staying in that area, so let me instead focus on a couple of options that you have in the more popular areas for foreign visitors.
+
+The first of these is pretty simple: Benchasiri Park. It's a small park next to Emporium shopping mall and to Phrom Pong BTS station. It's roughly 700m around the outside, so for a 5k run it's seven laps. Doing any more than that becomes pretty cumbersome, and it can get busy in the mornings and evenings with a couple of annoying bottlenecks on the route. However, if you come here in the daytime it's quiet enough that you can have a pleasant run. There are toilets in the park and a couple of vendors, so if you're adjusting to the heat in Bangkok, this is a good run to start with as you'll have emergency snacks and drinks nearby.
+
+The rest of the runs I'm going to detail will build into my favourite Bangkok route, but it's a little hard to explain to someone who's never been here, so I'll go step-by-step. Looking at the Strava maps below will make it clearer.
+
+The most obvious place to run in Bangkok is Lumphini Park. I spent three years living in Sathorn between 2015 and 2018 for the sole reason that I wanted to be as close to Lumphini Park as possible, because it's such a great place to run. I've really got my laps in there. Although you can make your own route through the inside of the park if you want to, there's a very established running lap that goes around the outside of the park, and is just slightly over 2.5km. It's a wide track the whole way around, so even in the mornings and evenings when it's a lot busier, you still have the space to go at a good pace if you fancy it (Thai people run notoriously slowly, so this is important). As always, I recommend running in the daytime, but that's because my sadomasochistic side loves the heat. At that time you'll have few-to-no other runners to worry about, although you will likely see a lot of cats and a lot of water monitor lizards. It's worth noting that the running track doubles as a cycling track between 10am and 3pm (cycling is not allowed in Lumphini outside of these hours), so don't make any sharp turns without looking behind you if you come at that time.
+
+Closer to Sukhumvit you'll find Benchakitti Park. I use the term 'park' slightly loosely, because it's more a lake with a track around it. The track that you'll likely run on is shared with pedstrians. Despite clear markings telling the pedestrians to be on one side of it, while runners should be on the other, they'll largely ignore this, so all the more reason to come at a quiet time. There's another track, separated from this one for cyclists, although you can also run/walk along that if you fancy. I'd recommend the main track though. It's wider, smoother, and doesn't have any bikes on it. At roughly 1.8km, each lap of the lake is just over a mile.
+
+When I last lived here, that was the extent of Benchakitti Park, but it's since expanded to be roughly three times the size, with the addition of the connected Benchakitti Forest Park, which fully opened in 2022. In the south half of the forest park, there's a road that's suitable for runners, and above the forest park is the Benchakitti Forest Park Skywalk, which is long bridge that goes diagonally across almost the entire forest park and is good for running along. You can try running through the rest of the forest park, but it's very zig-zaggy and hard to see where you're going, and I've seen park security tell runners to stick to the main running road before (although never to me).
+
+That's all well and good, but wouldn't it be wonderful if you could run between Lumphini Park and Benchakitti Park without having to cross any roads?
+
+Well surprise, you can.
+
+A little known feature of Bangkok, is the raised walkway coloquially known as 'The Green Mile'. I used to run along it back when I lived in Bangkok. At that time it connected Lumphini Park to Benchakitti Park in a way that you really had to know it was there in order to find it. With the addition of Benchakitti Forest Park, it's a little easier to find because the Benchakitti Forest Park Skywalk joins The Green Mile about halfway along.
+
+The Green Mile is basically a long walkway open only to pedestrians and cyclists that connects the north-west corner of Benchakitti Park to Thanon Witthayu (Wireless Road), a very short distance from Lumphini Park. So you can connect these three parks without having to cross a single road, or worry about a single car or motorcycle.
+
+The typical route I do, is to start at the south end of Benchakitti Park, do a half-lap before going onto The Green Mile, running to and then doing a lap of Lumphini, before going back onto The Green Mile, turning-off onto the Benchakitti Forest Park Skywalk, running down that to the end, and then finishing back at the south end of Benchakitti Park. That route is roughly 7.7km, but you can obviously add-on as you need by doing additional laps of any of the three parks that it takes you through.
+
+It's not really a route to do for speed, largely because The Green Mile includes some staircases that'll distort your pace on Strava, but other than that it's a lovely route to run, and my favourite route to do in Bangkok.
+
+There are a few other small parks or running tracks in Bangkok that you can use for running in a pinch. If you want to have a good run here though, while still being somewhat central, I'd recommend staying around one of the parks that I've mentioned. Having them within walking distance really does make Bangkok enjoyable.
+
+<ImageGallery images={runningImages} />
+
+## Being sociable in Bangkok
+
+There's probably no city in the world that I've found it easier to be sociable in than Bangkok. The Meetup community in Bangkok is really, really active, so you can find an event that you want to attend pretty much seven days per week. Whether that be running clubs, meeting people over coffee, doing yoga, language exchange or going out and getting shit-faced, you're going to be able to find plenty of Meetups to suit your taste, and for whatever reason, I found that the people I met at Meetups in Bangkok were more open to staying in touch and being subsequently social than in other places in the world.
+
+While I obviously suggest finding events to suit your taste, groups that I've attended and can vouch for are the '<ExternalLink url='https://www.meetup.com/lumpini-running-club/'>Lumpini Running Club Bangkok</ExternalLink>', which runs in Lumphini Park twice per week on Tuesdays and Thursdays in the early evening, often followed by dinner. The '<ExternalLink url='https://www.meetup.com/bangkok-cultural-exchange-meetup/'>Bangkok Cultural Exchange Meetup</ExternalLink>' runs language exchange events that actually are about exchanging language. I say that with surprise, because most language exchange events are just a guise for everyone to get drunk while speaking English. A language exchange group that is absolutely nothing to do with exchanging language is '<ExternalLink url='https://www.meetup.com/language-exchange-and-activities-and-social-in-bangkok/'>Language Exchange and Activities and Social in Bangkok</ExternalLink>'. They run weekly events at a bar called 'The Hangover', so that should tell you something. If you're interested in getting vegan food while meeting new people, checkout '<ExternalLink url='https://www.meetup.com/bangkok-vegan-meetup/'>Bangkok Vegan Meetup</ExternalLink>', which hosts events at differing vegan-friendly restaurants around Bangkok. There are many other Meetups that I've been to in Bangkok, and I haven't been to a bad one yet, so you'll be able to find something to suit your tastes, no matter what they are.
+
+If for some reason Meetup isn't able to give you what you need, other platforms are similarly active, and Bangkok isn't a hard place to meet people by just going out, given how friendly the locals are and how many tourists there are here.
+
+<ImageGallery images={socialImages} />
