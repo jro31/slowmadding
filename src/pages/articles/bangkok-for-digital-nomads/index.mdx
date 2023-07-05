@@ -3,6 +3,10 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityBangkokAtNightImage from './city/bangkok-at-night.jpeg'
+import citySunsetImage from './city/sunset.jpeg'
+import cityForTheNationPartyBillboardImage from './city/for-the-nation-party-billboard.jpeg'
+
 import nandhaHotelRoomImage from './nandha-hotel/room.jpeg'
 
 import vCheckInnDeskImage from './v-check-inn/desk.jpeg'
@@ -239,6 +243,24 @@ export const parvenaHotelSathornDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityBangkokAtNightImage,
+    alt: 'Bangkok at night',
+    caption: "Bangkok's a colourful city, even at night. This is the non-Sukhumvit end of Sukhumvit soi 22, taken from the balcony of the V Check Inn hotel. ",
+  },
+  {
+    src: citySunsetImage,
+    alt: 'Bangkok sunset',
+    caption: 'The great thing about all the pollution in Bangkok, is you get some amazing sunsets. This one was taken from the balcony of my room during my second stay at RoomQuest Sukhumvit 36.',
+  },
+  {
+    src: cityForTheNationPartyBillboardImage,
+    alt: 'For the Nation Party billboard',
+    caption: 'I was here during the run-up to election. There were some interesting campaign promises.',
+  },
+]
 
 export const nandhaHotelImages = [
   {
@@ -773,7 +795,7 @@ Green space is fairly limited, but there are a couple of nice parks in Bangkok w
 
 Bangkok is a big, bustling, dirty city that has everything you could ever want. Knowing where to find it is another matter.
 
-TODO: Add city images
+<ImageGallery images={cityImages} />
 
 ## Which area to stay in Bangkok
 
