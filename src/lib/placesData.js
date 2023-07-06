@@ -1,4 +1,5 @@
 const cambodia = 'Cambodia'
+const romania = 'Romania'
 const thailand = 'Thailand'
 const vietnam = 'Vietnam'
 
@@ -68,6 +69,48 @@ export const placesData = [
         [verdict]: true,
         [description]:
           "This might not be an opinion shared with those who aren't used to the heat or to sharing the pavement with motorcycles, but in my years in Bangkok, I've walked all over this city and not had an issue. Despite the number of vehicles, pollution doesn't bother me here.",
+      },
+    },
+    [articlePath]: null,
+  },
+  {
+    [place]: 'Bucharest',
+    [country]: romania,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I paid 172 lei per night for a really nice Airbnb, a beer in a bar will be around 18 lei, expect to pay 50 lei for a meal with a drink in a restaurant.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'My Airbnb wifi consistently had download speeds over 600mb/s, and upload speeds over 500mb/s. 4G is available throughout the city and is fast enough to do video calls.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          "Several nice parks for running, or if you want to run along the pavements they're wide and quiet, crossing the road is mostly quick and easy, and there isn't much pollution from traffic.",
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          'There are only 4 fully vegan restaurants in Bucharest, but many restaurants have vegan offerings, and supermarkets here are pretty vegan friendly, often having vegan sections.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "There's very evident drug addiction in Bucharest. You might get hassled for money, which can be annoying but I never found it threatening. I walked around late at night many times without issue.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There are some events I found for meeting new people, there just aren't very many. I would go to an event roughly once per week while I was here, but I'd like to have found more.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "There are pavements everywhere, which are wide and quiet, several pedestrianised areas, there's very little traffic, and cars generally obey the law give way to pedestrians.",
       },
     },
     [articlePath]: null,
