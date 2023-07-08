@@ -2,14 +2,23 @@ import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ImageGallery from '@/components/ImageGallery'
 
+import apartmentLivingAreaImage from './apartment/living-area.jpeg'
+import apartmentKitchenImage from './apartment/kitchen.jpeg'
+import apartmentFridgeImage from './apartment/fridge.jpeg'
+import apartmentBedImage from './apartment/bed.jpeg'
+import apartmentBedroomImage from './apartment/bedroom.jpeg'
+import apartmentBathroomImage from './apartment/bathroom.jpeg'
+import apartmentBalconyImage from './apartment/balcony.jpeg'
+import apartmentViewImage from './apartment/view.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-06-16T16:30:00+03:00',
+  date: '2023-06-16T16:30:00+03:00', // TODO: Update this
   title: 'Bucharest for Digital Nomads',
   description: '', // TODO
 }
 
-export const saikeawResortDetails = {
+export const apartmentDetails = {
   dates: {
     checkIn: '2023-06-14',
     checkOut: '2023-07-13',
@@ -30,6 +39,49 @@ export const saikeawResortDetails = {
   },
 }
 
+export const apartmentImages = [
+  {
+    src: apartmentLivingAreaImage,
+    alt: 'Apartment living area',
+    caption: "The living area is very spacious, especially if you're alone. Plenty of space to do yoga. Probably enough space for two people to do yoga.",
+  },
+  {
+    src: apartmentKitchenImage,
+    alt: 'Apartment kitchen',
+    caption: "The kitchen was very well equipped, and the dining table and chairs weren't only nice for eating at, but made for a great workspace too. Out of shot there's also an air-conditioner.",
+  },
+  {
+    src: apartmentFridgeImage,
+    alt: 'Apartment fridge',
+    caption: 'The apartment comes with loads and loads of complimentary snacks. This was the fridge as I arrived at the room. It includes 19 craft beers, a bottle of wine and a bottle of whiskey. Outside of the fridge was another bottle of wine and an entire cupboard full of snacks. Although not all vegan, none of them contained any meat, which I appreciated.',
+  },
+  {
+    src: apartmentBedImage,
+    alt: 'Apartment bed',
+    caption: 'The bed was really comfortable, and out of view is another air-conditioner.',
+  },
+  {
+    src: apartmentBedroomImage,
+    alt: 'Apartment bedroom',
+    caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there was another TV in the bedroom.",
+  },
+  {
+    src: apartmentBathroomImage,
+    alt: 'Apartment bathroom',
+    caption: 'The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kid, and laundry detergent and fabric softener (there is a washing machine with drying rack just outside the bathroom).',
+  },
+  {
+    src: apartmentBalconyImage,
+    alt: 'Apartment balcony',
+    caption: "The balcony, accessed from the living area, is pleasant to step-out onto, even though I didn't spend much time out there.",
+  },
+  {
+    src: apartmentViewImage,
+    alt: 'Apartment view',
+    caption: 'The view from the balcony was nice if you looked in the right direction.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -40,11 +92,17 @@ TODO: Add city images
 
 ### Flexible Check-In/Out apartment
 
-<AccommodationTable details={saikeawResortDetails} />
+<AccommodationTable details={apartmentDetails} />
 
 TODO
 
+<ImageGallery images={apartmentImages} />
+
 ## Where to get vegan food in Bucharest
+
+TODO
+
+## How money works in Bucharest
 
 TODO
 
