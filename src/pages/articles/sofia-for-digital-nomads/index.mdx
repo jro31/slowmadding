@@ -1,0 +1,60 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-07-14T20:00:00+03:00', // TODO: Update this
+  title: 'Sofia for Digital Nomads',
+  description: '', // TODO
+}
+
+export const apartmentDetails = {
+  dates: {
+    checkIn: '2023-07-13',
+    checkOut: '2023-08-10',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/48028489',
+  },
+  roomType: 'Entire rental unit hosted by Silviya',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: null,
+    sections: {
+      Room: 1180.97,
+      '45% monthly price discount': -531.52,
+      'Service fee': 82.76,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add city images
+
+## Where I stayed
+
+### Luxury Apart Sofia Center
+
+<AccommodationTable details={apartmentDetails} />
+
+TODO
+
+## Where to get vegan food in Sofia
+
+TODO
+
+## Where to run in Sofia
+
+TODO
+
+## Being sociable in Sofia
+
+TODO
