@@ -1,0 +1,124 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import busTerminal1PhetprasertCounterImage from './udon-thani-bus-terminals/bus-terminal-1-phetprasert-counter.jpeg'
+import udonThaniBusTerminal2Image from './udon-thani-bus-terminals/udon-thani-bus-terminal-2.jpeg'
+import udonThaniToLoeiBusTerminal2TimetableImage from './udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-timetable.jpeg'
+import udonThaniToLoeiBusTerminal2BusImage from './udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-bus.jpeg'
+
+import ticketImage from './udon-thani-to-loei-bus-trip/ticket.jpeg'
+import onBoardImage from './udon-thani-to-loei-bus-trip/on-board.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-05-07T20:45:00+07:00',
+  title: 'Taking a Bus from Udon Thani to Loei',
+  description: "Travelling from Udon Thani to Loei? There's a lot of misinformation about the locations and times of which buses depart. This article is everything I learned while figuring-out this journey for myself.",
+}
+
+export const udonThaniBusTerminalsImages = [
+  {
+    src: busTerminal1PhetprasertCounterImage,
+    alt: 'Udon Thani Bus Terminal 1 Phetprasert counter',
+    caption: "If you want to take the bus from 'Bus Terminal 1', you want to go to the 'Phetprasert' counter (the red one in the middle). It's on the left as you go into the bus terminal.",
+  },
+  {
+    src: udonThaniBusTerminal2Image,
+    alt: 'Udon Thani Bus Terminal 2',
+    caption: 'Udon Thani Bus Terminal 2. It could do with a lick of paint.'
+  },
+  {
+    src: udonThaniToLoeiBusTerminal2TimetableImage,
+    alt: 'Udon Thani to Loei Bus Terminal 2 timetable',
+    caption: "The Udon Thani to Loei timetable at Bus Terminal 2. The text at the top translates to 'Udon - Mueang Loei' ('mueang' means 'town', in order to differentiate from Loei province). The '220' and the numbers to the left of the departure times indicates the bus number, for example...",
+  },
+  {
+    src: udonThaniToLoeiBusTerminal2BusImage,
+    alt: 'Udon Thani to Loei bus (from Bus Terminal 2)',
+    caption: "... I took this photo at 14:19, so according to the timetable (the previous picture), the next bus, at 15:00, is number '23', hence the number '220-23'. The text above it translates to 'Udon Thani - Mueang Loei', and it departs from Gate 4 of 'Bus Terminal 2'. You buy your ticket from the guy sitting at the table next to the pillar with the '4' written on it.",
+  }
+]
+
+export const udonThaniToLoeiBusTripImages = [
+  {
+    src: ticketImage,
+    alt: 'Udon Thani to Loei bus ticket',
+    caption: 'The bus ticket from Udon Thani to Loei. The 108 is the price (in baht), and the 10:40 is the departure time.',
+  },
+  {
+    src: onBoardImage,
+    alt: 'On board the Udon Thani to Loei bus',
+    caption: 'On board. The ceiling fans did little to keep the bus cool.',
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+When I wanted to travel from Udon Thani to Loei recently, I found the Internet to be very lacking in useful information. Not only that, but articles on how to make this trip gave differing information, and as I found out the hard way, all were inaccurate.
+
+In this part of Thailand you can't rely on having English signs or English speakers working in the bus stations to help you. If, like me, your Thai is very limited, then figuring-out very simple things like which bus to take and what time it leaves can be problematic.
+
+Luckily I gave myself a couple of days to figure it out before I departed, so to save you the trouble, here's everything I learned.
+
+## Udon Thani's bus stations
+
+Udon Thani has two bus stations, conveniently named 'Udon Thani Bus Terminal 1' and 'Udon Thani Bus Terminal 2'.
+
+<ExternalLink url='https://goo.gl/maps/ireE8AaXmM8TA6Gn6'>Bus Terminal 1</ExternalLink> is located in the centre of town, a short walk south from the 'Central Plaza' shopping mall that essentially marks the centre of Udon Thani.
+
+<ExternalLink url='https://goo.gl/maps/R2NWYSWWQBotARBU9'>Bus Terminal 2</ExternalLink> is out in the middle of nowhere to the west of the city. How do I know that? Because I walked there when I was figuring all this out. It wasn't my favourite walk. I recommend taking a Grab.
+
+## Which bus station should you go to in Udon Thani to catch a bus to Loei?
+
+Technically you can go to either, but really you have to go to 'Bus Terminal 2'. I'd read online that buses regularly leave to Loei from 'Bus Terminal 1', but when I went there and asked, this was inaccurate.
+
+There is one bus company that departs from 'Bus Terminal 1' to Loei. It's called 'Phetprasert'. The lady working at their counter speaks some English and is very helpful. She told me that the departure times for buses to Loei were 6:45pm and 9pm.
+
+Given that the trip is going to take upwards of three hours, your best case scenario when departing from 'Bus Terminal 1' is to catch the 6:45pm bus and arrive in Loei at 9:45pm, which isn't really ideal. The reason for the weird departure times is that this is a Nakhom Phanom to Chiang Mai bus, which you'll be joining and alighting from mid-journey; it is not a specific Udon Thani to Loei bus.
+
+I queried her about if there were any earlier departures, and she told me that for those I'd have to go to 'Bus Terminal 2', so off I wandered. And while 'Bus Terminal 1' has definitely seen better days, 'Bus Terminal 2' is an absolute rundown piece of crap. They don't really take good care of their bus stations in this part of the world.
+
+I didn't encounter anyone who spoke any English at 'Bus Terminal 2', but I was able to figure-out that buses to Loei depart from gate 4. You also do not buy tickets from any of the ticket counters, which are the first thing you'll see when you walk in. Instead there's a table setup at gate 4, and you buy your ticket from the person sitting behind this table right before boarding.
+
+The bus times seem to vary slightly by day. I took a photo of the departure board next to this bus, and thanks to Google Translate figured-out that on this day, buses departed at 6am, 7:15am, 8:30am, 9:45am, 11am, 12:30pm, 1:40pm, 3pm and 5pm.
+
+Alright, that's not super helpful if it's not the same everyday, but at least I knew the regularity of the buses now, so the worst case was I'd have to hangout at the bus station for a couple of hours.
+
+<ImageGallery images={udonThaniBusTerminalsImages} />
+
+## Taking the bus from Udon Thani to Loei
+
+The owner of my hotel called the bus company on the day I was going to Loei to check the departure times that day. She wrote down that the next departure was at 11am and would be a nice air-con bus, so I got a Grab to the bus station, arriving at about 10:30am to give myself plenty of time to figure it out.
+
+I went up to gate 4 and told them in my best broken Thai that I wanted a ticket to Loei. They gave me one for a bus at 10:40am, took my suitcase and put it under the bus, and told me to get on right away.
+
+Oh, well I guess this'll do then.
+
+The ticket cost 108 baht. The smallest change I had was a 500 baht note, which caused a bit of a furore as they scrambled to find the change; I'd recommend coming here with smaller notes if you can. Other than that it was rather easy, I was on the bus within a couple of minutes of getting to the bus station.
+
+Normally in Thailand you get two kinds of buses: Air-con buses, or non air-con buses with opening windows. I managed to find myself on the one non air-con bus with non-opening windows. It was boiling on there. There wasn't much I could do at this point though, so I sat there stewing in a puddle of my own sweat.
+
+The one positive to this was as there wasn't a toilet on board, and as I'd been ushered on so quickly that I hadn't been able to use the toilet in the bus station, that at least by sweating so much I wasn't going to have to stop the bus for a toilet break.
+
+I was the only foreigner on board. In this situation, where there's no one around me I can speak with to find out what's going on, I always just do what everyone else does. A little under an hour and a half into this trip, we stopped at <ExternalLink url='https://goo.gl/maps/Kzt55mnsmq4PZHue7'>Nong Bua Lam Phu Bus Terminal</ExternalLink>. This is worth noting, because if you're tracking the journey on Google Maps as I was at the time, seeing I wasn't entirely confident that I was on a bus to Loei, it looks for a bit like the bus is going south and away from Loei. It's not, it's just a slight detour to get to this bus station, so no need to panic.
+
+Apart from a couple of people leaving the bus here, no one else got off, so I assumed that we wouldn't be here long enough to take a toilet break, which I kind of wanted by now. Unfortunately we were actually here for 10-15 minutes, and it was the only stop of any length that we made on the journey, so if you are dying for a piss, this is the only place you'll have to take one.
+
+We made one other very quick stop to refuel, but the bus was stationary for barely a minute, so good luck if you choose to chance running to the toilet on that one.
+
+<ImageGallery images={udonThaniToLoeiBusTripImages} />
+
+## Arriving in Loei
+
+We had departed Udon Thani at 10:40am, and arrived at 'Loei Bus Terminal' at about 2:20pm, so the total travel time was around 3 hours, 40 minutes.
+
+<ExternalLink url='https://goo.gl/maps/repVDs9WeDG9QpAf8'>Loei Bus Terminal</ExternalLink> is a little south of the town centre, but you won't have to look far for a tuk-tuk. A hoard of tuk-tuk drivers literally ran alongside the bus like North Korean bodyguards for the last twenty or thirty metres before it pulled-in at the bus station, so you can expect to be harrassed the second that you get off.
+
+That's one of my pet peeves. If you all just stood over there next to your tuk-tuks, it's pretty obvious what you're doing here, and people can come and find you in their own time. I'm in a town I've never been to, in a country where I don't speak the language, I've just sat in a pool of my own sweat for more than three hours, I'm pretty disoriented, and I'm dying for a piss. The last thing I need is some guy shouting at me _"where you go? I help you?"_ and then following me even though I tell him to fuck off and leave me alone. I went into the toilet, took an intentionally long time, and I came out and he was still standing there waiting for me.
+
+Sadly this isn't an isolated incident and has happened to me in many places all over the world, but it doesn't make it any less annoying.
+
+The point I was getting to, is you won't have to look far for a tuk-tuk. I paid 80 baht to get to my hotel, which I think is the foreigner rate, but I couldn't be arsed to negotiate to save a few pennies. That was it though. I didn't really enjoy the journey and I stank by now having been sat on a dirty bus sweating for hours, but I made it to my room in Loei, which was all I really wanted.
+
+If you're reading this article, then hopefully it helps you if you're trying to make the same trip and struggling to figure-out how.

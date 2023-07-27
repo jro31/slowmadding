@@ -13,7 +13,7 @@ const platforms = [
     description:
       'Happy Cow is a directory of places around the world to get vegan/vegetarian food. Such a resource is invaluable to me while travelling, so I do what I can to give back by adding photos and reviews of the restaurants that I go to. This is probably my most active social media.',
     link: {
-      href: 'https://www.happycow.net/members/profile/Jrosworld',
+      href: 'https://www.happycow.net/members/profile/nomeatnomad',
       label: 'happycow.net',
     },
     logo: logoHappyCow,
