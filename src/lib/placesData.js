@@ -71,7 +71,7 @@ export const placesData = [
           "This might not be an opinion shared with those who aren't used to the heat or to sharing the pavement with motorcycles, but in my years in Bangkok, I've walked all over this city and not had an issue. Despite the number of vehicles, pollution doesn't bother me here.",
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/bangkok-for-digital-nomads',
   },
   {
     [place]: 'Bucharest',
@@ -113,7 +113,7 @@ export const placesData = [
           "There are pavements everywhere, which are wide and quiet, several pedestrianised areas, there's very little traffic, and cars generally obey the law give way to pedestrians.",
       },
     },
-    [articlePath]: null,
+    [articlePath]: '/articles/bucharest-for-digital-nomads',
   },
   {
     [place]: 'Chiang Mai',
