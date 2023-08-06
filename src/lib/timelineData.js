@@ -1,10 +1,10 @@
 import { countries, places } from './placeNames'
 
 const dates = 'dates'
-const arrival = 'arrival'
-const departure = 'departure'
-const place = 'place'
-const country = 'country'
+export const arrival = 'arrival'
+export const departure = 'departure'
+export const country = 'country'
+export const place = 'place'
 
 const timelineData = {
   [countries.cambodia]: {
@@ -109,6 +109,16 @@ const timelineData = {
       },
     ],
   },
+  [countries.unitedKingdom]: {
+    [places[countries.unitedKingdom].london]: [
+      {
+        [dates]: {
+          [arrival]: '2023-05-24',
+          [departure]: '2023-06-14',
+        },
+      },
+    ],
+  },
   [countries.vietnam]: {
     [places[countries.vietnam].hoChiMinhCity]: [
       {
@@ -137,7 +147,7 @@ export const parsedTimelineData = () => {
     })
   })
 
-  returnArray.sort((a, b) => Date.parse(a[arrival]) - Date.parse(b[arrival]))
+  returnArray.sort((a, b) => Date.parse(b[arrival]) - Date.parse(a[arrival]))
 
   checkDateOverlap(returnArray)
 
@@ -148,14 +158,14 @@ const checkDateOverlap = (staysArray) => {
   staysArray.map((stayObject, iterator) => {
     if (
       iterator >= 1 &&
-      stayObject[arrival] < staysArray[iterator - 1][departure]
+      stayObject[departure] > staysArray[iterator - 1][arrival]
     ) {
       throw new Error(
-        `Timeline ${stayObject[place]} arrival date of ${
-          stayObject[arrival]
-        } overlaps with ${staysArray[iterator - 1][place]} departure date of ${
-          staysArray[iterator - 1][departure]
-        }`
+        `Timeline ${stayObject[place]} departure date of ${
+          stayObject[departure]
+        } overlaps with ${staysArray[iterator - 1][place]} arrival date of ${
+          staysArray[iterator - 1][arrival]
+        } `
       )
     }
   })

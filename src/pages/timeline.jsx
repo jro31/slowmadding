@@ -2,6 +2,14 @@ import Head from 'next/head'
 
 import SimpleLayout from '@/components/SimpleLayout'
 
+import {
+  parsedTimelineData,
+  arrival,
+  departure,
+  country,
+  place,
+} from '@/lib/timelineData'
+
 const Timeline = () => {
   return (
     <>
@@ -13,7 +21,14 @@ const Timeline = () => {
         title="Where and when"
         // intro=""
       >
-        TIMELINE GOES HERE
+        {parsedTimelineData().map((stay) => (
+          <div key={`${stay[arrival]}-${stay[departure]}`}>
+            <div>{stay[country]}</div>
+            <div>{stay[place]}</div>
+            <div>{stay[arrival]}</div>
+            <div>{stay[departure]}</div>
+          </div>
+        ))}
       </SimpleLayout>
     </>
   )

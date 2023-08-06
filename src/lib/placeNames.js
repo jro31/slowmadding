@@ -2,6 +2,7 @@ export const countries = {
   cambodia: 'Cambodia',
   romania: 'Romania',
   thailand: 'Thailand',
+  unitedKingdom: 'United Kingdom',
   vietnam: 'Vietnam',
 }
 
@@ -20,6 +21,9 @@ export const places = {
     huahin: 'Huahin',
     loei: 'Loei',
     udonThani: 'Udon Thani',
+  },
+  [countries.unitedKingdom]: {
+    london: 'London',
   },
   [countries.vietnam]: {
     hoChiMinhCity: 'Ho Chi Minh City',
