@@ -5,6 +5,12 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import apartmentBedImage from './apartment/bed.jpeg'
+import apartmentRoomImage from './apartment/room.jpeg'
+import apartmentBathroomImage from './apartment/bathroom.jpeg'
+import apartmentKeypadImage from './apartment/keypad.jpeg'
+import apartmentSilverGymEntranceImage from './apartment/silver-gym-entrance.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-07-14T20:00:00+03:00', // TODO: Update this
@@ -33,6 +39,34 @@ export const apartmentDetails = {
   },
 }
 
+export const apartmentImages = [
+  {
+    src: apartmentBedImage,
+    alt: 'Apartment bed',
+    caption: "I bet you've never stayed in a studio with a chandelier before.",
+  },
+  {
+    src: apartmentRoomImage,
+    alt: 'Apartment room',
+    caption: 'For a studio, the room is a decent size. It has a TV, and right above it an air-con unit. Nothing can go wrong with that.',
+  },
+  {
+    src: apartmentBathroomImage,
+    alt: 'Apartment bathroom',
+    caption: "The problem with fancy bathrooms is the toiet is attached to the wall rather than on the floor. I spend the whole time I'm sitting there worried it could fall off.",
+  },
+  {
+    src: apartmentKeypadImage,
+    alt: 'Apartment keypad',
+    caption: "Have you ever played a video game where you need to get through a door but you don't know the code, so you wait for someone to use the keypad then look at it with your thermal goggles and the heat residue tells you which buttons they pressed? Well good news, you can leave the thermal goggles at home.",
+  },
+  {
+    src: apartmentSilverGymEntranceImage,
+    alt: 'Silver Gym entrance',
+    caption: 'This is the entrance to my gym. No, not that one. The one on the right without any signs and underneath a big bush. I wonder why I often had the gym to myself.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -45,7 +79,39 @@ TODO: Add city images
 
 <AccommodationTable details={apartmentDetails} />
 
-TODO
+Evolution: "I've spent 3.5 billion years perfecting a biological rhythm where people rise and sleep with daylight."
+
+Humans: "Lol."
+
+This apartment is on the ground floor. I typically avoid ground floor rooms for security reasons, but there are decorative bars here sufficient to mitigate any risk of someone climbing through the windows, and the door looks like it could guard Fort Knox. From a security perspective, this room is as safe as anywhere I've stayed. From a privacy perspective it's less so.
+
+On the plus side the room is on the rear side of the building, so you don't have to worry about people peering in as they wander down the street. On the negative side, it's next to a restaurant and all the staff take their smoke breaks out the back, and should you leave the curtains open, they can watch you lying in bed.
+
+Human beings have created some dumb inventions before, but perhaps the dumbest of them all is black-out curtains: Disrupting your circadian rhythm since World War II. Save for some largely transparent drapes, this room only has black-out curtains. And as someone who likes to get as much daylight as possible, it was a constant battle between closing the curtains enough that I had some privacy, but not closing them so much that it disrupted my ability to rise with daylight.
+
+Save for the crippling loneliness, despondency and endless longing for it to all be over, the great thing about being alone is that you get to have an entire bed to yourself. I don't have a side of the bed, I always just sleep in the middle so when I stay somewhere with an alleged double-bed, but it's actually two single mattresses, then God can go fuck himself. I don't know who thinks that's a good idea. Why would you want to sleep in the same bed as someone but be forced to be on different sides of it? If that's what you want then just sleep in different beds. Or different rooms. Or just get a divorce and stop this facade.
+
+The room is a studio, which had I paid more attention when booking, I would have realised. Studios are only really bad things when you're with someone else and you have nowhere to get away from them. Again touting the benefits of soul-crushing desolation, when you're in a studio by yourself, it can be better than having a one-bedroom because you get the same amount of space without all the walls getting in the way.
+
+That's not really the case here, it's actually quite small, but it can be.
+
+There is room to comfortably do yoga, which is all the space that I actually need. Anymore is just being greedy, and you have this much space despite also having a dining table with two chairs, and armchair, a desk with an office chair, and a double bed that some nobhead put two mattresses on.
+
+The kitchen area is a bit lacking. It has an induction hob that you can unplug and put in a drawer when you're not using it. I used to think they were a poor alternative to having a permanent cooker, but having used them in multiple Airbnbs now, I actually think they're an improvement. You can take them out and plug them in whenever you want to cook, but the rest of the time you put them away and can use that space as a surface.
+
+How much better would so many kitchens be if you could use the cooker space as a surface?
+
+It also has a microwave-grill, which I'd never head of until I'd stayed here. It's a microwave and a grill. Together. A microwave-grill.
+
+No, I don't know who came up with that either. Probably the same person who invented blackout curtains. I found some minimal use for it by getting some baguettes from the nearby Lidl and toasting them in it, but it definitely wasn't adequate replacement for an oven.
+
+The first thing I look for when choosing an Airbnb, and the reason that I never pay much attention to the details of the room, is the location. I want the room to be in a good location, which for me means it has four things nearby: Somewhere to run, a gym, vegan food and a supermarket. For as much as it could be anywhere in Sofia, this room is in a perfect location.
+
+My favourite vegan restaurant here, Edgy Veggy, is a 150 metre walk, and Neeko is only a 450m walk. My gym, <ExternalLink url='https://goo.gl/maps/MmdptJZ48y9R8Drw8'>Silver Gym</ExternalLink> is a 250m walk. Lidl is a 550m walk, with additional supermarkets not much further. And while you can confortably run right out the front door, the north-west corner of the National Palace of Culture Park is only a 350m walk.
+
+The gym was so close that I walked there in my workout clothes. I'd go straight from the gym to Edgy Veggy, which conveniently sold protein shakes you could have with your lunch, and I could be back at my room in an hour. The location was amazing, and made-up for the frustrations of the room, however slight they were.
+
+<ImageGallery images={apartmentImages} />
 
 ## Where to get vegan food in Sofia
 
