@@ -131,7 +131,7 @@ const timelineData = {
   },
 }
 
-export const parsedTimelineData = () => {
+const orderedTimelineArray = () => {
   let returnArray = []
 
   Object.keys(timelineData).map((countryKey) => {
@@ -169,4 +169,29 @@ const checkDateOverlap = (staysArray) => {
       )
     }
   })
+}
+
+const stayObject = (stay) => ({
+  arrival: stay.arrival,
+  departure: stay.departure,
+  place: stay.place,
+})
+
+export const parsedTimelineData = () => {
+  let returnArray = []
+  orderedTimelineArray().map((stay, iterator) => {
+    if (
+      iterator >= 1 &&
+      stay.country === orderedTimelineArray()[iterator - 1][country]
+    ) {
+      returnArray.slice(-1)[0].stays.push(stayObject(stay))
+    } else {
+      returnArray.push({
+        country: stay.country,
+        stays: [stayObject(stay)],
+      })
+    }
+  })
+
+  return returnArray
 }
