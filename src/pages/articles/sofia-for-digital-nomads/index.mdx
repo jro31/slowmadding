@@ -5,10 +5,39 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import citySouthParkPigeonsStatueImage from './city/south-park-pigeons-statue.jpeg'
+import cityNationalAssemblyOfBulgariaImage from './city/national-assembly-of-bulgaria.jpeg'
+import cityFuckThePoliceImage from './city/fuck-the-police.jpeg'
+import citySouthParkTreesImage from './city/south-park-trees.jpeg'
+
+export const cityImages = [
+  {
+    src: citySouthParkPigeonsStatueImage,
+    alt: 'South Park pigeons status',
+    caption: 'Sofia is a city surrounded by mountains which create a beautiful backdrop. This pigeon statue is in South Park.',
+  },
+  {
+    src: cityNationalAssemblyOfBulgariaImage,
+    alt: 'National Assembly of Bulgaria',
+    caption: 'The National Assembly of Bulgaria. No idea what happens there, I just thought it was a nice photo.',
+  },
+  {
+    src: cityFuckThePoliceImage,
+    alt: 'Fuck the police',
+    caption: "Everyone seems very angry with the police nowadays. I'm sure they used to be more popular than this.",
+  },
+  {
+    src: citySouthParkTreesImage,
+    alt: 'South Park trees',
+    caption: 'Sofia is blessed with some nice parks for when you want to get away from things. These are some of the trees in South Park.',
+  },
+]
+
 import apartmentBedImage from './apartment/bed.jpeg'
 import apartmentRoomImage from './apartment/room.jpeg'
 import apartmentBathroomImage from './apartment/bathroom.jpeg'
 import apartmentKeypadImage from './apartment/keypad.jpeg'
+import apartmentBuildingImage from './apartment/building.jpeg'
 import apartmentSilverGymEntranceImage from './apartment/silver-gym-entrance.jpeg'
 
 import edgyVeggyGrillzillaBurgerImage from './edgy-veggy/grillzilla-burger.jpeg'
@@ -28,6 +57,12 @@ import neekoVeganJunkTheMagicMushroomMeltImage from './neeko-vegan-junk-food/the
 import boleroFitburgerBoleroVeganChickenBurgerImage from './bolero-fitburger/bolero-vegan-chicken-burger.jpeg'
 import boleroFitburgerBoleroChorizoVeganBurgerImage from './bolero-fitburger/bolero-chorizo-vegan-burger.jpeg'
 import boleroFitburgerBoleroVeganCheeseBurgerImage from './bolero-fitburger/bolero-vegan-cheese-burger.jpeg'
+
+import runningNorthSouthParkStravaImage from './running/north-south-park-strava.jpeg'
+import runningSouthParksLoopStravaImage from './running/south-parks-loop-strava.jpeg'
+import runningParksLoopStravaImage from './running/parks-loop-strava.jpeg'
+import runningNorthSouthParkImage from './running/north-south-park.jpeg'
+import runningBorisovaGradinaParkImage from './running/borisova-gradina-park.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -77,6 +112,11 @@ export const apartmentImages = [
     src: apartmentKeypadImage,
     alt: 'Apartment keypad',
     caption: "Have you ever played a video game where you need to get through a door but you don't know the code, so you wait for someone to use the keypad then look at it with your thermal goggles and the heat residue tells you which buttons they pressed? Well good news, you can leave the thermal goggles at home.",
+  },
+  {
+    src: apartmentBuildingImage,
+    alt: 'Apartment building',
+    caption: "It doesn't look all that from the outside, especially with that graffiti, but it's perfectly pleasant once you're inside. This is how most buildings look in this part of the world.",
   },
   {
     src: apartmentSilverGymEntranceImage,
@@ -169,6 +209,37 @@ export const boleroFitburgerImages = [
   },
 ]
 
+export const runningImages = [
+  {
+    src: runningNorthSouthParkStravaImage,
+    alt: 'South Park Strava map',
+    caption: "My first run in Sofia was an attempted 'fast' run in north South Park. I tried to find a decent loop but they haven't designed this park to be running-friendly as the paths all just go across the park. Even 50% of that little loop in the middle is running across uneven grass.",
+    url: 'https://www.strava.com/activities/9479161931',
+  },
+  {
+    src: runningSouthParksLoopStravaImage,
+    alt: 'South Parks loop Strava map',
+    caption: "Giving up on the idea of faster runs, I started doing longer, slower runs that incorporated the National Palace of Culture Park, north South Park and south South Park. As you can see from the southern part of this run, getting lost in South Park is pretty easy. I wasn't trying to run around in circles.",
+    url: 'https://www.strava.com/activities/9535759195',
+  },
+  {
+    src: runningParksLoopStravaImage,
+    alt: 'Parks loop Strava map',
+    caption: 'On my last run in Sofia, I incorporated Borisova Gradina Park. This was a really fun route. A lot of winding trails and a lot of having to check my map, but it was a good length and fun terrain, and much of it was very isolated.',
+    url: 'https://www.strava.com/activities/9567153804',
+  },
+  {
+    src: runningNorthSouthParkImage,
+    alt: 'Sofia South Park',
+    caption: "This is north South Park. Don't be fooled by the big, wide trails. They don't form into any kind of useful loop, and instead go straight across the park. It is a pleasant park to come and sit for a while and clear your head, just not great for running.",
+  },
+  {
+    src: runningBorisovaGradinaParkImage,
+    alt: 'Borisova Gradina Park',
+    caption: 'This is one of the first trails you come across in Borisova Gradina Park. They get much narrower and windier as you go.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 You know who the worst people in the world are?
@@ -191,7 +262,7 @@ Minor confrontations like this, they happen. They're a part of life. I just feel
 
 TODO: Add anymore? About the architecture? The transport? The smoking? Anything else?
 
-TODO: Add city images
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
@@ -265,25 +336,25 @@ TODO
 
 In my month in Bucharest prior to coming here, I got back into interval running. That's short bursts of high-speed running, rather than long, slow runs as people typically do. My hope before coming here was that I would continue doing at least some interval running, but what that requires is a flat, even, unimpeded surface, preferably in a loop.
 
-Looking at a map you'll see that Sofia has several parks. Nearest to my room was the <ExternalLink url='https://goo.gl/maps/Vf1xbR1S9pSpBwn37'>National Palace of Culture Park</ExternalLink>. I wasn't expecting much from this, but a little further on is South Park. Carry on going, and you get to another park, also called South Park. I wonder why they couldn't think of any other names.
+Looking at a map you'll see that Sofia has several parks. Nearest to my room was the <ExternalLink url='https://goo.gl/maps/Vf1xbR1S9pSpBwn37'>National Palace of Culture Park</ExternalLink>. I wasn't expecting much from this, but a little further on is South Park. Carry on going, and you get to another park, also called South Park. You'd think there would be more names than that.
 
 To differentiate between them I'm going to refer to them as <ExternalLink url='https://goo.gl/maps/FVzLkyp1frUZ3WUx7'>north South Park</ExternalLink> and as <ExternalLink url='https://goo.gl/maps/2nzsSinFvwNFFDFZ9'>south South Park</ExternalLink>.
 
-My hope prior to coming to Sofia was that north South Park would be a good place to do faster runs. The reason that it's not, isn't that it's not big enough or flat enough. It's that all the paths just go straight across the park, so you can't actually do any loops without diverting over stretches of grass that are pretty uneven under-foot. I tried to do a fast run here when I first arrived, and I just couldn't do it. And yes, I am blaming the unevenness of the grass, and not my lack of fitness or willpower for why I got such a shit time.
+My expectation was that north South Park would be a good place to do faster runs. The reason that it's not, isn't that it's not big enough or flat enough. It's that all the paths just go straight across the park, so you can't actually do any loops without diverting over stretches of grass that are pretty uneven under-foot. I tried to do a fast run here when I first arrived, and I just couldn't do it. And yes I am blaming the directions of the paths and the unevenness of the grass for why I got such a shit time. It was nothing to do with my lack of fitness or willpower.
 
-From that I concluded that Sofia is better for longer, slower runs, for which it is really good. The pavements and roads are quiet enough that you can comfortably run down the street, but with a bit of planning you can do some decent-length runs mostly in parkland.
+From that I concluded that Sofia is better for longer, slower runs, for which it is really good. The pavements and roads are quiet enough that you can comfortably run down the street, but with a bit of planning you can do some decent-length runs mostly through parks.
 
 I started by combining National Palace of Culture Park with north South Park and south South Park, but later graduated onto including <ExternalLink url='https://goo.gl/maps/irA1U3acEKrzqe9P8'>Borisova Gradina Park</ExternalLink>, which turned it into a 12km loop where almost all of Borisova Gradina Park, and the south half of south South Park are some pretty isolated trails. It was really enjoyable, with the only downside being that they're so winding that keeping your bearings is near impossible. I often found myself stopping to check the map on my watch, only to see I was going in the opposite direction to what I thought.
 
 On my last run in Sofia, I was going down one of these isolated, winding trails only to come across an old man lying on the path. I stopped, and on the assumption he didn't speak English put my thumb up and asked him _"ok?"_
 
-_"Help,"_ was his response in a very timid voice. He didn't seem to know any other words, but when he started trying to stand up, I pulled him off the ground and had to hold him steady for about twenty seconds, lest he go back down again. He was carrying a crutch and had a bandage around one leg, which made me wonder if going on walks down isolated, uneven trails was the best thing for him. He could have been there for hours, and had I not come along, might have been for many more.
+_"Help,"_ was his response in a very timid voice. He didn't seem to know any other words, but when he started trying to stand up, I pulled him off the ground and had to hold him steady for about twenty seconds, lest he go back down again. He was carrying a crutch and had a bandage around one leg, which made me wonder if going on walks down isolated, uneven trails was the best thing for him. He could have been there for hours already, and had I not come along, might have been for many more.
 
-His dog didn't give a fuck. He was just chilling. Forget Lassie, that dog wasn't going to do shit.
+His dog didn't give a fuck either. He was just chilling on the ground. Forget Lassie, that dog wasn't going to do shit.
 
 If you are intent on doing faster runs, on the right if you enter south South Park from the north, is a place called <ExternalLink url='https://goo.gl/maps/oY3b7U9UVJZ1oYjF8'>Great Round Meadow</ExternalLink>. It's not that great, but it's flat, the path is fairly wide, and it's more or less round so you can use it for sprints just as long as you're willing to push the occasional pensioner out the way. That was the only place I came across suitable for faster running.
 
-TODO: Add strava maps/photos
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Sofia
 
