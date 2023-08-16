@@ -1,5 +1,6 @@
 import BookingPlatform from './BookingPlatform'
 import Dates from './Dates'
+import Location from './Location'
 import PriceBreakdown from './PriceBreakdown'
 import RoomType from './RoomType'
 
@@ -13,6 +14,7 @@ const AccommodationTable = ({ details }) => {
           url={details.platform.url}
         />
         {details.roomType && <RoomType roomType={details.roomType} />}
+        {details.location && <Location location={details.location} />}
         <PriceBreakdown
           dates={details.dates}
           currencyPrefix={details.price.currencyPrefix}
