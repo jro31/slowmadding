@@ -1,0 +1,60 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
+import AccommodationTable from '@/components/AccommodationTable'
+// import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-08-17T13:05:00+03:00', // TODO: Update this
+  title: 'Athens for Digital Nomads',
+  description: '', // TODO: Update this
+}
+
+export const apartmentDetails = {
+  dates: {
+    checkIn: '2023-08-10',
+    checkOut: '2023-09-21',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/23088380',
+  },
+  roomType: 'Entire condo hosted by Chris',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: null,
+    sections: {
+      Room: 1943.34,
+      '25% monthly price discount': -485.94,
+      'Cleaning fee': 25.71,
+      'Service fee': 188.99,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### Near Acropolis bright apartment! Next to Metro
+
+<AccommodationAddress name='Eggeli 68' url='https://goo.gl/maps/nCAzLD6TbGTsS9v88' />
+
+<AccommodationTable details={apartmentDetails} />
+
+TODO
+
+## Where to get vegan food in Athens
+
+TODO
+
+## Where to run in Athens
+
+TODO
+
+## Being sociable in Athens
+
+TODO
