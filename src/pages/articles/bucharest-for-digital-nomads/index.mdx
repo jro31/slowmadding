@@ -2,6 +2,7 @@ import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import AccommodationAddress from '@/components/AccommodationAddress'
 
 import cityPalaceOfParliamentEveningImage from './city/palace-of-parliament-evening.jpeg'
 import cityVacarestiNatureParkImage from './city/vacaresti-nature-park.jpeg'
@@ -62,10 +63,6 @@ export const apartmentDetails = {
     url: 'https://www.airbnb.com/rooms/746858708994370465',
   },
   roomType: 'Entire condo hosted by Alexandru',
-  location: {
-    name: 'Strada Vânători 5-11',
-    url: 'https://goo.gl/maps/g6Q2c21rnBmnV7na8',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'lei',
@@ -315,6 +312,8 @@ It is at least confined to outdoor areas, or to areas that can be perceived as o
 ## Where I stayed
 
 ### Flexible Check-In/Out apartment
+
+<AccommodationAddress name='Strada Vânători 5-11' url='https://goo.gl/maps/g6Q2c21rnBmnV7na8' />
 
 <AccommodationTable details={apartmentDetails} />
 
