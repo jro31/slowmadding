@@ -1,6 +1,7 @@
 import Link from 'next/link'
 
 import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
@@ -51,10 +52,6 @@ export const saikeawResortDetails = {
     url: 'https://www.booking.com/hotel/th/saikaew-resort.html',
   },
   roomType: 'Double room',
-  location: {
-    name: '220 Moo 24 Sankhongluang Rd',
-    url: 'https://goo.gl/maps/Th1xiWAneLPnfyFM7',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -221,6 +218,8 @@ There aren't many places in the world where I feel comfortable buying things wit
 ## Where I stayed
 
 ### Saikaew Resort
+
+<AccommodationAddress name='220 Moo 24 Sankhongluang Rd' url='https://goo.gl/maps/Th1xiWAneLPnfyFM7' />
 
 <AccommodationTable details={saikeawResortDetails} />
 

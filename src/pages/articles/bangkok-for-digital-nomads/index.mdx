@@ -1,4 +1,5 @@
 import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
@@ -136,10 +137,6 @@ export const nandhaHotelDetails = {
     url: 'https://www.booking.com/hotel/th/home-place.html',
   },
   roomType: 'Classic Superior Double Room',
-  location: {
-    name: '14/11-15 Sukhumvit 33',
-    url: 'https://goo.gl/maps/dmXWTJaZAavw6MAK8',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -161,10 +158,6 @@ export const vCheckInnDetails = {
     url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
   },
   roomType: 'Deluxe Double Room with Balcony',
-  location: {
-    name: '318-318/1 Sukhumvit Soi 22',
-    url: 'https://goo.gl/maps/JHV6y2C2wbVGewJ37',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -185,10 +178,6 @@ export const roomQuestFirstStayDetails = {
     url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
   },
   roomType: 'Standard King Room',
-  location: {
-    name: '129 Soi Napha Sap 5 Sukhumvit 36',
-    url: 'https://goo.gl/maps/Y9qUDVncb7qzdZYd8',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -247,10 +236,6 @@ export const parvenaHotelSathornDetails = {
     url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
   },
   roomType: 'Standard Double Room',
-  location: {
-    name: '592 Sathon Soi 3 Suanplu Soi 5 Sathon Tai Rd',
-    url: 'https://goo.gl/maps/VbtYBABCZjweJpxh6',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -865,6 +850,8 @@ How strictly you choose to abide by this law is up to you, but it's worth being 
 
 ### Nandha Hotel
 
+<AccommodationAddress name='14/11-15 Sukhumvit 33' url='https://goo.gl/maps/dmXWTJaZAavw6MAK8' />
+
 <AccommodationTable details={nandhaHotelDetails} />
 
 Nandha will forever hold the distinction of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them. As a place to start, it really isn't bad. The room was big, with ample space to do yoga and other exercise. Out of shot of the below photo is a table with a couple of chairs that was a great place to setup my laptop on days that I was working.
@@ -880,6 +867,8 @@ Other than that I can't fault this place. The wifi was fast, it was very comfort
 <ImageGallery images={nandhaHotelImages} />
 
 ### V Check Inn Sukhumvit 22
+
+<AccommodationAddress name='318-318/1 Sukhumvit Soi 22' url='https://goo.gl/maps/JHV6y2C2wbVGewJ37' />
 
 <AccommodationTable details={vCheckInnDetails} />
 
@@ -898,6 +887,8 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 <ImageGallery images={vCheckInnImages} />
 
 ### RoomQuest Sukhumvit 36
+
+<AccommodationAddress name='129 Soi Napha Sap 5 Sukhumvit 36' url='https://goo.gl/maps/Y9qUDVncb7qzdZYd8' />
 
 <AccommodationTable details={roomQuestFirstStayDetails} />
 
@@ -918,6 +909,8 @@ If I have a comfortable bed, good air-conditioning, fast wifi and a big TV, that
 <ImageGallery images={roomQuestImages} />
 
 ### Parvena Hotel Sathorn
+
+<AccommodationAddress name='592 Sathon Soi 3 Suanplu Soi 5 Sathon Tai Rd' url='https://goo.gl/maps/VbtYBABCZjweJpxh6' />
 
 <AccommodationTable details={parvenaHotelSathornDetails} />
 
