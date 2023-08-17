@@ -1,6 +1,5 @@
-import Link from 'next/link'
-
 import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
@@ -44,10 +43,6 @@ export const dewyHouseDetails = {
     url: 'https://www.booking.com/hotel/th/dewyhouse.html',
   },
   roomType: 'Deluxe Double Room',
-  location: {
-    name: '19/2 Charoensuk Rd',
-    url: 'https://goo.gl/maps/pJzR7m9bw8yWEvZ97',
-  },
   price: {
     currencyPrefix: null,
     currencySuffix: 'THB',
@@ -187,6 +182,8 @@ Hopefully this is a temporary blip, and in a couple of years once it's had the t
 ## Where I stayed
 
 ### DewyHouse
+
+<AccommodationAddress name='19/2 Charoensuk Rd' url='https://goo.gl/maps/pJzR7m9bw8yWEvZ97' />
 
 <AccommodationTable details={dewyHouseDetails} />
 
