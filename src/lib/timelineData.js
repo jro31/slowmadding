@@ -137,18 +137,29 @@ const timelineData = {
   },
 }
 
-const orderedTimelineArray = () => {
+const orderedTimelineArray = (startDate, endDate) => {
   let returnArray = []
 
   Object.keys(timelineData).map((countryKey) => {
     Object.keys(timelineData[countryKey]).map((placeKey) => {
       timelineData[countryKey][placeKey].map((stay) => {
-        returnArray.push({
-          [country]: countryKey,
-          [place]: placeKey,
-          [arrival]: stay[dates][arrival],
-          [departure]: stay[dates][departure],
-        })
+        if (
+          Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
+          Date.parse(stay[dates][arrival]) <= Date.parse(endDate)
+        ) {
+          returnArray.push({
+            [country]: countryKey,
+            [place]: placeKey,
+            [arrival]:
+              Date.parse(startDate) > Date.parse(stay[dates][arrival])
+                ? startDate
+                : stay[dates][arrival],
+            [departure]:
+              Date.parse(endDate) < Date.parse(stay[dates][departure])
+                ? endDate
+                : stay[dates][departure],
+          })
+        }
       })
     })
   })
@@ -183,12 +194,16 @@ const stayObject = (stay) => ({
   place: stay.place,
 })
 
-export const parsedTimelineData = () => {
+export const parsedTimelineData = (
+  startDate,
+  endDate = new Date().toJSON().slice(0, 10)
+) => {
   let returnArray = []
-  orderedTimelineArray().map((stay, iterator) => {
+  orderedTimelineArray(startDate, endDate).map((stay, iterator) => {
     if (
       iterator >= 1 &&
-      stay.country === orderedTimelineArray()[iterator - 1][country]
+      stay.country ===
+        orderedTimelineArray(startDate, endDate)[iterator - 1][country]
     ) {
       returnArray.slice(-1)[0].stays.push(stayObject(stay))
     } else {
