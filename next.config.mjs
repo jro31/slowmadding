@@ -9,10 +9,6 @@ const nextConfig = {
   reactStrictMode: true,
   experimental: {
     scrollRestoration: true,
-    outputFileTracingExcludes: {
-      '/*': ['./src/pages/articles/**/*.jpeg'],
-      '/**/*': ['./src/pages/articles/**/*.jpeg'],
-    },
   },
 }
 
