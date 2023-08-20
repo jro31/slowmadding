@@ -15,6 +15,12 @@ const timelineData = {
           [departure]: '2023-01-13',
         },
       },
+      {
+        [dates]: {
+          [arrival]: '2023-02-10',
+          [departure]: '2023-02-11',
+        },
+      },
     ],
     [places[countries.cambodia].siemReap]: [
       {
