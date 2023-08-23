@@ -11,7 +11,7 @@ import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norod
 import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
-import collateActivity from '@/lib/collateActivity'
+import { getAllArticles } from '@/lib/getAllArticles'
 
 const title = 'Software engineer, digital nomad, insipid writer.'
 const description =
@@ -99,11 +99,13 @@ export const getStaticProps = async () => {
     await generateRssFeed()
   }
 
-  const collatedActivity = await collateActivity()
+  const articles = (await getAllArticles()).map(
+    ({ component, ...meta }) => meta
+  )
 
   return {
     props: {
-      activities: collatedActivity.slice(0, 4),
+      activities: articles.slice(0, 4),
     },
   }
 }
