@@ -10,6 +10,7 @@ import {
   country,
   place,
 } from '@/lib/timelineData'
+import { formatDateRange } from '@/lib/formatDate'
 
 const colorClass = [
   'bg-orange-500',
@@ -20,13 +21,6 @@ const colorClass = [
   'bg-rose-600',
   'bg-sky-500',
 ]
-
-// min-h-[10px] min-h-[20px] min-h-[30px] min-h-[40px] min-h-[50px] min-h-[60px] min-h-[70px]
-// min-h-[80px] min-h-[90px] min-h-[100px] min-h-[120px] min-h-[130px] min-h-[140px] min-h-[150px]
-// min-h-[160px] min-h-[170px] min-h-[180px] min-h-[190px] min-h-[200px] min-h-[210px] min-h-[220px]
-// min-h-[230px] min-h-[240px] min-h-[250px] min-h-[260px] min-h-[270px] min-h-[280px] min-h-[290px]
-// min-h-[300px] min-h-[310px] min-h-[320px] min-h-[330px] min-h-[340px] min-h-[350px] min-h-[360px]
-// min-h-[370px] min-h-[380px] min-h-[390px] min-h-[400px] min-h-[410px] min-h-[420px] min-h-[430px]
 
 const timelineStartDate = '2022-10-07'
 
@@ -80,11 +74,15 @@ const Timeline = () => {
                           } border-zinc-800 dark:border-zinc-100`}
                         ></div>
                         <div
+                          style={{
+                            minHeight: `${
+                              numberOfNights(stay[arrival], stay[departure]) *
+                              10
+                            }px`,
+                          }}
                           className={`${
                             stayOrderFirst ? 'border-r-2' : 'border-l-2'
-                          } min-h-[${
-                            numberOfNights(stay[arrival], stay[departure]) * 10
-                          }px] flex shrink grow basis-1/2 items-center border-zinc-800 dark:border-zinc-100 ${
+                          } flex shrink grow basis-1/2 items-center border-zinc-800 dark:border-zinc-100 ${
                             stayOrderFirst ? 'justify-end' : 'justify-start'
                           }`}
                         >
@@ -99,8 +97,9 @@ const Timeline = () => {
                           ></div>
                           <div className="text-zinc-800 dark:text-zinc-100">
                             <div>{stay[place]}</div>
-                            <div>{stay[arrival]}</div>
-                            <div>{stay[departure]}</div>
+                            <div>
+                              {formatDateRange(stay[arrival], stay[departure])}
+                            </div>
                           </div>
                         </div>
                       </div>

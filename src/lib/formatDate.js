@@ -45,6 +45,9 @@ export const formatDateTime = (dateString, includeOrdinal = false) => {
   return formattedDate
 }
 
+const dateIsToday = (dateString) =>
+  formatDate(dateString) === formatDate(new Date())
+
 export const formatDateRange = (
   startDateString,
   endDateString,
@@ -54,8 +57,9 @@ export const formatDateRange = (
   const formattedEndDate = formatDate(endDateString, includeOrdinals)
 
   if (
+    !dateIsToday(endDateString) &&
     formattedStartDate.split(' ').slice(-1)[0] ===
-    formattedEndDate.split(' ').slice(-1)[0]
+      formattedEndDate.split(' ').slice(-1)[0]
   ) {
     formattedStartDate = formattedStartDate.split(' ').slice(0, -1).join(' ')
 
@@ -64,5 +68,7 @@ export const formatDateRange = (
     }
   }
 
-  return `${formattedStartDate} to ${formattedEndDate}`
+  return `${formattedStartDate} to ${
+    dateIsToday(endDateString) ? 'now' : formattedEndDate
+  }`
 }
