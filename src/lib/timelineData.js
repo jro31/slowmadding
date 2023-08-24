@@ -7,6 +7,16 @@ export const country = 'country'
 export const place = 'place'
 
 const timelineData = {
+  [countries.bulgaria]: {
+    [places[countries.bulgaria].sofia]: [
+      {
+        [dates]: {
+          [arrival]: '2023-07-13',
+          [departure]: '2023-08-10',
+        },
+      },
+    ],
+  },
   [countries.cambodia]: {
     [places[countries.cambodia].phnomPenh]: [
       {
@@ -27,6 +37,16 @@ const timelineData = {
         [dates]: {
           [arrival]: '2023-02-11',
           [departure]: '2023-03-11',
+        },
+      },
+    ],
+  },
+  [countries.greece]: {
+    [places[countries.greece].athens]: [
+      {
+        [dates]: {
+          [arrival]: '2023-08-10',
+          [departure]: '2023-10-26',
         },
       },
     ],

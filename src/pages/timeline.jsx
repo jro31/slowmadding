@@ -1,3 +1,8 @@
+// TODO: Add a table that details the number of days in each country?
+
+// FIXME: Fix timeline display for short-stays in a country (1 day)
+// TODO: What if the arrival date of the current stay is the same as the end date of the timeline (today)
+
 import Head from 'next/head'
 
 import SimpleLayout from '@/components/SimpleLayout'
@@ -11,16 +16,6 @@ import {
   place,
 } from '@/lib/timelineData'
 import { formatDateRange } from '@/lib/formatDate'
-
-const colorClass = [
-  'bg-orange-500',
-  'bg-lime-400',
-  'bg-teal-400',
-  'bg-blue-500',
-  'bg-fuchsia-600',
-  'bg-rose-600',
-  'bg-sky-500',
-]
 
 const timelineStartDate = '2022-10-07'
 
@@ -53,9 +48,9 @@ const Timeline = () => {
               return (
                 <div
                   key={`country-${countryIterator}-section`}
-                  className={`${colorClass[countryIterator]} z-10 rounded-[5rem]`}
+                  className="z-10 rounded-3xl bg-zinc-50 dark:bg-zinc-800"
                 >
-                  <h1 className="sticky top-7 float-left my-8 w-0 translate-x-12 whitespace-nowrap text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+                  <h1 className="sticky top-7 float-left my-8 w-0 translate-x-10 whitespace-nowrap text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
                     {countryVisit[country]}
                   </h1>
                   {countryVisit.stays.map((stay, stayIterator) => {
@@ -68,35 +63,37 @@ const Timeline = () => {
                       >
                         <div
                           className={`shrink grow basis-1/2 ${
-                            stayOrderFirst ? 'order-last' : 'order-first'
-                          } ${
-                            stayOrderFirst ? 'border-l-2' : 'border-r-2'
+                            stayOrderFirst
+                              ? 'order-last border-l-2'
+                              : 'order-first border-r-2'
                           } border-zinc-800 dark:border-zinc-100`}
                         ></div>
                         <div
                           style={{
                             minHeight: `${
                               numberOfNights(stay[arrival], stay[departure]) *
-                              10
+                              15
                             }px`,
                           }}
-                          className={`${
-                            stayOrderFirst ? 'border-r-2' : 'border-l-2'
-                          } flex shrink grow basis-1/2 items-center border-zinc-800 dark:border-zinc-100 ${
-                            stayOrderFirst ? 'justify-end' : 'justify-start'
+                          className={`flex shrink grow basis-1/2 items-center border-zinc-800 dark:border-zinc-100 ${
+                            stayOrderFirst
+                              ? 'justify-end border-r-2 pl-2'
+                              : 'justify-start border-l-2 pr-2'
                           }`}
                         >
                           <div
                             className={`h-5 w-5 ${
                               stayOrderFirst
-                                ? 'translate-x-3'
-                                : '-translate-x-3'
-                            } rounded-full bg-zinc-800 dark:bg-zinc-100 ${
-                              stayOrderFirst ? 'order-last' : 'order-first'
-                            }`}
+                                ? 'order-last translate-x-3'
+                                : 'order-first -translate-x-3'
+                            } shrink-0 grow-0 rounded-full bg-zinc-800 dark:bg-zinc-100`}
                           ></div>
-                          <div className="text-zinc-800 dark:text-zinc-100">
-                            <div>{stay[place]}</div>
+                          <div
+                            className={`flex flex-col text-zinc-800 dark:text-zinc-100 ${
+                              stayOrderFirst && 'text-right'
+                            }`}
+                          >
+                            <div className="font-bold">{stay[place]}</div>
                             <div>
                               {formatDateRange(stay[arrival], stay[departure])}
                             </div>

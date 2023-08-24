@@ -1,5 +1,7 @@
 export const countries = {
+  bulgaria: 'Bulgaria',
   cambodia: 'Cambodia',
+  greece: 'Greece',
   romania: 'Romania',
   thailand: 'Thailand',
   unitedKingdom: 'United Kingdom',
@@ -7,9 +9,15 @@ export const countries = {
 }
 
 export const places = {
+  [countries.bulgaria]: {
+    sofia: 'Sofia',
+  },
   [countries.cambodia]: {
     phnomPenh: 'Phnom Penh',
     siemReap: 'Siem Reap',
+  },
+  [countries.greece]: {
+    athens: 'Athens',
   },
   [countries.romania]: {
     bucharest: 'Bucharest',
