@@ -1,7 +1,5 @@
 // TODO: Add a table that details the number of days in each country?
 
-// TODO: What if the arrival date of the current stay is the same as the end date of the timeline (today)
-
 import Head from 'next/head'
 
 import SimpleLayout from '@/components/SimpleLayout'

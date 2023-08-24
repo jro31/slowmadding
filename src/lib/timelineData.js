@@ -165,7 +165,7 @@ const orderedTimelineArray = (startDate, endDate) => {
       timelineData[countryKey][placeKey].map((stay) => {
         if (
           Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
-          Date.parse(stay[dates][arrival]) <= Date.parse(endDate)
+          Date.parse(stay[dates][arrival]) < Date.parse(endDate)
         ) {
           returnArray.push({
             [country]: countryKey,
