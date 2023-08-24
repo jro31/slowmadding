@@ -1,6 +1,5 @@
 // TODO: Add a table that details the number of days in each country?
 
-// FIXME: Fix timeline display for short-stays in a country (1 day)
 // TODO: What if the arrival date of the current stay is the same as the end date of the timeline (today)
 
 import Head from 'next/head'
@@ -63,34 +62,31 @@ const Timeline = () => {
                       >
                         <div
                           className={`shrink grow basis-1/2 ${
-                            stayOrderFirst
-                              ? 'order-last border-l-2'
-                              : 'order-first border-r-2'
-                          } border-zinc-800 dark:border-zinc-100`}
+                            stayOrderFirst &&
+                            'lg:order-last lg:border-l-2 lg:border-r-0'
+                          } order-first border-r-2 border-zinc-800 dark:border-zinc-100`}
                         ></div>
                         <div
                           style={{
-                            minHeight: `${
+                            minHeight: `${Math.max(
                               numberOfNights(stay[arrival], stay[departure]) *
-                              15
-                            }px`,
+                                15,
+                              96
+                            )}px`,
                           }}
-                          className={`flex shrink grow basis-1/2 items-center border-zinc-800 dark:border-zinc-100 ${
-                            stayOrderFirst
-                              ? 'justify-end border-r-2 pl-2'
-                              : 'justify-start border-l-2 pr-2'
+                          className={`flex shrink grow basis-1/2 items-center justify-start border-l-2 border-zinc-800 pr-2 dark:border-zinc-100 ${
+                            stayOrderFirst &&
+                            'lg:justify-end lg:border-r-2 lg:border-l-0 lg:pl-2 lg:pr-0'
                           }`}
                         >
                           <div
                             className={`h-5 w-5 ${
-                              stayOrderFirst
-                                ? 'order-last translate-x-3'
-                                : 'order-first -translate-x-3'
-                            } shrink-0 grow-0 rounded-full bg-zinc-800 dark:bg-zinc-100`}
+                              stayOrderFirst && 'lg:order-last lg:translate-x-3'
+                            } order-first shrink-0 grow-0 -translate-x-3 rounded-full bg-zinc-800 dark:bg-zinc-100`}
                           ></div>
                           <div
                             className={`flex flex-col text-zinc-800 dark:text-zinc-100 ${
-                              stayOrderFirst && 'text-right'
+                              stayOrderFirst && 'lg:text-right'
                             }`}
                           >
                             <div className="font-bold">{stay[place]}</div>
