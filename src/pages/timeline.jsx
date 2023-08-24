@@ -61,7 +61,7 @@ const Timeline = () => {
                   key={`country-${countryIterator}-section`}
                   className={`${colorClass[countryIterator]} z-10 rounded-[5rem]`}
                 >
-                  <h1 className="sticky top-7 my-8 ml-12 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+                  <h1 className="sticky top-7 float-left my-8 w-0 translate-x-12 whitespace-nowrap text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
                     {countryVisit[country]}
                   </h1>
                   {countryVisit.stays.map((stay, stayIterator) => {
