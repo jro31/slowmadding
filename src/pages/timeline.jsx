@@ -49,15 +49,19 @@ const Timeline = () => {
         title="Where and when"
         // intro=""
       >
-        <div className="flex flex-col gap-5">
+        <div className="relative flex flex-col gap-5">
+          <div className="absolute inset-0 flex">
+            <div className="shrink grow basis-1/2 border-r-2 border-zinc-800 dark:border-zinc-100"></div>
+            <div className="shrink grow basis-1/2 border-l-2 border-zinc-800 dark:border-zinc-100"></div>
+          </div>
           {parsedTimelineData(timelineStartDate).map(
             (countryVisit, countryIterator) => {
               return (
                 <div
                   key={`country-${countryIterator}-section`}
-                  className={`${colorClass[countryIterator]} rounded-[5rem]`}
+                  className={`${colorClass[countryIterator]} z-10 rounded-[5rem]`}
                 >
-                  <h1 className="sticky top-7 ml-12 mt-8 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
+                  <h1 className="sticky top-7 my-8 ml-12 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-2xl">
                     {countryVisit[country]}
                   </h1>
                   {countryVisit.stays.map((stay, stayIterator) => {
