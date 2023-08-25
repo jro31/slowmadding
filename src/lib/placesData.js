@@ -405,6 +405,48 @@ export const placesData = [
     [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
   {
+    [place]: places[countries.bulgaria].sofia,
+    [country]: countries.bulgaria,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I was paying around 60 lev per night for a decent Airbnb, a local beer will cost around 5 lev in a bar, expect to pay about 20 lev for a meal with a drink in a western restaurant.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'The connection in my room was 100% reliable and sufficient for video calls (roughly 45mb/s download speed, 30mb/s upload).',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Running along the pavement is comfortable and there a couple of really good parks for running.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are a couple of very good vegan restaurants, but Sofia could do with more. Supermarkets don't really cater to vegans.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'Not so much as an inkling of feeling unsafe while I was here.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "Meetup only has one regular event here, and the organiser never shows up, so it's unpredictable. I didn't find much else going on.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Really beautfiul streets in the old town; the best way to explore the city.',
+      },
+    },
+    [articlePath]: '/articles/sofia-for-digital-nomads',
+  },
+  {
     [place]: places[countries.thailand].udonThani,
     [country]: countries.thailand,
     [criteria]: {
