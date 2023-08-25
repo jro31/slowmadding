@@ -15,7 +15,7 @@ import { useState } from 'react'
 import Head from 'next/head'
 
 import SimpleLayout from '@/components/SimpleLayout'
-import TimelineComponent from '@/components/TimelineComonent'
+import TimelineComponent from '@/components/TimelineComponent'
 
 import { parsedTimelineData } from '@/lib/timelineData'
 

@@ -1,6 +1,11 @@
 import useNumberOfNights from '@/hooks/use-number-of-nights'
 
-import { arrival, departure, country, place } from '@/lib/timelineData'
+import {
+  arrival,
+  departure,
+  country,
+  place,
+} from '@/lib/timelineData/variables'
 import { formatDateRange } from '@/lib/formatDate'
 
 let stayOrderFirst = true
