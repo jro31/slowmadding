@@ -1,7 +1,4 @@
-const cambodia = 'Cambodia'
-const romania = 'Romania'
-const thailand = 'Thailand'
-const vietnam = 'Vietnam'
+import { countries, places } from './placeNames'
 
 export const place = 'place'
 export const country = 'country'
@@ -32,8 +29,8 @@ export const criteriaHeadings = {
 // TODO: Sections to consider adding - Friendly people
 export const placesData = [
   {
-    [place]: 'Bangkok',
-    [country]: thailand,
+    [place]: places[countries.thailand].bangkok,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -74,8 +71,8 @@ export const placesData = [
     [articlePath]: '/articles/bangkok-for-digital-nomads',
   },
   {
-    [place]: 'Bucharest',
-    [country]: romania,
+    [place]: places[countries.romania].bucharest,
+    [country]: countries.romania,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -116,8 +113,8 @@ export const placesData = [
     [articlePath]: '/articles/bucharest-for-digital-nomads',
   },
   {
-    [place]: 'Chiang Mai',
-    [country]: thailand,
+    [place]: places[countries.thailand].chiangMai,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -158,8 +155,8 @@ export const placesData = [
     [articlePath]: '/articles/chiang-mai-for-digital-nomads',
   },
   {
-    [place]: 'Chiang Rai',
-    [country]: thailand,
+    [place]: places[countries.thailand].chiangRai,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -199,8 +196,8 @@ export const placesData = [
     [articlePath]: '/articles/chiang-rai-for-digital-nomads',
   },
   {
-    [place]: 'Ho Chi Minh City',
-    [country]: vietnam,
+    [place]: places[countries.vietnam].hoChiMinhCity,
+    [country]: countries.vietnam,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -241,8 +238,8 @@ export const placesData = [
     [articlePath]: '/articles/ho-chi-minh-city-for-digital-nomads',
   },
   {
-    [place]: 'Huahin',
-    [country]: thailand,
+    [place]: places[countries.thailand].huahin,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -283,8 +280,8 @@ export const placesData = [
     [articlePath]: '/articles/huahin-for-digital-nomads',
   },
   {
-    [place]: 'Loei',
-    [country]: thailand,
+    [place]: places[countries.thailand].loei,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -325,8 +322,8 @@ export const placesData = [
     [articlePath]: '/articles/loei-for-digital-nomads',
   },
   {
-    [place]: 'Phnom Penh',
-    [country]: cambodia,
+    [place]: places[countries.cambodia].phnomPenh,
+    [country]: countries.cambodia,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -367,8 +364,8 @@ export const placesData = [
     [articlePath]: '/articles/phnom-penh-for-digital-nomads',
   },
   {
-    [place]: 'Siem Reap',
-    [country]: cambodia,
+    [place]: places[countries.cambodia].siemReap,
+    [country]: countries.cambodia,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
@@ -408,8 +405,8 @@ export const placesData = [
     [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
   {
-    [place]: 'Udon Thani',
-    [country]: thailand,
+    [place]: places[countries.thailand].udonThani,
+    [country]: countries.thailand,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
