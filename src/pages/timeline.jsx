@@ -45,16 +45,18 @@ const Timeline = () => {
     },
   }
 
+  const introText = {
+    [digitalNomad]: 'Where being a digital nomad has taken me.',
+    [backpackingTrip]: 'My post-graduation backpacking trip.',
+  }
+
   return (
     <>
       <Head>
         <title>Timeline</title>
         <meta name="description" content="My digital nomad itinerary." />
       </Head>
-      <SimpleLayout
-        title="Timeline"
-        intro="Where being a digital nomad has taken me." // TODO: This should be dependent on the timeline chosen
-      >
+      <SimpleLayout title="Timeline" intro={introText[currentTimeline]}>
         {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
         <div className="mb-3 flex flex-1 justify-center">
           <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">

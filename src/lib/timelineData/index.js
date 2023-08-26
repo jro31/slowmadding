@@ -5,7 +5,10 @@ import { dates, arrival, departure, country, place } from './variables'
 import { bulgariaData } from './bulgariaData'
 import { cambodiaData } from './cambodiaData'
 import { canadaData } from './canadaData'
+import { colombiaData } from './colombiaData'
+import { ecuadorData } from './ecuadorData'
 import { greeceData } from './greeceData'
+import { peruData } from './peruData'
 import { romaniaData } from './romaniaData'
 import { thailandData } from './thailandData'
 import { unitedKingdomData } from './unitedKingdomData'
@@ -16,7 +19,10 @@ const timelineData = {
   [countries.bulgaria]: bulgariaData,
   [countries.cambodia]: cambodiaData,
   [countries.canada]: canadaData,
+  [countries.colombia]: colombiaData,
+  [countries.ecuador]: ecuadorData,
   [countries.greece]: greeceData,
+  [countries.peru]: peruData,
   [countries.romania]: romaniaData,
   [countries.thailand]: thailandData,
   [countries.unitedKingdom]: unitedKingdomData,

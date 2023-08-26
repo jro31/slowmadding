@@ -2,7 +2,10 @@ export const countries = {
   bulgaria: 'Bulgaria',
   cambodia: 'Cambodia',
   canada: 'Canada',
+  colombia: 'Colombia',
+  ecuador: 'Ecuador',
   greece: 'Greece',
+  peru: 'Peru',
   romania: 'Romania',
   thailand: 'Thailand',
   unitedKingdom: 'United Kingdom',
@@ -17,6 +20,17 @@ export const places = {
   [countries.cambodia]: {
     phnomPenh: 'Phnom Penh',
     siemReap: 'Siem Reap',
+  },
+  [countries.colombia]: {
+    bogota: 'Bogota',
+    cali: 'Cali',
+    cartagena: 'Cartagena',
+    medellin: 'Medellin',
+    pasto: 'Pasto',
+    popayan: 'Popayan',
+    sanAgustin: 'San Agustín',
+    taganga: 'Taganga',
+    tayronaNationalPark: 'Tayrona National Park',
   },
   [countries.canada]: {
     blackFamilyFarm: 'Black Family Farm, MB',
@@ -48,8 +62,24 @@ export const places = {
     whitehorse: 'Whitehorse, YT',
     winnipeg: 'Winnipeg, MB',
   },
+  [countries.ecuador]: {
+    banos: 'Baños',
+    montanita: 'Montañita',
+    quito: 'Quito',
+    riobamba: 'Riobamba',
+  },
   [countries.greece]: {
     athens: 'Athens',
+  },
+  [countries.peru]: {
+    arequipa: 'Arequipa',
+    chiclayo: 'Chiclayo',
+    huacachina: 'Huacachina',
+    huanchaco: 'Huanchaco',
+    huaraz: 'Huaraz',
+    lima: 'Lima',
+    mancora: 'Máncora',
+    puno: 'Puno',
   },
   [countries.romania]: {
     bucharest: 'Bucharest',
