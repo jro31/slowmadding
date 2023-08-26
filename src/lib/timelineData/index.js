@@ -4,6 +4,7 @@ import { dates, arrival, departure, country, place } from './variables'
 
 import { bulgariaData } from './bulgariaData'
 import { cambodiaData } from './cambodiaData'
+import { canadaData } from './canadaData'
 import { greeceData } from './greeceData'
 import { romaniaData } from './romaniaData'
 import { thailandData } from './thailandData'
@@ -13,6 +14,7 @@ import { unitedKingdomData } from './unitedKingdomData'
 const timelineData = {
   [countries.bulgaria]: bulgariaData,
   [countries.cambodia]: cambodiaData,
+  [countries.canada]: canadaData,
   [countries.greece]: greeceData,
   [countries.romania]: romaniaData,
   [countries.thailand]: thailandData,
