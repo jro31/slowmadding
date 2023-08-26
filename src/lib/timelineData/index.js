@@ -2,12 +2,17 @@ import { countries } from '@/lib/placeNames'
 
 import { dates, arrival, departure, country, place } from './variables'
 
+import { argentinaData } from './argentinaData'
+import { boliviaData } from './boliviaData'
 import { bulgariaData } from './bulgariaData'
 import { cambodiaData } from './cambodiaData'
 import { canadaData } from './canadaData'
 import { colombiaData } from './colombiaData'
 import { ecuadorData } from './ecuadorData'
+import { franceData } from './franceData'
 import { greeceData } from './greeceData'
+import { netherlandsData } from './netherlandsData'
+import { paraguayData } from './paraguayData'
 import { peruData } from './peruData'
 import { romaniaData } from './romaniaData'
 import { thailandData } from './thailandData'
@@ -16,12 +21,17 @@ import { usaData } from './usaData'
 import { vietnamData } from './vietnamData'
 
 const timelineData = {
+  [countries.argentina]: argentinaData,
+  [countries.bolivia]: boliviaData,
   [countries.bulgaria]: bulgariaData,
   [countries.cambodia]: cambodiaData,
   [countries.canada]: canadaData,
   [countries.colombia]: colombiaData,
   [countries.ecuador]: ecuadorData,
+  [countries.france]: franceData,
   [countries.greece]: greeceData,
+  [countries.netherlands]: netherlandsData,
+  [countries.paraguay]: paraguayData,
   [countries.peru]: peruData,
   [countries.romania]: romaniaData,
   [countries.thailand]: thailandData,

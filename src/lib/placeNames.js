@@ -1,10 +1,15 @@
 export const countries = {
+  argentina: 'Argentina',
+  bolivia: 'Bolivia',
   bulgaria: 'Bulgaria',
   cambodia: 'Cambodia',
   canada: 'Canada',
   colombia: 'Colombia',
   ecuador: 'Ecuador',
+  france: 'France',
   greece: 'Greece',
+  netherlands: 'Netherlands',
+  paraguay: 'Paraguay',
   peru: 'Peru',
   romania: 'Romania',
   thailand: 'Thailand',
@@ -14,6 +19,28 @@ export const countries = {
 }
 
 export const places = {
+  [countries.argentina]: {
+    buenosAires: 'Buenos Aires',
+    cafayate: 'Cafayate',
+    cordoba: 'Córdoba',
+    resistencia: 'Resistencia',
+    rosario: 'Rosario',
+    salta: 'Salta',
+    sanMiguelDeTucuman: 'San Miguel de Tucumán',
+    tafiDelValle: 'Tafí del Valle',
+    villaCarlosPaz: 'Villa Carlos Paz',
+  },
+  [countries.bolivia]: {
+    cochabamba: 'Cochabamba',
+    copacabana: 'Copacabana',
+    coroico: 'Coroico',
+    islaDelSol: 'Isla del Sol',
+    laPaz: 'La Paz',
+    samaipata: 'Samaipata',
+    santaCruz: 'Santa Cruz',
+    sucre: 'Sucre',
+    tupiza: 'Tupiza',
+  },
   [countries.bulgaria]: {
     sofia: 'Sofia',
   },
@@ -68,8 +95,17 @@ export const places = {
     quito: 'Quito',
     riobamba: 'Riobamba',
   },
+  [countries.france]: {
+    paris: 'Paris',
+  },
   [countries.greece]: {
     athens: 'Athens',
+  },
+  [countries.netherlands]: {
+    amsterdam: 'Amsterdam',
+  },
+  [countries.paraguay]: {
+    asuncion: 'Asunción',
   },
   [countries.peru]: {
     arequipa: 'Arequipa',
