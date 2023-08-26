@@ -6,6 +6,7 @@ export const countries = {
   romania: 'Romania',
   thailand: 'Thailand',
   unitedKingdom: 'United Kingdom',
+  usa: 'USA',
   vietnam: 'Vietnam',
 }
 
@@ -63,6 +64,24 @@ export const places = {
   },
   [countries.unitedKingdom]: {
     london: 'London',
+  },
+  [countries.usa]: {
+    austin: 'Austin, TX',
+    charleston: 'Charleston, SC',
+    chicago: 'Chicago, IL',
+    flagstaff: 'Flagstaff, AZ',
+    fortLauderdale: 'Fort Lauderdale, FL',
+    houston: 'Houston, TX',
+    lasVegas: 'Las Vegas, NV',
+    miami: 'Miami, FL',
+    nashville: 'Nashville, TN',
+    newOrleans: 'New Orleans, LA',
+    pasadena: 'Pasadena, CA',
+    portland: 'Portland, OR',
+    richmond: 'Richmond, KY',
+    sacramento: 'Sacramento, CA',
+    saltLakeCity: 'Salt Lake City, UT',
+    sanFrancisco: 'San Francisco, CA',
   },
   [countries.vietnam]: {
     hoChiMinhCity: 'Ho Chi Minh City',

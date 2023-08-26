@@ -8,8 +8,9 @@ import { canadaData } from './canadaData'
 import { greeceData } from './greeceData'
 import { romaniaData } from './romaniaData'
 import { thailandData } from './thailandData'
-import { vietnamData } from './vietnamData'
 import { unitedKingdomData } from './unitedKingdomData'
+import { usaData } from './usaData'
+import { vietnamData } from './vietnamData'
 
 const timelineData = {
   [countries.bulgaria]: bulgariaData,
@@ -19,6 +20,7 @@ const timelineData = {
   [countries.romania]: romaniaData,
   [countries.thailand]: thailandData,
   [countries.unitedKingdom]: unitedKingdomData,
+  [countries.usa]: usaData,
   [countries.vietnam]: vietnamData,
 }
 
