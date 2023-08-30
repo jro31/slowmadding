@@ -21,6 +21,108 @@ export const bangkokData = [
   },
   {
     [dates]: {
+      [arrival]: '2012-12-29',
+      [departure]: '2013-03-04',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2013-03-09',
+      [departure]: '2013-05-01',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2013-05-02',
+      [departure]: '2013-05-23',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2013-06-02',
+      [departure]: '2013-10-22',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2013-10-26',
+      [departure]: '2014-02-10',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2015-01-15',
+      [departure]: '2015-01-21',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2015-02-05',
+      [departure]: '2015-02-13',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2015-08-17',
+      [departure]: '2015-09-14',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2015-09-18',
+      [departure]: '2016-01-01',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2016-01-07',
+      [departure]: '2016-06-07',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2016-06-11',
+      [departure]: '2016-07-27',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2016-08-29',
+      [departure]: '2016-10-31',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2016-11-01',
+      [departure]: '2017-02-20',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2017-02-22',
+      [departure]: '2017-07-25',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2017-08-23',
+      [departure]: '2018-06-04',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2018-06-08',
+      [departure]: '2018-07-25',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2018-08-25',
+      [departure]: '2018-09-29',
+    },
+  },
+  {
+    [dates]: {
       [arrival]: '2022-10-07',
       [departure]: '2022-11-03',
     },

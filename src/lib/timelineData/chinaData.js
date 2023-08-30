@@ -10,6 +10,38 @@ export const chinaData = {
       },
     },
   ],
+  [places[countries.china].changsha]: [
+    {
+      [dates]: {
+        [arrival]: '2014-02-10',
+        [departure]: '2014-07-01',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-08-25',
+        [departure]: '2014-10-01',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-10-06',
+        [departure]: '2014-11-13',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-11-17',
+        [departure]: '2015-01-15',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2015-02-23',
+        [departure]: '2015-07-14',
+      },
+    },
+  ],
   [places[countries.china].chengdu]: [
     {
       [dates]: {
@@ -40,11 +72,39 @@ export const chinaData = {
       },
     },
   ],
+  [places[countries.china].guangzhou]: [
+    {
+      [dates]: {
+        [arrival]: '2014-07-01',
+        [departure]: '2014-07-04',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-11-13',
+        [departure]: '2014-11-17',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2015-02-18',
+        [departure]: '2015-02-23',
+      },
+    },
+  ],
   [places[countries.china].hangzhou]: [
     {
       [dates]: {
         [arrival]: '2011-11-26',
         [departure]: '2011-11-29',
+      },
+    },
+  ],
+  [places[countries.china].hongKong]: [
+    {
+      [dates]: {
+        [arrival]: '2014-07-04',
+        [departure]: '2014-07-08',
       },
     },
   ],
@@ -83,6 +143,14 @@ export const chinaData = {
       [dates]: {
         [arrival]: '2011-12-24',
         [departure]: '2011-12-26',
+      },
+    },
+  ],
+  [places[countries.china].macau]: [
+    {
+      [dates]: {
+        [arrival]: '2014-08-22',
+        [departure]: '2014-08-24',
       },
     },
   ],
@@ -139,6 +207,12 @@ export const chinaData = {
         [departure]: '2011-11-26',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2014-10-01',
+        [departure]: '2014-10-06',
+      },
+    },
   ],
   [places[countries.china].shangriLa]: [
     {
@@ -148,11 +222,45 @@ export const chinaData = {
       },
     },
   ],
+  [places[countries.china].shenzhen]: [
+    {
+      [dates]: {
+        [arrival]: '2014-08-11',
+        [departure]: '2014-08-12',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-08-18',
+        [departure]: '2014-08-22',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2014-08-24',
+        [departure]: '2014-08-25',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2015-02-13',
+        [departure]: '2015-02-18',
+      },
+    },
+  ],
   [places[countries.china].wuhan]: [
     {
       [dates]: {
         [arrival]: '2011-11-20',
         [departure]: '2011-11-22',
+      },
+    },
+  ],
+  [places[countries.china].xiamen]: [
+    {
+      [dates]: {
+        [arrival]: '2014-08-12',
+        [departure]: '2014-08-18',
       },
     },
   ],

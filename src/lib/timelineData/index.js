@@ -12,11 +12,13 @@ import { colombiaData } from './colombiaData'
 import { ecuadorData } from './ecuadorData'
 import { franceData } from './franceData'
 import { greeceData } from './greeceData'
+import { indonesiaData } from './indonesiaData'
 import { laosData } from './laosData'
 import { netherlandsData } from './netherlandsData'
 import { paraguayData } from './paraguayData'
 import { peruData } from './peruData'
 import { romaniaData } from './romaniaData'
+import { singaporeData } from './singaporeData'
 import { thailandData } from './thailandData'
 import { unitedKingdomData } from './unitedKingdomData'
 import { usaData } from './usaData'
@@ -33,11 +35,13 @@ const timelineData = {
   [countries.ecuador]: ecuadorData,
   [countries.france]: franceData,
   [countries.greece]: greeceData,
+  [countries.indonesia]: indonesiaData,
   [countries.laos]: laosData,
   [countries.netherlands]: netherlandsData,
   [countries.paraguay]: paraguayData,
   [countries.peru]: peruData,
   [countries.romania]: romaniaData,
+  [countries.singapore]: singaporeData,
   [countries.thailand]: thailandData,
   [countries.unitedKingdom]: unitedKingdomData,
   [countries.usa]: usaData,
@@ -101,6 +105,7 @@ const stayObject = (stay) => ({
   place: stay.place,
 })
 
+// TODO: Add any more checks to validate the date, such as the arrival date must be before the departure date
 export const parsedTimelineData = (
   startDate,
   endDate = new Date().toJSON().slice(0, 10)

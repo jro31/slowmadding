@@ -95,5 +95,11 @@ export const laosData = {
         [departure]: '2012-05-20',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2015-09-15',
+        [departure]: '2015-09-16',
+      },
+    },
   ],
 }

@@ -55,6 +55,12 @@ export const cambodiaData = {
     },
     {
       [dates]: {
+        [arrival]: '2013-03-04',
+        [departure]: '2013-03-09',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2022-12-16',
         [departure]: '2023-01-13',
       },
