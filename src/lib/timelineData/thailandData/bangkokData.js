@@ -3,6 +3,24 @@ import { dates, arrival, departure } from '@/lib/timelineData/variables'
 export const bangkokData = [
   {
     [dates]: {
+      [arrival]: '2011-09-11',
+      [departure]: '2011-09-16',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2012-04-17',
+      [departure]: '2012-04-28',
+    },
+  },
+  {
+    [dates]: {
+      [arrival]: '2012-05-23',
+      [departure]: '2012-12-17',
+    },
+  },
+  {
+    [dates]: {
       [arrival]: '2022-10-07',
       [departure]: '2022-11-03',
     },

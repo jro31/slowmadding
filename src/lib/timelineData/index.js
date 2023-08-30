@@ -7,10 +7,12 @@ import { boliviaData } from './boliviaData'
 import { bulgariaData } from './bulgariaData'
 import { cambodiaData } from './cambodiaData'
 import { canadaData } from './canadaData'
+import { chinaData } from './chinaData'
 import { colombiaData } from './colombiaData'
 import { ecuadorData } from './ecuadorData'
 import { franceData } from './franceData'
 import { greeceData } from './greeceData'
+import { laosData } from './laosData'
 import { netherlandsData } from './netherlandsData'
 import { paraguayData } from './paraguayData'
 import { peruData } from './peruData'
@@ -26,10 +28,12 @@ const timelineData = {
   [countries.bulgaria]: bulgariaData,
   [countries.cambodia]: cambodiaData,
   [countries.canada]: canadaData,
+  [countries.china]: chinaData,
   [countries.colombia]: colombiaData,
   [countries.ecuador]: ecuadorData,
   [countries.france]: franceData,
   [countries.greece]: greeceData,
+  [countries.laos]: laosData,
   [countries.netherlands]: netherlandsData,
   [countries.paraguay]: paraguayData,
   [countries.peru]: peruData,
