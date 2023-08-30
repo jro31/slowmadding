@@ -6,29 +6,52 @@
 // - A mix of both, where if I've only been to a place once, then it's a flag, but if I've been multiple times then it's a number corresponding to which stay it is
 // TODO: Add images to some or all stays?
 // - These should be on the opposite side of the timeline, and be a photo I took in that place. Join these to the bullet with a line.
+// TODO: Add Google Map links to some or all stays?
+// TODO: Add description to some or all stays?
 // TODO: Make clearer the length of each stay
 // - Currently a short stay looks much longer than it is if it's surrounded by longer stays. Make it more obvious how long a stay is by highlighting each stay somehow.
 // - Changing the background colour of each stay is one option
+// FIXME: The top timeline element bullet should not have a vertical line coming out the top, and the bottom bullet should not have a line coming out the bottom
+// TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
+// TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
+// TODO: Load all timelines through getStaticProps - Would be more snappy, and better for search engines if all timelines are pre-loaded
+
+import { useState } from 'react'
 
 import Head from 'next/head'
 
 import SimpleLayout from '@/components/SimpleLayout'
-import useNumberOfNights from '@/hooks/use-number-of-nights'
+import TimelineComponent from '@/components/TimelineComponent'
 
-import {
-  parsedTimelineData,
-  arrival,
-  departure,
-  country,
-  place,
-} from '@/lib/timelineData'
-import { formatDateRange } from '@/lib/formatDate'
+import { parsedTimelineData } from '@/lib/timelineData'
 
-const timelineStartDate = '2022-10-07'
+import clsx from 'clsx'
+
+const digitalNomad = 'Digital nomad'
+const backpackingTrip = 'Backpacking trip'
+const startDate = 'Start date'
+const endDate = 'End date'
 
 const Timeline = () => {
-  const numberOfNights = useNumberOfNights()
-  let stayOrderFirst = true
+  const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
+
+  const timelineTypes = [digitalNomad, backpackingTrip]
+
+  const timelineDates = {
+    [digitalNomad]: {
+      [startDate]: '2022-10-07',
+      [endDate]: undefined,
+    },
+    [backpackingTrip]: {
+      [startDate]: '2008-11-20',
+      [endDate]: '2018-11-29',
+    },
+  }
+
+  const introText = {
+    [digitalNomad]: 'Where being a digital nomad has taken me.',
+    [backpackingTrip]: 'My post-graduation backpacking trip.',
+  }
 
   return (
     <>
@@ -36,76 +59,36 @@ const Timeline = () => {
         <title>Timeline</title>
         <meta name="description" content="My digital nomad itinerary." />
       </Head>
-      <SimpleLayout
-        title="Timeline"
-        intro="Where being a digital nomad has taken me."
-      >
-        <div className="relative flex flex-col gap-5">
-          <div className="absolute inset-0 flex">
-            <div className="shrink grow basis-1/2 border-r-2 border-zinc-800 dark:border-zinc-100"></div>
-            <div className="shrink grow basis-1/2 border-l-2 border-zinc-800 dark:border-zinc-100"></div>
-          </div>
-          {parsedTimelineData(timelineStartDate).map(
-            (countryVisit, countryIterator) => {
-              return (
+      <SimpleLayout title="Timeline" intro={introText[currentTimeline]}>
+        {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
+        <div className="mb-3 flex flex-1 justify-center">
+          <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+            {timelineTypes.map((type) => (
+              <li key={`${type}-timeline`}>
                 <div
-                  key={`country-${countryIterator}-section`}
-                  className="z-10 rounded-3xl bg-zinc-50 dark:bg-zinc-800"
+                  onClick={(e) => setCurrentTimeline(e.target.textContent)}
+                  className={clsx(
+                    'relative block cursor-pointer px-3 py-2 transition',
+                    currentTimeline === type
+                      ? 'text-teal-500 dark:text-teal-400'
+                      : 'hover:text-teal-500 dark:hover:text-teal-400'
+                  )}
                 >
-                  <h1 className="sticky top-7 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
-                    {countryVisit[country]}
-                  </h1>
-                  {countryVisit.stays.map((stay, stayIterator) => {
-                    stayOrderFirst = !stayOrderFirst
-
-                    return (
-                      <div
-                        key={`country-${countryIterator}-place-${stayIterator}-section`}
-                        className="flex"
-                      >
-                        <div
-                          className={`shrink grow basis-1/2 ${
-                            stayOrderFirst &&
-                            'lg:order-last lg:border-l-2 lg:border-r-0'
-                          } order-first border-r-2 border-zinc-800 dark:border-zinc-100`}
-                        ></div>
-                        <div
-                          style={{
-                            minHeight: `${Math.max(
-                              numberOfNights(stay[arrival], stay[departure]) *
-                                15,
-                              96
-                            )}px`,
-                          }}
-                          className={`flex shrink grow basis-1/2 items-center justify-start border-l-2 border-zinc-800 pr-2 dark:border-zinc-100 ${
-                            stayOrderFirst &&
-                            'lg:justify-end lg:border-r-2 lg:border-l-0 lg:pl-2 lg:pr-0'
-                          }`}
-                        >
-                          <div
-                            className={`h-5 w-5 ${
-                              stayOrderFirst && 'lg:order-last lg:translate-x-3'
-                            } order-first shrink-0 grow-0 -translate-x-3 rounded-full bg-zinc-800 dark:bg-zinc-100`}
-                          ></div>
-                          <div
-                            className={`flex flex-col text-zinc-800 dark:text-zinc-100 ${
-                              stayOrderFirst && 'lg:text-right'
-                            }`}
-                          >
-                            <div className="font-bold">{stay[place]}</div>
-                            <div>
-                              {formatDateRange(stay[arrival], stay[departure])}
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    )
-                  })}
+                  {type}
+                  {currentTimeline === type && (
+                    <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
+                  )}
                 </div>
-              )
-            }
-          )}
+              </li>
+            ))}
+          </ul>
         </div>
+        <TimelineComponent
+          timelineData={parsedTimelineData(
+            timelineDates[currentTimeline][startDate],
+            timelineDates[currentTimeline][endDate]
+          )}
+        />
       </SimpleLayout>
     </>
   )
