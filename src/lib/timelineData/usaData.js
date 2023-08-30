@@ -10,6 +10,14 @@ export const usaData = {
       },
     },
   ],
+  [places[countries.usa].boston]: [
+    {
+      [dates]: {
+        [arrival]: '2011-09-01',
+        [departure]: '2011-09-04',
+      },
+    },
+  ],
   [places[countries.usa].charleston]: [
     {
       [dates]: {
@@ -41,6 +49,12 @@ export const usaData = {
         [departure]: '2009-12-29',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2011-09-04',
+        [departure]: '2011-09-08',
+      },
+    },
   ],
   [places[countries.usa].houston]: [
     {
@@ -58,6 +72,14 @@ export const usaData = {
       },
     },
   ],
+  [places[countries.usa].losAngeles]: [
+    {
+      [dates]: {
+        [arrival]: '2011-09-08',
+        [departure]: '2011-09-09',
+      },
+    },
+  ],
   [places[countries.usa].miami]: [
     {
       [dates]: {
@@ -69,6 +91,20 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-12-22',
         [departure]: '2009-12-26',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2011-04-19',
+        [departure]: '2011-04-25',
+      },
+    },
+  ],
+  [places[countries.usa].nantucket]: [
+    {
+      [dates]: {
+        [arrival]: '2011-05-07',
+        [departure]: '2011-09-01',
       },
     },
   ],
@@ -91,6 +127,22 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-12-19',
         [departure]: '2009-12-21',
+      },
+    },
+  ],
+  [places[countries.usa].newYork]: [
+    {
+      [dates]: {
+        [arrival]: '2010-11-19',
+        [departure]: '2010-11-22',
+      },
+    },
+  ],
+  [places[countries.usa].parkCity]: [
+    {
+      [dates]: {
+        [arrival]: '2010-11-22',
+        [departure]: '2011-04-15',
       },
     },
   ],
@@ -131,6 +183,12 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-12-04',
         [departure]: '2009-12-06',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2011-04-15',
+        [departure]: '2011-04-19',
       },
     },
   ],

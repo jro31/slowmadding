@@ -12,6 +12,9 @@
 // - Currently a short stay looks much longer than it is if it's surrounded by longer stays. Make it more obvious how long a stay is by highlighting each stay somehow.
 // - Changing the background colour of each stay is one option
 // FIXME: The top timeline element bullet should not have a vertical line coming out the top, and the bottom bullet should not have a line coming out the bottom
+// TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
+// TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
+// TODO: Load all timelines through getStaticProps - Would be more snappy, and better for search engines if all timelines are pre-loaded
 
 import { useState } from 'react'
 

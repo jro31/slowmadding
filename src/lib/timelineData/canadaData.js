@@ -163,6 +163,12 @@ export const canadaData = {
         [departure]: '2009-10-23',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2011-04-25',
+        [departure]: '2011-05-06',
+      },
+    },
   ],
   [places[countries.canada].ottawa]: [
     {
