@@ -26,6 +26,7 @@ import { parsedTimelineData } from '@/lib/timelineData'
 
 import clsx from 'clsx'
 import OverlayMenu from '@/components/OverlayMenu'
+import { Popover } from '@headlessui/react'
 
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
@@ -64,11 +65,26 @@ const Timeline = ({ timelines }) => {
         title="Timeline"
         intro={timelines[currentTimeline].introText}
       >
+        <div className="relative mb-3 flex flex-1 justify-center md:hidden">
+          <OverlayMenu title={currentTimeline}>
+            {Object.keys(timelines).map((timelineName) => (
+              <li key={`${timelineName}-timeline-mobile-link`}>
+                <Popover.Button
+                  className="block py-2"
+                  onClick={(e) => setCurrentTimeline(e.target.textContent)}
+                >
+                  {timelineName}
+                </Popover.Button>
+              </li>
+            ))}
+          </OverlayMenu>
+        </div>
+
         {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
-        <div className="mb-3 flex flex-1 justify-center">
+        <div className="mb-3 hidden flex-1 justify-center md:flex">
           <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
             {Object.keys(timelines).map((timelineName) => (
-              <li key={`${timelineName}-timeline`}>
+              <li key={`${timelineName}-timeline-desktop-link`}>
                 <div
                   onClick={(e) => setCurrentTimeline(e.target.textContent)}
                   className={clsx(
@@ -86,10 +102,6 @@ const Timeline = ({ timelines }) => {
               </li>
             ))}
           </ul>
-        </div>
-
-        <div className="relative mb-3 flex flex-1 justify-center">
-          <OverlayMenu title="Other travel">JETHRO</OverlayMenu>
         </div>
 
         <TimelineComponent
