@@ -1,5 +1,3 @@
-// TODO: Can the data for this page be generated in getStaticProps?
-
 import { Fragment, useRef } from 'react'
 import Head from 'next/head'
 import Link from 'next/link'
