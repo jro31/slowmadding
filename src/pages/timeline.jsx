@@ -1,12 +1,11 @@
 // TODO: Add a table that details the number of days in each country
-// TODO: Add in a separate 'backpacking' timeline that details 2008 - 2018
 // TODO: Jazz-up the bullets - They could potentially be:
 // - Numbers, starting from 1 at the bottom of the timeline that details how many stays I've had
 // - Little flags of the country in question
 // - A mix of both, where if I've only been to a place once, then it's a flag, but if I've been multiple times then it's a number corresponding to which stay it is
 // TODO: Add images to some or all stays?
 // - These should be on the opposite side of the timeline, and be a photo I took in that place. Join these to the bullet with a line.
-// TODO: Add Google Map links to some or all stays?
+// TODO: Add Google Maps links to some or all stays?
 // TODO: Add description to some or all stays?
 // TODO: Make clearer the length of each stay
 // - Currently a short stay looks much longer than it is if it's surrounded by longer stays. Make it more obvious how long a stay is by highlighting each stay somehow.
@@ -26,6 +25,7 @@ import TimelineComponent from '@/components/TimelineComponent'
 import { parsedTimelineData } from '@/lib/timelineData'
 
 import clsx from 'clsx'
+import OverlayMenu from '@/components/OverlayMenu'
 
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
@@ -87,6 +87,11 @@ const Timeline = ({ timelines }) => {
             ))}
           </ul>
         </div>
+
+        <div className="relative mb-3 flex flex-1 justify-center">
+          <OverlayMenu title="Other travel">JETHRO</OverlayMenu>
+        </div>
+
         <TimelineComponent
           timelineData={timelines[currentTimeline].timelineData}
         />
