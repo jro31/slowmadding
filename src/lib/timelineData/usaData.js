@@ -133,6 +133,18 @@ export const usaData = {
   [places[countries.usa].newYork]: [
     {
       [dates]: {
+        [arrival]: '2008-06-24',
+        [departure]: '2008-06-28',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2008-07-19',
+        [departure]: '2008-07-20',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2010-11-19',
         [departure]: '2010-11-22',
       },

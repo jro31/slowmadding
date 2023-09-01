@@ -30,6 +30,8 @@ import { Popover } from '@headlessui/react'
 
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
+const mexico08 = "Mexico '08"
+
 const startDate = 'Start date'
 const endDate = 'End date'
 
@@ -42,11 +44,16 @@ const timelineDates = {
     [startDate]: '2008-11-20',
     [endDate]: '2018-11-29',
   },
+  [mexico08]: {
+    [startDate]: '2008-06-24',
+    [endDate]: '2008-07-20',
+  },
 }
 
 const introText = {
   [digitalNomad]: 'Where being a digital nomad has taken me.',
   [backpackingTrip]: 'My post-graduation backpacking trip.',
+  [mexico08]: 'A university reunion in Mexico.',
 }
 
 const Timeline = ({ timelines }) => {

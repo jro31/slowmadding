@@ -11,6 +11,7 @@ export const countries = {
   greece: 'Greece',
   indonesia: 'Indonesia',
   laos: 'Laos',
+  mexico: 'Mexico',
   netherlands: 'Netherlands',
   paraguay: 'Paraguay',
   peru: 'Peru',
@@ -151,6 +152,15 @@ export const places = {
     savannakhet: 'Savannakhet',
     vangVieng: 'Vang Vieng',
     vientiane: 'Vientiane',
+  },
+  [countries.mexico]: {
+    acapulco: 'Acapulco',
+    cancun: 'Cancún',
+    chiapasJungle: 'Chiapas Jungle',
+    mexicoCity: 'Mexico City',
+    playaDelCarmen: 'Playa del Carmen',
+    puertoEscondido: 'Puerto Escondido',
+    sanCristobalDeLasCasas: 'San Cristóbal de las Casas',
   },
   [countries.netherlands]: {
     amsterdam: 'Amsterdam',
