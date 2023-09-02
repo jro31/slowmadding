@@ -8,11 +8,8 @@
 // - Not sure this would work on mobile, so one option is to move the timeline to the very left edge of the screen on mobile (so that you can only see half of the bullet). Photos could then be underneath the stay details.
 // TODO: Add Google Maps links to some or all stays?
 // TODO: Add description to some or all stays?
-// FIXME: The top timeline element bullet should not have a vertical line coming out the top, and the bottom bullet should not have a line coming out the bottom
 // TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
 // TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
-// TODO: Give each 'stay' element a max-height; perhaps 120vh (currently long stays take multiple times the height of the viewport and looks/feels a bit ridiculous)
-// - Consider shortening this for 'top' (latest) stays, or moving the bullet to the top, because if there's no line from the top bullet and the stay isn't even on the screen, it'll look a bit ridiculous.
 
 import { useState } from 'react'
 
