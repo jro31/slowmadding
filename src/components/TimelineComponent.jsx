@@ -13,6 +13,19 @@ let stayOrderFirst = true
 const TimelineComponent = ({ timelineData }) => {
   const numberOfNights = useNumberOfNights()
 
+  const lineClasses = (countryIterator, stayIterator, stays) => {
+    if (countryIterator === 0 && stayIterator === 0) {
+      return 'after:top-1/2 after:h-1/2'
+    } else if (
+      countryIterator === Object.keys(timelineData).length - 1 &&
+      stayIterator === stays.length - 1
+    ) {
+      return 'after:bottom-1/2 after:h-1/2'
+    } else {
+      return 'after:top-0 after:h-full'
+    }
+  }
+
   return (
     <div className="relative flex flex-col gap-5">
       <div className="absolute inset-0 flex">
@@ -23,7 +36,7 @@ const TimelineComponent = ({ timelineData }) => {
         return (
           <div
             key={`country-${countryIterator}-section`}
-            className="z-10 rounded-3xl"
+            className="z-10 rounded-3xl bg-white dark:bg-zinc-900"
           >
             <h1 className="sticky top-7 z-50 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
               {countryVisit[country]}
@@ -37,11 +50,15 @@ const TimelineComponent = ({ timelineData }) => {
                   className="flex"
                 >
                   <div
-                    className={`shrink grow basis-1/2${
+                    className={`relative shrink grow basis-1/2${
                       stayOrderFirst
-                        ? ' lg:order-last lg:border-l-2 lg:border-r-0'
+                        ? ' lg:order-last lg:after:left-0 lg:after:right-auto lg:after:border-r-0 lg:after:border-l-2'
                         : ''
-                    } order-first border-r-2 border-zinc-800 dark:border-zinc-100`}
+                    } after:dark:border-zinc-10 order-first after:absolute after:right-0 after:border-r-2 after:border-zinc-800 ${lineClasses(
+                      countryIterator,
+                      stayIterator,
+                      countryVisit.stays
+                    )}`}
                   />
                   <div
                     style={{
