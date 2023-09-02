@@ -28,15 +28,15 @@ const TimelineComponent = ({ timelineData }) => {
 
   return (
     <div className="relative flex flex-col gap-5">
-      <div className="absolute inset-0 flex">
-        <div className="shrink grow basis-1/2 border-r-2 border-zinc-800 dark:border-zinc-100"></div>
-        <div className="shrink grow basis-1/2 border-l-2 border-zinc-800 dark:border-zinc-100"></div>
+      <div className="absolute inset-0 flex border-l-4 border-zinc-800 dark:border-zinc-100 lg:border-l-0">
+        <div className="hidden shrink grow basis-1/2 border-r-2 border-inherit lg:block"></div>
+        <div className="hidden shrink grow basis-1/2 border-l-2 border-inherit lg:block"></div>
       </div>
       {timelineData.map((countryVisit, countryIterator) => {
         return (
           <div
             key={`country-${countryIterator}-section`}
-            className="z-10 rounded-3xl bg-white dark:bg-zinc-900"
+            className="z-10 bg-white dark:bg-zinc-900"
           >
             <h1 className="sticky top-7 z-50 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
               {countryVisit[country]}
@@ -47,10 +47,10 @@ const TimelineComponent = ({ timelineData }) => {
               return (
                 <div
                   key={`country-${countryIterator}-place-${stayIterator}-section`}
-                  className="flex"
+                  className="lg:flex"
                 >
                   <div
-                    className={`relative shrink grow basis-1/2${
+                    className={`relative hidden shrink grow lg:block basis-1/2${
                       stayOrderFirst ? ' lg:order-last' : ''
                     } order-first`}
                   >
@@ -81,7 +81,7 @@ const TimelineComponent = ({ timelineData }) => {
                     }`}
                   >
                     <div
-                      className={`absolute left-0 border-l-2 dark:border-zinc-100 border-zinc-800${
+                      className={`absolute left-0 border-l-4 dark:border-zinc-100 lg:border-l-2 border-zinc-800${
                         stayOrderFirst
                           ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
                           : ''
@@ -95,8 +95,8 @@ const TimelineComponent = ({ timelineData }) => {
                       className={`h-5 w-5${
                         stayOrderFirst
                           ? ' lg:order-last lg:translate-x-2.5'
-                          : ''
-                      } order-first shrink-0 grow-0 -translate-x-2.5 rounded-full bg-zinc-800 dark:bg-zinc-100`}
+                          : ' lg:-translate-x-2.5'
+                      } order-first shrink-0 grow-0 -translate-x-2 rounded-full bg-zinc-800 dark:bg-zinc-100`}
                     />
                     <div
                       className={`relative flex h-full flex-col justify-center rounded-3xl bg-zinc-50 p-5 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10 dark:text-zinc-100${
