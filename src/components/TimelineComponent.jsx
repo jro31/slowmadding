@@ -15,14 +15,14 @@ const TimelineComponent = ({ timelineData }) => {
 
   const lineClasses = (countryIterator, stayIterator, stays) => {
     if (countryIterator === 0 && stayIterator === 0) {
-      return 'after:top-1/2 after:h-1/2'
+      return 'top-1/2 h-1/2'
     } else if (
       countryIterator === Object.keys(timelineData).length - 1 &&
       stayIterator === stays.length - 1
     ) {
-      return 'after:bottom-1/2 after:h-1/2'
+      return 'bottom-1/2 h-1/2'
     } else {
-      return 'after:top-0 after:h-full'
+      return 'top-0 h-full'
     }
   }
 
@@ -51,16 +51,21 @@ const TimelineComponent = ({ timelineData }) => {
                 >
                   <div
                     className={`relative shrink grow basis-1/2${
-                      stayOrderFirst
-                        ? ' lg:order-last lg:after:left-0 lg:after:right-auto lg:after:border-r-0 lg:after:border-l-2'
-                        : ''
-                    } dark:after:border-zinc-10 order-first after:absolute after:right-0 after:border-r-2 after:border-zinc-800 ${lineClasses(
-                      countryIterator,
-                      stayIterator,
-                      countryVisit.stays
-                    )}`}
-                    // dark:after:border-zinc-10 doesn't seem to be working
-                  />
+                      stayOrderFirst ? ' lg:order-last' : ''
+                    } order-first`}
+                  >
+                    <div
+                      className={`absolute right-0 border-r-2 dark:border-zinc-100 border-zinc-800${
+                        stayOrderFirst
+                          ? ' lg:left-0 lg:right-auto lg:border-r-0 lg:border-l-2'
+                          : ''
+                      } ${lineClasses(
+                        countryIterator,
+                        stayIterator,
+                        countryVisit.stays
+                      )}`}
+                    />
+                  </div>
                   <div
                     style={{
                       minHeight: `${Math.max(
@@ -68,20 +73,25 @@ const TimelineComponent = ({ timelineData }) => {
                         96
                       )}px`,
                     }}
-                    className={`dark:after:border-zinc-10 relative flex shrink grow basis-1/2 items-center justify-start py-1 pr-2 after:absolute after:left-0 after:border-l-2 after:border-zinc-800 lg:py-1.5 ${
-                      stayOrderFirst
-                        ? ' lg:justify-end lg:pl-2 lg:pr-0 lg:after:right-0 lg:after:left-auto lg:after:border-l-0 lg:after:border-r-2'
-                        : ''
+                    className={`relative flex shrink grow basis-1/2 items-center justify-start py-1 pr-2 lg:py-1.5 ${
+                      stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
                     }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
                       stayIterator === countryVisit.stays.length - 1
                         ? ' pb-2 lg:pb-3'
                         : ''
-                    } ${lineClasses(
-                      countryIterator,
-                      stayIterator,
-                      countryVisit.stays
-                    )}`}
+                    }`}
                   >
+                    <div
+                      className={`absolute left-0 border-l-2 dark:border-zinc-100 border-zinc-800${
+                        stayOrderFirst
+                          ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
+                          : ''
+                      } ${lineClasses(
+                        countryIterator,
+                        stayIterator,
+                        countryVisit.stays
+                      )}`}
+                    />
                     <div
                       className={`h-5 w-5${
                         stayOrderFirst
