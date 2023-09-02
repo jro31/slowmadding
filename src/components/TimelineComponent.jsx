@@ -23,9 +23,9 @@ const TimelineComponent = ({ timelineData }) => {
         return (
           <div
             key={`country-${countryIterator}-section`}
-            className="z-10 rounded-3xl bg-zinc-50 dark:bg-zinc-800"
+            className="z-10 rounded-3xl"
           >
-            <h1 className="sticky top-7 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
+            <h1 className="sticky top-7 z-50 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
               {countryVisit[country]}
             </h1>
             {countryVisit.stays.map((stay, stayIterator) => {
@@ -66,7 +66,7 @@ const TimelineComponent = ({ timelineData }) => {
                       } order-first shrink-0 grow-0 -translate-x-3 rounded-full bg-zinc-800 dark:bg-zinc-100`}
                     />
                     <div
-                      className={`flex h-full flex-col justify-center rounded-3xl bg-white p-5 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-100${
+                      className={`relative flex h-full flex-col justify-center rounded-3xl bg-zinc-50 p-5 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10 dark:text-zinc-100${
                         stayOrderFirst ? ' lg:text-right' : ''
                       }`}
                     >

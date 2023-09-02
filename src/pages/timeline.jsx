@@ -8,9 +8,6 @@
 // - Not sure this would work on mobile, so one option is to move the timeline to the very left edge of the screen on mobile (so that you can only see half of the bullet). Photos could then be underneath the stay details.
 // TODO: Add Google Maps links to some or all stays?
 // TODO: Add description to some or all stays?
-// TODO: Make clearer the length of each stay
-// - Currently a short stay looks much longer than it is if it's surrounded by longer stays. Make it more obvious how long a stay is by highlighting each stay somehow.
-// - Changing the background colour of each stay is one option
 // FIXME: The top timeline element bullet should not have a vertical line coming out the top, and the bottom bullet should not have a line coming out the bottom
 // TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
 // TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
