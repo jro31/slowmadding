@@ -38,7 +38,11 @@ const TimelineComponent = ({ timelineData }) => {
             key={`country-${countryIterator}-section`}
             className="z-10 bg-white dark:bg-zinc-900"
           >
-            <h1 className="sticky top-7 z-50 float-left my-8 w-0 translate-x-10 text-xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:whitespace-nowrap sm:text-2xl">
+            <h1
+              className={`border-zinc-800 pl-5 text-xl font-bold tracking-tight text-zinc-800 dark:border-zinc-100 dark:text-zinc-100 sm:text-2xl lg:sticky lg:top-7 lg:z-50 lg:float-left lg:my-8 lg:w-0 lg:translate-x-10 lg:whitespace-nowrap lg:border-l-0 lg:pl-0${
+                countryIterator === 0 ? ' border-l-0' : ' border-l-4'
+              }`}
+            >
               {countryVisit[country]}
             </h1>
             {countryVisit.stays.map((stay, stayIterator) => {
