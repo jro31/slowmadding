@@ -46,6 +46,14 @@ export const canadaData = {
       },
     },
   ],
+  [places[countries.canada].capeBretonIsland]: [
+    {
+      [dates]: {
+        [arrival]: '2006-09-29',
+        [departure]: '2006-10-01',
+      },
+    },
+  ],
   [places[countries.canada].crossRiverWildernessCentre]: [
     {
       [dates]: {
@@ -78,6 +86,20 @@ export const canadaData = {
       },
     },
   ],
+  [places[countries.canada].edmonton]: [
+    {
+      [dates]: {
+        [arrival]: '2005-08-19',
+        [departure]: '2005-08-22',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-12-22',
+        [departure]: '2006-12-24',
+      },
+    },
+  ],
   [places[countries.canada].fortNelson]: [
     {
       [dates]: {
@@ -107,6 +129,26 @@ export const canadaData = {
       [dates]: {
         [arrival]: '2009-08-20',
         [departure]: '2009-08-21',
+      },
+    },
+  ],
+  [places[countries.canada].halifax]: [
+    {
+      [dates]: {
+        [arrival]: '2006-08-27',
+        [departure]: '2006-09-29',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-10-01',
+        [departure]: '2006-12-12',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2007-01-03',
+        [departure]: '2007-05-01',
       },
     },
   ],
@@ -143,6 +185,12 @@ export const canadaData = {
   [places[countries.canada].jasper]: [
     {
       [dates]: {
+        [arrival]: '2006-12-18',
+        [departure]: '2006-12-22',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2009-08-21',
         [departure]: '2009-08-26',
       },
@@ -159,6 +207,12 @@ export const canadaData = {
   [places[countries.canada].montreal]: [
     {
       [dates]: {
+        [arrival]: '2005-08-30',
+        [departure]: '2005-09-02',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2009-10-17',
         [departure]: '2009-10-23',
       },
@@ -173,8 +227,30 @@ export const canadaData = {
   [places[countries.canada].ottawa]: [
     {
       [dates]: {
+        [arrival]: '2005-08-28',
+        [departure]: '2005-08-30',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2009-10-12',
         [departure]: '2009-10-17',
+      },
+    },
+  ],
+  [places[countries.canada].portHardy]: [
+    {
+      [dates]: {
+        [arrival]: '2005-07-30',
+        [departure]: '2005-07-31',
+      },
+    },
+  ],
+  [places[countries.canada].princeRupert]: [
+    {
+      [dates]: {
+        [arrival]: '2005-07-31',
+        [departure]: '2005-08-01',
       },
     },
   ],
@@ -205,6 +281,12 @@ export const canadaData = {
   [places[countries.canada].toronto]: [
     {
       [dates]: {
+        [arrival]: '2005-08-24',
+        [departure]: '2005-08-28',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2009-10-03',
         [departure]: '2009-10-07',
       },
@@ -217,6 +299,18 @@ export const canadaData = {
     },
   ],
   [places[countries.canada].vancouver]: [
+    {
+      [dates]: {
+        [arrival]: '2005-05-17',
+        [departure]: '2005-07-28',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-12-14',
+        [departure]: '2006-12-17',
+      },
+    },
     {
       [dates]: {
         [arrival]: '2008-11-20',
@@ -233,6 +327,12 @@ export const canadaData = {
   [places[countries.canada].victoria]: [
     {
       [dates]: {
+        [arrival]: '2005-07-28',
+        [departure]: '2005-07-30',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2009-04-23',
         [departure]: '2009-05-14',
       },
@@ -247,6 +347,12 @@ export const canadaData = {
     },
   ],
   [places[countries.canada].whitehorse]: [
+    {
+      [dates]: {
+        [arrival]: '2005-08-12',
+        [departure]: '2005-08-18',
+      },
+    },
     {
       [dates]: {
         [arrival]: '2009-08-03',

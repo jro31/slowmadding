@@ -2,6 +2,14 @@ import { countries, places } from '@/lib/placeNames'
 import { dates, arrival, departure } from './variables'
 
 export const usaData = {
+  [places[countries.usa].anchorage]: [
+    {
+      [dates]: {
+        [arrival]: '2005-08-08',
+        [departure]: '2005-08-12',
+      },
+    },
+  ],
   [places[countries.usa].austin]: [
     {
       [dates]: {
@@ -61,6 +69,14 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-11-07',
         [departure]: '2009-11-11',
+      },
+    },
+  ],
+  [places[countries.usa].juneau]: [
+    {
+      [dates]: {
+        [arrival]: '2005-08-02',
+        [departure]: '2005-08-08',
       },
     },
   ],
@@ -133,8 +149,40 @@ export const usaData = {
   [places[countries.usa].newYork]: [
     {
       [dates]: {
+        [arrival]: '2005-09-03',
+        [departure]: '2005-09-06',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-12-27',
+        [departure]: '2007-01-03',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2008-06-24',
+        [departure]: '2008-06-28',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2008-07-19',
+        [departure]: '2008-07-20',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2010-11-19',
         [departure]: '2010-11-22',
+      },
+    },
+  ],
+  [places[countries.usa].northbridge]: [
+    {
+      [dates]: {
+        [arrival]: '2006-12-24',
+        [departure]: '2006-12-27',
       },
     },
   ],
@@ -197,6 +245,14 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-11-25',
         [departure]: '2009-11-30',
+      },
+    },
+  ],
+  [places[countries.usa].seattle]: [
+    {
+      [dates]: {
+        [arrival]: '2006-12-12',
+        [departure]: '2006-12-14',
       },
     },
   ],
