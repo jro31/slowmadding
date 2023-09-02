@@ -31,6 +31,7 @@ import { Popover } from '@headlessui/react'
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
 const mexico08 = "Mexico '08"
+const dalhousie = 'Dalhousie'
 const canada05 = "Canada '05"
 
 const startDate = 'Start date'
@@ -49,6 +50,10 @@ const timelineDates = {
     [startDate]: '2008-06-24',
     [endDate]: '2008-07-20',
   },
+  [dalhousie]: {
+    [startDate]: '2006-08-27',
+    [endDate]: '2007-05-01',
+  },
   [canada05]: {
     [startDate]: '2005-05-17',
     [endDate]: '2005-09-06',
@@ -57,9 +62,13 @@ const timelineDates = {
 
 const introText = {
   [digitalNomad]: 'Where being a digital nomad has taken me.',
-  [backpackingTrip]: 'My post-graduation backpacking trip.',
+  [backpackingTrip]:
+    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing the coding bootcamp in Bali that paved the way for me to become a software engineer, and ultimately a digital nomad.',
   [mexico08]: 'A university reunion in Mexico.',
-  [canada05]: 'My first time travelling, on my university summer break.',
+  [dalhousie]:
+    'A university exchange to Dalhouse University in Nova Scotia with some time to travel over the Christmas break.',
+  [canada05]:
+    'My first time travelling was on the summer break after my first year of university, starting with a couple of months working in Vancouver before going by boat up to Alaska, then by bus from Anchorage to New York.',
 }
 
 const Timeline = ({ timelines }) => {

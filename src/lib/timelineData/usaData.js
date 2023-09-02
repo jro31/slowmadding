@@ -155,6 +155,12 @@ export const usaData = {
     },
     {
       [dates]: {
+        [arrival]: '2006-12-27',
+        [departure]: '2007-01-03',
+      },
+    },
+    {
+      [dates]: {
         [arrival]: '2008-06-24',
         [departure]: '2008-06-28',
       },
@@ -169,6 +175,14 @@ export const usaData = {
       [dates]: {
         [arrival]: '2010-11-19',
         [departure]: '2010-11-22',
+      },
+    },
+  ],
+  [places[countries.usa].northbridge]: [
+    {
+      [dates]: {
+        [arrival]: '2006-12-24',
+        [departure]: '2006-12-27',
       },
     },
   ],
@@ -231,6 +245,14 @@ export const usaData = {
       [dates]: {
         [arrival]: '2009-11-25',
         [departure]: '2009-11-30',
+      },
+    },
+  ],
+  [places[countries.usa].seattle]: [
+    {
+      [dates]: {
+        [arrival]: '2006-12-12',
+        [departure]: '2006-12-14',
       },
     },
   ],

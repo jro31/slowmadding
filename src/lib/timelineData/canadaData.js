@@ -46,6 +46,14 @@ export const canadaData = {
       },
     },
   ],
+  [places[countries.canada].capeBretonIsland]: [
+    {
+      [dates]: {
+        [arrival]: '2006-09-29',
+        [departure]: '2006-10-01',
+      },
+    },
+  ],
   [places[countries.canada].crossRiverWildernessCentre]: [
     {
       [dates]: {
@@ -85,6 +93,12 @@ export const canadaData = {
         [departure]: '2005-08-22',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2006-12-22',
+        [departure]: '2006-12-24',
+      },
+    },
   ],
   [places[countries.canada].fortNelson]: [
     {
@@ -115,6 +129,26 @@ export const canadaData = {
       [dates]: {
         [arrival]: '2009-08-20',
         [departure]: '2009-08-21',
+      },
+    },
+  ],
+  [places[countries.canada].halifax]: [
+    {
+      [dates]: {
+        [arrival]: '2006-08-27',
+        [departure]: '2006-09-29',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-10-01',
+        [departure]: '2006-12-12',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2007-01-03',
+        [departure]: '2007-05-01',
       },
     },
   ],
@@ -149,6 +183,12 @@ export const canadaData = {
     },
   ],
   [places[countries.canada].jasper]: [
+    {
+      [dates]: {
+        [arrival]: '2006-12-18',
+        [departure]: '2006-12-22',
+      },
+    },
     {
       [dates]: {
         [arrival]: '2009-08-21',
@@ -263,6 +303,12 @@ export const canadaData = {
       [dates]: {
         [arrival]: '2005-05-17',
         [departure]: '2005-07-28',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2006-12-14',
+        [departure]: '2006-12-17',
       },
     },
     {
