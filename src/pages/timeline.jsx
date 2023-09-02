@@ -65,7 +65,7 @@ const timelineDates = {
 const introText = {
   [digitalNomad]: 'Where being a digital nomad has taken me.',
   [backpackingTrip]:
-    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing the coding bootcamp in Bali that paved the way for me to become a software engineer, and ultimately a digital nomad.',
+    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing a coding bootcamp in Bali in 2018 that paved the way for me to become a software engineer, and ultimately a digital nomad.',
   [mexico08]: 'A university reunion in Mexico.',
   [dalhousie]:
     'A university exchange to Dalhouse University in Nova Scotia with some time to travel over the Christmas break.',

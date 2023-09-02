@@ -37,11 +37,12 @@ const TimelineComponent = ({ timelineData }) => {
                   className="flex"
                 >
                   <div
-                    className={`shrink grow basis-1/2 ${
-                      stayOrderFirst &&
-                      'lg:order-last lg:border-l-2 lg:border-r-0'
+                    className={`shrink grow basis-1/2${
+                      stayOrderFirst
+                        ? ' lg:order-last lg:border-l-2 lg:border-r-0'
+                        : ''
                     } order-first border-r-2 border-zinc-800 dark:border-zinc-100`}
-                  ></div>
+                  />
                   <div
                     style={{
                       minHeight: `${Math.max(
@@ -49,19 +50,24 @@ const TimelineComponent = ({ timelineData }) => {
                         96
                       )}px`,
                     }}
-                    className={`flex shrink grow basis-1/2 items-center justify-start border-l-2 border-zinc-800 pr-2 dark:border-zinc-100 ${
-                      stayOrderFirst &&
-                      'lg:justify-end lg:border-r-2 lg:border-l-0 lg:pl-2 lg:pr-0'
+                    className={`flex shrink grow basis-1/2 items-center justify-start border-l-2 border-zinc-800 py-1 pr-2 lg:py-1.5 dark:border-zinc-100${
+                      stayOrderFirst
+                        ? ' lg:justify-end lg:border-r-2 lg:border-l-0 lg:pl-2 lg:pr-0'
+                        : ''
+                    }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
+                      stayIterator === countryVisit.stays.length - 1
+                        ? ' pb-2 lg:pb-3'
+                        : ''
                     }`}
                   >
                     <div
-                      className={`h-5 w-5 ${
-                        stayOrderFirst && 'lg:order-last lg:translate-x-3'
+                      className={`h-5 w-5${
+                        stayOrderFirst ? ' lg:order-last lg:translate-x-3' : ''
                       } order-first shrink-0 grow-0 -translate-x-3 rounded-full bg-zinc-800 dark:bg-zinc-100`}
-                    ></div>
+                    />
                     <div
-                      className={`flex flex-col text-zinc-800 dark:text-zinc-100 ${
-                        stayOrderFirst && 'lg:text-right'
+                      className={`flex h-full flex-col justify-center rounded-3xl bg-white p-5 text-zinc-800 dark:bg-zinc-900 dark:text-zinc-100${
+                        stayOrderFirst ? ' lg:text-right' : ''
                       }`}
                     >
                       <div className="font-bold">{stay[place]}</div>
