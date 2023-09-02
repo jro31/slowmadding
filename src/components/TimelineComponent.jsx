@@ -54,11 +54,12 @@ const TimelineComponent = ({ timelineData }) => {
                       stayOrderFirst
                         ? ' lg:order-last lg:after:left-0 lg:after:right-auto lg:after:border-r-0 lg:after:border-l-2'
                         : ''
-                    } after:dark:border-zinc-10 order-first after:absolute after:right-0 after:border-r-2 after:border-zinc-800 ${lineClasses(
+                    } dark:after:border-zinc-10 order-first after:absolute after:right-0 after:border-r-2 after:border-zinc-800 ${lineClasses(
                       countryIterator,
                       stayIterator,
                       countryVisit.stays
                     )}`}
+                    // dark:after:border-zinc-10 doesn't seem to be working
                   />
                   <div
                     style={{
@@ -67,20 +68,26 @@ const TimelineComponent = ({ timelineData }) => {
                         96
                       )}px`,
                     }}
-                    className={`flex shrink grow basis-1/2 items-center justify-start border-l-2 border-zinc-800 py-1 pr-2 lg:py-1.5 dark:border-zinc-100${
+                    className={`dark:after:border-zinc-10 relative flex shrink grow basis-1/2 items-center justify-start py-1 pr-2 after:absolute after:left-0 after:border-l-2 after:border-zinc-800 lg:py-1.5 ${
                       stayOrderFirst
-                        ? ' lg:justify-end lg:border-r-2 lg:border-l-0 lg:pl-2 lg:pr-0'
+                        ? ' lg:justify-end lg:pl-2 lg:pr-0 lg:after:right-0 lg:after:left-auto lg:after:border-l-0 lg:after:border-r-2'
                         : ''
                     }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
                       stayIterator === countryVisit.stays.length - 1
                         ? ' pb-2 lg:pb-3'
                         : ''
-                    }`}
+                    } ${lineClasses(
+                      countryIterator,
+                      stayIterator,
+                      countryVisit.stays
+                    )}`}
                   >
                     <div
                       className={`h-5 w-5${
-                        stayOrderFirst ? ' lg:order-last lg:translate-x-3' : ''
-                      } order-first shrink-0 grow-0 -translate-x-3 rounded-full bg-zinc-800 dark:bg-zinc-100`}
+                        stayOrderFirst
+                          ? ' lg:order-last lg:translate-x-2.5'
+                          : ''
+                      } order-first shrink-0 grow-0 -translate-x-2.5 rounded-full bg-zinc-800 dark:bg-zinc-100`}
                     />
                     <div
                       className={`relative flex h-full flex-col justify-center rounded-3xl bg-zinc-50 p-5 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10 dark:text-zinc-100${
