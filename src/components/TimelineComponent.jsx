@@ -76,7 +76,7 @@ const TimelineComponent = ({ timelineData }) => {
                         numberOfNights(stay[arrival], stay[departure]) * 15
                       }px`,
                     }}
-                    className={`relative flex max-h-[150vh] min-h-[106px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 lg:py-1.5 ${
+                    className={`relative flex max-h-[150vh] min-h-[106px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 lg:py-1.5${
                       stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
                     }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
                       stayIterator === countryVisit.stays.length - 1
@@ -85,10 +85,10 @@ const TimelineComponent = ({ timelineData }) => {
                     }`}
                   >
                     <div
-                      className={`absolute left-0 border-l-4 dark:border-zinc-100 lg:border-l-2 border-zinc-800${
+                      className={`absolute left-0 border-l-4 dark:border-zinc-100 border-zinc-800${
                         stayOrderFirst
                           ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
-                          : ''
+                          : ' lg:border-l-2'
                       } ${lineClasses(
                         countryIterator,
                         stayIterator,
