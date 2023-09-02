@@ -5,6 +5,7 @@
 // - A mix of both, where if I've only been to a place once, then it's a flag, but if I've been multiple times then it's a number corresponding to which stay it is
 // TODO: Add images to some or all stays?
 // - These should be on the opposite side of the timeline, and be a photo I took in that place. Join these to the bullet with a line.
+// - Not sure this would work on mobile, so one option is to move the timeline to the very left edge of the screen on mobile (so that you can only see half of the bullet). Photos could then be underneath the stay details.
 // TODO: Add Google Maps links to some or all stays?
 // TODO: Add description to some or all stays?
 // TODO: Make clearer the length of each stay
@@ -14,6 +15,7 @@
 // TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
 // TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
 // TODO: Give each 'stay' element a max-height; perhaps 120vh (currently long stays take multiple times the height of the viewport and looks/feels a bit ridiculous)
+// - Consider shortening this for 'top' (latest) stays, or moving the bullet to the top, because if there's no line from the top bullet and the stay isn't even on the screen, it'll look a bit ridiculous.
 
 import { useState } from 'react'
 
