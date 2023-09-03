@@ -8,14 +8,8 @@
 // - Not sure this would work on mobile, so one option is to move the timeline to the very left edge of the screen on mobile (so that you can only see half of the bullet). Photos could then be underneath the stay details.
 // TODO: Add Google Maps links to some or all stays?
 // TODO: Add description to some or all stays?
-// TODO: Make clearer the length of each stay
-// - Currently a short stay looks much longer than it is if it's surrounded by longer stays. Make it more obvious how long a stay is by highlighting each stay somehow.
-// - Changing the background colour of each stay is one option
-// FIXME: The top timeline element bullet should not have a vertical line coming out the top, and the bottom bullet should not have a line coming out the bottom
 // TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
 // TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
-// TODO: Give each 'stay' element a max-height; perhaps 120vh (currently long stays take multiple times the height of the viewport and looks/feels a bit ridiculous)
-// - Consider shortening this for 'top' (latest) stays, or moving the bullet to the top, because if there's no line from the top bullet and the stay isn't even on the screen, it'll look a bit ridiculous.
 
 import { useState } from 'react'
 
@@ -65,7 +59,7 @@ const timelineDates = {
 const introText = {
   [digitalNomad]: 'Where being a digital nomad has taken me.',
   [backpackingTrip]:
-    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing the coding bootcamp in Bali that paved the way for me to become a software engineer, and ultimately a digital nomad.',
+    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing a coding bootcamp in Bali in 2018 that paved the way for me to become a software engineer, and ultimately a digital nomad.',
   [mexico08]: 'A university reunion in Mexico.',
   [dalhousie]:
     'A university exchange to Dalhouse University in Nova Scotia with some time to travel over the Christmas break.',
