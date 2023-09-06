@@ -4,16 +4,16 @@ const navLinks = [
     text: 'Home',
   },
   {
-    path: '/about',
-    text: 'About',
-  },
-  {
     path: '/articles',
     text: 'Articles',
   },
   {
     path: '/places',
     text: 'Places',
+  },
+  {
+    path: '/timeline',
+    text: 'Timeline',
   },
 ]
 

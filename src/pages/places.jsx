@@ -46,7 +46,6 @@ const PlacesTable = () => {
   }
 
   return (
-    // Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether.
     <>
       <div className="mb-1 flex cursor-pointer justify-end gap-1">
         <PlayIcon
@@ -58,9 +57,10 @@ const PlacesTable = () => {
           className="h-6 w-4 text-zinc-500 dark:text-zinc-400"
         />
       </div>
+      {/* Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether. */}
       <div
         ref={placesTableRef}
-        className="no-scrollbar relative h-[75vh] max-h-[38rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
+        className="no-scrollbar relative h-[75vh] max-h-[54rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
       >
         <div
           className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
