@@ -45,9 +45,9 @@ const CircledIcon = ({ as: Component = 'div', platform, ...props }) => {
   return (
     <Component
       {...props}
-      {...(Component.render && Component.render.name === 'LinkComponent'
-        ? { href: platformDetails()[url], target: '_blank' }
-        : {})}
+      {...(Component === 'div'
+        ? {}
+        : { href: platformDetails()[url], target: '_blank' })}
       className={`relative z-10 flex items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 ${
         props.size === 'small' ? 'h-9 w-9' : 'h-12 w-12'
       }`}
