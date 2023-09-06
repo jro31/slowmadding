@@ -1,4 +1,5 @@
 // TODO: Delete this page?
+// - If you do, the 'CircledIcon' component can be simplified, as it'll only be used on the homepage
 
 import Head from 'next/head'
 

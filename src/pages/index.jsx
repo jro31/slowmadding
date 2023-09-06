@@ -87,12 +87,13 @@ const Home = ({ activities }) => {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {description}
           </p>
-          <div className="mt-6 flex gap-6">
+          <div className="mt-6 flex gap-4">
             {Object.keys(platforms).map((platform) => (
               <CircledIcon
                 key={`${platforms[platform]} logo`}
                 as={Link}
                 platform={platforms[platform]}
+                size="small"
               />
             ))}
           </div>
