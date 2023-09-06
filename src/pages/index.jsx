@@ -5,12 +5,9 @@ import clsx from 'clsx'
 
 import ActivityList from '@/components/ActivityList'
 import { Container } from '@/components/Container'
-import {
-  TwitterIcon,
-  InstagramIcon,
-  GitHubIcon,
-  LinkedInIcon,
-} from '@/components/SocialIcons'
+
+import { platforms } from '@/components/CircledIcon'
+
 import yogaInTheParkImage from '@/images/homepage-photos/yoga-in-the-park.jpeg'
 import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-night.jpeg'
 import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
@@ -19,6 +16,7 @@ import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import { getAllArticles } from '@/lib/getAllArticles'
+import CircledIcon from '@/components/CircledIcon'
 
 const title = 'Software engineer, digital nomad, insipid writer.'
 const description =
@@ -46,14 +44,6 @@ const images = [
     alt: 'The lake at Saikaew Resort in Chiang Rai',
   },
 ]
-
-const SocialLink = ({ icon: Icon, ...props }) => {
-  return (
-    <Link className="group -m-1 p-1" {...props}>
-      <Icon className="h-6 w-6 fill-zinc-500 transition group-hover:fill-zinc-600 dark:fill-zinc-400 dark:group-hover:fill-zinc-300" />
-    </Link>
-  )
-}
 
 const Photos = () => {
   let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
@@ -98,26 +88,13 @@ const Home = ({ activities }) => {
             {description}
           </p>
           <div className="mt-6 flex gap-6">
-            <SocialLink
-              href="https://twitter.com"
-              aria-label="Follow on Twitter"
-              icon={TwitterIcon}
-            />
-            <SocialLink
-              href="https://instagram.com"
-              aria-label="Follow on Instagram"
-              icon={InstagramIcon}
-            />
-            <SocialLink
-              href="https://github.com"
-              aria-label="Follow on GitHub"
-              icon={GitHubIcon}
-            />
-            <SocialLink
-              href="https://linkedin.com"
-              aria-label="Follow on LinkedIn"
-              icon={LinkedInIcon}
-            />
+            {Object.keys(platforms).map((platform) => (
+              <CircledIcon
+                key={`${platforms[platform]} logo`}
+                as={Link}
+                platform={platforms[platform]}
+              />
+            ))}
           </div>
         </div>
       </Container>

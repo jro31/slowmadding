@@ -1,42 +1,39 @@
-import Image from 'next/image'
+// TODO: Delete this page?
+
 import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import SimpleLayout from '@/components/SimpleLayout'
-import logoHappyCow from '@/images/logos/happy-cow.svg'
-import logoStrava from '@/images/logos/strava.svg'
-import logoInstagram from '@/images/logos/instagram.svg'
 
-const platforms = [
+import CircledIcon, { platforms } from '@/components/CircledIcon'
+
+const platformDetails = [
   {
-    name: 'Happy Cow',
+    name: platforms.happyCow,
     description:
       'Happy Cow is a directory of places around the world to get vegan/vegetarian food. Such a resource is invaluable to me while travelling, so I do what I can to give back by adding photos and reviews of the restaurants that I go to. This is probably my most active social media.',
     link: {
       href: 'https://www.happycow.net/members/profile/nomeatnomad',
       label: 'happycow.net',
     },
-    logo: logoHappyCow,
   },
   {
-    name: 'Strava',
+    name: platforms.strava,
     description:
       'Every time I go somewhere new, I try to find somewhere nice to run, so my most recent activity will give a good idea of where I am in the world.',
     link: {
       href: 'https://www.strava.com/athletes/10393790',
       label: 'strava.com',
     },
-    logo: logoStrava,
   },
   {
-    name: 'Instagram',
+    name: platforms.instagram,
     description:
       "I don't post there often, but that means that every time I do, it's really worth seeing. I add a picture of my lunch every few months.",
     link: {
       href: 'https://www.instagram.com/jethro_31/',
       label: 'instagram.com',
     },
-    logo: logoInstagram,
   },
 ]
 
@@ -66,18 +63,10 @@ const Socials = () => {
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {platforms.map((platform) => (
+          {platformDetails.map((platform) => (
             <Card as="li" key={platform.name} className="justify-between">
               <div>
-                <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
-                  <Image
-                    src={platform.logo}
-                    alt={`${platform.name} logo`}
-                    title=""
-                    className="h-8 w-8"
-                    unoptimized
-                  />
-                </div>
+                <CircledIcon platform={platform.name} />
                 <h2 className="mt-6 text-base font-semibold text-zinc-800 dark:text-zinc-100">
                   <Card.Link href={platform.link.href} target="_blank">
                     {platform.name}

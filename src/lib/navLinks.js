@@ -15,10 +15,6 @@ const navLinks = [
     path: '/places',
     text: 'Places',
   },
-  {
-    path: '/socials',
-    text: 'Socials',
-  },
 ]
 
 export default navLinks
