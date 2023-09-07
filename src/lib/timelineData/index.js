@@ -67,10 +67,7 @@ const orderedTimelineArray = (startDate, endDate) => {
               Date.parse(startDate) > Date.parse(stay[dates][arrival])
                 ? startDate
                 : stay[dates][arrival],
-            [departure]:
-              Date.parse(endDate) < Date.parse(stay[dates][departure])
-                ? endDate
-                : stay[dates][departure],
+            [departure]: stay[dates][departure],
           })
         }
       })

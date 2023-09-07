@@ -48,6 +48,11 @@ const TimelineComponent = ({ timelineData }) => {
             {countryVisit.stays.map((stay, stayIterator) => {
               stayOrderFirst = !stayOrderFirst
 
+              const parsedDepartureDate =
+                Date.parse(stay[departure]) >= Date.parse(new Date())
+                  ? new Date().toJSON().slice(0, 10)
+                  : stay[departure]
+
               return (
                 <div
                   key={`country-${countryIterator}-place-${stayIterator}-section`}
@@ -73,7 +78,7 @@ const TimelineComponent = ({ timelineData }) => {
                   <div
                     style={{
                       height: `${
-                        numberOfNights(stay[arrival], stay[departure]) * 15
+                        numberOfNights(stay[arrival], parsedDepartureDate) * 15
                       }px`,
                     }}
                     className={`relative flex max-h-[1050px] min-h-[106px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 lg:py-1.5${
@@ -109,7 +114,7 @@ const TimelineComponent = ({ timelineData }) => {
                     >
                       <div className="font-bold">{stay[place]}</div>
                       <div>
-                        {formatDateRange(stay[arrival], stay[departure])}
+                        {formatDateRange(stay[arrival], parsedDepartureDate)}
                       </div>
                     </div>
                   </div>
