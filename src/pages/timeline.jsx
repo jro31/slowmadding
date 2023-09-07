@@ -36,7 +36,7 @@ const endDate = 'End date'
 const timelineDates = {
   [digitalNomad]: {
     [startDate]: '2022-10-07',
-    [endDate]: undefined,
+    [endDate]: null,
   },
   [backpackingTrip]: {
     [startDate]: '2008-11-20',
