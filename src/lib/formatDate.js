@@ -1,5 +1,7 @@
 let formattedDate
 
+export const beginningOfToday = Date.parse(new Date().toJSON().slice(0, 10))
+
 const suffix = (day) => {
   const suffixes = ['st', 'nd', 'rd', 'th']
 

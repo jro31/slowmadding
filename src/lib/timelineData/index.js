@@ -1,6 +1,7 @@
 import { countries } from '@/lib/placeNames'
 
 import { dates, arrival, departure, country, place } from './variables'
+import { beginningOfToday } from '../formatDate'
 
 import { argentinaData } from './argentinaData'
 import { boliviaData } from './boliviaData'
@@ -50,16 +51,22 @@ const timelineData = {
   [countries.vietnam]: vietnamData,
 }
 
+let endDateIsSet = true
+
 const orderedTimelineArray = (startDate, endDate) => {
   let returnArray = []
+
+  const stayIsInDateRange = (stay) =>
+    Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
+    Date.parse(stay[dates][arrival]) < Date.parse(endDate)
+
+  const stayIsFuture = (stay) =>
+    Date.parse(stay[dates][arrival]) >= beginningOfToday
 
   Object.keys(timelineData).map((countryKey) => {
     Object.keys(timelineData[countryKey]).map((placeKey) => {
       timelineData[countryKey][placeKey].map((stay) => {
-        if (
-          Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
-          Date.parse(stay[dates][arrival]) < Date.parse(endDate)
-        ) {
+        if (stayIsInDateRange(stay) || (!endDateIsSet && stayIsFuture(stay))) {
           returnArray.push({
             [country]: countryKey,
             [place]: placeKey,
@@ -67,10 +74,7 @@ const orderedTimelineArray = (startDate, endDate) => {
               Date.parse(startDate) > Date.parse(stay[dates][arrival])
                 ? startDate
                 : stay[dates][arrival],
-            [departure]:
-              Date.parse(endDate) < Date.parse(stay[dates][departure])
-                ? endDate
-                : stay[dates][departure],
+            [departure]: stay[dates][departure],
           })
         }
       })
@@ -108,10 +112,14 @@ const stayObject = (stay) => ({
 })
 
 // TODO: Add any more checks to validate the date, such as the arrival date must be before the departure date
-export const parsedTimelineData = (
-  startDate,
-  endDate = new Date().toJSON().slice(0, 10)
-) => {
+export const parsedTimelineData = (startDate, endDate) => {
+  if (endDate) {
+    endDateIsSet = true
+  } else {
+    endDateIsSet = false
+    endDate = new Date().toJSON().slice(0, 10)
+  }
+
   let returnArray = []
   orderedTimelineArray(startDate, endDate).map((stay, iterator) => {
     if (
