@@ -1,28 +1,45 @@
 import arrayOfNumbers from 'array-of-numbers'
 
 const useArticleHeadings = () => {
-  const articleHeadings = (articleString) => {
-    const returnObject = {}
+  const articleHeadings = (articleString, chronological = false) => {
+    let returnVariable
 
-    const headingElements = (number) =>
-      articleString.match(new RegExp(`<h${number}(.*?)<\/h${number}>`, 'gi'))
+    const headingElements = () =>
+      articleString.match(new RegExp(`<h(.*?)<\/h(.)>`, 'gi'))
 
-    const extractHeadings = (headingElement) =>
+    const headingLevel = (headingElement) => headingElement.split('<h')[1][0]
+
+    const extractHeading = (headingElement) =>
       headingElement.replace(/(<([^>]+)>)/gi, '')
 
-    arrayOfNumbers(2, 3).map((number) => {
-      returnObject[`h${number}Headings`] =
-        (headingElements(number) &&
-          headingElements(number).map((headingElement) =>
-            extractHeadings(headingElement)
-          )) ||
-        []
-    })
+    const buildChronologicalArray = () => {
+      returnVariable = []
+      headingElements().map((headingElement) => {
+        returnVariable.push({
+          headingLevel: `h${headingLevel(headingElement)}`,
+          headingText: extractHeading(headingElement),
+        })
+      })
+    }
 
-    return returnObject
+    const buildImportanceObject = () => {
+      returnVariable = {}
+      headingElements().map((headingElement) => {
+        if (`h${headingLevel(headingElement)}Headings` in returnVariable) {
+          returnVariable[`h${headingLevel(headingElement)}Headings`].push(
+            extractHeading(headingElement)
+          )
+        } else {
+          returnVariable[`h${headingLevel(headingElement)}Headings`] = [
+            extractHeading(headingElement),
+          ]
+        }
+      })
+    }
 
-    // The goal of this hook is to return article headings in two possible formats: Chronological order (as they appear in the article), and importance order (h1 first, h2s second, h3s third etc)
-    // This should be determined by an argument
+    chronological ? buildChronologicalArray() : buildImportanceObject()
+
+    return returnVariable
   }
 
   return articleHeadings
