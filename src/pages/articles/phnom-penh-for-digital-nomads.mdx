@@ -1,0 +1,349 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import cityStatueOfSihanoukNorodomImage from '#/phnom-penh-for-digital-nomads/city/statue-of-sihanouk-norodom.jpeg'
+import cityIndependenceMonumentImage from '#/phnom-penh-for-digital-nomads/city/independence-monument.jpeg'
+
+import mResidenceRoomImage from '#/phnom-penh-for-digital-nomads/m-residence/room.jpeg'
+import mResidenceYogaMatImage from '#/phnom-penh-for-digital-nomads/m-residence/yoga-mat.jpeg'
+import mResidencePoolImage from '#/phnom-penh-for-digital-nomads/m-residence/pool.jpeg'
+import mResidenceGymImage from '#/phnom-penh-for-digital-nomads/m-residence/gym.jpeg'
+
+import bongBonlaiBeetrootFalafelWrapImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/beetroot-falafel-wrap.jpeg'
+import bongBonlaiPancakesImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/pancakes.jpeg'
+import bongBonlaiFruitSaladImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/fruit-salad.jpeg'
+import bongBonlaiBeetrootCarrotSmoothieImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/beetroot-carrot-smoothie.jpeg'
+import bongBonlaiIncredibleBurgerImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/incredible-burger.jpeg'
+import bongBonlaiScrambledTofuToastImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/scrambled-tofu-toast.jpeg'
+import bongBonlaiCourtyardImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/courtyard.jpeg'
+
+import sacredLotusCafeKhmerRedCurryImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/khmer-red-curry.jpeg'
+import sacredLotusCafeMexicanBurritoMealImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/mexican-burrito-meal.jpeg'
+import sacredLotusCafeFruitImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/fruit.jpeg'
+import sacredLotusCafeDragonFruitAndBananaSmoothieImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/dragon-fruit-and-banana-smoothie.jpeg'
+import sacredLotusCafeMoroccanChickpeaBurgerImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/moroccan-chickpea-burger.jpeg'
+
+import backyardCafeAbundanceBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/abundance-bowl.jpeg'
+import backyardCafeVeganMozzarellaBaguetteImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/vegan-mozzarella-baguette.jpeg'
+import backyardCafeOutsideImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/outside.jpeg'
+import backyardCafeMediterraneanFalafelBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/mediterranean-falafel-bowl.jpeg'
+import backyardCafeEarthBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/earth-bowl.jpeg'
+
+import runningStravaImage from '#/phnom-penh-for-digital-nomads/running/strava.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-02-17T15:31:00+07:00',
+  title: 'Phnom Penh for Digital Nomads',
+  description: "Phnom Penh is Cambodia's capital and its biggest city, but how does that translate as a place for digital nomads?",
+}
+
+export const mResidenceDetails = {
+  dates: {
+    checkIn: '2022-12-16',
+    checkOut: '2023-01-13',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/595464793635869888',
+  },
+  roomType: 'Entire condo hosted by Ratha',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 690.81,
+      '10% monthly price discount': -69.01,
+      'Cleaning fee': 17.38,
+      'Service fee': 72.60,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: cityStatueOfSihanoukNorodomImage,
+    alt: 'Statue of Sihanouk Norodom',
+    caption: 'The statue of Sihanouk Norodom in Neak Banh Tuek Park.'
+  },
+  {
+    src: cityIndependenceMonumentImage,
+    alt: 'Independence Monument',
+    caption: 'Independence Monument lights up the night sky.'
+  }
+]
+
+export const mResidenceImages = [
+  {
+    src: mResidenceRoomImage,
+    alt: 'M Residence studio room',
+    caption: 'The studio. At least you can watch TV from in bed.',
+  },
+  {
+    src: mResidenceYogaMatImage,
+    alt: 'Doing yoga at M Residence',
+    caption: "By moving the coffee table into the kitchen, you can just about make enough space to do yoga. As long as you don't need to stretch-out to the side too much.",
+  },
+  {
+    src: mResidencePoolImage,
+    alt: 'The rooftop pool at M Residence',
+    caption: "The practicality of the pool is questionable, but it does look nice.",
+  },
+  {
+    src: mResidenceGymImage,
+    alt: 'The gym at M Residence',
+    caption: "Although lacking in equipment, it was nice to have a gym in the building.",
+  },
+]
+
+export const bongBonlaiImages = [
+  {
+    src: bongBonlaiBeetrootFalafelWrapImage,
+    alt: 'Bong Bonlai beetroot falafel wrap',
+    caption: 'Apart from the plate being too small to catch the wrap as it fell apart, this beetroot falafel wrap was delicious and only cost $5.50.'
+  },
+  {
+    src: bongBonlaiPancakesImage,
+    alt: 'Bong Bonlai pancakes',
+    caption: 'Coconut cream pancakes with banana and passion fruit for $4.90.',
+  },
+  {
+   src: bongBonlaiFruitSaladImage,
+   alt: 'Bong Bonlai seasonal fruit salad',
+   caption: 'I got this seasonal fruit salad every time that I came here. Costing $2.50, it was a good way to ensure I was getting at least some vitamins in my diet.'
+  },
+  {
+    src: bongBonlaiBeetrootCarrotSmoothieImage,
+    alt: 'Bong Bonlai beetroot and carrot smoothie',
+    caption: "And what goes well with a fruit salad? How about one of Bong Bonlai's many fruit smoothies? This beetroot and carrot smoothie is also $2.50."
+  },
+  {
+    src: bongBonlaiIncredibleBurgerImage,
+    alt: 'Bong Bonlai incredible burger',
+    caption: "Just to make sure you don't get too healthy, the incredible burger is made with a black bean and soy patty, grilled cashew cheese, mushroom \"calamari\", jalapeños, pickles, lettuce, tomato and homemade vegan mayonnaise and costs $6.90."
+  },
+  {
+    src: bongBonlaiScrambledTofuToastImage,
+    alt: 'Bong Bonlai scrambled tofu',
+    caption: 'Breakfast is served all day. Scrambled tofu on toast will cost you just $3.50.'
+  },
+  {
+    src: bongBonlaiCourtyardImage,
+    alt: 'Bong Bonlai courtyard',
+    caption: "When no one's smoking in it, the courtyard is an incredibly relaxing place to sit while you eat."
+  }
+]
+
+export const sacredLotusCafeImages = [
+  {
+    src: sacredLotusCafeKhmerRedCurryImage,
+    alt: 'Sacred Lotus Cafe Khmer red curry',
+    caption: 'A Khmer red curry with white rice and added tofu will cost you $4.50.',
+  },
+  {
+    src: sacredLotusCafeMexicanBurritoMealImage,
+    alt: 'Sacred Lotus Cafe Mexican burrito meal',
+    caption: "For some reason South-East Asia does Mexican food better than anywhere else I've ever had it, including Mexico. This Mexican burrito meal costs $8 and includes a drink."
+  },
+  {
+    src: sacredLotusCafeFruitImage,
+    alt: 'Sacred Lotus Cafe mixed fruit',
+    caption: "I'm always going to like a restaurant where I can get a fruit salad. Here it costs $3."
+  },
+  {
+    src: sacredLotusCafeDragonFruitAndBananaSmoothieImage,
+    alt: 'Sacred Lotus Cafe dragon fruit and banana smoothie',
+    caption: 'A good fruit smoothie never goes amiss either. This dragon fruit and banana smoothie is $2.50.'
+  },
+  {
+    src: sacredLotusCafeMoroccanChickpeaBurgerImage,
+    alt: 'Sacred Lotus Cafe Moroccan chickpea burger',
+    caption: 'The Moroccan chickpea burger meal (includes a drink) costs $7.'
+  }
+]
+
+export const backyardCafeImages = [
+  {
+    src: backyardCafeAbundanceBowlImage,
+    alt: 'Backyard Cafe abundance bowl',
+    caption: 'The abundance bowl, including red pepper hummus and tempeh, costs $7.50 (plus 10% tax).',
+  },
+  {
+    src: backyardCafeVeganMozzarellaBaguetteImage,
+    alt: 'Backyard Cafe vegan mozzarella baguette sandwich',
+    caption: 'They have a permanent menu, as well as some (I think) monthly specials. This vegan mozzarella cheese baguette was one of those, and cost $6.50 (plus 10% tax).'
+  },
+  {
+    src: backyardCafeOutsideImage,
+    alt: 'Backyard Cafe outside area',
+    caption: "While the restaurant does have a small inside area, it's much more pleasant sitting outside."
+  },
+  {
+    src: backyardCafeMediterraneanFalafelBowlImage,
+    alt: 'Backyard Cafe Mediterranean falafel bowl',
+    caption: 'The Mediterranean falafel bowl costs $7 (plus 10% tax).'
+  },
+  {
+    src: backyardCafeEarthBowlImage,
+    alt: 'Backyard Cafe earth bowl',
+    caption: 'The earth bowl includes guacamole, spinach and roasted red peppers and costs $7 (plus 10% tax).'
+  }
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Strava map',
+    caption: 'Running in Neak Banh Tuek Park',
+    url: 'https://www.strava.com/activities/8288282594',
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+My last trip to Cambodia was in 2013, and what I'd heard since then is that _"it's been bought by China."_ That might be a slight exaggeration, but there is now a Chinese presence that wasn't here on my last visit. Many Chinese people now call Phnom Penh home, to the point that Chinese threatens English as the most dominant non-native language, and you see many construction projects underway run by Chinese companies. That presence isn't to the benefit of Phnom Penh. It does still have some element of the fun, Khmer place that I remember from 10 years ago, but it's certainly being eroded.
+
+I like to walk everywhere, and some parts of the city are not very pleasant to walk around now. Clear pavements can be hard to come by as they're used as car parks, so by the end of my time here, even I found myself taking the occasional tuk-tuk to save walking. Between the riverside and BKK1, where I was staying, it isn't so bad, but going in the other direction towards the Russian Market, it's just fairly grim.
+
+On the bright side, there are limited places to run, there are a lot of good restaurants, and many of the local people are still very friendly. I wouldn't say it's got so unpleasant that I recommend against visiting it just yet, but in another few years it might.
+
+<ImageGallery images={cityImages} />
+
+## Where I stayed
+
+### M Residence (room #707)
+
+<AccommodationAddress name='10 Samdach Louis Em St. (282)' url='https://goo.gl/maps/qd9nNdhEkXa1rXXM7' />
+
+<AccommodationTable details={mResidenceDetails} />
+
+You know how sometimes you find yourself staying somewhere, where the host has thought of every little thing and does absolutely everything that they can to make you comfortable?
+
+This isn't one of those places.
+
+I had some initial trouble checking-in because the instructions on Airbnb were wrong, then on my first full day I got evicted for 7 hours with zero notice when some workmen came to do some redecorating. When I was able to go back into the room, I found myself cleaning what hadn't been cleaned from the guest before.
+
+The room itself was actually pretty spotless, probably because they had a cleaner come in once the workmen were finished, but taking one smell of the tea towels, they obviously hadn't been washed. Nor had the floor mats, so I ran all towel-type things through the washing machine.
+
+And it does have a washing machine.
+
+It doesn't have anywhere to dry your clothes, but you can at least wash them. My solution was to just hang them up in the cupboard and leave the doors open, but there was only enough space in there to do about half a load at a time.
+
+It felt like the host could tick the box on Airbnb it has a washing machine, and so he stopped there. You kind of assume that having somewhere to dry your clothes is part of that package, but apparently not. Or that in claiming to have a kitchen with pots, pans and plates, that a knife and chopping board are included. They aren't, which severly limits your ability to cook.
+
+I carry a camping knife in my suitcase, which is a viable substitute for a kitchen knife, but without a chopping board, I resorted to using plates, but they aren't big or flat plates. They're those small ones, curved at the sides like they're trying to be bowls. Try cutting up a watermelon on one of those with a camping knife and you'll begin to understand my frustration.
+
+Prior to staying here I'd used Airbnb very sparingly, so hadn't yet learned the right questions to ask before agreeing to a longer-term stay. Like how often will the room be cleaned?
+
+Answer: Never.
+
+I never want to be too important to clean up after myself, but I do draw the line at having to buy all the clearning products and equipment myself when I'm only going to be here for a month. And with no cleaner either, the room just got slowly grimier throughout my stay.
+
+That's not to say it's a bad place. It's not. The main reason that I chose to stay here over everywhere else I looked at was the location. And the location is perfect. There are great restaurants nearby, you're only a five-minute walk from Neak Banh Tuek Park, which is one of the only viable places in the city to run, there are several supermarkets within an easy walk, and there's even a sports bar right across the street.
+
+Literally right across the street. Good luck sleeping when the World Cup final's on, but it's also not a bad place to get a beer and watch some football. They have a load of screens, so if you want to watch Everton lose in the last minute to Wolves with the commentary of the simultaneous Newcastle vs Leicester game blasting over the loud speakers, then this is the place for you.
+
+When I lived in Bangkok, I used to rent a condo where the size was written into the contract as (just under) 29m&#178;. I've always assumed therefore, that measurement was accurate. It was quite a compact place, but it had one bedroom, a good kitchen and a dining area within the living room.
+
+So when I stay somewhere that describes itself as 35m&#178;, but it's a studio without any dining area and almost no free space, I'm slightly dubious. It felt significantly smaller than my Bangkok condo, to the point that I had to rearrange the furniture just to have the space to do yoga. I'd push the coffee table into the kitchen area, and I'd *still* find myself cramped between the fridge and the bathroom.
+
+The room itself is on the 7th floor of this almost 40-storey building, with what seems to be mainly Chinese residents, although there are other westerners. On the top floor there is a stunningly impractical swimming pool. You come up in the middle of it, so you're surrounded 360&#176; by the pool, which stretches to the edge of the rooftop. That means that it's not really the right shape to do any serious swimming, and there isn't much space to sit by the pool either.
+
+Of more practical value, the floor below has a pretty nice gym. It's slightly ill-equipped, with only one weights bench, despite there being the space for three or four. As it's seldom used by other guests, I never found myself waiting for the bench, although there were multiple times that other people were waiting for me, which sucked for them because I had loads of sets to do.
+
+The most egregious thing that happened during my stay, is that the owner, via the front-desk staff, takes a $30 key depost when you check-in. That is to be returned to you when you return the key at checkout. I made it abundantly clear to the owner that I was checking-out early in the morning (about 6:30am), and he assured me that he had arranged it so that my deposit would be returned to me by the front-desk staff.
+
+Of course, 6:30am comes on the day I'm checking-out, and the guy on reception has no clue about any deposit, and recommends that I keep the key instead. I did that, and after a lot of back and forth, I eventually came to an agreement with the landlord that he'd refund me $30 through Airbnb, and then I'd return the key to him when next in Phnom Penh.
+
+This is the very short version of that story, and I'd pay significantly more than $30 to not have to go through the stress and hassle endured to get back that deposit. Most likely because of the bad blood from that situation, the owner later accused me of causing a huge stain on the couch. I refuted these claims, as that stain was there when I arrived (I have photos that prove this). His lack of acknowledgement of this left an even more bitter taste in the mouth than I had already.
+
+So all in all... you could do worse. The furnishings in the room are nice, the TV is really good, the shower is hot and powerful, the AC works efficiently, the landlord is a buffoon, and I'll stress again how great the location is. It just doesn't feel homely. It feels like someone wants to do the bare minimum in order to make as much money off Airbnb as they can.
+
+I wouldn't stay here again.
+
+<ImageGallery images={mResidenceImages} />
+
+## Where to get vegan food in Phnom Penh
+
+At the time of writing, Happy Cow listed neighbouring Thailand as having 411 vegan restaurants, neighbouring Vietnam as having 472 vegan restaurants, but Cambodia as having just nine, only four of which are in Phnom Penh.
+
+You could take that to mean that Phnom Penh isn't a very vegan-friendly city, but once you explore a bit, you realise that you aren't short of places to eat.
+
+Happy Cow is a great starting resource, but I also had a lot of success with food delivery apps in Phnom Penh. I ordered vegan food from foodpanda from multiple restaurants that weren't on Happy Cow, and with the endless barrage of special offers, getting delivery can be significantly cheaper than eating in person.
+
+All that being said, I still prefer to eat in a restaurant. These are my favourite places from my time in Phnom Penh:
+
+### Bong Bonlai
+
+Bong Bonlai is pretty much my perfect restaurant, with one notable caveat.
+
+It's fully vegan, for a start. And although it has a small indoor area with a very large selection of books to read, most of the tables are in the courtyard of this guesthouse, which is absolutely beautiful. It has plants growing all around so it's a very natural and pleasant place to sit. I would often bring my book to sit and read here for a while.
+
+The menu is extensive, with a mixture of Khmer and Western foods, so you're unlikely to run out of things to try. I came here at least 8 times during my stay in Phnom Penh, and I didn't even get around to trying any of the pizzas. It's all reasonably-priced too, the staff are incredibly friendly, and to top it all off, the proceeds from the restaurant go to good causes.
+
+The premesis is owned by a charity school that provides education to poor families, they foster, rehome and fundraise for Phnom Penh's street animals, and they partner with Elephant Valley Project. On top of that, they don't use plastic straws, all take-away packaging is compostable, and they have their own water treatment system to save using bottled water, so you can eat here and feel like you're doing some good for the world at the same time.
+
+The one downside, and I can't for the life of me understand why they do this, is that they permit smoking within the courtyard. There are no smoking signs on some, possibly even all of the tables, but they do nothing when someone lights a cigarette and instead give them an ashtray, so you can be enjoying your lunch, reading a book, only for some doorknob to light a cigarette at the table next to you and completely ruin it.
+
+That might be more of an issue to me than it is to others, because I have a particular hatred of smoking and the nose of a bloodhound, but on at least three occasions when I came here, my experience was ruined by someone smoking within smelling range.
+
+It's just such a peculiar decision that they build this perfect restaurant... and then ruin it, when all they'd have to do is tell these people to kill themselves out the front of the property instead. That's the way it is though, so it's kind of pot-luck whether or not you have a good lunch or not.
+
+<ImageGallery images={bongBonlaiImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/bong-bonlai-phnom-penh-162161'>Visit Bong Bonlai on Happy Cow</ExternalLink>
+
+### Sacred Lotus Cafe
+
+Another of Phnom Penh's four vegan restaurants, Sacred Lotus Cafe is located near the Russian Market. That's probably its biggest downside.
+
+Although the Russian Market area in itself is ok, getting to it from where I was staying was a pretty miserable walk, and I like to walk everywhere I go, so I didn't come to Sacred Lotus as much as I otherwise would. With that exception, this is a great place.
+
+It's reasonably-priced, there are several healthy options on the menu, the staff are all very kind, and the food is really, really good. I think everything is made from scratch, because I had to wait 30 minutes on a couple of the times I came, but it was always worth the wait. Definitely one to visit when you're in Phnom Penh, just don't be stubborn like me and take a tuk-tuk to get here.
+
+<ImageGallery images={sacredLotusCafeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/sacred-lotus-cafe-phnom-penh-179078'>Visit Sacred Lotus Cafe on Happy Cow</ExternalLink>
+
+### Backyard Cafe - BKK1
+
+There are a couple of branches of Backyard Cafe in Phnom Penh. They both have identical menus, although I slightly preferred the one in BKK1, not least because it was a two minute walk from where I was staying, but it also has a larger outdoor area. The one on Street #246 is primarily indoors.
+
+Although it serves meat, it became one of my go-to restaurants in Phnom Penh. Roughly 50% of the menu is vegan, and it's very health-focussed. They really push their cold-pressed juices, but I preferred it for its smoothies and buddha bowls.
+
+It's a little more expensive than the other restaurants I've listed here, not least because they don't include the 10% tax in their menu prices, which is always a pet peeve of mine. If you can get over that, then this is a good place to come to make sure that you stay healthy in Phnom Penh.
+
+<ImageGallery images={backyardCafeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/backyard-cafe-phnom-penh-207774'>Visit Backyard Cafe on Happy Cow</ExternalLink>
+
+## Where to run in Phnom Penh
+
+Phnom Penh isn't great for running, however you only really need one good place. If you run in Neak Banh Tuek Park during the daytime, apart from occasional tourist taking selfies with Sihanouk Norodom, it's a solid running spot.
+
+It doesn't have any shade, hence why you'll have the park to yourself, and it isn't especially green. However, it's flat, spacious and void of vehicles, so it's all you need. It's surrounded by main road, but I didn't really notice pollution anytime that I ran here.
+
+A full lap of the park is marginally under 1km, so it does get slightly repetitive, but that can be a positive as well. Knowing that you need to do 11 laps to do a 10k, you can count them down in your head, which can be motivating.
+
+I didn't run here in the evenings, but I did walk by a few times and it's worth noting that it gets very busy after sundown. People come here to play badminton or to walk or jog, so unless you have an aversion to the heat, coming here at midday is far more suitable for running at any kind of pace. You also just have to cross one main road until you're in Wat Botum Park, which is slightly bigger, but not quite as suitable for running, but is an option.
+
+I never made it there because Neak Banh Tuek Park was so close to where I was staying, but I was curious about whether the Olympic National Stadium would be any good for running, so if you're here so long that Neak Banh Tuek Park grows tiresome, then that's potentially a viable alternative. Unfortunately within Phnom Penh, I think that's about it. It's not a great city for runners.
+
+<ImageGallery images={runningImages} />
+
+## Being sociable in Phnom Penh
+
+The selection of events in Phnom Penh designed to meet new people is pretty scant. It didn't help that I was here over the festive period, because most that do exist stopped running for Christmas and New Year, and those that did go ahead had very few attendees.
+
+Meetup has no events in Phnom Penh, so the ones that I found were on Facebook. For example, <ExternalLink url='https://www.facebook.com/teddybearttp2'>Teddy Bear Restaurant</ExternalLink> holds a weekly Friday Meetup. I attended this in the week between Christmas and New Year, but only two other people showed up. Allegedly it has much better attendance at other times.
+
+I read in several places that the monthly <ExternalLink url='https://www.facebook.com/nerdnightphnompenh'>Nerd Night Phnom Penh</ExternalLink> event is a really good event to go to but, of course it was cancelled for Christmas the month that I was there.
+
+There were other events that I found, or that I heard about, but in truth I found that the best way to be sociable in Phnom Penh was to become an alcoholic. More than any event I went to, going and sitting at a bar and chatting to the other lonely fuckers was the best way I found to meet people. It doesn't hurt that beer is cheaper than water in Cambodia, so it won't cost you much either.
+
+It's not a great city to be sociable in if you're here alone, but alcohol is the great equaliser.
+
+

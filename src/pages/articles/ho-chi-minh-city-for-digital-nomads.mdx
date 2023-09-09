@@ -1,0 +1,371 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import citySunsetImage from '#/ho-chi-minh-city-for-digital-nomads/city/sunset.jpeg'
+
+import rivergateResidenceBedImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/bed.jpeg'
+import rivergateResidenceRoomImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/room.jpeg'
+import rivergateResidenceDeskImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/desk.jpeg'
+import rivergateResidenceRivergateResidenceImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/rivergate-residence.jpeg'
+
+import filthyVeganSundayRoastImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/sunday-roast.jpeg'
+import filthyVeganFullEnglishImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/full-english.jpeg'
+import filthyVeganPizzaImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/pizza.jpeg'
+import filthyVeganBurgerImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/burger.jpeg'
+import filthyVeganBrownieImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/brownie.jpeg'
+import filthyVeganSausageRollImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/sausage-roll.jpeg'
+import filthyVeganOutsideImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/outside.jpeg'
+
+import tueTinChayQuanRiceWithMeatImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/rice-with-meat.jpeg'
+import tueTinChayQuanSpringRollsImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/spring-rolls.jpeg'
+import tueTinChayQuanDuckWithRiceImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/duck-with-rice.jpeg'
+import tueTinChayQuanPhoNoodlesImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/pho-noodles.jpeg'
+import tueTinChayQuanNoodlesWithMeatImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/noodles-with-meat.jpeg'
+
+import theJoiFactoryVeganTwixImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-twix.jpeg'
+import theJoiFactoryVeganBigBiteImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-big-bite.jpeg'
+import theJoiFactoryHealthyHeartSmoothieImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/healthy-heart-smoothie.jpeg'
+import theJoiFactoryVeganMiQuangImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-mi-quang.jpeg'
+import theJoiFactoryBanhMiBiChaImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/banh-mi-bi-cha.jpeg'
+
+import runningDistrict4RiversideStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/district-4-riverside-strava.jpeg'
+import runningSeptember23rdParkStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/september-23rd-park-strava.jpeg'
+import runningTaoDanParkStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/tao-dan-park-strava.jpeg'
+
+import socialisingWalkingStreetImage1 from '#/ho-chi-minh-city-for-digital-nomads/socialising/walking-street-1.jpeg'
+import socialisingWalkingStreetImage2 from '#/ho-chi-minh-city-for-digital-nomads/socialising/walking-street-2.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-03-08T15:30:00+07:00',
+  title: 'Ho Chi Minh City for Digital Nomads',
+  description: 'Vietnam is somewhat of an outlier among South-East Asian countries. Ho Chi Minh City is its biggest city, so is the obvious choice to come as a digital nomad, but should you?',
+}
+
+export const rivergateResidenceDetails = {
+  dates: {
+    checkIn: '2023-01-13',
+    checkOut: '2023-02-10',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/26011961',
+  },
+  roomType: 'Entire condo hosted by Micheal',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 754.34,
+      '6% weekly price discount': -45.21,
+      'Cleaning fee': 6.52,
+      'Service fee': 81.30,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: citySunsetImage,
+    alt: 'Sunset taken from Rivergate Residence',
+    caption: 'Sunset over Ho Chi Minh City, taken from the 7th floor of Rivergate Residence.'
+  }
+]
+
+export const rivergateResidenceImages = [
+  {
+    src: rivergateResidenceBedImage,
+    alt: 'Rivergate Residence bed',
+    caption: 'You have a double bed, and I quite liked some of the artwork.',
+  },
+  {
+    src: rivergateResidenceRoomImage,
+    alt: 'Rivergate Residence room',
+    caption: "It's a fairly spacious room for a studio. I was able to do (slightly cramped) yoga in the space between the bed and the TV.",
+  },
+  {
+    src: rivergateResidenceDeskImage,
+    alt: 'Rivergate Residence desk',
+    caption: "I've had worse places to setup for the day.",
+  },
+  {
+    src: rivergateResidenceRivergateResidenceImage,
+    alt: 'Rivergate Residence from outside',
+    caption: "On the ground floor there's a WinMart and a 7-11, so getting essentials is easy.",
+  },
+]
+
+export const filthyVeganImages = [
+  {
+    src: filthyVeganSundayRoastImage,
+    alt: 'Filthy Vegan Sunday roast',
+    caption: "There aren't too many other places in South-East Asia to find a vegan Sunday roast. It'll set you back 200,000 VND.",
+  },
+  {
+    src: filthyVeganFullEnglishImage,
+    alt: 'Filthy Vegan full English breakfast',
+    caption: 'A vegan full English is a bit more common, but this one is as good as they come. It costs 140,000 VND.',
+  },
+  {
+    src: filthyVeganPizzaImage,
+    alt: 'Filthy Vegan vegan pizza',
+    caption: "The cashew cheese is homemade, and some of the best vegan cheese I've had. Here it's used on this vegan pizza, which costs 199,999 VND.",
+  },
+  {
+    src: filthyVeganBurgerImage,
+    alt: 'Filthy Vegan bacon cashew cheese burger with fries',
+    caption: 'A vegan bacon cashew cheese burger with fries is 150,000 VND.',
+  },
+  {
+    src: filthyVeganBrownieImage,
+    alt: 'Filthy Vegan chocolate brownie with custard',
+    caption: "This vegan chocolate brownie with custard is something else you won't see very often in this part of the world, and is 45,000 VND.",
+  },
+  {
+    src: filthyVeganSausageRollImage,
+    alt: 'Filthy Vegan sausage roll with chips, beans and gravy',
+    caption: 'Sausage roll with chips, beans and gravy. Classic Vietnamese food for 230,000 VND.',
+  },
+  {
+    src: filthyVeganOutsideImage,
+    alt: 'Filthy Vegan from outside',
+    caption: "Filthy Vegan is on the second floor. It can feel slightly like you're walking into someone's house, but the locals who work downstairs are very welcoming, then you'll see a staircase to your right as you go in."
+  }
+]
+
+export const tueTinChayQuanImages = [
+  {
+    src: tueTinChayQuanRiceWithMeatImage,
+    alt: 'Tue Tin Chay Quan rice and vegan grilled meat',
+    caption: 'All food items at Tue Tin Chay Quan are 40,000 VND. This is rice and vegan grilled meat.',
+  },
+  {
+    src: tueTinChayQuanSpringRollsImage,
+    alt: 'Tue Tin Chay Quan spring rolls with vegan pork sausage',
+    caption: 'Spring rolls with vegan pork sausage.',
+  },
+  {
+    src: tueTinChayQuanDuckWithRiceImage,
+    alt: 'Tue Tin Chay Quan vegan roasted duck with rice',
+    caption: 'Vegan roasted duck with rice.',
+  },
+  {
+    src: tueTinChayQuanPhoNoodlesImage,
+    alt: 'Tue Tin Chay Quan pho noodles',
+    caption: 'Along with a banh mi, pho is the first thing I think of when I think of Vietnamese food.',
+  },
+  {
+    src: tueTinChayQuanNoodlesWithMeatImage,
+    alt: 'Tue Tin Chay Quan noodles with vegan grilled meat',
+    caption: 'Noodles with vegan grilled meat.',
+  },
+]
+
+export const theJoiFactoryImages = [
+  {
+    src: theJoiFactoryVeganTwixImage,
+    alt: 'The Joi Factory vegan Twix',
+    caption: 'The Joi Factory offer several vegan desserts. This vegan Twix was divine, and costs 75,000 VND (plus 10% tax).',
+  },
+  {
+    src: theJoiFactoryVeganBigBiteImage,
+    alt: 'The Joi Factory vegan big bite',
+    caption: "This vegan big bite wasn't that big, but it did taste good. It's made with vegan cashew cheese and costs 110,000 VND (plus 10% tax).",
+  },
+  {
+    src: theJoiFactoryHealthyHeartSmoothieImage,
+    alt: 'The Joi Factory healthy heart smoothie',
+    caption: 'The Joi Factory offer four different smoothies, all of which are 100% natural with no additives, including sugar. This Healthy Heart smoothie is 75,000 VND (plus 10% tax).',
+  },
+  {
+    src: theJoiFactoryVeganMiQuangImage,
+    alt: 'The Joi Factory vegan mi quang',
+    caption: 'A vegan mi quang for 78,000 VND (plus 10% tax).',
+  },
+  {
+    src: theJoiFactoryBanhMiBiChaImage,
+    alt: 'The Joi Factory banh mi bi cha',
+    caption: 'They do three different kinds of banh mi. This banh mi bi cha (🤷‍♂️) on French baguette is 45,000 VND (plus 10% tax), but can also be part of a meal deal.',
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningDistrict4RiversideStravaImage,
+    alt: 'District 4 riverside Strava map',
+    caption: 'My run along the district 4 riverside',
+    url: 'https://www.strava.com/activities/8415478622',
+  },
+  {
+    src: runningSeptember23rdParkStravaImage,
+    alt: 'September 23rd Park Strava map',
+    caption: 'September 23rd Park',
+    url: 'https://www.strava.com/activities/8468754705',
+  },
+  {
+    src: runningTaoDanParkStravaImage,
+    alt: 'Tao Dan Park Strava map',
+    caption: 'My Tao Dan Park run',
+    url: 'https://www.strava.com/activities/8496310046',
+  },
+]
+
+export const socialisingImages = [
+  {
+    src: socialisingWalkingStreetImage1,
+    alt: 'Partying on Bui Vien walking street',
+    caption: "The second abandoned pub crawl on Bui Vien walking street. I'm not sure why no one else looks happy."
+  },
+  {
+    src: socialisingWalkingStreetImage2,
+    alt: 'On Bui Vien walking street',
+    caption: "The third Bui Vien pub crawl. I don't know why I wore the same t-shirt for both of them.",
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+I always think of Vietnam as the wild child of the South-East Asia. I see Thai, Laotian and Khmer people as very similar, which I'm sure is about as popular as telling Scottish people they're like the English. However much they might hate it, the temperament and customs of these three countries comes across to me as very similar. Vietnam is the one who's all fuck you, I do what I want. It's not like those three countries, and it's not like China either. For better or worse, it's a unique place.
+
+In my time as backpacker, I first came into Vietnam from China and travelled south. I learned on that trip that the further south you travel, the nicer the people are, so it was no coincidence that I opted to come to Ho Chi Minh City as opposed to Hanoi or somewhere further north. Ho Chi Minh is a mammoth city with more than 9 million people, and every single one of them seems to ride a motorcycle. At the same time. I don't know the actual statistics but I'd guess that motorcycles outnumber cars here at least 50 to 1. That makes it pretty unique just for crossing the road, and with a good vantage point you can stare at traffic all day and not get bored.
+
+It's a very unapologetic place. People are going to stand where they want, and they don't care if you're trying to get past. I can appreciate that lack of care in what others think; I wish I was like that, though it has a negative side to it too. For example, even in the streets of Saigon you won't be exempt from acts of animal cruelty, such as cock-fighting taking place right on the pavement. Once you get into more rural areas it's worse. I've seen live pigs hog-tied and strapped upside down on the back of motorcycles with no regard for the pain or suffering that causes the animal. Those kinds of things I find pretty distressing.
+
+When you come to Vietnam, you've got to accept it for what it is and take the good with the bad, because there's a lot of both. In the main I'd say more good than bad; there are a lot of kind, friendly people, but it's certainly not all. What I will say is you're never bored here. The lie of the digital nomad lifestyle that social media wants you to believe is that it's sitting on the beach drinking cocktails with your laptop. Ho Chi Minh is the opposite of that. It's fast, ugly and not especially friendly, but I like it. I guess that if you've been to Thailand, Cambodia or Laos and you find them a bit too slow and relaxed, then Vietnam is your antidote. It's definitely not for everyone, but I've been here multiple times and will continue to come back again.
+
+<ImageGallery images={cityImages} />
+
+## Where I stayed
+
+Before deciding where to stay in Ho Chi Minh I looked-up several different areas, but the two I considered most seriously were district 1, which is the very touristy town centre, and Thao Dien, which was described to me as _"the digital nomad area."_ I ultimately chose a place in district 4, a short walk across the river from district 1, and I'm so glad that I did. I visited Thao Dien during my stay and it was the most vane, characterless part of the city I encountered.
+
+Within a city of so much life and vibrancy, how an area so devoid of personality can thrive is beyond me, because everything I saw there was overpriced and there was no shortage of customers. I guess I'm just not the target for such an area. It was full of people sitting in cafes with a MacBook in front of them, pretending to be working while actually looking up every five seconds to see if anyone's noticed them. It certainly wasn't for me, but if you're into overpriced food and pretentiousness, then consider Thao Dien. I ultimately chose to stay at Rivergate Residence, a short walk from district 1.
+
+### Rivergate Residence (room #11.13)
+
+<AccommodationAddress name='151-155 Đ. Bến Vân Đồn' url='https://goo.gl/maps/iPaK6c77hdnJ2Exs5' />
+
+<AccommodationTable details={rivergateResidenceDetails} />
+
+I chose this place primarily for its location, but don't let that hide the fact it's a pretty nice room in its own right. It's a studio, but it's comfortably spacious, even if not overflowing with space. There are a couple of large cupboards, and many smaller cupboards and shelves so you're going to have far more space than you need to unpack all your things. The decor's pretty nice and there are a couple of pieces of art that my artisticly banal brain appreciated, including a picture opposite the bed that was simply the words _"Do more or what makes you happy."_ When that's the last thing you see before bed and the first thing you see as you wake up every morning, it becomes quite inspiring.
+
+In terms of facilities, there's a separate washing machine room. This includes a couple of hanging rails, and is ventilated to the outside so your clothes will dry in a few hours in the Vietnam heat. The kitchen is equipped with any essentials you need and includes one hob for cooking on. There's one desk that's more than suitable for working at all day, and there's another table next to the bed that's an alternative if you feel like facing in the other direction for some reason. There's an armchair that unfolds into a second bed if needed. This is somewhat to its detriment, because it makes it a little uncomfortable as an armchair, but I guess it's useful if you need to have anyone staying with you whilst you're here. Other than that it has everything you need for your stay, including a decent TV and good AC.
+
+The building itself it comprised of two towers, each of which I think is twenty floors. This room is on the eleventh floor, so has a decent view. The building includes a swimming pool and a gym on the seventh floor. The pool is quite nice, but I'm not really a sit by the pool kind of guy, so I did nothing but walk past it on the way to the gym. The gym is fairly well-equipped for somewhere so small. The problem is it's insufficient to support as many people as reside in these buildings, so you kind of have to go down there and be prepared to make use of whatever equipment is available. If you go there with a set workout in mind, you might spend longer waiting for equipment you need than actually exercising. On the ground floor, within the building complex is a 7-11, a Winmart, and a pharmacy. Between the three of these, there aren't too many essentials that you can't get, so it's a convenient place to stay.
+
+As I said already, I chose this place for the location, and I did really like the location. You're in district 4, right across the river from district 1, so it's no more than a 15-minute walk until you're on Bui Vien walking street. However, being across the river you get a nice separation between yourself and the majority of tourists. I was told that district 4 has a reputation for crime, but I didn't see anything. I found it to be a quite nice, local area, even though most of the time I found myself going across the river to district 1 when I left my room.
+
+I never met the host; it's self check-in and check-out. The host's name is Michael but he actually has a team of 5 people that run several Airbnbs. Once you make a booking you'll be in a group chat on Airbnb with three or four of them. Communication in this group is always very fast. I had one issue during my stay of the shower drain getting blocked. I complained about it within this group chat, and within a day someone came around to fix it. The staff include one cleaner, and my room was cleaned once during my stay, at the same time as someone came around to fix the drain. I was out at that time, so never got to meet them, but it was slightly odd that they waited until my final week here to clean the room, but I appreciated having it cleaned none the less.
+
+If I have one criticism, it's that the Internet is 95% reliable, but it gets patchy at times. Doing an hour-long video call, as I do for work once per week, the connection would temporarily deteriorate to the point that I would drop in and out for a couple of minutes. Using the Internet to watch Netflix it would sometimes dropout as well. I don't know if this is a problem specific to this room because I read stories online about shark-bitten undersea cables meaning this is a problem in all of Vietnam. That sounds slightly far-fetched, but maybe it's true. It's not sufficiently annoying that it would stop me staying here again, but it's something to be mindful of. I had a decent mobile network, but perhaps because of being up on the eleventh floor, it didn't have very good reception in the room, so wasn't a very reliable backup. With that exception, this is a great place to stay. I had no regrets about choosing to come here.
+
+<ImageGallery images={rivergateResidenceImages} />
+
+## Where to get vegan food in Ho Chi Minh City
+
+I'm going to make a revelation about Vietnam: There's a lot of Vietnamese food here.
+
+Yeah I know that's obvious, but the reason that I bring it up is that if you go to a touristy city in this region, usually a large percentage of the vegan restaurants are aimed at foreigners. When you look at a map of vegan restaurants in Ho Chi Minh, you'll see dozens of them (118 according to Happy Cow). So your first thought if you've been to other major tourist cities in this region, is that you'll be able to get loads of vegan western food.
+
+The reality is actually that the vast, vast majority of these vegan restaurants serve Vietnamese food. You can count on your fingers those that serve Western food.
+
+Fortunately I like Vietnamese food. Unfortunately I don't like it for every meal, and it's in getting these non-Vietnamese meals that you'll find your options limited. Such places do exist, but you may find yourself going to them more often that you'd like.
+
+### Filthy Vegan
+
+This was the first and the last place that I ate at while in Ho Chi Minh. It's a vegan restaurant located on the second floor above a local shop, owned and run by a British guy from Crawley called Kieron. And while it does have some Mexican dishes, and some Italian, the menu is decidedly British, so it's perhaps the last thing you'd expect to find in the heart of Saigon.
+
+It's 100% vegan and on offer is a Sunday roast, a full-English breakfast, fish 'n' chips, bangers 'n' mash, a cheese and onion pasty with chips or mash, a sausage roll with chips, beans and gravy, and a variety of different pies. Non-British offerings include hot dogs, pizzas, pasta, burgers, nachos and burritos. It's the perfect place to come when you need some calories.
+
+Unsurprisingly it's more expensive than eating in a local restaurant. Most items are in the 150,000 to 200,000 VND range, although some go beyond that. It also offers nothing that I would consider healthy, which precludes it from being a place that I would come everyday. I love a bit of junk food now and then though, so I really looked forward to the days I could justify coming here, because it's all really good food. Definitely a place to visit while in Ho Chi Minh.
+
+<ImageGallery images={filthyVeganImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/filthy-vegan-ho-chi-minh-city-174499'>Visit Filthy Vegan on Happy Cow</ExternalLink>
+
+### Tue Tin Chay Quan
+
+Tue Tin Chay Quan became my go-to Vietnamese restaurant in Ho Chi Minh. It's a short walk from Bui Vien walking street, which is the disgustingly touristy (and fun) party street akin to Khao San Road in Bangkok. However, as Tue Tin Chay Quan is down a little alley it doesn't get too much spill-over of tourists and I found more locals dined here than foreigners.
+
+It's run by some middle-aged ladies that speak barely a word of English between them, and spend the whole time shouting at each other in Vietnamese. At first they thought they were angry, but quickly realised that's just how they talk to each other. Don't expect a peaceful lunch. Despite the lack of spoken English, they've had the picture menu translated so it's just a case of pointing at what you want. Almost everything on the menu is vegan, so if you're not sure, just point at something you know is.
+
+To save confusion, all food items on the menu (barring some desserts) are 40,000 VND, and all drink items are 25,000 VND. Each food item is a meal so it's really good value. I would always order two, but I never saw anyone else do that. You shouldn't judge the bottomless pit that is my stomach by usual standards. You can come here and leave full for 40,000 VND.
+
+<ImageGallery images={tueTinChayQuanImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/tue-tin-chay-quan-ho-chi-minh-city-213908'>Visit Tue Tin Chay Quan on Happy Cow</ExternalLink>
+
+### The Joi Factory
+
+From outside it looks quite small, but once you go inside The Joi Factory is freaking huge. It's spread over two floors and has several sofas, so it's the place I came in Ho Chi Minh when I wanted to read my book for an hour or two. Although quite new, it's become incredibly popular incredibly quickly. Unknowingly I came here on a "vegan day" (not it's actual name) in Vietnam, and there was a 45-minute wait for a table.
+
+I didn't wait.
+
+Every other time I came here I got a seat no problem. The majority of the menu is vegan. It's a picture menu that's translated into English and vegan items are clearly marked. All the staff speak near-fluent English as well, so it's a very easy place to quiz the menu if you're unsure. You'll pay a little more than at other restaurants, but to quote The Joi Factory (from one of their comments on Happy Cow), they operate a socially responsible business _"which entails paying people properly, sourcing high quality, fresh ingredients, reducing our plastic waste as much as running an F&B business allows."_ This comes across on their food. For example, this was the only place I found in Ho Chi Minh to get a fruit smoothie that was actually healthy and not loaded with sugar.
+
+It's perhaps not a place to come for a big feed. It's more a coffee shop kind of place, with quite light meals, but it's all really good food. It's a really nice place to come to get away from it all when the craziness of Ho Chi Minh becomes a bit too much.
+
+<ImageGallery images={theJoiFactoryImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/the-joi-factory-ho-chi-minh-city-272491'>Visit The Joi Factory on Happy Cow</ExternalLink>
+
+### Thái Hòa
+
+Thái Hòa, and the next door Phương Hà, are two nearly identical stores that have the greatest selection of western food that I found anywhere in Ho Chi Minh.
+
+I went to Phương Hà right after arriving in Ho Chi Minh, but found it such a harrowing experience that I left, swearing under my breath never to return. It wasn't that it didn't have what I wanted. It was that I was slightly on edge, still being very new to the city and figuring-out what was going on as well as having just had a brutal journey from Phnom Penh, and these shops are incredibly, incredibly claustrophobic. They have the narrowest aisles of any shop I've ever been in, to the point that wearing a small rucksack, as I was, it's a genuine challenge to pass people. Fat people won't be able to shop here.
+
+I had happened to come at a busy time, and despite seeing things I wanted to buy, my inability to actually get to any of these items led to me storming out, promising to never come back.
+
+A couple of weeks passed-by and as I grew tired of Vietnamese food, I reneged on that promise, but I made sure to come back when I was in a calm and good mood, at a time that they were quiet. This time I instead went to Thái Hòa, and was able to last long enough to pick-up some items that I could cook with, some of which I didn't see on sale anywhere else in Ho Chi Minh.
+
+They have all kinds of raw nuts and seeds; something that was a staple of my diet before becoming a nomad, but that I've eaten a lot less of since because they aren't things that many restaurants serve. I also got some wholewheat pasta, some vegan sauces and some chickpeas, so I could make some wholefood dinners for myself.
+
+If you want to do any cooking while you're in Ho Chi Minh, then Thái Hòa is the place to come for the staples you need to cook with (it's not so great for fruit and veg). Just try to come here when you're relaxed, and don't come at a time that it's busy. Seriously.
+
+<ExternalLink url='https://goo.gl/maps/492kkF6MgJbZNDjp7'>View Thái Hòa on Google Maps</ExternalLink>
+
+## Where to run in Ho Chi Minh City
+
+I'll be blunt: This is not a running-friendly city.
+
+When I booked my room, I looked at a map and thought that Tao Dan Park park would be a short enough walk and of sufficient size to go running. And while it was the best of a very uninspiring list of places that I ran at while I was here, I found out the hard way that it's not always open to the public. From when I arrived, the park was closed in preparation for Tet (Vietnamese New Year) celebrations more than a week away, so in the mean time I had to find alternatives.
+
+Places that I heard about as potentially being good for running, were <ExternalLink url='https://goo.gl/maps/aoMJcbvKr9YMoL8S8'>Sala Park Urban area</ExternalLink>, <ExternalLink url='https://goo.gl/maps/PHT1cUtQS3jRN19q6'>Vinhomes Central Park</ExternalLink> and <ExternalLink url='https://goo.gl/maps/DLkdDh2fSxpeyLRM7'>Phu Tho Stadium</ExternalLink>. All were sufficiently far from where I was staying that I didn't try running in them, but are potential alternatives. Instead I tried to find routes closer to home, with dubious results. None were very enjoyable, so I ran as little as I felt I could get away with while in Ho Chi Minh.
+
+### District 4 riverside
+
+I never saw anyone else running down the riverside, but being right across the road from my room and with no roads to cross and no motorbikes on the path, it seemed as good as anywhere else. Unfortunately, with a main road on one side and the very polluted river on the other, it didn't exactly feel like I was running in fresh air. To make it worse there are spots along the route that have clearly been earmarked as designated peeing spots, because I'd be running along and suddenly get hit in the face by this overwhelming stench of urine. Certain areas of the path, particularly under bridges, also house many homeless people, which isn't really a problem. I didn't at any point feel unsafe, just a bit bad that I was going running through the place that they call home.
+
+My starting point was mid-way along the river. I began by going south-west until the path ran out. I then turned around and went north-east until I met the same fate. I then turned around and went south-west again until I was back where I started. That came to just over 5km, so for all its flaws, the one advantage this route has over the others on this list is that you don't have to cross the same ground over and over and over again. And if you're staying where I was staying and convenience is a factor to you, then you can't get a more convenient route than this. It's right outside the building. Still not a run I'd recommend.
+
+### September 23rd Park
+
+This is the little park right across the road from the street that all the buses drop off and collect passengers on, so if you come by bus you'll probably see it as soon as you arrive in Ho Chi Minh. Barriers keep motorcycles out of part of of the park, but if you limit yourself to that part, it's about a 500m loop, so you're going to need ten laps just to make it to a 5k. Even adding on the rest, which only has occasional motorcycles in, it's still uncomfortably small, so be ready to go round and round and round.
+
+I only ran here once, in the morning. At that time it was comfortably busy. There were a couple of other people here running (very slowly), a few people doing exercise of other kinds, and some people just enjoying the park, although I use that term loosely. It doesn't have many trees. I walked through here some evenings and it gets a lot more congested with people playing various other games after sundown, so be wary of coming here at busy times.
+
+It's no coincidence that I only ran here once; it's not a very enjoyable place to run, but in a pinch it's better than nothing.
+
+### Tao Dan Park
+
+This is the best of this very uninspiring list of places I ran in Ho Chi Minh. It is at least a park, with trees and fancy things like that, but it's still very small. To get to 5k I had to do six and a half laps, which meant I was running past the same point about once every three and a half minutes. That kind of repetitiveness will kill your motivation pretty quickly. That being said, there are no motorcycles and you're far enough from the road that you don't have to worry about pollution. That alone is enough to make it the best place I ran in Ho Chi Minh, but I definitely wouldn't be in a rush to run here again.
+
+<ImageGallery images={runningImages} />
+
+## Being sociable in Ho Chi Minh City
+
+My entire social life in Ho Chi Minh revolved around an abandoned pub crawl. Does that sound weird?
+
+What I mean is that there's a group on Meetup called the <ExternalLink url='https://www.meetup.com/saigon-social-group/'>Expats and Tourists Social Group</ExternalLink>. This group has been abandoned by the people that created it, but has automatically recurring events,. I realised this, but about a month before coming to Vietnam decided I'd mark myself as attending one of these pub crawls, and just see if anyone else signed up.
+
+The first time I did that, seven other people signed-up, although only one actually came, but it was a guy who lived in Ho Chi Minh, and we got along really well and were out until well into the early hours of the morning. That worked so well that I thought I'd try it again the next week, and this time four other people came, and again we went on until well into the next morning. This time I stayed in touch with the people I met, which led to more nights out afterwards. I did it again the next week. This time only one other person showed up again, but it was a lot of fun and we were out until maybe 2am.
+
+These were the only organised events for meeting new people that I went to in Ho Chi Minh, and they aren't actually organised anymore, but it just worked. Bui Vien is the one of the worst, funnest places in the world. You feel dirty just for going there, but seeing as you can get a large beer for 20,000 VND in the street bars, you're soon drunk enough that you don't care.
+
+There are definitely other events that you can do in Ho Chi Minh, especially on Meetup. There's not a gluttony of them like you'll find in Bangkok, but if you're desparate to go out then you'll find a yoga class or a board game night or a language exchange or something. You may need to travel to the overpriced, character-sapping digital nomad area of Thao Dien, because that does seem to be where a lot of the expats are. Honestly though, if you can't have a good time on Bui Vien, are you even alive?
+
+<ImageGallery images={socialisingImages} />

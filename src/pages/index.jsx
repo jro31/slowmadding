@@ -1,9 +1,13 @@
 import Image from 'next/image'
 import Head from 'next/head'
+import Link from 'next/link'
 import clsx from 'clsx'
 
 import ActivityList from '@/components/ActivityList'
 import { Container } from '@/components/Container'
+
+import { platforms } from '@/components/CircledIcon'
+
 import yogaInTheParkImage from '@/images/homepage-photos/yoga-in-the-park.jpeg'
 import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-night.jpeg'
 import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
@@ -11,7 +15,8 @@ import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norod
 import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
-import collateActivity from '@/lib/collateActivity'
+import { getAllArticles } from '@/lib/getAllArticles'
+import CircledIcon from '@/components/CircledIcon'
 
 const title = 'Software engineer, digital nomad, insipid writer.'
 const description =
@@ -82,6 +87,16 @@ const Home = ({ activities }) => {
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {description}
           </p>
+          <div className="mt-6 flex gap-4">
+            {Object.keys(platforms).map((platform) => (
+              <CircledIcon
+                key={`${platforms[platform]} logo`}
+                as={Link}
+                platform={platforms[platform]}
+                size="small"
+              />
+            ))}
+          </div>
         </div>
       </Container>
       <Photos />
@@ -99,11 +114,13 @@ export const getStaticProps = async () => {
     await generateRssFeed()
   }
 
-  const collatedActivity = await collateActivity()
+  const articles = (await getAllArticles()).map(
+    ({ component, ...meta }) => meta
+  )
 
   return {
     props: {
-      activities: collatedActivity.slice(0, 5),
+      activities: articles.slice(0, 4),
     },
   }
 }

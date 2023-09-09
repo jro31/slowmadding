@@ -1,6 +1,6 @@
-const ExternalLink = ({ url, children }) => {
+const ExternalLink = ({ url, children, className }) => {
   return (
-    <a href={url} target="_blank" rel="noreferrer">
+    <a href={url} target="_blank" rel="noreferrer" className={className}>
       {children}
     </a>
   )
