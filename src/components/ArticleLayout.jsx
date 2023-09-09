@@ -31,9 +31,13 @@ const ArticleLayout = ({
   const articleHeadings = useArticleHeadings()
 
   const contentString = renderToString(children)
+  console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌')
   console.log(contentString)
+  console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌')
 
-  articleHeadings(contentString)
+  console.log('😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨')
+  console.log(articleHeadings(contentString))
+  console.log('😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨')
 
   // It is possible to isolate article headings, as done above
   // It should therefore be possible to automatically add a menu that links to each heading at the top of each article

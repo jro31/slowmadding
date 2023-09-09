@@ -2,6 +2,7 @@
 // Do this by looking for search terms in various parts of the article, starting with the heading and prioritising exact phrase matches, followed by word matches
 // Probably add a 'keywords' section to the articles, that contains important words not in the article heading
 // (for example, 'Saigon' in any article about HCMC)
+// Also consider funny characters, like 'Neéko Vegan Junk Food' should return for 'Neeko'
 
 import Head from 'next/head'
 
@@ -44,6 +45,7 @@ export async function getStaticProps() {
 
   console.log('🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃')
   console.log(renderToString(articles[0].component().props.children))
+  console.log('🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃')
 
   return {
     props: {

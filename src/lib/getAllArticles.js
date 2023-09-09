@@ -9,6 +9,7 @@ const importArticle = async (articleFilename, pathOnly = false) => {
 
   if (pathOnly) return url
 
+  // TODO: Headings should be passed into the article here
   return {
     url: url,
     ...meta,
