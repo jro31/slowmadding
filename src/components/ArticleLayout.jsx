@@ -1,9 +1,13 @@
 import Head from 'next/head'
 import { useRouter } from 'next/router'
 
+import { renderToString } from 'react-dom/server'
+
 import { Container } from '@/components/Container'
 import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
+
+import useArticleHeadings from '@/hooks/use-article-headings'
 
 const ArrowLeftIcon = (props) => {
   return (
@@ -24,6 +28,10 @@ const ArticleLayout = ({
   isRssFeed = false,
   previousPathname,
 }) => {
+  // To get article headings from an article:
+  // const articleHeadings = useArticleHeadings()
+  // console.log(articleHeadings(renderToString(children)))
+
   let router = useRouter()
 
   if (isRssFeed) {
