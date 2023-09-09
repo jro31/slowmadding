@@ -1,5 +1,3 @@
-import arrayOfNumbers from 'array-of-numbers'
-
 const useArticleHeadings = () => {
   const articleHeadings = (articleString, chronological = false) => {
     let returnVariable

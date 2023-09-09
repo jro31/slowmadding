@@ -18,8 +18,6 @@ const description =
   'My thoughts on the best places in the world to sit in a dark room on your computer.'
 
 export default function ArticlesIndex({ articles }) {
-  console.log(articles)
-
   // Although it does seem possible to pass all articles in through props here, I don't think that would be a good idea
   // They would then be present in the page source, and would load a lot of unnecessary data
   // I think better, would be to have a search input that appears only when an icon is clicked
@@ -41,11 +39,9 @@ export default function ArticlesIndex({ articles }) {
 }
 
 export async function getStaticProps() {
-  const articles = await getAllArticles()
-
-  console.log('🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃')
-  console.log(renderToString(articles[0].component().props.children))
-  console.log('🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃🎃')
+  // To get the content of an article:
+  // const articles = await getAllArticles()
+  // console.log(renderToString(articles[0].component().props.children))
 
   return {
     props: {

@@ -28,20 +28,9 @@ const ArticleLayout = ({
   isRssFeed = false,
   previousPathname,
 }) => {
-  const articleHeadings = useArticleHeadings()
-
-  const contentString = renderToString(children)
-  console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌')
-  console.log(contentString)
-  console.log('❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌❌')
-
-  console.log('😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨')
-  console.log(articleHeadings(contentString))
-  console.log('😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨😮‍💨')
-
-  // It is possible to isolate article headings, as done above
-  // It should therefore be possible to automatically add a menu that links to each heading at the top of each article
-  // Probably in a separate hook, which uses useArticleHeadings
+  // To get article headings from an article:
+  // const articleHeadings = useArticleHeadings()
+  // console.log(articleHeadings(renderToString(children)))
 
   let router = useRouter()
 
