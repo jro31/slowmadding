@@ -4,14 +4,22 @@ import AccommodationTable from '@/components/AccommodationTable'
 // import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import neosKosmosApartmentLivingRoomImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/living-room.jpeg'
+import neosKosmosApartmentBedImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/bed.jpeg'
+import neosKosmosApartmentKitchenImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/kitchen.jpeg'
+import neosKosmosApartmentBathroomImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/bathroom.jpeg'
+import neosKosmosApartmentViewImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/view.jpeg'
+import neosKosmosApartmentOutsideImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/outside.jpeg'
+import neosKosmosApartmentWifiSpeedImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/wifi-speed.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-08-17T13:05:00+03:00', // TODO: Update this
+  date: '2023-10-26T13:05:00+03:00', // TODO: Update this
   title: 'Athens for Digital Nomads',
   description: '', // TODO: Update this
 }
 
-export const apartmentDetails = {
+export const neosKosmosApartmentDetails = {
   dates: {
     checkIn: '2023-08-10',
     checkOut: '2023-09-21',
@@ -23,7 +31,7 @@ export const apartmentDetails = {
   roomType: 'Entire condo hosted by Chris',
   price: {
     currencyPrefix: '£',
-    currencySuffix: null,
+    currencySuffix: 'GBP',
     sections: {
       Room: 1943.34,
       '25% monthly price discount': -485.94,
@@ -33,7 +41,49 @@ export const apartmentDetails = {
   },
 }
 
+export const neosKosmoApartmentImages = [
+  {
+    src: neosKosmosApartmentLivingRoomImage,
+    alt: 'Neos Kosmos apartment living room',
+    caption: "The living room is pretty big, with a lot of floor space to exercise. The one downside is the TV is annoyingly small for such a big room. You could have a 55-incher in here and it wouldn't feel out of place. The door leads onto the large but largely useless balcony.",
+  },
+  {
+    src: neosKosmosApartmentBedImage,
+    alt: 'Neos Kosmos apartment bed',
+    caption: 'Interesting to absolutely no one except me, that is the exact same Ikea bed that I had in my flat in London before I became a digital nomad. Out of shot is plenty of cupboard space, an air-conditioner and a radiator, a couple of useful shelves for keeping things on, and another door onto the balcony.',
+  },
+  {
+    src: neosKosmosApartmentKitchenImage,
+    alt: 'Neos Kosmos apartment kitchen',
+    caption: "The kitchen is equipped with everything you expect in an Airbnb. An oven, microwave, four hobs, loads of pots, pans, cuttlery, crockery and cooking utensils, a large fridge-freezer, and even a washing machine. The surface and chairs on the bottom-right of the picture are great for cooking, eating and working, especially with a couple of easy-access plugs. The one downside is that the nearest air-conditioner is in the bedroom, which doesn't really reach into the kitchen, so on hot days it's not the best place to work.",
+  },
+  {
+    src: neosKosmosApartmentBathroomImage,
+    alt: 'Neos Kosmos apartment bathroom',
+    caption: 'Compared to the rest of the apartment, the bathroom is very basic, but it has everything you need.',
+  },
+  {
+    src: neosKosmosApartmentViewImage,
+    alt: 'Neos Kosmos apartment view',
+    caption: "I didn't find much use for the balcony other than to sit on until I stopped sweating after a run, and to take occasional photos, but I did get some nice photos.",
+  },
+  {
+    src: neosKosmosApartmentOutsideImage,
+    alt: 'Neos Kosmos apartment from outside',
+    caption: "The apartment is in a very nice, local area. It's on the fourth floor, at the back of the building.",
+  },
+  {
+    src: neosKosmosApartmentWifiSpeedImage,
+    alt: 'Neos Kosmos apartment wifi speed',
+    caption: "The wifi speeds leave a lot to be desired. Although I found these speeds were actually fast enough to work and to make video calls I still found them distinctly unimpressive, especially compared to other Airbnbs I've stayed in.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
+
+If you want someone to like you, you shouldn't set the bar too high at the beginning. In my experience of people, it's the ones that I immediately like that usually end up being a bit of a dick, where as the ones I don't take to, I become friends with over the long-term.
+
+That's the strategy adopted by Athens. For my first couple of days I really regretted coming here, after which I fell in love with it and stayed far longer than I originally planned.
 
 TODO
 
@@ -43,9 +93,11 @@ TODO
 
 <AccommodationAddress name='Eggeli 68' url='https://goo.gl/maps/nCAzLD6TbGTsS9v88' />
 
-<AccommodationTable details={apartmentDetails} />
+<AccommodationTable details={neosKosmosApartmentDetails} />
 
 TODO
+
+<ImageGallery images={neosKosmoApartmentImages} />
 
 ## Where to get vegan food in Athens
 
