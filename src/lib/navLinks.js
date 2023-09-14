@@ -15,6 +15,10 @@ const navLinks = [
     path: '/timeline',
     text: 'Timeline',
   },
+  {
+    path: '/digital-nomad-101',
+    text: 'DN 101',
+  },
 ]
 
 export default navLinks
