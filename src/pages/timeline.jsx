@@ -98,9 +98,8 @@ const Timeline = ({ timelines }) => {
         title="Timeline"
         intro={timelines[currentTimeline].introText}
       >
-        {/* FIXME: This styling isn't ideal as the menu is no longer perfectly centred */}
-        <div className="mb-3 flex">
-          <div className="relative flex flex-1 justify-center md:hidden">
+        <div className="relative mb-3 flex">
+          <div className="flex flex-1 justify-center md:hidden">
             <OverlayMenu title={currentTimeline}>
               {Object.keys(timelines).map((timelineName) => (
                 <li key={`${timelineName}-timeline-mobile-link`}>
@@ -138,7 +137,7 @@ const Timeline = ({ timelines }) => {
               ))}
             </ul>
           </div>
-          <div className="group flex flex-initial items-center rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+          <div className="group absolute right-0 flex flex-initial items-center rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
             {compactMode ? (
               <ArrowsPointingOutIcon
                 onClick={handleModeToggle}
