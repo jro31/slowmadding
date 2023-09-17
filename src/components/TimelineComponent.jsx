@@ -91,10 +91,13 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
                           ? { minHeight: '106px' }
                           : {
                               minHeight: `${Math.min(
-                                numberOfNights(
-                                  stay[arrival],
-                                  parsedDepartureDate
-                                ) * 15,
+                                Math.max(
+                                  numberOfNights(
+                                    stay[arrival],
+                                    parsedDepartureDate
+                                  ) * 15,
+                                  106
+                                ),
                                 1050
                               )}px`,
                             }
