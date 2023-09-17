@@ -10,7 +10,7 @@ import { formatDateRange, beginningOfToday } from '@/lib/formatDate'
 
 let stayOrderFirst = true
 
-const TimelineComponent = ({ timelineData }) => {
+const TimelineComponent = ({ timelineData, compactMode }) => {
   const numberOfNights = useNumberOfNights()
 
   const lineClasses = (countryIterator, stayIterator, stays) => {
@@ -82,13 +82,20 @@ const TimelineComponent = ({ timelineData }) => {
                         )}`}
                       />
                     </div>
+                    {/* TODO: Add some kind of animation - looks a bit shit when the shift is instant */}
                     <div
-                      style={{
-                        height: `${
-                          numberOfNights(stay[arrival], parsedDepartureDate) *
-                          15
-                        }px`,
-                      }}
+                      style={
+                        compactMode
+                          ? {}
+                          : {
+                              height: `${
+                                numberOfNights(
+                                  stay[arrival],
+                                  parsedDepartureDate
+                                ) * 15
+                              }px`,
+                            }
+                      }
                       className={`relative flex max-h-[1050px] min-h-[106px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 lg:py-1.5${
                         stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
                       }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
