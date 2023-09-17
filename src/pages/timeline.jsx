@@ -20,6 +20,8 @@
 import { useState } from 'react'
 import Head from 'next/head'
 import {
+  ArrowDownIcon,
+  ArrowUpIcon,
   ArrowsPointingInIcon,
   ArrowsPointingOutIcon,
 } from '@heroicons/react/24/outline'
@@ -77,13 +79,17 @@ const introText = {
 }
 
 const toggleButtonClassnames =
-  'h-6 w-6 cursor-pointer stroke-zinc-800 group-hover:stroke-teal-500 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400'
+  'h-6 w-6 cursor-pointer stroke-zinc-800 hover:stroke-teal-500 dark:stroke-zinc-500 dark:hover:stroke-zinc-400'
 
 const Timeline = ({ timelines }) => {
   const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
+  const [ascending, setAscending] = useState(false)
   const [compactMode, setCompactMode] = useState(false)
 
-  const handleModeToggle = () => setCompactMode((prevState) => !prevState)
+  const handleAscendingToggle = () =>
+    setAscending((prevAscending) => !prevAscending)
+  const handleModeToggle = () =>
+    setCompactMode((prevCompactMode) => !prevCompactMode)
 
   return (
     <>
@@ -138,14 +144,26 @@ const Timeline = ({ timelines }) => {
               ))}
             </ul>
           </div>
-          <div className="group flex flex-initial items-center rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+          <div className="flex flex-initial items-center gap-4 rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+            {ascending ? (
+              <ArrowUpIcon
+                onClick={handleAscendingToggle}
+                className={toggleButtonClassnames}
+              />
+            ) : (
+              <ArrowDownIcon
+                onClick={handleAscendingToggle}
+                className={toggleButtonClassnames}
+              />
+            )}
+
             {compactMode ? (
-              <ArrowsPointingOutIcon
+              <ArrowsPointingInIcon
                 onClick={handleModeToggle}
                 className={toggleButtonClassnames}
               />
             ) : (
-              <ArrowsPointingInIcon
+              <ArrowsPointingOutIcon
                 onClick={handleModeToggle}
                 className={toggleButtonClassnames}
               />
