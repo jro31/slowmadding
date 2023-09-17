@@ -66,7 +66,7 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
                 return (
                   <div
                     key={`country-${countryIterator}-place-${stayIterator}-section`}
-                    className="lg:flex"
+                    className="flex"
                   >
                     <div
                       className={`relative hidden shrink grow lg:block basis-1/2${
@@ -88,17 +88,18 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
                     <div
                       style={
                         compactMode
-                          ? { height: '106px' }
+                          ? { minHeight: '106px' }
                           : {
-                              height: `${
+                              minHeight: `${Math.min(
                                 numberOfNights(
                                   stay[arrival],
                                   parsedDepartureDate
-                                ) * 15
-                              }px`,
+                                ) * 15,
+                                1050
+                              )}px`,
                             }
                       }
-                      className={`relative flex max-h-[1050px] min-h-[106px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 transition-[height] duration-700 lg:py-1.5${
+                      className={`relative flex max-h-[1050px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 transition-[min-height] duration-700 lg:py-1.5${
                         stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
                       }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
                         stayIterator === countryVisit.stays.length - 1
