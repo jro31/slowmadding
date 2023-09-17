@@ -18,9 +18,9 @@ import { generateRssFeed } from '@/lib/generateRssFeed'
 import { getAllArticles } from '@/lib/getAllArticles'
 import CircledIcon from '@/components/CircledIcon'
 
-const title = 'Software engineer, digital nomad, insipid writer.'
+const title = 'Slowmadding - Your guide to being a digital nomad'
 const description =
-  "I'm Jethro, a nomadic software engineer. I spend my life moving around to some of the most amazing places in the world, then sit in my room coding all day. These are my stories."
+  'I spend my life moving around to some of the most amazing places in the world, then sit in my room coding all day. These are my stories.'
 
 const images = [
   {
@@ -76,8 +76,8 @@ const Home = ({ activities }) => {
   return (
     <>
       <Head>
-        <title>slowmadding.com</title>
-        <meta name="description" content={`${title} ${description}`} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
       </Head>
       <Container className="mt-9">
         <div className="max-w-2xl">
