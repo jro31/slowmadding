@@ -95,26 +95,25 @@ const Timeline = ({ timelines }) => {
         title="Timeline"
         intro={timelines[currentTimeline].introText}
       >
-        {/* TODO: Add compact mode toggle for mobile */}
-        <div className="relative mb-3 flex flex-1 justify-center md:hidden">
-          <OverlayMenu title={currentTimeline}>
-            {Object.keys(timelines).map((timelineName) => (
-              <li key={`${timelineName}-timeline-mobile-link`}>
-                <Popover.Button
-                  className="block py-2"
-                  onClick={(e) => setCurrentTimeline(e.target.textContent)}
-                >
-                  {timelineName}
-                </Popover.Button>
-              </li>
-            ))}
-          </OverlayMenu>
-        </div>
-
         {/* FIXME: This styling isn't ideal as the menu is no longer perfectly centred */}
-        <div className="mb-3 hidden md:flex">
+        <div className="mb-3 flex">
+          <div className="relative flex flex-1 justify-center md:hidden">
+            <OverlayMenu title={currentTimeline}>
+              {Object.keys(timelines).map((timelineName) => (
+                <li key={`${timelineName}-timeline-mobile-link`}>
+                  <Popover.Button
+                    className="block py-2"
+                    onClick={(e) => setCurrentTimeline(e.target.textContent)}
+                  >
+                    {timelineName}
+                  </Popover.Button>
+                </li>
+              ))}
+            </OverlayMenu>
+          </div>
+
           {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
-          <div className="flex flex-1 justify-center">
+          <div className="hidden flex-1 justify-center md:flex">
             <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
               {Object.keys(timelines).map((timelineName) => (
                 <li key={`${timelineName}-timeline-desktop-link`}>
