@@ -76,6 +76,9 @@ const introText = {
     'My first time travelling was on the summer break after my first year of university, starting with a couple of months working in Vancouver before going by boat up to Alaska, then by bus from Anchorage to New York.',
 }
 
+const toggleButtonClassnames =
+  'h-6 w-6 cursor-pointer stroke-zinc-800 group-hover:stroke-teal-500 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400'
+
 const Timeline = ({ timelines }) => {
   const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
   const [compactMode, setCompactMode] = useState(false)
@@ -135,16 +138,16 @@ const Timeline = ({ timelines }) => {
               ))}
             </ul>
           </div>
-          <div className="flex flex-initial items-center">
+          <div className="group flex flex-initial items-center rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
             {compactMode ? (
               <ArrowsPointingOutIcon
                 onClick={handleModeToggle}
-                className="h-6 w-6 cursor-pointer"
+                className={toggleButtonClassnames}
               />
             ) : (
               <ArrowsPointingInIcon
                 onClick={handleModeToggle}
-                className="h-6 w-6 cursor-pointer"
+                className={toggleButtonClassnames}
               />
             )}
           </div>

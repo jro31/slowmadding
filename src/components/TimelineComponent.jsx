@@ -85,7 +85,6 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
                         )}`}
                       />
                     </div>
-                    {/* TODO: Add some kind of animation - looks a bit shit when the shift is instant */}
                     <div
                       style={
                         compactMode
