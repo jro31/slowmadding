@@ -102,7 +102,7 @@ const Timeline = ({ timelines }) => {
         intro={timelines[currentTimeline].introText}
       >
         <div className="relative mb-3 flex">
-          <div className="flex flex-1 justify-center md:hidden">
+          <div className="flex flex-1 justify-center lg:hidden">
             <OverlayMenu title={currentTimeline}>
               {Object.keys(timelines).map((timelineName) => (
                 <li key={`${timelineName}-timeline-mobile-link`}>
@@ -118,7 +118,7 @@ const Timeline = ({ timelines }) => {
           </div>
 
           {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
-          <div className="hidden flex-1 justify-center md:flex">
+          <div className="hidden flex-1 justify-center lg:flex">
             <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
               {Object.keys(timelines).map((timelineName) => (
                 <li key={`${timelineName}-timeline-desktop-link`}>
