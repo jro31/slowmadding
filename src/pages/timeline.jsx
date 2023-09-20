@@ -11,15 +11,14 @@
 // - Hide these in 'Compact' mode?
 // TODO: Add the accommodation type somehow - feasibly using a logo in the bullet, such as a camping logo or an Airbnb logo
 // TODO: There should be more empty space between stays (and countries) if there's a blank day or two between them
-// TODO: You should be able to flip the direction of the timeline, so you can view it descending or ascending
-// TODO: There should be a 'Compact' mode (as opposed to 'Detailed' mode), where all stays are the same length
-// - This should perhaps be the default on mobile
 // TODO: You should be able to filter the timeline by a particular country/stay, for example if I just want to see my stays in Bangkok or in China, I can select these from a dropdown
 // - This should be pan-timeline, so if I select 'Bangkok', it shows me my stays in Bangkok from ALL timelines, perhaps under new 'timeline' headings, such as 'Digital nomad' or 'Backpacking trip'
 
 import { useState } from 'react'
 import Head from 'next/head'
 import {
+  ArrowDownIcon,
+  ArrowUpIcon,
   ArrowsPointingInIcon,
   ArrowsPointingOutIcon,
 } from '@heroicons/react/24/outline'
@@ -77,13 +76,17 @@ const introText = {
 }
 
 const toggleButtonClassnames =
-  'h-6 w-6 cursor-pointer stroke-zinc-800 group-hover:stroke-teal-500 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400'
+  'h-6 w-6 cursor-pointer stroke-zinc-800 hover:stroke-teal-500 dark:stroke-zinc-500 dark:hover:stroke-zinc-400'
 
 const Timeline = ({ timelines }) => {
   const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
+  const [ascending, setAscending] = useState(false)
   const [compactMode, setCompactMode] = useState(false)
 
-  const handleModeToggle = () => setCompactMode((prevState) => !prevState)
+  const handleAscendingToggle = () =>
+    setAscending((prevAscending) => !prevAscending)
+  const handleModeToggle = () =>
+    setCompactMode((prevCompactMode) => !prevCompactMode)
 
   return (
     <>
@@ -137,14 +140,25 @@ const Timeline = ({ timelines }) => {
               ))}
             </ul>
           </div>
-          <div className="group absolute right-0 flex flex-initial items-center rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+          <div className="absolute right-0 flex flex-initial items-center gap-4 rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
+            {ascending ? (
+              <ArrowDownIcon
+                onClick={handleAscendingToggle}
+                className={toggleButtonClassnames}
+              />
+            ) : (
+              <ArrowUpIcon
+                onClick={handleAscendingToggle}
+                className={toggleButtonClassnames}
+              />
+            )}
             {compactMode ? (
-              <ArrowsPointingOutIcon
+              <ArrowsPointingInIcon
                 onClick={handleModeToggle}
                 className={toggleButtonClassnames}
               />
             ) : (
-              <ArrowsPointingInIcon
+              <ArrowsPointingOutIcon
                 onClick={handleModeToggle}
                 className={toggleButtonClassnames}
               />
@@ -154,6 +168,7 @@ const Timeline = ({ timelines }) => {
 
         <TimelineComponent
           timelineData={timelines[currentTimeline].timelineData}
+          ascending={ascending}
           compactMode={compactMode}
         />
       </SimpleLayout>

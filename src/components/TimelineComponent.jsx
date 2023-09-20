@@ -10,7 +10,7 @@ import { formatDateRange, beginningOfToday } from '@/lib/formatDate'
 
 let stayOrderFirst = true
 
-const TimelineComponent = ({ timelineData, compactMode }) => {
+const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
   const numberOfNights = useNumberOfNights()
 
   const lineClasses = (countryIterator, stayIterator, stays) => {
@@ -26,6 +26,8 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
     }
   }
 
+  const orderedArray = (array) => (ascending ? [...array].reverse() : array)
+
   timelineData = timelineData.filter((countryVisit) =>
     countryVisit.stays.some(
       (stay) => Date.parse(stay[arrival]) < beginningOfToday
@@ -38,7 +40,7 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
         <div className="hidden shrink grow basis-1/2 border-r-2 border-inherit lg:block"></div>
         <div className="hidden shrink grow basis-1/2 border-l-2 border-inherit lg:block"></div>
       </div>
-      {timelineData.map((countryVisit, countryIterator) => {
+      {orderedArray(timelineData).map((countryVisit, countryIterator) => {
         return (
           <div
             key={`country-${countryIterator}-section`}
@@ -51,7 +53,7 @@ const TimelineComponent = ({ timelineData, compactMode }) => {
             >
               {countryVisit[country]}
             </h1>
-            {countryVisit.stays.map((stay, stayIterator) => {
+            {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
               if (Date.parse(stay[arrival]) < beginningOfToday) {
                 stayOrderFirst =
                   countryIterator === 0 && stayIterator === 0
