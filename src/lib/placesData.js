@@ -29,6 +29,48 @@ export const criteriaHeadings = {
 // TODO: Sections to consider adding - Friendly people
 export const placesData = [
   {
+    [place]: places[countries.greece].athens,
+    [country]: countries.greece,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: false,
+        [description]:
+          "While cheap compared to the likes of London or New York, there's a noticeable hike in prices compared to similar cities in neighbouring countries. I paid €46/night for the cheaper of my rooms here, a beer in a bar is around €5, expect to pay around €8-10 for a meal in a restaurant (without a drink).",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          "It's not the fastest, but it's fast enough and very reliable.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'There are a small number of parks suitable for running (not as many as in other European cities), and the streets are quiet enough to run along comfortably.',
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          'There are several vegan restaurants dotted around the city, and many more that are vegan friendly. A small amount of intentionally vegan produce is available in the supermarkets.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "I walked around late at night a lot and never saw or thought I was going to have an issue. Other people told me they didn't feel it was a safe city, but I never experienced it myself.",
+      },
+      [social]: {
+        [verdict]: true,
+        [description]:
+          "There are several very active social groups in Athens. You'll find something happening on most days.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "Nowhere in Athens in flat, and the pavement surfaces are pretty uneven. Still, it's a very pleasant city to walk on foot, without too much traffic.",
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].bangkok,
     [country]: countries.thailand,
     [criteria]: {
