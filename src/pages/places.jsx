@@ -18,6 +18,7 @@ import {
   placesData,
   verdict,
 } from '@/lib/placesData'
+import BackToTopLink from '@/components/BackToTopLink'
 
 const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
@@ -226,6 +227,7 @@ const Places = () => {
       >
         <PlacesTable />
         <PlacesDetails />
+        <BackToTopLink />
       </SimpleLayout>
     </>
   )
