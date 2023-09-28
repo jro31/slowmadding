@@ -58,6 +58,7 @@ const PlacesTable = () => {
         />
       </div>
       {/* Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether. */}
+      {/* Consider replacing h-[75vh] with an absolute height - this is jerky on mobile browsers when the menu hides and the viewport changes height */}
       <div
         ref={placesTableRef}
         className="no-scrollbar relative h-[75vh] max-h-[54rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"

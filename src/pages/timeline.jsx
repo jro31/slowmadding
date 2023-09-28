@@ -31,6 +31,7 @@ import { parsedTimelineData } from '@/lib/timelineData'
 import clsx from 'clsx'
 import OverlayMenu from '@/components/OverlayMenu'
 import { Popover } from '@headlessui/react'
+import BackToTopLink from '@/components/BackToTopLink'
 
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
@@ -171,6 +172,8 @@ const Timeline = ({ timelines }) => {
           ascending={ascending}
           compactMode={compactMode}
         />
+
+        <BackToTopLink />
       </SimpleLayout>
     </>
   )
