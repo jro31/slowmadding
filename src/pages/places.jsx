@@ -18,6 +18,7 @@ import {
   placesData,
   verdict,
 } from '@/lib/placesData'
+import BackToTopLink from '@/components/BackToTopLink'
 
 const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
@@ -58,6 +59,7 @@ const PlacesTable = () => {
         />
       </div>
       {/* Max-height should be expanded as content is added to the table, until the content is sufficient to fill 75vh on all screen sizes, at which point it can be removed altogether. */}
+      {/* Consider replacing h-[75vh] with an absolute height - this is jerky on mobile browsers when the menu hides and the viewport changes height - The downside is the table shouldn't be bigger than the viewport, as it makes scrolling difficult */}
       <div
         ref={placesTableRef}
         className="no-scrollbar relative h-[75vh] max-h-[54rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
@@ -225,6 +227,7 @@ const Places = () => {
       >
         <PlacesTable />
         <PlacesDetails />
+        <BackToTopLink />
       </SimpleLayout>
     </>
   )

@@ -8,6 +8,7 @@ import { formatDate } from '@/lib/formatDate'
 import { Prose } from '@/components/Prose'
 
 import useArticleHeadings from '@/hooks/use-article-headings'
+import BackToTopLink from './BackToTopLink'
 
 const ArrowLeftIcon = (props) => {
   return (
@@ -82,6 +83,7 @@ const ArticleLayout = ({
             </article>
           </div>
         </div>
+        <BackToTopLink />
       </Container>
     </>
   )

@@ -11,6 +11,7 @@ import { renderToString } from 'react-dom/server'
 import SimpleLayout from '@/components/SimpleLayout'
 import { getAllArticles } from '@/lib/getAllArticles'
 import ActivityList from '@/components/ActivityList'
+import BackToTopLink from '@/components/BackToTopLink'
 
 const title =
   "The good, the bad and the ugly of what I've learned being a digital nomad."
@@ -33,6 +34,7 @@ export default function ArticlesIndex({ articles }) {
       </Head>
       <SimpleLayout title={title}>
         <ActivityList activities={articles} />
+        <BackToTopLink />
       </SimpleLayout>
     </>
   )
