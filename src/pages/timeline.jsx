@@ -33,6 +33,8 @@ import OverlayMenu from '@/components/OverlayMenu'
 import { Popover } from '@headlessui/react'
 import BackToTopLink from '@/components/BackToTopLink'
 
+const title = 'Timeline'
+
 const digitalNomad = 'Digital nomad'
 const backpackingTrip = 'Backpacking trip'
 const mexico08 = "Mexico '08"
@@ -92,16 +94,13 @@ const Timeline = ({ timelines }) => {
   return (
     <>
       <Head>
-        <title>Timeline</title>
+        <title>{title}</title>
         <meta
           name="description"
-          content={timelines[currentTimeline].introText}
+          content="A timeline of my digital nomad and backpacking trips."
         />
       </Head>
-      <SimpleLayout
-        title="Timeline"
-        intro={timelines[currentTimeline].introText}
-      >
+      <SimpleLayout title={title} intro={timelines[currentTimeline].introText}>
         <div className="relative mb-3 flex">
           <div className="flex flex-1 justify-center lg:hidden">
             <OverlayMenu title={currentTimeline}>

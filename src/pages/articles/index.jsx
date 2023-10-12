@@ -13,10 +13,8 @@ import { getAllArticles } from '@/lib/getAllArticles'
 import ActivityList from '@/components/ActivityList'
 import BackToTopLink from '@/components/BackToTopLink'
 
-const title =
-  "The good, the bad and the ugly of what I've learned being a digital nomad."
-const description =
-  'My thoughts on the best places in the world to sit in a dark room on your computer.'
+const title = 'Articles'
+const description = 'How and where to be a digital nomad'
 
 export default function ArticlesIndex({ articles }) {
   // Although it does seem possible to pass all articles in through props here, I don't think that would be a good idea
@@ -29,8 +27,8 @@ export default function ArticlesIndex({ articles }) {
   return (
     <>
       <Head>
-        <title>Articles</title>
-        <meta name="description" content={`${title} ${description}`} />
+        <title>{title}</title>
+        <meta name="description" content={description} />
       </Head>
       <SimpleLayout title={title}>
         <ActivityList activities={articles} />

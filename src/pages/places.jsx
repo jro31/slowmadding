@@ -20,6 +20,9 @@ import {
 } from '@/lib/placesData'
 import BackToTopLink from '@/components/BackToTopLink'
 
+const title = 'Places'
+const pageDescription = 'A summary of digital nomad destinations.'
+
 const gridColsClass = `grid-cols-[minmax(159px,1fr)_repeat(${
   Object.keys(criteriaHeadings).length
 },minmax(150px,2fr))]` // grid-cols-[minmax(159px,1fr)_repeat(7,minmax(150px,2fr))]
@@ -215,16 +218,10 @@ const Places = () => {
   return (
     <>
       <Head>
-        <title>Places</title>
-        <meta
-          name="description"
-          content="A summary of digital nomad destinations."
-        />
+        <title>{title}</title>
+        <meta name="description" content={pageDescription} />
       </Head>
-      <SimpleLayout
-        title="Where I've been as a digital nomad and what I thought of it"
-        intro="A massive oversimplification of each place as a digital nomad destination."
-      >
+      <SimpleLayout title={title}>
         <PlacesTable />
         <PlacesDetails />
         <BackToTopLink />
