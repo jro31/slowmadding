@@ -1,7 +1,7 @@
 import ArticleLayout from '@/components/ArticleLayout'
 import AccommodationAddress from '@/components/AccommodationAddress'
 import AccommodationTable from '@/components/AccommodationTable'
-// import ExternalLink from '@/components/ExternalLink'
+import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
 import neosKosmosApartmentLivingRoomImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/living-room.jpeg'
@@ -11,6 +11,13 @@ import neosKosmosApartmentBathroomImage from '#/athens-for-digital-nomads/neos-k
 import neosKosmosApartmentViewImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/view.jpeg'
 import neosKosmosApartmentOutsideImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/outside.jpeg'
 import neosKosmosApartmentWifiSpeedImage from '#/athens-for-digital-nomads/neos-kosmos-apartment/wifi-speed.jpeg'
+
+import peasZenPalettaImage from '#/athens-for-digital-nomads/peas/zen-palette.jpeg'
+import peasTuttiFruityJackfruitBurgerImage from '#/athens-for-digital-nomads/peas/tutti-fruity-jackfruit-burger.jpeg'
+import peasSeitanClubImage from '#/athens-for-digital-nomads/peas/seitan-club.jpeg'
+import peasEpicSteakImage from '#/athens-for-digital-nomads/peas/epic-steak.jpeg'
+import peasAcaiEnergySmoothieImage from '#/athens-for-digital-nomads/peas/acai-energy-smoothie.jpeg'
+import peasQuinoaLoverBurgerImage from '#/athens-for-digital-nomads/peas/quinoa-lover-burger.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -101,6 +108,39 @@ export const neosKosmoApartmentImages = [
   },
 ]
 
+export const peasImages = [
+  {
+    src: peasZenPalettaImage,
+    alt: 'Peas',
+    caption: "This is called the zen palette. I don't know why, but I don't care when it's this good. It's tempeh, tofu and seitan with salad and pita bread. Sounds like a great post-workout meal. It costs €11.50.",
+  },
+  {
+    src: peasTuttiFruityJackfruitBurgerImage,
+    alt: 'Peas',
+    caption: "The tutti fruity burger is a jackfruit burger. I'm not sure about that name either. The burger is €7.50, with the fries for another €2.",
+  },
+  {
+    src: peasSeitanClubImage,
+    alt: 'Peas',
+    caption: "The seitan club sandwich is truly a work of art. So good, you can't have just one. Or I can't have just one. It costs €9.50 and includes fries.",
+  },
+  {
+    src: peasEpicSteakImage,
+    alt: 'Peas',
+    caption: 'The epic steak is four steaks made from seitan and they were absolutely delightful. This plate will cost you €11.50.',
+  },
+  {
+    src: peasAcaiEnergySmoothieImage,
+    alt: 'Peas',
+    caption: 'They also have some smoothies and juices on the menu. The açai energy smoothie is açai, guarana, banana and almond milk for €5.90.',
+  },
+  {
+    src: peasQuinoaLoverBurgerImage,
+    alt: 'Peas',
+    caption: 'My first meal in Athens, I always love a good burger. This is the quinoa lover burger for €7.50, with an added slice of vegan cheese for €1, and fries for €2.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 If you want someone to like you, you shouldn't set the bar too high at the beginning. In my experience of people, it's the ones that I immediately like that usually end up being a bit of a dick, where as the ones I don't take to, I become friends with over the long-term.
@@ -188,6 +228,26 @@ TODO
 TODO: Add images
 
 ## Where to get vegan food in Athens
+
+TODO
+
+### Peas
+
+TODO
+
+<ImageGallery images={peasImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/peas-athens-104532'>Visit Peas on Happy Cow</ExternalLink>
+
+### Mother Vegan Cafe
+
+TODO: Keep this?
+
+### Bread Factory
+
+TODO
+
+### Supermarkets
 
 TODO
 
