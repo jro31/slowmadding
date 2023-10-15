@@ -38,9 +38,9 @@ export const placesData = [
           "While cheap compared to the likes of London or New York, there's a noticeable hike in prices compared to similar cities in neighbouring countries. I paid €46/night for the cheaper of my rooms here, a beer in a bar is around €5, expect to pay around €8-10 for a meal in a restaurant (without a drink).",
       },
       [internet]: {
-        [verdict]: true,
+        [verdict]: false,
         [description]:
-          "It's not the fastest, but it's fast enough and very reliable.",
+          "In my first room the connection was very slow. In my second room it was faster but unreliable as it went out for 48 hours at one point. The mobile networks are ok, but a pain if you don't speak Greek as the apps aren't in English.",
       },
       [running]: {
         [verdict]: true,
