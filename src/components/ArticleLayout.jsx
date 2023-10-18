@@ -75,7 +75,6 @@ const ArticleLayout = ({
               {meta.updated && (
                 <div className="flex flex-row-reverse items-center">
                   <div className="mr-3 text-base italic text-zinc-400 dark:text-zinc-500">
-                    {/* TODO: Move the 'updated' date to the top of the article, underneath/around the date somehow */}
                     Updated <time>{formatDate(meta.updated, true)}</time>
                   </div>
                 </div>

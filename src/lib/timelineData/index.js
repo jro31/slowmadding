@@ -63,9 +63,18 @@ const orderedTimelineArray = (startDate, endDate) => {
   const stayIsFuture = (stay) =>
     Date.parse(stay[dates][arrival]) >= beginningOfToday
 
+  const checkDateValidity = (stay, country, place) => {
+    if (Date.parse(stay[dates][departure]) <= Date.parse(stay[dates][arrival]))
+      throw new Error(
+        `Timeline ${place} ${country} stay arrival date of ${stay[dates][arrival]}
+        is not before departure date of ${stay[dates][departure]}`
+      )
+  }
+
   Object.keys(timelineData).map((countryKey) => {
     Object.keys(timelineData[countryKey]).map((placeKey) => {
       timelineData[countryKey][placeKey].map((stay) => {
+        checkDateValidity(stay, countryKey, placeKey)
         if (stayIsInDateRange(stay) || (!endDateIsSet && stayIsFuture(stay))) {
           returnArray.push({
             [country]: countryKey,
@@ -111,7 +120,6 @@ const stayObject = (stay) => ({
   place: stay.place,
 })
 
-// TODO: Add any more checks to validate the date, such as the arrival date must be before the departure date
 export const parsedTimelineData = (startDate, endDate) => {
   if (endDate) {
     endDateIsSet = true
