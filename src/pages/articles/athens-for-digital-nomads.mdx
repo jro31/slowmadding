@@ -41,6 +41,14 @@ import runningPhilopapposHillParkImage from '#/athens-for-digital-nomads/running
 import runningPhilopapposHillAcropolisSelfieImage from '#/athens-for-digital-nomads/running/philopappos-hill-acropolis-selfie.jpeg'
 import runningPhilopapposHillCitySelfieImage from '#/athens-for-digital-nomads/running/philopappos-hill-city-selfie.jpeg'
 
+import socialOutsideGaziviewSelfieImage from '#/athens-for-digital-nomads/social/outside-gaziview-selfie.jpeg'
+import socialOutsideGaziviewImage from '#/athens-for-digital-nomads/social/outside-gaziview.jpeg'
+import socialBlablaHighBarImage from '#/athens-for-digital-nomads/social/blabla-high-bar.jpeg'
+import socialFinalBlablaImage from '#/athens-for-digital-nomads/social/final-blabla.jpeg'
+import socialThePlaceImage from '#/athens-for-digital-nomads/social/the-place.jpeg'
+import socialHousePartyImage from '#/athens-for-digital-nomads/social/house-party.jpeg'
+import socialBlablaOctoberImage from '#/athens-for-digital-nomads/social/blabla-october.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-10-26T13:05:00+03:00', // TODO: Update this
@@ -273,6 +281,44 @@ export const runningImages = [
   },
 ]
 
+export const socialImages = [
+  {
+    src: socialOutsideGaziviewSelfieImage,
+    alt: 'Outside Gaziview selfie',
+    caption: "I took this photo before going into Gaziview nightclub. Apparently it's not dignified enough or something.",
+  },
+  {
+    src: socialOutsideGaziviewImage,
+    alt: 'Outside Gaziview',
+    caption: 'Someone else took this one 🥱',
+  },
+  {
+    src: socialBlablaHighBarImage,
+    alt: 'BlaBla at High Bar in August',
+    caption: 'This is the Blabla Language Exchange at High Bar in late August. Being at a rooftop bar in August when the weather is beautiful - what beats it?',
+  },
+  {
+    src: socialFinalBlablaImage,
+    alt: 'BlaBla at High Bar in October',
+    caption: 'Being at a rooftop bar in October when you only have t-shirts and shorts fucking sucks. Other people are wearing jackets.',
+  },
+  {
+    src: socialThePlaceImage,
+    alt: 'BlaBla at The Place',
+    caption: "The other downside of a rooftop bar is it's not very rain-proof. We had to move to 'The Place', a nearby bar when the rooftop bar closed because it was too wet.",
+  },
+  {
+    src: socialHousePartyImage,
+    alt: 'Apollon Tower house party',
+    caption: 'BlaBla is a great way to meet people, but many people in Athens are very sociable and some people you meet there organise their own events. This was a house party in Apollon Tower hosted by someone I met at BlaBla.',
+  },
+  {
+    src: socialBlablaOctoberImage,
+    alt: 'BlaBla at High Bar',
+    caption: "That's my 'I'm drunk and trying not to look like a nob but not succeeding' face.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 If you want someone to like you, you shouldn't set the bar too high at the beginning. In my experience of people, it's the ones that I immediately like that usually end up being dickheads, where as the ones I don't take to, I become friends with over the long-term.
@@ -413,4 +459,22 @@ The last place I ran in Athens was <ExternalLink url='https://maps.app.goo.gl/U1
 
 ## Being sociable in Athens
 
-TODO
+The life of a digital nomad can be pretty lonely. While in many places in the world there are Meetups and other events designed to meet new people, the connections that you build are generally fleeting. I think I can be introverted or extroverted depending on my mood (and the amount of alcohol I've drunk), but generally I'm a bit stand-off-ish until I've got to know someone, which means I typically have to meet people multiple times before I feel comfortable around them.
+
+My cause was definitely helped by being here so long, but Athens was perhaps the first place I've been as a digital nomad where I felt I really connected with people, and knew people well enough that I had a social life irrespective of any events that were being organised.
+
+That was kind of nice because I live a lonely existence, so it was with great sadness that I ultimately left, but alas winter was coming, and when I was waking-up in the mornings and it was still dark outside, I knew it was time to go.
+
+If we could convince Ecuador or The Congo to join the EU, it would be incredibly useful to have a country along the ecuator that I could stay in indefinitely. Sadly there seems to be no such plans.
+
+There are a couple of social groups in Athens, and some fairly unsavoury politics between them that I won't go into, but by far the best group I found was the <ExternalLink url='https://www.facebook.com/share/WDLuj2i3wCTfyB1r'>BlaBla Language Exchange</ExternalLink> in Athens.
+
+If you haven't come across it yet, BlaBla Language Exchange operates in many places all over the world. Who owns it? Why it exists? I'm not really sure, because each individual group seems to be run by someone who operates independently. Regardless though, the group in Athens is very, very active, and attracts some really good people.
+
+There is a regular "language exchange" every Wednesday from 8pm at <ExternalLink url='https://maps.app.goo.gl/5191xKKPSBeLwBob9'>The High Bar</ExternalLink>. I say it like that because every language exchange I've ever been to is just an excuse to get drunk and speak English, and this one is no different. I wouldn't go if I had to actually learn a language. Then there is one or two additional events each week, such as restaurants, salsa nights, drinking as much as possible nights etc.
+
+Every person is also free to suggest and organise their own events and promote them within the group, so a lot is happening and it's very, very active. Other groups in Athens are a little more draconian in their operations.
+
+Athens is a really fun city and a really easy place to meet people, so I truly recommend it if that's what you're looking for.
+
+<ImageGallery images={socialImages} />
