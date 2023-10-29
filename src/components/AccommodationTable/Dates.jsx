@@ -12,8 +12,7 @@ const Dates = ({ dates }) => {
   const contentString = () => {
     return `<div>${formatDateRange(
       checkIn,
-      checkOut,
-      'UTC'
+      checkOut
     )}</div><div>${numberOfNightsString()}</div>`
   }
 
