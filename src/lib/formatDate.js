@@ -19,27 +19,16 @@ const addOrdinal = () => {
   formattedDate = formattedDate.replace(dayAsString, suffixedDay)
 }
 
-export const formatDate = (dateString, includeOrdinal = false) => {
+export const formatDate = (
+  dateString,
+  includeOrdinal = false,
+  timezone = null
+) => {
   formattedDate = new Date(dateString).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-  })
-
-  if (includeOrdinal) addOrdinal()
-
-  return formattedDate
-}
-
-export const formatDateTime = (dateString, includeOrdinal = false) => {
-  formattedDate = new Date(dateString).toLocaleDateString('en-GB', {
-    day: 'numeric',
-    month: 'long',
-    year: 'numeric',
-    // timeZone: 'UTC',
-    timeZoneName: 'long',
-    hour: 'numeric',
-    minute: 'numeric',
+    ...(timezone && { timezone: timezone }),
   })
 
   if (includeOrdinal) addOrdinal()
@@ -53,10 +42,15 @@ const dateIsToday = (dateString) =>
 export const formatDateRange = (
   startDateString,
   endDateString,
-  includeOrdinals = true
+  includeOrdinals = true,
+  timezone = null
 ) => {
-  let formattedStartDate = formatDate(startDateString, includeOrdinals)
-  const formattedEndDate = formatDate(endDateString, includeOrdinals)
+  let formattedStartDate = formatDate(
+    startDateString,
+    includeOrdinals,
+    timezone
+  )
+  const formattedEndDate = formatDate(endDateString, includeOrdinals, timezone)
 
   if (
     !dateIsToday(endDateString) &&

@@ -137,7 +137,11 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                       >
                         <div className="font-bold">{stay[place]}</div>
                         <div>
-                          {formatDateRange(stay[arrival], parsedDepartureDate)}
+                          {formatDateRange(
+                            stay[arrival],
+                            parsedDepartureDate,
+                            'UTC'
+                          )}
                         </div>
                       </div>
                     </div>
