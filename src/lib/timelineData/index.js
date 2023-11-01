@@ -1,7 +1,7 @@
 import { countries } from '@/lib/placeNames'
 
 import { dates, arrival, departure, country, place } from './variables'
-import { beginningOfToday } from '../formatDate'
+import { usersDate } from '../formatDate'
 
 import { argentinaData } from './argentinaData'
 import { boliviaData } from './boliviaData'
@@ -60,8 +60,7 @@ const orderedTimelineArray = (startDate, endDate) => {
     Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
     Date.parse(stay[dates][arrival]) < Date.parse(endDate)
 
-  const stayIsFuture = (stay) =>
-    Date.parse(stay[dates][arrival]) >= beginningOfToday
+  const stayIsFuture = (stay) => stay[dates][arrival] >= usersDate
 
   const checkDateValidity = (stay, country, place) => {
     if (Date.parse(stay[dates][departure]) <= Date.parse(stay[dates][arrival]))

@@ -1,6 +1,16 @@
 let formattedDate
 
-export const beginningOfToday = Date.parse(new Date().toJSON().slice(0, 10))
+// '2023-11-01'
+const parsedDateAsString = (parsedDate) =>
+  new Date(parsedDate).toISOString().split('T')[0]
+
+// 2023-11-01T17:58:49.084Z
+const usersDateTime = (UTCDatetime = new Date()) =>
+  new Date(
+    new Date(UTCDatetime).getTime() + -new Date().getTimezoneOffset() * 60000
+  )
+
+export const usersDate = parsedDateAsString(usersDateTime())
 
 const suffix = (day) => {
   const suffixes = ['st', 'nd', 'rd', 'th']
@@ -19,16 +29,12 @@ const addOrdinal = () => {
   formattedDate = formattedDate.replace(dayAsString, suffixedDay)
 }
 
-export const formatDate = (
-  dateString,
-  includeOrdinal = false,
-  timezone = null
-) => {
+export const formatDate = (dateString, includeOrdinal = false) => {
   formattedDate = new Date(dateString).toLocaleDateString('en-GB', {
     day: 'numeric',
     month: 'long',
     year: 'numeric',
-    ...(timezone && { timezone: timezone }),
+    timeZone: 'UTC',
   })
 
   if (includeOrdinal) addOrdinal()
@@ -36,26 +42,23 @@ export const formatDate = (
   return formattedDate
 }
 
-const dateIsToday = (dateString) =>
-  formatDate(dateString) === formatDate(new Date())
+const formattedDateYear = (formattedDate) =>
+  formattedDate.split(' ').slice(-1)[0]
+
+const dateStringIsToday = (dateString) => usersDate === dateString
 
 export const formatDateRange = (
   startDateString,
   endDateString,
-  includeOrdinals = true,
-  timezone = null
+  includeOrdinals = true
 ) => {
-  let formattedStartDate = formatDate(
-    startDateString,
-    includeOrdinals,
-    timezone
-  )
-  const formattedEndDate = formatDate(endDateString, includeOrdinals, timezone)
+  let formattedStartDate = formatDate(startDateString, includeOrdinals)
+  const formattedEndDate = formatDate(endDateString, includeOrdinals)
 
   if (
-    !dateIsToday(endDateString) &&
-    formattedStartDate.split(' ').slice(-1)[0] ===
-      formattedEndDate.split(' ').slice(-1)[0]
+    !dateStringIsToday(endDateString) &&
+    formattedDateYear(formattedStartDate) ===
+      formattedDateYear(formattedEndDate)
   ) {
     formattedStartDate = formattedStartDate.split(' ').slice(0, -1).join(' ')
 
@@ -65,6 +68,6 @@ export const formatDateRange = (
   }
 
   return `${formattedStartDate} to ${
-    dateIsToday(endDateString) ? 'now' : formattedEndDate
+    dateStringIsToday(endDateString) ? 'now' : formattedEndDate
   }`
 }

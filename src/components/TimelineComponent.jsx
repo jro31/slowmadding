@@ -6,7 +6,7 @@ import {
   country,
   place,
 } from '@/lib/timelineData/variables'
-import { formatDateRange, beginningOfToday } from '@/lib/formatDate'
+import { formatDateRange, usersDate } from '@/lib/formatDate'
 
 let stayOrderFirst = true
 
@@ -29,9 +29,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
   const orderedArray = (array) => (ascending ? [...array].reverse() : array)
 
   timelineData = timelineData.filter((countryVisit) =>
-    countryVisit.stays.some(
-      (stay) => Date.parse(stay[arrival]) < beginningOfToday
-    )
+    countryVisit.stays.some((stay) => stay[arrival] < usersDate)
   )
 
   return (
@@ -54,16 +52,14 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
               {countryVisit[country]}
             </h1>
             {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
-              if (Date.parse(stay[arrival]) < beginningOfToday) {
+              if (stay[arrival] < usersDate) {
                 stayOrderFirst =
                   countryIterator === 0 && stayIterator === 0
                     ? true
                     : !stayOrderFirst
 
-                const parsedDepartureDate =
-                  Date.parse(stay[departure]) >= beginningOfToday
-                    ? beginningOfToday
-                    : stay[departure]
+                const adjustedDepartureDate =
+                  stay[departure] > usersDate ? usersDate : stay[departure]
 
                 return (
                   <div
@@ -96,7 +92,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                                 Math.max(
                                   numberOfNights(
                                     stay[arrival],
-                                    parsedDepartureDate
+                                    adjustedDepartureDate
                                   ) * 15,
                                   106
                                 ),
@@ -139,8 +135,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                         <div>
                           {formatDateRange(
                             stay[arrival],
-                            parsedDepartureDate,
-                            'UTC'
+                            adjustedDepartureDate
                           )}
                         </div>
                       </div>
