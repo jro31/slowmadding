@@ -21,6 +21,8 @@ import roomQuestStandardRoomDeskImage from '#/bangkok-for-digital-nomads/room-qu
 import roomQuestSuperiorRoomBedImage from '#/bangkok-for-digital-nomads/room-quest/superior-room-bed.jpeg'
 import roomQuestSuperiorRoomDeskImage from '#/bangkok-for-digital-nomads/room-quest/superior-room-desk.jpeg'
 import roomQuestSuperiorRoomBathroomImage from '#/bangkok-for-digital-nomads/room-quest/superior-room-bathroom.jpeg'
+import roomQuestDeluxeRoomImage from '#/bangkok-for-digital-nomads/room-quest/deluxe-room.jpeg'
+import roomQuestDeluxeRoomBathroomImage from '#/bangkok-for-digital-nomads/room-quest/deluxe-room-bathroom.jpeg'
 
 import parvenaHotelSathornRoomImage from '#/bangkok-for-digital-nomads/parvena-hotel-sathorn/room.jpeg'
 import parvenaHotelSathornBathroomImage from '#/bangkok-for-digital-nomads/parvena-hotel-sathorn/bathroom.jpeg'
@@ -123,6 +125,7 @@ import socialBkkMeetAndMingleImage from '#/bangkok-for-digital-nomads/social/bkk
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-07-05T21:00:00+03:00',
+  updated: '2023-11-10T17:00:00+07:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
   description: "Bangkok is the travel hub of South-East Asia, but people often use it as nothing more than a stepping stone to get to Thailand's beaches or to Chiang Mai. How does it fare for the digital nomad who chooses to stop here?",
 }
@@ -226,6 +229,26 @@ export const roomQuestThirdStayDetails = {
   },
 }
 
+export const roomQuestFourthStayDetails = {
+  dates: {
+    checkIn: '2023-10-27',
+    checkOut: '2023-11-09',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Deluxe Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 14487.38,
+      '7% VAT': 1014.12,
+    },
+  },
+}
+
 export const parvenaHotelSathornDetails = {
   dates: {
     checkIn: '2023-03-11',
@@ -324,6 +347,16 @@ export const roomQuestImages = [
     src: roomQuestSuperiorRoomBathroomImage,
     alt: 'RoomQuest Sukhumvit 36 superior double room bathroom',
     caption: "The bathroom's just as bad.",
+  },
+  {
+    src: roomQuestDeluxeRoomImage,
+    alt: 'RoomQuest Sukhumvit 36 deluxe room',
+    caption: "The biggest and most expensive of the rooms is the deluxe room, which has two TVs. I'm not sure who'd want to watch two TVs at once, but I did enjoy the extra space.",
+  },
+  {
+    src: roomQuestDeluxeRoomBathroomImage,
+    alt: 'RoomQuest Sukhumvit 36 deluxe room bathroom',
+    caption: "Bathroom's still shit.",
   },
 ]
 
@@ -895,6 +928,8 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 <AccommodationTable details={roomQuestSecondStayDetails} />
 
 <AccommodationTable details={roomQuestThirdStayDetails} />
+
+<AccommodationTable details={roomQuestFourthStayDetails} />
 
 You might think that because I stayed here three times, I really loved this place. The truth is that it's no better than any other hotel on this list, and I'm not sure why I kept coming back. It's cheap, that helps, but was the room nicer than the other hotels listed here? Not really. Did it have more facilities? Nope. Was it at least cleaner? No, it was filthy. Was the location better?
 
