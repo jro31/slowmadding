@@ -57,13 +57,14 @@ const orderedTimelineArray = (startDate, endDate) => {
   let returnArray = []
 
   const stayIsInDateRange = (stay) =>
-    Date.parse(stay[dates][departure]) >= Date.parse(startDate) &&
-    Date.parse(stay[dates][arrival]) < Date.parse(endDate)
+    new Date(stay[dates][departure]) >= new Date(startDate) &&
+    new Date(stay[dates][arrival]) < new Date(endDate)
 
-  const stayIsFuture = (stay) => stay[dates][arrival] >= usersDate
+  const stayIsFuture = (stay) =>
+    new Date(stay[dates][arrival]) >= new Date(usersDate)
 
   const checkDateValidity = (stay, country, place) => {
-    if (Date.parse(stay[dates][departure]) <= Date.parse(stay[dates][arrival]))
+    if (new Date(stay[dates][departure]) <= new Date(stay[dates][arrival]))
       throw new Error(
         `Timeline ${place} ${country} stay arrival date of ${stay[dates][arrival]}
         is not before departure date of ${stay[dates][departure]}`
@@ -79,7 +80,7 @@ const orderedTimelineArray = (startDate, endDate) => {
             [country]: countryKey,
             [place]: placeKey,
             [arrival]:
-              Date.parse(startDate) > Date.parse(stay[dates][arrival])
+              new Date(startDate) > new Date(stay[dates][arrival])
                 ? startDate
                 : stay[dates][arrival],
             [departure]: stay[dates][departure],
@@ -89,7 +90,7 @@ const orderedTimelineArray = (startDate, endDate) => {
     })
   })
 
-  returnArray.sort((a, b) => Date.parse(b[arrival]) - Date.parse(a[arrival]))
+  returnArray.sort((a, b) => new Date(b[arrival]) - new Date(a[arrival]))
 
   checkDateOverlap(returnArray)
 
@@ -124,7 +125,7 @@ export const parsedTimelineData = (startDate, endDate) => {
     endDateIsSet = true
   } else {
     endDateIsSet = false
-    endDate = new Date().toJSON().slice(0, 10)
+    endDate = usersDate
   }
 
   let returnArray = []

@@ -29,7 +29,9 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
   const orderedArray = (array) => (ascending ? [...array].reverse() : array)
 
   timelineData = timelineData.filter((countryVisit) =>
-    countryVisit.stays.some((stay) => stay[arrival] < usersDate)
+    countryVisit.stays.some(
+      (stay) => new Date(stay[arrival]) < new Date(usersDate)
+    )
   )
 
   return (
@@ -52,14 +54,16 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
               {countryVisit[country]}
             </h1>
             {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
-              if (stay[arrival] < usersDate) {
+              if (new Date(stay[arrival]) < new Date(usersDate)) {
                 stayOrderFirst =
                   countryIterator === 0 && stayIterator === 0
                     ? true
                     : !stayOrderFirst
 
                 const adjustedDepartureDate =
-                  stay[departure] > usersDate ? usersDate : stay[departure]
+                  new Date(stay[departure]) > new Date(usersDate)
+                    ? usersDate
+                    : stay[departure]
 
                 return (
                   <div

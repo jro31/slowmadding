@@ -45,7 +45,8 @@ export const formatDate = (dateString, includeOrdinal = false) => {
 const formattedDateYear = (formattedDate) =>
   formattedDate.split(' ').slice(-1)[0]
 
-const dateStringIsToday = (dateString) => usersDate === dateString
+const dateStringIsToday = (dateString) =>
+  new Date(usersDate).getTime() === new Date(dateString).getTime()
 
 export const formatDateRange = (
   startDateString,
