@@ -6,6 +6,7 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import citySignImage from '#/huahin-for-digital-nomads/city/sign.jpeg'
 import cityBeachImage from '#/huahin-for-digital-nomads/city/beach.jpeg'
 import cityBaanYokmhaneeViewImage from '#/huahin-for-digital-nomads/city/baan-yokmhanee-view.jpeg'
 import citySprainedAnkleImage from '#/huahin-for-digital-nomads/city/sprained-ankle.jpeg'
@@ -17,13 +18,28 @@ import baanYokmhaneeDesksImage from '#/huahin-for-digital-nomads/baan-yokmhanee/
 import baanYokmhaneeBalconyViewImage from '#/huahin-for-digital-nomads/baan-yokmhanee/balcony-view.jpeg'
 import baanYokmhaneeOutsideImage from '#/huahin-for-digital-nomads/baan-yokmhanee/outside.jpeg'
 
+import huahinVeganJackfruitTunaMeltSandwichImage from '#/huahin-for-digital-nomads/huahin-vegan/jackfruit-tuna-melt-sandwich.jpeg'
+import huahinVeganTunaRollSaladTortillaImage from '#/huahin-for-digital-nomads/huahin-vegan/tuna-roll-salad-tortilla.jpeg'
 import huahinVeganGlazedCauliflowerImage from '#/huahin-for-digital-nomads/huahin-vegan/glazed-cauliflower.jpeg'
 import huahinVeganCreamyCashewTofuSaladImage from '#/huahin-for-digital-nomads/huahin-vegan/creamy-cashew-tofu-salad.jpeg'
+import huahinVeganVeganPenneWithPestoImage from '#/huahin-for-digital-nomads/huahin-vegan/vegan-penne-with-pesto.jpeg'
+import huahinVeganBananaMangoSmoothieImage from '#/huahin-for-digital-nomads/huahin-vegan/banana-mango-smoothie.jpeg'
 import huahinVeganTortillaPizzasImage from '#/huahin-for-digital-nomads/huahin-vegan/tortilla-pizzas.jpeg'
 import huahinVeganBerryBangImage from '#/huahin-for-digital-nomads/huahin-vegan/berry-bang.jpeg'
 import huahinVeganStirFriedTofuImage from '#/huahin-for-digital-nomads/huahin-vegan/stir-fried-tofu.jpeg'
 import huahinVeganOutsideImage from '#/huahin-for-digital-nomads/huahin-vegan/outside.jpeg'
+import huahinVeganVeganDarkStrawberrySmoothieImage from '#/huahin-for-digital-nomads/huahin-vegan/vegan-dark-strawberry-smoothie.jpeg'
+import huahinVeganTofuScrambleWithRoastedTomatoesImage from '#/huahin-for-digital-nomads/huahin-vegan/tofu-scramble-with-roasted-tomatoes.jpeg'
 import huahinVeganMacAndCheeseImage from '#/huahin-for-digital-nomads/huahin-vegan/mac-and-cheese.jpeg'
+import huahinVeganBlueLatteButterflyPeaImage from '#/huahin-for-digital-nomads/huahin-vegan/blue-latte-butterfly-pea.jpeg'
+
+import veggieTalesVeganGarlicBreadImage from '#/huahin-for-digital-nomads/veggie-tales/vegan-garlic-bread.jpeg'
+import veggieTalesStirFriedPlantBasedPorkBellyWithBasilImage from '#/huahin-for-digital-nomads/veggie-tales/stir-fried-plant-based-pork-belly-with-basil.jpeg'
+import veggieTalesMixedBerrySmoothieImage from '#/huahin-for-digital-nomads/veggie-tales/mixed-berry-smoothie.jpeg'
+import veggieTalesOutsideImage from '#/huahin-for-digital-nomads/veggie-tales/outside.jpeg'
+import veggieTalesInsideImage from '#/huahin-for-digital-nomads/veggie-tales/inside.jpeg'
+import veggieTalesStirFriedTofuWithCashewNutsImage from '#/huahin-for-digital-nomads/veggie-tales/stir-fried-tofu-with-cashew-nuts.jpeg'
+import veggieTalesFruitSaladWithCoconutYogurtImage from '#/huahin-for-digital-nomads/veggie-tales/fruit-salad-with-coconut-yogurt.jpeg'
 
 import runningStravaImage from '#/huahin-for-digital-nomads/running/strava.jpeg'
 
@@ -76,6 +92,11 @@ export const baanYokmhaneeSecondStayDetails = {
 
 export const cityImages = [
   {
+    src: citySignImage,
+    alt: 'Huahin Shopping Mall',
+    caption: 'Sage advice in the Huahin Shopping Mall.',
+  },
+  {
     src: cityBeachImage,
     alt: 'Huahin Beach',
     caption: 'On the beach close to where I was staying.',
@@ -127,14 +148,34 @@ export const baanYokmhaneeImages = [
 
 export const huahinVeganImages = [
   {
+    src: huahinVeganJackfruitTunaMeltSandwichImage,
+    alt: "Huahin Vegan jackfruit 'tuna' melt sandwich",
+    caption: "Huahin Vegan do the best vegan tuna I've ever had, made from jackfruit. Here it is as a tuna melt sandwich for 180 baht.",
+  },
+  {
+    src: huahinVeganTunaRollSaladTortillaImage,
+    alt: 'Huahin Vegan tuna roll salad tortilla',
+    caption: 'And here it is in a tuna roll salad tortilla for 150 baht. Seriously, I could eat it everyday and not get bored.',
+  },
+  {
     src: huahinVeganGlazedCauliflowerImage,
     alt: 'Huahin Vegan glazed cauliflower with vegan parmesan cheese',
-    caption: 'Glazed cauliflower with vegan parmesan cheese for 145 baht. Cauliflower never tasted so good.',
+    caption: 'This is glazed cauliflower with vegan parmesan cheese for 145 baht. Cauliflower never tasted so good.',
   },
   {
     src: huahinVeganCreamyCashewTofuSaladImage,
     alt: 'Huahin Vegan creamy cashew tofu salad',
     caption: 'There are plenty of healthy options on the menu. This creamy cashew tofu salad costs 150 baht.',
+  },
+  {
+    src: huahinVeganVeganPenneWithPestoImage,
+    alt: 'Huahin Vegan penne pasta with pesto sauce, cashew and basil',
+    caption: "I almost never order pasta when I go to restaurants because the portions are always so stingy. I wasn't so hungry on this day, so I thought I'd chance it, and they were actually pretty generous. For a restaurant. Selling pasta. This vegan penne pasta with pesto sauce, cashew and basil is 175 baht.",
+  },
+  {
+    src: huahinVeganBananaMangoSmoothieImage,
+    alt: 'Huahin Vegan banana mango smoothie',
+    caption: 'They have a large selection of juices and smoothies on the menu. This banana mango smoothie is 150 baht.',
   },
   {
     src: huahinVeganTortillaPizzasImage,
@@ -144,7 +185,7 @@ export const huahinVeganImages = [
   {
     src: huahinVeganBerryBangImage,
     alt: 'Huahin Vegan berry bang smoothie',
-    caption: 'One of many smoothies on offer here. This berry bang smoothie costs 120 baht.',
+    caption: 'The berry bang smoothie for 120 baht.',
   },
   {
     src: huahinVeganStirFriedTofuImage,
@@ -157,9 +198,62 @@ export const huahinVeganImages = [
     caption: "Although located in a shopping mall, it's in the corner of the shopping mall so is also visible from the street, especially at night.",
   },
   {
+    src: huahinVeganVeganDarkStrawberrySmoothieImage,
+    alt: 'Huahin Vegan dark strawberry smoothie',
+    caption: "The vegan dark strawberry smoothie for 150 baht. I'm not sure what a dark strawberry is, or whether it's supposed to be vegan dark chocolate strawberry smoothie and they just misspelled it. Either way it was really nice.",
+  },
+  {
+    src: huahinVeganTofuScrambleWithRoastedTomatoesImage,
+    alt: 'Huahin Vegan tofu scramble with roasted tomatoes',
+    caption: 'A lot bigger than I was expecting, this is the tofu scramble with roasted tomatoes for 150 baht. You get a choice of roasted mushrooms or roasted broccoli. I went for mushrooms obviously.',
+  },
+  {
     src: huahinVeganMacAndCheeseImage,
     alt: 'Huahin Vegan mac and cheese with spinach',
     caption: "Vegan mac and cheese with spinach for 150 baht. You can't see it, but there's actually a lot of spinach under there.",
+  },
+  {
+    src: huahinVeganBlueLatteButterflyPeaImage,
+    alt: 'Huahin Vegan blue latte butterfly pea',
+    caption: "This is the blue latte butterfly pea. Nope, I don't know what any of that means either but it looked good in the picture so I thought I'd try it. It was alright. 100 baht.",
+  },
+]
+
+export const veggieTalesImages = [
+  {
+    src: veggieTalesVeganGarlicBreadImage,
+    alt: 'Veggie Tales garlic bread',
+    caption: 'Veggie Tales has a huge menu of loads of different food types. I recommend the vegan garlic bread which will only cost you 70 baht.',
+  },
+  {
+    src: veggieTalesStirFriedPlantBasedPorkBellyWithBasilImage,
+    alt: 'Veggie Tales stir-fried plant-based pork belly with basil leaves and steamed rice',
+    caption: "Seeing 'plant-based pork belly' in the menu, it didn't sound too appealing, but I thought I'd try it anyway. Damn it's good. Here it is stir-fried with basil leaves and served with steamed rice for 120 baht.",
+  },
+  {
+    src: veggieTalesMixedBerrySmoothieImage,
+    alt: 'Veggie Tales mixed berry smoothie',
+    caption: "There isn't a huge selection of juices or smoothies on the menu, but the ones they do have are really good. This mixed berry smoothie is 70 baht.",
+  },
+  {
+    src: veggieTalesOutsideImage,
+    alt: 'Veggie Tales from outside',
+    caption: "Veggie Tales is down a very quiet side road and is more or less in someone's front garden, so is a little hard to spot. This is what you're looking for.",
+  },
+  {
+    src: veggieTalesInsideImage,
+    alt: 'Inside Veggie Tales',
+    caption: "While there is minimal indoor seating, most of the tables are outside in the very leafy and relaxing garden, so it's a great place to come and relax. Some of the tables are covered, so no worries if it's raining either.",
+  },
+  {
+    src: veggieTalesStirFriedTofuWithCashewNutsImage,
+    alt: 'Veggie Tales stir-fried tofu with cashew nuts',
+    caption: 'Stir-fried tofu with cashew nuts will cost you 120 baht.',
+  },
+  {
+    src: veggieTalesFruitSaladWithCoconutYogurtImage,
+    alt: 'Veggie Tales fruit salad with coconut yogurt',
+    caption: 'More tasty than it is sightly, this fruit salad with coconut yogurt for 70 baht comes off the breakfast menu (served all day) that also includes vegan pancakes and granola. ',
   },
 ]
 
@@ -279,6 +373,14 @@ The one downside is that they seemed to be perennially under-staffed. There was 
 <ImageGallery images={huahinVeganImages} />
 
 <ExternalLink url='https://www.happycow.net/reviews/hua-hin-vegan-cafe-hua-hin-95513'>Visit Huahin Vegan on Happy Cow</ExternalLink>
+
+### Veggie Tales
+
+TODO
+
+<ImageGallery images={veggieTalesImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/veggie-tales-x-wagging-tales-cafe-hua-hin-269798'>Visit Veggie Tales on Happy Cow</ExternalLink>
 
 ## Where to run in Huahin
 
