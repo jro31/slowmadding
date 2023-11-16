@@ -44,6 +44,10 @@ const ArticleLayout = ({
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
+        <meta name="author" content="Jethro Williams" />
+        {meta.keywords && (
+          <meta name="keywords" content={meta.keywords.join(', ')} />
+        )}
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
