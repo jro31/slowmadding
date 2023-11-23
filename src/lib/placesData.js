@@ -68,7 +68,7 @@ export const placesData = [
           "Nowhere in Athens in flat, and the pavement surfaces are pretty uneven. Still, it's a very pleasant city to walk on foot, without too much traffic.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/athens-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].bangkok,
