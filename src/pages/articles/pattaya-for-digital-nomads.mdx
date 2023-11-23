@@ -1,0 +1,77 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-11-30T10:00:00+07:00', // TODO: Update this
+  title: 'Pattaya for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Thailand'],
+}
+
+export const gResidenceDetails = {
+  dates: {
+    checkIn: '2023-11-16',
+    checkOut: '2023-11-30',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/g-residence.html',
+  },
+  roomType: 'Apartment with balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 15624.11,
+      '7% VAT': 1093.69,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add images
+
+## How to take a baht bus in Pattaya
+
+TODO
+
+TODO: Add images
+
+## Where I stayed
+
+### G Residence
+
+<AccommodationAddress name='378/148 Thappraya Road, Soi 15' url='https://maps.app.goo.gl/j2GiFYBs2e2TZ4iF7' />
+
+<AccommodationTable details={gResidenceDetails} />
+
+TODO
+
+TODO: Add images
+
+## Where to get vegan food in Huahin
+
+TODO
+
+### Yes Vegan
+
+TODO
+
+TODO: Add images
+
+## Where to run in Pattaya
+
+TODO
+
+TODO: Add images
+
+## Being sociable in Pattaya
+
+TODO
