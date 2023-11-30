@@ -1,0 +1,61 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import AccommodationAddress from '@/components/AccommodationAddress'
+import AccommodationTable from '@/components/AccommodationTable'
+// import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-12-07T10:00:00+07:00', // TODO: Update this
+  title: 'Nakhon Ratchasima for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Thailand', 'Korat'],
+}
+
+export const romyenGardenPlaceDetails = {
+  dates: {
+    checkIn: '2023-11-30',
+    checkOut: '2023-12-07',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
+  },
+  roomType: 'Deluxe King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 7975.36,
+      '7% VAT': 558.28,
+      '10% Property service charge': 853.36,
+      'booking.com pays': -891.77,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### Romyen Garden Place
+
+TODO: Add location link
+
+<AccommodationTable details={romyenGardenPlaceDetails} />
+
+TODO
+
+## Where to get vegan food in Nakhon Ratchasima
+
+TODO
+
+## Where to run in Nakhon Ratchasima
+
+TODO
+
+## Being sociable in Nakhon Ratchasima
+
+TODO
