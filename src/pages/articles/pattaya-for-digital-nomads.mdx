@@ -4,6 +4,13 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import gResidenceApartmentImage from '#/pattaya-for-digital-nomads/g-residence/apartment.jpeg'
+import gResidenceLivingAreaImage from '#/pattaya-for-digital-nomads/g-residence/living-area.jpeg'
+import gResidenceBedroomImage from '#/pattaya-for-digital-nomads/g-residence/bedroom.jpeg'
+import gResidenceKitchenImage from '#/pattaya-for-digital-nomads/g-residence/kitchen.jpeg'
+import gResidenceBathroomImage from '#/pattaya-for-digital-nomads/g-residence/bathroom.jpeg'
+import gResidenceViewImage from '#/pattaya-for-digital-nomads/g-residence/view.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-11-30T10:00:00+07:00', // TODO: Update this
@@ -32,6 +39,39 @@ export const gResidenceDetails = {
   },
 }
 
+export const gResidenceImages = [
+  {
+    src: gResidenceApartmentImage,
+    alt: 'G Residence apartment with balcony',
+    caption: 'G Residence offers studios (35m²), one-bedroom apartments (47m²) and two-bedroom apartments (80m²). This is the one-bedroom apartment that I stayed-in.',
+  },
+  {
+    src: gResidenceLivingAreaImage,
+    alt: 'G Residence living area',
+    caption: 'Two people could have been comfortable here, so there was more than enough space for just me.',
+  },
+  {
+    src: gResidenceBedroomImage,
+    alt: 'G Residence bedroom',
+    caption: "One thing I loved, was how much natural light gets in. While it's called a one-bedroom apartment, the separators make it more of a studio, because there's no fully-separate room you could go into to get away from someone. The good thing about that is that both the living area and the bedroom have floor-to-ceiling windows which you benefit from entirely no matter which room you're in.",
+  },
+  {
+    src: gResidenceKitchenImage,
+    alt: 'G Residence kitchen',
+    caption: "The \"kitchen\" left a lot to be desired. A couple of bowls, a couple of plates, limited cutlery, one frying pan and one spatula. Had they at least included a saucepan it might have been useful for me (so I could cook pasta), as it was,I didn't use the cooking facilities at all.",
+  },
+  {
+    src: gResidenceBathroomImage,
+    alt: 'G Residence bathroom',
+    caption: "Bathroom, if you couldn't tell.",
+  },
+  {
+    src: gResidenceViewImage,
+    alt: 'G Residence view from the balcony',
+    caption: "The apartment has a nice balcony with a couple of connected chairs and a table. Unfortunately there's a building directly in front of the balcony, so the view isn't the best, although if you look to the left, you can at least see the pools.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -54,7 +94,7 @@ TODO: Add images
 
 TODO
 
-TODO: Add images
+<ImageGallery images={gResidenceImages} />
 
 ## Where to get vegan food in Huahin
 
