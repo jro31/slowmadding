@@ -6,11 +6,10 @@ import {
   country,
   place,
 } from '@/lib/timelineData/variables'
-import { formatDateRange, beginningOfToday } from '@/lib/formatDate'
-
-let stayOrderFirst = true
+import { formatDateRange, usersDate } from '@/lib/formatDate'
 
 const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
+  let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
 
   const lineClasses = (countryIterator, stayIterator, stays) => {
@@ -28,11 +27,25 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
 
   const orderedArray = (array) => (ascending ? [...array].reverse() : array)
 
-  timelineData = timelineData.filter((countryVisit) =>
-    countryVisit.stays.some(
-      (stay) => Date.parse(stay[arrival]) < beginningOfToday
-    )
-  )
+  const removeFutureCountries = () =>
+    (timelineData = timelineData.filter((countryVisit) =>
+      countryVisit.stays.some(
+        (stay) => new Date(stay[arrival]) < new Date(usersDate)
+      )
+    ))
+
+  const removeFutureStays = () =>
+    (timelineData = timelineData.map((countryVisit) => {
+      return {
+        ...countryVisit,
+        stays: countryVisit.stays.filter(
+          (stay) => new Date(stay[arrival]) < new Date(usersDate)
+        ),
+      }
+    }))
+
+  removeFutureCountries()
+  removeFutureStays()
 
   return (
     <div className="relative flex flex-col gap-5">
@@ -54,96 +67,94 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
               {countryVisit[country]}
             </h1>
             {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
-              if (Date.parse(stay[arrival]) < beginningOfToday) {
-                stayOrderFirst =
-                  countryIterator === 0 && stayIterator === 0
-                    ? true
-                    : !stayOrderFirst
+              stayOrderFirst =
+                countryIterator === 0 && stayIterator === 0
+                  ? true
+                  : !stayOrderFirst
 
-                const parsedDepartureDate =
-                  Date.parse(stay[departure]) >= beginningOfToday
-                    ? beginningOfToday
-                    : stay[departure]
+              const adjustedDepartureDate =
+                new Date(stay[departure]) > new Date(usersDate)
+                  ? usersDate
+                  : stay[departure]
 
-                return (
+              return (
+                <div
+                  key={`country-${countryIterator}-place-${stayIterator}-section`}
+                  className="flex"
+                >
                   <div
-                    key={`country-${countryIterator}-place-${stayIterator}-section`}
-                    className="flex"
+                    className={`relative hidden shrink grow lg:block basis-1/2${
+                      stayOrderFirst ? ' lg:order-last' : ''
+                    } order-first`}
                   >
                     <div
-                      className={`relative hidden shrink grow lg:block basis-1/2${
-                        stayOrderFirst ? ' lg:order-last' : ''
-                      } order-first`}
-                    >
-                      <div
-                        className={`absolute right-0 border-r-2 dark:border-zinc-100 border-zinc-800${
-                          stayOrderFirst
-                            ? ' lg:left-0 lg:right-auto lg:border-r-0 lg:border-l-2'
-                            : ''
-                        } ${lineClasses(
-                          countryIterator,
-                          stayIterator,
-                          countryVisit.stays
-                        )}`}
-                      />
-                    </div>
-                    <div
-                      style={
-                        compactMode
-                          ? { minHeight: '106px' }
-                          : {
-                              minHeight: `${Math.min(
-                                Math.max(
-                                  numberOfNights(
-                                    stay[arrival],
-                                    parsedDepartureDate
-                                  ) * 15,
-                                  106
-                                ),
-                                1050
-                              )}px`,
-                            }
-                      }
-                      className={`relative flex max-h-[1050px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 transition-[min-height] duration-700 lg:py-1.5${
-                        stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
-                      }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
-                        stayIterator === countryVisit.stays.length - 1
-                          ? ' pb-2 lg:pb-3'
+                      className={`absolute right-0 border-r-2 dark:border-zinc-100 border-zinc-800${
+                        stayOrderFirst
+                          ? ' lg:left-0 lg:right-auto lg:border-r-0 lg:border-l-2'
                           : ''
+                      } ${lineClasses(
+                        countryIterator,
+                        stayIterator,
+                        countryVisit.stays
+                      )}`}
+                    />
+                  </div>
+                  <div
+                    style={
+                      compactMode
+                        ? { minHeight: '106px' }
+                        : {
+                            minHeight: `${Math.min(
+                              Math.max(
+                                numberOfNights(
+                                  stay[arrival],
+                                  adjustedDepartureDate
+                                ) * 15,
+                                106
+                              ),
+                              1050
+                            )}px`,
+                          }
+                    }
+                    className={`relative flex max-h-[1050px] shrink grow basis-1/2 items-center justify-start py-1 pr-2 transition-[min-height] duration-700 lg:py-1.5${
+                      stayOrderFirst ? ' lg:justify-end lg:pl-2 lg:pr-0' : ''
+                    }${stayIterator === 0 ? ' pt-2 lg:pt-3' : ''}${
+                      stayIterator === countryVisit.stays.length - 1
+                        ? ' pb-2 lg:pb-3'
+                        : ''
+                    }`}
+                  >
+                    <div
+                      className={`absolute left-0 border-l-4 dark:border-zinc-100 border-zinc-800${
+                        stayOrderFirst
+                          ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
+                          : ' lg:border-l-2'
+                      } ${lineClasses(
+                        countryIterator,
+                        stayIterator,
+                        countryVisit.stays
+                      )}`}
+                    />
+                    <div
+                      className={`h-5 w-5${
+                        stayOrderFirst
+                          ? ' lg:order-last lg:translate-x-2.5'
+                          : ' lg:-translate-x-2.5'
+                      } order-first shrink-0 grow-0 -translate-x-2 rounded-full bg-zinc-800 dark:bg-zinc-100`}
+                    />
+                    <div
+                      className={`relative flex h-full flex-col justify-center rounded-3xl bg-zinc-50 p-5 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10 dark:text-zinc-100${
+                        stayOrderFirst ? ' lg:text-right' : ''
                       }`}
                     >
-                      <div
-                        className={`absolute left-0 border-l-4 dark:border-zinc-100 border-zinc-800${
-                          stayOrderFirst
-                            ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
-                            : ' lg:border-l-2'
-                        } ${lineClasses(
-                          countryIterator,
-                          stayIterator,
-                          countryVisit.stays
-                        )}`}
-                      />
-                      <div
-                        className={`h-5 w-5${
-                          stayOrderFirst
-                            ? ' lg:order-last lg:translate-x-2.5'
-                            : ' lg:-translate-x-2.5'
-                        } order-first shrink-0 grow-0 -translate-x-2 rounded-full bg-zinc-800 dark:bg-zinc-100`}
-                      />
-                      <div
-                        className={`relative flex h-full flex-col justify-center rounded-3xl bg-zinc-50 p-5 text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800 dark:text-zinc-200 dark:ring-white/10 dark:text-zinc-100${
-                          stayOrderFirst ? ' lg:text-right' : ''
-                        }`}
-                      >
-                        <div className="font-bold">{stay[place]}</div>
-                        <div>
-                          {formatDateRange(stay[arrival], parsedDepartureDate)}
-                        </div>
+                      <div className="font-bold">{stay[place]}</div>
+                      <div>
+                        {formatDateRange(stay[arrival], adjustedDepartureDate)}
                       </div>
                     </div>
                   </div>
-                )
-              }
+                </div>
+              )
             })}
           </div>
         )

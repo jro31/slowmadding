@@ -44,6 +44,10 @@ const ArticleLayout = ({
       <Head>
         <title>{meta.title}</title>
         <meta name="description" content={meta.description} />
+        <meta name="author" content="Jethro Williams" />
+        {meta.keywords && (
+          <meta name="keywords" content={meta.keywords.join(', ')} />
+        )}
       </Head>
       <Container className="mt-16 lg:mt-32">
         <div className="xl:relative">
@@ -72,13 +76,6 @@ const ArticleLayout = ({
                 </time>
               </header>
               <Prose className="mt-8">{children}</Prose>
-              {meta.updated && (
-                <div className="flex flex-row-reverse items-center">
-                  <div className="mr-3 text-base italic text-zinc-400 dark:text-zinc-500">
-                    Updated <time>{formatDate(meta.updated, true)}</time>
-                  </div>
-                </div>
-              )}
             </article>
           </div>
         </div>

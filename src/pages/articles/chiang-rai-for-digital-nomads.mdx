@@ -1,7 +1,7 @@
 import Link from 'next/link'
 
 import ArticleLayout from '@/components/ArticleLayout'
-import AccommodationAddress from '@/components/AccommodationAddress'
+import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
@@ -40,6 +40,7 @@ export const meta = {
   date: '2023-01-27T15:18:15+07:00',
   title: 'Chiang Rai for Digital Nomads',
   description: "Chiang Rai is Thailand's often overlooked northern-most city, but what does that oversight mean for a digital nomad who likes a bit more peace and quiet?",
+  keywords: ['Thailand'],
 }
 
 export const saikeawResortDetails = {
@@ -219,7 +220,7 @@ There aren't many places in the world where I feel comfortable buying things wit
 
 ### Saikaew Resort
 
-<AccommodationAddress name='220 Moo 24 Sankhongluang Rd' url='https://goo.gl/maps/Th1xiWAneLPnfyFM7' />
+<MapLink name='220 Moo 24 Sankhongluang Rd' url='https://goo.gl/maps/Th1xiWAneLPnfyFM7' />
 
 <AccommodationTable details={saikeawResortDetails} />
 
