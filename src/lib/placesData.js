@@ -68,7 +68,7 @@ export const placesData = [
           "Nowhere in Athens in flat, and the pavement surfaces are pretty uneven. Still, it's a very pleasant city to walk on foot, without too much traffic.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/athens-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].bangkok,
@@ -362,6 +362,48 @@ export const placesData = [
       },
     },
     [articlePath]: '/articles/loei-for-digital-nomads',
+  },
+  {
+    [place]: places[countries.thailand].pattaya,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I paid less than 1,200 baht per night for a decent-sized apartment, you can find beer for as low as 50 baht, a plate of food in a western restaurant costs around 150 baht.',
+      },
+      [internet]: {
+        [verdict]: false,
+        [description]:
+          "The wifi in my room had a login page and I'd get quickly logged-out on putting my device down, so I mostly just used my data.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Running to and along the beach I found to be a pretty pleasant route. You can run in most of Pattaya without issue.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          'There was one fully vegan restaurant near my room that I ate at a lot, but beyond this it was slim pickings. I found myself getting a vegan sub at Subway multiple times and eating the only vegan options at a middle-eastern restaurant.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "I was out late pretty much every night, often walking home alone. Didn't have an issue.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "Pattaya is the easiest place in the world to go out on your own and have fun. That being said, I didn't find any events specifically for meeting people/socialising.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Apart from the crowded bar areas in the centre of town, wide and quiet pavements make Pattaya a pleasant place to walk around.',
+      },
+    },
+    [articlePath]: null,
   },
   {
     [place]: places[countries.cambodia].phnomPenh,

@@ -165,6 +165,12 @@ export const thailandData = {
         [departure]: '2012-04-29',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2023-11-30',
+        [departure]: '2023-12-07',
+      },
+    },
   ],
   [places[countries.thailand].nongKhai]: [
     {
