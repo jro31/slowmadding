@@ -2,6 +2,13 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import busTerminal2SatelliteViewImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-terminal-2/satellite-view.png'
+import busTerminal2UdonThaniBusTicketOfficeImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-terminal-2/udon-thani-bus-ticket-office.jpeg'
+
+import busTimesTimetableImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/timetable.jpeg'
+
+import takingTheBusFreeToiletsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/free-toilets.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-12-07T20:45:00+07:00', // TODO: Update this
@@ -10,13 +17,76 @@ export const meta = {
   keywords: ['Thailand', 'Korat'],
 }
 
+export const busTerminal2Images = [
+  {
+    src: busTerminal2SatelliteViewImage,
+    alt: 'Nakhon Ratchasima Bus Terminal 2 satellite view',
+    caption: "This is easier to explain with a picture. This satellite view from Google Maps shows Bus Terminal 2. The red arrow (I added that, so don't look for it) points approximately to gate 4, where you buy tickets and catch buses to Udon Thani.",
+  },
+  {
+    src: busTerminal2UdonThaniBusTicketOfficeImage,
+    alt: 'Nakhon Ratchasima Bus Terminal 2 Udon Thani bus ticket office',
+    caption: "This is the ticket office you're looking for, by gate 4. The staff here quite enthusiastically speak some (very basic) English.",
+  },
+]
+
+export const busTimesImages = [
+  {
+    src: busTimesTimetableImage,
+    alt: 'Nakhon Ratchasima to Udon Thani bus timetable',
+    caption: "The Nakhon Ratchasima to Udon Thani bus timetable at gate 4. The left column with my finger underneath it is the departure times from Nakhon Ratchasima. The right column with my finger underneath it is the departure times from Kumphawapi, a district just outside Udon Thani (the timetable doesn't include the arrival times in Udon).",
+  },
+]
+
+export const takingTheBusImages = [
+  {
+    src: takingTheBusFreeToiletsImage,
+    alt: 'Free toilets at Bus Terminal 2',
+    caption: 'Free toilets next to Bus Terminal 2.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-TODO
+Nakhon Ratchasima (also known as Korat) is Thailand's third largest city, and Udon Thani (often known simply as Udon) is its sixth. Together they comprise two of the 'big four of Isaan', and yet foreign tourism in both cities is scant. This means that finding reliable information about them, including how to travel between them, is almost impossible online and you just have to arrive and start figuring it out for yourself.
+
+Luckily for you, I recently travelled from Nakhon Ratchasima to Udon by bus and had to figure-out how, so to save you the trouble, here's everything I learned.
+
+## Where to catch a bus to Udon Thani in Nakhon Ratchasima
+
+There are two bus terminals in Nakhon Ratchasima.
+
+<ExternalLink url='https://maps.app.goo.gl/GdaR98K7MdH7pnpk7'>Bus Terminal 1</ExternalLink> is close to the centre of town, and is the smaller of the two terminals. It has buses to Bangkok and a few other destinations, but **it does not have any buses to Udon Thani**.
+
+<ExternalLink url='https://maps.app.goo.gl/XzDnmf79xNmzYea96'>Bus Terminal 2</ExternalLink> is a little further out of town, past Terminal 21. It is much bigger and has buses to many more destinations, including Bangkok and Udon Thani.
+
+### Bus Terminal 2
+
+The layout of Bus Terminal 2 is that it has two long, thin terminals. Passengers wait within these open terminals, while buses pull-up to the 'gates' that go around them. There is no central ticketing area. Instead you buy your tickets at the counters in front of the gate where your bus departs from.
+
+A lot more buses leave from the westerly terminal (furthest from the main road), including buses to Udon Thani, which depart from gate 4.
+
+(One other company does offer a bus to Udon, but it's only one per day, at 1:30pm if my Thai doesn't betray me.)
+
+<ImageGallery images={busTerminal2Images} />
+
+## What time do buses leave for Udon Thani?
+
+From gate 4, there are twelve buses to Udon Thani each day. The first leaves at 6am, the second at 7:20am. Then from 8:30am to 1:30pm, they leave every hour on the half hour. The last four buses depart at 2:40pm, 4pm, 5:30pm and 7:30pm.
+
+[**You do not need to buy tickets in advance**. Perhaps with the exception of holidays, simply showing up at the a few minutes before the bus leaves is sufficient (at least, that's what I did).]
+
+A ticket costs...
+
+<ImageGallery images={busTimesImages} />
 
 ## Taking the bus from Nakhon Ratchasima to Udon Thani
 
-TODO
+If you arrive early for your bus and need to use the bathroom, there is a 5 baht charge for the toilets within Bus Terminal 2. However I found that there's a small shopping parade nearby (before you even get to the main road) that includes a 7-11. This includes some free toilets for if you don't have any change, or if you're just cheap like me.
+
+TODO: Add more photos
+
+<ImageGallery images={takingTheBusImages} />
 
 ## Arriving in Udon Thani
 
