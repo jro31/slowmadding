@@ -2,9 +2,12 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import busTimesImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/bus-times.jpeg'
-import ticketOfficeImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg'
-import ticketImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg'
+import whereToBuyATicketAndCatchTheBusTicketOfficeImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg'
+import whereToBuyATicketAndCatchTheBusBusTimesImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/bus-times.jpeg'
+import whereToBuyATicketAndCatchTheBusTicketImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg'
+import whereToBuyATicketAndCatchTheBusBusImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/bus.jpeg'
+
+import onTheBusSeatsImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/on-the-bus/seats.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -16,33 +19,46 @@ export const meta = {
 
 export const whereToBuyATicketAndCatchTheBusImages = [
   {
-    src: ticketOfficeImage,
+    src: whereToBuyATicketAndCatchTheBusTicketOfficeImage,
     alt: 'Sri Mongkol Pattatya ticket office',
     caption: "The ticket office is pretty inconspicuous, especially if you don't speak Thai. This is what you're looking for.",
   },
   {
-    src: busTimesImage,
+    src: whereToBuyATicketAndCatchTheBusBusTimesImage,
     alt: 'Pattaya to Nakhon Ratcahsima bus times',
     caption: 'Buses to Nakhon Ratchasima (Korat) leave at 7:30am and 11am.',
   },
   {
-    src: ticketImage,
+    src: whereToBuyATicketAndCatchTheBusTicketImage,
     alt: 'Pattaya to Nakhon Ratchasima bus ticket',
     caption: "Once you have your ticket, you won't find much English on there either, so have Google Translate ready to make sure all the details are correct.",
   },
+  {
+    src: whereToBuyATicketAndCatchTheBusBusImage,
+    alt: 'Pattaya to Nakhon Ratchasima bus',
+    caption: 'The bus (taken at a rest-stop) said Ubon - Pattaya on the side.',
+  },
+]
+
+export const onTheBusImages = [
+  {
+    src: onTheBusSeatsImage,
+    alt: 'Onboard the Pattaya to Nakhon Ratchasima bus',
+    caption: "The seats are very comfortable but don't come with any ports for you to charge your devices.",
+  }
 ]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 While Pattaya is a very well established tourist destination, Nakhon Ratchasima (also known as Korat) is much less so. That means that unlike if you're going from Pattaya to Bangkok, Huahin or some other places, when going to Nakhon Ratchasima, the infrastructure isn't really made for tourists, and as such finding how to make this trip can take a while.
 
-My assumption had been that I'd likely have to go back to Bangkok, swap to another train/bus, and make my way to Nakhon Ratchasima from there. Thankfully that was wrong. There is one bus company that has a direct service from Pattaya to Nakhon Ratchasima, but conveniently they aren't located at any of Pattaya's bus stations; they have an inconspicuous ticket office where everything is written in Thai (no English). It took me a lot of researching and speaking to people to figure this all out. This article has everything I learned to save you the trouble.
+My assumption had been that I'd likely have to go back to Bangkok, swap to another train/bus, and make my way to Nakhon Ratchasima from there. Thankfully that was wrong. There is one bus company that has a direct service from Pattaya to Nakhon Ratchasima, but conveniently they aren't located at any of Pattaya's bus stations; they have an inconspicuous ticket office where everything is written in Thai (no English) at the side of a random road. It took me a lot of researching and speaking to people to figure this all out. This article has everything I learned.
 
 ## Where to buy a ticket and catch the bus
 
 The company that runs the direct bus from Pattaya to Nakhon Ratchasima is called 'Sri Mongkol'. They have a small office on <ExternalLink url='https://maps.app.goo.gl/QbiHqpQ8aaxYHzuY9'>Pattaya 3rd Road</ExternalLink>. This office is both where you can buy a ticket and where you catch the bus.
 
-There are two daily services from Pattaya to Nakhon Ratchasima, leaving at 7:30am and 11am. While you can buy a ticket in advance (I bought mine 5 days in advance), it's not necessary. I saw locals rock-up and buy their tickets a few minutes before the bus left, and it was pretty much empty. It's a double-decker bus that I'd guess could seat over 40 people, but there were only about ten people on board. Unless you're travelling over a holiday, when local people will be moving en masse, you should be fine showing up on the day of travel.
+There are two daily services from Pattaya to Nakhon Ratchasima, leaving at 7:30am and 11am. While you can buy a ticket in advance (I bought mine 5 days in advance), it's not necessary. I saw locals rock-up and buy their tickets a few minutes before the bus left, and it was pretty much empty. It's a double-decker bus that I'd guess could seat over 40 people, but at the start of the journey there were only about ten people on board. Unless you're travelling over a holiday, when local people will be moving en masse, you should be fine showing up on the day of travel.
 
 The ticket office doubles as a waiting room, but it's not an especially pleasant place to sit. My paranoia forces me to arrive frustratingly early whenever I travel anywhere, so I had an hour sitting in this waiting room, and there was no AC. It does have AC units but they weren't turned-on, so I found myself sitting in front of a fan while I tried to stay cool.
 
@@ -52,10 +68,28 @@ The bus pulled-up right outside the office at about 10:50am and said 'Pattaya - 
 
 ## Taking the bus from Pattaya to Nakhon Ratchasima
 
-TODO
+We pulled-away at 11:05am, and didn't get a toilet break until 3:40pm. While there was a small number of short stops before this to pick-up passengers, you'd have to be quick if you wanted to get to the toilet and back on these stops, because we weren't stopped for long. Passengers weren't invited to dismbark at these stops.
 
-TODO: Add photos of bus
+I believe that there was an on board toilet downstairs (I was sat upstairs and didn't go down to check), but I preferred to hold it in than have to use a bus toilet.
+
+It was only local people on the bus (no other foreigners), and not once through the journey did anyone else go downstairs to use the toilet, which I took as a sign that I probably wouldn't want to either.
+
+There were a couple of vendors at the 3:40pm stop selling a very limited selection of foods, but I'd recommend buying everything you're going to need before boarding in Pattaya. We weren't given any water or snacks on board.
+
+If you look at a map, there's a direct road connecting Pattaya with Nakhon Ratchasima. For the first part of the journey we didn't go on that road, instead erring more towards Bangkok. I was slightly concerned that we were actually going to have a stop in Bangkok, because the traffic would have greatly added to our travel time. Luckily we only got as close as <ExternalLink url='https://maps.app.goo.gl/SetYAJ1F2W7amq7o6'>Chachoengsao</ExternalLink> before going away from Bangkok, and following the most direct route to Nakhon Ratchasima.
+
+The bus itself was pretty comfortable. It has three seats per row, rather than four; single seats on the left of the bus, double seats on the right, with plenty of leg-room. I was in one of the single seats, but if you're assigned a double, you'll likely have it to yourself for the entire journey. We did pick up a few more passengers en route, but not enough that anyone was forced to share a seat.
+
+While the bus was very comfortable, there were no ports to charge your phone or other devices, so make sure everything's fully charged.
+
+<ImageGallery images={onTheBusImages} />
 
 ## Arriving in Nakhon Ratchasima
 
-TODO
+We pulled-into Nakhon Ratchasima <ExternalLink url='https://maps.app.goo.gl/dMqBjDFk4kb7VddC9'>Bus Terminal 2</ExternalLink> at 6:38pm, meaning that from our departure at 11:05am, the total travel time was seven hours and thiry-three minutes. We didn't really hit any traffic en route, were never stopped for long, and even our one toilet break was less than ten minutes, so there's very little scope for the journey to be any quicker.
+
+Unlike at many other bus terminals in Thailand, there was absolutely no harrassment from tuk-tuk or taxi drivers on arrival in Nakhon Ratchasima, which I appreciated. Little annoys me more than arriving somewhere new, disoriented, hungry and dehydrated after a long journey, only to be harrassed and hounded by people trying to get my money. There was none of that here, just was a small line of tuk-tuk drivers patiently waiting across from the buses.
+
+I'd checked the price of a Grab taxi to my room already, and while the tuk-tuk driver I spoke to quoted me 20 baht more than the 80 baht it'd cost me with Grab, I couldn't be arsed to argue or negotiate to save 20 baht. The price he quoted was fair enough, so I'd say you can trust these guys not to screw you over.
+
+And with that I was there. At my hotel in Nakhon Ratchasima after waking-up that morning in Pattaya. Hopefully this article saves you the hours of research it took me, wandering around Pattaya and speaking to people in bus stations to figure-out how to best get here.
