@@ -364,6 +364,47 @@ export const placesData = [
     [articlePath]: '/articles/loei-for-digital-nomads',
   },
   {
+    [place]: places[countries.thailand].nakhonRatchasima,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I paid about 1,200 baht/night for a really nice hotel room (much cheaper rooms are available), a meal in a local restaurant is about 45 baht.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'Multiple fast and reliable connections in my room, 5G available all over the city.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Bung Ta Lua Park is a lake with a wide running track around the outside. One lap is about 3.2km.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are a small number of local 'jay' restaurants around the city, but vegan food is lacking in both quantity and variety.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'I walked everywhere when I was here and always felt safe.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]: 'Nothing going on.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Wide pavements, fairly quiet roads. A really pleasant city to walk around.',
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].pattaya,
     [country]: countries.thailand,
     [criteria]: {
@@ -403,7 +444,7 @@ export const placesData = [
           'Apart from the crowded bar areas in the centre of town, wide and quiet pavements make Pattaya a pleasant place to walk around.',
       },
     },
-    [articlePath]: null,
+    [articlePath]: null, // TODO
   },
   {
     [place]: places[countries.cambodia].phnomPenh,
