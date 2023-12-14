@@ -6,6 +6,11 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityBigGoldThingImage from '#/nakhon-ratchasima-for-digital-nomads/city/big-gold-thing.jpeg'
+import cityBungTaLuaParkBridgeImage from '#/nakhon-ratchasima-for-digital-nomads/city/bung-ta-lua-park-bridge.jpeg'
+import cityHorseImage from '#/nakhon-ratchasima-for-digital-nomads/city/horse.jpeg'
+import cityLakeImage from '#/nakhon-ratchasima-for-digital-nomads/city/lake.jpeg'
+
 import romyenGardenPlaceBedImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/bed.jpeg'
 import romyenGardenPlaceRoomImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/room.jpeg'
 import romyenGardenPlaceKitchenImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/kitchen.jpeg'
@@ -13,8 +18,35 @@ import romyenGardenPlaceBathroomImage from '#/nakhon-ratchasima-for-digital-noma
 import romyenGardenPlaceBalconyImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/balcony.jpeg'
 import romyenGardenPlaceViewImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/view.jpeg'
 
+import veganFoodStirFriedBasilVegetarianProteinWithRicePackagingImage from '#/nakhon-ratchasima-for-digital-nomads/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-packaging.jpeg'
+import veganFoodStirFriedBasilVegetarianProteinWithRiceMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-microwaved.jpeg'
+
+import vegetarianFoodForHealthBuffetWithRice1Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-1.jpeg'
+import vegetarianFoodForHealthTakeawaySpringRollsImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/takeaway-spring-rolls.jpeg'
+import vegetarianFoodForHealthOutsideImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/outside.jpeg'
+import vegetarianFoodForHealthBuffetWithRice3Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-3.jpeg'
+import vegetarianFoodForHealthInsideImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/inside.jpeg'
+import vegetarianFoodForHealthBuffetWithRice2Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-2.jpeg'
+import terminal21VegetarianBuffetImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/vegetarian-buffet.jpeg'
+import terminal21VegetarianFoodKioskImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/vegetarian-food-kiosk.jpeg'
+import terminal21Pier21FruitStandImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/pier-21-fruit-stand.jpeg'
+import terminal21FoodlandVeganCheeseImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-vegan-cheese.jpeg'
+import terminal21FoodlandVeganBreadImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-vegan-bread.jpeg'
+
+import terminal21RiceWithThreeChoices1Image from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/rice-with-three-choices-1.jpeg'
+import terminal21RiceWithThreeChoices2Image from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/rice-with-three-choices-2.jpeg'
+import terminal21FoodlandFrozenVeganReadyMealsImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-ready-meals.jpeg'
+import terminal21FoodlandFrozenVeganMeatsImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meats.jpeg'
+import terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraPackagingImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-packaging.jpeg'
+import terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-microwaved.jpeg'
+import terminal21FoodlandFrozenVeganMeatballsWithRicePackagingImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meatballs-with-rice-packaging.jpeg'
+import terminal21FoodlandFrozenVeganMeatballsWithRiceMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meatballs-with-rice-microwaved.jpeg'
+import terminal21Foodland24HourEntranceImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-24-hour-entrance.jpeg'
+
 import runningStravaImage from '#/nakhon-ratchasima-for-digital-nomads/running/strava.jpeg'
 import runningBungTaLuaParkImage from '#/nakhon-ratchasima-for-digital-nomads/running/bung-ta-lua-park.jpeg'
+
+import laundryRichLaundryImage from '#/nakhon-ratchasima-for-digital-nomads/laundry/rich-laundry.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -45,6 +77,29 @@ export const romyenGardenPlaceDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityBigGoldThingImage,
+    alt: 'Big gold thing',
+    caption: 'One of those big gold things.',
+  },
+  {
+    src: cityBungTaLuaParkBridgeImage,
+    alt: 'Bung Ta Lua Park bridge',
+    caption: 'A somewhat overstated bridge in Bung Ta Lua Park.',
+  },
+  {
+    src: cityHorseImage,
+    alt: 'Horse ornament next to the lake',
+    caption: 'Just north of Bung Ta Lua Park (possibly considered part of the same park) is another lake, making this a very pleasant place to come for a walk or a run.',
+  },
+  {
+    src: cityLakeImage,
+    alt: 'Lake',
+    caption: "This lake isn't as big as the one in Bung Ta Lua Park, but it's still a good kilometre around the outside.",
+  },
+]
 
 export const romyenGardenPlaceImages = [
   {
@@ -79,6 +134,125 @@ export const romyenGardenPlaceImages = [
   },
 ]
 
+export const veganFoodImages = [
+  {
+    src: veganFoodStirFriedBasilVegetarianProteinWithRicePackagingImage,
+    alt: '7-11 stir-fried basil vegetarian protein with rice packaging',
+    caption: "In the bigger branches of 7-11 you can find up to four different frozen vegan meals, the most common one though, usually available even in small branches, is this stir-fried basil vegetarian protein with rice. You know it's vegan because it has the red and yellow เจ symbol on it.",
+  },
+  {
+    src: veganFoodStirFriedBasilVegetarianProteinWithRiceMicrowavedImage,
+    alt: '7-11 stir-fried basil vegetarian protein with rice after coming out the microwave',
+    caption: "It doesn't look all that when it comes out the microwave, but it tastes fine, and it's very welcome to be able to get a vegan meal 24/7 at almost any 7-11 branch in the country.",
+  },
+]
+
+export const vegetarianFoodForHealthImages = [
+  {
+    src: vegetarianFoodForHealthBuffetWithRice1Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: "It's a typical Thai 'jay' restaurant with a point-and-hope buffet. Everything is vegan, so even though you might not know what you're eating, at least you'll know that it doesn't have meat. Three choices from the buffet with rice and a soup is 45 baht.",
+  },
+  {
+    src: vegetarianFoodForHealthTakeawaySpringRollsImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Any item they sell can be requested for take-away, but many items are already pre-packaged for taking home, including these spring rolls for 30 baht.',
+  },
+  {
+    src: vegetarianFoodForHealthOutsideImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: "เจ is pronounced 'jay', and essentially means vegan (it's a little more complicated than that, but that's basically the meaning). Any restaurant or food stand that has เจ in their signage (almost always in yellow on a red background) is going to be vegan. This is Vegetarian Food For Health from the outside, so what you're looking for if you're struggling to find it.",
+  },
+  {
+    src: vegetarianFoodForHealthBuffetWithRice3Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Rice with three choices from the buffet for 45 baht again.',
+  },
+  {
+    src: vegetarianFoodForHealthInsideImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: "Inside. Even though there's only four tables, there was never any shortage of seating on the times I came here.",
+  },
+  {
+    src: vegetarianFoodForHealthBuffetWithRice2Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Another rice with three choices from the buffet.',
+  },
+]
+
+export const terminal21Images = [
+  {
+    src: terminal21RiceWithThreeChoices1Image,
+    alt: 'Terminal 21 ',
+    caption: 'On the fourth floor of Terminal 21 in the Pier 21 food court is a vegetarian buffet. Three choices from the buffet with rice costs 44 baht.',
+  },
+  {
+    src: terminal21RiceWithThreeChoices2Image,
+    alt: 'Terminal 21 ',
+    caption: "It might not look all that, but you can't really complain for 44 baht.",
+  },
+  {
+    src: terminal21VegetarianBuffetImage,
+    alt: 'Terminal 21 ',
+    caption: "They don't really speak any English, so it's really just a point-and-hope buffet.",
+  },
+  {
+    src: terminal21VegetarianFoodKioskImage,
+    alt: 'Terminal 21 ',
+    caption: "There are many other restaurants within the food court. This is what you're looking for. It's number 6 if that helps.",
+  },
+  {
+    src: terminal21Pier21FruitStandImage,
+    alt: 'Terminal 21 ',
+    caption: "Within the same food court there's a fruit stand where each bag of fruit is 17 baht.",
+  },
+  {
+    src: terminal21FoodlandVeganCheeseImage,
+    alt: 'Terminal 21 ',
+    caption: 'On the basement level is Foodland supermarket which has occasional vegan items, like these vegan cheese slices.',
+  },
+  {
+    src: terminal21FoodlandVeganBreadImage,
+    alt: 'Terminal 21 ',
+    caption: 'It also has vegan bread, which is something of a rarity in this part of the world.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganReadyMealsImage,
+    alt: 'Terminal 21 ',
+    caption: 'Where it really stands-out though, is that it has a huge selection of vegan frozen meals.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatsImage,
+    alt: 'Terminal 21 ',
+    caption: "These weren't so useful for me as I only had a microwave in my kitchen, but there's also a selection of various vegan meats.",
+  },
+  {
+    src: terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraPackagingImage,
+    alt: 'Terminal 21 ',
+    caption: 'The plant-based spaghetti carbonara, available at Foodland. Looks delicious.',
+  },
+  {
+    src: terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraMicrowavedImage,
+    alt: 'Terminal 21 ',
+    caption: 'Well it does until it comes out the microwave, anyway.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatballsWithRicePackagingImage,
+    alt: 'Terminal 21 ',
+    caption: 'These vegan meatballs with rice are also available at Foodland.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatballsWithRiceMicrowavedImage,
+    alt: 'Terminal 21 ',
+    caption: "I think you can appreciate why I'd usually have two meals at a time.",
+  },
+  {
+    src: terminal21Foodland24HourEntranceImage,
+    alt: 'Terminal 21 ',
+    caption: "Even though Terminal 21 closes at 9pm everyday, Foodland is open 24 hours per day and after hours you can get in by using this escalator outside the shopping mall. Along with every branch of 7-11 also being open 24/7, there's a surprisingly large selection of frozen vegan food available in the middle of the night in Nakhon Ratchasima.",
+  },
+]
+
 export const runningImages = [
   {
     src: runningStravaImage,
@@ -90,6 +264,14 @@ export const runningImages = [
     src: runningBungTaLuaParkImage,
     alt: 'Bung Ta Lua Park running track',
     caption: "This running track at Bung Ta Lua Park has goes the entire way around the lake. The right path is for runners, with faster runners on the right and slower runners on the left (even though I was the only runner when I came here). The path on the left for cyclists is separated by a little verge and a line of trees so you don't have to worry about cyclists straying over into your path.",
+  },
+]
+
+export const laundryImages = [
+  {
+    src: laundryRichLaundryImage,
+    alt: 'Rich laundry',
+    caption: "Rich laundry. Although they have self-service machines outside, it's such good value to get a service wash that why waste the time?",
   },
 ]
 
@@ -122,6 +304,8 @@ It was actually quite fun. My backpacking days are some of the happiest of my li
 Because nothing here is aimed at foreigners, there's really not that much 'to do'. You won't find many bars or restaurants calling to you in English. There aren't many massage shops. It's just a nice place to be, where you won't get bothered or harrassed, and you can just exist anonymously.
 
 The perfect place to come for a detox, if you've done a bit too much partying in Pattaya.
+
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
@@ -167,6 +351,8 @@ With Happy Cow proving unreliable, I had to figure-out vegan food in Nakhon Ratc
 
 Most 7-11s offer at least one frozen vegan meal, with bigger branches offering up to four, and while they can heat them up for you in store, I prefer to take them home to heat-up when I want. The limited variety of the 7-11 frozen meals would have got tiresome though. Here's how I got by.
 
+<ImageGallery images={veganFoodImages} />
+
 ### Vegetarian Food For Health
 
 Thanks to my intervention, this restaurant now is on Happy Cow. It wasn't when I arrived, and I happened upon it just by wandering around, but it became the closest thing that I had to a 'go-to' restaurant in Nakhon Ratchasima.
@@ -179,7 +365,7 @@ Not a word of English is spoken here, so we had to communicate in Thai, but they
 
 They only have four tables, but often I'd find myself the only customer, and never did I have to share a table with anyone else. Thank God.
 
-TODO: Add photos
+<ImageGallery images={vegetarianFoodForHealthImages} />
 
 ### Terminal 21
 
@@ -213,7 +399,7 @@ Still, until they realise, this place is a vegan goldmine, and I'm sure you can 
 
 For however much the rest of the city is lacking in vegan food, Terminal 21 will keep you alive while you're here.
 
-TODO: Add photos
+<ImageGallery images={terminal21Images} />
 
 ## Where to run in Nakhon Ratchasima
 
@@ -231,11 +417,11 @@ That's pretty normal in this part of the world and I've never actually got bitte
 
 ## Where to do laundry in Nakhon Ratchasima
 
-With a lack of tourists, comes a lack of launderettes. And while I was for once staying in a hotel posh enough that they could do my laundry for me, I didn't want to give them the satisfaction, or the money, of using an overpriced hotel service, so off I wandered in search of a launderette.
+With a lack of tourists comes a lack of launderettes. And while I was for once staying in a hotel posh enough that they would do my laundry for me, I didn't want to give them the satisfaction (or the money) of using an overpriced hotel service, so off I wandered to find a launderette.
 
-What I found was a place called <ExternalLink url='https://maps.app.goo.gl/79SJHM81YXyrAm6w7'>Rich Laundry Korat</ExternalLink>. There were a small number of staff which welcomingly includes an old man who spoke the best English that I encountered in Nakhon Ratchasima. I guess he doesn't get to practice too often, and my conversation with this guy was about as deep as I had with anyone in Korat.
+What I found was a place called <ExternalLink url='https://maps.app.goo.gl/79SJHM81YXyrAm6w7'>Rich Laundry</ExternalLink>. There were a small number of staff which welcomingly includes an old man who spoke the best English I encountered in Nakhon Ratchasima. I guess he doesn't get to practice too often, and my conversation with this guy was about as deep as I had with anyone in Korat, as he really seemed like he wanted to talk.
 
-Needless to say, this made communication a lot easier, and it was the cheapest laundry I've had anywhere in Thailand. Usually launderettes with either charge you by weight, or charge you by item. This guy just took my clothes, looked at the bag and said _"120 baht."_ Compare that to 300 baht for a similarly-sized load in Pattaya, and I appreciated this place.
+Needless to say, this made communication a lot easier and it was the cheapest laundry I've had done anywhere in Thailand. Usually launderettes with either charge you by weight, or charge you by item. This guy just took my clothes, looked at the bag and said _"120 baht."_ Compare that to 300 baht for a similarly-sized load in Pattaya, and I appreciated this place.
 
 Normally you get told when to come back as well. He instead asked me when I wanted to be able to collect them, and coming in at lunchtime, he offered me 9am the next day.
 
@@ -243,7 +429,7 @@ I had no intention of being up that early, so I said lunchtime would be fine. Ba
 
 There might not be many launderettes in Korat, but all you need is one good one, and this is it.
 
-TODO: Add photos
+<ImageGallery images={laundryImages} />
 
 ## Being sociable in Nakhon Ratchasima
 
