@@ -197,6 +197,12 @@ export const thailandData = {
         [departure]: '2015-09-17',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2023-12-23',
+        [departure]: '2023-12-25',
+      },
+    },
   ],
   [places[countries.thailand].pai]: [
     {
