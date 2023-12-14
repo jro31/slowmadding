@@ -6,6 +6,16 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import romyenGardenPlaceBedImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/bed.jpeg'
+import romyenGardenPlaceRoomImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/room.jpeg'
+import romyenGardenPlaceKitchenImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/kitchen.jpeg'
+import romyenGardenPlaceBathroomImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/bathroom.jpeg'
+import romyenGardenPlaceBalconyImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/balcony.jpeg'
+import romyenGardenPlaceViewImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/view.jpeg'
+
+import runningStravaImage from '#/nakhon-ratchasima-for-digital-nomads/running/strava.jpeg'
+import runningBungTaLuaParkImage from '#/nakhon-ratchasima-for-digital-nomads/running/bung-ta-lua-park.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-12-07T10:00:00+07:00', // TODO: Update this
@@ -35,6 +45,53 @@ export const romyenGardenPlaceDetails = {
     },
   },
 }
+
+export const romyenGardenPlaceImages = [
+  {
+    src: romyenGardenPlaceBedImage,
+    alt: 'Romyen Garden Place bed',
+    caption: "The bed was comfortable, there's plenty of space for your clothes in that cupboard and the armchair is a great place to work on your laptop.",
+  },
+  {
+    src: romyenGardenPlaceRoomImage,
+    alt: 'Romyen Garden Place room',
+    caption: "There's also a desk and a chair that make a good workstation. The TV was a bit shit, but you can't have everything. There was just space to do yoga or other exercise between the bed and the TV.",
+  },
+  {
+    src: romyenGardenPlaceKitchenImage,
+    alt: 'Romyen Garden Place kitchen',
+    caption: 'The kitchen looks like it might be nicely equipped, what with all those cupboards and drawers. The kitchen contains nothing more than you can see here; a fridge with ice compartment, a microwave a couple of (too small) tea cups and glasses, and most importantly, a kettle.',
+  },
+  {
+    src: romyenGardenPlaceBathroomImage,
+    alt: 'Romyen Garden Place bathroom',
+    caption: 'The bathroom was clean and spacious.',
+  },
+  {
+    src: romyenGardenPlaceBalconyImage,
+    alt: 'Romyen Garden Place balcony',
+    caption: "Although there's no sink in the kitchen, there is one just outside on the balcony, as well as a chair and a stool, which made it a good place to sit and stop sweating after a run, and to dry your clothes on.",
+  },
+  {
+    src: romyenGardenPlaceViewImage,
+    alt: 'Romyen Garden Place view',
+    caption: "If you look in the right direction at the right time of day, the view's not so bad.",
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Bung Ta Lua Park Strava',
+    caption: 'Bung Ta Lua Park is the bottom circuit and is 3.2km in circumference. Crossing a road at the north end takes you to another smaller lake that has a pedestrian path around the outside, which you can also comfortably run around.',
+    url: 'https://www.strava.com/activities/10319497505',
+  },
+  {
+    src: runningBungTaLuaParkImage,
+    alt: 'Bung Ta Lua Park running track',
+    caption: "This running track at Bung Ta Lua Park has goes the entire way around the lake. The right path is for runners, with faster runners on the right and slower runners on the left (even though I was the only runner when I came here). The path on the left for cyclists is separated by a little verge and a line of trees so you don't have to worry about cyclists straying over into your path.",
+  },
+]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
@@ -76,7 +133,7 @@ The perfect place to come for a detox, if you've done a bit too much partying in
 
 Staying here was a rarity to me, in that I'd call it a proper hotel. It has a concierge, it has room service, it includes snacks in my room that they charge you money for if you eat.
 
-I typically don't go for such places because they cost more and I generally don't like them. I ponied-up for this room though, because even though it was noticeably more expensive than other rooms in Korat, there seemed to be a real lack of kettles offered in hotel rooms here, and a kettle is a minimum requirement for m, given the amount of tea I drink.
+I typically don't go for such places because they cost more and I generally don't like them. I ponied-up for this room though, because even though it was noticeably more expensive than other rooms in Korat, there seemed to be a real lack of kettles offered in hotel rooms here, and a kettle is a minimum requirement for me given the amount of tea I drink.
 
 The deluxe king room is the bigger of the two "room" sizes that they offer (37m² vs 33m²), although they also offer apartments, where the size goes way up from there. And despite the fact the room was filled with snacks I couldn't eat because they were cheaper at 7-11, I actually really liked it.
 
@@ -102,7 +159,7 @@ Multiple wifi connections reach all corners of the hotel and are fast and reliab
 
 It's definitely not the cheapest place in Korat, but take that with a pinch of salt because this city is dirt cheap anyway. I was glad I'd spent the extra money. It was a very comfortable stay.
 
-TODO: Add photos
+<ImageGallery images={romyenGardenPlaceImages} />
 
 ## Where to get vegan food in Nakhon Ratchasima
 
@@ -162,15 +219,15 @@ TODO: Add photos
 
 Given the state of my health in Nakhon Ratchasima, I only made it out for one short, slow run, at <ExternalLink url='https://maps.app.goo.gl/udgpDHDPhjVxAT1d6'>Bung Ta Lua Park</ExternalLink>. That was a shame, because Bung Ta Lua Park was a joy to run in.
 
-As is common-place in Thailand, if they have a lake, then they just build a running and a cycling track around the outside. I honestly wish they did that everywhere, it makes it such a welcoming place to come and exercise. The running track has a 3.2km circumference, is very wide all the way around, and is mostly away from roads so you're breathing clean air. It's also right next to another, smaller lake that has a path (not exactly a running track) around it, that you have to cross a road to get to, but that adds perhaps another kilometre on top.
+As is common-place in Thailand, especially Isaan, if they have a lake, then they just build a running and a cycling track around it. I really wish they did that everywhere, it makes it such a welcoming place to come and exercise. The running track has a 3.2km circumference, is very wide all the way around, and is mostly away from roads so you're breathing clean air. It's also right next to another, smaller lake that has a path (not exactly a running track) around it, that you have to cross a road to get to, but that adds perhaps another kilometre on top.
 
 I ran in the mid-morning, and there wasn't another runner on the track; I had the whole thing to myself. It was joyous, or would have been if I hadn't been so sick at the same time.
 
 I ran there from my hotel, and the streets of Korat were perfectly pleasant to run around in their own right, with the exception that I got chased by a couple of dogs.
 
-That's pretty standard in this part of the world, and I've never actually got bitten, they just snap at your heels a bit. That probably wouldn't be an issue if you stuck to main roads.
+That's pretty normal in this part of the world and I've never actually got bitten, they just snap at your heels a bit. That probably wouldn't be an issue if you stick to main roads.
 
-TODO: Add photos
+<ImageGallery images={runningImages} />
 
 ## Where to do laundry in Nakhon Ratchasima
 
