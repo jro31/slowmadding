@@ -1,0 +1,444 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import cityBigGoldThingImage from '#/nakhon-ratchasima-for-digital-nomads/city/big-gold-thing.jpeg'
+import cityBungTaLuaParkBridgeImage from '#/nakhon-ratchasima-for-digital-nomads/city/bung-ta-lua-park-bridge.jpeg'
+import cityHorseImage from '#/nakhon-ratchasima-for-digital-nomads/city/horse.jpeg'
+import cityLakeImage from '#/nakhon-ratchasima-for-digital-nomads/city/lake.jpeg'
+
+import romyenGardenPlaceBedImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/bed.jpeg'
+import romyenGardenPlaceRoomImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/room.jpeg'
+import romyenGardenPlaceKitchenImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/kitchen.jpeg'
+import romyenGardenPlaceBathroomImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/bathroom.jpeg'
+import romyenGardenPlaceBalconyImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/balcony.jpeg'
+import romyenGardenPlaceViewImage from '#/nakhon-ratchasima-for-digital-nomads/romyen-garden-place/view.jpeg'
+
+import veganFoodStirFriedBasilVegetarianProteinWithRicePackagingImage from '#/nakhon-ratchasima-for-digital-nomads/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-packaging.jpeg'
+import veganFoodStirFriedBasilVegetarianProteinWithRiceMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-microwaved.jpeg'
+
+import vegetarianFoodForHealthBuffetWithRice1Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-1.jpeg'
+import vegetarianFoodForHealthTakeawaySpringRollsImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/takeaway-spring-rolls.jpeg'
+import vegetarianFoodForHealthOutsideImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/outside.jpeg'
+import vegetarianFoodForHealthBuffetWithRice3Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-3.jpeg'
+import vegetarianFoodForHealthInsideImage from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/inside.jpeg'
+import vegetarianFoodForHealthBuffetWithRice2Image from '#/nakhon-ratchasima-for-digital-nomads/vegetarian-food-for-health/buffet-with-rice-2.jpeg'
+import terminal21VegetarianBuffetImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/vegetarian-buffet.jpeg'
+import terminal21VegetarianFoodKioskImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/vegetarian-food-kiosk.jpeg'
+import terminal21Pier21FruitStandImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/pier-21-fruit-stand.jpeg'
+import terminal21FoodlandVeganCheeseImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-vegan-cheese.jpeg'
+import terminal21FoodlandVeganBreadImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-vegan-bread.jpeg'
+
+import terminal21RiceWithThreeChoices1Image from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/rice-with-three-choices-1.jpeg'
+import terminal21RiceWithThreeChoices2Image from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/rice-with-three-choices-2.jpeg'
+import terminal21FoodlandFrozenVeganReadyMealsImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-ready-meals.jpeg'
+import terminal21FoodlandFrozenVeganMeatsImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meats.jpeg'
+import terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraPackagingImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-packaging.jpeg'
+import terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-microwaved.jpeg'
+import terminal21FoodlandFrozenVeganMeatballsWithRicePackagingImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meatballs-with-rice-packaging.jpeg'
+import terminal21FoodlandFrozenVeganMeatballsWithRiceMicrowavedImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-frozen-vegan-meatballs-with-rice-microwaved.jpeg'
+import terminal21Foodland24HourEntranceImage from '#/nakhon-ratchasima-for-digital-nomads/terminal-21/foodland-24-hour-entrance.jpeg'
+
+import runningStravaImage from '#/nakhon-ratchasima-for-digital-nomads/running/strava.jpeg'
+import runningBungTaLuaParkImage from '#/nakhon-ratchasima-for-digital-nomads/running/bung-ta-lua-park.jpeg'
+
+import laundryRichLaundryImage from '#/nakhon-ratchasima-for-digital-nomads/laundry/rich-laundry.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2023-12-15T18:50:00+07:00',
+  title: 'Nakhon Ratchasima for Digital Nomads',
+  description: "Nakhon Ratchasima is the biggest city in Isaan and the third biggest city in Thailand, yet there's barely a foreigner in sight. Why is that? What does this city offer to those who dare to venture here?",
+  keywords: ['Thailand', 'Korat'],
+}
+
+export const romyenGardenPlaceDetails = {
+  dates: {
+    checkIn: '2023-11-30',
+    checkOut: '2023-12-07',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
+  },
+  roomType: 'Deluxe King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 7975.36,
+      '7% VAT': 558.28,
+      '10% Property service charge': 853.36,
+      'booking.com pays': -891.77,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: cityBigGoldThingImage,
+    alt: 'Big gold thing',
+    caption: 'One of those big gold things.',
+  },
+  {
+    src: cityBungTaLuaParkBridgeImage,
+    alt: 'Bung Ta Lua Park bridge',
+    caption: 'A somewhat overstated bridge in Bung Ta Lua Park.',
+  },
+  {
+    src: cityHorseImage,
+    alt: 'Horse ornament next to the lake',
+    caption: 'Just north of Bung Ta Lua Park (possibly considered part of the same park) is another lake, making this a very pleasant area to come for a walk or a run.',
+  },
+  {
+    src: cityLakeImage,
+    alt: 'Lake',
+    caption: "This lake isn't as big as the one in Bung Ta Lua Park, but it's still a good kilometre around the outside.",
+  },
+]
+
+export const romyenGardenPlaceImages = [
+  {
+    src: romyenGardenPlaceBedImage,
+    alt: 'Romyen Garden Place bed',
+    caption: "The bed was comfortable, there's plenty of space for your clothes in that cupboard and the armchair is a great place to work on your laptop.",
+  },
+  {
+    src: romyenGardenPlaceRoomImage,
+    alt: 'Romyen Garden Place room',
+    caption: "There's also a desk and a chair that make a good workstation. The TV was a bit shit, but you can't have everything. There was just space to do yoga and other exercise between the bed and the TV.",
+  },
+  {
+    src: romyenGardenPlaceKitchenImage,
+    alt: 'Romyen Garden Place kitchen',
+    caption: 'The kitchen looks like it might be nicely equipped, what with all those cupboards and drawers. The kitchen contains nothing more than you can see here; a fridge with ice compartment, a microwave, a couple of (too small) tea cups and glasses, and most importantly, a kettle.',
+  },
+  {
+    src: romyenGardenPlaceBathroomImage,
+    alt: 'Romyen Garden Place bathroom',
+    caption: 'The bathroom was clean and spacious.',
+  },
+  {
+    src: romyenGardenPlaceBalconyImage,
+    alt: 'Romyen Garden Place balcony',
+    caption: "Although there's no sink in the kitchen, there is one just outside on the balcony, as well as a chair and a stool, which made it a good place to sit and stop sweating after a run, and to dry any wet clothes on.",
+  },
+  {
+    src: romyenGardenPlaceViewImage,
+    alt: 'Romyen Garden Place view',
+    caption: "If you look in the right direction at the right time of day, the view's not so bad either.",
+  },
+]
+
+export const veganFoodImages = [
+  {
+    src: veganFoodStirFriedBasilVegetarianProteinWithRicePackagingImage,
+    alt: '7-11 stir-fried basil vegetarian protein with rice packaging',
+    caption: "In the bigger branches of 7-11 you can find up to four different frozen vegan meals. The most common one, usually available even in smaller branches, is this stir-fried basil vegetarian protein with rice. You know it's vegan because it has the red and yellow เจ symbol on it.",
+  },
+  {
+    src: veganFoodStirFriedBasilVegetarianProteinWithRiceMicrowavedImage,
+    alt: '7-11 stir-fried basil vegetarian protein with rice after coming out the microwave',
+    caption: "It doesn't look all that when it comes out the microwave, but it tastes fine, and it's very welcome to be able to get a vegan meal 24/7 at almost any 7-11 branch in the country.",
+  },
+]
+
+export const vegetarianFoodForHealthImages = [
+  {
+    src: vegetarianFoodForHealthBuffetWithRice1Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: "It's a typical Thai 'jay' restaurant with a point-and-hope buffet. Everything is vegan, so even though you might not know what you're eating, at least you'll know that it doesn't have meat. Three choices from the buffet with rice and a soup is 45 baht.",
+  },
+  {
+    src: vegetarianFoodForHealthTakeawaySpringRollsImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Any item they sell can be requested for take-away, but many items are already pre-packaged to take home, including these spring rolls for 30 baht.',
+  },
+  {
+    src: vegetarianFoodForHealthOutsideImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: "เจ is pronounced 'jay', and essentially means vegan (it's a little more complicated than that). Any restaurant or food stand that has เจ in their signage (almost always in yellow on a red background) is going to be vegan. This is 'Vegetarian Food For Health' from the outside, so what you're looking for if you're struggling to find it.",
+  },
+  {
+    src: vegetarianFoodForHealthBuffetWithRice3Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Rice with three choices from the buffet for 45 baht again.',
+  },
+  {
+    src: vegetarianFoodForHealthInsideImage,
+    alt: 'Vegetarian Food For Health ',
+    caption: "Inside. Even though there's only four tables, there was never any shortage of seating on the times I came here.",
+  },
+  {
+    src: vegetarianFoodForHealthBuffetWithRice2Image,
+    alt: 'Vegetarian Food For Health ',
+    caption: 'Another rice with three choices from the buffet.',
+  },
+]
+
+export const terminal21Images = [
+  {
+    src: terminal21RiceWithThreeChoices1Image,
+    alt: 'Terminal 21 ',
+    caption: 'On the fourth floor of Terminal 21 in the Pier 21 food court is a vegetarian buffet. Three choices from the buffet with rice costs 44 baht.',
+  },
+  {
+    src: terminal21RiceWithThreeChoices2Image,
+    alt: 'Terminal 21 ',
+    caption: "It might not look all that, but you can't really complain for 44 baht.",
+  },
+  {
+    src: terminal21VegetarianBuffetImage,
+    alt: 'Terminal 21 ',
+    caption: "They don't really speak any English, so it's just a point-and-hope buffet.",
+  },
+  {
+    src: terminal21VegetarianFoodKioskImage,
+    alt: 'Terminal 21 ',
+    caption: "There are many other restaurants within the food court. This is what you're looking for. It's number 6 if that helps.",
+  },
+  {
+    src: terminal21Pier21FruitStandImage,
+    alt: 'Terminal 21 ',
+    caption: "Within the same food court there's a fruit stand where each bag of fruit is 17 baht.",
+  },
+  {
+    src: terminal21FoodlandVeganCheeseImage,
+    alt: 'Terminal 21 ',
+    caption: 'On the basement level is Foodland supermarket which has occasional vegan items, like these vegan cheese slices.',
+  },
+  {
+    src: terminal21FoodlandVeganBreadImage,
+    alt: 'Terminal 21 ',
+    caption: 'It also has vegan bread, which is surprisingly hard to find in this part of the world.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganReadyMealsImage,
+    alt: 'Terminal 21 ',
+    caption: 'Where Foodland really stands-out though, is they have a huge selection of vegan frozen meals.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatsImage,
+    alt: 'Terminal 21 ',
+    caption: "These weren't so useful for me as I only had a microwave in my kitchen, but there's also a selection of various vegan meats.",
+  },
+  {
+    src: terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraPackagingImage,
+    alt: 'Terminal 21 ',
+    caption: 'The plant-based spaghetti carbonara, available at Foodland. Looks delicious.',
+  },
+  {
+    src: terminal21FoodlandFrozenPlantBasedSpaghettiCarbonaraMicrowavedImage,
+    alt: 'Terminal 21 ',
+    caption: 'Well it does until it comes out the microwave anyway.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatballsWithRicePackagingImage,
+    alt: 'Terminal 21 ',
+    caption: 'These vegan meatballs with rice are also available at Foodland.',
+  },
+  {
+    src: terminal21FoodlandFrozenVeganMeatballsWithRiceMicrowavedImage,
+    alt: 'Terminal 21 ',
+    caption: "I think you can appreciate why I'd usually have two meals at a time.",
+  },
+  {
+    src: terminal21Foodland24HourEntranceImage,
+    alt: 'Terminal 21 ',
+    caption: "Even though Terminal 21 closes at 9pm everyday, Foodland is open 24 hours and after the shopping mall is closed you can get in by using this escalator. Along with every branch of 7-11 also being open 24/7, there's a surprisingly large selection of vegan frozen food available in the middle of the night in Nakhon Ratchasima.",
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Bung Ta Lua Park Strava',
+    caption: 'Bung Ta Lua Park is the bottom circuit and is 3.2km in circumference. Crossing a road at the north end takes you to another smaller lake that has a pedestrian path around the outside that is also good for running.',
+    url: 'https://www.strava.com/activities/10319497505',
+  },
+  {
+    src: runningBungTaLuaParkImage,
+    alt: 'Bung Ta Lua Park running track',
+    caption: "This running track at Bung Ta Lua Park has goes the entire way around the lake. The right path is for runners, with faster runners on the right and slower runners on the left (even though I was the only runner when I came here). The path on the left for cyclists is separated by a little verge and a line of trees so you don't have to worry about cyclists straying into your way.",
+  },
+]
+
+export const laundryImages = [
+  {
+    src: laundryRichLaundryImage,
+    alt: 'Rich laundry',
+    caption: "Rich laundry. Although they have self-service machines outside, it's such good value to get a service wash that why spend the time?",
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Nakhon Ratchasima, also known as Korat, is the third largest city in Thailand (behind Bangkok and Chiang Mai) in terms of urban population, and is the largest in Isaan, yet very few foreign tourists ever visit. Why is that? And what does this city offer a digital nomad?
+
+While this was technically my third ever visit to Korat, the previous two came in 2012 and were simply overnight stops to break-up longer trips I was taking. This was the first time I'd ever stopped here with the intention of getting to know Nakhon Ratchasima as a city.
+
+I came from Pattaya, and should probably point-out that I partied a lot in Pattaya, and as a result managed to pick-up a pretty nasty cold/flu/covid bug that I brought with me, limiting the scope of what I could do, including not going out socially at all. Still, I spent plenty of time wandering the city and getting a feel for it.
+
+It's not quite the most isolated place I've been in Thailand at a digital nomad. When I was in Loei earlier this year, I didn't see another foreigner for the entire week. It's not like that here, but it's only one step above. If you go out for a three hour walk in Nakhon Ratchasima, you'll perhaps run-into five other foreigners.
+
+If you're used to Bangkok, Pattaya, Chiang Mai or any other tourist-heavy places where there are twenty foreigners in your peripheral vision at any one time, Nakhon Ratchasima will be a bit of a shock. Very little here is aimed at foreigners, and very little English is spoken.
+
+I really liked it though. It's a very calm, relaxed place, without much going on. A nice change of pace from Pattaya. Compared to Udon, where I find the local people to be very forward and I'd often have locals come and talk to me, here everyone pretty much left me alone.
+
+Wandering down quiet side-roads by myself, as I do a lot, I did get some strange looks in the vein of _"what's this weird foreigner doing down our street?"_ And I found that in most cases, if I made eye contact with or acknowledged someone, rather than returning that acknowledgement, they averted their gaze and walked past me looking uncomfortable.
+
+That wasn't always true. For example, there was a woman always sitting outside her house, down one of the side roads near my hotel. Everytime I walked past here, she'd ask me (in English) _"where you go?"_ and was very smiley and friendly.
+
+Perhaps because of the poor levels of English, I did find that some people (like fruit vendors, people working in local restaurants etc) even looked a little mortified when I approached, only to relax and start smiling when I spoke to them in Thai, even if it was in my very broken Thai. Given the lack of foreigners here, most people, even those in service roles, don't have to speak any English or interact with any foreigners, so it can be a bit of a shock to them when someone like me approaches.
+
+I like that though. I haven't studied any Thai since 2016 and I never got very far. It's only when I'm forced to use it (or when I'm drunk) that I speak Thai, so I enjoyed that I had to.
+
+One thing I did find is that the online information is wholly unreliable in Nakhon Ratchasima.
+
+What I mean is that I have a few resources that I rely on as a digital nomad to provide me with accurate and up-to-date information. More than any other, I rely on Happy Cow to direct me to vegan food, but in Nakhon Ratchasima, I went to the four places on Happy Cow that were closest to my room. None of them had received any new photos or reviews since at least 2019, and as it turns-out, none of them exist anymore either. I had a similar experience with other apps I use, so quickly realised that online information in English about Nakhon Ratchasima is completely out-of-date, and to learn about this city, I just had to wander around and figure things out, like back when I was backpacking before I owned a smartphone.
+
+It was actually quite fun. My backpacking days are some of the happiest of my life, yet now when I go somewhere new, I figure everything out on my phone before I leave my room. Rarely do I go out anymore to aimlessly explore. Nakhon Ratchasima was a throwback to the good old days.
+
+Because nothing here is aimed at foreigners, there's really not that much 'to do'. You won't find many bars or restaurants calling to you in English. There aren't many massage shops. It's just a nice place to be, where you won't get bothered or harrassed, and you can just exist.
+
+The perfect place to come for a detox, if you've done a bit too much partying in Pattaya.
+
+<ImageGallery images={cityImages} />
+
+## Where I stayed
+
+### Romyen Garden Place
+
+<MapLink name='168/9 Jomsurangyard Rd' url='https://maps.app.goo.gl/JzvgdeGea5YuqzuM7' />
+
+<AccommodationTable details={romyenGardenPlaceDetails} />
+
+Staying here was a rarity to me, in that I'd call it a proper hotel. It has a concierge, it has room service, it has snacks in the room that they charge you money for if you eat.
+
+I typically don't go for such places because they cost more and I generally don't like them. I ponied-up for this room though, because even though it was noticeably more expensive than other rooms in Korat, there seemed to be a real lack of kettles offered in hotel rooms here, and a kettle is a minimum requirement for me given the amount of tea I drink.
+
+The deluxe king room is the bigger of the two "room" sizes that they offer (37m² vs 33m²), although they also offer apartments where the size goes up from there. And despite the fact the room was filled with snacks I couldn't eat because they were cheaper at 7-11, I actually really liked it.
+
+It had a very comfortable king-sized bed with enough space in front of it to exercise. There's loads of cupboard space, a nice bathroom, a comfortable armchair that I worked from a lot, as well as a desk and a comfortable chair that made a good workstation (although lacking in nearby plugs).
+
+The TV was a bit shit. It's quite small, and the way it's attached to the wall it faces towards the ceiling slightly, so isn't actually that good to watch from bed. And the sound quality was garbage. I had to connect my headphones just so I could hear what I was watching.
+
+Perhaps my biggest frustration was that the room appears to include a kitchen. It has a kitchen surface and a load of drawers and cupboards.
+
+Yep, all the drawers and cupboards are empty. Completely empty. No cutlery, no crockery, absolutely nothing.
+
+If you've ever read the article I wrote about <Link href='/articles/what-to-pack-as-a-digital-nomad'>what to pack as a digital nomad</Link>, you'll know that I carry some emergency kitchenware for when none is provided. In my suitcase I have a knife and a chopping board, a set of cutlery, a collapsible silicone bowl, a proper-sized tea cup, as well as my blender.
+
+Usually when I stay somewhere I'll only need one or two of these items. This was the first place in a while where I needed all of them.
+
+This is the problem with staying somewhere that has room service. They want you to pay for their room service, so don't give you any way of feeding yourself. Well fuck you guys, I brought my own kitchen with me.
+
+I would have actually been happy to order from the restaurant, with the exception of it having absolutely nothing vegan on the menu. There's also a pool and a gym on site, although as I didn't use either, I can't add much more other than to say they're definitely there.
+
+What they do offer in the kitchen is a kettle, a microwave and a fridge (with ice compartment). The kettle is a minimum requirement, but as I'll get to in the section below, the microwave and fridge were also pretty essential, and I was thankful to have them.
+
+Multiple wifi connections reach all corners of the hotel and are fast and reliable, so I have no complaints there, and I really liked the location. You're close enough to Bung Ta Lua Park that you can easily go for a run (see below), Terminal 21 is about a twenty minute walk in the other direction, my favourite vegan restaurant in Nakhon Ratchasima is less than ten minutes walk, and there are a couple of 7-11s and some vendors very close. I couldn't really ask for much more.
+
+It's definitely not the cheapest place in Korat, but take that with a pinch of salt because this city is dirt cheap anyway. I was glad I'd spent the extra money. It was a very comfortable stay.
+
+<ImageGallery images={romyenGardenPlaceImages} />
+
+## Where to get vegan food in Nakhon Ratchasima
+
+With Happy Cow proving unreliable, I had to figure-out vegan food in Nakhon Ratchasima for myself. To my knowledge, there are no late night restaurants that serve vegan food here, so the routine I got into was to have one hot meal per day for lunch. The reason I was so thankful to have a microwave and a fridge in my room, is in the evenings I'd have one or two vegan frozen meals that I'd store in my fridge's ice compartment.
+
+Most 7-11s offer at least one vegan frozen meal, with bigger branches offering up to four, and while they can heat them up for you in store, I prefer to take them home to heat-up when I want. The limited variety of the 7-11 frozen meals would have got tiresome though. Here's how I got by.
+
+<ImageGallery images={veganFoodImages} />
+
+### Vegetarian Food For Health
+
+Thanks to my intervention, this restaurant now is on Happy Cow. It wasn't when I arrived, and I happened upon it just by wandering around, but it became the closest thing that I had to a 'go-to' restaurant in Nakhon Ratchasima.
+
+It's your typical local 'jay' buffet restaurant (meaning that it's fully vegan) with a point-and-hope buffet, but I didn't get anything I didn't like. Everything they sell is available as take away, and they have plenty of items already pre-packaged, so after getting my lunch, I'd usually get something else to take with me that I'd have as part of my dinner.
+
+Three choices from the buffet with rice costs 45 baht, and the take away items I got were typically 30 baht.
+
+Not a word of English is spoken so we had to communicate in Thai, but they were very patient with me while I slowly interpreted the things they said, and all interactions were conducted with a smile.
+
+They only have four tables, but often I'd find myself the only customer, and never did I have to share a table with anyone else. Thank God.
+
+<ImageGallery images={vegetarianFoodForHealthImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/vegetarian-food-for-health-nakhon-ratchasima-382866'>Visit Vegetarian Food For Health on Happy Cow</ExternalLink>
+
+### Terminal 21
+
+Terminal 21 was the other place in Korat that served my vegan needs. I bought food from four different places, but as they're all within Terminal 21 I'm going to group them all together.
+
+Firstly, in the Pier 21 food court on the fourth floor is a vegetarian (note, not vegan) food kiosk. I stress that it's not vegan because on one my visits I got three things from the buffet only to sit down and on closer inspection, realise one of them was made with egg. Which was shit.
+
+While it's primarily a point-and-hope buffet, they do also offer some food made to order.
+
+If you've made it to Nakhon Ratchasima, then I'd assume by now you're familiar with the way that Terminal 21 (and many other large shopping mall) food courts work in Thailand, but just in case you're not, you have to firstly go to the counter where two or three girls (it's always girls for some reason) are sitting, and get a card with some credit on. Just hand-over as much money as you want to top-up; you don't need to say anything. I typically add 200 baht, but you'll do well to spend more than 100 given how cheap these food courts are. Then when you go to any of the kiosks, you hand-over this card to pay; you cannot pay with cash. Once you've finished your meal, go back to the counter where you got your card, hand it back over, and you'll be refunded any money remaining.
+
+The vegetarian kiosk is fairly bog-standard, but it's good enough and it's cheap. Rice with three choices from the buffet costs 44 baht.
+
+Within the same food court (so you'll need to pay with the same card and cannot pay with cash) is a fresh fruit vendor, who sells bags of the usual fruits (watermelon, pappaya, pineapple etc) at 17 baht each. I typically buy these from street vendors, but the one fruit vendor I went to in Korat gave me what I can only assume are foreigner prices.
+
+Typically, even in Bangkok, you'll never spend more than 20 baht on any of these fruits, so when the street vendor here charged me 30 baht for a pretty small bag of pineapple, I was all fuck you, I'll buy it from Terminal 21 where it's 17 baht no matter your skin colour.
+
+Down on the ground floor of Terminal 21 they had what I assume was a temporary collection of food stands (it might be permanent), and among these was a vendor selling strawberries at very fair prices. Berries usually cost a fortune in Thailand, so I tend to just not eat them, but here they were selling decent-sized punnets of strawberries for 100 baht, which brightened-up my daily smoothies.
+
+Then lastly in Terminal 21, is the Foodland supermarket, located in the basement. It's worth noting that, despite being within the shopping mall, Foodland is open 24 hours, and there is an outdoor escalator to take you down there (as well as to the 24 hour Jetts Fitness if you fancy a late night workout) after the shopping mall has closed.
+
+The reason I include Foodland, is that within most parts of the supermaket, I could find occasional vegan items. It sells vegan cheese slices, albeit very expensively (149 baht for 7 slices), which are very hard to find in Thailand. It also sells vegan bread, which again is hard to find in Thailand. Almost all bread here is made with either milk or butter. They also have a small (fairly disappointing) selection of fruits and vegetables, as well the vegan items like rice and pasta you'd typically expect to find in a supermarket.
+
+The reason I include it, is for some reason it has the largest selection of vegan frozen meals I've ever encountered anywhere on this side of the world. Seriously, I couldn't believe my eyes when I saw it.
+
+Just vegan frozen meal after vegan frozen meal. They had more vegan frozen meals than they had non-vegan frozen meals, which kind of makes me think that they've done it by mistake, or the supermarket's buyer has gone rogue.
+
+I don't think I've ever encoutered a frozen section in a mainstream supermarket that has more vegan than non-vegan stuff. So to have it in Korat of all places, where it's otherwise a struggle to find vegan food at all, just seemed odd.
+
+Still, until they realise this place is a vegan goldmine, and I'm sure you can now appreciate why it was so invaluable for me to have both the microwave and the fridge with ice compartment in my room.
+
+For however much the rest of the city is lacking in vegan food, Terminal 21 will keep you alive while you're here.
+
+<ImageGallery images={terminal21Images} />
+
+<ExternalLink url='https://www.happycow.net/reviews/vegetarian-food-nakhon-ratchasima-382760'>Visit Vegetarian Food - Pier 21 on Happy Cow</ExternalLink>
+
+## Where to run in Nakhon Ratchasima
+
+Given my state of ill-health, I only made it out for one short, slow run in Nakhon Ratchasima, at <ExternalLink url='https://maps.app.goo.gl/udgpDHDPhjVxAT1d6'>Bung Ta Lua Park</ExternalLink>. That was a shame, because Bung Ta Lua Park was a joy to run in.
+
+As is common-place in Thailand, especially Isaan, if they have a lake, then they just build a running and a cycling track around it. I really wish they did that everywhere, it makes it such a welcoming place to come and exercise. The running track has a 3.2km circumference, is very wide all the way around, and is mostly away from roads so you're breathing clean air. It's also right next to another, smaller lake that has a path (not exactly a running track) around it that adds perhaps another kilometre on top.
+
+I ran in the mid-morning, and there wasn't another runner on the track; I had the whole thing to myself. It was joyous, or would have been if I hadn't been so sick at the same time.
+
+I ran there from my hotel, and the streets of Korat were perfectly pleasant to run on in their own right, with the exception that I got chased by a couple of dogs.
+
+That's pretty normal in this part of the world and I've never actually got bitten, they just snap at your heels a bit. That probably wouldn't be an issue if you stick to main roads.
+
+<ImageGallery images={runningImages} />
+
+## Where to do laundry in Nakhon Ratchasima
+
+With a lack of tourists comes a lack of launderettes, and while I was for once staying in a hotel posh enough that they would do my laundry for me, I didn't want to give them the satisfaction (or the money) of using an overpriced hotel service, so off I wandered to find a launderette.
+
+What I found was a place called <ExternalLink url='https://maps.app.goo.gl/79SJHM81YXyrAm6w7'>Rich Laundry</ExternalLink>. There were a small number of staff which welcomingly includes an old man who spoke the best English I encountered in Nakhon Ratchasima. I guess he doesn't get to practice too often, and my conversation with this guy was about as deep as I had with anyone in Korat, as he really seemed like he wanted to talk.
+
+Needless to say, this made communication a lot easier and it was the cheapest laundry I've had done anywhere in Thailand. Usually launderettes will either charge you by weight, or charge you by item. This guy just took my clothes, looked at the bag and said _"120 baht."_ Compare that to 300 baht for a similar-sized load in Pattaya, and I appreciated this place.
+
+I took it in in the afternoon, and he offered to have it ready by 9am the next morning. I had no intention of being up that early so I said lunchtime would be fine. Back I went the next day and everything was there, and everything was clean.
+
+There might not be many launderettes in Korat, but all you need is one good one, and this is it.
+
+<ImageGallery images={laundryImages} />
+
+## Being sociable in Nakhon Ratchasima
+
+As I mentioned earlier, given the illness I was carrying I wasn't able to go out socially at all while I was in Nakhon Ratchasima, so I can give you very little insight into how it ranks as a social town. What I will do is detail how I would have gone about being sociable here, had I been feeling better.
+
+Before coming here (and before I got sick) I'd searched for events on Meetup. There are none, so forget about that as a resource. I found one Facebook group; <ExternalLink url='https://www.facebook.com/share/9zsrEmH4EEvahEUf'>Expats in Korat / Nakhon Ratchasima</ExternalLink> that looked fairly active and potentially useful for meeting people. I would guess by adding a post on there you'd be able to find someone to go for a beer with. It also hosts occasional events.
+
+My first port of call though, would be a bar called <ExternalLink url='https://maps.app.goo.gl/CnvUAuH89jmK9PLt5'>Monkey Bar</ExternalLink> that I wandered past several times during my stay. It was the only place I encountered that consistently had foreigners in. Even if it was only three or four, no matter what time of day I went past, there was some white person sat in there drinking. So I think your best bet would be to go there and grab a beer, see what you can learn and who you can talk to and take it from there, and I'm sure you'll have a social life in no time.
