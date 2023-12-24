@@ -6,12 +6,19 @@ import busTerminal2SatelliteViewImage from '#/taking-a-bus-from-nakhon-ratchasim
 import busTerminal2UdonThaniBusTicketOfficeImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-terminal-2/udon-thani-bus-ticket-office.jpeg'
 
 import busTimesTimetableImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/timetable.jpeg'
+import busTimesTicketImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/ticket.jpeg'
 
-import takingTheBusFreeToiletsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/free-toilets.jpeg'
+import takingTheBusAtBusTerminal2FreeToiletsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/at-bus-terminal-2/free-toilets.jpeg'
+
+import takingTheBusOnBoardLegRoomImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/leg-room.jpeg'
+import takingTheBusOnBoardBlockedToiletImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/blocked-toilet.jpeg'
+import takingTheBusOnBoardTvImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/tv.jpeg'
+
+import takingTheBusTravellingToUdonThaniFillingUpImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/travelling-to-udon-thani/filling-up.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-12-07T20:45:00+07:00', // TODO: Update this
+  date: '2023-12-24T20:45:00+07:00', // TODO: Update this
   title: 'Taking a Bus from Nakhon Ratchasima to Udon Thani',
   description: '', // TODO
   keywords: ['Thailand', 'Korat'],
@@ -21,7 +28,7 @@ export const busTerminal2Images = [
   {
     src: busTerminal2SatelliteViewImage,
     alt: 'Nakhon Ratchasima Bus Terminal 2 satellite view',
-    caption: "This is easier to explain with a picture. This satellite view from Google Maps shows Bus Terminal 2. The red arrow (I added that, so don't look for it) points approximately to gate 4, where you buy tickets and catch buses to Udon Thani.",
+    caption: "This is easier to explain with a picture. This satellite view from Google Maps shows Bus Terminal 2. The red arrow (I added that so don't look for it) points to gate 4, where you buy tickets and catch buses to Udon Thani.",
   },
   {
     src: busTerminal2UdonThaniBusTicketOfficeImage,
@@ -36,21 +43,52 @@ export const busTimesImages = [
     alt: 'Nakhon Ratchasima to Udon Thani bus timetable',
     caption: "The Nakhon Ratchasima to Udon Thani bus timetable at gate 4. The left column with my finger underneath it is the departure times from Nakhon Ratchasima. The right column with my finger underneath it is the departure times from Kumphawapi, a district just outside Udon Thani (the timetable doesn't include the arrival times in Udon).",
   },
+  {
+    src: busTimesTicketImage,
+    alt: 'Nakhon Ratchasima to Udon Thani bus ticket',
+    caption: "This is the ticket you're given. The 270 is the price.",
+  },
 ]
 
-export const takingTheBusImages = [
+export const takingTheBusAtBusTerminal2Images = [
   {
-    src: takingTheBusFreeToiletsImage,
+    src: takingTheBusAtBusTerminal2FreeToiletsImage,
     alt: 'Free toilets at Bus Terminal 2',
     caption: 'Free toilets next to Bus Terminal 2.',
   },
 ]
 
+export const takingTheBusOnBoardImages = [
+  {
+    src: takingTheBusOnBoardLegRoomImage,
+    alt: 'On board leg-room',
+    caption: 'Not all leg-room is created equally. There was noticeably more leg-room for the seats on the left of the bus, after the toilet',
+  },
+  {
+    src: takingTheBusOnBoardBlockedToiletImage,
+    alt: 'On board blocked toilet',
+    caption: 'While there is a toilet on board, a plastic blue crate was placed in front of the door making it entirely inaccessible.',
+  },
+  {
+    src: takingTheBusOnBoardTvImage,
+    alt: 'On board TV',
+    caption: "There are no charging ports accessible from the seats. What's worse is that a number of (Thai language) movies were played throughout the journey on the TV at the front of the bus, with the volume just about audible, but so quiet that I wouldn't have been able to understand it even if my Thai was good enough. For this journey I'd say it's imperetive to make sure your devices are fully-charged, and you have some good noise-cancelling headphones.",
+  },
+]
+
+export const takingTheBusTravellingToUdonThaniImages = [
+  {
+    src: takingTheBusTravellingToUdonThaniFillingUpImage,
+    alt: 'The bus filling up',
+    caption: 'The bus filled-up as we went.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Nakhon Ratchasima (also known as Korat) is Thailand's third largest city, and Udon Thani (often known simply as Udon) is its sixth. Together they comprise two of the 'big four of Isaan', and yet foreign tourism in both cities is scant. This means that finding reliable information about them, including how to travel between them, is almost impossible online and you just have to arrive and start figuring it out for yourself.
+Nakhon Ratchasima (also known as Korat) is Thailand's third largest city, and Udon Thani (often known simply as Udon) is its sixth. Together they comprise two of the 'big four of Isaan', and yet foreign tourism in both cities is scant. This means finding reliable information about them, including how to travel between them, is almost impossible online and you just have to arrive and figure it out for yourself.
 
-Luckily for you, I recently travelled from Nakhon Ratchasima to Udon by bus and had to figure-out how, so to save you the trouble, here's everything I learned.
+Luckily for you I recently travelled from Nakhon Ratchasima to Udon by bus, so to save you the trouble, here's everything I learned.
 
 ## Where to catch a bus to Udon Thani in Nakhon Ratchasima
 
@@ -74,20 +112,56 @@ A lot more buses leave from the westerly terminal (furthest from the main road),
 
 From gate 4, there are twelve buses to Udon Thani each day. The first leaves at 6am, the second at 7:20am. Then from 8:30am to 1:30pm, they leave every hour on the half hour. The last four buses depart at 2:40pm, 4pm, 5:30pm and 7:30pm.
 
-[**You do not need to buy tickets in advance**. Perhaps with the exception of holidays, simply showing up at the a few minutes before the bus leaves is sufficient (at least, that's what I did).]
+You do not need to buy tickets in advance. Perhaps with the exception of holidays, showing up at the a few minutes before the bus leaves is sufficient. I arrived at 8am to catch the 8:30am bus. It was already sat there with passengers on board, so I bought a ticket on got on right away.
 
-A ticket costs...
+A ticket to from Nakhon Ratchasima to Udon costs 270 baht.
 
 <ImageGallery images={busTimesImages} />
 
 ## Taking the bus from Nakhon Ratchasima to Udon Thani
 
+### At bus terminal 2
+
 If you arrive early for your bus and need to use the bathroom, there is a 5 baht charge for the toilets within Bus Terminal 2. However I found that there's a small shopping parade nearby (before you even get to the main road) that includes a 7-11. This includes some free toilets for if you don't have any change, or if you're just cheap like me.
 
-TODO: Add more photos
+<ImageGallery images={takingTheBusAtBusTerminal2Images} />
 
-<ImageGallery images={takingTheBusImages} />
+### On board
+
+There is no reserved seating, you just pick a random seat. And while the seats are perfectly comfortable, be aware that there are no charging ports, so make sure your devices are all charged before your leave.
+
+The leg-room for the seats is not the same for all seats, and what I found was that the seating on the left (when facing the front of the bus) after the toilet had more leg-room than any other seats on the bus.
+
+While there is a toilet on the bus, before we departed Korat the staff placed a large plastic box belonging to one of the passenger in front of the door so it was entirely inaccessible. I'm uncertain whether this is always done, or it was just for this journey as there was nowhere else to keep this box, but it essentially meant there was no on board toilet, so don't drink an excess of water before departing.
+
+<ImageGallery images={takingTheBusOnBoardImages} />
+
+### Travelling to Udon Thani
+
+The bus left at 8:30am on the dot, so it's not a trip to turn-up late to. There were plenty of empty seats when we left, but these filled-up as we went. I was able to maintain my double-seat for the entire journey by presumably being repulsive, but most people had to share by the end.
+
+I was the only foreigner on board, and the driver didn't speak any English, so be ready with your best Thai if you want to understand what's going on at stops.
+
+We made initial stops at Phon bus terminal at 10:25am and Ban Phai bus terminal at 10:58, but at both of these stops we were stationary for less than a minute so there was no time to get off to relieve yourself or to get food.
+
+The first stop of note was at <ExternalLink url='https://maps.app.goo.gl/6rk4cTbvMuo9SBEf8'>Khon Kaen bus terminal 3</ExternalLink>, which we arrived at, at 11:38am, three hours and eight minutes after we left Nakhon Ratchasima. It was not intended to be a rest-stop, but I asked the driver (in Thai) if I had a couple of minutes to get off and use the toilet. He agreed, but stressed the 2 minutes. A small number of other passengers also alighted here to use the toilet/buy snacks as well.
+
+I got back on board again as quickly as possible. The bus departed again at 11:45am, so it was a seven minute stop, but there was no head-count or other check that everyone was on board, so make sure you're back. If you're not, they'll be leaving without you.
+
+The first and only actual rest-stop where passengers were invited to get off the bus, came at <ExternalLink url='https://maps.app.goo.gl/fVV2Baw8tbH7MyJ2A'>a petrol station a little outside Khon Kaen</ExternalLink> at 12:33pm. Here there were toilets, a small shop to buy snacks and even a couple of restaurants, although it would have been a rush to eat at them.
+
+We departed again at 12:56pm, so it was a twenty-three minute break.
+
+The next and final stop was at Kumphawapi at 1:45pm. We were here for five minutes, departing again at 1:50pm, so you probably could have made an emegency run to the toilet if you were desperate, but no one did.
+
+<ImageGallery images={takingTheBusTravellingToUdonThaniImages} />
 
 ## Arriving in Udon Thani
 
-TODO
+We finally pulled-into <ExternalLink url='https://maps.app.goo.gl/voYLUu6yCFDJhQbN9'>Udon Thani bus terminal 1</ExternalLink> at 2:30pm on the dot, meaning the journey took six hours to-the-minute. Arriving at bus terminal 1 was a pleasant surprise, because bus terminal 1 is the quieter terminal conveniently located in the centre of Udon Thani (bus terminal 2, by contrast, is on the outskirts of the western edge of town).
+
+Getting-off the bus was an influx of people asking if I was going to Nong Khai, but in declining they left you alone. The local tuk-tuk drivers were very respectful and just sat near their tuk-tuks not bothering you, which I appreciated. Getting hassled by tuk-tuk/taxi drivers is one of my pet-peeves.
+
+The first tuk-tuk driver I spoke to quoted me 80 baht to my room, which I probably could have negotiated down, but it seemed a fair enough price I couldn't be bothered.
+
+And with that, I was at my room in Udon having woken-up that morning in Nakhon Ratchasima. It was a pretty painless journey. Having an accessible on board toilet and charging ports by the seats would have been nice, but you can't complain for 270 baht.
