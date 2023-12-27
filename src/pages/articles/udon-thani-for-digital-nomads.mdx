@@ -4,6 +4,7 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityThaiChineseCulturalCenterImage from '#/udon-thani-for-digital-nomads/city/thai-chinese-cultural-center.jpeg'
 import cityFountainRoundaboutImage from '#/udon-thani-for-digital-nomads/city/fountain-roundabout.jpeg'
 import cityCityMuseumImage from '#/udon-thani-for-digital-nomads/city/city-museum.jpeg'
 import citySquirrelImage from '#/udon-thani-for-digital-nomads/city/squirrel.jpeg'
@@ -52,8 +53,13 @@ import maeyaVeganPanangCurryImage from '#/udon-thani-for-digital-nomads/maeya/ve
 import maeyaVeganFriedTofuImage from '#/udon-thani-for-digital-nomads/maeya/vegan-fried-tofu.jpeg'
 import maeyaVeganStirFriedMorningGloryImage from '#/udon-thani-for-digital-nomads/maeya/vegan-stir-fried-morning-glory.jpeg'
 
-import runningStravaImage from '#/udon-thani-for-digital-nomads/running/strava.jpeg'
+import runningNongPrajakParkStravaImage from '#/udon-thani-for-digital-nomads/running/nong-prajak-park-strava.jpeg'
+import runningNongBuaParkStravaImage from '#/udon-thani-for-digital-nomads/running/nong-bua-park-strava.jpeg'
+import runningNongSimParkStravaImage from '#/udon-thani-for-digital-nomads/running/nong-sim-park-strava.jpeg'
 import runningNongPrajakParkImage from '#/udon-thani-for-digital-nomads/running/nong-prajak-park.jpeg'
+import runningNongBuaParkImage from '#/udon-thani-for-digital-nomads/running/nong-bua-park.jpeg'
+import runningNongBuaParkAfterDarkImage from '#/udon-thani-for-digital-nomads/running/nong-bua-park-after-dark.jpeg'
+import runningNongSimParkImage from '#/udon-thani-for-digital-nomads/running/nong-sim-park.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -105,9 +111,14 @@ export const phattharasayaHomeDetails = {
 
 export const cityImages = [
   {
+    src: cityThaiChineseCulturalCenterImage,
+    alt: 'Udon Thani Thai-Chinese Cultural Center at night',
+    caption: 'Taken from the Nong Bua Park running track, this is part the Thai-Chinese Cultural Center.'
+  },
+  {
     src: cityFountainRoundaboutImage,
     alt: 'Udon Thani Fountain Roundabout',
-    caption: 'The aptly named Fountain Roundabout.',
+    caption: 'Fountain Roundabout. Not sure how they came up with that name.',
   },
   {
     src: cityCityMuseumImage,
@@ -120,7 +131,7 @@ export const cityImages = [
     caption: "The squirrels in Udon Thani are almost yellow. I've never seen that anywhere before.",
   },
   {
-    src: cityPervyClinicImage,
+    src: cityPervyClinicImage, // TODO: Remove this photo?
     alt: 'Per-V Clinic',
     caption: 'The pervy clinic.',
   },
@@ -333,15 +344,42 @@ export const maeyaImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: runningNongPrajakParkStravaImage,
     alt: 'Nong Prajak Park Strava map',
-    caption: 'My first run in Udon Thani',
+    caption: 'The route at Nong Prajak Park. Two laps of the park comes to 6.2km.',
     url: 'https://www.strava.com/activities/8928631847',
   },
   {
+    src: runningNongBuaParkStravaImage,
+    alt: 'Nong Bua Park Strava map',
+    caption: 'In Nong Bua Park, one lap is 1.8km, so I had to go a little over five laps to reach 10k.',
+    url: 'https://www.strava.com/activities/10356056203',
+  },
+  {
+    src: runningNongSimParkStravaImage,
+    alt: 'Nong Sim Park Strava map',
+    caption: 'Nong Sim is the smallest of the three parks. To do 5k is a little under four laps.',
+    url: 'https://www.strava.com/activities/10372085769',
+  },
+  {
     src: runningNongPrajakParkImage,
-    alt: 'Nong Prajak Park running track',
-    caption: "There are separated running and cycling tracks that go the entire way around the lake (this is actually the cycling track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
+    alt: 'Nong Prajak Park cycle path',
+    caption: "There are running and cycling tracks that go all the way around each of these parks. This is Nong Prajak Park where the running track and cycle tracks are separated (the picture is actually of the cycle track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
+  },
+  {
+    src: runningNongBuaParkImage,
+    alt: 'Nong Bua Park running track',
+    caption: "In Nong Bua Park the running track and cycling track aren't separated, but cyclists (blue) go clockwise on the outside, while runners (red) go on the anti-clockwise on the inside, so there's little risk of collision.",
+  },
+  {
+    src: runningNongBuaParkAfterDarkImage,
+    alt: 'Nong Bua Park running track after dark',
+    caption: "After sundown, Nong Bua Park is especially beautiful, although it does get a little crowded, particularly with non-runners. It's much better to run here during the daytime.",
+  },
+  {
+    src: runningNongSimParkImage,
+    alt: 'Nong Sim Park running track',
+    caption: "Nong Sim Park is the best overall park for running. Like with Nong Bua Park, runners go anti-clockwise on the inside (green) while cyclists go clockwise on the outside (blue), but it's so wide and so quiet, even after sundown, that the risk of a collision or running into a bottle-neck is minimal.",
   },
 ]
 
@@ -543,7 +581,6 @@ It has a circumference of around 1.3km, so you've got a little under four laps i
 
 That's why I say it's the best park overall for running. If you want to go for a slow and steady run, then any of the parks here are perfect, but if you want to do sprints or intervals, then Nong Sim is the only one I recommend.
 
-TODO: Update images
 <ImageGallery images={runningImages} />
 
 ## Being sociable in Udon Thani
