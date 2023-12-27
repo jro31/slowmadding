@@ -77,7 +77,7 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          "It's at the more expensive end of cities in this region, but is still cheap enough to survive comfortablty on a modest salary. A beer in a bar is going to cost around 100 baht, and a decent hotel room starts at about 800 baht/night. Expect to pay 300-400 baht for a meal in a western restaurant.",
+          "It's at the more expensive end of cities in this region, but is still cheap enough to survive comfortably on a modest salary. A beer in a bar is going to cost around 100 baht, and a decent hotel room starts at about 800 baht/night. Expect to pay 300-400 baht for a meal in a western restaurant.",
       },
       [internet]: {
         [verdict]: true,
@@ -92,7 +92,7 @@ export const placesData = [
       [veganFood]: {
         [verdict]: true,
         [description]:
-          "In Happy Cow's Top 10 Vegan-Friendly Cities 2022, Bangkok ranked 7th. Vegan food restaurants are everywhere here, and street vendors selling pre-cut fruit are all over the city.",
+          "In Happy Cow's Top 10 Vegan-Friendly Cities 2022, Bangkok ranked 7th. Vegan food is everywhere here, and street vendors selling pre-cut fruit are all over the city.",
       },
       [safe]: {
         [verdict]: true,
