@@ -1,0 +1,92 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-01-23T18:50:00+07:00', // TODO: Update this
+  title: 'Vientiane for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Laos'],
+}
+
+export const cSApartmentDetails = {
+  dates: {
+    checkIn: '2023-12-25',
+    checkOut: '2024-01-10',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/la/cs-apartment.html',
+  },
+  roomType: 'One-Bedroom Apartment',
+  price: {
+    currencyPrefix: '$',
+    currencySuffix: 'USD',
+    sections: {
+      Room: 270.80,
+      '7% Tax': 18.96,
+    },
+  },
+}
+
+export const patuxayPlaceDetails = {
+  dates: {
+    checkIn: '2024-01-10',
+    checkOut: '2024-01-23',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/patuxay-place/hotel/vientiane-la.html',
+  },
+  roomType: 'Superior Double',
+  price: {
+    currencyPrefix: '$',
+    currencySuffix: 'USD',
+    sections: {
+      'Room (including taxes and fees)': 390.00,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add images
+
+## Where I stayed
+
+### CS Apartment
+
+TODO: Add map link
+
+<AccommodationTable details={cSApartmentDetails} />
+
+TODO
+
+TODO: Add images
+
+### Patuxay Place
+
+TODO: Add map link
+
+<AccommodationTable details={patuxayPlaceDetails} />
+
+TODO
+
+TODO: Add images
+
+## Where to get vegan food in Vientiane
+
+TODO
+
+## Where to run in Vientiane
+
+TODO
+
+## Being sociable in Vientiane
+
+TODO
