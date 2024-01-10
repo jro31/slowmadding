@@ -104,7 +104,7 @@ export const laosData = {
     {
       [dates]: {
         [arrival]: '2023-12-25',
-        [departure]: '2024-01-10',
+        [departure]: '2024-01-23',
       },
     },
   ],
