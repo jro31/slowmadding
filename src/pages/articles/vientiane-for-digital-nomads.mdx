@@ -4,6 +4,14 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import csApartmentLivingRoomImage from '#/vientiane-for-digital-nomads/cs-apartment/living-room.jpeg'
+import csApartmentChairsImage from '#/vientiane-for-digital-nomads/cs-apartment/chairs.jpeg'
+import csApartmentBedroomImage from '#/vientiane-for-digital-nomads/cs-apartment/bedroom.jpeg'
+import csApartmentTowelImage from '#/vientiane-for-digital-nomads/cs-apartment/towel.jpeg'
+import csApartmentKitchenImage from '#/vientiane-for-digital-nomads/cs-apartment/kitchen.jpeg'
+import csApartmentBathroomImage from '#/vientiane-for-digital-nomads/cs-apartment/bathroom.jpeg'
+import csApartmentOutsideImage from '#/vientiane-for-digital-nomads/cs-apartment/outside.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2024-01-23T18:50:00+07:00', // TODO: Update this
@@ -12,7 +20,7 @@ export const meta = {
   keywords: ['Laos'],
 }
 
-export const cSApartmentDetails = {
+export const csApartmentDetails = {
   dates: {
     checkIn: '2023-12-25',
     checkOut: '2024-01-10',
@@ -51,6 +59,44 @@ export const patuxayPlaceDetails = {
   },
 }
 
+export const csApartmentImages = [
+  {
+    src: csApartmentLivingRoomImage,
+    alt: 'CS Apartment living room',
+    caption: 'The apartments are long and thin. The first room you go into when you walk in is the living room, which has a small TV and a fridge. Behind the TV, you can see through the window into the bedroom.',
+  },
+  {
+    src: csApartmentChairsImage,
+    alt: 'CS Apartment armchairs',
+    caption: 'Frustratingly there is no sofa in front of the TV, just two not very comfortable armchairs. Using one of the pillows off the bed makes them slightly better, but I still opted to relax in bed far more often.',
+  },
+  {
+    src: csApartmentBedroomImage,
+    alt: 'CS Apartment bedroom',
+    caption: "The bed's pretty comfortable and the bedroom is the only room with an air conditioner, so it's the best place to be on hot days. My big grievance is that it's in the middle of the apartment so gets very little natural light. Staying dark even after sunrise really messed with my body clock.",
+  },
+  {
+    src: csApartmentTowelImage,
+    alt: 'CS Apartment towel curtain',
+    caption: "This was the best solution I could come up with. Putting the towel over the bedroom windows like this meant that at least I could leave the black-out curtains in the living room open without the worry of people being able to see in while I slept. Rather than none, it allowed in a minimal amount of natural light, but it wasn't helped by the windows on the bedroom being tinted. If you're someone who likes to rise with daylight, as I do, then I cannot recommend staying here.",
+  },
+  {
+    src: csApartmentKitchenImage,
+    alt: 'CS Apartment kitchen',
+    caption: "At the back of the apartment, beyond the bedroom, is the kitchen. The yellow thing next to the microwave is a plug-in wok. I've never seen one of them before, but I didn't get to try it as the restaurant food in Vientiane is so good, and the supermarkets less so. Importantly it includes a kettle.",
+  },
+  {
+    src: csApartmentBathroomImage,
+    alt: 'CS Apartment bathroom',
+    caption: 'The bathroom does the job.',
+  },
+  {
+    src: csApartmentOutsideImage,
+    alt: 'CS Apartment from outside',
+    caption: 'Outside the apartment',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -61,17 +107,17 @@ TODO: Add images
 
 ### CS Apartment
 
-TODO: Add map link
+<MapLink name='384 Haisok Chanthabuly' url='https://maps.app.goo.gl/7ETjLt8ZGTLNJNBY7' />
 
-<AccommodationTable details={cSApartmentDetails} />
+<AccommodationTable details={csApartmentDetails} />
 
 TODO
 
-TODO: Add images
+<ImageGallery images={csApartmentImages} />
 
 ### Patuxay Place
 
-TODO: Add map link
+<MapLink name='12 Ban Sisavath' url='https://maps.app.goo.gl/JFU22g5B7tNNGArB9' />
 
 <AccommodationTable details={patuxayPlaceDetails} />
 
