@@ -1,6 +1,18 @@
 import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
-// import ImageGallery from '@/components/ImageGallery'
+import ImageGallery from '@/components/ImageGallery'
+
+import makingAnAppointmentThaiVisaVientianeHomepageScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-homepage-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAppointmentWarningScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-appointment-warning-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeTermsAndConditionsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-terms-and-conditions-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeLoginToYourAccountScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-login-to-your-account-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeIncorrectInformationWarningScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientaine-incorrect-information-warning-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeSignUpFormScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-sign-up-form-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAccountRegisteredAlertScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-account-registered-alert-screenshot.png'
+import makingAnAppointmentThaiVisaVientianePassportAlreadyUsedAlertScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-passport-already-used-alert-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeForgotYourPasswordScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-forgot-your-password-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAvailableAppointmentsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-available-appointments-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeMyAppointmentsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-my-appointments-screenshot.png'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -10,11 +22,67 @@ export const meta = {
   keywords: ['Laos'],
 }
 
+export const makingAnAppointmentImages = [
+  {
+    src: makingAnAppointmentThaiVisaVientianeHomepageScreenshot,
+    alt: 'Thai Visa Vientiane homepage screenshot',
+    caption: "The homepage of thaivisavientiane.com. Click 'Book your Appointment'.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAppointmentWarningScreenshot,
+    alt: 'Thai Visa Vientiane appointment warning screenshot',
+    caption: 'You have to agree to this warning in order to proceed.',
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeTermsAndConditionsScreenshot,
+    alt: 'Thai Visa Vientiane terms and conditions screenshot',
+    caption: "Next you have to agree to some terms and conditions. Be aware that cancelling or missing your appointment results in the temporary suspension of your account.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeLoginToYourAccountScreenshot,
+    alt: 'Thai Visa Vientiane login to your account page screenshot',
+    caption: "After accepting the terms and conditions, you'll get to the 'Login to your Account' page. As you don't have an account yet, click 'Sign Up Now'.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeIncorrectInformationWarningScreenshot,
+    alt: 'Thai Visa Vientiane incorrect information warning screenshot',
+    caption: "When this dialogue pops-up, click 'I Understand' in order to proceed.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeSignUpFormScreenshot,
+    alt: 'Thai Visa Vientiane sign-up form screenshot',
+    caption: "In order to sign-up, you need to enter your details including passport number. Ensure that your email address is correct as you'll need the password that gets emailed to you to complete registration. You won't be able to re-register with the same passport number if you make a mistake.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAccountRegisteredAlertScreenshot,
+    alt: 'Thai Visa Vientiane account registered alert screenshot',
+    caption: "If registration is successful, you'll see this alert.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianePassportAlreadyUsedAlertScreenshot,
+    alt: 'Thai Visa Vientiane passport already used alert screenshot',
+    caption: "Any attempt to re-register with the same passport number will fail, and you'll be show this alert.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeForgotYourPasswordScreenshot,
+    alt: 'Thai Visa Vientiane forgot your password screenshot',
+    caption: "If you don't receive an email, you'll need to go back to the 'Login to your Account' page and click 'Forgot your password Click here. At that point you'll see this form. Complete it and click 'Submit' and you'll hopefully now receive an email.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAvailableAppointmentsScreenshot,
+    alt: 'Thai Visa Vientiane available appointments screenshot',
+    caption: "Once you've successfully logged-in you'll see the 'Available Appointments' page. Greyed-out dates have no availability. Choosing a date with availability, click 'Book Appointment' to schedule your appointment at the embassy.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeMyAppointmentsScreenshot,
+    alt: 'Thai Visa Vientiane my appointments screenshot',
+    caption: "If successful, then clicking 'My Appointment(s)' in the sidebar you will see your appointment with a status of 'Confirmed'. Congratulations, you now have an appointment at the Thai embassy.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Visitors from many countries (including the US, UK, Australia and most of western Europe) can enter Thailand with no pre-approval on a 30 day tourist visa waiver.
-
-For those who wish to stay as a tourist for longer there are two options:
+Visitors from many countries (including the US, UK, Australia and most of western Europe) can enter Thailand with no pre-approval on a 30 day tourist visa waiver. For those who wish to stay as a tourist for longer there are two options:
 
 - Enter Thailand on a 30 day tourist visa waiver and extend it for another 30 days once in the country
 - Get a 60 day Thailand tourist visa before entering Thailand (this can also be extended for a further 30 days)
@@ -23,25 +91,25 @@ To get a 60 day Thailand tourist visa you're going to have to visit a Thai embas
 
 ## How long does it take to get a Thailand tourist visa in Vientiane?
 
-If, like me, you last went through this process in Vientiane prior to February 2019, then it may surprise you to learn that you now need to make an appointment at the embassy. In the past you could get a night-train from Bangkok to Nong Khai, cross the border to Laos, take a tuk-tuk straight to the embassy, join a (long) queue to apply for a visa, pick-up your passport the next day and go straight back to Thailand again.
+If, like me, you last went through this process in Vientiane prior to February 2019, then it may surprise you to learn that you now need to make an appointment at the embassy. In the past you could get a night-train from Bangkok to Nong Khai, cross the border to Laos, take a tuk-tuk straight to the embassy, join a (long) queue to apply for a visa, pick-up your passport the next day and go straight back to Thailand.
 
-For anyone planning on doing that today, I'll stress that this is no longer the case and you should plan on at least two weeks to complete the entire process, with a minimum of three working days needed in Vientiane.
+This is no longer the case and you should plan on at least two weeks to complete the entire process, with a minimum of three working days needed in Vientiane.
 
-I believe that doing the visa application in Savannakhet (southern Laos) you can still show up without an appointment and be approved within 24 hours. I haven't done this myself, so I can't say with certainty.
+If you need it done faster than this, I believe that doing the visa application in Savannakhet (southern Laos) you can still show up without an appointment and be approved in 24 hours. I haven't done this myself so cannot say with certainty.
 
 ## Making an appointment
 
-To get a Thailand tourist visa in Vientiane, the first step is to make an appointment at the consular section of the Thai embassy. You do that at <ExternalLink url='https://www.thaivisavientiane.com/'>thaivisavientiane.com</ExternalLink>.
+To get a Thailand tourist visa in Vientiane, the first step is to make an appointment at the consular section of the Thai embassy. You do this at <ExternalLink url='https://www.thaivisavientiane.com/'>thaivisavientiane.com</ExternalLink>.
 
-Click 'Book your Appointment', and you'll have to click firstly through a warning, and then agree to some terms and conditions. These can be mostly ignored, although the one worth noting is:
+Click **_Book your Appointment_** and you'll firstly have to click through a warning before agreeing to some terms and conditions. These can be mostly ignored, although the one worth noting is:
 
 > If you do not show for your scheduled appointment, there is a 30 day suspension rule for your account and if you cancel your appointment, we will impose a 10 day suspension for your account.
 
-Ensuring that you show up at the embassy whether you have Covid or not, your account is suspended if you renege on your appointment. As your account is linked to your passport number, there is no option of just creating a new account if you get suspended, so be certain of your appointment time.
+Ensuring that you show up at the embassy whether you have Covid or not, your account is suspended if you renege on your appointment. As your account is linked to your passport number, there is no option of just creating a new account, so be sure that you can attend at your chosen appointment time.
 
-Agreeing to the terms and conditions page, you'll be taken to a page to 'Login to your Account'. As you don't have an account yet, click the 'Sign Up Now' link.
+Agreeing to the terms and conditions you'll be taken to a page to **_Login to your Account_**. As you don't have an account yet, click the **_Sign Up Now_** link.
 
-After agreeing that you won't input any inaccurate information, you'll be shown a 'Sign Up For New Applicant' form. This form requires your first name, middle name, last name, email address, contact number, passport number and nationality. Enter these and click 'Sign Up'.
+After agreeing that you won't input any inaccurate information, you'll be shown a **_Sign Up For New Applicant_** form. This form requires your first name, middle name, last name, email address, contact number, passport number and nationality. Enter these and click **_Sign Up_**.
 
 If the sign-up is successful, you'll see an alert that says:
 
@@ -49,25 +117,25 @@ If the sign-up is successful, you'll see an alert that says:
 >
 > Please log-in to your email account and verify your registration by using the username and password sent to your registered email address.
 
-When I did this, I waited for around 30 minutes and no such email ever appeared. In concluding there had been an error, I tried to sign-up again, and this was the point that I found-out that I was blocked from re-registering, as my passport number had already been used.
+When I signed-up, I waited for around 30 minutes and no such email ever appeared. In concluding there had been an error, I tried to sign-up again, and this was the point that I learned that I was blocked from re-registering as my passport number had already been used.
 
-What I instead had to do was to go back to the 'Login to your Account' page and click the 'Forgot your password Click here' link. This opens up a form to enter your email address and passport number. On submitting this form I did finally receive an email which included a password I could use to login with.
+What I instead had to do was to go back to the **_Login to your Account_** page and click the **_Forgot your password Click here_** link. This opens up a form to enter your email address and passport number. On submitting this form I did finally receive an email which included a password I could use to login with.
 
-With that password, head back to the 'Login to your Account' screen, enter your email address, this password, and in the 'Security Code' input, just copy the code from above the input (or click on 'Copy Code' to enter it automatically). I've never seen such a futile attempt at security, but whatever floats your boat.
+With that password, head back to the **_Login to your Account_** screen, enter your email address, this password, and in the **_Security Code_** input, just copy the code from the line above (or click **_Copy Code_** to enter it automatically). I've never seen such a futile attempt at a security feature.
 
 You should now be signed-into the app, at which point you'll see a list of available appointments, with unavailable days greyed-out.
 
 At the time I did this on the 29th of December, the next available appointment was on the 5th of January, one week away. I've read online of people having to wait two weeks for the next appointment, hence why you should start the process a way in advance of needing the visa.
 
-Click 'Book Appointment' on the available slot you desire, at which point you should be able to go to the 'My Appointment(s)' section where you will see the date and time of your appointment.
+Click **_Book Appointment_** on the available slot you desire, at which point you can go to the **_My Appointment(s)_** section, where you will see the date and time of your appointment.
 
-You will also receive an email confirming your appointment. This email will also contain other information such as your queue number, which is largely useless but in theory denotes your timeslot at the embassy. My queue number of 30 meant I was supposed to show-up between 9:30am and 10am.
+You will also receive an email confirming your appointment. This email will contain other information such as your queue number, which is largely useless but in theory denotes your timeslot at the embassy. My queue number of 30 meant I was supposed to show-up between 9:30am and 10am.
 
-I showed-up about 9:15am and no one cared, so I wouldn't pay much attention to it.
+On the day of my appointment I showed-up about 9:15am and no one cared, so I wouldn't pay much attention to it.
 
 You will require this email in order to enter the embassy. Either printing it or showing it on your phone screen are sufficient.
 
-TODO: Add screenshots
+<ImageGallery images={makingAnAppointmentImages} />
 
 ## Preparing for the appointment
 
