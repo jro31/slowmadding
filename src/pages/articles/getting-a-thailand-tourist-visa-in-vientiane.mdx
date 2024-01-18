@@ -1,0 +1,426 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import makingAnAppointmentThaiVisaVientianeHomepageScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-homepage-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAppointmentWarningScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-appointment-warning-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeTermsAndConditionsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-terms-and-conditions-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeLoginToYourAccountScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-login-to-your-account-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeIncorrectInformationWarningScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientaine-incorrect-information-warning-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeSignUpFormScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-sign-up-form-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAccountRegisteredAlertScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-account-registered-alert-screenshot.png'
+import makingAnAppointmentThaiVisaVientianePassportAlreadyUsedAlertScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-passport-already-used-alert-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeForgotYourPasswordScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-forgot-your-password-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeAvailableAppointmentsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-available-appointments-screenshot.png'
+import makingAnAppointmentThaiVisaVientianeMyAppointmentsScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/making-an-appointment/thai-visa-vientiane-my-appointments-screenshot.png'
+
+import gatheringDocumentsIdeaCopyCenterImage from '#/getting-a-thailand-tourist-visa-in-vientiane/gathering-documents/idea-copy-center.jpeg'
+
+import gettingBahtCurrencyExchangeImage from '#/getting-a-thailand-tourist-visa-in-vientiane/getting-baht/currency-exchange.jpeg'
+
+import enteringTheEmbassyEmbassyEntranceImage from '#/getting-a-thailand-tourist-visa-in-vientiane/entering-the-embassy/embassy-entrance.jpeg'
+
+import completingTheApplicationFormApplicationFormScreenshot from '#/getting-a-thailand-tourist-visa-in-vientiane/completing-the-application-form/application-form-screenshot.png'
+
+import submittingTheApplicationInsideTheEmbassyImage from '#/getting-a-thailand-tourist-visa-in-vientiane/submitting-the-application/inside-the-embassy.jpeg'
+import submittingTheApplicationEmbassyEntranceImage from '#/getting-a-thailand-tourist-visa-in-vientiane/submitting-the-application/embassy-entrance.jpeg'
+import submittingTheApplicationVisaApplicationReceiptImage from '#/getting-a-thailand-tourist-visa-in-vientiane/submitting-the-application/visa-application-receipt.jpeg'
+
+import collectingYourVisaThailandTouristVisaImage from '#/getting-a-thailand-tourist-visa-in-vientiane/collecting-your-visa/thailand-tourist-visa.jpeg'
+import collectingYourVisaPaymentReceiptImage from '#/getting-a-thailand-tourist-visa-in-vientiane/collecting-your-visa/payment-receipt.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-01-18T16:30:00+07:00',
+  title: 'Getting a Thailand Tourist Visa in Vientiane',
+  description: 'Your step-by-step guide to getting a Thai tourist visa in Vientiane.',
+  keywords: ['Laos'],
+}
+
+export const makingAnAppointmentImages = [
+  {
+    src: makingAnAppointmentThaiVisaVientianeHomepageScreenshot,
+    alt: 'Thai Visa Vientiane homepage screenshot',
+    caption: "The homepage of thaivisavientiane.com. Click 'Book your Appointment'.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAppointmentWarningScreenshot,
+    alt: 'Thai Visa Vientiane appointment warning screenshot',
+    caption: 'You have to agree to this warning in order to proceed.',
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeTermsAndConditionsScreenshot,
+    alt: 'Thai Visa Vientiane terms and conditions screenshot',
+    caption: "Next you have to agree to some terms and conditions. Be aware that cancelling or missing your appointment results in the temporary suspension of your account.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeLoginToYourAccountScreenshot,
+    alt: 'Thai Visa Vientiane login to your account page screenshot',
+    caption: "After accepting the terms and conditions, you'll get to the 'Login to your Account' page. As you don't have an account yet, click 'Sign Up Now'.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeIncorrectInformationWarningScreenshot,
+    alt: 'Thai Visa Vientiane incorrect information warning screenshot',
+    caption: "When this dialogue pops-up, click 'I Understand' in order to proceed.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeSignUpFormScreenshot,
+    alt: 'Thai Visa Vientiane sign-up form screenshot',
+    caption: "In order to sign-up, you need to enter your details including passport number. Ensure that your email address is correct as you'll need the password that gets emailed to you to complete registration. You won't be able to re-register with the same passport number if you make a mistake.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAccountRegisteredAlertScreenshot,
+    alt: 'Thai Visa Vientiane account registered alert screenshot',
+    caption: "If registration is successful, you'll see this alert.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianePassportAlreadyUsedAlertScreenshot,
+    alt: 'Thai Visa Vientiane passport already used alert screenshot',
+    caption: "Any attempt to re-register with the same passport number will fail, and you'll be show this alert.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeForgotYourPasswordScreenshot,
+    alt: 'Thai Visa Vientiane forgot your password screenshot',
+    caption: "If you don't receive an email, you'll need to go back to the 'Login to your Account' page and click 'Forgot your password Click here'. At that point you'll see this form. Complete it and click 'Submit' and you'll hopefully now receive an email.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeAvailableAppointmentsScreenshot,
+    alt: 'Thai Visa Vientiane available appointments screenshot',
+    caption: "Once you've successfully logged-in you'll see the 'Available Appointments' page. Greyed-out dates have no availability. Choosing a date with availability, click 'Book Appointment' to schedule your appointment at the embassy.",
+  },
+  {
+    src: makingAnAppointmentThaiVisaVientianeMyAppointmentsScreenshot,
+    alt: 'Thai Visa Vientiane my appointments screenshot',
+    caption: "If successful, then clicking 'My Appointment(s)' in the sidebar you will see your appointment with a status of 'Confirmed'. Congratulations, you now have an appointment at the Thai embassy.",
+  },
+]
+
+export const gatheringDocumentsImages = [
+  {
+    src: gatheringDocumentsIdeaCopyCenterImage,
+    alt: 'Idea Copy Center',
+    caption: 'Idea Copy Center. Here you can do print-outs, make copies, and get passport photos.',
+  },
+]
+
+export const gettingBahtImages = [
+  {
+    src: gettingBahtCurrencyExchangeImage,
+    alt: 'Vientiane currency exchange',
+    caption: "Just to the right of the gold pole, you can see a branch of Sacombank (click for map location). The gold pole marks the entrance to the car park, and consistently located at this entrance (I've walked past many times) is a woman who will exchange kip to baht. If you look closely in this picture, you can see her behind the silver car.",
+    url: 'https://maps.app.goo.gl/AFdBT3uB4t3fDvVA8',
+  },
+]
+
+export const enteringTheEmbassyImages = [
+  {
+    src: enteringTheEmbassyEmbassyEntranceImage,
+    alt: 'Thailand Embassy Vientiane entrance',
+    caption: "This is the embassy from the outside. You enter through the pedestrain gate between the big gate and the blue sign (don't look for the arrow, I added that). Ignore anyone who talks to you before you've gone through this gate.",
+  },
+]
+
+export const completingTheApplicationFormImages = [
+  {
+    src: completingTheApplicationFormApplicationFormScreenshot,
+    alt: 'Thailand visa application form screenshot',
+    caption: 'As immigration forms go, the one you complete at the Thai embassy in Vientiane is pretty kind.',
+    url: '/pdf/thailand-visa-application-form-2022-05-11.pdf',
+  },
+]
+
+export const submittingTheApplicationImages = [
+  {
+    src: submittingTheApplicationInsideTheEmbassyImage,
+    alt: 'Inside the Thailand embassy in Vientiane',
+    caption: 'In the embassy. An ode to a bygone era before appointments, all but the front couple of rows of benches sit unused. With no queue system in place, people sit in those first couple of rows and shuffle along as those before them get called-up.',
+  },
+  {
+    src: submittingTheApplicationEmbassyEntranceImage,
+    alt: 'Thailand Embassy Vientiane printers',
+    caption: 'If you need any extra documents, look for the sun-worn gazebo to the right of the embassy. There you can print documents and get passport photos for an exorbitant price.',
+  },
+  {
+    src: submittingTheApplicationVisaApplicationReceiptImage,
+    alt: 'Thailand visa application receipt',
+    caption: "Once your application is accepted you'll receive a receipt like this. It'll say your queue number (in my case 30) and the date and time to collect your visa (between 1:30pm and 4pm, two working days from now).",
+  },
+]
+
+export const collectingYourVisaImages = [
+  {
+    src: collectingYourVisaThailandTouristVisaImage,
+    alt: 'Thailand tourist visa',
+    caption: "All being well with your application you'll have a Thai visa in your passport that looks like this. You have until the 'Valid Until' date to enter Thailand.",
+  },
+  {
+    src: collectingYourVisaPaymentReceiptImage,
+    alt: 'Thailand visa application payment receipt',
+    caption: "You'll also be given a receipt of payment. There's no need to keep this.",
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Visitors from many countries (including the US, UK, Australia and most western European countries) can enter Thailand with no pre-approval on a 30 day tourist visa waiver. For those who wish to stay as a tourist for longer there are two options:
+
+- Enter Thailand on a 30 day tourist visa waiver and extend it for another 30 days once in the country
+- Get a 60 day Thailand tourist visa before entering Thailand (this can also be extended for a further 30 days)
+
+To get a 60 day Thailand tourist visa you have to visit a Thai embassy, and the focus of this article is doing so in Vientiane, the capital of Laos.
+
+## How long does it take to get a Thailand tourist visa in Vientiane?
+
+If, like me, you last went through this process in Vientiane prior to February 2019, then it may surprise you to learn that you now need to make an appointment at the embassy. In the past you could go straight to the embassy from the border, join a (long) queue to apply for a visa, pick-up your passport the next day and go straight back to Thailand.
+
+This is no longer the case and you should plan on at least two weeks to complete the entire process, with a minimum of three working days needed in Vientiane.
+
+If you need it done faster than this, I believe in Savannakhet (southern Laos) you can still show up without an appointment and be approved in 24 hours. I haven't done this myself so cannot say with certainty.
+
+## Making an appointment
+
+To get a Thailand tourist visa in Vientiane, the first step is to make an appointment at the consular section of the Thai embassy. You do this at <ExternalLink url='https://www.thaivisavientiane.com/'>thaivisavientiane.com</ExternalLink>.
+
+Click **_Book your Appointment_** and you'll firstly have to click through a warning before agreeing to some terms and conditions. These can mostly be ignored, although the one worth noting is:
+
+> If you do not show for your scheduled appointment, there is a 30 day suspension rule for your account and if you cancel your appointment, we will impose a 10 day suspension for your account.
+
+Ensuring that you show up at the embassy when you have Covid, your account is suspended if you renege on your appointment. As your account is linked to your passport number, there is no option of just creating a new account, so be sure that you can attend at your chosen appointment time.
+
+Agreeing to the terms and conditions you'll be taken to a page titled **_Login to your Account_**. As you don't have an account yet, click the **_Sign Up Now_** link.
+
+After agreeing that you won't input any inaccurate information, you'll be shown a form titled **_Sign Up For New Applicant_**. This form requires your first name, middle name, last name, email address, contact number, passport number and nationality. Enter these and click **_Sign Up_**.
+
+If the sign-up is successful you'll see an alert that says:
+
+> Your new account is now registered
+>
+> Please log-in to your email account and verify your registration by using the username and password sent to your registered email address.
+
+When I signed-up, I waited for around 30 minutes and no such email ever appeared. In concluding there had been an error, I tried to sign-up again, and this was the point I learned that I was blocked from re-registering as my passport number had already been used.
+
+What I instead had to do was to go back to the **_Login to your Account_** page and click the **_Forgot your password Click here_** link. This opens up a form to enter your email address and passport number. On submitting this form I did finally receive an email which included a password I could use to login with.
+
+With that password, head back to the **_Login to your Account_** page, enter your email address, this password, and in the **_Security Code_** input just copy the code from the line above (or click **_Copy Code_** to enter it automatically). I've never seen such a futile security feature.
+
+You should now be signed-into the app, at which point you'll see a list of available appointments, with unavailable days greyed-out.
+
+At the time I did this on the 29th of December, the next available appointment was on the 5th of January, one week away. I've read online of people having to wait two weeks for the next appointment, hence why you should start the process way in advance of needing the visa.
+
+Click **_Book Appointment_** on the available slot you desire. If successful you can now go to the **_My Appointment(s)_** section, where you will see the date and time of your appointment.
+
+You will also receive an email confirming your appointment. This email will contain other information such as your queue number, which is largely useless but in theory denotes your timeslot at the embassy. My queue number of 30 meant I was supposed to show-up between 9:30am and 10am. On the day of my appointment I showed-up at 9:15am and no one cared, so I wouldn't pay much attention to it.
+
+You will require this email in order to enter the embassy. Either printing it or showing it on your phone is sufficient.
+
+<ImageGallery images={makingAnAppointmentImages} />
+
+## Preparing for the appointment
+
+I'd read conflicting information about whether I'd be able to print documents and exchange money at the embassy. Regardless, the less I have to do on the day the less stressful it is, so I decided I'd get as much as I could done the day before my appointment.
+
+### Required documents
+
+The full list of officially required documents is as follows:
+
+1. A completed application form
+1. Two passport-sized photos, taken in the last 6 months
+1. Your passport, valid for at least 6 months (it must have a blank page for the visa)
+1. A photocopy of your passport's information page
+1. A photocopy of your Laos visa
+1. A photocopy of your Laos entry stamp
+1. Three months of bank statements showing an average balance of 20,000 baht
+1. Your travel booking going into Thailand
+1. A travel booking out of Thailand (usually meaning an outbound flight)
+1. Your travel itinerary while in Thailand (this can mean hotel bookings for your entire stay)
+
+The list of actually required documents depends on the whim of the immigration official. Numbers 1 to 6 will be always be required. Numbers 7 to 10 are pot-luck.
+
+Being asked for proof of travel into Thailand is unlikely, as being so close to the Thai border many people will just go by themselves without any advanced booking. The application form includes a **_Proposed Address in Thailand_** section, of which if you were to put somewhere near to the Laos border (Nong Khai or Udon Thani), then having advanced travel booked would be absurd.
+
+In my various entries into Thailand over the years, I have never once had outbound travel booked. On the one occasion I was asked for it, I just said I planned on leaving by land and that was enough to satisfy the border official.
+
+If you have an outbound flight booked then obviously bring a copy of your booking. If you don't then I'd suggest applying without one. I've always managed.
+
+Come up with a valid explanation for why you don't have an outbound flight in case you get asked. For example, say that you're planning to travel by land to Malaysia. If that is unsuccessful then be prepared to buy a flight ticket.
+
+It just has to be a flight from anywhere in Thailand, to anywhere outside Thailand, within 60 days of what you've written as your date of arrival in Thailand on your application form. You can almost always find a flight for less than 1,300 baht on Skyscanner.
+
+Being asked to prove your entire travel itinerary within Thailand is unlikely. More common is they'll want to see evidence of your first accommodation. If you don't have anywhere booked yet be ready to jump on booking.com or Agoda. Many hotels offer refundable bookings so you can make a booking, print it out, and cancel right after, although beware that the address of the booking you print-out must match the **_Proposed Address in Thailand_** answer that you give on the application form.
+
+Prior to this application I'd never been asked to prove my finances, but on this occasion I was. More on that below.
+
+### Gathering documents
+
+If you arrive at the embassy without a completed application form you'll be given you one free of charge when you go in and there is a table with pens to complete it. It is not necessary to complete the application form before arriving at the embassy.
+
+If you do want to print and complete it before going to the embassy then it can be downloaded from <ExternalLink url='https://www.thaivisavientiane.com/'>thaivisavientiane.com</ExternalLink> (the same site used to make the appointment) by clicking **_Download Application Form_**.
+
+Downloading it from thaivisavientiane.com should ensure that you have the latest version, but as a backup you can download the form, correct at the time of writing, by <ExternalLink url='/pdf/thailand-visa-application-form-2022-05-11.pdf'>clicking here</ExternalLink>.
+
+There are many places around Vientiane to print documents and make copies, most of which can also take and print passport photographs. I went to <ExternalLink url='https://maps.app.goo.gl/za5jiiyDVZnYKvR26'>Idea Copy Center</ExternalLink>, where you can print, photocopy and get passport photos. I just did three photocopies here was charged 2,000 kip. The woman working there was very friendly and spoke good English.
+
+<ImageGallery images={gatheringDocumentsImages} />
+
+### Getting baht
+
+Applying for a Thai visa in Vientiane costs 1,000 baht. You can only pay in baht; dollars are not accepted, kip is not accepted.
+
+If you're coming to Vientiane from Thailand and you know in advance that you'll be doing a visa application then I strongly suggest bringing 1,000 baht with you.
+
+Walking around Vientiane you see currency exchanges everywhere. As I found out the hard way, they only exchange from foreign currencies into kip, not the other way around. I went to nine different exchanges, including the cluster of Thai banks peculiarly in the middle of Vientiane, and at each I asked if I could exchange kip to baht. All of them said no, and none of them knew where I could do this.
+
+The collective brilliance of Thailand requiring visa fees to be paid in baht, with Laos simultaneously not allowing exchange into baht really is something to behold.
+
+I was about to give up but decided to try <ExternalLink url='https://maps.app.goo.gl/d6qCJtAFhDY5WN4R6'>one more exchange</ExternalLink> that was showing up on Google Maps, where the most recent reviews mentioned that the exchange is no longer there, but there's a woman who sits nearby and approaches foreigners asking if they want to exchange cash.
+
+I didn't really think that would be the most reliable service but I wandered down anyway, and sure enough right before I got to where this currency exchange used to be (and still is according to Google Maps), a woman saw me and shouted "exchange".
+
+I wouldn't normally advise exchanging money with random people that approach you on the street, but the reviews of her all read positively, and I was kind of at the end of my rope by this point.
+
+Already knowing that the official rate this day was 1,000 baht = 600,000 kip, I told her I needed 1,000 baht, and when she quoted me 660,000 kip, that didn't seem a bad deal. I agreed and she went through her bags, displaying all kinds of currencies in various amounts. She really does offer a service.
+
+And that's how I ended up getting the 1,000 baht I needed for my application.
+
+<ImageGallery images={gettingBahtImages} />
+
+## At the embassy
+
+### Getting to the embassy
+
+Beware that you want to go to the <ExternalLink url='https://maps.app.goo.gl/NA8WkqfJdKdYA2Xw6'>consular section of the Thai embassy</ExternalLink> in Vientiane. This is on Rue Bourichane, and is a bit of a distance away from other Thai embassy services, so make sure to go to the right place.
+
+### Entering the embassy
+
+As you approach the embassy you'll be hounded by people asking you if you need an application form. Ignore them. You get the application form for free from inside the embassy and they will try to charge you. This is the reason it says **_This form is free of charge_** in big, red writing at the top of the form.
+
+If anyone asks you to pay for the form, you're speaking to the wrong person.
+
+There is an unnecessarily big gate at the entrance to the embassy that will likely be closed. You need to go through the small pedestrian gate to the right of this and to the left of a blue sign. You needn't speak to anyone prior to going through this gate, so anyone who approaches you, ignore them.
+
+Through this gate is a man in uniform sat at a table. The first thing he will ask to see is your appointment confirmation, meaning the email that you received earlier. Showing this on your phone screen is sufficient. He will check the details and will write your queue number on your application form. If you don't have an application form he will give you a blank one and will write your queue number on this. He will check your other documents and if all are in order he will wave you through.
+
+I'd read that bags are not allowed in the embassy. This is false, there is no security check and bags are allowed into the embassy.
+
+A sign at the entrance says 'No baggage allowed', but this presumably refers large items like suitcases and backpacks. I had a small rucksack and was allowed to take it in unhindered.
+
+<ImageGallery images={enteringTheEmbassyImages} />
+
+### Completing the application form
+
+There are a couple of tables with pens on them to the right of the waiting area. You can complete the application form here if you haven't done so already. There are also some glue sticks here to affix your photos to the form.
+
+As immigration forms go this one is pretty simple, but a couple of points to note:
+
+For **_Proposed Address in Thailand_**, if you don't have anywhere booked yet then look-up a refundable hotel just across the border; perhaps in Nong Khai, and write the address of that. This will allow you to make a booking if the official asks for one, and to get it refunded later. It will also justify why you don't have any inbound travel booked, as Nong Khai is too close to need any.
+
+The **_Date of Arrival in Thailand_** field is pretty meaningless because your visa will allow you to enter Thailand for up to three months after the date of application no matter what you enter here. Just make sure that if you have an outbound flight booked that it's not more than 60 days after this date.
+
+For **_Travelling by_**, unless you already have a flight I'd recommend writing **_Bus_**. It's highly unlikely that an official will ask for proof of a bus ticket, especially if you're going somewhere close to the border like Nong Khai which is about six miles away.
+
+For **_Duration of Stay in Thailand_**, if you don't have defined dates yet enter **_60 days_**.
+
+For **_Please indicate the type of visa requested_**, tick **_Tourist_**. For **_Purpose of visit_** enter **_Tourism_**, and for **_Number of entries requested_** tick **_Single_** (multiple entry visas are only permitted for people living in Laos).
+
+**_Name and Contact of Guarantor in Thailand_** and **_Name and Contact of Guarantor in Lao PDR_** can be left blank.
+
+<ImageGallery images={completingTheApplicationFormImages} />
+
+### Submitting the application
+
+So you might think that being assigned a queue number when making your appointment would mean that there's a queue system in place at the embassy. There's not, it's a free-for-all. There isn't even a ticket system of any kind once you're inside, people just sit on the front couple of rows of benches and slowly shuffle along as each person gets called up. This was all fairly civil for my appointment, but I have read some angry comments online about people from one particular country pushing in front of everyone and ignoring the fact there's a queue.
+
+When I joined the queue there were around fifteen people in front of me. Initially only one official was processing applications, and as a couple of applicants took a long time, it was about 30 minutes until I got to the front. By now a second person was accepting applications so things were moving a bit quicker.
+
+At this stage the documents I had were:
+
+- A completed application form with two passport-sized photos attached
+- Passport
+- A photocopy of my passport's information page
+- A photocopy of my Laos visa
+- A photocopy of my Laos entry stamp
+
+I went up and handed these over. The immigration official sat behind some protective glass rifled through the papers and said _"bank statements?"_
+
+_"I don't have these,"_ I responded. Without saying another word he looked at me like I'd insulted his mother, and literally threw it all back at me. It hit me in the chest.
+
+Welcome to the land of smiles!
+
+As the required documents change on the mood of the immigration official, you can't blame me for trying my luck with only these. I asked the guy sitting at the desk at the entrance of the embassy where I could go and print a bank statement, and he directed me to go out and to the left.
+
+About 20 yards down the road is a little sun-worn gazebo that houses a make-shift print shop. They can also take passport photos if you don't have any yet.
+
+I also saw a guy who hadn't brought any Thai baht with him leave the embassy and come back with 1,000 baht about five minutes later, so there's somewhere nearby to change money too, although I'm not sure exactly where. That means that apart from your passport, you can obtain all of the documents that you need for your application, in or around the embassy, but be warned you'll have to pay for it.
+
+A day prior to this I'd got three pages of my passport photocopied for 2,000 kip. Here I printed-off a seven-page bank statement and was charged 35,000 kip.
+
+What I printed was a little over three months worth of statements for one of my UK savings accounts which has had plenty of money in it for a while.
+
+I went back into the embassy and joined the queue again. Some others who were sent away for documents came back and pushed to the front of the queue and no one complained about this, but I thought it bit unfair on the people waiting. My fear was I'd hand over my documents now including a bank statement, and I'd be told to go away and come back with something else.
+
+Thankfully that didn't happen. With the bank statement, the documents were quickly accepted. I paid 1,000 baht and was given a receipt with my queue number written on it, telling me to come back on the 9th of January (two working days later) between 1:30pm and 4pm:
+
+> Visa must be collected on 09 Jan 2024 between 13:30 - 16:00 hours, otherwise it will be voided and returned to the holder.
+
+Again encouraging applicants to enter the embassy no matter what infectious diseases they're carrying, the threat on your receipt is that they'll void your visa if you miss your collection window, which seems a little harsh.
+
+To reiterate, the materials that were ultimately **required** for my application were:
+
+- An application form
+- Two passport-sized photos
+- Passport
+- A photocopy of my passport's information page
+- A photocopy of my Laos visa
+- A photocopy of my Laos entry stamp
+- Three months of bank statements
+- 1,000 baht
+
+The materials that were **not required** were:
+
+- A travel booking going into Thailand
+- A travel booking out of Thailand
+- A travel itinerary while in Thailand
+
+<ImageGallery images={submittingTheApplicationImages} />
+
+## Collecting your visa
+
+I arrived at the embassy at around 1:35pm to collect my passport on the 9th. There were about twenty people in front of me in the queue but it moved incredibly quickly. It was no longer than three minutes until I was at the front.
+
+You hand-over the receipt you were given when you submitted the application, and without even checking the details in the passport, they hand you the passport of the corresponding queue number (as well as a receipt for 1,000 baht).
+
+This doesn't feel an entirely fool-proof system, so double-check that you have the right passport. All being well, it'll have a shiny new Thai tourist visa stuck inside.
+
+The type of visa should say **_Tourist_**, the **_Valid from_** date should be the date that you applied, and the **_Valid until_** date should be three months after this (minus one day).
+
+To clarify, this date range is not the dates that you are permitted to be in Thailand. The valid until date is the last day of which you can enter Thailand. No matter what date you enter, you will be permitted to stay in Thailand for 60 days.
+
+<ImageGallery images={collectingYourVisaImages} />
+
+## Should I get a visa or enter Thailand on a visa waiver?
+
+A visa waiver permits you to stay in Thailand for 30 days. It's free, and once in Thailand it can be extended for a further 30 days (for 1,900 baht).
+
+A Thailand tourist visa permits you to stay in Thailand for 60 days. It costs 1,000 baht (in Vientiane), and once in Thailand it can be extended for a further 30 days (for 1,900 baht).
+
+### If you intend on being in Thailand for less than 30 days
+
+Assuming you're from an eligible country, if you intend on being in Thailand for less than 30 days then enter on a visa waiver. Applying for a visa costs money and is a pain.
+
+The only reason to get a pre-approved visa for a stay of less than 30 days is if you're worried about being rejected at the airport, and this is unlikely.
+
+### If you plan on being in Thailand for 30 to 60 days
+
+Your choice here is to either get a 60-day visa before entering Thailand, or to enter Thailand on a 30-day visa waiver and extend it for 30 days.
+
+Extensions within Thailand are a massive pain. You must apply at the immigration office of the province within which you're staying, and the requirements vary.
+
+I've done such an extension in Chiang Mai and it took six hours. I needed a TM30 form, which details your current accommodation and is submitted by your hotel. As the elderly owner of the new hotel I was staying at was too tech illiterate to do this online, he had to come down to the embassy to do it in person, which took him all morning, just for me to be able to start my application.
+
+I've also done the extension in Huahin and they had no such requirement. It took less than 20 minutes from entering immigration before I walked out with an extension stamp in my passport, and was so easy that when I next needed an extension, I specifically went back to Huahin for a week to do it.
+
+I would say that if you're in Vientiane anyway, then the application process for a tourist visa is comparably easy compared to getting an extension whilst in Thailand, and it's 900 baht cheaper. So long as you have the time to wait for an appointment and be here for two working days while the visa is processed, it's the better option.
+
+### If you plan on being in Thailand for 60 to 90 days
+
+Aside from leaving and re-entering Thailand, as a tourist your only option is to get a 60-day visa prior to entering Thailand, and to extend it for 30 days once in the country.
