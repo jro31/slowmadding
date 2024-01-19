@@ -4,12 +4,19 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityYinyomBeachImage from '#/pattaya-for-digital-nomads/city/yinyom-beach.jpeg'
+import cityDongtanBeachSunsetImage from '#/pattaya-for-digital-nomads/city/dongtan-beach-sunset.jpeg'
+
+import bahtBusBahtBusImage from '#/pattaya-for-digital-nomads/baht-bus/baht-bus.jpeg'
+
 import gResidenceApartmentImage from '#/pattaya-for-digital-nomads/g-residence/apartment.jpeg'
 import gResidenceLivingAreaImage from '#/pattaya-for-digital-nomads/g-residence/living-area.jpeg'
 import gResidenceBedroomImage from '#/pattaya-for-digital-nomads/g-residence/bedroom.jpeg'
 import gResidenceKitchenImage from '#/pattaya-for-digital-nomads/g-residence/kitchen.jpeg'
 import gResidenceBathroomImage from '#/pattaya-for-digital-nomads/g-residence/bathroom.jpeg'
 import gResidenceViewImage from '#/pattaya-for-digital-nomads/g-residence/view.jpeg'
+
+import veganFoodRubaiHummusImage from '#/pattaya-for-digital-nomads/vegan-food/rubai-hummus.jpeg'
 
 import yesVeganHawaiianPizzaImage from '#/pattaya-for-digital-nomads/yes-vegan/hawaiian-pizza.jpeg'
 import yesVeganGarlicBreadImage from '#/pattaya-for-digital-nomads/yes-vegan/garlic-bread.jpeg'
@@ -25,6 +32,13 @@ import yesVeganVeganPorkBurgerImage from '#/pattaya-for-digital-nomads/yes-vegan
 import yesVeganLemonSmoothieImage from '#/pattaya-for-digital-nomads/yes-vegan/lemon-smoothie.jpeg'
 import yesVeganVeganPorkCordonBleuImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-pork-cordon-bleu.jpeg'
 import yesVeganVeganChickenWithYellowRiceImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-chicken-with-yellow-rice.jpeg'
+
+import jomtienNightMarketMediterraneanFoodImage from '#/pattaya-for-digital-nomads/jomtien-night-market/mediterranean-food.jpeg'
+import jomtienNightMarketFalafelSandwichImage from '#/pattaya-for-digital-nomads/jomtien-night-market/falafel-sandwich.jpeg'
+import jomtienNightMarketFalafelSetImage from '#/pattaya-for-digital-nomads/jomtien-night-market/falafel-set.jpeg'
+import jomtienNightMarketHummusImage from '#/pattaya-for-digital-nomads/jomtien-night-market/hummus.jpeg'
+
+import runningStravaImage from '#/pattaya-for-digital-nomads/running/strava.jpeg'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -53,6 +67,28 @@ export const gResidenceDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityYinyomBeachImage,
+    alt: 'Yinyom Beach',
+    caption: "While Pattaya's reputation is all about its bars and partying, and rightfully so, don't ignore the fact that it also has some nice beaches. This is Yinyom beach. If you're staying at G Residence it's an easy walk to get here.",
+    url: 'https://maps.app.goo.gl/3r23tSdoY6q3EqadA',
+  },
+  {
+    src: cityDongtanBeachSunsetImage,
+    alt: 'Dongtan Beach sunset',
+    caption: 'The views out to sea look west, meaning you get some great sunsets in Pattaya. This one is in Jomtien, looking-out of Dongtan Beach.',
+  },
+]
+
+export const bahtBusImages = [
+  {
+    src: bahtBusBahtBusImage,
+    alt: 'Baht bus',
+    caption: 'TODO',
+  },
+]
 
 export const gResidenceImages = [
   {
@@ -84,6 +120,14 @@ export const gResidenceImages = [
     src: gResidenceViewImage,
     alt: 'G Residence view from the balcony',
     caption: "The apartment has a nice balcony with a couple of connected chairs and a table. Unfortunately there's a building directly in front of the balcony, so the view isn't the best, although if you look to the left, you can at least see the pools.",
+  },
+]
+
+export const veganFoodImages = [
+  {
+    src: veganFoodRubaiHummusImage,
+    alt: 'Rubai hummus',
+    caption: 'At Rubai there are a small number of vegan options such as hummus, which costs 110 baht.',
   },
 ]
 
@@ -160,17 +204,49 @@ export const yesVeganImages = [
   },
 ]
 
+export const jomtienNightMarketImages = [
+  {
+    src: jomtienNightMarketMediterraneanFoodImage,
+    alt: 'Jomtien Night Market Mediterranean Food stand',
+    caption: "The Meditteranean Food stand is fully-vegan and sells hummus, falafel and salad in various forms. When coming from Pattaya, it's in the first row of the market about half-way down.",
+  },
+  {
+    src: jomtienNightMarketFalafelSandwichImage,
+    alt: 'Jomtien Night Market falafel sandwich',
+    caption: "This is the large falafel sandwich. At only 100 baht it's a great feed.",
+  },
+  {
+    src: jomtienNightMarketFalafelSetImage,
+    alt: 'Jomtien Night Market falafel set',
+    caption: "The set include falafel, hummus, fries, salad and a pita bread. Just make sure to ask for cutlery. I forgot so had to eat the salad with my fingers, which wasn't much fun.",
+  },
+  {
+    src: jomtienNightMarketHummusImage,
+    alt: 'Jomtien Night Market hummus',
+    caption: "Hummus is incredibly hard to find in South-East Asia, and when you do it's usually imported hummus in a hi-so supermarket, and priced as such. Being able to get large tubs of hummus for just 60 baht is a great find.",
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Pattaya Strava map',
+    caption: 'TODO',
+    url: 'https://www.strava.com/activities/10271859285',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-TODO: Add images
+<ImageGallery images={cityImages} />
 
 ## How to take a baht bus in Pattaya
 
 TODO
 
-TODO: Add images
+<ImageGallery images={bahtBusImages} />
 
 ## Where I stayed
 
@@ -202,13 +278,15 @@ It's a great place to stay, and I was pretty bummed that it didn't have availabi
 
 ## Where to get vegan food in Huahin
 
-Usually when a town attracts a lot of western tourism, then a corresponding number of western vegan restaurants also open up. Perhaps due to the type of tourists, that's just not the case in Pattaya, and the vegan scene is actually a little dire.
+Usually when a town attracts a lot of western tourism, then a corresponding number of western vegan restaurants also open up. Perhaps due to the type of tourists, that's just not the case in Pattaya, and the vegan scene is actually pretty dire.
 
 In the centre of town there are dozens of Indian and Middle Eastern restaurants, many claiming to be vegetarian, but I still found these to be very vegan-unfriendly. Vegan items aren't marked on the menu, and things you'd typically expect to be vegan, like a falafel wrap, came with mayonnaise in when I ordered it in one of these. I found one slightly more vegan-friendly Lebanese restaurant in Jomtien (<ExternalLink url='https://www.happycow.net/reviews/rubai-restaurant-pattaya-318049/1516533#reviews'>Rubai</ExternalLink>) where the staff understood when I asked what was vegan, and there were a small number of (unmarked) vegan offerings on the menu. I went there multiple times.
 
 There's one Subway restaurant in Jomtien, and a small number dotted-around Pattaya. At the time I was here, they were offering a plant-based chicken sub, so out of desperation I ate at Subway a worrying amount of times too.
 
 I went to two supermarkets; Food Mart in Jomtien and one of the Big C's in Pattaya. Neither had any intentionally vegan items that I found, only vegan things you'd expect like fruits, vegetables, pasta etc. In truth, by the end of my time in Pattaya I was tired of eating at the same places again and again, but there were two places that I went that I'd consider truly vegan-friendly.
+
+<ImageGallery images={veganFoodImages} />
 
 ### Yes Vegan
 
@@ -226,13 +304,13 @@ If you're staying nearby, this will be your go-to for vegan food in Pattaya. If 
 
 TODO
 
-TODO: Add images
+<ImageGallery images={jomtienNightMarketImages} />
 
 ## Where to run in Pattaya
 
 TODO
 
-TODO: Add images
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Pattaya
 
