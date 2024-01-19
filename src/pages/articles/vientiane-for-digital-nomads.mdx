@@ -12,6 +12,19 @@ import csApartmentKitchenImage from '#/vientiane-for-digital-nomads/cs-apartment
 import csApartmentBathroomImage from '#/vientiane-for-digital-nomads/cs-apartment/bathroom.jpeg'
 import csApartmentOutsideImage from '#/vientiane-for-digital-nomads/cs-apartment/outside.jpeg'
 
+import patuxayPlaceRoomImage from '#/vientiane-for-digital-nomads/patuxay-place/room.jpeg'
+import patuxayPlaceBedImage from '#/vientiane-for-digital-nomads/patuxay-place/bed.jpeg'
+import patuxayPlaceDeskImage from '#/vientiane-for-digital-nomads/patuxay-place/desk.jpeg'
+import patuxayPlaceBathroomImage from '#/vientiane-for-digital-nomads/patuxay-place/bathroom.jpeg'
+import patuxayPlaceWaterCoolerImage from '#/vientiane-for-digital-nomads/patuxay-place/water-cooler.jpeg'
+import patuxayPlaceOutsideImage from '#/vientiane-for-digital-nomads/patuxay-place/outside.jpeg'
+
+import runningRiversideStravaImage from '#/vientiane-for-digital-nomads/running/riverside-strava.jpeg'
+import runningPatuxayParkStravaImage from '#/vientiane-for-digital-nomads/running/patuxay-park-strava.jpeg'
+import runningChaoAnouvongStadiumStravaImage from '#/vientiane-for-digital-nomads/running/chao-anouvong-stadium-strava.jpeg'
+import runningChaoAnouvongStadiumSatelliteViewImage from '#/vientiane-for-digital-nomads/running/chao-anouvong-stadium-satellite-view.png'
+import runningChaoAnouvongStadiumRunningTrackImage from '#/vientiane-for-digital-nomads/running/chao-anouvong-stadium-running-track.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2024-01-23T18:50:00+07:00', // TODO: Update this
@@ -97,6 +110,70 @@ export const csApartmentImages = [
   },
 ]
 
+export const patuxayPlaceImages = [
+  {
+    src: patuxayPlaceRoomImage,
+    alt: 'Patuxay Place bedroom',
+    caption: "Look at all that lovely daylight. All six of the rooms at Patuxay Place have east-facing windows so you can be sure of a nice bright room in the mornings, or if you're into self-harm the windows have blackout curtains. Between the TV and the bed is enough space to exercise.",
+  },
+  {
+    src: patuxayPlaceBedImage,
+    alt: 'Patuxay Place bed',
+    caption: "The room has a king-size bed, with plugs next to it on both sides. Out of shot above the bed is the room's air conditioner.",
+  },
+  {
+    src: patuxayPlaceDeskImage,
+    alt: 'Patuxay Place desk',
+    caption: "Right next to the window, right in front of a mirrow, with a plant on it and with a comfortable chair, the desk here makes a really good workstation. Underneath the desk is a fridge, and on the desk you can also see a kettle and the two refillable water bottles that you're provided with. They can be filled from any of the hotel's water coolers, doing some good from the environment and saving you having to carry water back from the shops.",
+  },
+  {
+    src: patuxayPlaceBathroomImage,
+    alt: 'Patuxay Place bathroom',
+    caption: "It's a bathroom 🤷‍♂️.",
+  },
+  {
+    src: patuxayPlaceWaterCoolerImage,
+    alt: 'Patuxay Place water cooler',
+    caption: 'There are three water coolers in the property (one on each floor) that you have full access to. Next to the water cooler they also have a small amount of crockery and cutlery if you happen to need any.',
+  },
+  {
+    src: patuxayPlaceOutsideImage,
+    alt: 'Patuxay Place outside',
+    caption: 'From outside. All six room are at the front of the property.',
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningRiversideStravaImage,
+    alt: 'Riverside Strava map',
+    caption: "The riverside is the best place for long, slow runs. You can go much farther than this and if you come in the late morning or early afternoon, there aren't many other people.",
+    url: 'https://www.strava.com/activities/10448449476',
+  },
+  {
+    src: runningPatuxayParkStravaImage,
+    alt: 'Patuxay Park Strava map',
+    caption: 'Patuxay Park is the least enjoyable place I ran in Vietiane. Containing Patuxay Monument there are too many tourists and hawkers.',
+    url: 'https://www.strava.com/activities/10535133726',
+  },
+  {
+    src: runningChaoAnouvongStadiumStravaImage,
+    alt: 'Chao Anouvong Stadium Strava map',
+    caption: "Ignore the 97m elevation that Strava has fabritcated, Chao Anouvong Stadium is very flat and the best place to come if you want to do sprints or intervals (I didn't).",
+    url: 'https://www.strava.com/activities/10574662035',
+  },
+  {
+    src: runningChaoAnouvongStadiumSatelliteViewImage,
+    alt: 'Chao Anouvong Stadium satellite view',
+    caption: 'This is a satellite view of Chao Anouvong Stadium that I took from Google Maps. The main entrance to the stadium is down Rue Nokeokoummane and opens sometime in the afternoon. Someone has kindly cut a hole in the fence right at the corner of Rue Le Ky Huong and Rue Phai Nam so the stadium is still accessible at other hours.',
+  },
+  {
+    src: runningChaoAnouvongStadiumRunningTrackImage,
+    alt: 'Chao Anouvong Stadium running track',
+    caption: "The track has definitely seen better days but it's still perfectly fine for running. Ignore the floodlights, they don't get turned-on. Once the sun goes down the track is illuminated by nothing but moonlight.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 A major city right across the border from Thailand, Laos' capital Vientiane is the obvious place to go when your Thai visa expires and you need to get out the country, especially if you have plans to return. That is why many people come here (that was why I first came here in 2011), but Vientiane is a destination in its own right.
@@ -175,7 +252,7 @@ A lot of people love this place, hence all the positive reviews (9.0 on booking.
 
 TODO
 
-TODO: Add images
+<ImageGallery images={patuxayPlaceImages} />
 
 ## Where to get vegan food in Vientiane
 
@@ -229,7 +306,7 @@ It's worth noting that they don't turn the flood-lights in the stadium on. I cam
 
 TODO
 
-TODO: Add running photos - Include satellite shot of stadium showing entrance and hole in the fence
+<ImageGallery images={runningImages} />
 
 ## Being sociable in Vientiane
 
