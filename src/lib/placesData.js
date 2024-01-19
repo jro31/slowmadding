@@ -26,7 +26,7 @@ export const criteriaHeadings = {
   [walking]: 'Pleasant to walk around',
 }
 
-// TODO: Sections to consider adding - Friendly people
+// TODO: Sections to consider adding - Friendly people, green spaces
 export const placesData = [
   {
     [place]: places[countries.greece].athens,
@@ -402,7 +402,7 @@ export const placesData = [
           'Wide pavements, fairly quiet roads. A really pleasant city to walk around.',
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/nakhon-ratchasima-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].pattaya,
@@ -612,5 +612,46 @@ export const placesData = [
       },
     },
     [articlePath]: '/articles/udon-thani-for-digital-nomads',
+  },
+  {
+    [place]: places[countries.laos].vientiane,
+    [country]: countries.laos,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'Decent rooms are available for less than 3,000,000 kip per week, a meal in a western restaurant starts at about 60,000 kip, a large local beer is around 35,000 kip.',
+      },
+      [internet]: {
+        [verdict]: false,
+        [description]: 'Very unstable wifi and network connections.',
+      },
+      [running]: {
+        [verdict]: false,
+        [description]:
+          "The pavements aren't really suitable for running and there are no green outdoor spaces.",
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          'A nice mix of western and local food is available throughout the city.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "Apart from erratic drivers there are no safety concerns here. Incredibly friendly people and one of the safest-feeling cities I've been to.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "Not much going on in terms of organised events and it's not a great city for going to a bar by yourself.",
+      },
+      [walking]: {
+        [verdict]: false,
+        [description]:
+          'Cars use the pavements for parking so you continually have to walk in the road, some roads take a while to cross, vehicle pollution is noticeable.',
+      },
+    },
+    [articlePath]: null, // TODO
   },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))
