@@ -1,0 +1,58 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-01-31T17:50:00+07:00', // TODO: Update this
+  title: 'Khon Kaen for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Thailand'],
+}
+
+export const manomonResidenceDetails = {
+  dates: {
+    checkIn: '2024-01-23',
+    checkOut: '2024-01-31',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
+  },
+  roomType: 'Deluxe King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 6183.49,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### Manomon Residence
+
+<MapLink name='1/99 Thanon Prachasamoson' url='https://maps.app.goo.gl/fADZgcLEPaxdudAz6' />
+
+<AccommodationTable details={manomonResidenceDetails} />
+
+TODO
+
+## Where to get vegan food in Khon Kaen
+
+TODO
+
+## Where to run in Khon Kaen
+
+TODO
+
+## Being sociable in Khon Kaen
+
+TODO
