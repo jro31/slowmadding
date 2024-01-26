@@ -4,6 +4,13 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import manomonResidenceBedImage from '#/khon-kaen-for-digital-nomads/manomon-residence/bed.jpeg'
+import manomonResidenceTvImage from '#/khon-kaen-for-digital-nomads/manomon-residence/tv.jpeg'
+import manomonResidenceWindowsImage from '#/khon-kaen-for-digital-nomads/manomon-residence/windows.jpeg'
+import manomonResidenceBathroomImage from '#/khon-kaen-for-digital-nomads/manomon-residence/bathroom.jpeg'
+import manomonResidenceBalconyImage from '#/khon-kaen-for-digital-nomads/manomon-residence/balcony.jpeg'
+import manomonResidenceViewImage from '#/khon-kaen-for-digital-nomads/manomon-residence/view.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2024-01-31T17:50:00+07:00', // TODO: Update this
@@ -31,6 +38,39 @@ export const manomonResidenceDetails = {
   },
 }
 
+export const manomonResidenceImages = [
+  {
+    src: manomonResidenceBedImage,
+    alt: 'Manomon Residence bed',
+    caption: 'Manomon Residence is phenomenal value. For less than 800 baht per night you get a large bed with loads of space around it. Plenty of space for exercise.',
+  },
+  {
+    src: manomonResidenceTvImage,
+    alt: 'Manomon Residence TV',
+    caption: 'In front of the bed is a large TV and a surface that makes a good workstation, as well as a fridge, and most importantly an electric kettle. The wifi in the room is fast and stable.',
+  },
+  {
+    src: manomonResidenceWindowsImage,
+    alt: 'Manomon Residence windows',
+    caption: "The large windows let in lots of glorious natural light, while the AC keeps the room cool. This table doesn't have a plug around it, but other than that makes another great workstation. The room I had faces south-west so was especially pleasant at sundown.",
+  },
+  {
+    src: manomonResidenceBathroomImage,
+    alt: 'Manomon Residence bathroom',
+    caption: "You can't really see it here, but the sink was peculiarly low. I didn't notice until I had to shave and realised wow, my back hurts. Other than that, it's a really nice bathroom as well. I can't believe how cheap this room was.",
+  },
+  {
+    src: manomonResidenceBalconyImage,
+    alt: 'Manomon Residence balcony',
+    caption: "There's another sink on the balcony suitable for washing things (clothes, blenders, tea cups etc). Or if you're too lazy to go out there you can just use the sink in the bathroom like me.",
+  },
+  {
+    src: manomonResidenceViewImage,
+    alt: 'Manomon Residence view',
+    caption: 'The view from the balcony is nice. If you like looking at cars and the sides of other buildings, that is.',
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -44,6 +84,8 @@ TODO
 <AccommodationTable details={manomonResidenceDetails} />
 
 TODO
+
+<ImageGallery images={manomonResidenceImages} />
 
 ## Where to get vegan food in Khon Kaen
 
