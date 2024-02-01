@@ -322,6 +322,48 @@ export const placesData = [
     [articlePath]: '/articles/huahin-for-digital-nomads',
   },
   {
+    [place]: places[countries.thailand].khonKaen,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'I had a really nice room in a hotel for less than 800 baht per night, a plate of food in a local restaurant is around 50 baht, a beer in a bar is about 80 baht.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'Fast and stable wifi in my room, 5G network connection everywhere I went.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Bueng Kaen Nakhon Reservoir is a lake with a 3.2km path going around the outside and makes a lovely place to go for a run.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          'Khon Kaen is deceptively vegan-friendly, but a lack of vegan food available in the evenings makes it hard to recommend.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'Not even a sniff of an issue while I was here. Feels safe to walk around at all hours of day and night.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There's a small cluster of foreigner-aimed bars that are good to go for a beer and chat to people, but I found nothing in the way of organised events.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "Local people don't walk anywhere so the pavements are void of other pedestrians, but it's still a pleasant city of which to wander the streets.",
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].loei,
     [country]: countries.thailand,
     [criteria]: {
