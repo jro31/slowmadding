@@ -81,6 +81,12 @@ export const thailandData = {
         [departure]: '2023-11-16',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-02-17',
+        [departure]: '2024-03-02',
+      },
+    },
   ],
   [places[countries.thailand].kanchanaburi]: [
     {

@@ -82,17 +82,17 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'Thailand has some of the fastest Internet in the world. In Bangkok you can expect a fast, reliable connection, with 5G available pretty much everywhere on mobile.',
+          'Thailand has some of the fastest Internet in the world. In Bangkok you can expect a fast, reliable connection, with 5G available pretty much everywhere.',
       },
       [running]: {
         [verdict]: true,
         [description]:
-          "There aren't too many places to run in Bangkok, but the ones that are here are sufficient as long as you're staying within reach.",
+          "There aren't too many places to run in Bangkok, but the ones that are here are sufficient. Just ensure that you're staying nearby.",
       },
       [veganFood]: {
         [verdict]: true,
         [description]:
-          "In Happy Cow's Top 10 Vegan-Friendly Cities 2022, Bangkok ranked 7th. Vegan food is everywhere here, and street vendors selling pre-cut fruit are all over the city.",
+          "In Happy Cow's Top 10 Vegan-Friendly Cities 2022, Bangkok ranked 7th. Vegan-friendly restaurants are everywhere here, and street vendors selling pre-cut fruit are all over the city.",
       },
       [safe]: {
         [verdict]: true,
@@ -203,17 +203,17 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          'A decent bed will be in the 800 baht range, a meal in a western restaurant will set you back around 200 baht.',
+          'A decent bed will be around 800 baht per night, a meal in a western restaurant will set you back around 200 baht.',
       },
       [internet]: {
         [verdict]: true,
         [description]:
-          'Despite being out of the city centre, the connection was consistent and fast enough for video calls.',
+          'Despite staying out of the city centre, the wifi in my room was reliable and fast enough for video calls.',
       },
       [running]: {
         [verdict]: true,
         [description]:
-          'The old airport is easy to get to and is a perfect big, open space to go running in.',
+          'The old airport is easy to get to and is a flat, big, open space to go running in.',
       },
       [veganFood]: {
         [verdict]: false,
@@ -254,7 +254,7 @@ export const placesData = [
       [running]: {
         [verdict]: false,
         [description]:
-          "I ran in three different places and found them all unenjoyable. The pavements are too congested to run along and the roads are busy making them hard to cross and causing a lot of pollution. Probably the worst running city I've ever been to.",
+          "I ran in three different places and found them all unenjoyable. The pavements are too congested to run along and the roads are busy making them hard to cross and causing a lot of pollution. Probably the worst running city I've been to.",
       },
       [veganFood]: {
         [verdict]: true,
@@ -274,7 +274,7 @@ export const placesData = [
       [walking]: {
         [verdict]: false,
         [description]:
-          'The pavement are full or motorcycles and vendors, and the roads are busy and difficult to cross.',
+          'The pavements are full or motorcycles and vendors, and the roads are busy and difficult to cross.',
       },
     },
     [articlePath]: '/articles/ho-chi-minh-city-for-digital-nomads',
@@ -286,22 +286,22 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          "I had a pretty big room for 871 baht per night. Beers in a bar are around 80 baht, although I had them as cheap as 50 baht. For a meal/drink in a western restaurant you'll pay around 250 to 300 baht.",
+          "Nice rooms are available for less than 900 baht per night, beers in a bar are typically around 80 baht although I found them as cheap as 50 baht, for a meal/drink in a western restaurant you'll pay around 250 to 300 baht.",
       },
       [internet]: {
         [verdict]: false,
         [description]:
-          "The Internet in my room was utter garbage. The saving grace was I had good 5G coverage everywhere in Huahin, so as long as you can tether to your phone it's not an issue.",
+          'The Internet in my room was utter garbage. The saving grace was I had good 5G coverage everywhere in Huahin so primarily tethered my laptop to my phone.',
       },
       [running]: {
         [verdict]: true,
         [description]:
-          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I didn't do this due to injury).",
+          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I haven't done this yet).",
       },
       [veganFood]: {
         [verdict]: false,
         [description]:
-          "There's one really good vegan restaurant, but beyond that Huahin is pretty lacking in options for vegans. You won't go hungry, but you might have to go back to the same places several times.",
+          "There's one really good vegan restaurant, but beyond that Huahin is lacking in vegan options. You won't go hungry, but you might get bored of going to the same places again and again.",
       },
       [safe]: {
         [verdict]: true,
@@ -316,7 +316,7 @@ export const placesData = [
       [walking]: {
         [verdict]: true,
         [description]:
-          "Pavements line the main roads, side roads are quiet, pollution is a non-issue, and if you don't fancy walking along the road, as the town's long and thin you can walk along the beach to where you want to go.",
+          "Pavements line the main roads, side roads are quiet, pollution is a non-issue, and if you don't fancy walking along the road you can go on the beach instead.",
       },
     },
     [articlePath]: '/articles/huahin-for-digital-nomads',
@@ -375,7 +375,7 @@ export const placesData = [
       [internet]: {
         [verdict]: false,
         [description]:
-          'At the guesthouse I was staying at, the router barely reached into the room so would continually disconnect. I had to tether to my 5G whenever I needed a reliable connection.',
+          'At the guesthouse I was staying at the router barely reached into the room so would continually disconnect. I had to tether to my 5G whenever I needed a reliable connection.',
       },
       [running]: {
         [verdict]: true,
@@ -400,7 +400,7 @@ export const placesData = [
       [walking]: {
         [verdict]: true,
         [description]:
-          "As long as you can stomach the heat, everywhere in town is comfortably walkable. Most roads have pavements, and traffic is insufficient to feel unsafe on those that don't. You might get barked at by dogs on quieter roads, but none felt a serious threat.",
+          "As long as you can stomach the heat, everywhere in town is comfortably walkable. Most roads have pavements, and traffic is insufficient to feel unsafe on those that don't. You might get barked at by dogs on quieter roads, but none felt a threat.",
       },
     },
     [articlePath]: '/articles/loei-for-digital-nomads',
@@ -441,7 +441,7 @@ export const placesData = [
       [walking]: {
         [verdict]: true,
         [description]:
-          'Wide pavements, fairly quiet roads. A really pleasant city to walk around.',
+          'Wide pavements, fairly quiet roads, a really pleasant city to walk around.',
       },
     },
     [articlePath]: '/articles/nakhon-ratchasima-for-digital-nomads',
@@ -458,17 +458,17 @@ export const placesData = [
       [internet]: {
         [verdict]: false,
         [description]:
-          "The wifi in my room had a login page and I'd get quickly logged-out on putting my device down, so I mostly just used my data.",
+          "The wifi in my first room had a login page and I'd get quickly logged-out on putting my device down, in my second room the connection was too slow for video calls. I had to tether to my phone, which also had a poor/unstable connection here.",
       },
       [running]: {
         [verdict]: true,
         [description]:
-          'Running to and along the beach I found to be a pretty pleasant route. You can run in most of Pattaya without issue.',
+          'Running to and along the beach I found to be a pretty pleasant route. You can run in most of Pattaya without issue, especially out of the city centre.',
       },
       [veganFood]: {
-        [verdict]: false,
+        [verdict]: true,
         [description]:
-          'There was one fully vegan restaurant near my room that I ate at a lot, but beyond this it was slim pickings. I found myself getting a vegan sub at Subway multiple times and eating the only vegan options at a middle-eastern restaurant.',
+          'There are a couple of fully vegan restaurants here, and several other vegetarian places.',
       },
       [safe]: {
         [verdict]: true,
@@ -478,7 +478,7 @@ export const placesData = [
       [social]: {
         [verdict]: false,
         [description]:
-          "Pattaya is the easiest place in the world to go out on your own and have fun. That being said, I didn't find any events specifically for meeting people/socialising.",
+          "Pattaya is the easiest place in the world to go out on your own and have fun, but I didn't find any events specifically for meeting people/socialising.",
       },
       [walking]: {
         [verdict]: true,
@@ -505,7 +505,7 @@ export const placesData = [
       [running]: {
         [verdict]: false,
         [description]:
-          "Neak Banh Tuek Park is a nice place to run, but it's the only one and it's quite small. I'd have liked more variety.",
+          "Neak Banh Tuek Park is an ok place to run, but it's the only one and it's quite small. I'd have liked more variety.",
       },
       [veganFood]: {
         [verdict]: true,
@@ -525,7 +525,7 @@ export const placesData = [
       [walking]: {
         [verdict]: false,
         [description]:
-          "The already uneven pavements are used as car parks or as restaurants, so you're often forced to walk in the road. Some areas feel pretty grim to walk around.",
+          "The already uneven pavements are used as car parks and restaurants, so you're often forced to walk in the road. Some areas feel pretty grim to walk around.",
       },
     },
     [articlePath]: '/articles/phnom-penh-for-digital-nomads',
@@ -557,7 +557,7 @@ export const placesData = [
       [safe]: {
         [verdict]: true,
         [description]:
-          'I saw nothing here to make me question my safety, even when walking around at night. Some soi dogs bark when you walk down side roads at night, but none ever got close to attacking me',
+          'I saw nothing here to make me question my safety, even when walking around at night. Stray dogs bark at you when you walk down side roads at night, but none ever felt close to attacking.',
       },
       [social]: {
         [verdict]: false,
@@ -620,17 +620,17 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          'I paid 762 baht per night for a studio in a really, really nice hotel, many local restaurants offer meals for around 50 baht, a day pass at my nearest gym was 160 baht, expect to pay around 80 baht for a beer in a bar.',
+          'I paid less than 770 baht per night for both of my rooms here, many local restaurants offer meals for around 50 baht, a day pass at the gym I went to was 160 baht, expect to pay around 80 baht for a beer in a bar.',
       },
       [internet]: {
         [verdict]: true,
         [description]:
-          'Wifi download speeds of around 150mbps and upload speeds of almost 300mbps on a reliable connection in my hotel, with 5G available everywhere I went in town.',
+          'A consistently fast and reliable connection in both of my rooms, with 5G available everywhere I went in town.',
       },
       [running]: {
         [verdict]: true,
         [description]:
-          'Nong Prachak lake has a circumference of about 3.1km, and has a running track the entire way around.',
+          "Nong Prachak Park, Nong Bua Public Park and Nong Sim Public Park are all big lakes with running tracks around the outside. One of the most running-friendly cities I've been to.",
       },
       [veganFood]: {
         [verdict]: false,
@@ -645,12 +645,12 @@ export const placesData = [
       [social]: {
         [verdict]: false,
         [description]:
-          'No events on Meetup or Facebook, and no other obvious ways of meeting people other than going and sitting in a bar.',
+          'No events on Meetup or Facebook, and no other obvious ways of meeting people other than going and sitting in a bar, which is a lot of fun here.',
       },
       [walking]: {
         [verdict]: true,
         [description]:
-          'Pavements everywhere and most are walkable, just occasionally being blocked by vehicles/street businesses (although they are very uneven).',
+          'Pavements everywhere and most are walkable, just occasionally being blocked by vehicles/street businesses.',
       },
     },
     [articlePath]: '/articles/udon-thani-for-digital-nomads',
@@ -676,17 +676,17 @@ export const placesData = [
       [veganFood]: {
         [verdict]: true,
         [description]:
-          'A nice mix of western and local food is available throughout the city.',
+          'A nice mix of vegan western and local food is available throughout the city.',
       },
       [safe]: {
         [verdict]: true,
         [description]:
-          "Apart from erratic drivers there are no safety concerns here. Incredibly friendly people and one of the safest-feeling cities I've been to.",
+          "Apart from erratic drivers there are no safety concerns here. Incredibly friendly people and one of the safest cities I've been to.",
       },
       [social]: {
         [verdict]: false,
         [description]:
-          "Not much going on in terms of organised events and it's not a great city for going to a bar by yourself.",
+          "Not much going on in terms of organised events and it's not a great city for going to a bar by yourself either.",
       },
       [walking]: {
         [verdict]: false,
@@ -694,6 +694,6 @@ export const placesData = [
           'Cars use the pavements for parking so you continually have to walk in the road, some roads take a while to cross, vehicle pollution is noticeable.',
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/vientiane-for-digital-nomads',
   },
 ].sort((a, b) => (a[place] > b[place] ? 1 : b[place] > a[place] ? -1 : 0))
