@@ -4,6 +4,10 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import cityCityPillarShrineImage from '#/khon-kaen-for-digital-nomads/city/city-pillar-shrine.jpeg'
+import cityBuengKaenNakhonNightMarketImage from '#/khon-kaen-for-digital-nomads/city/bueng-kaen-nakhon-night-market.jpeg'
+import cityPhraMahathatKaenNakhonImage from '#/khon-kaen-for-digital-nomads/city/phra-mahathat-kaen-nakhon.jpeg'
+
 import manomonResidenceBedImage from '#/khon-kaen-for-digital-nomads/manomon-residence/bed.jpeg'
 import manomonResidenceTvImage from '#/khon-kaen-for-digital-nomads/manomon-residence/tv.jpeg'
 import manomonResidenceWindowsImage from '#/khon-kaen-for-digital-nomads/manomon-residence/windows.jpeg'
@@ -61,6 +65,24 @@ export const manomonResidenceDetails = {
     },
   },
 }
+
+export const cityImages = [
+  {
+    src: cityCityPillarShrineImage,
+    alt: 'City Pillar Shrine',
+    caption: "This is the City Pillar Shrine. I'm not sure why you'd have a shrine to a pillar, but it's on the way to the Central shopping mall, so you'll probably run into it too.",
+  },
+  {
+    src: cityBuengKaenNakhonNightMarketImage,
+    alt: 'Bueng Kaen Nakhon Night Market',
+    caption: 'There are several large night markets in Khon Kaen. This is the Bueng Kaen Nakhon Night Market next to the Bueng Kaen Nakhon Reservoir, making it a much harder place to go running after dark.',
+  },
+  {
+    src: cityPhraMahathatKaenNakhonImage,
+    alt: 'Phra Mahathat Kaen Nakhon',
+    caption: "Phra Mahathat Kaen Nakhon is on the way to Kem Kon Khon Kaen restaurant, so if you decide to walk there from town like I did, you'll also find it.",
+  },
+]
 
 export const manomonResidenceImages = [
   {
@@ -211,6 +233,8 @@ export const runningImages = [
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
+
+<ImageGallery images={cityImages} />
 
 ## Where I stayed
 
