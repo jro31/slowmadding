@@ -16,6 +16,13 @@ import gResidenceKitchenImage from '#/pattaya-for-digital-nomads/g-residence/kit
 import gResidenceBathroomImage from '#/pattaya-for-digital-nomads/g-residence/bathroom.jpeg'
 import gResidenceViewImage from '#/pattaya-for-digital-nomads/g-residence/view.jpeg'
 
+import olympusCityGardenApartmentImage from '#/pattaya-for-digital-nomads/olympus-city-garden/apartment.jpeg'
+import olympusCityGardenLivingRoomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/living-room.jpeg'
+import olympusCityGardenBedroomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/bedroom.jpeg'
+import olympusCityGardenKitchenImage from '#/pattaya-for-digital-nomads/olympus-city-garden/kitchen.jpeg'
+import olympusCityGardenBathroomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/bathroom.jpeg'
+import olympusCityGardenBuildingsImage from '#/pattaya-for-digital-nomads/olympus-city-garden/buildings.jpeg'
+
 import veganFoodRubaiHummusImage from '#/pattaya-for-digital-nomads/vegan-food/rubai-hummus.jpeg'
 
 import yesVeganHawaiianPizzaImage from '#/pattaya-for-digital-nomads/yes-vegan/hawaiian-pizza.jpeg'
@@ -42,7 +49,7 @@ import runningStravaImage from '#/pattaya-for-digital-nomads/running/strava.jpeg
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-11-30T10:00:00+07:00', // TODO: Update this
+  date: '2024-02-21T10:00:00+07:00', // TODO: Update this
   title: 'Pattaya for Digital Nomads',
   description: '', // TODO
   keywords: ['Thailand'],
@@ -64,6 +71,27 @@ export const gResidenceDetails = {
     sections: {
       Room: 15624.11,
       '7% VAT': 1093.69,
+    },
+  },
+}
+
+export const olympusCityGardenDetails = {
+  dates: {
+    checkIn: '2024-02-01',
+    checkOut: '2024-02-17',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/olympus-city-garden-nongprue-banglamung.html',
+  },
+  roomType: 'Double Room with Balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 19860.14,
+      '7% VAT': 1390.21,
+      'booking.com pays': -1700.03,
     },
   },
 }
@@ -120,6 +148,39 @@ export const gResidenceImages = [
     src: gResidenceViewImage,
     alt: 'G Residence view from the balcony',
     caption: "The apartment has a nice balcony with a couple of connected chairs and a table. Unfortunately there's a building directly in front of the balcony, so the view isn't the best, although if you look to the left, you can at least see the pools.",
+  },
+]
+
+export const olympusCityGardenImages = [
+  {
+    src: olympusCityGardenApartmentImage,
+    alt: 'Olympus City Garden apartment',
+    caption: "As apartments go it's fairly compact, but you get plenty of natural light, which is always welcome. Crucially, the windows include drapes that can be closed so that, during the daytime at least, you can let in lots of daylight without people seeing you walking around naked.",
+  },
+  {
+    src: olympusCityGardenLivingRoomImage,
+    alt: 'Olympus City Garden living room',
+    caption: "Perhaps because it also flattens-out to a bed, the sofa isn't the most comfortable, and I found the table a chairs to be more a nuisance than anything. They take up a lot of the very limited space in the apartment and don't provide much use. Moving the coffee table out of the way there's just space to exercise, conveniently right beneath the only air conditioner in the apartment.",
+  },
+  {
+    src: olympusCityGardenBedroomImage,
+    alt: 'Olympus City Garden bedroom',
+    caption: "In a somewhat ingenious, somewhat depressing move if this is the future of humanity, the TV for the living room is on the back of the sliding bedroom door. The TV for the bedroom is on the other side of the same door. These were the first TVs I've ever encountered before or since that weren't compatible with my Apple TV. Plugging it in with an HDMI cable as usual, the picture worked, but the sound didn't, meaning I had to do my workouts and watch Netflix on my phone while I was here. The bed was very comfortable, and the cupboard on either side had plenty of room for storing clothes.",
+  },
+  {
+    src: olympusCityGardenKitchenImage,
+    alt: 'Olympus City Garden kitchen',
+    caption: "The kitchen was of little use as well; there wasn't enough equipment provided. Plenty of plates, bowls and cutlery, but in terms of cookware, there was just one wok, and oddly a saucepan lid. There was no saucepan. There is at least a kettle and large fridge.",
+  },
+  {
+    src: olympusCityGardenBathroomImage,
+    alt: 'Olympus City Garden bathroom',
+    caption: "The bathroom was actually pretty fancy. The mirror is one of those fancy mirrors that has a light (turned off in this picture) that goes all the way around it, shining enough light on you to trick you into thinking you have abs. The electric heater for the shower is ingeiously in the cupboard under the sink, yet controllable from the shower itself. If it wasn't such a depressing prospect that we're all going to have to live like this soon as the world becomes more populated, I'd have been amazed by the ingenuity of getting so much into such a small space.",
+  },
+  {
+    src: olympusCityGardenBuildingsImage,
+    alt: 'Olympus City Garden buildings',
+    caption: "If you couldn't tell from the name, Olympus City Garden is themed somewhat on Ancient Greece. I was staying in the building on the left, on the right is the middle building, then beyond that is a third, mirroring the building I was in, including with another pool. A few people swam in this pool, but it's quite public and not very welcoming. A better pool is behind the left building in this picture, and is nearby the gym (including sauna and steam room) which you have access to while staying here.",
   },
 ]
 
@@ -275,6 +336,18 @@ I didn't make use of any of the facilities outside of the apartment. Most obviou
 It's a great place to stay, and I was pretty bummed that it didn't have availability when I made plans to come back to Pattaya.
 
 <ImageGallery images={gResidenceImages} />
+
+### Olympus City Garden
+
+<MapLink name='Soi Kho Pai 4' url='https://maps.app.goo.gl/V1KnQZp71PSg1V5h7' />
+
+<AccommodationTable details={olympusCityGardenDetails} />
+
+TODO
+
+Pan lid, no pan
+
+<ImageGallery images={olympusCityGardenImages} />
 
 ## Where to get vegan food in Huahin
 
