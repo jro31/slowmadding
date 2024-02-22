@@ -2,6 +2,15 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
+import whereToBuyATicketAndCatchTheBusTicketOfficeImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg'
+import whereToBuyATicketAndCatchTheBusGate8Image from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/gate-8.jpeg'
+import whereToBuyATicketAndCatchTheBusTicketImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg'
+import whereToBuyATicketAndCatchTheBusTheBusImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/the-bus.jpeg'
+
+import onTheBusOnBoardImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/on-board.jpeg'
+import onTheBusSeatsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/seats.jpeg'
+import onTheBusMassageImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/massage.jpeg'
+
 export const meta = {
   author: 'Jethro Williams',
   date: '2024-02-08T18:15:00+07:00', // TODO: Update this
@@ -9,6 +18,47 @@ export const meta = {
   description: '', // TODO
   keywords: ['Thailand', 'Korat'],
 }
+
+export const whereToBuyATicketAndCatchTheBusImages = [
+  {
+    src: whereToBuyATicketAndCatchTheBusTicketOfficeImage,
+    alt: 'Nakhon Ratchasima bus terminal 2 Sri Mongkok ticket office',
+    caption: 'In Nakhon Ratchasima bus terminal 2, rather than having a common ticketing area, you buy your ticket from the ticket office of the company that runs the service. For Nakhon Ratchasima to Pattaya, that company is Sri Mongkol. This is their ticket office.',
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusGate8Image,
+    alt: 'Nakhon Ratchasima bus terminal 2 gate 8',
+    caption: "It's located in front of gate 8. Of the two terminal buildings it's the furthest from the main road. Gate 8 is also where you catch the bus.",
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusTicketImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus ticket',
+    caption: "A ticket from Nakhon Ratchasima to Pattaya costs 400 baht. There's very little English on the ticket, but you can see the departure date (01/02/2024), departure time (10:00), seat number (8A) and price without much trouble. The 09:30 scrawled at the top is because they want you to arrive thirty minutes early. This isn't strictly necessary, although you can start boarding about thirty minutes before departure. There are two daily buses to Pattaya, with the other leaving at 12:30pm.",
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusTheBusImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus',
+    caption: "Taken at a rest stop, this is what the bus looks like. For some reason it says 'Ubon - Pattaya' on the back (it did when I did this journey in the other direction as well). Ignore that, you're on the right bus.",
+  },
+]
+
+export const onTheBusImages = [
+  {
+    src: onTheBusOnBoardImage,
+    alt: 'On board the Nakhon Ratchasima to Pattaya bus',
+    caption: "For lonely people like me, it's always nice when the seats are in rows of threes instead of fours. It means I don't have to spend the whole journey worrying someone might sit next to me and think we're friends.",
+  },
+  {
+    src: onTheBusSeatsImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus seats',
+    caption: 'The seats are what I imagine first-class was like twenty years ago. Big and spacious but without modern amenities, like a plug to charge your phone with.',
+  },
+  {
+    src: onTheBusMassageImage,
+    alt: 'Nakhon Ratchasima to Pattaya seat massage controls',
+    caption: 'In a first for me, the seats were actually massage chairs. Not full body massagers unfortunately, but they did include a lower-back massager, controlled by this remote. After a seven hours of it, I arrived in Pattaya feeling bloody relaxed.',
+  },
+]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
@@ -18,9 +68,13 @@ TODO
 
 TODO
 
+<ImageGallery images={whereToBuyATicketAndCatchTheBusImages} />
+
 ## Taking the bus from Nakhon Ratchasima to Pattaya
 
 TODO
+
+<ImageGallery images={onTheBusImages} />
 
 ## Arriving in Pattaya
 
