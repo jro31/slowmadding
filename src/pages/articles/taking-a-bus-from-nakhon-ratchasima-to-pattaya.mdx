@@ -1,0 +1,119 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import whereToBuyATicketAndCatchTheBusTicketOfficeImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg'
+import whereToBuyATicketAndCatchTheBusGate8Image from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/gate-8.jpeg'
+import whereToBuyATicketAndCatchTheBusSatelliteViewImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/satellite-view.png'
+import whereToBuyATicketAndCatchTheBusTicketImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg'
+import whereToBuyATicketAndCatchTheBusTheBusImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/where-to-buy-a-ticket-and-catch-the-bus/the-bus.jpeg'
+
+import onTheBusOnBoardImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/on-board.jpeg'
+import onTheBusSeatsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/seats.jpeg'
+import onTheBusMassageImage from '#/taking-a-bus-from-nakhon-ratchasima-to-pattaya/on-the-bus/massage.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-02-23T17:00:00+07:00',
+  title: 'Taking a Bus from Nakhon Ratchasima to Pattaya',
+  description: "Longing to take a direct bus between Nakhon Ratchasima and Pattaya but don't know how? Read on to make all your dreams come true.",
+  keywords: ['Thailand', 'Korat'],
+}
+
+export const whereToBuyATicketAndCatchTheBusImages = [
+  {
+    src: whereToBuyATicketAndCatchTheBusTicketOfficeImage,
+    alt: 'Nakhon Ratchasima bus terminal 2 Sri Mongkok ticket office',
+    caption: 'In Nakhon Ratchasima bus terminal 2, rather than having a common ticketing area, you buy your ticket from the ticket office of the company that runs the service. For Nakhon Ratchasima to Pattaya, that company is Sri Mongkol. This is their ticket office.',
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusGate8Image,
+    alt: 'Nakhon Ratchasima bus terminal 2 gate 8',
+    caption: "It's located in front of gate 8. Of the two terminal buildings it's the one farthest from the main road. Gate 8 is also where you catch the bus.",
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusSatelliteViewImage,
+    alt: 'Nakhon Ratchasima bus terminal 2 gate 8 satellite view',
+    caption: 'This is a satellite view of Nakhon Ratchasima bus terminal 2 that I shamelessly stole from Google Maps. Gate 8 is on the eastern side of the western terminal building, about a third of the way up.',
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusTicketImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus ticket',
+    caption: "A ticket from Nakhon Ratchasima to Pattaya costs 400 baht. There's very little English on the ticket, but you can see the departure date (01/02/2024), departure time (10:00), seat number (8A) and price without much trouble. The 09:30 scrawled at the top is because they want you to arrive thirty minutes early. This isn't strictly necessary, although you can start boarding about thirty minutes before departure. There are two daily buses to Pattaya, with the other leaving at 12:30pm.",
+  },
+  {
+    src: whereToBuyATicketAndCatchTheBusTheBusImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus',
+    caption: "Taken at a rest stop, this is what the bus looks like. For some reason it says 'Ubon - Pattaya' on the back (it did when I made this journey in the other direction as well). Ignore that, you're on the right bus.",
+  },
+]
+
+export const onTheBusImages = [
+  {
+    src: onTheBusOnBoardImage,
+    alt: 'On board the Nakhon Ratchasima to Pattaya bus',
+    caption: "For lonely people like me, it's always nice when the seats are in rows of three instead of four. It means I don't have to spend the whole journey worrying someone might sit next to me and think we're friends.",
+  },
+  {
+    src: onTheBusSeatsImage,
+    alt: 'Nakhon Ratchasima to Pattaya bus seats',
+    caption: 'The seats are what I imagine first-class was like twenty years ago. Big and spacious but without modern amenities, such as a plug to charge your phone with.',
+  },
+  {
+    src: onTheBusMassageImage,
+    alt: 'Nakhon Ratchasima to Pattaya seat massage controls',
+    caption: 'In a first for me, the seats were actually massage chairs. Not full body massagers unfortunately, but they did include a lower-back massager, controlled by this remote. After a seven hours of it, I arrived in Pattaya feeling bloody relaxed.',
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Pattaya, in Chonburi province, is one of Thailand's most visited cities by foreigners, and is frankly, sickenly touristy. Nakhon Ratchasima on the other hand, despite being the bigger of the two cities and the largest in Isaan, has very little tourist presence and so finding information on travelling between them can be a little challenging.
+
+There are two daily direct buses between Nakhon Ratchasima (also known as Korat) and Pattaya. They depart from Nakhon Ratchasima's Bus Terminal 2 and are run by a company called Sri Mongkol.
+
+This article covers travelling from Nakhon Ratchasima to Pattaya. For information about going in the opposite direction, see <Link href='/articles/taking-a-bus-from-pattaya-to-nakhon-ratchasima'>Taking a Bus from Pattaya to Nakhon Ratchasima</Link>.
+
+## Where to buy a ticket and catch the bus
+
+Buses to Pattaya depart from <ExternalLink url='https://maps.app.goo.gl/dMqBjDFk4kb7VddC9'>Bus Terminal 2</ExternalLink> in Nakhon Ratchasima, which is its main bus terminal, and is a little north of the Terminal 21 shopping mall (no buses to Pattaya depart from bus terminal 1).
+
+Bus Terminal 2 is split into two long, thin terminal buildings, with more buses departing from the western of these terminals (furthest from the main road). There is no main ticketing area, instead you buy tickets from the ticket offices in front of the gate of which your bus departs.
+
+Buses to Pattaya depart from gate 8 in the western terminal building, and the Sri Mongkol ticket office where you buy your ticket to Pattaya is in front of gate 8.
+
+There are two daily departures to Pattaya, one at 10am and one at 12:30pm. Tickets cost 400 baht and no identification is required to buy one. Although usually unnecessary, tickets can be purchased in advance. When I made this journey (in both directions) there were many empty seats available, so with the exception of holidays you will most likely be fine showing up on the day of travel to buy a ticket.
+
+<ImageGallery images={whereToBuyATicketAndCatchTheBusImages} />
+
+## Taking the bus from Nakhon Ratchasima to Pattaya
+
+You're requested to arrive for the bus thirty minutes before departure. This isn't really necessary, although you will be able to board then (or shortly afterwards) and the bus is air-conditioned and has comfy seats so there are worse places to be.
+
+Seats on the bus are in rows of three, so if you're travelling alone you'll likely have been assigned a single seat (on the left when facing the front of the bus; the seat number will end in an 'A', such as my seat being '8A'), and if you're with someone else you'll have been assigned a double seat together.
+
+The seats are very big and comfortable, and are almost like old-fashioned first-class seats. There are no modern amenities such as charging ports for your devices, but other than that they're wide and spacious and really aren't a bad place to sit for seven hours. And the best thing? The chairs are actually massage chairs.
+
+As this wasn't the case when I made this journey in the opposite direction, maybe not all buses that ply this route have massage chairs, but on my journey south, there was a little remote on the side of the chair that you could use to control the massager. That was a very welcome surprise. I enjoyed this journey.
+
+We departed at 10:09am. There was only one stop on the journey where we were invited to leave the bus. This was at <ExternalLink url='https://maps.app.goo.gl/javfVQ1pYV35xxLu8'>Kabinburi Bus Terminal</ExternalLink>, of which we arrived at 12:57pm. This bus terminal has toilets (5 baht) and a large 7-11.
+
+We were there for fourteen minutes, departing again at 13:11. They did a head-count before leaving, so if you're stuck in the toilet with diarrhea, you might be lucky and the bus waits for you.
+
+There was only one other stop on this trip, at <ExternalLink url='https://maps.app.goo.gl/y2drZnczdFVMD5HVA'>Chonburi New Bus Terminal</ExternalLink> (it's going to be confusing when they build a newer terminal). We arrived at 15:17 and departed again at 15:19. Passengers were not invited to get off at this stop.
+
+<ImageGallery images={onTheBusImages} />
+
+## Arriving in Pattaya
+
+While Sri Mongkol's ticket office in Nakhon Ratchasima is conveniently located in the main bus terminal, in Pattaya they have an office nowhere notable in particular. The <ExternalLink url='https://maps.app.goo.gl/SsuV4yVFqkZKsCRn8'>Sri Mongkol ticket office in Pattaya</ExternalLink> is on Pattaya 3rd Road, and this is where the bus arrives and where you'll be dropped off.
+
+My bus arrived at 17:01, so after departing that morning at 10:09am, the total journey time was six hours and fifty-two minutes.
+
+Because the Pattaya ticket office has nothing notable around, there were no tuk-tuks or taxis waiting to take arriving passengers to their hotels, just a couple of motorcycle taxis. I tried multiple times to get a taxi with Grab, but at this time of day there was a lot of traffic and the only drivers accepting were miles away with other stops to make first.
+
+Eventually I conceded and got a motorcycle taxi with my suitcase, which wasn't as bad as I was expecting, and at least it was faster than sitting in traffic. Other passengers were still there when I left, and appeared somewhat stranded, so beware that this isn't like arriving on most buses in Thailand where you're immediately hounded by taxis and tuk-tuks. You may find nothing at all.
+
+Other than that, this was a really comfortable and seemless journey. I have nothing bad to say about the bus company, and if you're lucky enough to be on a bus with massage chairs, then get ready to feel bloody relaxed.
