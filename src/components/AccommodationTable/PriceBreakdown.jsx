@@ -21,7 +21,7 @@ const PriceBreakdown = ({
   )
 
   const nightlyPrice = () =>
-    (totalPrice / numberOfNights(dates.checkIn, dates.checkOut)).toFixed(2)
+    +(totalPrice / numberOfNights(dates.checkIn, dates.checkOut)).toFixed(2)
 
   const nightlyPriceString = () =>
     `(${currencyAmount(nightlyPrice())} per night)`
