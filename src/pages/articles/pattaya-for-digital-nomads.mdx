@@ -1,0 +1,597 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+import cityYinyomBeachImage from '#/pattaya-for-digital-nomads/city/yinyom-beach.jpeg'
+import cityDongtanBeachSunsetImage from '#/pattaya-for-digital-nomads/city/dongtan-beach-sunset.jpeg'
+
+import bahtBusBahtBusImage from '#/pattaya-for-digital-nomads/baht-bus/baht-bus.jpeg'
+
+import gResidenceApartmentImage from '#/pattaya-for-digital-nomads/g-residence/apartment.jpeg'
+import gResidenceLivingAreaImage from '#/pattaya-for-digital-nomads/g-residence/living-area.jpeg'
+import gResidenceBedroomImage from '#/pattaya-for-digital-nomads/g-residence/bedroom.jpeg'
+import gResidenceKitchenImage from '#/pattaya-for-digital-nomads/g-residence/kitchen.jpeg'
+import gResidenceBathroomImage from '#/pattaya-for-digital-nomads/g-residence/bathroom.jpeg'
+import gResidenceViewImage from '#/pattaya-for-digital-nomads/g-residence/view.jpeg'
+
+import olympusCityGardenApartmentImage from '#/pattaya-for-digital-nomads/olympus-city-garden/apartment.jpeg'
+import olympusCityGardenLivingRoomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/living-room.jpeg'
+import olympusCityGardenBedroomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/bedroom.jpeg'
+import olympusCityGardenKitchenImage from '#/pattaya-for-digital-nomads/olympus-city-garden/kitchen.jpeg'
+import olympusCityGardenBathroomImage from '#/pattaya-for-digital-nomads/olympus-city-garden/bathroom.jpeg'
+import olympusCityGardenBuildingsImage from '#/pattaya-for-digital-nomads/olympus-city-garden/buildings.jpeg'
+
+import yesVeganHawaiianPizzaImage from '#/pattaya-for-digital-nomads/yes-vegan/hawaiian-pizza.jpeg'
+import yesVeganGarlicBreadImage from '#/pattaya-for-digital-nomads/yes-vegan/garlic-bread.jpeg'
+import yesVeganVeganSaladImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-salad.jpeg'
+import yesVeganSpicyVeganSausageSaladWithWasabiImage from '#/pattaya-for-digital-nomads/yes-vegan/spicy-vegan-sausage-salad-with-wasabi.jpeg'
+import yesVeganWatermelonSmoothieImage from '#/pattaya-for-digital-nomads/yes-vegan/watermelon-smoothie.jpeg'
+import yesVeganBakedSpinachWithVeganCheeseImage from '#/pattaya-for-digital-nomads/yes-vegan/baked-spinach-with-vegan-cheese.jpeg'
+import yesVeganDeepFriedVeganPorkWithJapaneseSauceImage from '#/pattaya-for-digital-nomads/yes-vegan/deep-fried-vegan-pork-with-japanese-sauce.jpeg'
+import yesVeganStirFriedVeganSirloinImage from '#/pattaya-for-digital-nomads/yes-vegan/stir-fried-vegan-sirloin.jpeg'
+import yesVeganVeganDoubleSpicyChickenBurgerImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-double-spicy-chicken-burger.jpeg'
+import yesVeganFriedMushroomWithVeganCheeseSandwichImage from '#/pattaya-for-digital-nomads/yes-vegan/fried-mushroom-with-vegan-cheese-sandwich.jpeg'
+import yesVeganSauteedSpaghettiCarbonaraImage from '#/pattaya-for-digital-nomads/yes-vegan/sauteed-spaghetti-carbonara.jpeg'
+import yesVeganVeganPorkSatayImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-pork-satay.jpeg'
+import yesVeganVeganChickenNuggetsImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-chicken-nuggets.jpeg'
+import yesVeganVeganPorkBurgerImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-pork-burger.jpeg'
+import yesVeganLemonSmoothieImage from '#/pattaya-for-digital-nomads/yes-vegan/lemon-smoothie.jpeg'
+import yesVeganVeganPorkCordonBleuImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-pork-cordon-bleu.jpeg'
+import yesVeganVeganChickenWithYellowRiceImage from '#/pattaya-for-digital-nomads/yes-vegan/vegan-chicken-with-yellow-rice.jpeg'
+
+import appleVeganCafeAmericanFriedRiceImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/american-fried-rice.jpeg'
+import appleVeganCafeFishFingersImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/fish-fingers.jpeg'
+import appleVeganCafeVeganChickenBurgerImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/vegan-chicken-burger.jpeg'
+import appleVeganCafeSpaghettiCarbonaraImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/spaghetti-carbonara.jpeg'
+import appleVeganCafeVeganTunaSandwichImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/vegan-tuna-sandwich.jpeg'
+import appleVeganCafeOutsideImage from '#/pattaya-for-digital-nomads/apple-vegan-cafe/outside.jpeg'
+
+import fiveStarJRestaurantSoyBurgerImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/soy-burger.jpeg'
+import fiveStarJRestaurantTriColourPastaImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/tri-colour-pasta.jpeg'
+import fiveStarJRestaurantTempehPanangCurryImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/tempeh-panang-curry.jpeg'
+import fiveStarJRestaurantShiitakeBurgerImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/shiitake-burger.jpeg'
+import fiveStarJRestaurantSpaghettiCarbonaraImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/spaghetti-carbonara.jpeg'
+import fiveStarJRestaurantChickenBurgerImage from '#/pattaya-for-digital-nomads/five-star-j-restaurant/chicken-burger.jpeg'
+
+import jomtienNightMarketMediterraneanFoodImage from '#/pattaya-for-digital-nomads/jomtien-night-market/mediterranean-food.jpeg'
+import jomtienNightMarketFalafelSandwichImage from '#/pattaya-for-digital-nomads/jomtien-night-market/falafel-sandwich.jpeg'
+import jomtienNightMarketFalafelSetImage from '#/pattaya-for-digital-nomads/jomtien-night-market/falafel-set.jpeg'
+import jomtienNightMarketHummusImage from '#/pattaya-for-digital-nomads/jomtien-night-market/hummus.jpeg'
+
+import runningStravaImage from '#/pattaya-for-digital-nomads/running/strava.jpeg'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-02-25T18:25:00+07:00',
+  title: 'Pattaya for Digital Nomads',
+  description: "Pattaya's sordid reputation stretches far and wide. Does that mean it's not a great place to come as a digital nomad?",
+  keywords: ['Thailand'],
+}
+
+export const gResidenceDetails = {
+  dates: {
+    checkIn: '2023-11-16',
+    checkOut: '2023-11-30',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/g-residence.html',
+  },
+  roomType: 'Apartment with balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 15624.11,
+      '7% VAT': 1093.69,
+    },
+  },
+}
+
+export const olympusCityGardenDetails = {
+  dates: {
+    checkIn: '2024-02-01',
+    checkOut: '2024-02-17',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/olympus-city-garden-nongprue-banglamung.html',
+  },
+  roomType: 'Double Room with Balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 19860.14,
+      '7% VAT': 1390.21,
+      'booking.com pays': -1700.03,
+    },
+  },
+}
+
+export const cityImages = [
+  {
+    src: cityYinyomBeachImage,
+    alt: 'Yinyom Beach',
+    caption: "While Pattaya's reputation is all about its bars and partying, and rightfully so, don't ignore the fact that it also has some nice beaches, like Yinyom beach in Jomtien.",
+  },
+  {
+    src: cityDongtanBeachSunsetImage,
+    alt: 'Dongtan Beach sunset',
+    caption: 'The views out to sea look west, meaning you get some great sunsets in Pattaya. This one is in Jomtien looking over Dongtan Beach.',
+  },
+]
+
+export const bahtBusImages = [
+  {
+    src: bahtBusBahtBusImage,
+    alt: 'Baht bus',
+    caption: "Typical capacity for a baht bus is at least fourteen people, with five sitting on each bench, and four standing on the platform at the back. There are many overweight foreigners in Pattaya so that won't always be true.",
+  },
+]
+
+export const gResidenceImages = [
+  {
+    src: gResidenceApartmentImage,
+    alt: 'G Residence apartment with balcony',
+    caption: 'G Residence offers studios (35m²), one-bedroom apartments (47m²) and two-bedroom apartments (80m²). This is the one-bedroom apartment that I stayed-in.',
+  },
+  {
+    src: gResidenceLivingAreaImage,
+    alt: 'G Residence living area',
+    caption: 'Two people could have been comfortable here, so there was more than enough space for just me.',
+  },
+  {
+    src: gResidenceBedroomImage,
+    alt: 'G Residence bedroom',
+    caption: "One thing I loved is how much natural light gets in. While it's called a one-bedroom apartment, the separators make it more of a studio because there's no fully-separate room you could go in to get away from someone. The good thing about that is that both the living area and the bedroom have floor-to-ceiling windows which you benefit from entirely no matter which room you're in.",
+  },
+  {
+    src: gResidenceKitchenImage,
+    alt: 'G Residence kitchen',
+    caption: "The \"kitchen\" left a lot to be desired. A couple of bowls, a couple of plates, limited cutlery, one frying pan and one spatula. Had they at least included a saucepan it might have been useful for me. As it was I didn't use the cooking facilities at all.",
+  },
+  {
+    src: gResidenceBathroomImage,
+    alt: 'G Residence bathroom',
+    caption: "The bathroom, if you couldn't tell.",
+  },
+  {
+    src: gResidenceViewImage,
+    alt: 'G Residence view from the balcony',
+    caption: "The apartment has a nice balcony with a couple of connected chairs and a table. Unfortunately there's a building directly in front of the balcony, so the view isn't the best, although if you look to the left, you can at least see the pools.",
+  },
+]
+
+export const olympusCityGardenImages = [
+  {
+    src: olympusCityGardenApartmentImage,
+    alt: 'Olympus City Garden apartment',
+    caption: "As apartments go it's very compact, but you get plenty of natural light, which is always welcome. Crucially, the windows include drapes that can be closed so that, during the daytime at least, you can let in lots of daylight without people seeing you walking around naked.",
+  },
+  {
+    src: olympusCityGardenLivingRoomImage,
+    alt: 'Olympus City Garden living room',
+    caption: "Perhaps because it also flattens-out to a bed, the sofa isn't the most comfortable, and I found the table a chairs to be more of a nuisance than anything. They take up a lot of the very limited space in the apartment and don't provide much use. Moving the coffee table out of the way there's just space to exercise, conveniently right beneath the only air conditioner in the apartment.",
+  },
+  {
+    src: olympusCityGardenBedroomImage,
+    alt: 'Olympus City Garden bedroom',
+    caption: "In a somewhat ingenious, somewhat depressing move if this is the future of humanity, the TV for the living room is on the front of the sliding bedroom door, and the TV for the bedroom is on the other side of the same door. These are the only TVs I've encountered before or since that aren't compatible with my Apple TV. The bed was very comfortable, and the cupboards on either side have plenty of room for storing clothes.",
+  },
+  {
+    src: olympusCityGardenKitchenImage,
+    alt: 'Olympus City Garden kitchen',
+    caption: "The kitchen was of little use as there wasn't enough equipment provided. Plenty of plates, bowls and cutlery, but in terms of cookware, there was just one wok, and oddly a saucepan lid. There is at least a kettle and large fridge.",
+  },
+  {
+    src: olympusCityGardenBathroomImage,
+    alt: 'Olympus City Garden bathroom',
+    caption: "The bathroom was actually pretty fancy. The mirror is one of those fancy mirrors that has a light that goes all the way around it (turned off in this picture), shining enough light on you so you think you have abs. The electric heater for the shower is ingeiously in the cupboard under the sink, yet controllable from the shower itself. If it wasn't such a depressing prospect that we're all going to have to live like this soon, I'd have been amazed by the ingenuity of getting so much into such a small space.",
+  },
+  {
+    src: olympusCityGardenBuildingsImage,
+    alt: 'Olympus City Garden buildings',
+    caption: "If you couldn't tell from the name, Olympus City Garden is themed somewhat on Ancient Greece. I was staying in the building on the left. The building on right is the middle building, and beyond that, not pictured, is a third building, mirroring the building I was in. A few people swam in this pool, but it's quite public and not very welcoming. A better pool is behind the left building in this picture, and is nearby the gym (including sauna and steam room) which you have access to while staying here.",
+  },
+]
+
+export const yesVeganImages = [
+  {
+    src: yesVeganHawaiianPizzaImage,
+    alt: 'Yes Vegan Hawaiian pizza',
+    caption: "There's only one pizza on the menu; the Hawaiian pizza. It was as good as it looks, and costs 185 baht.",
+  },
+  {
+    src: yesVeganGarlicBreadImage,
+    alt: 'Yes Vegan garlic bread',
+    caption: 'Want some garlic bread with that pizza? 90 baht. On a separate note, why did I get so fat in Pattaya?',
+  },
+  {
+    src: yesVeganVeganSaladImage,
+    alt: 'Yes Vegan vegan salad',
+    caption: "There are seven different salads on the menu. I must have still been drunk when I decided to get this one. It's the descriptively-named vegan salad for 110 baht.",
+  },
+  {
+    src: yesVeganSpicyVeganSausageSaladWithWasabiImage,
+    alt: 'Yes Vegan spicy vegan sausage salad with wasabi',
+    caption: "And this is the spicy vegan sausage salad with wasabi. This was the first time I've ever had wasabi on something that's not sushi, but damn, it gave it a really addictive kick. Definitely one to try when you come here. It costs 125 baht.",
+  },
+  {
+    src: yesVeganWatermelonSmoothieImage,
+    alt: 'Yes Vegan watermelon smoothie',
+    caption: 'There are five different smoothies on the menu, each costing either 80 or 90 baht. This is the watermelon smoothie for 80 baht.',
+  },
+  {
+    src: yesVeganBakedSpinachWithVeganCheeseImage,
+    alt: 'Yes Vegan baked spinach with vegan cheese',
+    caption: "Baked spinach with vegan cheese. It looks a lot better than it tastes, but it does look good. It costs 125 baht.",
+  },
+  {
+    src: yesVeganDeepFriedVeganPorkWithJapaneseSauceImage,
+    alt: 'Yes Vegan deep fried vegan pork with Japanese sauce',
+    caption: 'I am a man of culture, I also eat Asian food, like this deep fried vegan pork with Japanese sauce for 125 baht.',
+  },
+  {
+    src: yesVeganStirFriedVeganSirloinImage,
+    alt: 'Yes Vegan stir-fried vegan sirloin with black pepper',
+    caption: "Or this stir-fried vegan sirloin with black pepper at 145 baht. That's Asian food, right?",
+  },
+  {
+    src: yesVeganVeganDoubleSpicyChickenBurgerImage,
+    alt: 'Yes Vegan vegan double spicy chicken burger with French fries',
+    caption: "When I arrived in Pattaya I'd been sitting on a bus from Huahin all day so really needed something to fill the hole. The vegan double spicy chicken burger with French fries is a real jaw-dislocator, but it did the job. It costs 175 baht.",
+  },
+  {
+    src: yesVeganFriedMushroomWithVeganCheeseSandwichImage,
+    alt: 'Yes Vegan fried mushroom with vegan cheese sandwich',
+    caption: 'And the winner of the most useless photo ever taken award goes to my picture of the fried mushroom with vegan cheese sandwich. There are mushrooms and vegan cheese in there, trust me. And it tasted really good. 155 baht.',
+  },
+  {
+    src: yesVeganSauteedSpaghettiCarbonaraImage,
+    alt: 'Yes Vegan sautéed spaghetti carbonara',
+    caption: "You want to know why I never buy pasta in restaurants? This is why I never buy pasta in restaurants. Putting one mouthful of pasta in a comically large bowl doesn't make it anymore filling. It's such a cheap food, why are restaurants always so stingy? Give me a proper-sized portion. And they snapped the spaghetti in half so I couldn't twiddle it around my fork. If this has you sold then this plate of sautéed spaghetti carbonara will cost you 165 baht.",
+  },
+  {
+    src: yesVeganVeganPorkSatayImage,
+    alt: 'Yes Vegan vegan pork satay with peanut sauce',
+    caption: "I don't actually know what satay means. I assumed it was how dyslexics spelled sauté, but it turns-out it actually means five bits of pork on a stick with some pita bread and lettuce. At Yes Vegan, the vegan pork satay with peanut sauce is 125 baht.",
+  },
+  {
+    src: yesVeganVeganChickenNuggetsImage,
+    alt: 'Yes Vegan vegan chicken nuggets',
+    caption: "I don't normally waste my time with appetizers. If I'm going to get two dishes then I'll just get two mains. Why get an appetizer when it costs almost the same? I wanted to try these vegan chicken nuggets though, and for 120 baht they were well worth it.",
+  },
+  {
+    src: yesVeganVeganPorkBurgerImage,
+    alt: 'Yes Vegan vegan pork burger with French fries',
+    caption: 'You can never go wrong with a good burger. A vegan pork burger with French fries is 135 baht.',
+  },
+  {
+    src: yesVeganLemonSmoothieImage,
+    alt: 'Yes Vegan lemon smoothie',
+    caption: 'Another of the smoothies is this lemon smoothie at 80 baht.',
+  },
+  {
+    src: yesVeganVeganPorkCordonBleuImage,
+    alt: 'Yes Vegan vegan pork cordon bleu',
+    caption: "I didn't know what a cordon bleu was either. It doesn't sound very appealing when someone who can't even spell blue precedes it with something that sounds like condom, but it actually means some stuff in breadcrumbs served with a bit of salad. This is the vegan pork cordon bleu for 155 baht.",
+  },
+  {
+    src: yesVeganVeganChickenWithYellowRiceImage,
+    alt: 'Yes Vegan vegan chicken with yellow rice',
+    caption: 'Vegan chicken with yellow rice. For when white rice becomes politically incorrect. 155 baht.',
+  },
+]
+
+export const appleVeganCafeImages = [
+  {
+    src: appleVeganCafeAmericanFriedRiceImage,
+    alt: 'Apple Vegan Cafe American fried rice',
+    caption: "The American fried rice costs 119 baht and includes a vegan fried egg and some vegan chicken nuggets. Now that's real food!",
+  },
+  {
+    src: appleVeganCafeFishFingersImage,
+    alt: 'Apple Vegan Cafe fish fingers',
+    caption: "I really like that Apple does some simple dishes, and doesn't ruin them by trying to be fancy. This was the first time I'd had fish fingers and chips in 30+ years, and despite being a vegan variation, it was just like how I remembered it. This plate cost 150 baht.",
+  },
+  {
+    src: appleVeganCafeVeganChickenBurgerImage,
+    alt: 'Apple Vegan Cafe vegan chicken burger',
+    caption: "The first meal I had here was this vegan chicken burger. No nonsense, that's 130 baht please.",
+  },
+  {
+    src: appleVeganCafeSpaghettiCarbonaraImage,
+    alt: 'Apple Vegan Cafe spaghetti carbonara',
+    caption: "My number one rule for restaurants, and life in general, is never buy pasta in a restaurant. Despite being such a cheap product, restaurants are always so stingy with the portion sizes that it's always a disappointment. I was pleasantly surprised that at Apple, the size of this spaghetti carbonara was adequate. 130 baht.",
+  },
+  {
+    src: appleVeganCafeVeganTunaSandwichImage,
+    alt: 'Apple Vegan Cafe vegan tuna sandwich',
+    caption: "I don't get to cook much nowadays being a digital nomad, but back when I was settled, one of my go-to meals was vegan tuna salad sandwiches, so it's always something I'm happy to find in restaurants. At Apple the vegan tuna sandwiches cost 130 baht.",
+  },
+  {
+    src: appleVeganCafeOutsideImage,
+    alt: 'Apple Vegan Cafe outside',
+    caption: "It's a pretty easy restaurant to spot, what with saying 'Vegan cafe' in big writing, but just in case you're struggling this is what you're looking for.",
+  },
+]
+
+export const fiveStarJRestaurantImages = [
+  {
+    src: fiveStarJRestaurantSoyBurgerImage,
+    alt: 'Five Star J Restaurant soy burger',
+    caption: "Five Star J has an absolutely huge menu. While it's a vegetarian rather than vegan restaurant, the vast majority of items on the menu are vegan and are clearly labelled as such. This is the soy burger for 199 baht.",
+  },
+  {
+    src: fiveStarJRestaurantTriColourPastaImage,
+    alt: 'Five Star J Restaurant with vegan parmesan',
+    caption: 'Again breaking my cardinal rule of not buying pasta in restaurants (I must have been drunk), I got this tri-colour pasta with vegan parmesan, and was suprisingly undisappointed. It cost 169 baht.',
+  },
+  {
+    src: fiveStarJRestaurantTempehPanangCurryImage,
+    alt: 'Five Star J Restaurant tempeh panang curry with black rice',
+    caption: "In a weird twist of fate, the only thing I got at Five Star J that I didn't like was this tempeh panang curry with black rice. Who'd have thought they wouldn't be so great at Thai food? If I've sold it to you it costs 169 baht.",
+  },
+  {
+    src: fiveStarJRestaurantShiitakeBurgerImage,
+    alt: 'Five Star J Restaurant shiitake burger',
+    caption: 'When I eventually left Pattaya I was embarrassingly out of shape. Was it because of the copious amount of beer I drank? Was it because I was consistently too hungover to exercise properly? Was it because I ate little but junk food to help ease these hangovers, like this shiitake burger with sweet potato fries for 199 baht? Yes, yes and yes, but it did taste good so fuck off.',
+  },
+  {
+    src: fiveStarJRestaurantSpaghettiCarbonaraImage,
+    alt: 'Five Star J Restaurant spaghetti carbonara with vegan parmesan',
+    caption: 'Pattaya is an anomoly of the world for many reasons, but perhaps none more so than not being stingy fuckers when it comes to pasta. The is the spaghetti carbonara with vegan parmesan for 169 baht.',
+  },
+  {
+    src: fiveStarJRestaurantChickenBurgerImage,
+    alt: 'Five Star J Restaurant chicken burger',
+    caption: 'Oh chicken burger my chicken burger, how I miss thee. At 199 baht you were quite delicious.',
+  },
+]
+
+export const jomtienNightMarketImages = [
+  {
+    src: jomtienNightMarketMediterraneanFoodImage,
+    alt: 'Jomtien Night Market Mediterranean Food stand',
+    caption: "The Meditteranean Food stand is fully-vegan and sells hummus, falafel and salad in various forms. When coming from Pattaya, it's in the first row of the market about half-way down.",
+  },
+  {
+    src: jomtienNightMarketFalafelSandwichImage,
+    alt: 'Jomtien Night Market falafel sandwich',
+    caption: "This is the large falafel sandwich. At only 100 baht it's a great feed.",
+  },
+  {
+    src: jomtienNightMarketFalafelSetImage,
+    alt: 'Jomtien Night Market falafel set',
+    caption: "The set includes falafel, hummus, fries, salad and a pita bread. Just make sure to ask for cutlery. I forgot so had to eat the salad with my fingers, which wasn't much fun.",
+  },
+  {
+    src: jomtienNightMarketHummusImage,
+    alt: 'Jomtien Night Market hummus',
+    caption: "Hummus is incredibly hard to find in South-East Asia, and when you do it's usually imported hummus in a hi-so supermarket and priced as such. Being able to get large tubs of hummus for just 60 baht is rare.",
+  },
+]
+
+export const runningImages = [
+  {
+    src: runningStravaImage,
+    alt: 'Pattaya Strava map',
+    caption: 'A run from my second stay in Pattaya, where I started and finished at the top-right of the map, which was the point that traffic thinned sufficiently that I could comfortably run. The bottom part took me in a loop through Jomtien, including along Yinyom Beach.',
+    url: 'https://www.strava.com/activities/10684502664',
+  },
+]
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+If you've spent any time in Thailand, and perhaps even if you haven't, you'll be aware of Pattaya's rather sordid reputation. And it's fully justified. The breadth of bars here is mind-blowing and numbers somewhere in the thousands, with some being open 24 hours per day. The number of massage shops isn't too far below.
+
+While the foreigners who choose to call Pattaya home are generally elderly men who prefer to fraternise with women who would be far too young and attractive to be attainable almost anywhere else in the world, temporary visitors to Pattaya come from far and wide and from all walks of life. It's a city so overrun with tourism that little here has any semblance of Thailand. If you've come to experience local culture, then forget all about coming to Pattaya.
+
+That travellers so inexperienced flock to Pattaya goes some way to explain the Pattaya Flying Club, whose innumerable members came to Pattaya and commit suicide by jumping off their hotel balcony. Some members always seem a little suspect to me, such as one who joined during my second visit by jumping from a third floor balcony. If I was intent on suicide and had a third floor room, I think at the very least I'd make the effort to walk up the rooftop to ensure I was successful. Regardless, do come here with your eyes wide open. Many of these suicides are legitimate, with naive men of all ages thinking they've found the perfect girl who's fallen in love with them.
+
+Newsflash: You haven't.
+
+The women here will say and do what they have to so that as much money as possible in your bank account, ends up in their bank account, and when the money is gone, so are they. With no money left and no girl either, it's time to join the Pattaya Flying Club.
+
+This seems very obvious to me and I think would be to anyone who's travelled a bit. As sad as this sounds, I treat any girl who approaches me in South-East Asia as only talking to me for money. There are some guys who just don't understand the game being played, fall in love, and then fall off a balcony. It's the dark-side of Pattaya that the tourist brochures don't tell you about. Don't become one of the statistics.
+
+While Pattaya's reputation is for sex tourism, and you won't be able to avoid that happens here, a lot, if you just want to go to the beach and drink a bit in the evenings, you can still have a great time. There are some nice beaches and you won't be approached by girls in every bar (just most of them).
+
+If you don't plan on drinking or partying at all, then I'd suggest that Pattaya isn't for you. I don't regret coming here once, because it really is a unique place, but after a change of plans and the need to kill an extra month in Thailand, I came for my second visit on a whim and regretted doing so. There's really not that much to do here other than party, and I drank so much during my second stay that I left out-of-shape and unhealthy, and looking back, really didn't have that much fun.
+
+In terms of Pattaya's geography, there are two main areas to be aware of. The centre of Pattaya stretches roughly from the south end of Pattaya Walking Street, approximately three kilometres until the Terminal 21 shopping mall. From the water's edge to roughly a kilometre inland, these three kilometres are little but bars, clubs and massage shops.
+
+I think technically it's not part of Pattaya, but Jomtien can be easily reached by walking or by baht bus, and is a much more relaxed, less in-your-face alternative, popular with Russians for some reason. It has a good night market and some nice beaches, with a much more sightly waterfront that I went running along a few times. As I found out the hard way (not literally), Jomtien Walking Street is Pattaya's very gay gay area.
+
+Usual rules of physical contact don't apply in Pattaya. Walking alone as a man you will be grabbed everywhere by girls with concerning regularity in the busier areas. In the gay area, men do it, so that was a fun surprise.
+
+Depite years living in Thailand, I'd always avoided Pattaya until I became a digital nomad because of its reputation. I don't regret coming here, for the first time at least, because it is a very unique place that has to be experienced to be understood. If you do come here though, just be aware of what you're coming to. If you're expecting some Land of Smiles bullshit where you're going to come and see traditional Thai culture then pull your head out your arsehole. It's the sex tourism capital of the world, and whether you wish to partake or not, you're not going to be able to escape that fact.
+
+<ImageGallery images={cityImages} />
+
+## How to take a baht bus in Pattaya
+
+Baht buses, also known as songthaews, are named as such because back in the day they only cost one baht. They're those pick-up trucks with a bench on either side of the truck's bed for passengers to sit on, a roof, and a platform at the back for extra passengers to stand on.
+
+You find them all over Thailand, but in many places they're only really used by locals because foreigners can't figure-out where they go. In Pattaya they're more common than any other place I've been and are used by everyone. Particularly if you want to travel between Pattaya and Jomtien, you'll find yourself using them a lot. During the daytime you'll be passed by roughly one per minute on this route.
+
+I believe they run twenty-four hours per day. I definitely used them to get back to my room after way too many drinks in the middle of the night on multiple occasions. If you're not used to taking them though they can be a little intimidating, so this is how they work.
+
+From the front it can sometimes be a little hard to differentiate them from regular pick-up trucks. It's also hard to tell if they're full until they're stopped next to you, and the driver will happily load-up with as many passengers as are willing to get on. If you're standing on the road looking like someone who might be about to take a baht bus, the driver will typically slow down anyway (which is a bit annoying if you're actually trying to cross the road). You stick your hand out, palm facing down (not like that), and flap your hand up and down to flag to the driver that you wish to get on.
+
+Once the baht bus has stopped you jump in the back, sitting down if there are seats available or hanging off the back if there aren't. Four people can comfortably stand on the rear platform, but if a baht bus pulls-over and there isn't space, don't feel obligated to get on. You can wave the driver away again.
+
+What will happen occasionally with empty baht buses, is that you'll flag it down, the driver will stop, you'll go to get on, but before you have the driver will speed away again. This happened to me on a couple of occasions, and I was all like... the fuck? What I realised is that some of these baht buses also operate as taxis, and if they have no passengers then they're looking for someone they can charge a higher fare to by taking them to a specific location, and by going to get in without talking to the driver, you indicated that isn't you.
+
+Don't be disheartened, it's almost certainly not because you're so repulsive that they don't want you in their truck. Just wait until the next one comes along and try again.
+
+There are nine different routes plied by the baht buses in Pattaya, but most of these operate in the downtown area where everything is in walking distance anyway. Going to Jomtien is when they're most useful, and on Thappraya Road (the road that connects Pattaya to Jomtien), there is only one route, so hail a baht bus here and you know where you're going.
+
+There are no stops. When you want to get off you ring one of the bells and the driver will pull over to the side of the road. Get out and walk to the passenger-side window.
+
+Every baht bus I took in Pattaya cost 10 baht. There may be some routes that charge more, but typically you just hand 10 baht through the window. If there's someone in the passenger seat, give it to them, if not give it to the driver.
+
+They have small amounts of change, so it's fine to pay a 10 baht fare with a 20 baht note, but I doubt they'd react so kindly if you tried to pay with bigger bills. If you're short on change, break a note by buying something cheap from the nearest 7-11 before getting on.
+
+That's it really. Because of their price and regularity they're a really good way of getting around Pattaya, particularly when going to Jomtien. If you want to take a baht bus on a road there are multiple routes, you could ask the driver before getting on, but I found that for only 10 baht I'd just get on and if at any point it started going somewhere I didn't want to go, I'd get off, pay, and take another baht bus that was going the right way.
+
+<ExternalLink url='https://www.google.com/maps/d/edit?mid=1Y1gn4PQ5TXlmfEREKp95LW2EZpsX73w&usp=sharing'>Click here for a map of Pattaya's baht bus routes</ExternalLink>. I stole that from someone else, so if the routes are wrong, blame them.
+
+<ImageGallery images={bahtBusImages} />
+
+## Where I stayed
+
+### G Residence
+
+<MapLink name='378/148 Thappraya Road, Soi 15' url='https://maps.app.goo.gl/j2GiFYBs2e2TZ4iF7' />
+
+<AccommodationTable details={gResidenceDetails} />
+
+My attitude to staying in towns that have party areas, is that I never stay in the party areas. If I want to party then nothing's stopping me from going there, but when I don't then I want to be away from them.
+
+It was partly just luck, as I mainly stayed here because Yes Vegan is nearby, but the location of G Residence is perfect. It's right in the middle between central Pattaya and Jomtien. You can walk to Pattaya Walking Street in about 25 minutes, and you can walk to central Jomtien in about 25 minutes. The hundreds of baht buses that ply this route cut these journey times to 5 to 10 minutes, so everything is really, really accessible, but you're away from all the craziness for when you want to avoid it.
+
+It's quiet enough that I could go running right from the entrance to the apartment complex, and <ExternalLink url='https://maps.app.goo.gl/6yxDLnLh7mnDroA76'>Food Mart</ExternalLink> supermarket is about a fifteen minute walk away. It's about a five minute walk from G Residence to the nearest 7-11, and a ten minute walk to Yes Vegan, one of the few vegan restaurants in Pattaya. The street Yes Vegan's on also has a very good fruit stand that I'd often buy my smoothie fruit from.
+
+The apartment itself is pretty great. I stayed in what's listed on booking.com as an 'Apartment with balcony'. At 47m² it's the mid-sized apartment that they offer (a studio is 35m², or a two-bedroom apartment is 80m²) and it felt very spacious.
+
+I wouldn't quite call it a one-bedroom as there's not a proper wall between the living area and the bedroom, just a partition. That's fine for me being here on my own, but if you're coming with someone else and want to have a space to get away from them, this might not be sufficient.
+
+There was plenty of space to do my morning exercise in front of the TV, it has a dining table with a couple of chairs that are good for eating at and to use as a workstation, the sofa is great for lounging around on and the king bed is comfortable and has plenty of space around it. There's a balcony with a couple of chairs on it that, if you look to the left, gives you a view of the pool (the view straight ahead is just the side of another building) and the room is cleaned everyday.
+
+There are two flaws to this place. The first is that the wifi is dog-shit. Once you're connected it's fine, but it has a login page where the second you put your device down, you have to login again. Put your phone down for two minutes to use the toilet? Welcome to the login page.
+
+It got to the point that I just wouldn't bother connecting, and would instead use my data, which thankfully had good reception in the room.
+
+The other flaw is that the kitchen is under-equipped. Crucially it has a kettle, but other than that the cooking equipment leaves a lot to be desired, offering just a frying pan that can be used on the hob.
+
+I didn't make use of any of the facilities outside of the apartment. Most obvious is the pool, where I continually told myself I'd go for a swim one day or at least sit next to it and read my book. I never did, but it looked nice from a distance. There's apparently a fitness centre here somewhere as well, although I never sought it out. I guess I was just content enough in my room I didn't really feel the need to explore too much.
+
+Apart from the Internet it's a great place to stay, and I was pretty bummed that it didn't have availability when I made plans to come back to Pattaya again.
+
+<ImageGallery images={gResidenceImages} />
+
+### Olympus City Garden
+
+<MapLink name='Soi Kho Pai 4' url='https://maps.app.goo.gl/V1KnQZp71PSg1V5h7' />
+
+<AccommodationTable details={olympusCityGardenDetails} />
+
+In the absence of availability at G Residence, I stayed at Olympus City Garden on my second visit to Pattaya. It's an apartment block, so don't make the mistake of thinking that you're staying at a hotel. You're not.
+
+That can be a good thing or a bad thing, but know that through my stay, no one came in to make up the room, no one changed the bedding or the towels, the one toilet roll I was provided with wasn't replenished, the sink didn't include washing up liquid or even a sponge, there were no spare bin liners and no one came in to change the bins. You're responsible for all this stuff.
+
+The positive is that if you don't like people knowing your business, Olympus City Garden is very private.
+
+There are hundreds of apartments in this complex, and the security, while present, is very much out of the way. You don't have to walk past a reception or a security guard each time you go out and come back like in many places. Here, no one knows if you've come or gone, or if you've brought someone with you or if you're staying alone. No one knows and no one cares.
+
+I like that. Perhaps highlighting my own insecurities, I hate how in hotels the receptionists know exactly how often I go outside, because on some days, especially on days I'm working, I might only be out for an hour, but then get conscious that they think I'm spending too much time in the room. Here you are free, so take the lack of hotel services as a positive or a negative, depending on what you like.
+
+I dealt with someone who works here precisely once during my stay. A guy called Jack met me as I arrived, showed me to the room, and I didn't hear from him or see him again until I checked-out and messaged him to say the room was empty.
+
+As for the room, it's listed as 26m² which makes it almost half the size of the room I had at G Residence, despite being more expensive. The use of space for such a small room is both impressive and depressing, cramming a bedroom with double bed, living room and kitchen including a sofa with coffee table and a table and chairs, and a bathroom, all within those 26m. As impressive as it is to get all that in, it does feel cramped.
+
+I had to move the coffee table next to the front door anytime I wanted to exercise, I had to move one of the chairs just so the other could tuck under the table properly and wasn't in the way, and I stored my suitcase upright just so it wasn't taking up too much of the floor.
+
+The kitchen has the two essentials of a kettle and a (large) fridge, as well as a microwave. Beyond this it's very lacking. Lots of crockery, cutlery, and even a knife and chopping board, but the only pan was a large wok. Oddly enough there was a saucepan lid, there just wasn't the saucepan to go with it.
+
+There are two TVs in the apartment on either side of the sliding bedroom door. Unfortunately they're the only TVs I've encountered since I bought it in 2015, that aren't compatible with my Apple TV. They have HDMI slots which is what I normally use to connect my Apple TV, and the picture worked fine, but the sound didn't. For some reason I couldn't get the sound to work at all, which made these TV sets obsolete to me and I used my phone to workout instead.
+
+The biggest frustration with staying here though, was that the Internet was slooooow. Unlike at G Residence, there was no login page thankfully. Once you were connected you stayed connected, it's just that the connection was not only unstable, it was too slow to do video calls. To make matters worse, my mobile data (AIS) had a very weak connection in the room.
+
+It just about worked and when I had to make video calls I'd tether to my mobile and put it next to the window where it got the best signal. Even then they were some patchy calls. As a digital nomad, it's pretty damn annoying to be staying somewhere that you can't get a good connection in your room.
+
+The other main difference from G Residence, is that Olympus City Garden is pretty centrally located in Pattaya. You're not quite in the midst of all the bars, but you're not too far away from them either. Take that as a positive or a negative depending on what you like.
+
+There are definitely worse places to be, but no doubt in my mind I preferred staying at G Residence.
+
+<ImageGallery images={olympusCityGardenImages} />
+
+## Where to get vegan food in Huahin
+
+Given the number of tourists, Pattaya has a pretty meagre vegan scene. Dozens of Indian and Middle Eastern restaurants claim to be vegetarian, but I found these to be pretty vegan-unfriendly, with vegan items not being marked on the menu, and items you'd typically expect to be vegan, like a falafel wrap, coming with mayonnaise inside.
+
+The four most vegan-friendly places I found are the following.
+
+### Yes Vegan
+
+By far my most-visited restaurant during my first stay in Pattaya was Yes Vegan. I went there so much that it got embarrassing walking-in. I got the room I did partly because Yes Vegan was nearby, so I was very glad that it turned-out to be good.
+
+It's a fully-vegan restaurant, if you couldn't tell from the name, and the menu's pretty big, with a mix of western and Asian items. It's on a large premesis down a peculiarly Russian soi, so there's little worry that there won't be any seating. The service was always fast on the many times I ate here, and I thought the quality was consistently high. Prices vary, but no item on the menu costs more than 185 baht, and you'll typically pay closer to 125 baht.
+
+If you're staying nearby, this will be your go-to for vegan food in Pattaya, and if you're not it's worth travelling to, particularly given how little else is in Pattaya.
+
+<ImageGallery images={yesVeganImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/yes-vegan-pattaya-107355'>Visit Yes Vegan on Happy Cow</ExternalLink>
+
+### Apple Vegan Cafe
+
+Apple didn't exist on my first stay, and was only a month old come my second. Being walking distance from Olympus City Garden was part of the reason I decided to stay there.
+
+It's a fully vegan restaurant run by this very sweet lady. It's open Monday to Saturday, and on my first visit when I asked her what time they closed, she responded that the restaurant closes at 10pm, but I could order take-away 24 hours per day. She was the only chef so I quizzed a bit further, and it turns-out that she sleeps in the restaurant, and any time an order comes in, no matter what time of night, she has to get up and head to the kitchen.
+
+I honestly couldn't think of anything worse, but that really is some dedication to making your business work.
+
+The menu is a little limited, but does have some classics that you wouldn't really expect to find on a vegan menu in Thailand. Fish fingers with chips are a meal I can't have had for thirty years, and vegan tuna sandwiches were one of my go-to meals back when I had a kitchen.
+
+On all of my visits to this restaurant, and even when just walking past, I never saw another customer in here so I hope that business picks-up. It's a really nice little place and the owner is such a good person, I feel she deserves to succeed. I hope if I ever come back to Pattaya it's turned-into a thriving business.
+
+<ImageGallery images={appleVeganCafeImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/apple-vegan-cafe-and-restaurant-pattaya-386893'>Visit Apple Vegan Cafe on Happy Cow</ExternalLink>
+
+### Five Star J Restaurant
+
+Five Star J is a vegatarian, rather than a vegan restaurant, although the majority of items on the huge menu are vegan and are labelled as such.
+
+The menu is honestly a book, it's massive. Perhaps it's dominated slightly by Asian offerings, but there's still plenty of western stuff on there. Ironically, the only thing I ate here that I didn't really like was the one Asian dish I had, the tempeh panang curry. Everything else was really high quality, including the two pasta dishes I had, which is rare.
+
+Service could be a little sporadic, and on my first time coming here it was 35 minutes between ordering and having any food in front of me despite there being only one other customer. Other visits were fine, so maybe they were just having a bad day. It's still definitely worth a visit while in Pattaya.
+
+<ImageGallery images={fiveStarJRestaurantImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/five-star-j-restaurant-pattaya-383'>Visit Five Star J Restaurant on Happy Cow</ExternalLink>
+
+### Jomtien Night Market
+
+Jomtien night market is a large market including many food stands and lots of seating to eat at. While there are limited other stands that offer vegan things (I think there's a mango sticky rice stand), I'm including it here primarily because there's a fully vegan Mediterranean food stand.
+
+To eat immediately they have small and large falafel sandwiches (60/100 baht), and a falafel set that cost 120 baht and includes falafel, hummus, salad, fries and a pita bread. They also have take-away salads, and the best value hummus I've seen anywhere in Asia.
+
+60 baht for a large tub of hummus. Typically the only hummus you find here is in the posher supermarkets and it's imported and very overpriced (at least 150 baht for a small tub). If I had the cooking facilities, I no doubt would have bought a tonne of it here to make my world famous hummus pasta.
+
+Sadly I didn't, but I still ate here multiple times. It's a great place to come to get some food inside you before a night out in Jomtien.
+
+<ImageGallery images={jomtienNightMarketImages} />
+
+<ExternalLink url='https://www.happycow.net/reviews/falafel-ruty-chonburi-219782'>Visit the Mediterranean food stand on Happy Cow</ExternalLink>
+
+## Where to run in Pattaya
+
+My experience of running in Pattaya is that the centre of town is too busy with pedetrians and vehicles to run comfortably, but once you get out of the centre it... could be worse.
+
+On my first stay here, while staying between Pattaya and Jomtien, I'd leave my building and run to <ExternalLink url='https://maps.app.goo.gl/2A5fuCyVCx3vdPkU7'>Yinyom Beach</ExternalLink>. From there you can either run along the beach, along the pavement, or along the road south-east until you're in Jomtien.
+
+While this route does have a lot of beach-going tourists on it, it's not quite so busy that it's uncomfortable to run along, so long as you go sufficiently slowly.
+
+Once in Jomtien you can continue along the beachfront as far as you want before cutting down any of the sois to get to Jomtien Second Road. While busy with traffic, Jomtien Second Road and Thappraya Road that it turns into, have pavements all the way along and not too many pedestrians so is relatively comfortable to follow back. It goes all the way back to the centre of Pattaya.
+
+Knowing this route, when I came back to Pattaya for a second time I did the same thing, except started running in the centre of Pattaya as soon as the pedestrians and traffic thinned enough that I could.
+
+It's not an especially amazing route, you have to cross some busy roads, and there are a lot of gormless pedestrians in your path; certainly not suitable for doing sprint training on. If you just want somewhere you can get outside and build-up a bit of a sweat though, then I've run on worse. Once you're out of the city centre, most of the roads here are runnable.
+
+<ImageGallery images={runningImages} />
+
+## Being sociable in Pattaya
+
+There's nothing I found in Pattaya in the way of events designed to meet new people. That's the bad news, but the good news is that you don't need them. Especially if you're a man and you're alone, you are not going to have a hard time meeting people. So long as you're the one buying, this is an entire city of girls (or guys) who're willing to drink with you. Just try not to fall in love and join the flying club.
+
+While Pattaya does have distinctively-named areas, such as walking street, the truth is that all these areas blend-into one. There's bars all the way between them, so where one area ends and another begins is very subjective.
+
+Personally I don't like the walking street area. It's very money-grabby and feels very scammy. This is the best known bar area so is the first place that most tourists head to, and as such has a lot of gullible fools ready to be parted from their fortune. Honestly though, there are good bars and scammy bars all over the city, so I'd suggest you just have a wander until you find what you're looking for and somewhere that you feel comfortable.
+
+Don't discount Jomtien either. It's the one place that does have a bit of distance, which means it's a hair more relaxed that the rest of Pattaya and you don't get bothered so much.
