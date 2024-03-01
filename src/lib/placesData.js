@@ -286,22 +286,22 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          "Nice rooms are available for less than 900 baht per night, beers in a bar are typically around 80 baht although I found them as cheap as 50 baht, for a meal/drink in a western restaurant you'll pay around 250 to 300 baht.",
+          "Nice rooms are available for less than 900 baht per night, beers in a bar are typically around 80 baht although I found them as cheap as 50 baht, for a meal and drink in a western restaurant you'll pay around 250 to 300 baht.",
       },
       [internet]: {
-        [verdict]: false,
-        [description]:
-          'The Internet in my room was utter garbage. The saving grace was I had good 5G coverage everywhere in Huahin so primarily tethered my laptop to my phone.',
-      },
-      [running]: {
         [verdict]: true,
         [description]:
-          "The beach is nice to run along, and you can apparently run up some of the nearby mountains (I haven't done this yet).",
+          'The Internet in my first room was garbage, but in my second it was fast and reliable so I blame the room rather than the city.',
+      },
+      [running]: {
+        [verdict]: false,
+        [description]:
+          "The roads aren't ideal with traffic and having to cross a lot of intersections, and on the beach the sand gave me blisters running bare foot, but in places the sea covers the entire beach so wearing shoes isn't suitable either.",
       },
       [veganFood]: {
         [verdict]: false,
         [description]:
-          "There's one really good vegan restaurant, but beyond that Huahin is lacking in vegan options. You won't go hungry, but you might get bored of going to the same places again and again.",
+          "It's not the worst city to be vegan, but there isn't an abundance of choice either. I found myself going to the same places repeatedly.",
       },
       [safe]: {
         [verdict]: true,
@@ -311,7 +311,7 @@ export const placesData = [
       [social]: {
         [verdict]: false,
         [description]:
-          "Huahin is a very easy place to go and sit in a bar by yourself and meet people, but in terms of organised events to meet new people, I didn't find anything here.",
+          "Huahin is a very easy place to go and sit in a bar by yourself and meet people, but in terms of organised events I didn't find anything here.",
       },
       [walking]: {
         [verdict]: true,
@@ -361,7 +361,7 @@ export const placesData = [
           "Local people don't walk anywhere so the pavements are void of other pedestrians, but it's still a pleasant city of which to wander the streets.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/khon-kaen-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].loei,
@@ -486,7 +486,7 @@ export const placesData = [
           'Apart from the crowded bar areas in the centre of town, wide and quiet pavements make Pattaya a pleasant place to walk around.',
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/pattaya-for-digital-nomads',
   },
   {
     [place]: places[countries.cambodia].phnomPenh,

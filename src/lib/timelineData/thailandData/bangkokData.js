@@ -160,7 +160,7 @@ export const bangkokData = [
   {
     [dates]: {
       [arrival]: '2024-03-02',
-      [departure]: '2024-03-24',
+      [departure]: '2024-03-21',
     },
   },
 ]

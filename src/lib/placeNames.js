@@ -17,6 +17,7 @@ export const countries = {
   peru: 'Peru',
   romania: 'Romania',
   singapore: 'Singapore',
+  taiwan: 'Taiwan',
   thailand: 'Thailand',
   unitedKingdom: 'United Kingdom',
   usa: 'USA',
@@ -188,6 +189,9 @@ export const places = {
   },
   [countries.singapore]: {
     singapore: 'Singapore',
+  },
+  [countries.taiwan]: {
+    taipei: 'Taipei',
   },
   [countries.thailand]: {
     bangkok: 'Bangkok',
