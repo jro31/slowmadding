@@ -132,7 +132,7 @@ import socialBkkMeetAndMingleImage from '#/bangkok-for-digital-nomads/social/bkk
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-01-19T21:00:00+03:00', // TODO: Update this
+  date: '2024-03-21T21:00:00+03:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
   description: "Bangkok is the travel hub of South-East Asia, but people often use it as nothing more than a stepping stone to get to Thailand's beaches or to Chiang Mai. How does it fare for the digital nomad who chooses to stop here?",
   keywords: ['Thailand'],
@@ -253,6 +253,26 @@ export const roomQuestFourthStayDetails = {
     sections: {
       Room: 14487.38,
       '7% VAT': 1014.12,
+    },
+  },
+}
+
+export const roomQuestFifthStayDetails = {
+  dates: {
+    checkIn: '2024-03-02',
+    checkOut: '2024-03-21',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Superior King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 16465.33,
+      '7% VAT': 1152.57,
     },
   },
 }
@@ -955,6 +975,8 @@ I'd definitely be willing to stay here again in a pinch. It was perfectly comfor
 <AccommodationTable details={roomQuestThirdStayDetails} />
 
 <AccommodationTable details={roomQuestFourthStayDetails} />
+
+<AccommodationTable details={roomQuestFifthStayDetails} />
 
 You might think that because I stayed here four times, I really loved this place. The truth is that it's no better than any other hotel on this list, and I'm not sure why I kept coming back. It's cheap, that helps, but was the room nicer than the other hotels listed here? Not really. Did it have more facilities? Nope. Was it at least cleaner? No, it was filthy. Was the location better?
 
