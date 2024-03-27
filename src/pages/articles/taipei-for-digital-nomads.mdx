@@ -1,0 +1,86 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-04-18T16:25:00+07:00', // TODO: Update this
+  title: 'Taipei for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Taiwan'],
+}
+
+export const zhongzhengApartmentDetails = {
+  dates: {
+    checkIn: '2024-03-21',
+    checkOut: '2024-04-18',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/43323755',
+  },
+  roomType: 'Entire condo in Zhongzheng District',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 1387.68,
+      '25% monthly price discount': -347.04,
+      'Cleaning fee': 37.44,
+      'Service fee': 137.38,
+      'Taxes': 53.90,
+    },
+  },
+}
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## How to pay for things in Taipei
+
+TODO
+
+## How to get around Taipei
+
+TODO
+
+## How to get a SIM card in Taipei
+
+TODO
+
+## What language is spoken in Taipei?
+
+TODO
+
+## How to throw away your rubbish in Taipei
+
+TODO
+
+## Is the tap water drinkable in Taipei?
+
+TODO
+
+## Where I stayed
+
+### 5 mins to MRT Zhongxiao Xinsheng, studio for 2
+
+<MapLink name='No.5, Section 1, Bade Rd' url='https://maps.app.goo.gl/XJjTHcqTkYo5eg2y8' />
+
+<AccommodationTable details={zhongzhengApartmentDetails} />
+
+TODO
+
+## Where to get vegan food in Taipei
+
+TODO
+
+## Where to run in Taipei
+
+TODO
+
+## Being sociable in Taipei
+
+TODO
