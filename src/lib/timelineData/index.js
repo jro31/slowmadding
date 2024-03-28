@@ -21,6 +21,7 @@ import { paraguayData } from './paraguayData'
 import { peruData } from './peruData'
 import { romaniaData } from './romaniaData'
 import { singaporeData } from './singaporeData'
+import { taiwanData } from './taiwanData'
 import { thailandData } from './thailandData'
 import { unitedKingdomData } from './unitedKingdomData'
 import { usaData } from './usaData'
@@ -45,6 +46,7 @@ const timelineData = {
   [countries.peru]: peruData,
   [countries.romania]: romaniaData,
   [countries.singapore]: singaporeData,
+  [countries.taiwan]: taiwanData,
   [countries.thailand]: thailandData,
   [countries.unitedKingdom]: unitedKingdomData,
   [countries.usa]: usaData,
