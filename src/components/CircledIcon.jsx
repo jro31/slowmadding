@@ -1,11 +1,9 @@
 import Image from 'next/image'
 
-import logoHappyCow from '@/images/logos/happy-cow.svg'
 import logoStrava from '@/images/logos/strava.svg'
 import logoInstagram from '@/images/logos/instagram.svg'
 
 export const platforms = {
-  happyCow: 'Happy Cow',
   strava: 'Strava',
   instagram: 'Instagram',
 }
@@ -17,12 +15,6 @@ const url = 'URL'
 const CircledIcon = ({ as: Component = 'div', platform, ...props }) => {
   const platformDetails = () => {
     switch (platform) {
-      case platforms.happyCow:
-        return {
-          [logoSrc]: logoHappyCow,
-          [logoAlt]: 'Happy Cow logo',
-          [url]: 'https://www.happycow.net/members/profile/nomeatnomad',
-        }
       case platforms.strava:
         return {
           [logoSrc]: logoStrava,
