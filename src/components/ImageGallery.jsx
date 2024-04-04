@@ -2,6 +2,7 @@
 // TODO: Add transitions to both image swipes and 'step' dots
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Remove chevrons from images (or replace them with something more sightly)
+// FIXME: Using React Transition Group means that only the first image in each gallery is available in the page source - fix so that all images can be seen by search engines (perhaps fetch them in getStaticProps?)
 
 import React, { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
@@ -10,6 +11,7 @@ import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 import useScreenWidth from '@/hooks/use-screen-width'
 import LinkWrapper from './LinkWrapper'
 
+let previousImageIndex
 let nextImageIndex
 
 const ImageGallery = ({ images }) => {
@@ -29,6 +31,7 @@ const ImageGallery = ({ images }) => {
   }
 
   const handleImageChange = (newImageIndex) => {
+    previousImageIndex = imageIndex
     nextImageIndex = newImageIndex
     setImageIndex(null)
   }
@@ -73,17 +76,13 @@ const ImageGallery = ({ images }) => {
             <div
               onClick={() => scrollImages('left')}
               className="flex basis-1/2 cursor-pointer items-center"
-            >
-              <ChevronLeftIcon className="h-24 w-24" />
-            </div>
+            />
           )}
           {!lastImageIsShown() && (
             <div
               onClick={() => scrollImages('right')}
               className="flex basis-1/2 cursor-pointer items-center justify-end"
-            >
-              <ChevronRightIcon className="h-24 w-24" />
-            </div>
+            />
           )}
         </div>
 
@@ -100,6 +99,7 @@ const ImageGallery = ({ images }) => {
                 exit: 'opacity-100',
                 exitActive: 'opacity-0 transition-opacity',
               }}
+              mountOnEnter
               unmountOnExit
               onExited={() => setImageIndex(nextImageIndex)}
             >
@@ -128,7 +128,7 @@ const ImageGallery = ({ images }) => {
                 className="flex shrink grow-0 basis-5 justify-center"
                 key={image.src.src}
               >
-                {imageIndex === index ? (
+                {imageIndex === index || nextImageIndex === index ? (
                   <div
                     className="relative flex items-center justify-center"
                     aria-current="step"
@@ -159,11 +159,19 @@ const ImageGallery = ({ images }) => {
         </nav>
       )}
 
-      {images[imageIndex] && (
-        <LinkWrapper url={images[imageIndex].url}>
-          <p className="text-center">{images[imageIndex].caption}</p>
-        </LinkWrapper>
-      )}
+      <LinkWrapper
+        url={
+          images[imageIndex]
+            ? images[imageIndex].url
+            : images[previousImageIndex].url
+        }
+      >
+        <p className="text-center">
+          {images[imageIndex]
+            ? images[imageIndex].caption
+            : images[previousImageIndex].caption}
+        </p>
+      </LinkWrapper>
     </>
   )
 }
