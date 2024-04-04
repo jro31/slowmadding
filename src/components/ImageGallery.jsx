@@ -3,13 +3,17 @@
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Remove chevrons from images (or replace them with something more sightly)
 
-import { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 import useScreenWidth from '@/hooks/use-screen-width'
 import LinkWrapper from './LinkWrapper'
 
+let nextImageIndex
+
 const ImageGallery = ({ images }) => {
+  const imageRefs = useRef(images.map(() => React.createRef()))
   const [imageIndex, setImageIndex] = useState(0)
   const [galleryHeight, setGalleryHeight] = useState()
   const screenWidth = useScreenWidth()
@@ -21,9 +25,12 @@ const ImageGallery = ({ images }) => {
     if (direction === 'left' && firstImageIsShown()) return
     if (direction === 'right' && lastImageIsShown()) return
 
-    setImageIndex(
-      (prevImageIndex) => prevImageIndex + (direction === 'right' ? 1 : -1)
-    )
+    handleImageChange(direction === 'right' ? imageIndex + 1 : imageIndex - 1)
+  }
+
+  const handleImageChange = (newImageIndex) => {
+    nextImageIndex = newImageIndex
+    setImageIndex(null)
   }
 
   useEffect(() => {
@@ -79,16 +86,30 @@ const ImageGallery = ({ images }) => {
             </div>
           )}
         </div>
+
         <div className="flex h-full items-center justify-center">
           {images.map((image, index) => (
-            <img
+            <CSSTransition
+              in={index === imageIndex}
               key={image.src.src}
-              src={image.src.src}
-              alt={image.alt}
-              className={`h-full w-auto${
-                index === imageIndex ? '' : ' hidden'
-              }`}
-            />
+              nodeRef={imageRefs.current[index]}
+              timeout={150}
+              classNames={{
+                enter: 'opacity-0',
+                enterActive: 'opacity-100 transition-opacity',
+                exit: 'opacity-100',
+                exitActive: 'opacity-0 transition-opacity',
+              }}
+              unmountOnExit
+              onExited={() => setImageIndex(nextImageIndex)}
+            >
+              <img
+                ref={imageRefs.current[index]}
+                src={image.src.src}
+                alt={image.alt}
+                className="h-full w-auto"
+              />
+            </CSSTransition>
           ))}
         </div>
       </div>
@@ -126,7 +147,7 @@ const ImageGallery = ({ images }) => {
                   </div>
                 ) : (
                   <div
-                    onClick={() => setImageIndex(index)}
+                    onClick={() => handleImageChange(index)}
                     className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400"
                   >
                     <span className="sr-only">Image {index + 1} step</span>
@@ -138,9 +159,11 @@ const ImageGallery = ({ images }) => {
         </nav>
       )}
 
-      <LinkWrapper url={images[imageIndex].url}>
-        <p className="text-center">{images[imageIndex].caption}</p>
-      </LinkWrapper>
+      {images[imageIndex] && (
+        <LinkWrapper url={images[imageIndex].url}>
+          <p className="text-center">{images[imageIndex].caption}</p>
+        </LinkWrapper>
+      )}
     </>
   )
 }
