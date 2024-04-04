@@ -1,6 +1,5 @@
 // TODO: Add swipe to change images on mobile
 // TODO: Add transitions to both image swipes and 'step' dots
-// TODO: Add links to step dots to click to specific images
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Remove chevrons from images (or replace them with something more sightly)
 
@@ -18,7 +17,7 @@ const ImageGallery = ({ images }) => {
   const firstImageIsShown = () => imageIndex <= 0
   const lastImageIsShown = () => imageIndex >= images.length - 1
 
-  const updateImageIndex = (direction) => {
+  const scrollImages = (direction) => {
     if (direction === 'left' && firstImageIsShown()) return
     if (direction === 'right' && lastImageIsShown()) return
 
@@ -65,7 +64,7 @@ const ImageGallery = ({ images }) => {
         >
           {!firstImageIsShown() && (
             <div
-              onClick={() => updateImageIndex('left')}
+              onClick={() => scrollImages('left')}
               className="flex basis-1/2 cursor-pointer items-center"
             >
               <ChevronLeftIcon className="h-24 w-24" />
@@ -73,7 +72,7 @@ const ImageGallery = ({ images }) => {
           )}
           {!lastImageIsShown() && (
             <div
-              onClick={() => updateImageIndex('right')}
+              onClick={() => scrollImages('right')}
               className="flex basis-1/2 cursor-pointer items-center justify-end"
             >
               <ChevronRightIcon className="h-24 w-24" />
@@ -126,7 +125,10 @@ const ImageGallery = ({ images }) => {
                     {/* <span className="sr-only">{step.name}</span> */}
                   </div>
                 ) : (
-                  <div className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400">
+                  <div
+                    onClick={() => setImageIndex(index)}
+                    className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400"
+                  >
                     {/* <span className="sr-only">{step.name}</span> */}
                   </div>
                 )}
