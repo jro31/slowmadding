@@ -53,7 +53,7 @@ const ImageGallery = ({ images }) => {
   return (
     <>
       <div
-        className={`relative h-[${galleryHeight}px]${
+        className={`relative select-none h-[${galleryHeight}px]${
           images.length > 1 ? ' mb-0' : ''
         }`}
       >
@@ -116,20 +116,20 @@ const ImageGallery = ({ images }) => {
                       className="absolute flex h-4 w-4 p-px"
                       aria-hidden="true"
                     >
-                      <span className="h-full w-full rounded-full bg-zinc-600 dark:bg-zinc-400" />
+                      <span className="h-full w-full rounded-full bg-zinc-600 opacity-70 dark:bg-zinc-400 dark:opacity-90" />
                     </span>
                     <span
                       className="relative block h-2.5 w-2.5 rounded-full bg-zinc-400 dark:bg-zinc-500"
                       aria-hidden="true"
                     />
-                    {/* <span className="sr-only">{step.name}</span> */}
+                    <span className="sr-only">Image {index + 1} step</span>
                   </div>
                 ) : (
                   <div
                     onClick={() => setImageIndex(index)}
                     className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400"
                   >
-                    {/* <span className="sr-only">{step.name}</span> */}
+                    <span className="sr-only">Image {index + 1} step</span>
                   </div>
                 )}
               </li>
