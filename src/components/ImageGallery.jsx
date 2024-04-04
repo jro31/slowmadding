@@ -2,14 +2,20 @@
 // TODO: Add transitions to both image swipes and 'step' dots
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Remove chevrons from images (or replace them with something more sightly)
+// FIXME: Using React Transition Group means that only the first image in each gallery is available in the page source - fix so that all images can be seen by search engines (perhaps fetch them in getStaticProps?)
 
-import { useEffect, useState } from 'react'
+import React, { useEffect, useRef, useState } from 'react'
+import { CSSTransition } from 'react-transition-group'
 import { ChevronLeftIcon, ChevronRightIcon } from '@heroicons/react/24/solid'
 
 import useScreenWidth from '@/hooks/use-screen-width'
 import LinkWrapper from './LinkWrapper'
 
+let previousImageIndex
+let nextImageIndex
+
 const ImageGallery = ({ images }) => {
+  const imageRefs = useRef(images.map(() => React.createRef()))
   const [imageIndex, setImageIndex] = useState(0)
   const [galleryHeight, setGalleryHeight] = useState()
   const screenWidth = useScreenWidth()
@@ -21,9 +27,13 @@ const ImageGallery = ({ images }) => {
     if (direction === 'left' && firstImageIsShown()) return
     if (direction === 'right' && lastImageIsShown()) return
 
-    setImageIndex(
-      (prevImageIndex) => prevImageIndex + (direction === 'right' ? 1 : -1)
-    )
+    handleImageChange(direction === 'right' ? imageIndex + 1 : imageIndex - 1)
+  }
+
+  const handleImageChange = (newImageIndex) => {
+    previousImageIndex = imageIndex
+    nextImageIndex = newImageIndex
+    setImageIndex(null)
   }
 
   useEffect(() => {
@@ -66,29 +76,40 @@ const ImageGallery = ({ images }) => {
             <div
               onClick={() => scrollImages('left')}
               className="flex basis-1/2 cursor-pointer items-center"
-            >
-              <ChevronLeftIcon className="h-24 w-24" />
-            </div>
+            />
           )}
           {!lastImageIsShown() && (
             <div
               onClick={() => scrollImages('right')}
               className="flex basis-1/2 cursor-pointer items-center justify-end"
-            >
-              <ChevronRightIcon className="h-24 w-24" />
-            </div>
+            />
           )}
         </div>
+
         <div className="flex h-full items-center justify-center">
           {images.map((image, index) => (
-            <img
+            <CSSTransition
+              in={index === imageIndex}
               key={image.src.src}
-              src={image.src.src}
-              alt={image.alt}
-              className={`h-full w-auto${
-                index === imageIndex ? '' : ' hidden'
-              }`}
-            />
+              nodeRef={imageRefs.current[index]}
+              timeout={150}
+              classNames={{
+                enter: 'opacity-0',
+                enterActive: 'opacity-100 transition-opacity',
+                exit: 'opacity-100',
+                exitActive: 'opacity-0 transition-opacity',
+              }}
+              mountOnEnter
+              unmountOnExit
+              onExited={() => setImageIndex(nextImageIndex)}
+            >
+              <img
+                ref={imageRefs.current[index]}
+                src={image.src.src}
+                alt={image.alt}
+                className="h-full w-auto"
+              />
+            </CSSTransition>
           ))}
         </div>
       </div>
@@ -107,7 +128,7 @@ const ImageGallery = ({ images }) => {
                 className="flex shrink grow-0 basis-5 justify-center"
                 key={image.src.src}
               >
-                {imageIndex === index ? (
+                {imageIndex === index || nextImageIndex === index ? (
                   <div
                     className="relative flex items-center justify-center"
                     aria-current="step"
@@ -126,7 +147,7 @@ const ImageGallery = ({ images }) => {
                   </div>
                 ) : (
                   <div
-                    onClick={() => setImageIndex(index)}
+                    onClick={() => handleImageChange(index)}
                     className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400"
                   >
                     <span className="sr-only">Image {index + 1} step</span>
@@ -138,8 +159,18 @@ const ImageGallery = ({ images }) => {
         </nav>
       )}
 
-      <LinkWrapper url={images[imageIndex].url}>
-        <p className="text-center">{images[imageIndex].caption}</p>
+      <LinkWrapper
+        url={
+          images[imageIndex]
+            ? images[imageIndex].url
+            : images[previousImageIndex].url
+        }
+      >
+        <p className="text-center">
+          {images[imageIndex]
+            ? images[imageIndex].caption
+            : images[previousImageIndex].caption}
+        </p>
       </LinkWrapper>
     </>
   )
