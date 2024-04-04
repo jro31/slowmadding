@@ -83,6 +83,41 @@ const ImageGallery = ({ images }) => {
           ))}
         </div>
       </div>
+
+      <nav
+        className="not-prose flex items-center justify-center"
+        aria-label="Progress"
+      >
+        <ol role="list" className="flex list-none items-center space-x-5">
+          {images.map((image, index) => (
+            <li key={image.src.src}>
+              {imageIndex === index ? (
+                <div
+                  className="relative flex items-center justify-center"
+                  aria-current="step"
+                >
+                  <span
+                    className="absolute flex h-4 w-4 p-px"
+                    aria-hidden="true"
+                  >
+                    <span className="h-full w-full rounded-full bg-zinc-600 dark:bg-zinc-400" />
+                  </span>
+                  <span
+                    className="relative block h-2.5 w-2.5 rounded-full bg-zinc-400 dark:bg-zinc-500"
+                    aria-hidden="true"
+                  />
+                  {/* <span className="sr-only">{step.name}</span> */}
+                </div>
+              ) : (
+                <div className="block h-2.5 w-2.5 rounded-full bg-zinc-400 hover:bg-zinc-600 dark:bg-zinc-500 hover:dark:bg-zinc-400">
+                  {/* <span className="sr-only">{step.name}</span> */}
+                </div>
+              )}
+            </li>
+          ))}
+        </ol>
+      </nav>
+
       <LinkWrapper url={images[imageIndex].url}>
         <p className="text-center">{images[imageIndex].caption}</p>
       </LinkWrapper>
