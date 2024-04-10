@@ -6,7 +6,7 @@ export const taiwanData = {
     {
       [dates]: {
         [arrival]: '2024-03-21',
-        [departure]: '2024-04-18',
+        [departure]: '2024-05-30',
       },
     },
   ],
