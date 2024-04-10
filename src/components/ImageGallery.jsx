@@ -4,8 +4,6 @@
 // TODO: Make it more clear that clicking on an image scrolls to the next one
 // Probably add chevrons or arrows back in, but very subtle and only on hover
 // If swiping works on mobile, there will be no need to display them on touch screen devices
-// FIXME: Using React Transition Group means that only the first image in each gallery is available in the page source - fix so that all images can be seen by search engines
-// Might require something hacky, such as stacking all images on top of each other and choosing which to display by controlling the opacity
 
 import React, { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
@@ -14,13 +12,11 @@ import useScreenWidth from '@/hooks/use-screen-width'
 import LinkWrapper from './LinkWrapper'
 
 let previousImageIndex
-// let nextImageIndex
 
 const ImageGallery = ({ images }) => {
   const imageRefs = useRef(images.map(() => React.createRef()))
   const [imageIndex, setImageIndex] = useState(0)
   const [nextImageIndex, setNextImageIndex] = useState(0)
-  // const [previousImageIndex, setPreviousImageIndex] = useState(0)
   const [galleryHeight, setGalleryHeight] = useState()
   const screenWidth = useScreenWidth()
 
@@ -36,14 +32,8 @@ const ImageGallery = ({ images }) => {
 
   const handleImageChange = (newImageIndex) => {
     previousImageIndex = imageIndex
-    // setPreviousImageIndex(imageIndex)
-    // nextImageIndex = newImageIndex
     setNextImageIndex(newImageIndex)
     setImageIndex(null)
-  }
-
-  const imageIsIn = (index) => {
-    // return index === imageIndex || nextImageIndex > previousImageIndex ? index >= nextImageIndex :
   }
 
   useEffect(() => {
@@ -69,10 +59,6 @@ const ImageGallery = ({ images }) => {
 
     calculateGalleryHeight()
   }, [imageIndex, screenWidth, galleryHeight])
-
-  console.log('🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬🤬')
-  console.log(imageIndex)
-  console.log(nextImageIndex)
 
   return (
     <>
@@ -103,16 +89,19 @@ const ImageGallery = ({ images }) => {
         <div className="flex h-full items-center justify-center">
           {images.map((image, index) => (
             <CSSTransition
-              // in={imageIsIn(index)}
               in={index === imageIndex || index >= nextImageIndex}
               key={image.src.src}
               nodeRef={imageRefs.current[index]}
-              timeout={150}
+              timeout={{
+                enter: 200,
+                exit: 300,
+              }}
               classNames={{
-                enter: 'opacity-0',
-                enterActive: 'opacity-100',
-                exit: 'opacity-100',
-                exitActive: 'opacity-0',
+                enter: '-translate-x-full translate-y-[-5%] -rotate-[25deg]',
+                enterActive: 'translate-x-0 translate-y-0 rotate-0',
+                exit: 'translate-x-0 translate-y-0 rotate-0',
+                exitActive:
+                  '-translate-x-full translate-y-[-25%] -rotate-[50deg]',
               }}
               mountOnEnter
               unmountOnExit
@@ -123,7 +112,7 @@ const ImageGallery = ({ images }) => {
                 ref={imageRefs.current[index]}
                 src={image.src.src}
                 alt={image.alt}
-                className={`absolute h-full w-auto transition-opacity ${
+                className={`absolute h-full w-auto transition-all duration-[400ms] ${
                   index === imageIndex ? 'opacity-100' : 'opacity-0'
                 }`}
               />
