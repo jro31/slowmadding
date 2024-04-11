@@ -1,6 +1,3 @@
-// TODO: Handle if there are so many images that the step dots are wider than the article
-// TODO: Scrolling on the last image should take you back to the beginning
-
 import React, { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
 
