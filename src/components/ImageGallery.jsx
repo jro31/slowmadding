@@ -46,11 +46,13 @@ const ImageGallery = ({ images }) => {
 
   useEffect(() => {
     const handleImageTouchStart = (event) => {
+      event.preventDefault()
       if (imageIndexRef.current !== null)
         setImageTouchStartX(event.changedTouches[0].screenX)
     }
 
     const handleWindowTouchEnd = (event) => {
+      event.preventDefault()
       if (imageIndexRef.current !== null) {
         if (
           imageTouchStartXRef.current &&
