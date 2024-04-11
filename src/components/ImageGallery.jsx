@@ -1,4 +1,3 @@
-// TODO: Add swipe to change images on mobile
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Scrolling on the last image should take you back to the beginning
 // TODO: Make it more clear that clicking on an image scrolls to the next one
@@ -14,27 +13,121 @@ import LinkWrapper from './LinkWrapper'
 let previousImageIndex
 
 const ImageGallery = ({ images }) => {
+  const imageOverlayRef = useRef()
   const imageRefs = useRef(images.map(() => React.createRef()))
+
   const [imageIndex, setImageIndex] = useState(0)
+  const imageIndexRef = useRef(imageIndex)
+
   const [nextImageIndex, setNextImageIndex] = useState(0)
   const [galleryHeight, setGalleryHeight] = useState()
+
+  const [imageTouchStartX, setImageTouchStartX] = useState(null)
+  const imageTouchStartXRef = useRef(imageTouchStartX)
+
+  const [imageMouseDown, setImageMouseDown] = useState(false)
+  const imageMouseDownRef = useRef(imageMouseDown)
+
   const screenWidth = useScreenWidth()
 
-  const firstImageIsShown = () => imageIndex <= 0
-  const lastImageIsShown = () => imageIndex >= images.length - 1
+  const firstImageIsShown = () => imageIndexRef.current <= 0
+  const lastImageIsShown = () => imageIndexRef.current >= images.length - 1
 
   const scrollImages = (direction) => {
     if (direction === 'left' && firstImageIsShown()) return
     if (direction === 'right' && lastImageIsShown()) return
 
-    handleImageChange(direction === 'right' ? imageIndex + 1 : imageIndex - 1)
+    handleImageChange(
+      direction === 'right'
+        ? imageIndexRef.current + 1
+        : imageIndexRef.current - 1
+    )
   }
 
   const handleImageChange = (newImageIndex) => {
-    previousImageIndex = imageIndex
+    previousImageIndex = imageIndexRef.current
     setNextImageIndex(newImageIndex)
     setImageIndex(null)
   }
+
+  useEffect(() => {
+    const handleImageTouchStart = (event) => {
+      if (imageIndexRef.current !== null)
+        setImageTouchStartX(event.changedTouches[0].screenX)
+    }
+
+    const handleWindowTouchEnd = (event) => {
+      if (imageIndexRef.current !== null) {
+        if (
+          imageTouchStartXRef.current &&
+          event.changedTouches[0].screenX < imageTouchStartXRef.current
+        ) {
+          scrollImages('right')
+        } else if (
+          imageTouchStartXRef.current &&
+          event.changedTouches[0].screenX > imageTouchStartXRef.current
+        ) {
+          scrollImages('left')
+        }
+      }
+      setImageTouchStartX(null)
+    }
+
+    const handleImageMouseDown = () => {
+      if (imageIndexRef.current !== null) setImageMouseDown(true)
+    }
+
+    const handleWindowMouseUp = (event) => {
+      if (imageIndexRef.current !== null) {
+        if (!imageMouseDownRef.current) return
+
+        const imageOverlay = event.target.closest('#image-overlay')
+        if (imageOverlay) {
+          const rect = imageOverlay.getBoundingClientRect()
+          const midpoint = rect.left + rect.width / 2
+
+          scrollImages(event.clientX < midpoint ? 'left' : 'right')
+        }
+      }
+
+      setImageMouseDown(false)
+    }
+
+    imageOverlayRef.current.addEventListener(
+      'touchstart',
+      handleImageTouchStart
+    )
+    window.addEventListener('touchend', handleWindowTouchEnd)
+
+    imageOverlayRef.current.addEventListener('mousedown', handleImageMouseDown)
+    window.addEventListener('mouseup', handleWindowMouseUp)
+
+    return () => {
+      imageOverlayRef.current.removeEventListener(
+        'touchstart',
+        handleImageTouchStart
+      )
+      window.removeEventListener('touchend', handleWindowTouchEnd)
+
+      imageOverlayRef.current.removeEventListener(
+        'mousedown',
+        handleImageMouseDown
+      )
+      window.removeEventListener('mouseup', handleWindowMouseUp)
+    }
+  }, [])
+
+  useEffect(() => {
+    imageIndexRef.current = imageIndex
+  }, [imageIndex])
+
+  useEffect(() => {
+    imageTouchStartXRef.current = imageTouchStartX
+  }, [imageTouchStartX])
+
+  useEffect(() => {
+    imageMouseDownRef.current = imageMouseDown
+  }, [imageMouseDown])
 
   useEffect(() => {
     const calculateGalleryHeight = () => {
@@ -68,23 +161,12 @@ const ImageGallery = ({ images }) => {
         }`}
       >
         <div
-          className={`absolute z-50 flex h-full w-full ${
+          ref={imageOverlayRef}
+          id="image-overlay"
+          className={`absolute z-10 flex h-full w-full ${
             firstImageIsShown() ? 'justify-end' : 'justify-between'
           }`}
-        >
-          {!firstImageIsShown() && (
-            <div
-              onClick={() => scrollImages('left')}
-              className="flex basis-1/2 cursor-pointer items-center"
-            />
-          )}
-          {!lastImageIsShown() && (
-            <div
-              onClick={() => scrollImages('right')}
-              className="flex basis-1/2 cursor-pointer items-center justify-end"
-            />
-          )}
-        </div>
+        />
 
         <div className="flex h-full items-center justify-center">
           {images.map((image, index) => (
@@ -97,11 +179,11 @@ const ImageGallery = ({ images }) => {
                 exit: 300,
               }}
               classNames={{
-                enter: '-translate-x-full translate-y-[-5%] -rotate-[25deg]',
+                enter: 'translate-x-[-100%] translate-y-[-5%] rotate-[-25deg]',
                 enterActive: 'translate-x-0 translate-y-0 rotate-0',
                 exit: 'translate-x-0 translate-y-0 rotate-0',
                 exitActive:
-                  '-translate-x-full translate-y-[-25%] -rotate-[50deg]',
+                  'translate-x-[-100%] translate-y-[-25%] rotate-[-50deg]',
               }}
               mountOnEnter
               unmountOnExit
