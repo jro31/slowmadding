@@ -3,7 +3,7 @@
     "baseUrl": ".",
     "paths": {
       "@/*": ["src/*"],
-      "#/*": ["src/images/articles/*"]
+      "#/*": ["src/images/articles/*"] // TODO: Delete this line
     }
   }
 }
