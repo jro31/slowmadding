@@ -1,8 +1,5 @@
 // TODO: Handle if there are so many images that the step dots are wider than the article
 // TODO: Scrolling on the last image should take you back to the beginning
-// TODO: Make it more clear that clicking on an image scrolls to the next one
-// Probably add chevrons or arrows back in, but very subtle and only on hover
-// If swiping works on mobile, there will be no need to display them on touch screen devices
 
 import React, { useEffect, useRef, useState } from 'react'
 import { CSSTransition } from 'react-transition-group'
@@ -77,6 +74,29 @@ const ImageGallery = ({ images }) => {
       if (imageIndexRef.current !== null) setImageMouseDown(true)
     }
 
+    const handleImageMouseOver = (event) => {
+      if (imageIndexRef.current === null) return
+
+      const rect = event.target.getBoundingClientRect()
+      const x = event.clientX - rect.left
+      const halfWidth = rect.width / 2
+
+      if (imageIndexRef.current === 0) {
+        x > halfWidth
+          ? imageOverlayRef.current.classList.add('cursor-pointer')
+          : imageOverlayRef.current.classList.remove('cursor-pointer')
+      } else if (imageIndexRef.current === images.length - 1) {
+        x < halfWidth
+          ? imageOverlayRef.current.classList.add('cursor-pointer')
+          : imageOverlayRef.current.classList.remove('cursor-pointer')
+      } else {
+        imageOverlayRef.current.classList.add('cursor-pointer')
+      }
+    }
+
+    const handleImageMouseOut = () =>
+      imageOverlayRef.current.classList.remove('cursor-pointer')
+
     const handleWindowMouseUp = (event) => {
       if (imageIndexRef.current !== null) {
         if (!imageMouseDownRef.current) return
@@ -93,26 +113,25 @@ const ImageGallery = ({ images }) => {
       setImageMouseDown(false)
     }
 
-    imageOverlayRef.current.addEventListener(
-      'touchstart',
-      handleImageTouchStart
-    )
+    const currentImageOverlay = imageOverlayRef.current
+    currentImageOverlay.addEventListener('touchstart', handleImageTouchStart)
     window.addEventListener('touchend', handleWindowTouchEnd)
 
-    imageOverlayRef.current.addEventListener('mousedown', handleImageMouseDown)
+    currentImageOverlay.addEventListener('mousedown', handleImageMouseDown)
+    currentImageOverlay.addEventListener('mousemove', handleImageMouseOver)
+    currentImageOverlay.addEventListener('mouseout', handleImageMouseOut)
     window.addEventListener('mouseup', handleWindowMouseUp)
 
     return () => {
-      imageOverlayRef.current.removeEventListener(
+      currentImageOverlay.removeEventListener(
         'touchstart',
         handleImageTouchStart
       )
       window.removeEventListener('touchend', handleWindowTouchEnd)
 
-      imageOverlayRef.current.removeEventListener(
-        'mousedown',
-        handleImageMouseDown
-      )
+      currentImageOverlay.removeEventListener('mousedown', handleImageMouseDown)
+      currentImageOverlay.removeEventListener('mousemove', handleImageMouseOver)
+      currentImageOverlay.removeEventListener('mouseout', handleImageMouseOut)
       window.removeEventListener('mouseup', handleWindowMouseUp)
     }
   }, [])
@@ -163,9 +182,7 @@ const ImageGallery = ({ images }) => {
         <div
           ref={imageOverlayRef}
           id="image-overlay"
-          className={`absolute z-10 flex h-full w-full ${
-            firstImageIsShown() ? 'justify-end' : 'justify-between'
-          }`}
+          className="absolute z-10 h-full w-full cursor-pointer"
         />
 
         <div className="flex h-full items-center justify-center">
