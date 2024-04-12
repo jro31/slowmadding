@@ -246,7 +246,7 @@ const ImageGallery = ({ images }) => {
           {images.map((image, index) => (
             <CSSTransition
               in={index === imageIndex || index >= nextImageIndex}
-              key={image.src}
+              key={`${image.src}-image`}
               nodeRef={imageRefs.current[index]}
               timeout={{
                 enter: 200,
@@ -289,7 +289,7 @@ const ImageGallery = ({ images }) => {
             {images.map((image, index) => (
               <li
                 className="flex shrink grow-0 basis-5 justify-center"
-                key={image.src.src}
+                key={`${image.src}-step`}
               >
                 {imageIndex === index || nextImageIndex === index ? (
                   <div
