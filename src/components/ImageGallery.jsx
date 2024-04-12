@@ -52,7 +52,6 @@ const ImageGallery = ({ images }) => {
     }
 
     const handleWindowTouchEnd = (event) => {
-      event.preventDefault()
       if (imageIndexRef.current !== null) {
         if (
           imageTouchStartXRef.current &&
