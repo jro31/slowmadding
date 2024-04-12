@@ -225,7 +225,7 @@ const ImageGallery = ({ images }) => {
         <div
           ref={imageOverlayRef}
           id="image-overlay"
-          className="absolute z-10 h-full w-full cursor-pointer"
+          className="absolute z-10 h-full w-full"
         />
 
         <div className="flex h-full items-center justify-center">
