@@ -70,11 +70,13 @@ const ImageGallery = ({ images }) => {
         let YDifference = Math.abs(
           event.changedTouches[0].screenY - imageTouchStartYRef.current
         )
-        if (XDifference - YDifference > 10) {
-          event.preventDefault()
-        } else if (YDifference - XDifference > 10) {
+        let numberOfFingers = event.touches.length
+
+        if (numberOfFingers > 1 || YDifference - XDifference > 10) {
           setImageTouchStartX(null)
           setImageTouchStartY(null)
+        } else if (XDifference - YDifference > 10) {
+          event.preventDefault()
         }
       }
     }
@@ -82,11 +84,7 @@ const ImageGallery = ({ images }) => {
     const handleWindowTouchEnd = (event) => {
       if (images.length <= 1) return
 
-      if (
-        imageIndexRef.current !== null &&
-        imageTouchStartXRef.current
-        // && Math.abs(event.changedTouches[0].screenX - imageTouchStartXRef.current) > 10
-      ) {
+      if (imageIndexRef.current !== null && imageTouchStartXRef.current) {
         if (event.changedTouches[0].screenX < imageTouchStartXRef.current) {
           scrollImages('right')
         } else if (
