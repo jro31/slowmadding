@@ -6,35 +6,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityClockTowerImage from '#/chiang-rai-for-digital-nomads/city/clock-tower.jpeg'
-
-import saikaewBedImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/bed.jpeg'
-import saikaewDeskImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/desk.jpeg'
-import saikaewLakeImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/lake.jpeg'
-import saikaewRoomImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/room.jpeg'
-import saikaewSelfieImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/selfie.jpeg'
-import saikaewToiletImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/toilet.jpeg'
-import saikaewViewImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/view.jpeg'
-
-import kundaBurgerImage from '#/chiang-rai-for-digital-nomads/kunda/jalapeno-burger.jpeg'
-import kundaBunlessComboImage from '#/chiang-rai-for-digital-nomads/kunda/bunless-combo.jpeg'
-import kundaViewImage from '#/chiang-rai-for-digital-nomads/kunda/view.jpeg'
-
-import vegMeUpVampireImage from '#/chiang-rai-for-digital-nomads/veg-me-up/vampire-blood-smoothie-bowl.jpeg'
-import vegMeUpMojitoImage from '#/chiang-rai-for-digital-nomads/veg-me-up/mojito.jpeg'
-import vegMeUpChaochelaImage from '#/chiang-rai-for-digital-nomads/veg-me-up/chaochela-smoothie-bowl.jpeg'
-
-import buffet1Image from '#/chiang-rai-for-digital-nomads/oasis/buffet-1.jpeg'
-import buffet2Image from '#/chiang-rai-for-digital-nomads/oasis/buffet-2.jpeg'
-import oasis2013Image from '#/chiang-rai-for-digital-nomads/oasis/2013.jpg'
-
-import heavenBurgerVeganBreakfastPlateImage from '#/chiang-rai-for-digital-nomads/heaven-burger/vegan-breakfast-plate.jpeg'
-import heavenBurgerFriedCrispyMushroomImage from '#/chiang-rai-for-digital-nomads/heaven-burger/fried-crispy-mushroom.jpeg'
-import heavenBurgerMixedBerrySmoothieImage from '#/chiang-rai-for-digital-nomads/heaven-burger/mixed-berry-smoothie.jpeg'
-import heavenBurgerAvocadoMushroomSandwichImage from '#/chiang-rai-for-digital-nomads/heaven-burger/avocado-mushroom-sandwich.jpeg'
-
-import runningStravaImage from '#/chiang-rai-for-digital-nomads/running/strava.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-01-27T15:18:15+07:00',
@@ -64,9 +35,11 @@ export const saikeawResortDetails = {
   },
 }
 
+export const imagePath = '/images/articles/chiang-rai-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityClockTowerImage,
+    src: `${imagePath}/city/clock-tower.jpeg`,
     alt: 'Chiang Rai clock tower',
     caption: 'The Chiang Rai clock tower marks the centre of the city.'
   }
@@ -74,37 +47,37 @@ export const cityImages = [
 
 export const saikaewResortImages = [
   {
-    src: saikaewRoomImage,
+    src: `${imagePath}/saikaew-resort/room.jpeg`,
     alt: 'Saikaew Resort double room',
     caption: "With nothing but fish able to see in the room, I didn't bother closing the curtains at night, meaning I woke up to this view everyday.",
   },
   {
-    src: saikaewViewImage,
+    src: `${imagePath}/saikaew-resort/view.jpeg`,
     alt: 'Saikaew Resort double room balcony',
     caption: 'The balcony, right outside the room window, is the perfect place to sit with a cup of tea, to read a book, or to meditate while listening to the wildlife in the lake.',
   },
   {
-    src: saikaewLakeImage,
+    src: `${imagePath}/saikaew-resort/lake.jpeg`,
     alt: 'Saikaew Resort lake',
     caption: 'The lake is teeming with fish, birds and other wildlife.',
   },
   {
-    src: saikaewSelfieImage,
+    src: `${imagePath}/saikaew-resort/selfie.jpeg`,
     alt: 'Selfie at Saikaew Resort',
     caption: "A fine example of why I don't take selfies.",
   },
   {
-    src: saikaewBedImage,
+    src: `${imagePath}/saikaew-resort/bed.jpeg`,
     alt: 'Saikaew Resort double bed',
     caption: "Where you'll be sleeping.",
   },
   {
-    src: saikaewDeskImage,
+    src: `${imagePath}/saikaew-resort/desk.jpeg`,
     alt: 'Saikaew Resort double room desk',
     caption: 'A comfortable place to sit and work.',
   },
   {
-    src: saikaewToiletImage,
+    src: `${imagePath}/saikaew-resort/toilet.jpeg`,
     alt: 'Saikaew Resort double room toilet',
     caption: 'You even get a nice, natural toilet.',
   },
@@ -112,17 +85,17 @@ export const saikaewResortImages = [
 
 export const kundaImages = [
   {
-    src: kundaBurgerImage,
+    src: `${imagePath}/kunda/jalapeno-burger.jpeg`,
     alt: 'Kunda jalapeño burger',
     caption: 'The jalapeño burger costs 280 baht.',
   },
   {
-    src: kundaBunlessComboImage,
+    src: `${imagePath}/kunda/bunless-combo.jpeg`,
     alt: 'Kunda bunless combo',
     caption: 'The bunless combo is a naked burger, a (very delicious) side salad and a drink of your choice (I had a chai tea) for 350 baht.',
   },
   {
-    src: kundaViewImage,
+    src: `${imagePath}/kunda/view.jpeg`,
     alt: 'Kunda view',
     caption: "Not only is the food delicious, you have an amazing view while you're eating.",
   },
@@ -130,17 +103,17 @@ export const kundaImages = [
 
 export const vegMeUpImages = [
   {
-    src: vegMeUpVampireImage,
+    src: `${imagePath}/veg-me-up/vampire-blood-smoothie-bowl.jpeg`,
     alt: 'Veg Me Up Vampire Blood smoothie bowl',
     caption: "Vampire Blood smoothie bowl. I'm not sure I approve of the name, but it tasted amazing. The smoothie is made from strawberry, dragon fruit and watermelon.",
   },
   {
-    src: vegMeUpMojitoImage,
+    src: `${imagePath}/veg-me-up/mojito.jpeg`,
     alt: 'Veg Me Up Bloody Mary mojito',
     caption: "Bloody Mary mojito. I'm not sure why so many of the menu item names contain blood. Strange for vegan items. This cold pressed juice is made from watermelon, peppermint and lime.",
   },
   {
-    src: vegMeUpChaochelaImage,
+    src: `${imagePath}/veg-me-up/chaochela-smoothie-bowl.jpeg`,
     alt: 'Veg Me Up Chaochela smoothie bowl',
     caption: 'Chaochela smoothie bowl. This bloodless smoothie is made from mango.',
   },
@@ -148,17 +121,17 @@ export const vegMeUpImages = [
 
 export const oasisImages = [
   {
-    src: buffet1Image,
+    src: `${imagePath}/oasis/buffet-1.jpeg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'From the buffet, this plate cost me 80 baht.',
   },
   {
-    src: buffet2Image,
+    src: `${imagePath}/oasis/buffet-2.jpeg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'This one was 90 baht.',
   },
   {
-    src: oasis2013Image,
+    src: `${imagePath}/oasis/2013.jpg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'A throwback to when I ate here in 2013.',
   },
@@ -166,22 +139,22 @@ export const oasisImages = [
 
 export const heavenBurgerImages = [
   {
-    src: heavenBurgerVeganBreakfastPlateImage,
+    src: `${imagePath}/heaven-burger/vegan-breakfast-plate.jpeg`,
     alt: 'Heaven Burger vegan breakfast plate',
     caption: "This vegan breakfast plate is the most expensive item on the vegan menu at 179 baht. At first glance, it looks slightly peculiar. Who'd have thought a plate containing mango and baked beans would work? But somehow, it really does.",
   },
   {
-    src: heavenBurgerFriedCrispyMushroomImage,
+    src: `${imagePath}/heaven-burger/fried-crispy-mushroom.jpeg`,
     alt: 'Heaven Burger fried crispy mushroom with teriyaki sauce on vegan burger bun',
     caption: 'This one is fried crispy mushroom with teriyaki sauce on a vegan burger bun, and costs 149 baht.',
   },
   {
-    src: heavenBurgerMixedBerrySmoothieImage,
+    src: `${imagePath}/heaven-burger/mixed-berry-smoothie.jpeg`,
     alt: 'Heaven Burger mixed berry smoothie',
     caption: 'A mixed berry smoothie for 60 baht.',
   },
   {
-    src: heavenBurgerAvocadoMushroomSandwichImage,
+    src: `${imagePath}/heaven-burger/avocado-mushroom-sandwich.jpeg`,
     alt: 'Heaven Burger avocado mushroom sandwich',
     caption: 'This avocado mushroom sandwich with fries will cost you 129 baht.',
   },
@@ -189,7 +162,7 @@ export const heavenBurgerImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Strava map',
     caption: 'My first run in Chiang Rai',
     url: 'https://www.strava.com/activities/8137341605',
