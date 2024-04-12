@@ -18,6 +18,8 @@ const ImageGallery = ({ images }) => {
 
   const [imageTouchStartX, setImageTouchStartX] = useState(null)
   const imageTouchStartXRef = useRef(imageTouchStartX)
+  const [imageTouchStartY, setImageTouchStartY] = useState(null)
+  const imageTouchStartYRef = useRef(imageTouchStartY)
 
   const [imageMouseDown, setImageMouseDown] = useState(false)
   const imageMouseDownRef = useRef(imageMouseDown)
@@ -46,34 +48,77 @@ const ImageGallery = ({ images }) => {
 
   useEffect(() => {
     const handleImageTouchStart = (event) => {
-      event.preventDefault()
-      if (imageIndexRef.current !== null)
+      if (images.length <= 1) return
+
+      if (imageIndexRef.current !== null) {
         setImageTouchStartX(event.changedTouches[0].screenX)
+        setImageTouchStartY(event.changedTouches[0].screenY)
+      }
+    }
+
+    const handleImageTouchMove = (event) => {
+      if (images.length <= 1) return
+
+      if (
+        imageIndexRef.current !== null &&
+        imageTouchStartXRef.current &&
+        imageTouchStartYRef.current
+      ) {
+        let XDifference = Math.abs(
+          event.changedTouches[0].screenX - imageTouchStartXRef.current
+        )
+        let YDifference = Math.abs(
+          event.changedTouches[0].screenY - imageTouchStartYRef.current
+        )
+
+        if (YDifference - XDifference > 10) {
+          setImageTouchStartX(null)
+          setImageTouchStartY(null)
+        } else if (XDifference - YDifference > 10) {
+          event.preventDefault()
+        }
+      }
+    }
+
+    const handleWindowTouchMove = (event) => {
+      if (images.length <= 1) return
+
+      let numberOfFingers = event.touches.length
+
+      if (
+        numberOfFingers > 1 &&
+        imageTouchStartXRef.current &&
+        imageTouchStartYRef.current
+      ) {
+        setImageTouchStartX(null)
+        setImageTouchStartY(null)
+      }
     }
 
     const handleWindowTouchEnd = (event) => {
-      event.preventDefault()
-      if (imageIndexRef.current !== null) {
-        if (
-          imageTouchStartXRef.current &&
-          event.changedTouches[0].screenX < imageTouchStartXRef.current
-        ) {
+      if (images.length <= 1) return
+
+      if (imageIndexRef.current !== null && imageTouchStartXRef.current) {
+        if (event.changedTouches[0].screenX < imageTouchStartXRef.current) {
           scrollImages('right')
         } else if (
-          imageTouchStartXRef.current &&
           event.changedTouches[0].screenX > imageTouchStartXRef.current
         ) {
           scrollImages('left')
         }
       }
       setImageTouchStartX(null)
+      setImageTouchStartY(null)
     }
 
     const handleImageMouseDown = () => {
+      if (images.length <= 1) return
+
       if (imageIndexRef.current !== null) setImageMouseDown(true)
     }
 
     const handleImageMouseOver = (event) => {
+      if (images.length <= 1) return
       if (imageIndexRef.current === null) return
 
       const rect = event.target.getBoundingClientRect()
@@ -93,10 +138,15 @@ const ImageGallery = ({ images }) => {
       }
     }
 
-    const handleImageMouseOut = () =>
+    const handleImageMouseOut = () => {
+      if (images.length <= 1) return
+
       imageOverlayRef.current.classList.remove('cursor-pointer')
+    }
 
     const handleWindowMouseUp = (event) => {
+      if (images.length <= 1) return
+
       if (imageIndexRef.current !== null) {
         if (!imageMouseDownRef.current) return
 
@@ -114,6 +164,8 @@ const ImageGallery = ({ images }) => {
 
     const currentImageOverlay = imageOverlayRef.current
     currentImageOverlay.addEventListener('touchstart', handleImageTouchStart)
+    currentImageOverlay.addEventListener('touchmove', handleImageTouchMove)
+    window.addEventListener('touchmove', handleWindowTouchMove)
     window.addEventListener('touchend', handleWindowTouchEnd)
 
     currentImageOverlay.addEventListener('mousedown', handleImageMouseDown)
@@ -126,6 +178,8 @@ const ImageGallery = ({ images }) => {
         'touchstart',
         handleImageTouchStart
       )
+      currentImageOverlay.removeEventListener('touchmove', handleImageTouchMove)
+      window.removeEventListener('touchmove', handleWindowTouchMove)
       window.removeEventListener('touchend', handleWindowTouchEnd)
 
       currentImageOverlay.removeEventListener('mousedown', handleImageMouseDown)
@@ -142,6 +196,10 @@ const ImageGallery = ({ images }) => {
   useEffect(() => {
     imageTouchStartXRef.current = imageTouchStartX
   }, [imageTouchStartX])
+
+  useEffect(() => {
+    imageTouchStartYRef.current = imageTouchStartY
+  }, [imageTouchStartY])
 
   useEffect(() => {
     imageMouseDownRef.current = imageMouseDown
@@ -181,7 +239,7 @@ const ImageGallery = ({ images }) => {
         <div
           ref={imageOverlayRef}
           id="image-overlay"
-          className="absolute z-10 h-full w-full cursor-pointer"
+          className="absolute z-10 h-full w-full"
         />
 
         <div className="flex h-full items-center justify-center">
