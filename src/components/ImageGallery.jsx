@@ -70,14 +70,28 @@ const ImageGallery = ({ images }) => {
         let YDifference = Math.abs(
           event.changedTouches[0].screenY - imageTouchStartYRef.current
         )
-        let numberOfFingers = event.touches.length
 
-        if (numberOfFingers > 1 || YDifference - XDifference > 10) {
+        if (YDifference - XDifference > 10) {
           setImageTouchStartX(null)
           setImageTouchStartY(null)
         } else if (XDifference - YDifference > 10) {
           event.preventDefault()
         }
+      }
+    }
+
+    const handleWindowTouchMove = (event) => {
+      if (images.length <= 1) return
+
+      let numberOfFingers = event.touches.length
+
+      if (
+        numberOfFingers > 1 &&
+        imageTouchStartXRef.current &&
+        imageTouchStartYRef.current
+      ) {
+        setImageTouchStartX(null)
+        setImageTouchStartY(null)
       }
     }
 
@@ -151,6 +165,7 @@ const ImageGallery = ({ images }) => {
     const currentImageOverlay = imageOverlayRef.current
     currentImageOverlay.addEventListener('touchstart', handleImageTouchStart)
     currentImageOverlay.addEventListener('touchmove', handleImageTouchMove)
+    window.addEventListener('touchmove', handleWindowTouchMove)
     window.addEventListener('touchend', handleWindowTouchEnd)
 
     currentImageOverlay.addEventListener('mousedown', handleImageMouseDown)
@@ -164,6 +179,7 @@ const ImageGallery = ({ images }) => {
         handleImageTouchStart
       )
       currentImageOverlay.removeEventListener('touchmove', handleImageTouchMove)
+      window.removeEventListener('touchmove', handleWindowTouchMove)
       window.removeEventListener('touchend', handleWindowTouchEnd)
 
       currentImageOverlay.removeEventListener('mousedown', handleImageMouseDown)
