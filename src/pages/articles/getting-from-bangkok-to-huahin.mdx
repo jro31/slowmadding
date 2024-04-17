@@ -2,11 +2,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import stateRailwayOfThailandSearchBoxImage from '#/getting-from-bangkok-to-huahin/state-railway-of-thailand/search-box.png'
-
-import ekkamaiBusTerminalHuahinKioskImage from '#/getting-from-bangkok-to-huahin/ekkamai-bus-terminal/huahin-kiosk.jpeg'
-import ekkamaiBusTerminalHuahinBusTimesImage from '#/getting-from-bangkok-to-huahin/ekkamai-bus-terminal/huahin-bus-times.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-03-26T13:42:00+07:00',
@@ -15,9 +10,11 @@ export const meta = {
   keywords: ['Thailand, Hua Hin'],
 }
 
+export const imagePath = '/images/articles/getting-from-bangkok-to-huahin'
+
 export const stateRailwayOfThailandImages = [
   {
-    src: stateRailwayOfThailandSearchBoxImage,
+    src: `${imagePath}/state-railway-of-thailand/search-box.png`,
     alt: 'State Railway of Thailand website search box',
     caption: 'The State Railway of Thailand website',
   },
@@ -25,12 +22,12 @@ export const stateRailwayOfThailandImages = [
 
 export const ekkamaiBusTerminalImages = [
   {
-    src: ekkamaiBusTerminalHuahinKioskImage,
+    src: `${imagePath}/ekkamai-bus-terminal/huahin-kiosk.jpeg`,
     alt: 'Ekkamai Bus Terminal Huahin kiosk',
     caption: "The Huahin kiosk at Ekkamai bus terminal. It's on the right as you go in, next to a guy who'll be leaning out of kiosk and shouting \"Pattaya\" at you repeatedly.",
   },
   {
-    src: ekkamaiBusTerminalHuahinBusTimesImage,
+    src: `${imagePath}/ekkamai-bus-terminal/huahin-bus-times.jpeg`,
     alt: 'Ekkamai Bus Terminal Huahin departure times',
     caption: 'Buses to Huahin depart at 05:00, 07:00, 09:00, 11:00, 12:00, 13:00, 14:00, 15:00, 17:00 and 19:00, leave from platform 18 and cost 200 baht.',
   }

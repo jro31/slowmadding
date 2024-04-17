@@ -2,14 +2,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import busTerminal1PhetprasertCounterImage from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-bus-terminals/bus-terminal-1-phetprasert-counter.jpeg'
-import udonThaniBusTerminal2Image from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-bus-terminals/udon-thani-bus-terminal-2.jpeg'
-import udonThaniToLoeiBusTerminal2TimetableImage from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-timetable.jpeg'
-import udonThaniToLoeiBusTerminal2BusImage from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-bus.jpeg'
-
-import ticketImage from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-to-loei-bus-trip/ticket.jpeg'
-import onBoardImage from '#/taking-a-bus-from-udon-thani-to-loei/udon-thani-to-loei-bus-trip/on-board.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-05-07T20:45:00+07:00',
@@ -18,24 +10,26 @@ export const meta = {
   keywords: ['Thailand'],
 }
 
+export const imagePath = '/images/articles/taking-a-bus-from-udon-thani-to-loei'
+
 export const udonThaniBusTerminalsImages = [
   {
-    src: busTerminal1PhetprasertCounterImage,
+    src: `${imagePath}/udon-thani-bus-terminals/bus-terminal-1-phetprasert-counter.jpeg`,
     alt: 'Udon Thani Bus Terminal 1 Phetprasert counter',
     caption: "If you want to take the bus from 'Bus Terminal 1', you want to go to the 'Phetprasert' counter (the red one in the middle). It's on the left as you go into the bus terminal.",
   },
   {
-    src: udonThaniBusTerminal2Image,
+    src: `${imagePath}/udon-thani-bus-terminals/udon-thani-bus-terminal-2.jpeg`,
     alt: 'Udon Thani Bus Terminal 2',
     caption: 'Udon Thani Bus Terminal 2. It could do with a lick of paint.'
   },
   {
-    src: udonThaniToLoeiBusTerminal2TimetableImage,
+    src: `${imagePath}/udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-timetable.jpeg`,
     alt: 'Udon Thani to Loei Bus Terminal 2 timetable',
     caption: "The Udon Thani to Loei timetable at Bus Terminal 2. The text at the top translates to 'Udon - Mueang Loei' ('mueang' means 'town', in order to differentiate from Loei province). The '220' and the numbers to the left of the departure times indicates the bus number, for example...",
   },
   {
-    src: udonThaniToLoeiBusTerminal2BusImage,
+    src: `${imagePath}/udon-thani-bus-terminals/udon-thani-to-loei-bus-terminal-2-bus.jpeg`,
     alt: 'Udon Thani to Loei bus (from Bus Terminal 2)',
     caption: "... I took this photo at 14:19, so according to the timetable (the previous picture), the next bus, at 15:00, is number '23', hence the number '220-23'. The text above it translates to 'Udon Thani - Mueang Loei', and it departs from Gate 4 of 'Bus Terminal 2'. You buy your ticket from the guy sitting at the table next to the pillar with the '4' written on it.",
   }
@@ -43,12 +37,12 @@ export const udonThaniBusTerminalsImages = [
 
 export const udonThaniToLoeiBusTripImages = [
   {
-    src: ticketImage,
+    src: `${imagePath}/udon-thani-to-loei-bus-trip/ticket.jpeg`,
     alt: 'Udon Thani to Loei bus ticket',
     caption: 'The bus ticket from Udon Thani to Loei. The 108 is the price (in baht), and the 10:40 is the departure time.',
   },
   {
-    src: onBoardImage,
+    src: `${imagePath}/udon-thani-to-loei-bus-trip/on-board.jpeg`,
     alt: 'On board the Udon Thani to Loei bus',
     caption: 'On board. The ceiling fans did little to keep the bus cool.',
   },
