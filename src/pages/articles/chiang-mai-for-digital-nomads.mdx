@@ -4,28 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import dewyHouseBedImage from '#/chiang-mai-for-digital-nomads/dewy-house/bed.jpeg'
-import dewyHouseDeskAndKitchenImage from '#/chiang-mai-for-digital-nomads/dewy-house/desk-and-kitchen.jpeg'
-import dewyHouseBathroomImage from '#/chiang-mai-for-digital-nomads/dewy-house/bathroom.jpeg'
-
-import reformKafeBerryLoveSmoothieBowlImage from '#/chiang-mai-for-digital-nomads/reform-kafe/berry-love-smoothie-bowl.jpeg'
-import reformKafeMushroomCheeseBurgerImage from '#/chiang-mai-for-digital-nomads/reform-kafe/mushroom-cheese-burger.jpeg'
-import reformKafePancakesImage from '#/chiang-mai-for-digital-nomads/reform-kafe/pancakes.jpeg'
-import reformKafeBananaSmoothieImage from '#/chiang-mai-for-digital-nomads/reform-kafe/banana-smoothie.jpeg'
-import reformKafeTablesImage from '#/chiang-mai-for-digital-nomads/reform-kafe/tables.jpeg'
-import reformKafeFrenchBreadSandwichImage from '#/chiang-mai-for-digital-nomads/reform-kafe/french-bread-sandwich.jpeg'
-
-import kinphakCafeVeganRedPorkWithRiceImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/vegan-red-pork-with-rice.jpeg'
-import kinphakCafeKhowSoiImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/khow-soi.jpeg'
-import kinphakCafeFriedRiceWithVegetablesImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/fried-rice-with-vegetables.jpeg'
-
-import salsaKitchenVeganCarnitasImage from '#/chiang-mai-for-digital-nomads/salsa-kitchen/vegan-carnitas.jpeg'
-
-import runningStravaImage from '#/chiang-mai-for-digital-nomads/running/strava.jpeg'
-import runningLakeImage from '#/chiang-mai-for-digital-nomads/running/lake.jpeg'
-
-import yogaInTheParkGroupPhotoImage from '#/chiang-mai-for-digital-nomads/yoga-in-the-park/group-photo.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-02-03T15:13:00+07:00',
@@ -55,19 +33,21 @@ export const dewyHouseDetails = {
   },
 }
 
+export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
+
 export const dewyHouseImages = [
   {
-    src: dewyHouseBedImage,
+    src: `${imagePath}/dewy-house/bed.jpeg`,
     alt: 'DewyHouse bed',
     caption: "The bed is comfortable and there's good space in front of it to do yoga.",
   },
   {
-    src: dewyHouseDeskAndKitchenImage,
+    src: `${imagePath}/dewy-house/desk-and-kitchen.jpeg`,
     alt: 'DewyHouse room',
     caption: "There's a decent desk to work at, and although the kitchen lacks any practical value, it's at least nice to have the space.",
   },
   {
-    src: dewyHouseBathroomImage,
+    src: `${imagePath}/dewy-house/bathroom.jpeg`,
     alt: 'DewyHouse bathroom',
     caption: "There aren't any taps to fill it up with, but it's always nice to have a bathtub I guess.",
   }
@@ -75,32 +55,32 @@ export const dewyHouseImages = [
 
 export const reformKafeImages = [
   {
-    src: reformKafeBerryLoveSmoothieBowlImage,
+    src: `${imagePath}/reform-kafe/berry-love-smoothie-bowl.jpeg`,
     alt: 'Berry Love smoothie bowl at Reform Kafe',
     caption: 'There are plenty of healthy options on the menu. This "Berry Love" smoothie bowl costs 170 baht.',
   },
   {
-    src: reformKafeMushroomCheeseBurgerImage,
+    src: `${imagePath}/reform-kafe/mushroom-cheese-burger.jpeg`,
     alt: 'Mushroom cheese burger at Reform Kafe',
     caption: 'This mushroom cheese burger is one of several burgers on offer. It costs 240 baht.',
   },
   {
-    src: reformKafePancakesImage,
+    src: `${imagePath}/reform-kafe/pancakes.jpeg`,
     alt: 'Pancakes at Reform Kafe',
     caption: 'Gluten-free pancakes with mango, good at any time of day for 150 baht.',
   },
   {
-    src: reformKafeBananaSmoothieImage,
+    src: `${imagePath}/reform-kafe/banana-smoothie.jpeg`,
     alt: 'Banana smoothie at Reform Kafe',
     caption: 'A banana smoothie for 95 baht.',
   },
   {
-    src: reformKafeTablesImage,
+    src: `${imagePath}/reform-kafe/tables.jpeg`,
     alt: 'Reform Kafe restaurant',
     caption: 'Some of the tables are right next to this water feature, which makes them an incredibly relaxing place to sit.',
   },
   {
-    src: reformKafeFrenchBreadSandwichImage,
+    src: `${imagePath}/reform-kafe/french-bread-sandwich.jpeg`,
     alt: 'French bread sandwich at Reform Kafe',
     caption: 'French bread sandwich for 165 baht.',
   },
@@ -108,17 +88,17 @@ export const reformKafeImages = [
 
 export const kinphakCafeImages = [
   {
-    src: kinphakCafeVeganRedPorkWithRiceImage,
+    src: `${imagePath}/kinphak-cafe/vegan-red-pork-with-rice.jpeg`,
     alt: 'Vegan red pork with rice at Kinphak Cafe',
     caption: 'Vegan red pork with rice for 60 baht.',
   },
   {
-    src: kinphakCafeKhowSoiImage,
+    src: `${imagePath}/kinphak-cafe/khow-soi.jpeg`,
     alt: 'Khow Soi at Kinphak Cafe',
     caption: 'Khow soi is one of the first things I think of when I think of Northern Thai food. This vegan khow soi costs 50 baht.',
   },
   {
-    src: kinphakCafeFriedRiceWithVegetablesImage,
+    src: `${imagePath}/kinphak-cafe/fried-rice-with-vegetables.jpeg`,
     alt: 'Fried brown rice with 5 colour vegetables at Kinphak Cafe',
     caption: 'Fried brown rice with 5 colour vegetables costs 50 baht.',
   }
@@ -126,7 +106,7 @@ export const kinphakCafeImages = [
 
 export const salsaKitchenImages = [
   {
-    src: salsaKitchenVeganCarnitasImage,
+    src: `${imagePath}/salsa-kitchen/vegan-carnitas.jpeg`,
     alt: 'Vegan carnitas at Salsa Kitchen',
     caption: 'These vegan carnitas and guacamole soft tacos were so good that I neglected to try most of the other vegan options, opting to have these every time. They cost 249 baht.',
   }
@@ -134,13 +114,13 @@ export const salsaKitchenImages = [
 
 export const runnningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Strava map',
     caption: 'My first run in Chiang Mai',
     url: 'https://www.strava.com/activities/8069804856',
   },
   {
-    src: runningLakeImage,
+    src: `${imagePath}/running/lake.jpeg`,
     alt: 'Chiang Mai University lake',
     caption: "The lake at Chiang Mai University is a beautiful place to come regardless of if you're running here or not.",
   }
@@ -148,7 +128,7 @@ export const runnningImages = [
 
 export const yogaInTheParkImages = [
   {
-    src: yogaInTheParkGroupPhotoImage,
+    src: `${imagePath}/yoga-in-the-park/group-photo.jpeg`,
     alt: 'Yoga in the Park',
     caption: 'Yoga in the Park',
   }

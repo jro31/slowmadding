@@ -1,7 +1,7 @@
 import Image from 'next/image'
 
-import logoStrava from '@/images/logos/strava.svg'
-import logoInstagram from '@/images/logos/instagram.svg'
+import logoStrava from '@/logos/strava.svg'
+import logoInstagram from '@/logos/instagram.svg'
 
 export const platforms = {
   strava: 'Strava',

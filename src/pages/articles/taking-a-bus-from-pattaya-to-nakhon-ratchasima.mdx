@@ -4,13 +4,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import whereToBuyATicketAndCatchTheBusTicketOfficeImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg'
-import whereToBuyATicketAndCatchTheBusBusTimesImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/bus-times.jpeg'
-import whereToBuyATicketAndCatchTheBusTicketImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg'
-import whereToBuyATicketAndCatchTheBusBusImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/where-to-buy-a-ticket-and-catch-the-bus/bus.jpeg'
-
-import onTheBusSeatsImage from '#/taking-a-bus-from-pattaya-to-nakhon-ratchasima/on-the-bus/seats.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-12-06T18:15:00+07:00',
@@ -19,24 +12,26 @@ export const meta = {
   keywords: ['Thailand', 'Korat'],
 }
 
+export const imagePath = '/images/articles/taking-a-bus-from-pattaya-to-nakhon-ratchasima'
+
 export const whereToBuyATicketAndCatchTheBusImages = [
   {
-    src: whereToBuyATicketAndCatchTheBusTicketOfficeImage,
+    src: `${imagePath}/where-to-buy-a-ticket-and-catch-the-bus/ticket-office.jpeg`,
     alt: 'Sri Mongkol Pattatya ticket office',
     caption: "The ticket office is pretty inconspicuous, especially if you don't speak Thai. This is what you're looking for.",
   },
   {
-    src: whereToBuyATicketAndCatchTheBusBusTimesImage,
+    src: `${imagePath}/where-to-buy-a-ticket-and-catch-the-bus/bus-times.jpeg`,
     alt: 'Pattaya to Nakhon Ratcahsima bus times',
     caption: 'Buses to Nakhon Ratchasima (Korat) leave at 7:30am and 11am.',
   },
   {
-    src: whereToBuyATicketAndCatchTheBusTicketImage,
+    src: `${imagePath}/where-to-buy-a-ticket-and-catch-the-bus/ticket.jpeg`,
     alt: 'Pattaya to Nakhon Ratchasima bus ticket',
     caption: "Tickets cost 400 baht. Once you have your ticket, you won't find much English on there either, so have Google Translate ready to make sure all the details are correct.",
   },
   {
-    src: whereToBuyATicketAndCatchTheBusBusImage,
+    src: `${imagePath}/where-to-buy-a-ticket-and-catch-the-bus/bus.jpeg`,
     alt: 'Pattaya to Nakhon Ratchasima bus',
     caption: 'The bus (taken at a rest-stop) said Ubon - Pattaya on the side.',
   },
@@ -44,7 +39,7 @@ export const whereToBuyATicketAndCatchTheBusImages = [
 
 export const onTheBusImages = [
   {
-    src: onTheBusSeatsImage,
+    src: `${imagePath}/on-the-bus/seats.jpeg`,
     alt: 'Onboard the Pattaya to Nakhon Ratchasima bus',
     caption: "The seats are very comfortable but don't come with any ports for you to charge your devices.",
   }
