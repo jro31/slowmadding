@@ -2,14 +2,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import bagsRucksackAndSuitcaseImage from '#/what-to-pack-as-a-digital-nomad/bags/rucksack-and-suitcase.jpeg'
-
-import sustenanceMeAndKnifeyImage from '#/what-to-pack-as-a-digital-nomad/sustenance/me-and-knifey.jpeg'
-
-import securityPacsafeWrapsafeAdjustableCableLockImage from '#/what-to-pack-as-a-digital-nomad/security/pacsafe-wrapsafe-adjustable-cable-lock.jpeg'
-
-import miscellaneousJoeyImage from '#/what-to-pack-as-a-digital-nomad/miscellaneous/joey.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-08-03T19:35:00+07:00',
@@ -17,16 +9,19 @@ export const meta = {
   description: 'Starting as a digital nomad but not sure what to pack? This is the definitive list of everything you need in your suitcase.',
 }
 
+export const imagePath = '/images/articles/what-to-pack-as-a-digital-nomad'
+
 export const bagsImages = [
   {
-    src: bagsRucksackAndSuitcaseImage,
+    src: `${imagePath}/bags/rucksack-and-suitcase.jpeg`,
     alt: 'Rucksack and suitcase',
+    caption: 'My bags',
   },
 ]
 
 export const sustenanceImages = [
   {
-    src: sustenanceMeAndKnifeyImage,
+    src: `${imagePath}/sustenance/me-and-knifey.jpeg`,
     alt: 'Me and Knifey',
     caption: 'Me and Knifey in Argentina in 2010',
   },
@@ -34,7 +29,7 @@ export const sustenanceImages = [
 
 export const securityImages = [
   {
-    src: securityPacsafeWrapsafeAdjustableCableLockImage,
+    src: `${imagePath}/security/pacsafe-wrapsafe-adjustable-cable-lock.jpeg`,
     alt: 'Pacsafe Wrapsafe Adjustable Cable Lock',
     caption: 'Using my Pacsafe in Siem Reap',
   }
@@ -42,7 +37,7 @@ export const securityImages = [
 
 export const miscellaneousImages = [
   {
-    src: miscellaneousJoeyImage,
+    src: `${imagePath}/miscellaneous/joey.jpeg`,
     alt: 'Joey',
     caption: 'Joey in Bulgaria',
   },

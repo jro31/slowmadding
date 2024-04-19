@@ -92,7 +92,7 @@ export const placesData = [
       [veganFood]: {
         [verdict]: true,
         [description]:
-          "In Happy Cow's Top 10 Vegan-Friendly Cities 2022, Bangkok ranked 7th. Vegan-friendly restaurants are everywhere here, and street vendors selling pre-cut fruit are all over the city.",
+          'Bangkok is one of the best cities in the world for vegans. Vegan-friendly restaurants are everywhere, and street vendors selling pre-cut fruit are all over the city.',
       },
       [safe]: {
         [verdict]: true,

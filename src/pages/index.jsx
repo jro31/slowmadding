@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import Head from 'next/head'
 import Link from 'next/link'
 import clsx from 'clsx'
@@ -8,11 +7,6 @@ import { Container } from '@/components/Container'
 
 import { platforms } from '@/components/CircledIcon'
 
-import yogaInTheParkImage from '@/images/homepage-photos/yoga-in-the-park.jpeg'
-import sukhumvit22AtNightImage from '@/images/homepage-photos/sukhumvit-22-at-night.jpeg'
-import reformKafeSmoothieBowlImage from '@/images/homepage-photos/reform-kafe-smoothie-bowl.jpeg'
-import sihanoukNorodomAtNightImage from '@/images/homepage-photos/sihanouk-norodom-at-night.jpeg'
-import saikaewResortLakeImage from '@/images/homepage-photos/saikaew-resort-lake.jpeg'
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import { getAllArticles } from '@/lib/getAllArticles'
@@ -22,25 +16,26 @@ const title = 'Slowmadding - Your guide to being a digital nomad'
 const description =
   'I spend my life moving around to some of the most amazing places in the world, then sit in my room coding all day. These are my stories.'
 
+const imagePath = '/images/homepage-photos'
 const images = [
   {
-    src: yogaInTheParkImage,
+    src: `${imagePath}/yoga-in-the-park.jpeg`,
     alt: 'Yoga in the Park in Chiang Mai',
   },
   {
-    src: sukhumvit22AtNightImage,
+    src: `${imagePath}/sukhumvit-22-at-night.jpeg`,
     alt: 'Sukhumvit soi 22 in Bangkok at night, taken from the balcony of V Check Inn hotel',
   },
   {
-    src: reformKafeSmoothieBowlImage,
+    src: `${imagePath}/reform-kafe-smoothie-bowl.jpeg`,
     alt: 'Smoothie bowl at Reform Kafe in Chiang Mai',
   },
   {
-    src: sihanoukNorodomAtNightImage,
+    src: `${imagePath}/sihanouk-norodom-at-night.jpeg`,
     alt: 'Statue of Sihanouk Norodom in Phnom Penh at night',
   },
   {
-    src: saikaewResortLakeImage,
+    src: `${imagePath}/saikaew-resort-lake.jpeg`,
     alt: 'The lake at Saikaew Resort in Chiang Rai',
   },
 ]
@@ -53,13 +48,13 @@ const Photos = () => {
       <div className="-my-4 flex justify-center gap-5 overflow-hidden py-4 sm:gap-8">
         {images.map((image, imageIndex) => (
           <div
-            key={image.src.src}
+            key={image.src}
             className={clsx(
               'relative aspect-[9/10] w-44 flex-none overflow-hidden rounded-xl bg-zinc-100 dark:bg-zinc-800 sm:w-72 sm:rounded-2xl',
               rotations[imageIndex % rotations.length]
             )}
           >
-            <Image
+            <img
               src={image.src}
               alt={image.alt}
               sizes="(min-width: 640px) 18rem, 11rem"

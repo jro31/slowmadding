@@ -4,10 +4,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import giantIbisPhnomPenhTicketOfficeImage from '#/travelling-from-phnom-penh-to-ho-chi-minh-city/giant-ibis-phnom-penh-ticket-office.jpeg'
-import giantIbisChargingPortsImage from '#/travelling-from-phnom-penh-to-ho-chi-minh-city/giant-ibis-charging-ports.jpeg'
-import giantIbisHcmcTicketOfficeImage from '#/travelling-from-phnom-penh-to-ho-chi-minh-city/giant-ibis-hcmc-ticket-office.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-02-08T15:15:00+07:00',
@@ -16,9 +12,11 @@ export const meta = {
   keywords: ['Cambodia, Saigon, Vietnam'],
 }
 
+export const imagePath = '/images/articles/travelling-from-phnom-penh-to-ho-chi-minh-city'
+
 export const giantIbisPhnomPenhTicketOfficeImages = [
   {
-    src: giantIbisPhnomPenhTicketOfficeImage,
+    src: `${imagePath}/giant-ibis-phnom-penh-ticket-office.jpeg`,
     alt: 'Giant Ibis Phnom Penh ticket office',
     caption: 'The Giant Ibis ticket office in Phnom Penh.',
   },
@@ -26,7 +24,7 @@ export const giantIbisPhnomPenhTicketOfficeImages = [
 
 export const giantIbisChargingPortsImages = [
   {
-    src: giantIbisChargingPortsImage,
+    src: `${imagePath}/giant-ibis-charging-ports.jpeg`,
     alt: 'Giant Ibis charging ports',
     caption: 'Only the window seats have charging ports next to them.',
   },
@@ -34,7 +32,7 @@ export const giantIbisChargingPortsImages = [
 
 export const giantIbisHcmcTicketOfficeImages = [
   {
-    src: giantIbisHcmcTicketOfficeImage,
+    src: `${imagePath}/giant-ibis-hcmc-ticket-office.jpeg`,
     alt: 'Giant Ibis Ho Chi Minh City ticket office',
     caption: 'The Giant Ibis ticket office in Ho Chi Minh City.',
   },

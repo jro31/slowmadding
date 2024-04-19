@@ -4,41 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityCityPillarShrineImage from '#/khon-kaen-for-digital-nomads/city/city-pillar-shrine.jpeg'
-import cityBuengKaenNakhonNightMarketImage from '#/khon-kaen-for-digital-nomads/city/bueng-kaen-nakhon-night-market.jpeg'
-import cityPhraMahathatKaenNakhonImage from '#/khon-kaen-for-digital-nomads/city/phra-mahathat-kaen-nakhon.jpeg'
-
-import manomonResidenceBedImage from '#/khon-kaen-for-digital-nomads/manomon-residence/bed.jpeg'
-import manomonResidenceTvImage from '#/khon-kaen-for-digital-nomads/manomon-residence/tv.jpeg'
-import manomonResidenceWindowsImage from '#/khon-kaen-for-digital-nomads/manomon-residence/windows.jpeg'
-import manomonResidenceBathroomImage from '#/khon-kaen-for-digital-nomads/manomon-residence/bathroom.jpeg'
-import manomonResidenceBalconyImage from '#/khon-kaen-for-digital-nomads/manomon-residence/balcony.jpeg'
-import manomonResidenceViewImage from '#/khon-kaen-for-digital-nomads/manomon-residence/view.jpeg'
-import manomonResidenceOutsideImage from '#/khon-kaen-for-digital-nomads/manomon-residence/outside.jpeg'
-
-import suTingSianWaterDumplingsImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/water-dumplings.jpeg'
-import suTingSianPanangCurryImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/panang-curry.jpeg'
-import suTingSianSpicyFriedWithBasilLeavesImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/spicy-fried-with-basil-leaves.jpeg'
-import suTingSianSpaghettiWithMushroomTomatoSauceImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/spaghetti-with-mushroom-tomato-sauce.jpeg'
-import suTingSianInsideImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/inside.jpeg'
-import suTingSianQuickFriedWaterSpinachImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/quick-fried-water-spinach.jpeg'
-import suTingSianGreenCurryImage from '#/khon-kaen-for-digital-nomads/su-ting-sian/green-curry.jpeg'
-
-import kemKonKhonKaenTeriyakiTofuBowlImage from '#/khon-kaen-for-digital-nomads/kem-kon-khon-kaen/teriyaki-tofu-bowl.jpeg'
-import kemKonKhonKaenInsideImage from '#/khon-kaen-for-digital-nomads/kem-kon-khon-kaen/inside.jpeg'
-import kemKonKhonKaenMungBeanFriesImage from '#/khon-kaen-for-digital-nomads/kem-kon-khon-kaen/mung-bean-fries.jpeg'
-import kemKonKhonKaenStrawberryFreppeSmoothieImage from '#/khon-kaen-for-digital-nomads/kem-kon-khon-kaen/strawberry-freppe-smoothie.jpeg'
-import kemKonKhonKaenOutsideImage from '#/khon-kaen-for-digital-nomads/kem-kon-khon-kaen/outside.jpeg'
-
-import realVeganFiveChoicesFromTheBuffetWithRice1Image from '#/khon-kaen-for-digital-nomads/real-vegan/five-choices-from-the-buffet-with-rice-1.jpeg'
-import realVeganStoreImage from '#/khon-kaen-for-digital-nomads/real-vegan/store.jpeg'
-import realVeganSignImage from '#/khon-kaen-for-digital-nomads/real-vegan/sign.jpeg'
-import realVeganFiveChoicesFromTheBuffetWithRice2Image from '#/khon-kaen-for-digital-nomads/real-vegan/five-choices-from-the-buffet-with-rice-2.jpeg'
-import realVeganBuffetImage from '#/khon-kaen-for-digital-nomads/real-vegan/buffet.jpeg'
-
-import runningStravaImage from '#/khon-kaen-for-digital-nomads/running/strava.jpeg'
-import runningBuengKaenNakhonReservoirPathImage from '#/khon-kaen-for-digital-nomads/running/bueng-kaen-nakhon-reservoir-path.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2024-02-22T17:00:00+07:00',
@@ -66,19 +31,21 @@ export const manomonResidenceDetails = {
   },
 }
 
+export const imagePath = '/images/articles/khon-kaen-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityCityPillarShrineImage,
+    src: `${imagePath}/city/city-pillar-shrine.jpeg`,
     alt: 'City Pillar Shrine',
     caption: "This is the City Pillar Shrine. I'm not sure why you'd have a shrine to a pillar, but it's on the way to the Central shopping mall, so you'll probably run into it too.",
   },
   {
-    src: cityBuengKaenNakhonNightMarketImage,
+    src: `${imagePath}/city/bueng-kaen-nakhon-night-market.jpeg`,
     alt: 'Bueng Kaen Nakhon Night Market',
     caption: 'There are several large night markets in Khon Kaen. This is the Bueng Kaen Nakhon Night Market next to the Bueng Kaen Nakhon Reservoir, making it a much harder place to go running after dark.',
   },
   {
-    src: cityPhraMahathatKaenNakhonImage,
+    src: `${imagePath}/city/phra-mahathat-kaen-nakhon.jpeg`,
     alt: 'Phra Mahathat Kaen Nakhon',
     caption: "Phra Mahathat Kaen Nakhon is on the way to Kem Kon Khon Kaen restaurant, so if you decide to walk there from town like I did, you'll also find it.",
   },
@@ -86,37 +53,37 @@ export const cityImages = [
 
 export const manomonResidenceImages = [
   {
-    src: manomonResidenceBedImage,
+    src: `${imagePath}/manomon-residence/bed.jpeg`,
     alt: 'Manomon Residence bed',
     caption: 'Manomon Residence is phenomenal value. For less than 800 baht per night you get a large bed with loads of space around it. Plenty of space for exercise.',
   },
   {
-    src: manomonResidenceTvImage,
+    src: `${imagePath}/manomon-residence/tv.jpeg`,
     alt: 'Manomon Residence TV',
     caption: 'In front of the bed is a large TV and a surface that makes a good workstation, as well as a fridge, and most importantly an electric kettle. The wifi in the room is fast and stable.',
   },
   {
-    src: manomonResidenceWindowsImage,
+    src: `${imagePath}/manomon-residence/windows.jpeg`,
     alt: 'Manomon Residence windows',
     caption: "The large windows let in lots of glorious natural light, while the AC keeps the room cool. This table doesn't have a plug nearby, but other than that is another option to work at. The room I had faces south-west so was especially pleasant at sundown.",
   },
   {
-    src: manomonResidenceBathroomImage,
+    src: `${imagePath}/manomon-residence/bathroom.jpeg`,
     alt: 'Manomon Residence bathroom',
     caption: "You can't really see it here, but the sink was peculiarly low. I didn't notice until I had to shave and realised wow, my back hurts. Other than that, it's a really nice bathroom as well. I can't believe how cheap this room was.",
   },
   {
-    src: manomonResidenceBalconyImage,
+    src: `${imagePath}/manomon-residence/balcony.jpeg`,
     alt: 'Manomon Residence balcony',
     caption: "There's another sink on the balcony suitable for washing things (clothes, blenders, tea cups etc). Or if you're too lazy to go out there you can just use the sink in the bathroom like me.",
   },
   {
-    src: manomonResidenceViewImage,
+    src: `${imagePath}/manomon-residence/view.jpeg`,
     alt: 'Manomon Residence view',
     caption: 'The view from the balcony is nice if you like looking at cars and the sides of other buildings.',
   },
   {
-    src: manomonResidenceOutsideImage,
+    src: `${imagePath}/manomon-residence/outside.jpeg`,
     alt: 'Manomon Residence from outside',
     caption: "In a slightly strange design, the hotel's reception is up those stairs on the second floor, but the elevator goes down to the car park on the ground floor, so it's much more efficient to walk through the car park when going out. Once I'd realised this, I didn't go back through reception until I had to check-out.",
   },
@@ -124,37 +91,37 @@ export const manomonResidenceImages = [
 
 export const suTingSianImages = [
   {
-    src: suTingSianWaterDumplingsImage,
+    src: `${imagePath}/su-ting-sian/water-dumplings.jpeg`,
     alt: 'Su Ting Sian water dumplings',
     caption: "This is written in the menu as water dumplings. It's good to see dumplings being served in their natural habitat for a change. They'll cost you 50 baht.",
   },
   {
-    src: suTingSianPanangCurryImage,
+    src: `${imagePath}/su-ting-sian/panang-curry.jpeg`,
     alt: 'Su Ting Sian panang curry',
     caption: "The portion sizes are no joke here, I always felt a bit greedy getting two mains every time I came, I've just never been someone who can come to a restaurant and only have one meal. This is the panang curry for 60 baht.",
   },
   {
-    src: suTingSianSpicyFriedWithBasilLeavesImage,
+    src: `${imagePath}/su-ting-sian/spicy-fried-with-basil-leaves.jpeg`,
     alt: 'Su Ting Sian stir fried with basil leaves',
     caption: "'Stir fried with basil leaves' is how this is listed in the menu. Stir fried what I never found out, but I like a bit of danger with my meal. Whatever it is it costs 45 baht.",
   },
   {
-    src: suTingSianSpaghettiWithMushroomTomatoSauceImage,
+    src: `${imagePath}/su-ting-sian/spaghetti-with-mushroom-tomato-sauce.jpeg`,
     alt: 'Su Ting Sian spaghetti with mushroom tomato sauce',
     caption: 'Believe it or not, this is a spaghetti dish, spaghetti with mushroom tomato sauce to be precise. And yes, there is actually spaghetti underneath the excessive amount of sauce. It costs 70 baht.',
   },
   {
-    src: suTingSianInsideImage,
+    src: `${imagePath}/su-ting-sian/inside.jpeg`,
     alt: 'Su Ting Sian inside',
     caption: "It was always very quiet when I came here, which is good for me. There's no AC, but plenty of fans keep the restaurant pleasantly cool.",
   },
   {
-    src: suTingSianQuickFriedWaterSpinachImage,
+    src: `${imagePath}/su-ting-sian/quick-fried-water-spinach.jpeg`,
     alt: 'Su Ting Sian quick-fried water spinach seasoned with chilli and soy sauce',
     caption: 'Perhaps being raised with the dumplings, this is listed in the menu as quick-fried water spinach seasoned with chilli and soy sauce for 45 baht.',
   },
   {
-    src: suTingSianGreenCurryImage,
+    src: `${imagePath}/su-ting-sian/green-curry.jpeg`,
     alt: 'Su Ting Sian green curry',
     caption: 'The green curry is 60 baht, and is definitely green.',
   },
@@ -162,27 +129,27 @@ export const suTingSianImages = [
 
 export const kemKonKhonKaenImages = [
   {
-    src: kemKonKhonKaenTeriyakiTofuBowlImage,
+    src: `${imagePath}/kem-kon-khon-kaen/teriyaki-tofu-bowl.jpeg`,
     alt: 'Kem Kon Khon Kaen teriyaki tofu bowl',
     caption: "Putting the Ku Klux Klan to shame with their alliteration, Kem Kon Khon Kaen is a vegan restaurant like I wasn't expecting to find in Khon Kaen. A la carte western-style vegan restaurants are usually reserved for Bangkokkk, Chiang Mai and the other tourist-heavy places in Thailand. In non-touristy cities like this you usually have to settle for local buffet restaurants to get vegan food, so this was a nice surprise. This is the teriyaki tofu bowl for 85 baht.",
   },
   {
-    src: kemKonKhonKaenInsideImage,
+    src: `${imagePath}/kem-kon-khon-kaen/inside.jpeg`,
     alt: 'Kem Kon Khon Kaen inside',
     caption: "If you're vegan and you've made it all the way to Khon Kaen, it's a fair assumption that you've explored the vegan scene in Bangkok. If you know the Veganerie restaurant chain, Kem Kon Khon Kaen reminds me of Veganerie in Bangkok. Similar decor and feel, with a similar (albeit smaller) menu.",
   },
   {
-    src: kemKonKhonKaenMungBeanFriesImage,
+    src: `${imagePath}/kem-kon-khon-kaen/mung-bean-fries.jpeg`,
     alt: 'Kem Kon Khon Kaen mung bean fries',
     caption: 'These are allegedly mung bean fries. Tasted the same as potato fries, which is no bad thing. They cost 65 baht.',
   },
   {
-    src: kemKonKhonKaenStrawberryFreppeSmoothieImage,
+    src: `${imagePath}/kem-kon-khon-kaen/strawberry-freppe-smoothie.jpeg`,
     alt: 'Kem Kon Khon Kaen strawberry freppe smoothie',
     caption: "This is listed in the menu as a 'Strawberry Freppe Smoothie'. I'm not sure what freppe means; I lost track of the various names for coffee shop drinks years ago when they expanded from tea and coffee. Maybe it's a typo of frappe? Anyway, it was good and it costs 125 baht.",
   },
   {
-    src: kemKonKhonKaenOutsideImage,
+    src: `${imagePath}/kem-kon-khon-kaen/outside.jpeg`,
     alt: 'Kem Kon Khon Kaen from outside',
     caption: "The only downside to Kem Kon is that it's bloody miles outside the city centre. The restaurant is quite hard to spot, looking slightly timid in this almost industrial area of the city. This is what you're looking for. It says Kem Kon in very, very small and slightly illegible writing between the two windows, just to make it easier to find.",
   },
@@ -190,27 +157,27 @@ export const kemKonKhonKaenImages = [
 
 export const realVeganImages = [
   {
-    src: realVeganFiveChoicesFromTheBuffetWithRice1Image,
+    src: `${imagePath}/real-vegan/five-choices-from-the-buffet-with-rice-1.jpeg`,
     alt: 'Real Vegan five choices fron the buffet with rice',
     caption: 'Real Vegan, if that is its real name, is both a restaurant and a store/supermarket. In this photo I got five choices from the buffet with rice. With a bottle of water it came to 120 baht.',
   },
   {
-    src: realVeganStoreImage,
-    alt: 'Real Vegan story',
+    src: `${imagePath}/real-vegan/store.jpeg`,
+    alt: 'Real Vegan store',
     caption: "While the restaurant is decent, the real prize here is the store which has a mammoth selection of vegan produce. One of the best I've encountered anywhere.",
   },
   {
-    src: realVeganSignImage,
+    src: `${imagePath}/real-vegan/sign.jpeg`,
     alt: 'Real Vegan sign',
     caption: "While it's also known as Tawanthong Vegetarian Food for some reason, it's kind of hard to dispute that it's actually called Real Vegan, seeing as they have a giant sign that says Real Vegan on it.",
   },
   {
-    src: realVeganFiveChoicesFromTheBuffetWithRice2Image,
+    src: `${imagePath}/real-vegan/five-choices-from-the-buffet-with-rice-2.jpeg`,
     alt: 'Real Vegan five choices fron the buffet with rice',
     caption: 'Including the spring roll, this is five choices from the buffet with rice again. With a bottle of water it cost 115 baht.',
   },
   {
-    src: realVeganBuffetImage,
+    src: `${imagePath}/real-vegan/buffet.jpeg`,
     alt: 'Real Vegan buffet',
     caption: 'The buffet. Get here before 12:30pm to ensure they have a good selection remaining.',
   },
@@ -218,13 +185,13 @@ export const realVeganImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Bueng Kaen Nakhon Reservoir Strava map',
     caption: 'Bueng Kaen Nakhon Reservoir has a circumference of about 3.2km. This run of 9.6km was three laps of the lake.',
     url: 'https://www.strava.com/activities/10630980705',
   },
   {
-    src: runningBuengKaenNakhonReservoirPathImage,
+    src: `${imagePath}/running/bueng-kaen-nakhon-reservoir-path.jpeg`,
     alt: 'Buen Kaen Nakhon Reservoir path',
     caption: "Given the various obstacles you encounter, it's not a route that's really suitable for intervals or sprints, but coming here for slow runs or even a walk, it's a really pleasant path that goes the entire way around the lake.",
   },
@@ -276,6 +243,8 @@ There's one Subway restaurant in town which is open late (9pm) and at the time o
 
 ### Su Ting Sian
 
+<MapLink name='108/86 Soi Anamai 23' url='https://maps.app.goo.gl/FdkzQz8NE9xkwjrX9' />
+
 My favourite restaurant in Khon Kaen, Su Ting Sian, is a fully-vegan restaurant with a menu in English and Thai and pictures for a lot of the items. The incredibly friendly staff don't speak much English, but pointing at the menu is sufficient.
 
 It has several tables inside to sit at. Sadly it's not air conditioned, but there are many fans so it feels pretty cool in the restaurant, and it's always quiet so you can pick a table right in front of a fan.
@@ -284,9 +253,9 @@ The portion sizes are massive, and closing at 4pm each day I'd often come here f
 
 <ImageGallery images={suTingSianImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/su-ting-sian-khon-kaen-86244'>Visit Su Ting Sian on Happy Cow</ExternalLink>
-
 ### Kem-Kon Khon Kaen
+
+<MapLink name='633/1 Glang Muang Rd' url='https://maps.app.goo.gl/G4oknkKExTnBdha57' />
 
 Kem-Kon Khon Kaen was the restaurant I wasn't expecting in Khon Kaen. It's a western-style vegan restaurant like I'd expect to find in Bangkok, not in the middle of Isaan.
 
@@ -302,9 +271,9 @@ Even though the location sucks, it's worth the walk.
 
 <ImageGallery images={kemKonKhonKaenImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/kemkon-khon-kaen-331820'>Visit Kem-Kon Khon Kaen on Happy Cow</ExternalLink>
-
 ### Real Vegan
+
+<MapLink name='71 Ammat Rd' url='https://maps.app.goo.gl/Mv7okxFePUYpjxyL7' />
 
 I'm slightly confused by the name of this place as it seems to be known as both 'Real Vegan' and as 'Tawanthong Vegetarian Food'. There are a couple of businesses here, so perhaps one name is for the restaurant, the other for the shop. Regardless, I'm going to refer to it just as Real Vegan, as this was the most prominent signage I saw.
 
@@ -321,8 +290,6 @@ Finding this place was my own personal heaven. I bought enough tea that I'm stil
 While the restaurant closes at 2pm, the shop is open until 6pm each day. If you have a kitchen this place will be even better, but even if you don't, there's enough healthy, vegan snacky food here that you can get supplies to last you through the Khon Kaen daily fast, enforced once all the restaurants have closed.
 
 <ImageGallery images={realVeganImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/tawanthong-restaurant-and-shop-khon-kaen-3471'>Visit Real Vegan on Happy Cow</ExternalLink>
 
 ## Where to run in Khon Kaen
 

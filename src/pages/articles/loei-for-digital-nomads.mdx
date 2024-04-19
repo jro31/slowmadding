@@ -4,41 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityKutPongPublicParkBridgeImage from '#/loei-for-digital-nomads/city/kut-pong-public-park-bridge.jpeg'
-import cityClockImage from '#/loei-for-digital-nomads/city/clock.jpeg'
-import cityKutPongPublicParkDinosaurImage from '#/loei-for-digital-nomads/city/kut-pong-public-park-dinosaur.jpeg'
-
-import loeiHuenHaoHugHomeAndResortBedAndDeskImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/bed-and-desk.jpeg'
-import loeiHuenHaoHugHomeAndResortBedAndTvImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/bed-and-tv.jpeg'
-import loeiHuenHaoHugHomeAndResortKitchenImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/kitchen.jpeg'
-import loeiHuenHaoHugHomeAndResortBathroomImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/bathroom.jpeg'
-import loeiHuenHaoHugHomeAndResortShowersImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/showers.jpeg'
-import loeiHuenHaoHugHomeAndResortBalconyImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/balcony.jpeg'
-import loeiHuenHaoHugHomeAndResortFrontDoorImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/front-door.jpeg'
-import loeiHuenHaoHugHomeAndResortGroundsImage from '#/loei-for-digital-nomads/loei-huen-hao-hug-home-and-resort/grounds.jpeg'
-
-import foodMangoStickyRiceVendorImage from '#/loei-for-digital-nomads/food/mango-sticky-rice-vendor.jpeg'
-
-import raanJKohFriedVeganCrispyPorkWithBasilImage from '#/loei-for-digital-nomads/raan-j-koh/fried-vegan-crispy-pork-with-basil.jpeg'
-import raanJKohMenuImage from '#/loei-for-digital-nomads/raan-j-koh/menu.jpeg'
-import raanJKohInsideImage from '#/loei-for-digital-nomads/raan-j-koh/inside.jpeg'
-import raanJKohRedCurryWithVeganPorkDuckAndChickenImage from '#/loei-for-digital-nomads/raan-j-koh/red-curry-with-vegan-pork-duck-and-chicken.jpeg'
-import raanJKohShopImage from '#/loei-for-digital-nomads/raan-j-koh/shop.jpeg'
-import raanJKohPadThaiImage from '#/loei-for-digital-nomads/raan-j-koh/pad-thai.jpeg'
-import raanJKohOutsideImage from '#/loei-for-digital-nomads/raan-j-koh/outside.jpeg'
-import raanJKohFriedBasilWithVeganPorkSausageSquidAndSaltedFishImage from '#/loei-for-digital-nomads/raan-j-koh/fried-basil-with-vegan-pork-sausage-squid-and-salted-fish.jpeg'
-import raanJKohAhanJKowFoodpandaImage from '#/loei-for-digital-nomads/raan-j-koh/ahan-j-kow-foodpanda.png'
-import raanJKohStirFriedVeganPorkDuckAndChickenImage from '#/loei-for-digital-nomads/raan-j-koh/stir-fried-vegan-pork-duck-and-chicken.jpeg'
-
-import jayImBuunFromTheBuffetWithRiceImage from '#/loei-for-digital-nomads/jay-im-buun/from-the-buffet-with-rice.jpeg'
-import jayImBuunOutsideImage from '#/loei-for-digital-nomads/jay-im-buun/outside.jpeg'
-import jayImBuunFromTheBuffetWithoutRiceImage from '#/loei-for-digital-nomads/jay-im-buun/from-the-buffet-without-rice.jpeg'
-
-import runningStravaImage from '#/loei-for-digital-nomads/running/strava.jpeg'
-import runningLoeiProvincialHallRunningTrackImage from '#/loei-for-digital-nomads/running/loei-provincial-hall-running-track.jpeg'
-
-import laundryLaundretteImage from '#/loei-for-digital-nomads/laundry/laundrette.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-05-19T16:35:00+07:00',
@@ -67,19 +32,21 @@ export const loeiHuenHaoHugHomeAndResortDetails = {
   },
 }
 
+export const imagePath = '/images/articles/loei-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityKutPongPublicParkBridgeImage,
+    src: `${imagePath}/city/kut-pong-public-park-bridge.jpeg`,
     alt: 'View from the Kut Pong Public Park bridge',
     caption: 'Loei is surrounded by mountains. This photo was taken looking east from the bridge to Kut Pong Public Park.',
   },
   {
-    src: cityClockImage,
+    src: `${imagePath}/city/clock.jpeg`,
     alt: 'Loei clock',
     caption: "Nice clock. I couldn't find any more information about it, but it's definitely a clock.",
   },
   {
-    src: cityKutPongPublicParkDinosaurImage,
+    src: `${imagePath}/city/kut-pong-public-park-dinosaur.jpeg`,
     alt: 'Kut Pong Public Park dinosaur',
     caption: "Dinosaur in Kut Pong Public Park. It's not real.",
   },
@@ -87,42 +54,42 @@ export const cityImages = [
 
 export const loeiHuenHaoHugHomeAndResortImages = [
   {
-    src: loeiHuenHaoHugHomeAndResortBedAndDeskImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/bed-and-desk.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort bed and desk',
     caption: 'You get a desk and chair next to the bed, which is a good place to setup with your laptop.',
   },
   {
-    src: loeiHuenHaoHugHomeAndResortBedAndTvImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/bed-and-tv.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort bed and TV',
     caption: 'At the other end of the bed you have a TV and a completely unnecessary surface.',
   },
   {
-    src: loeiHuenHaoHugHomeAndResortKitchenImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/kitchen.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort kitchen',
     caption: 'There are no cooking facilities in the kitchen (not even a microwave), but you do get a sink, some plates, bowls and cutlery (in the cupboard under the sink), a large fridge with ice compartment, and behind the separator to the right of the fridge is a hot water dispenser and some mugs for making tea/coffee.',
   },
   {
-    src: loeiHuenHaoHugHomeAndResortBathroomImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/bathroom.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort bathroom',
     caption: 'The bathroom is decent enough, apart from the drying rack being right above the toilet paper holder.',
   },
   {
-    src: loeiHuenHaoHugHomeAndResortShowersImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/showers.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort showers',
     caption: "I don't really know why there are three showers though. For when you want to be really, really clean I guess.",
   },
   {
-    src: loeiHuenHaoHugHomeAndResortBalconyImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/balcony.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort showers',
     caption: "You have a semi-private balcony out the back of the room. Gates separate each room's balcony, so you can never be quite sure of your privacy as anyone can appear outside the French doors at the back of the room, as the cleaner does at least once per day when sweeping out there.",
   },
   {
-    src: loeiHuenHaoHugHomeAndResortFrontDoorImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/front-door.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort front door',
     caption: 'You have some more outside space at the front of the room.',
   },
   {
-    src: loeiHuenHaoHugHomeAndResortGroundsImage,
+    src: `${imagePath}/loei-huen-hao-hug-home-and-resort/grounds.jpeg`,
     alt: 'Loei Huen Hao Hug Home and Resort grounds',
     caption: 'The grounds have many tamarind trees, which makes it a pleasant place to sit outside.',
   },
@@ -130,7 +97,7 @@ export const loeiHuenHaoHugHomeAndResortImages = [
 
 export const foodImages = [
   {
-    src: foodMangoStickyRiceVendorImage,
+    src: `${imagePath}/food/mango-sticky-rice-vendor.jpeg`,
     alt: 'Loei mango sticky rice vendor',
     caption: "This mango sticky rice vendor, who setup a couple of minutes from my room most days, did a lot to keep me fed. This calorie-dense dessert was exactly what I needed when other sources of vegan food were hard to come by. One portion costs 50 baht, although on one occasion I got two, and then felt very sick. I don't recommend it.",
   },
@@ -138,52 +105,52 @@ export const foodImages = [
 
 export const raanJKohImages = [
   {
-    src: raanJKohFriedVeganCrispyPorkWithBasilImage,
+    src: `${imagePath}/raan-j-koh/fried-vegan-crispy-pork-with-basil.jpeg`,
     alt: 'Raan J Koh fried vegan crispy pork with basil',
     caption: 'They have an extensive menu of vegan meat-inspired dishes. This fried vegan crispy pork with basil rice dish costs 40 baht.',
   },
   {
-    src: raanJKohMenuImage,
+    src: `${imagePath}/raan-j-koh/menu.jpeg`,
     alt: 'Raan J Koh English menu',
     caption: "They have one copy of the menu that's been somewhat accurately translated into English (drunk driving?). As they don't get many foreigners in here, it might take them a minute to find it.",
   },
   {
-    src: raanJKohInsideImage,
+    src: `${imagePath}/raan-j-koh/inside.jpeg`,
     alt: 'Inside Raan J Koh',
     caption: "In the event that they can't find the English menu, the Thai menu up on the wall works perfectly with Google Translate, so pointing your phone at it will give you a more accurate English translation anyway.",
   },
   {
-    src: raanJKohRedCurryWithVeganPorkDuckAndChickenImage,
+    src: `${imagePath}/raan-j-koh/red-curry-with-vegan-pork-duck-and-chicken.jpeg`,
     alt: 'Raan J Koh red curry with vegan pork, duck and chicken',
     caption: "This is a not very red red curry with vegan pork, duck and chicken. I think they dumbed-down the spice level for me, and for that I'm incredibly thankful. This costs 40 baht.",
   },
   {
-    src: raanJKohShopImage,
+    src: `${imagePath}/raan-j-koh/shop.jpeg`,
     alt: 'Raan J Koh shop',
     caption: "They have a small shop of take-home items. Little here is of use if you don't have a kitchen.",
   },
   {
-    src: raanJKohPadThaiImage,
+    src: `${imagePath}/raan-j-koh/pad-thai.jpeg`,
     alt: 'Raan J Koh pad Thai',
     caption: 'The one non-rice dish that I had here was a pad Thai, which costs 40 baht.',
   },
   {
-    src: raanJKohOutsideImage,
+    src: `${imagePath}/raan-j-koh/outside.jpeg`,
     alt: 'Raan J Koh from outside',
     caption: "It's a fairly discreet place. Look for the yellow 'jay' (เจ) sign.",
   },
   {
-    src: raanJKohFriedBasilWithVeganPorkSausageSquidAndSaltedFishImage,
+    src: `${imagePath}/raan-j-koh/fried-basil-with-vegan-pork-sausage-squid-and-salted-fish.jpeg`,
     alt: 'Raan J Koh fried basil with vegan pork sausage, squid and salted fish',
     caption: 'Fried basil with vegan pork sausage, squid and salted fish for 40 baht.',
   },
   {
-    src: raanJKohAhanJKowFoodpandaImage,
+    src: `${imagePath}/raan-j-koh/ahan-j-kow-foodpanda.png`,
     alt: 'Raan J Koh is Ahan J Kow on FoodPanda',
     caption: "They're on FoodPanda as Ahan J Kow. This is useful for a couple of reasons. Firstly, their FoodPanda menu is written in English, albeit with higher prices, so can be useful to figure-out what they serve before coming here. Secondly, it's the only place I found in Loei that does delivery of vegan food, so if you don't want to go out, this is a good bet.",
   },
   {
-    src: raanJKohStirFriedVeganPorkDuckAndChickenImage,
+    src: `${imagePath}/raan-j-koh/stir-fried-vegan-pork-duck-and-chicken.jpeg`,
     alt: 'Raan J Koh stir fried vegan pork, duck and chicken',
     caption: 'Stir-fried vegan pork, duck and chicken for 40 baht.',
   },
@@ -191,17 +158,17 @@ export const raanJKohImages = [
 
 export const jayImBuunImages = [
   {
-    src: jayImBuunFromTheBuffetWithRiceImage,
+    src: `${imagePath}/jay-im-buun/from-the-buffet-with-rice.jpeg`,
     alt: 'Jay Im Buun from the buffet with rice',
     caption: 'Jay Im Buun have a point-and-hope buffet. Three choices with rice costs 40 baht.',
   },
   {
-    src: jayImBuunOutsideImage,
+    src: `${imagePath}/jay-im-buun/outside.jpeg`,
     alt: 'Jay Im Buun from outside',
     caption: "As always with this kind of restaurant, look for the yellow 'jay' (เจ) sign.",
   },
   {
-    src: jayImBuunFromTheBuffetWithoutRiceImage,
+    src: `${imagePath}/jay-im-buun/from-the-buffet-without-rice.jpeg`,
     alt: 'Jay Im Buun from the buffet without rice',
     caption: "I found out the hard way that if you get here too late they'll have almost run-out of food. I got here around 1:30pm and they'd already run-out of rice, and only had these three buffet items left. Was still a decent meal. Cost 40 baht.",
   },
@@ -209,13 +176,13 @@ export const jayImBuunImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Loei Provincial Hall Stava map',
     caption: 'My first run at the Loei Provincial Hall',
     url: 'https://www.strava.com/activities/9013136776',
   },
   {
-    src: runningLoeiProvincialHallRunningTrackImage,
+    src: `${imagePath}/running/loei-provincial-hall-running-track.jpeg`,
     alt: 'Loei Provincial Hall running track',
     caption: "The track at the Loei Provincial Hall. Technically it's a cycle track, but I didn't see any bikes on it, and I'm not sure why anyone would want to cycle around such a short track with tight corners anyway.",
   }
@@ -223,7 +190,7 @@ export const runningImages = [
 
 export const laundryImages = [
   {
-    src: laundryLaundretteImage,
+    src: `${imagePath}/laundry/laundrette.jpeg`,
     alt: 'Laundrette in Loei',
     caption: "There isn't any English signage and the ladies that work here don't speak a word of English, but I was able to get by with my broken Thai. This was the only place that I found in Loei where I could drop-off my laundry to be cleaned.",
   }
@@ -303,15 +270,7 @@ I would specifically request a room near to the wifi router if coming again. It 
 
 ## Where to get vegan food in Loei
 
-As usual, my primary resource for finding vegan food was Happy Cow. I'd looked prior to coming here and knew that Loei only featured two restaurants on Happy Cow; both the standard local 'jay' restaurants.
-
-'Jay' ('เจ' in Thai) basically means vegan, but it also prohibits certain vegetables, such as garlic and onions. For years I thought the reason for this was that in buddhism you aren't supposed to kill living things, so you can eat fruits and vegetables that don't require you to kill the entire plant (like tomatoes), but you can't eat anything where if you eat it, the plant dies (like garlic). I read recently that it's actually because foods like garlic and onion have such a strong taste that they cause imbalance to your emotions, and in buddhism you're supposed to be fucking... zen or whatever. Either way, 'jay' food is fully vegan, so I knew that I'd be able to find vegan food in at least a couple of places in Loei.
-
-Beyond Happy Cow, usually I can find more vegan food by wandering the streets and looking for 'jay' signs at street vendors, or by looking on delivery apps like FoodPanda and Grab and searching for vegan food on there.
-
-I found nothing else.
-
-These two restaurants, which I'll detail below, were great, but as is typical for such restaurants, they're family-run lunch restaurants. They close before the evening and as I found, both are closed on Sundays.
+Loei only has two vegan-friendly restaurants; both the standard local 'jay' restaurants that you find all over Thailand. 'Jay' ('เจ' in Thai) basically means vegan, but it also prohibits certain vegetables such as garlic and onions. These two restaurants, which I'll detail below, were great, but as is typical for such restaurants, they're family-run lunch restaurants. They close before the evening and as I found, both are closed on Sundays.
 
 I was unable to find anywhere else in Loei to get a hot plate of food, so for sustenance at other times I had to pretty much snack on whatever I could find.
 
@@ -327,6 +286,8 @@ I'm fairly certain I lost a bit of weight while I was here, because despite the 
 
 ### Raan J Koh
 
+<MapLink name='103/110 Thanon Ratutit' url='https://maps.app.goo.gl/59khAKJZEHRMzvaX9' />
+
 I came here three times, and each time I was the only customer. I'm not sure why.
 
 The first time I came I was greeted by a middle-aged man walking around with no shirt on. That might be why. Seeing as this is one of the only two vegan restaurants in town, I didn't have the luxury of being fussy, but it's actually a really good place.
@@ -341,9 +302,9 @@ They're also on FoodPanda as 'Ahan J Kow'. This is the only option for getting v
 
 <ImageGallery images={raanJKohImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/raan-j-koh-loei-145469'>Visit Raan J Koh on Happy Cow</ExternalLink>
-
 ### Jay Im Buun
+
+<MapLink name='32-20 Thanon Nok Kaeo' url='https://maps.app.goo.gl/jsWv5eRWmTwgsdij7' />
 
 Jay Im Buun is a very typical 'jay' restaurant with a point-and-hope buffet. They also sell a few other dishes; I saw people ordering noodles, but I was always happy with the buffet.
 
@@ -356,8 +317,6 @@ That got a bit annoying.
 Given that this is one of only two places in Loei to get a hot vegan meal, I'd have put up with a lot more than that.
 
 <ImageGallery images={jayImBuunImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/jay-im-buun-loei-145280'>Visit Jay Im Buun on Happy Cow</ExternalLink>
 
 ## Where to run in Loei
 

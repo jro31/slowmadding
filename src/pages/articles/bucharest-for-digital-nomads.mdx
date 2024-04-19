@@ -4,48 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityPalaceOfParliamentEveningImage from '#/bucharest-for-digital-nomads/city/palace-of-parliament-evening.jpeg'
-import cityVacarestiNatureParkImage from '#/bucharest-for-digital-nomads/city/vacaresti-nature-park.jpeg'
-import cityUndergroundGymImage from '#/bucharest-for-digital-nomads/city/underground-gym.jpeg'
-import cityConstantinBrancoveanuMetroStationImage from '#/bucharest-for-digital-nomads/city/constantin-brancoveanu-metro-station.jpeg'
-import cityCentralUniversityLibraryCarolIImage from '#/bucharest-for-digital-nomads/city/central-university-library-carol-I.jpeg'
-import cityPalaceOfParliamentMorningImage from '#/bucharest-for-digital-nomads/city/palace-of-parliament-morning.jpeg'
-import cityTribesByNelzPaintingImage from '#/bucharest-for-digital-nomads/city/tribes-by-nelz-painting.jpeg'
-
-import apartmentLivingAreaImage from '#/bucharest-for-digital-nomads/apartment/living-area.jpeg'
-import apartmentKitchenImage from '#/bucharest-for-digital-nomads/apartment/kitchen.jpeg'
-import apartmentFridgeImage from '#/bucharest-for-digital-nomads/apartment/fridge.jpeg'
-import apartmentBedImage from '#/bucharest-for-digital-nomads/apartment/bed.jpeg'
-import apartmentBedroomImage from '#/bucharest-for-digital-nomads/apartment/bedroom.jpeg'
-import apartmentBathroomImage from '#/bucharest-for-digital-nomads/apartment/bathroom.jpeg'
-import apartmentBalconyImage from '#/bucharest-for-digital-nomads/apartment/balcony.jpeg'
-import apartmentViewImage from '#/bucharest-for-digital-nomads/apartment/view.jpeg'
-import apartmentBuildingImage from '#/bucharest-for-digital-nomads/apartment/building.jpeg'
-
-import levelUpDoubleBurgerImage from '#/bucharest-for-digital-nomads/level-up/double-burger.jpeg'
-import levelUpSuperDuperVegMiciImage from '#/bucharest-for-digital-nomads/level-up/super-duper-veg-mici.jpeg'
-import levelUpDownstairsImage from '#/bucharest-for-digital-nomads/level-up/downstairs.jpeg'
-import levelUpNoChickenStripsLaFarfurieImage from '#/bucharest-for-digital-nomads/level-up/no-chicken-strips-la-farfurie.jpeg'
-
-import sublimmeProteicBowlImage from '#/bucharest-for-digital-nomads/sublimme/proteic-bowl.jpeg'
-import sublimmePumpkinSoupImage from '#/bucharest-for-digital-nomads/sublimme/pumpkin-soup.jpeg'
-import sublimmeToastedWrapImage from '#/bucharest-for-digital-nomads/sublimme/toasted-wrap.jpeg'
-import sublimmeBarbecueVeganBurgerImage from '#/bucharest-for-digital-nomads/sublimme/barbecue-vegan-burger.jpeg'
-import sublimmeInsideImage from '#/bucharest-for-digital-nomads/sublimme/inside.jpeg'
-
-import supermarketsCarrefourVeganFridgeImage from '#/bucharest-for-digital-nomads/supermarkets/carrefour-vegan-fridge.jpeg'
-import supermarketsMegaImageOutsideImage from '#/bucharest-for-digital-nomads/supermarkets/mega-image-outside.jpeg'
-import supermarketsMegaImageInsideImage from '#/bucharest-for-digital-nomads/supermarkets/mega-image-inside.jpeg'
-import supermarketsHummusPastaImage from '#/bucharest-for-digital-nomads/supermarkets/hummus-pasta.jpeg'
-import supermarketsFalafelWrapImage from '#/bucharest-for-digital-nomads/supermarkets/falafel-wrap.jpeg'
-
-import runningIzvorParkStravaImage from '#/bucharest-for-digital-nomads/running/izvor-park-strava.jpeg'
-import runningIzvorParkImage from '#/bucharest-for-digital-nomads/running/izvor-park.jpeg'
-import runningtineretuluiParkImage from '#/bucharest-for-digital-nomads/running/tineretului-park.jpeg'
-
-import socialDrunkenLordsImage from '#/bucharest-for-digital-nomads/social/drunken-lords.jpeg'
-import socialTribesByNelzImage from '#/bucharest-for-digital-nomads/social/tribes-by-nelz.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-07-26T13:05:00+03:00',
@@ -75,39 +33,41 @@ export const apartmentDetails = {
   },
 }
 
+export const imagePath = '/images/articles/bucharest-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityPalaceOfParliamentEveningImage,
+    src: `${imagePath}/city/palace-of-parliament-evening.jpeg`,
     alt: 'Palace of Parliament in the evening',
     caption: 'Knowing very little about Romania before arriving here, I was stunned by the Bucharest architecture. This is the east side of the Palace of Parliament, taken in the evening.',
   },
   {
-    src: cityVacarestiNatureParkImage,
+    src: `${imagePath}/city/vacaresti-nature-park.jpeg`,
     alt: 'Văcărești Nature Park',
     caption: 'Perhaps my favourite place in Bucharest is the Văcărești Nature Park. Right in the middle of the city you have this big area of untamed parkland.',
   },
   {
-    src: cityUndergroundGymImage,
+    src: `${imagePath}/city/underground-gym.jpeg`,
     alt: 'Underground Gym',
     caption: "One thing that I had to get used to in Bucharest was how understated businesses are. This is the entrance to my gym. The sign above the door says 'Indaco Software Development' (which is on the floor above). To know there's a gym here, you just have to know.",
   },
   {
-    src: cityConstantinBrancoveanuMetroStationImage,
+    src: `${imagePath}/city/constantin-brancoveanu-metro-station.jpeg`,
     alt: 'Constantin Brancoveanu metro station',
     caption: 'Bucharest has an extensive transport network that can take you pretty much anywhere in the city. This is the Constantin Brancoveanu metro station.',
   },
   {
-    src: cityCentralUniversityLibraryCarolIImage,
+    src: `${imagePath}/city/central-university-library-carol-I.jpeg`,
     alt: 'Central University Libary Carol I',
     caption: "The Central University Library Carol I building. I didn't go in there, I just thought it was a nice photo.",
   },
   {
-    src: cityPalaceOfParliamentMorningImage,
+    src: `${imagePath}/city/palace-of-parliament-morning.jpeg`,
     alt: 'Palace of Parliament in the morning',
     caption: "The north side of the Palace of Parliament taken in the early morning.",
   },
   {
-    src: cityTribesByNelzPaintingImage,
+    src: `${imagePath}/city/tribes-by-nelz-painting.jpeg`,
     alt: 'Tribes by Nelz painting',
     caption: "This painting was in the 'Tribes by Nelz' restaurant. I don't know what the meaning is and it doesn't have much else to do with Bucharest, I just thought it was a cool painting.",
   },
@@ -115,47 +75,47 @@ export const cityImages = [
 
 export const apartmentImages = [
   {
-    src: apartmentLivingAreaImage,
+    src: `${imagePath}/apartment/living-area.jpeg`,
     alt: 'Apartment living area',
     caption: "The living area is very spacious, especially if you're alone. Plenty of space to do yoga. Probably enough space for two people to do yoga.",
   },
   {
-    src: apartmentKitchenImage,
+    src: `${imagePath}/apartment/kitchen.jpeg`,
     alt: 'Apartment kitchen',
     caption: "The kitchen was very well equipped, and the dining table and chairs weren't only nice for eating at, but made for a great workspace too. Out of shot there's an air-conditioner.",
   },
   {
-    src: apartmentFridgeImage,
+    src: `${imagePath}/apartment/fridge.jpeg`,
     alt: 'Apartment fridge',
     caption: 'The apartment comes with loads and loads of complimentary snacks. This was the fridge as I arrived at the room. It includes 19 craft beers, a bottle of wine and a bottle of whiskey. Outside of the fridge was another bottle of wine and an entire cupboard full of snacks. Although not all vegan, none of them contained any meat, which I appreciated.',
   },
   {
-    src: apartmentBedImage,
+    src: `${imagePath}/apartment/bed.jpeg`,
     alt: 'Apartment bed',
     caption: 'The bed was really comfortable, and out of view is another air-conditioner.',
   },
   {
-    src: apartmentBedroomImage,
+    src: `${imagePath}/apartment/bedroom.jpeg`,
     alt: 'Apartment bedroom',
     caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there was a second TV in the bedroom.",
   },
   {
-    src: apartmentBathroomImage,
+    src: `${imagePath}/apartment/bathroom.jpeg`,
     alt: 'Apartment bathroom',
     caption: "The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kid, and laundry detergent and fabric softener (there's a washing machine with drying rack just outside the bathroom).",
   },
   {
-    src: apartmentBalconyImage,
+    src: `${imagePath}/apartment/balcony.jpeg`,
     alt: 'Apartment balcony',
     caption: "The balcony, accessed from the living area, is pleasant to step-out onto or to sit with a cup of tea.",
   },
   {
-    src: apartmentViewImage,
+    src: `${imagePath}/apartment/view.jpeg`,
     alt: 'Apartment view',
     caption: 'The view from the balcony is nice if you look in the right direction.',
   },
   {
-    src: apartmentBuildingImage,
+    src: `${imagePath}/apartment/building.jpeg`,
     alt: 'Apartment building',
     caption: "The building from the outside.",
   },
@@ -163,22 +123,22 @@ export const apartmentImages = [
 
 export const levelUpImages = [
   {
-    src: levelUpDoubleBurgerImage,
+    src: `${imagePath}/level-up/double-burger.jpeg`,
     alt: 'Level Up Double Burger',
     caption: 'So good that even the burger is licking his lips. This is the double burger for 29 lei, with salad and fries for an extra 9 lei.',
   },
   {
-    src: levelUpSuperDuperVegMiciImage,
+    src: `${imagePath}/level-up/super-duper-veg-mici.jpeg`,
     alt: 'Level Up Super-Duper VegMici',
     caption: "They call this the 'Super-Duper VegMici'. It's allegedly an \"ultra-Romanian dish\". It was a bit weird, but you've got to sample the culture, right? It costs 29 lei.",
   },
   {
-    src: levelUpDownstairsImage,
+    src: `${imagePath}/level-up/downstairs.jpeg`,
     alt: 'Level Up downstairs',
     caption: "From the street the restaurant looks very small, but most of the seating is downstairs, and it's a really nice place to come and sit. With all the sofas, it's a great place to come and listen to a podcast. Or to come and sit with friends if you have any.",
   },
   {
-    src: levelUpNoChickenStripsLaFarfurieImage,
+    src: `${imagePath}/level-up/no-chicken-strips-la-farfurie.jpeg`,
     alt: 'Level Up NoChicken Strips la farfurie',
     caption: "The 'NoChicken Strips la farfurie'. No, I don't know what that means either, and no it wasn't healthy. I'd just got out the gym though. That's how it works, right? This plate costs 37 lei.",
   },
@@ -186,27 +146,27 @@ export const levelUpImages = [
 
 export const sublimmeImages = [
   {
-    src: sublimmeProteicBowlImage,
+    src: `${imagePath}/sublimme/proteic-bowl.jpeg`,
     alt: 'Sublimme Protiec Bowl',
     caption: "This is the protiec bowl with rice, tofu and vegetables. I have no idea if proteic is actually a word or it's supposed to be protein and they just mispelled it on the menu. Either way it's a really good, healthy lunch for 38 lei.",
   },
   {
-    src: sublimmePumpkinSoupImage,
+    src: `${imagePath}/sublimme/pumpkin-soup.jpeg`,
     alt: 'Sublimme pumpkin cream soup with coconut cream',
     caption: 'Every weekday they have a menu of the day for 42 lei that includes a main and a soup. On Tuesdays the soup is this pumpkin cream soup with coconut cream.',
   },
   {
-    src: sublimmeToastedWrapImage,
+    src: `${imagePath}/sublimme/toasted-wrap.jpeg`,
     alt: 'Sublimme toasted wrap',
     caption: 'The main from the Tuesday menu of the day is this toasted wrap with sweet smoked chilli sauce.',
   },
   {
-    src: sublimmeBarbecueVeganBurgerImage,
+    src: `${imagePath}/sublimme/barbecue-vegan-burger.jpeg`,
     alt: 'Sublimme barbecue vegan burger with baked potatoes',
     caption: 'Even the burgers somehow look healthy here. This is the barbecue vegan burger with baked potatoes, which costs 39 lei.',
   },
   {
-    src: sublimmeInsideImage,
+    src: `${imagePath}/sublimme/inside.jpeg`,
     alt: 'Sublimme inside',
     caption: "It's a pleasant place to come and get lunch.",
   },
@@ -214,27 +174,27 @@ export const sublimmeImages = [
 
 export const supermarketsImages = [
   {
-    src: supermarketsCarrefourVeganFridgeImage,
+    src: `${imagePath}/supermarkets/carrefour-vegan-fridge.jpeg`,
     alt: 'Carrefour vegan fridge',
     caption: 'Carrefour sells a lot of vegan produce. These are the vegan dairy alternatives (butter, cheese, yogurt).',
   },
   {
-    src: supermarketsMegaImageOutsideImage,
+    src: `${imagePath}/supermarkets/mega-image-outside.jpeg`,
     alt: 'Mega Image on General Gheorghe Magheru from outside',
     caption: "This Mega Image on General Gheorghe Magheru street was the best supermarket I found in Bucharest for vegan food. There are many other Mega Image stores dotted around Bucharest, although I didn't go to enough of them to know if this branch is an outlier, or if they're all this vegan-friendly.",
   },
   {
-    src: supermarketsMegaImageInsideImage,
+    src: `${imagePath}/supermarkets/mega-image-inside.jpeg`,
     alt: 'Inside Mega Image on General Gheorghe Magheru',
     caption: "Inside Mega Image on General Gheorghe Magheru street. It's not a vegan supermarket, it sells all kinds of produce, however it has a focus on 'free from' foods (vegan, gluten-free, wheat-free etc).",
   },
   {
-    src: supermarketsHummusPastaImage,
+    src: `${imagePath}/supermarkets/hummus-pasta.jpeg`,
     alt: 'Hummus pasta',
     caption: 'Hummus pasta - Fry an onion, cook some wholewheat pasta, mix them together with a pot of hummus and half a cup of the pasta cooking water, and you too can be flabby and out of shape like me. All ingredients available at Carrefour.',
   },
   {
-    src: supermarketsFalafelWrapImage,
+    src: `${imagePath}/supermarkets/falafel-wrap.jpeg`,
     alt: 'Falafel wrap',
     caption: 'Falafel wrap - Cook the falafel according to the package instructions, spread some hummus on those wrap things that they sell in Carrefour, add whichever veg is on special offer, roll it all up, bon appetit.',
   },
@@ -242,18 +202,18 @@ export const supermarketsImages = [
 
 export const runningImages = [
   {
-    src: runningIzvorParkStravaImage,
+    src: `${imagePath}/running/izvor-park-strava.jpeg`,
     alt: 'Izvor Park Strava map',
     caption: "Izvor Park is about 1.25km, so it's four laps to do a 5k.",
     url: 'https://www.strava.com/activities/9312921791',
   },
   {
-    src: runningIzvorParkImage,
+    src: `${imagePath}/running/izvor-park.jpeg`,
     alt: 'Palace of Parliament from Izvor Park',
     caption: "Izvor Park is right in front of the Palace of Parliament, so you get a nice view while you run. Although if you have the energy to look at it then you're not running fast enough.",
   },
   {
-    src: runningtineretuluiParkImage,
+    src: `${imagePath}/running/tineretului-park.jpeg`,
     alt: 'Tineretului Park',
     caption: "Although I didn't run here myself, when I came to Tineretului Park to walk there were a lot of people that were running. It's a lot bigger than Izvor Park, so a good place to come for a longer run.",
   },
@@ -261,12 +221,12 @@ export const runningImages = [
 
 export const socialImages = [
   {
-    src: socialDrunkenLordsImage,
+    src: `${imagePath}/social/drunken-lords.jpeg`,
     alt: 'Drunken Lords',
     caption: "In 'Drunken Lords', which is a bar/nightclub in the old town.",
   },
   {
-    src: socialTribesByNelzImage,
+    src: `${imagePath}/social/tribes-by-nelz.jpeg`,
     alt: 'Tribes by Nelz',
     caption: "This photo is of an 'Expats in Romania' Meetup at 'Tribes by Nelz' African restaurant. Always good to try some local cuisine.",
   },
@@ -344,6 +304,8 @@ Still, some places are better than others. Below were my regular spots to find v
 
 ### Level Up
 
+<MapLink name='Strada Sfânta Vineri 10' url='https://maps.app.goo.gl/cBRwMsvA9qnLtvYw5' />
+
 Level Up is one of the four fully-vegan restaurants in Bucharest, and it was my favourite place to get food while I was here.
 
 It serves vegan takes of a mix of foreign and local foods, with several burgers and pizzas dominating the menu. It's definitely not a place to come to be healthy, but that's just extra motivation to go for a run tomorrow.
@@ -352,9 +314,9 @@ From the outside it looks tiny, but that's because most of the seating is downst
 
 <ImageGallery images={levelUpImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/level-up-bucharest-163488'>Visit Level Up on Happy Cow</ExternalLink>
-
 ### Sublimmme
+
+<MapLink name='Splaiul Independenței' url='https://maps.app.goo.gl/cvE1tSVHAbAbSXtB7' />
 
 Sublimme is another of Bucharest's fully-vegan restaurants, but apart from selling a load of cakes, is much more health-focussed than Level Up.
 
@@ -363,8 +325,6 @@ On weekdays they have a menu of the day, which for 42 lei consists of a soup and
 The restaurant itself is pretty comfortable. It has three sofas (although one was often taken by a staff member's laptop), which is probably the main thing I look for in a restaurant. If the sofas are taken, the remaining plastic chairs are less appealing, but thankfully I never had to put myself through that. Definitely another one to visit if you have the time in Bucharest.
 
 <ImageGallery images={sublimmeImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/sublimmme-bucharest-136606'>Visit Sublimme on Happy Cow</ExternalLink>
 
 ### Supermarkets
 
@@ -376,11 +336,9 @@ On the ground floor, which is more for fresh produce, they have one refrigerator
 
 This is on top of the usual vegan things that you'll find in any supermarket around the world (rice, pasta etc). From the ingredients I could find in Carrefour, I made things like hummus pasta, tofu stir-fry with black rice and falafel wraps.
 
-If you can't find what you need in Carrefour, thanks to Happy Cow I found that the Mega Image on General Gheorghe Magheru street is even better-suited for vegans, and is an entire supermarket focussed on free-from type foods. Sadly it was a bit of way from my room so I didn't come here often, but it was the best place I came across in Bucharest to buy vegan ingredients to cook with. Worth a visit if you can't find what you need in Carrefour.
+If you can't find what you need in Carrefour, I found that the <ExternalLink url='https://maps.app.goo.gl/DdN1Qi3P3RWMLvSF7'>Mega Image on General Gheorghe Magheru street</ExternalLink> is even better-suited for vegans, and is an entire supermarket focussed on free-from type foods. Sadly it was a bit of way from my room so I didn't come here often, but it was the best place I came across in Bucharest to buy vegan ingredients to cook with. Worth a visit if you can't find what you need in Carrefour.
 
 <ImageGallery images={supermarketsImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/mega-image-bucharest-142395'>Visit Mega Image on Happy Cow</ExternalLink>
 
 ## How money works in Bucharest
 

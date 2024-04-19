@@ -4,28 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import dewyHouseBedImage from '#/chiang-mai-for-digital-nomads/dewy-house/bed.jpeg'
-import dewyHouseDeskAndKitchenImage from '#/chiang-mai-for-digital-nomads/dewy-house/desk-and-kitchen.jpeg'
-import dewyHouseBathroomImage from '#/chiang-mai-for-digital-nomads/dewy-house/bathroom.jpeg'
-
-import reformKafeBerryLoveSmoothieBowlImage from '#/chiang-mai-for-digital-nomads/reform-kafe/berry-love-smoothie-bowl.jpeg'
-import reformKafeMushroomCheeseBurgerImage from '#/chiang-mai-for-digital-nomads/reform-kafe/mushroom-cheese-burger.jpeg'
-import reformKafePancakesImage from '#/chiang-mai-for-digital-nomads/reform-kafe/pancakes.jpeg'
-import reformKafeBananaSmoothieImage from '#/chiang-mai-for-digital-nomads/reform-kafe/banana-smoothie.jpeg'
-import reformKafeTablesImage from '#/chiang-mai-for-digital-nomads/reform-kafe/tables.jpeg'
-import reformKafeFrenchBreadSandwichImage from '#/chiang-mai-for-digital-nomads/reform-kafe/french-bread-sandwich.jpeg'
-
-import kinphakCafeVeganRedPorkWithRiceImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/vegan-red-pork-with-rice.jpeg'
-import kinphakCafeKhowSoiImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/khow-soi.jpeg'
-import kinphakCafeFriedRiceWithVegetablesImage from '#/chiang-mai-for-digital-nomads/kinphak-cafe/fried-rice-with-vegetables.jpeg'
-
-import salsaKitchenVeganCarnitasImage from '#/chiang-mai-for-digital-nomads/salsa-kitchen/vegan-carnitas.jpeg'
-
-import runningStravaImage from '#/chiang-mai-for-digital-nomads/running/strava.jpeg'
-import runningLakeImage from '#/chiang-mai-for-digital-nomads/running/lake.jpeg'
-
-import yogaInTheParkGroupPhotoImage from '#/chiang-mai-for-digital-nomads/yoga-in-the-park/group-photo.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-02-03T15:13:00+07:00',
@@ -55,19 +33,21 @@ export const dewyHouseDetails = {
   },
 }
 
+export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
+
 export const dewyHouseImages = [
   {
-    src: dewyHouseBedImage,
+    src: `${imagePath}/dewy-house/bed.jpeg`,
     alt: 'DewyHouse bed',
     caption: "The bed is comfortable and there's good space in front of it to do yoga.",
   },
   {
-    src: dewyHouseDeskAndKitchenImage,
+    src: `${imagePath}/dewy-house/desk-and-kitchen.jpeg`,
     alt: 'DewyHouse room',
     caption: "There's a decent desk to work at, and although the kitchen lacks any practical value, it's at least nice to have the space.",
   },
   {
-    src: dewyHouseBathroomImage,
+    src: `${imagePath}/dewy-house/bathroom.jpeg`,
     alt: 'DewyHouse bathroom',
     caption: "There aren't any taps to fill it up with, but it's always nice to have a bathtub I guess.",
   }
@@ -75,32 +55,32 @@ export const dewyHouseImages = [
 
 export const reformKafeImages = [
   {
-    src: reformKafeBerryLoveSmoothieBowlImage,
+    src: `${imagePath}/reform-kafe/berry-love-smoothie-bowl.jpeg`,
     alt: 'Berry Love smoothie bowl at Reform Kafe',
     caption: 'There are plenty of healthy options on the menu. This "Berry Love" smoothie bowl costs 170 baht.',
   },
   {
-    src: reformKafeMushroomCheeseBurgerImage,
+    src: `${imagePath}/reform-kafe/mushroom-cheese-burger.jpeg`,
     alt: 'Mushroom cheese burger at Reform Kafe',
     caption: 'This mushroom cheese burger is one of several burgers on offer. It costs 240 baht.',
   },
   {
-    src: reformKafePancakesImage,
+    src: `${imagePath}/reform-kafe/pancakes.jpeg`,
     alt: 'Pancakes at Reform Kafe',
     caption: 'Gluten-free pancakes with mango, good at any time of day for 150 baht.',
   },
   {
-    src: reformKafeBananaSmoothieImage,
+    src: `${imagePath}/reform-kafe/banana-smoothie.jpeg`,
     alt: 'Banana smoothie at Reform Kafe',
     caption: 'A banana smoothie for 95 baht.',
   },
   {
-    src: reformKafeTablesImage,
+    src: `${imagePath}/reform-kafe/tables.jpeg`,
     alt: 'Reform Kafe restaurant',
     caption: 'Some of the tables are right next to this water feature, which makes them an incredibly relaxing place to sit.',
   },
   {
-    src: reformKafeFrenchBreadSandwichImage,
+    src: `${imagePath}/reform-kafe/french-bread-sandwich.jpeg`,
     alt: 'French bread sandwich at Reform Kafe',
     caption: 'French bread sandwich for 165 baht.',
   },
@@ -108,17 +88,17 @@ export const reformKafeImages = [
 
 export const kinphakCafeImages = [
   {
-    src: kinphakCafeVeganRedPorkWithRiceImage,
+    src: `${imagePath}/kinphak-cafe/vegan-red-pork-with-rice.jpeg`,
     alt: 'Vegan red pork with rice at Kinphak Cafe',
     caption: 'Vegan red pork with rice for 60 baht.',
   },
   {
-    src: kinphakCafeKhowSoiImage,
+    src: `${imagePath}/kinphak-cafe/khow-soi.jpeg`,
     alt: 'Khow Soi at Kinphak Cafe',
     caption: 'Khow soi is one of the first things I think of when I think of Northern Thai food. This vegan khow soi costs 50 baht.',
   },
   {
-    src: kinphakCafeFriedRiceWithVegetablesImage,
+    src: `${imagePath}/kinphak-cafe/fried-rice-with-vegetables.jpeg`,
     alt: 'Fried brown rice with 5 colour vegetables at Kinphak Cafe',
     caption: 'Fried brown rice with 5 colour vegetables costs 50 baht.',
   }
@@ -126,7 +106,7 @@ export const kinphakCafeImages = [
 
 export const salsaKitchenImages = [
   {
-    src: salsaKitchenVeganCarnitasImage,
+    src: `${imagePath}/salsa-kitchen/vegan-carnitas.jpeg`,
     alt: 'Vegan carnitas at Salsa Kitchen',
     caption: 'These vegan carnitas and guacamole soft tacos were so good that I neglected to try most of the other vegan options, opting to have these every time. They cost 249 baht.',
   }
@@ -134,13 +114,13 @@ export const salsaKitchenImages = [
 
 export const runnningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Strava map',
     caption: 'My first run in Chiang Mai',
     url: 'https://www.strava.com/activities/8069804856',
   },
   {
-    src: runningLakeImage,
+    src: `${imagePath}/running/lake.jpeg`,
     alt: 'Chiang Mai University lake',
     caption: "The lake at Chiang Mai University is a beautiful place to come regardless of if you're running here or not.",
   }
@@ -148,7 +128,7 @@ export const runnningImages = [
 
 export const yogaInTheParkImages = [
   {
-    src: yogaInTheParkGroupPhotoImage,
+    src: `${imagePath}/yoga-in-the-park/group-photo.jpeg`,
     alt: 'Yoga in the Park',
     caption: 'Yoga in the Park',
   }
@@ -216,21 +196,23 @@ This is where Chiang Mai shines. It has the highest concentration and variety of
 
 ### Reform Kafe
 
+<MapLink name='1/4 Sripoom Rd' url='https://maps.app.goo.gl/FAzyN6Mz9AJxaNaDA' />
+
 Right at the top of my list is Reform Kafe. This is my favourite restaurant in Chiang Mai.
 
 It's part of the Green Tiger House hotel, which itself is a vegan hotel. I don't know what that means, but I do know it commits to being eco-friendly and sustainable. Had it been within my price range, I'd have loved to have stayed here.
 
 Reform Kafe takes up a large space on the ground floor. It's open air, and reminds me of a Japanese Garden. There's a large water feature that gives you the therapeutic sound of dripping water in the background. Given the rest of the layout, which includes a large tree in the middle of the garden and a pretty chilled cat, I would always leave here feeling relaxed, no matter how I felt when I arrived.
 
-It offers a similar menu to its sister restaurant, <ExternalLink url='https://www.happycow.net/reviews/goodsouls-kitchen-chiang-mai-107183'>Goodsouls</ExternalLink>, which I recommended in itself. However I prefer Reform Kafe. Goodsouls is inside and air conditioned, and could occasionally be a little frantic, where as Reform Kafe is outdoors, natural and relaxed. And the food is amazing.
+It offers a similar menu to its sister restaurant, <ExternalLink url='https://maps.app.goo.gl/xKTTVRBXZfokDQZj9'>Goodsouls</ExternalLink>, which I recommended in itself. However I prefer Reform Kafe. Goodsouls is inside and air conditioned, and could occasionally be a little frantic, where as Reform Kafe is outdoors, natural and relaxed. And the food is amazing.
 
 The menu has plenty of variety, from sandwiches and pancakes, to smoothie bowls and burgers, so you can always find what you're in the mood for, and the quality is always excellent. It really is the complete package.
 
 <ImageGallery images={reformKafeImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/reform-kafe-chiang-mai-84403'>Visit Reform Kafe on Happy Cow</ExternalLink>
-
 ### Kinphak Cafe
+
+<MapLink name='50/5 Hassadisewi Rd' url='https://maps.app.goo.gl/dFS6tWw3yvmEHgX86' />
 
 I was very fortunate that Kinphak Cafe was only a 5-minute walk from where I was staying. It's the best "local" restaurant that I found in Chiang Mai.
 
@@ -242,9 +224,9 @@ It's 100% vegan, and the menu is pretty huge, so it's the kind of place that you
 
 <ImageGallery images={kinphakCafeImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/cmu-vegan-kinphak-cafe-chiang-mai-179233'>Visit Kinphak Cafe on Happy Cow</ExternalLink>
-
 ### Salsa Kitchen
+
+<MapLink name='26/4 Huay Kaew Rd' url='https://maps.app.goo.gl/pdUQTmWxQzq1M3c77' />
 
 There are so many vegan restaurants in Chiang Mai that you have absolutely no need to go anywhere that serves meat. However, if you are going to, make it this place.
 
@@ -253,8 +235,6 @@ I tend to stick to fully-vegan restaurants when they're available, but I came he
 It's one page long, and includes quesadillas, nachos, a chimichanga (whatever that is), two kinds of burritos, and two kinds of tacos. Having been to Mexico, it's perhaps concerning that the best Mexican food I've ever eaten is in Chiang Mai, but it's just really, really good.
 
 <ImageGallery images={salsaKitchenImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/salsa-kitchen-chiang-mai-99467'>Visit Salsa Kitchen on Happy Cow</ExternalLink>
 
 ## Where to run in Chiang Mai
 

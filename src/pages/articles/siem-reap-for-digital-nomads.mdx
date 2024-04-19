@@ -4,44 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityWheelchairFriendlyImage from '#/siem-reap-for-digital-nomads/city/wheelchair-friendly.jpeg'
-
-import chhaysPlaceRoomImage from '#/siem-reap-for-digital-nomads/chhays-place/room.jpeg'
-import chhaysPlaceCookerImage from '#/siem-reap-for-digital-nomads/chhays-place/cooker.jpeg'
-import chhaysPlaceWaterImage from '#/siem-reap-for-digital-nomads/chhays-place/water.jpeg'
-import chhaysPlaceToiletPaperImage from '#/siem-reap-for-digital-nomads/chhays-place/toilet-paper.jpeg'
-import chhaysPlaceRoadImage from '#/siem-reap-for-digital-nomads/chhays-place/road.jpeg'
-
-import heybongUnmeatBurgerImage from '#/siem-reap-for-digital-nomads/heybong/unmeat-burger.jpeg'
-import heyBongGreenMachineSmoothieImage from '#/siem-reap-for-digital-nomads/heybong/green-machine-smoothie.jpeg'
-import heybongBillyBigFaceImage from '#/siem-reap-for-digital-nomads/heybong/billy-big-face.jpeg'
-import heybongGreenBowlImage from '#/siem-reap-for-digital-nomads/heybong/green-bowl.jpeg'
-
-import newLeafEateryVeganSausageRollsImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/vegan-sausage-rolls.jpeg'
-import newLeafEaterySpicedBeanBurgerImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/spiced-bean-burger.jpeg'
-import newLeafEateryVeganMuffinImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/vegan-muffin.jpeg'
-import newLeafEateryChipsAndVeganGravyImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/chips-and-vegan-gravy.jpeg'
-import newLeafEateryNewLeafGreensSmoothieImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/new-leaf-greens-smoothie.jpeg'
-import newLeafEateryVeganFryUpImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/vegan-fry-up.jpeg'
-import newLeafEateryBeyondHealthyBurgerImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/beyond-healthy-burger.jpeg'
-import newLeafEateryCoconutSmoothieImage from '#/siem-reap-for-digital-nomads/new-leaf-eatery/coconut-smoothie.jpeg'
-
-import littleRedFoxFunguyAndTempTressPlateImage from '#/siem-reap-for-digital-nomads/little-red-fox/funguy-and-temp-tress-plate.jpeg'
-import littleRedFoxSmashedAvocadoImage from '#/siem-reap-for-digital-nomads/little-red-fox/smashed-avocado.jpeg'
-import littleRedFoxVeganMuffinImage from '#/siem-reap-for-digital-nomads/little-red-fox/vegan-muffin.jpeg'
-import littleRedFoxDragonfruitSmoothieImage from '#/siem-reap-for-digital-nomads/little-red-fox/dragonfruit-smoothie.jpeg'
-
-import angkorMarketStorefrontImage from '#/siem-reap-for-digital-nomads/angkor-market/storefront.jpeg'
-import angkorMarketVeganCheeseImage from '#/siem-reap-for-digital-nomads/angkor-market/vegan-cheese.jpeg'
-import angkorMarketVeganMayoImage from '#/siem-reap-for-digital-nomads/angkor-market/vegan-mayo.jpeg'
-
-import runningRiverStravaImage from '#/siem-reap-for-digital-nomads/running/river-strava.jpeg'
-import runningLoopStravaImage from '#/siem-reap-for-digital-nomads/running/loop-strava.jpeg'
-import runningEastStravaImage from '#/siem-reap-for-digital-nomads/running/east-strava.jpeg'
-
-import duckbarAndMinimartKillerPool1Image from '#/siem-reap-for-digital-nomads/duckbar-and-minimart/killer-pool-1.jpeg'
-import duckbarAndMinimartKillerPool2Image from '#/siem-reap-for-digital-nomads/duckbar-and-minimart/killer-pool-2.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-03-18T16:45:00+07:00',
@@ -70,9 +32,11 @@ export const chhaysPlaceDetails = {
   },
 }
 
+export const imagePath = '/images/articles/siem-reap-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityWheelchairFriendlyImage,
+    src: `${imagePath}/city/wheelchair-friendly.jpeg`,
     alt: 'Wheelchair friendly street with bicycle lane in Siem Reap',
     caption: 'Siem Reap has an extensive network of wheelchair friendly pavements and cycle lanes.',
   },
@@ -80,27 +44,27 @@ export const cityImages = [
 
 export const chhaysPlaceImages = [
   {
-    src: chhaysPlaceRoomImage,
+    src: `${imagePath}/chhays-place/room.jpeg`,
     alt: "The room at Chhay's place",
     caption: "I guess that technically it's a studio, but the room is absolutely huge.",
   },
   {
-    src: chhaysPlaceCookerImage,
+    src: `${imagePath}/chhays-place/cooker.jpeg`,
     alt: "Cooker at Chhay's place",
     caption: "When I first saw that these were the cooking facilities I wasn't too impressed, but they worked flawlessly. I didn't finish one canister of gas during my stay, and the fact I could put the cooker in the cupboard when I wasn't using it was actually incredibly beneficial in giving me more surface space.",
   },
   {
-    src: chhaysPlaceWaterImage,
+    src: `${imagePath}/chhays-place/water.jpeg`,
     alt: "Free filtered water at Chhay's place",
     caption: 'They offer unlimited free filtered water, available downstairs to pick-up as you need. Compared to other places where bottled water is the only safe option, this is not only great for the environment, but it saves a lot of money and hassle in having to buy water.'
   },
   {
-    src: chhaysPlaceToiletPaperImage,
+    src: `${imagePath}/chhays-place/toilet-paper.jpeg`,
     alt: "Toilet paper dispenser at Chhay's place",
     caption: 'For that authentic public toilet experience at home. If I had to make one criticism of this place, this is it.',
   },
   {
-    src: chhaysPlaceRoadImage,
+    src: `${imagePath}/chhays-place/road.jpeg`,
     alt: "The road to Chhay's place",
     caption: 'It can be quite a hard place to find. You turn down this road between the school on your right, and the partially constructed white building on your left, walk to the end of the road (about 200 metres), turn right and walk about 10 metres more, and the Airbnb is on your left.',
   },
@@ -108,22 +72,22 @@ export const chhaysPlaceImages = [
 
 export const heybongImages = [
   {
-    src: heybongUnmeatBurgerImage,
+    src: `${imagePath}/heybong/unmeat-burger.jpeg`,
     alt: 'Unmeat burger at Heybong - The Healthy Secrets',
     caption: "The unmeat burger will cost you $6.50. Don't eat the flower.",
   },
   {
-    src: heyBongGreenMachineSmoothieImage,
+    src: `${imagePath}/heybong/green-machine-smoothie.jpeg`,
     alt: 'Green machine smoothie at Heybong - The Healthy Secrets',
     caption: 'The green machine smoothie is made from spinach, avocado, banana, pineapple, ginger, chia seed and coconut water and will cost you $3.50. I had it when I was hungover. I think it helped.',
   },
   {
-    src: heybongBillyBigFaceImage,
+    src: `${imagePath}/heybong/billy-big-face.jpeg`,
     alt: 'Big face at Heybong - The Healthy Secrets',
     caption: "You ever feel you're being watched?",
   },
   {
-    src: heybongGreenBowlImage,
+    src: `${imagePath}/heybong/green-bowl.jpeg`,
     alt: 'Green bowl at Heybong - The Healthy Secrets',
     caption: 'The green bowl is made from spinach, ginger, banana, pineapple, oats, granola, coconut flakes, goji berries, chia seeds and coconut water and costs $4.50. I was also hungover when I had this.'
   }
@@ -131,42 +95,42 @@ export const heybongImages = [
 
 export const newLeafEateryImages = [
   {
-    src: newLeafEateryVeganSausageRollsImage,
+    src: `${imagePath}/new-leaf-eatery/vegan-sausage-rolls.jpeg`,
     alt: 'Vegan sausage rolls with chips, beans and curry sauce at New Leaf Eatery',
     caption: "I had these vegan sausage rolls with chips, beans and curry sauce on a couple of occasions. It's perfect British junk food, and costs $5.75.",
   },
   {
-    src: newLeafEaterySpicedBeanBurgerImage,
+    src: `${imagePath}/new-leaf-eatery/spiced-bean-burger.jpeg`,
     alt: 'Spiced bean burger at New Leaf Eatery',
     caption: 'The spiced bean burger and chips costs $5.75.',
   },
   {
-    src: newLeafEateryVeganMuffinImage,
+    src: `${imagePath}/new-leaf-eatery/vegan-muffin.jpeg`,
     alt: 'Omn! Vegan muffin at New Leaf Eatery',
     caption: "The best vegan muffin I've ever had. It looks small, but it feels pretty dense when you're eating it. Including a slice of vegan cheese it'll cost you $4.50, and is worth every penny.",
   },
   {
-    src: newLeafEateryChipsAndVeganGravyImage,
+    src: `${imagePath}/new-leaf-eatery/chips-and-vegan-gravy.jpeg`,
     alt: 'Chips and vegan gravy at New Leaf Eatery',
     caption: 'Chips and vegan gravy for $3. I wonder why I got fat in Siem Reap.',
   },
   {
-    src: newLeafEateryNewLeafGreensSmoothieImage,
+    src: `${imagePath}/new-leaf-eatery/new-leaf-greens-smoothie.jpeg`,
     alt: 'New Leaf greens smoothie at New Leaf Eatery',
     caption: "See, I can be healthy. The 'New Leaf Greens' smoothie is made from spinach, parsley, cucumber and green apple. Despite that it tastes alright. It costs $3.",
   },
   {
-    src: newLeafEateryVeganFryUpImage,
+    src: `${imagePath}/new-leaf-eatery/vegan-fry-up.jpeg`,
     alt: 'Vegan fry-up at New Leaf Eatery',
     caption: "I hate when plates aren't round. What am I supposed to do with this? That aside, this vegan fry-up was pretty unique and very good. It costs $6.",
   },
   {
-    src: newLeafEateryBeyondHealthyBurgerImage,
+    src: `${imagePath}/new-leaf-eatery/beyond-healthy-burger.jpeg`,
     alt: 'Beyond healthy burger at New Leaf Eatery',
     caption: "I'm not entirely sure which part of this 'Beyond' healthy burger is healthy, but it has healthy in the title which is good enough for me. The burger is $6.75, or with chips is $8.",
   },
   {
-    src: newLeafEateryCoconutSmoothieImage,
+    src: `${imagePath}/new-leaf-eatery/coconut-smoothie.jpeg`,
     alt: 'Coconut smoothie at New Leaf Eatery',
     caption: 'This coconut smoothie costs $3 when made with soy milk.',
   },
@@ -174,22 +138,22 @@ export const newLeafEateryImages = [
 
 export const littleRedFoxImages = [
   {
-    src: littleRedFoxFunguyAndTempTressPlateImage,
+    src: `${imagePath}/little-red-fox/funguy-and-temp-tress-plate.jpeg`,
     alt: 'Funguy and temp-tress plate at The Little Red Fox Espresso',
     caption: "The funguy and temp-tress plate. I'm not too sure about the name, but this was genuinely one of the best vegan dishes I've ever had. I don't know how they cooked the tempeh, but I know I liked it. Costs $4.50.",
   },
   {
-    src: littleRedFoxSmashedAvocadoImage,
+    src: `${imagePath}/little-red-fox/smashed-avocado.jpeg`,
     alt: 'Smashed avocado on sourdough with scrambled tofu at The Little Red Fox Espresso',
     caption: 'Classic hipster food. Smashed avocado on sourdough with scrambled tofu will cost you $4.50.',
   },
   {
-    src: littleRedFoxVeganMuffinImage,
+    src: `${imagePath}/little-red-fox/vegan-muffin.jpeg`,
     alt: 'Vegan muffin at The Little Red Fox Espresso',
     caption: 'Different vegan and gluten-free muffins are available everyday, and cost $1.50.',
   },
   {
-    src: littleRedFoxDragonfruitSmoothieImage,
+    src: `${imagePath}/little-red-fox/dragonfruit-smoothie.jpeg`,
     alt: 'Dragonfruit smoothie at The Little Red Fox Espresso',
     caption: 'Dragonfruit smoothie for $2.50.',
   },
@@ -197,17 +161,17 @@ export const littleRedFoxImages = [
 
 export const angkorMarketImages = [
   {
-    src: angkorMarketStorefrontImage,
+    src: `${imagePath}/angkor-market/storefront.jpeg`,
     alt: 'Angkor Market Siem Reap storefront',
     caption: 'Angkor Market from the outside.',
   },
   {
-    src: angkorMarketVeganCheeseImage,
+    src: `${imagePath}/angkor-market/vegan-cheese.jpeg`,
     alt: 'Angkor Market vegan cheese',
     caption: "This is the only supermarket in South-East Asia I've found that sells vegan cheese, albeit rather expensively. The Cheddar flavour block is $6.90, and the slices are $6.50.",
   },
   {
-    src: angkorMarketVeganMayoImage,
+    src: `${imagePath}/angkor-market/vegan-mayo.jpeg`,
     alt: 'Angkor Market vegan mayo',
     caption: 'They also have vegan mayo and vegan aioli, whatever that is, priced $5.70.'
   }
@@ -215,19 +179,19 @@ export const angkorMarketImages = [
 
 export const runningImages = [
   {
-    src: runningRiverStravaImage,
+    src: `${imagePath}/running/river-strava.jpeg`,
     alt: 'Riverside run Stava map',
     caption: 'My first run in Siem Reap, running along the riverside.',
     url: 'https://www.strava.com/activities/8563218606',
   },
   {
-    src: runningLoopStravaImage,
+    src: `${imagePath}/running/loop-strava.jpeg`,
     alt: 'North Siem Reap running loop Strava map',
     caption: 'My second run took me in a loop around the north of the city.',
     url: 'https://www.strava.com/activities/8602037948',
   },
   {
-    src: runningEastStravaImage,
+    src: `${imagePath}/running/east-strava.jpeg`,
     alt: 'North-east Siem Reap run Stava map',
     caption: 'Running west(ish) in the direction of the airport and back.',
     url: 'https://www.strava.com/activities/8650836151',
@@ -236,12 +200,12 @@ export const runningImages = [
 
 export const duckbarAndMinimartImages = [
   {
-    src: duckbarAndMinimartKillerPool1Image,
+    src: `${imagePath}/duckbar-and-minimart/killer-pool-1.jpeg`,
     alt: 'Duckbar and Minimart killer pool',
     caption: "The inaugural killer pool night at Duckbar and Minimart.",
   },
   {
-    src: duckbarAndMinimartKillerPool2Image,
+    src: `${imagePath}/duckbar-and-minimart/killer-pool-2.jpeg`,
     alt: 'Duckbar and Minimart killer pool',
     caption: "I'm not sure what he's aiming at either.",
   },
@@ -309,7 +273,9 @@ Of these 21 restaurants, I'd gladly recommend 16 of them. However I want to keep
 
 ### HeyBong - The Healthy Secrets
 
-At the time of writing there are two vegan restaurants in Siem Reap according to Happy Cow. I've messaged Happy Cow to try and get one of them reclassified for serving meat, because it serves meat. The only other one is HeyBong, so as Siem Reap's only true vegan restaurant, I couldn't discount it from my list.
+<MapLink name='Smiling Circuit' url='https://maps.app.goo.gl/sDf7gdwZADdQLV5Q7' />
+
+At the time of writing there was precisely one vegan restaurant in Siem Reap. HeyBong is Siem Reap's only vegan restaurant, so I couldn't discount it from my list.
 
 It's a garden restaurant that has a giant face in. That bit's a bit weird. Everything else here makes it a really nice place to come.
 
@@ -317,9 +283,9 @@ The menu's a mix of Asian and Western food, and everything is health-focussed, w
 
 <ImageGallery images={heybongImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/heybong-the-healthy-secrets-siem-reap-275490'>Visit HeyBong - The Healthy Secrets on Happy Cow</ExternalLink>
-
 ### New Leaf Eatery
+
+<MapLink name='Kratie Monk' url='https://maps.app.goo.gl/j4vnM1pFRYQVRWHb6' />
 
 Half of the restaurants in Siem Reap seem to contribute charitably to the local area. I'm not saying that to diminish the value of their work, rather that in other cities, it can be a big reason I go to eat somewhere. Seeing as it's true for almost every restaurant here, it doesn't hold the same value, however New Leaf Eatery is one of those places that tries to be ethical, envioronmentally friendly, and that donates profits to local education.
 
@@ -327,9 +293,9 @@ It became my go-to place in Siem Reap; I loved it. It serves meat, but there are
 
 <ImageGallery images={newLeafEateryImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/new-leaf-eatery-siem-reap-100263'>Visit New Leaf Eatery on Happy Cow</ExternalLink>
-
 ### The Little Red Fox Espresso
+
+<MapLink name='593 Hup Guan Street' url='https://maps.app.goo.gl/9VhYDATDajce8PdP6' />
 
 I would normally want a much bigger selection of vegan options in order to recommend a place. Discounting drinks and baked goods, it only has five vegan choices on the menu. The food here was so good that I just couldn't leave it out.
 
@@ -339,9 +305,9 @@ It's kind of a hipster place, but I'm willing to look past that when the food's 
 
 <ImageGallery images={littleRedFoxImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/the-little-red-fox-espresso-siem-reap-301117'>Visit The Little Red Fox Espresso on Happy Cow</ExternalLink>
-
 ### Angkor Market
+
+<MapLink name='Krong Siem Reap' url='https://goo.gl/maps/YkZN1xW9LWcW93hc7' />
 
 This is one for those in self-catering. It might be slightly strange to include a supermarket in this list, but I found some of the supermarkets in Siem Reap to be pretty dire. As this branch of Angkor Market is a little outside the town centre, it's unlikely to be a place that you're going to come accidentally, and as it has the best selection of vegan self-catering food I found, it might be useful to someone.
 
@@ -350,8 +316,6 @@ It doesn't have the kind of selection of vegan foodstuffs that you'll find in a 
 It's not cheap. I bought wholewheat pasta here, tomato sauce, chickpeas, nuts and seeds. All were noticeably more expensive than they'd be in a supermarket in London. A small block of Violife vegan cheese costs $6.90. After conversion that's more than double the price that Tesco charge in the UK. That's kind of the way it is in this region though. Unless you're buying locally produced food, you pay a premium for it. And seeing as everything else in Siem Reap is so cheap, a few dollars more on some groceries isn't going to break the bank. All supermarkets in Siem Reap have similar prices, and this one has by far the best selection of everywhere I went.
 
 <ImageGallery images={angkorMarketImages} />
-
-<ExternalLink url='https://goo.gl/maps/YkZN1xW9LWcW93hc7'>View Angkor Market on Google Maps</ExternalLink>
 
 ## Where to run in Siem Reap
 

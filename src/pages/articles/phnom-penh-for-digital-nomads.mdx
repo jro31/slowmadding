@@ -4,36 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityStatueOfSihanoukNorodomImage from '#/phnom-penh-for-digital-nomads/city/statue-of-sihanouk-norodom.jpeg'
-import cityIndependenceMonumentImage from '#/phnom-penh-for-digital-nomads/city/independence-monument.jpeg'
-
-import mResidenceRoomImage from '#/phnom-penh-for-digital-nomads/m-residence/room.jpeg'
-import mResidenceYogaMatImage from '#/phnom-penh-for-digital-nomads/m-residence/yoga-mat.jpeg'
-import mResidencePoolImage from '#/phnom-penh-for-digital-nomads/m-residence/pool.jpeg'
-import mResidenceGymImage from '#/phnom-penh-for-digital-nomads/m-residence/gym.jpeg'
-
-import bongBonlaiBeetrootFalafelWrapImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/beetroot-falafel-wrap.jpeg'
-import bongBonlaiPancakesImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/pancakes.jpeg'
-import bongBonlaiFruitSaladImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/fruit-salad.jpeg'
-import bongBonlaiBeetrootCarrotSmoothieImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/beetroot-carrot-smoothie.jpeg'
-import bongBonlaiIncredibleBurgerImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/incredible-burger.jpeg'
-import bongBonlaiScrambledTofuToastImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/scrambled-tofu-toast.jpeg'
-import bongBonlaiCourtyardImage from '#/phnom-penh-for-digital-nomads/bong-bonlai/courtyard.jpeg'
-
-import sacredLotusCafeKhmerRedCurryImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/khmer-red-curry.jpeg'
-import sacredLotusCafeMexicanBurritoMealImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/mexican-burrito-meal.jpeg'
-import sacredLotusCafeFruitImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/fruit.jpeg'
-import sacredLotusCafeDragonFruitAndBananaSmoothieImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/dragon-fruit-and-banana-smoothie.jpeg'
-import sacredLotusCafeMoroccanChickpeaBurgerImage from '#/phnom-penh-for-digital-nomads/sacred-lotus-cafe/moroccan-chickpea-burger.jpeg'
-
-import backyardCafeAbundanceBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/abundance-bowl.jpeg'
-import backyardCafeVeganMozzarellaBaguetteImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/vegan-mozzarella-baguette.jpeg'
-import backyardCafeOutsideImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/outside.jpeg'
-import backyardCafeMediterraneanFalafelBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/mediterranean-falafel-bowl.jpeg'
-import backyardCafeEarthBowlImage from '#/phnom-penh-for-digital-nomads/backyard-cafe/earth-bowl.jpeg'
-
-import runningStravaImage from '#/phnom-penh-for-digital-nomads/running/strava.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-02-17T15:31:00+07:00',
@@ -64,14 +34,16 @@ export const mResidenceDetails = {
   },
 }
 
+export const imagePath = '/images/articles/phnom-penh-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityStatueOfSihanoukNorodomImage,
+    src: `${imagePath}/city/statue-of-sihanouk-norodom.jpeg`,
     alt: 'Statue of Sihanouk Norodom',
     caption: 'The statue of Sihanouk Norodom in Neak Banh Tuek Park.'
   },
   {
-    src: cityIndependenceMonumentImage,
+    src: `${imagePath}/city/independence-monument.jpeg`,
     alt: 'Independence Monument',
     caption: 'Independence Monument lights up the night sky.'
   }
@@ -79,22 +51,22 @@ export const cityImages = [
 
 export const mResidenceImages = [
   {
-    src: mResidenceRoomImage,
+    src: `${imagePath}/m-residence/room.jpeg`,
     alt: 'M Residence studio room',
     caption: 'The studio. At least you can watch TV from in bed.',
   },
   {
-    src: mResidenceYogaMatImage,
+    src: `${imagePath}/m-residence/yoga-mat.jpeg`,
     alt: 'Doing yoga at M Residence',
     caption: "By moving the coffee table into the kitchen, you can just about make enough space to do yoga. As long as you don't need to stretch-out to the side too much.",
   },
   {
-    src: mResidencePoolImage,
+    src: `${imagePath}/m-residence/pool.jpeg`,
     alt: 'The rooftop pool at M Residence',
     caption: "The practicality of the pool is questionable, but it does look nice.",
   },
   {
-    src: mResidenceGymImage,
+    src: `${imagePath}/m-residence/gym.jpeg`,
     alt: 'The gym at M Residence',
     caption: "Although lacking in equipment, it was nice to have a gym in the building.",
   },
@@ -102,37 +74,37 @@ export const mResidenceImages = [
 
 export const bongBonlaiImages = [
   {
-    src: bongBonlaiBeetrootFalafelWrapImage,
+    src: `${imagePath}/bong-bonlai/beetroot-falafel-wrap.jpeg`,
     alt: 'Bong Bonlai beetroot falafel wrap',
     caption: 'Apart from the plate being too small to catch the wrap as it fell apart, this beetroot falafel wrap was delicious and only cost $5.50.'
   },
   {
-    src: bongBonlaiPancakesImage,
+    src: `${imagePath}/bong-bonlai/pancakes.jpeg`,
     alt: 'Bong Bonlai pancakes',
     caption: 'Coconut cream pancakes with banana and passion fruit for $4.90.',
   },
   {
-   src: bongBonlaiFruitSaladImage,
+   src: `${imagePath}/bong-bonlai/fruit-salad.jpeg`,
    alt: 'Bong Bonlai seasonal fruit salad',
    caption: 'I got this seasonal fruit salad every time that I came here. Costing $2.50, it was a good way to ensure I was getting at least some vitamins in my diet.'
   },
   {
-    src: bongBonlaiBeetrootCarrotSmoothieImage,
+    src: `${imagePath}/bong-bonlai/beetroot-carrot-smoothie.jpeg`,
     alt: 'Bong Bonlai beetroot and carrot smoothie',
     caption: "And what goes well with a fruit salad? How about one of Bong Bonlai's many fruit smoothies? This beetroot and carrot smoothie is also $2.50."
   },
   {
-    src: bongBonlaiIncredibleBurgerImage,
+    src: `${imagePath}/bong-bonlai/incredible-burger.jpeg`,
     alt: 'Bong Bonlai incredible burger',
     caption: "Just to make sure you don't get too healthy, the incredible burger is made with a black bean and soy patty, grilled cashew cheese, mushroom \"calamari\", jalapeños, pickles, lettuce, tomato and homemade vegan mayonnaise and costs $6.90."
   },
   {
-    src: bongBonlaiScrambledTofuToastImage,
+    src: `${imagePath}/bong-bonlai/scrambled-tofu-toast.jpeg`,
     alt: 'Bong Bonlai scrambled tofu',
     caption: 'Breakfast is served all day. Scrambled tofu on toast will cost you just $3.50.'
   },
   {
-    src: bongBonlaiCourtyardImage,
+    src: `${imagePath}/bong-bonlai/courtyard.jpeg`,
     alt: 'Bong Bonlai courtyard',
     caption: "When no one's smoking in it, the courtyard is an incredibly relaxing place to sit while you eat."
   }
@@ -140,27 +112,27 @@ export const bongBonlaiImages = [
 
 export const sacredLotusCafeImages = [
   {
-    src: sacredLotusCafeKhmerRedCurryImage,
+    src: `${imagePath}/sacred-lotus-cafe/khmer-red-curry.jpeg`,
     alt: 'Sacred Lotus Cafe Khmer red curry',
     caption: 'A Khmer red curry with white rice and added tofu will cost you $4.50.',
   },
   {
-    src: sacredLotusCafeMexicanBurritoMealImage,
+    src: `${imagePath}/sacred-lotus-cafe/mexican-burrito-meal.jpeg`,
     alt: 'Sacred Lotus Cafe Mexican burrito meal',
     caption: "For some reason South-East Asia does Mexican food better than anywhere else I've ever had it, including Mexico. This Mexican burrito meal costs $8 and includes a drink."
   },
   {
-    src: sacredLotusCafeFruitImage,
+    src: `${imagePath}/sacred-lotus-cafe/fruit.jpeg`,
     alt: 'Sacred Lotus Cafe mixed fruit',
     caption: "I'm always going to like a restaurant where I can get a fruit salad. Here it costs $3."
   },
   {
-    src: sacredLotusCafeDragonFruitAndBananaSmoothieImage,
+    src: `${imagePath}/sacred-lotus-cafe/dragon-fruit-and-banana-smoothie.jpeg`,
     alt: 'Sacred Lotus Cafe dragon fruit and banana smoothie',
     caption: 'A good fruit smoothie never goes amiss either. This dragon fruit and banana smoothie is $2.50.'
   },
   {
-    src: sacredLotusCafeMoroccanChickpeaBurgerImage,
+    src: `${imagePath}/sacred-lotus-cafe/moroccan-chickpea-burger.jpeg`,
     alt: 'Sacred Lotus Cafe Moroccan chickpea burger',
     caption: 'The Moroccan chickpea burger meal (includes a drink) costs $7.'
   }
@@ -168,27 +140,27 @@ export const sacredLotusCafeImages = [
 
 export const backyardCafeImages = [
   {
-    src: backyardCafeAbundanceBowlImage,
+    src: `${imagePath}/backyard-cafe/abundance-bowl.jpeg`,
     alt: 'Backyard Cafe abundance bowl',
     caption: 'The abundance bowl, including red pepper hummus and tempeh, costs $7.50 (plus 10% tax).',
   },
   {
-    src: backyardCafeVeganMozzarellaBaguetteImage,
+    src: `${imagePath}/backyard-cafe/vegan-mozzarella-baguette.jpeg`,
     alt: 'Backyard Cafe vegan mozzarella baguette sandwich',
     caption: 'They have a permanent menu, as well as some (I think) monthly specials. This vegan mozzarella cheese baguette was one of those, and cost $6.50 (plus 10% tax).'
   },
   {
-    src: backyardCafeOutsideImage,
+    src: `${imagePath}/backyard-cafe/outside.jpeg`,
     alt: 'Backyard Cafe outside area',
     caption: "While the restaurant does have a small inside area, it's much more pleasant sitting outside."
   },
   {
-    src: backyardCafeMediterraneanFalafelBowlImage,
+    src: `${imagePath}/backyard-cafe/mediterranean-falafel-bowl.jpeg`,
     alt: 'Backyard Cafe Mediterranean falafel bowl',
     caption: 'The Mediterranean falafel bowl costs $7 (plus 10% tax).'
   },
   {
-    src: backyardCafeEarthBowlImage,
+    src: `${imagePath}/backyard-cafe/earth-bowl.jpeg`,
     alt: 'Backyard Cafe earth bowl',
     caption: 'The earth bowl includes guacamole, spinach and roasted red peppers and costs $7 (plus 10% tax).'
   }
@@ -196,7 +168,7 @@ export const backyardCafeImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Strava map',
     caption: 'Running in Neak Banh Tuek Park',
     url: 'https://www.strava.com/activities/8288282594',
@@ -269,15 +241,11 @@ I wouldn't stay here again.
 
 ## Where to get vegan food in Phnom Penh
 
-At the time of writing, Happy Cow listed neighbouring Thailand as having 411 vegan restaurants, neighbouring Vietnam as having 472 vegan restaurants, but Cambodia as having just nine, only four of which are in Phnom Penh.
-
-You could take that to mean that Phnom Penh isn't a very vegan-friendly city, but once you explore a bit, you realise that you aren't short of places to eat.
-
-Happy Cow is a great starting resource, but I also had a lot of success with food delivery apps in Phnom Penh. I ordered vegan food from foodpanda from multiple restaurants that weren't on Happy Cow, and with the endless barrage of special offers, getting delivery can be significantly cheaper than eating in person.
-
-All that being said, I still prefer to eat in a restaurant. These are my favourite places from my time in Phnom Penh:
+At the time of writing I could only find nine vegan restaurants in Cambodia, only four of which are in Phnom Penh (compared to hundreds in neighbouring countries). You could take that to mean that Phnom Penh isn't a very vegan-friendly city, but once you explore a bit, you realise that you aren't short of places to eat. These are my favourites.
 
 ### Bong Bonlai
+
+<MapLink name='13A, St 830' url='https://maps.app.goo.gl/X6iFvNdH6cQEqQFZ9' />
 
 Bong Bonlai is pretty much my perfect restaurant, with one notable caveat.
 
@@ -295,9 +263,9 @@ It's just such a peculiar decision that they build this perfect restaurant... an
 
 <ImageGallery images={bongBonlaiImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/bong-bonlai-phnom-penh-162161'>Visit Bong Bonlai on Happy Cow</ExternalLink>
-
 ### Sacred Lotus Cafe
+
+<MapLink name='127C E0, St 440' url='https://maps.app.goo.gl/HRH7yW7zeEKYbmPS8' />
 
 Another of Phnom Penh's four vegan restaurants, Sacred Lotus Cafe is located near the Russian Market. That's probably its biggest downside.
 
@@ -307,9 +275,9 @@ It's reasonably-priced, there are several healthy options on the menu, the staff
 
 <ImageGallery images={sacredLotusCafeImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/sacred-lotus-cafe-phnom-penh-179078'>Visit Sacred Lotus Cafe on Happy Cow</ExternalLink>
-
 ### Backyard Cafe - BKK1
+
+<MapLink name='159, St 63' url='https://maps.app.goo.gl/JciYJcW2sFrVTKjL9' />
 
 There are a couple of branches of Backyard Cafe in Phnom Penh. They both have identical menus, although I slightly preferred the one in BKK1, not least because it was a two minute walk from where I was staying, but it also has a larger outdoor area. The one on Street #246 is primarily indoors.
 
@@ -318,8 +286,6 @@ Although it serves meat, it became one of my go-to restaurants in Phnom Penh. Ro
 It's a little more expensive than the other restaurants I've listed here, not least because they don't include the 10% tax in their menu prices, which is always a pet peeve of mine. If you can get over that, then this is a good place to come to make sure that you stay healthy in Phnom Penh.
 
 <ImageGallery images={backyardCafeImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/backyard-cafe-phnom-penh-207774'>Visit Backyard Cafe on Happy Cow</ExternalLink>
 
 ## Where to run in Phnom Penh
 

@@ -6,42 +6,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import citySouthParkPigeonsStatueImage from '#/sofia-for-digital-nomads/city/south-park-pigeons-statue.jpeg'
-import cityNationalAssemblyOfBulgariaImage from '#/sofia-for-digital-nomads/city/national-assembly-of-bulgaria.jpeg'
-import cityFuckThePoliceImage from '#/sofia-for-digital-nomads/city/fuck-the-police.jpeg'
-import citySouthParkTreesImage from '#/sofia-for-digital-nomads/city/south-park-trees.jpeg'
-
-import apartmentBedImage from '#/sofia-for-digital-nomads/apartment/bed.jpeg'
-import apartmentRoomImage from '#/sofia-for-digital-nomads/apartment/room.jpeg'
-import apartmentBathroomImage from '#/sofia-for-digital-nomads/apartment/bathroom.jpeg'
-import apartmentKeypadImage from '#/sofia-for-digital-nomads/apartment/keypad.jpeg'
-import apartmentBuildingImage from '#/sofia-for-digital-nomads/apartment/building.jpeg'
-import apartmentSilverGymEntranceImage from '#/sofia-for-digital-nomads/apartment/silver-gym-entrance.jpeg'
-
-import edgyVeggyGrillzillaBurgerImage from '#/sofia-for-digital-nomads/edgy-veggy/grillzilla-burger.jpeg'
-import edgyVeggyChickPitchBurritoImage from '#/sofia-for-digital-nomads/edgy-veggy/chick-pitch-burrito.jpeg'
-import edgyVeggyGardenClassicBurgerImage from '#/sofia-for-digital-nomads/edgy-veggy/garden-classic-burger.jpeg'
-import edgyVeggySweetPotatoFriesImage from '#/sofia-for-digital-nomads/edgy-veggy/sweet-potato-fries.jpeg'
-import edgyVeggyVeggyDonerImage from '#/sofia-for-digital-nomads/edgy-veggy/veggy-doner.jpeg'
-import edgyVeggyTempehBurritoImage from '#/sofia-for-digital-nomads/edgy-veggy/tempeh-burrito.jpeg'
-import edgyVeggyVeggyBurgerImage from '#/sofia-for-digital-nomads/edgy-veggy/veggy-burger.jpeg'
-
-import neekoVeganJunkTheColdItalianImage from '#/sofia-for-digital-nomads/neeko-vegan-junk-food/the-cold-italian.jpeg'
-import neekoVeganJunkFoodCheeseburgerImage from '#/sofia-for-digital-nomads/neeko-vegan-junk-food/cheeseburger.jpeg'
-import neekoVeganJunkFoodSweetPotatoFriesImage from '#/sofia-for-digital-nomads/neeko-vegan-junk-food/sweet-potato-fries.jpeg'
-import neekoVeganJunkFoodDefinitelyNotAChickenBurgerImage from '#/sofia-for-digital-nomads/neeko-vegan-junk-food/definitely-not-a-chicken-burger.jpeg'
-import neekoVeganJunkTheMagicMushroomMeltImage from '#/sofia-for-digital-nomads/neeko-vegan-junk-food/the-magic-mushroom-melt.jpeg'
-
-import boleroFitburgerBoleroVeganChickenBurgerImage from '#/sofia-for-digital-nomads/bolero-fitburger/bolero-vegan-chicken-burger.jpeg'
-import boleroFitburgerBoleroChorizoVeganBurgerImage from '#/sofia-for-digital-nomads/bolero-fitburger/bolero-chorizo-vegan-burger.jpeg'
-import boleroFitburgerBoleroVeganCheeseBurgerImage from '#/sofia-for-digital-nomads/bolero-fitburger/bolero-vegan-cheese-burger.jpeg'
-
-import runningNorthSouthParkStravaImage from '#/sofia-for-digital-nomads/running/north-south-park-strava.jpeg'
-import runningSouthParksLoopStravaImage from '#/sofia-for-digital-nomads/running/south-parks-loop-strava.jpeg'
-import runningParksLoopStravaImage from '#/sofia-for-digital-nomads/running/parks-loop-strava.jpeg'
-import runningNorthSouthParkImage from '#/sofia-for-digital-nomads/running/north-south-park.jpeg'
-import runningBorisovaGradinaParkImage from '#/sofia-for-digital-nomads/running/borisova-gradina-park.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-08-18T15:50:00+03:00',
@@ -71,24 +35,26 @@ export const apartmentDetails = {
   },
 }
 
+export const imagePath = '/images/articles/sofia-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: citySouthParkPigeonsStatueImage,
+    src: `${imagePath}/city/south-park-pigeons-statue.jpeg`,
     alt: 'South Park pigeons status',
     caption: 'Sofia is a city surrounded by mountains which create a beautiful backdrop. This pigeon statue is in South Park.',
   },
   {
-    src: cityNationalAssemblyOfBulgariaImage,
+    src: `${imagePath}/city/national-assembly-of-bulgaria.jpeg`,
     alt: 'National Assembly of Bulgaria',
     caption: 'The National Assembly of Bulgaria. No idea what happens there, I just thought it was a nice photo.',
   },
   {
-    src: cityFuckThePoliceImage,
+    src: `${imagePath}/city/fuck-the-police.jpeg`,
     alt: 'Fuck the police',
     caption: "Everyone seems very angry with the police nowadays. I'm sure they used to be more popular than this.",
   },
   {
-    src: citySouthParkTreesImage,
+    src: `${imagePath}/city/south-park-trees.jpeg`,
     alt: 'South Park trees',
     caption: 'Sofia is blessed with some nice parks for when you want to get away from things. These are some of the trees in South Park.',
   },
@@ -96,32 +62,32 @@ export const cityImages = [
 
 export const apartmentImages = [
   {
-    src: apartmentBedImage,
+    src: `${imagePath}/apartment/bed.jpeg`,
     alt: 'Apartment bed',
     caption: "I bet you've never stayed in a studio with a chandelier before.",
   },
   {
-    src: apartmentRoomImage,
+    src: `${imagePath}/apartment/room.jpeg`,
     alt: 'Apartment room',
     caption: 'For a studio, the room is a decent size. It has a TV, and right above it an air-con unit. Nothing can go wrong with that.',
   },
   {
-    src: apartmentBathroomImage,
+    src: `${imagePath}/apartment/bathroom.jpeg`,
     alt: 'Apartment bathroom',
     caption: "The problem with fancy bathrooms is the toilet is attached to the wall rather than on the floor. I spend the whole time I'm sitting there worried I'm too fat and it'll fall off.",
   },
   {
-    src: apartmentKeypadImage,
+    src: `${imagePath}/apartment/keypad.jpeg`,
     alt: 'Apartment keypad',
     caption: "Have you ever played a video game where you need to get through a door but you don't know the code, so you wait for someone to use the keypad then look at it with your thermal goggles and the heat residue tells you which buttons they pressed? Well good news, you can leave the thermal goggles at home.",
   },
   {
-    src: apartmentBuildingImage,
+    src: `${imagePath}/apartment/building.jpeg`,
     alt: 'Apartment building',
     caption: "It doesn't look all that from the outside, especially with that graffiti, but it's perfectly pleasant once you're inside. This is how most buildings look in this part of the world.",
   },
   {
-    src: apartmentSilverGymEntranceImage,
+    src: `${imagePath}/apartment/silver-gym-entrance.jpeg`,
     alt: 'Silver Gym entrance',
     caption: 'This is the entrance to my gym. No, not that one. The one on the right without any signs and underneath a big bush. I wonder why I often had the gym to myself.',
   },
@@ -129,37 +95,37 @@ export const apartmentImages = [
 
 export const edgyVeggyImages = [
   {
-    src: edgyVeggyGrillzillaBurgerImage,
+    src: `${imagePath}/edgy-veggy/grillzilla-burger.jpeg`,
     alt: 'Edgy Veggy grillzilla burger',
     caption: "The grillzilla burger was the first meal I ate in Sofia and is an absolutely beautiful nightmare. It'll cost you 16 lev.",
   },
   {
-    src: edgyVeggyChickPitchBurritoImage,
+    src: `${imagePath}/edgy-veggy/chick-pitch-burrito.jpeg`,
     alt: 'Edgy Veggy chick pitch burrito',
     caption: "There are three burritos on the menu, and I found getting one of them with a protein shake to be a great post-gym meal. This is the 'chick pitch burrito'. I don't know what that means, but it includes chickpeas, avocado and spinach and costs 13 lev. A protein shake (not pictured) costs 7.50 lev.",
   },
   {
-    src: edgyVeggyGardenClassicBurgerImage,
+    src: `${imagePath}/edgy-veggy/garden-classic-burger.jpeg`,
     alt: 'Edgy Veggy garden classic burger',
     caption: 'A little less junky than the grillzilla burger, is the garden classic burger for 13.50 lev.',
   },
   {
-    src: edgyVeggySweetPotatoFriesImage,
+    src: `${imagePath}/edgy-veggy/sweet-potato-fries.jpeg`,
     alt: 'Edgy Veggy sweet potato fries',
     caption: 'They offer a couple of different side options. These sweet potato fries are 7 lev.',
   },
   {
-    src: edgyVeggyVeggyDonerImage,
+    src: `${imagePath}/edgy-veggy/veggy-doner.jpeg`,
     alt: 'Edgy Veggy veggy doner',
     caption: "They had this veggy doner on the menu as a summer special. I hope they keep it because I'm definitely going to want another one when I next come to Sofia. It costs 16 lev.",
   },
   {
-    src: edgyVeggyTempehBurritoImage,
+    src: `${imagePath}/edgy-veggy/tempeh-burrito.jpeg`,
     alt: 'Edgy Veggy tempeh burrito',
     caption: 'Another of the burritos is this tempeh burrito for 13 lev.',
   },
   {
-    src: edgyVeggyVeggyBurgerImage,
+    src: `${imagePath}/edgy-veggy/veggy-burger.jpeg`,
     alt: 'Edgy Veggy veggy burger',
     caption: "My least favourite of the burgers I had was this 'veggy burger' for 12.50 lev.",
   },
@@ -167,27 +133,27 @@ export const edgyVeggyImages = [
 
 export const neekoVeganJunkFoodImages = [
   {
-    src: neekoVeganJunkTheColdItalianImage,
+    src: `${imagePath}/neeko-vegan-junk-food/the-cold-italian.jpeg`,
     alt: 'Neéko Vegan Junk Food the cold Italian sandwich',
     caption: "Neéko serve a mix of burgers, sandwiches and salads. This is 'The cold Italian' sandwich and costs just 9.49 lev. With French fries costing 3.89 lev, you can have both for just 13.38 lev and it's a decent-sized meal.",
   },
   {
-    src: neekoVeganJunkFoodCheeseburgerImage,
+    src: `${imagePath}/neeko-vegan-junk-food/cheeseburger.jpeg`,
     alt: 'Neéko Vegan Junk Food double cheeseburger with fries',
     caption: "Sadly the burgers aren't so cheap, and when you double-up they're even more expensive. Great for a hangover, not for your wallet. This is a double cheeseburger for 18.49 lev, with French fries for 3.89 lev.",
   },
   {
-    src: neekoVeganJunkFoodSweetPotatoFriesImage,
+    src: `${imagePath}/neeko-vegan-junk-food/sweet-potato-fries.jpeg`,
     alt: 'Neéko Vegan Junk Food sweet potato fries',
     caption: 'They also have sweet potato fries at 6.29 lev.',
   },
   {
-    src: neekoVeganJunkFoodDefinitelyNotAChickenBurgerImage,
+    src: `${imagePath}/neeko-vegan-junk-food/definitely-not-a-chicken-burger.jpeg`,
     alt: 'Neéko Vegan Junk Food definitely not a chicken burger',
     caption: "The 'Definitely not a chicken burger' burger is a fake chicken burger for 15.49 lev.",
   },
   {
-    src: neekoVeganJunkTheMagicMushroomMeltImage,
+    src: `${imagePath}/neeko-vegan-junk-food/the-magic-mushroom-melt.jpeg`,
     alt: 'Neéko Vegan Junk Food the magic mushroom melt',
     caption: "One of the more interesting sandwiches I've eaten, the magic mushroom melt doesn't include magic mushrooms, which is a shame. It costs 10.99 lev.",
   },
@@ -195,17 +161,17 @@ export const neekoVeganJunkFoodImages = [
 
 export const boleroFitburgerImages = [
   {
-    src: boleroFitburgerBoleroVeganChickenBurgerImage,
+    src: `${imagePath}/bolero-fitburger/bolero-vegan-chicken-burger.jpeg`,
     alt: 'Bolero Fitburger Bolero vegan chicken burger',
     caption: "50% of Bolero's menu is vegan/vegetarian, including seven vegan-friendly burgers. This is the 'Bolero vegan chicken burger' made with a carrot orange bun for 14.90 lev. On the menu the sides are priced separately, but on each time I ate here I bought a burger with a side, and on each occasion the side was included with the burger for free, so there was no charge for the fries.",
   },
   {
-    src: boleroFitburgerBoleroChorizoVeganBurgerImage,
+    src: `${imagePath}/bolero-fitburger/bolero-chorizo-vegan-burger.jpeg`,
     alt: 'Bolero Fitburger Bolero chorizo vegan burger',
     caption: "Bolero markets itself as having healthy burgers. Apparently the deep-fried onion rings in this 'Bolero chorizo vegan burger' are healthy. It costs 14.90 lev.",
   },
   {
-    src: boleroFitburgerBoleroVeganCheeseBurgerImage,
+    src: `${imagePath}/bolero-fitburger/bolero-vegan-cheese-burger.jpeg`,
     alt: 'Bolero Fitburger Bolero vegan cheese burger',
     caption: "The 'Bolero vegan cheese burger' for 14.90 lev.",
   },
@@ -213,30 +179,30 @@ export const boleroFitburgerImages = [
 
 export const runningImages = [
   {
-    src: runningNorthSouthParkStravaImage,
+    src: `${imagePath}/running/north-south-park-strava.jpeg`,
     alt: 'South Park Strava map',
     caption: "My first run in Sofia was an attempted 'fast' run in north South Park. I tried to find a decent loop but they haven't designed this park to be running-friendly as the paths all just go across the park. Even 50% of that little loop in the middle is running across uneven grass.",
     url: 'https://www.strava.com/activities/9479161931',
   },
   {
-    src: runningSouthParksLoopStravaImage,
+    src: `${imagePath}/running/south-parks-loop-strava.jpeg`,
     alt: 'South Parks loop Strava map',
     caption: "Giving up on the idea of faster runs, I started doing longer, slower runs that incorporated the National Palace of Culture Park, north South Park and south South Park. As you can see from the southern part of this run, getting lost in South Park is pretty easy. I wasn't trying to run around in circles.",
     url: 'https://www.strava.com/activities/9535759195',
   },
   {
-    src: runningParksLoopStravaImage,
+    src: `${imagePath}/running/parks-loop-strava.jpeg`,
     alt: 'Parks loop Strava map',
     caption: 'On my last run in Sofia, I incorporated Borisova Gradina Park. This was a really fun route. A lot of winding trails and a lot of having to check my map, but it was a good length and fun terrain, and much of it was very isolated.',
     url: 'https://www.strava.com/activities/9567153804',
   },
   {
-    src: runningNorthSouthParkImage,
+    src: `${imagePath}/running/north-south-park.jpeg`,
     alt: 'Sofia South Park',
     caption: "This is north South Park. Don't be fooled by the big, wide trails, they don't form into any kind of useful loop and instead go straight across the park. It is a pleasant park to come and sit for a while and clear your head, just not great for running.",
   },
   {
-    src: runningBorisovaGradinaParkImage,
+    src: `${imagePath}/running/borisova-gradina-park.jpeg`,
     alt: 'Borisova Gradina Park',
     caption: 'This is one of the first trails you come across in Borisova Gradina Park. They get much narrower and windier as you go.',
   },
@@ -312,11 +278,13 @@ The gym was so close that I'd walk there in my workout clothes, go straight from
 
 Unlike in Bucharest, where I'd been prior, mainstream supermarkets in Sofia don't cater well to vegans. There are no vegan sections, you just have to wander around and pick-out the odd vegan item they happen to have.
 
-For specialised vegan products, like vegan cheese, there are little health food shops dotted all over Sofia. The closest for me was <ExternalLink url='https://www.happycow.net/reviews/zelen-bio-store-sofia-359537'>Zelen Bio Store</ExternalLink>, but there are many others.
+For specialised vegan products, like vegan cheese, there are little health food shops dotted all over Sofia. The closest for me was <ExternalLink url='https://maps.app.goo.gl/7NCTkZgorb8nwMsd7'>Zelen Bio Store</ExternalLink>, but there are many others.
 
 From a self-catering perspective I found myself limited to meals like hummus pasta and sandwiches, which meant I relied a lot on vegan restaurants. Sofia doesn't have a huge selection of vegan restaurants, but the ones it does have I found to be really good. These are my favourites.
 
 ### Edgy Veggy
+
+<MapLink name='William Gladstone 18' url='https://maps.app.goo.gl/wKFAdnfZiyaCqfqG7' />
 
 When I choose an Airbnb, I always get a place with a nearby vegan restaurant, and Edgy Veggy was one of the key reasons I ended up staying where I did. If it wasn't very good it would have been a great disappointment, but luckily I loved it.
 
@@ -330,9 +298,9 @@ The positives definitely outweigh the negatives and the food is always good, but
 
 <ImageGallery images={edgyVeggyImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/edgy-veggy-sofia-114944'>Visit Edgy Veggy on Happy Cow</ExternalLink>
-
 ### Neéko Vegan Junk Food
+
+<MapLink name='Angel Kanchev 35' url='https://maps.app.goo.gl/ehL3UNYGpKi2VNm98' />
 
 Neéko was still fairly new when I visited Sofia, and is another fully-vegan restaurant. As you can probably guess from the name, it's not a place to come for a healthy feed, even though they do offer salads. It's more a place I found myself coming on a hangover, and it definitely helped.
 
@@ -342,9 +310,9 @@ It's not a popular place yet. I hope that changes in the long-term, but for now 
 
 <ImageGallery images={neekoVeganJunkFoodImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/neeko-vegan-junk-food-sofia-347296'>Visit Neéko Vegan Junk Food on Happy Cow</ExternalLink>
-
 ### Bolero Fitburger
+
+<MapLink name='15 ulitsa "Karnigradska"' url='https://maps.app.goo.gl/g3cxxmqvbEzpnRAs6' />
 
 Bolero markets itself as having healthy burgers. It's called 'Fitburger', their slogan is 'You do the gym, we do the food', and on the walls are pictures of people exercising. I couldn't tell you why the burgers here are any healthier than in Neéko, and Neéko markets itself as junk food. They looked and tasted just as unhealthy here, but hey! If they say their burgers are healthy, then I'm willing to believe they're healthy.
 
@@ -353,8 +321,6 @@ Bolero isn't a vegan or even a vegetarian restaurant, 50% of the menu is meat, b
 One thing I didn't quite understand is that the burgers and the sides are priced separately. Each time I came here I ordered a burger and a side, yet I was only ever charged for the burger. On my first visit I pointed this out to them but they told me it was right. I'm not sure if this is a promotion or whether a side is always free with your burger, but it makes it incredible value when you consider that the cheapest vegan burger, the tofu burger, is only 11.90 lev. It's worth visiting anyway, but if they keep up with that pricing, definitely add it to your list.
 
 <ImageGallery images={boleroFitburgerImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/bolero-fitburger-sofia-342319'>Visit Bolero Fitburger on Happy Cow</ExternalLink>
 
 ## Where to run in Sofia
 

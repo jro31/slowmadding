@@ -2,22 +2,6 @@ import ArticleLayout from '@/components/ArticleLayout'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import busTerminal2SatelliteViewImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-terminal-2/satellite-view.png'
-import busTerminal2UdonThaniBusTicketOfficeImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-terminal-2/udon-thani-bus-ticket-office.jpeg'
-
-import busTimesTimetableImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/timetable.jpeg'
-import busTimesTicketImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/ticket.jpeg'
-import busTimesBusFrontImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/bus-front.jpeg'
-import busTimesBusSideImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/bus-times/bus-side.jpeg'
-
-import takingTheBusAtBusTerminal2FreeToiletsImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/at-bus-terminal-2/free-toilets.jpeg'
-
-import takingTheBusOnBoardLegRoomImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/leg-room.jpeg'
-import takingTheBusOnBoardBlockedToiletImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/blocked-toilet.jpeg'
-import takingTheBusOnBoardTvImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/on-board/tv.jpeg'
-
-import takingTheBusTravellingToUdonThaniFillingUpImage from '#/taking-a-bus-from-nakhon-ratchasima-to-udon-thani/taking-the-bus/travelling-to-udon-thani/filling-up.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-12-24T15:20:00+07:00',
@@ -26,14 +10,16 @@ export const meta = {
   keywords: ['Thailand', 'Korat'],
 }
 
+export const imagePath = '/images/articles/taking-a-bus-from-nakhon-ratchasima-to-udon-thani'
+
 export const busTerminal2Images = [
   {
-    src: busTerminal2SatelliteViewImage,
+    src: `${imagePath}/bus-terminal-2/satellite-view.png`,
     alt: 'Nakhon Ratchasima Bus Terminal 2 satellite view',
     caption: "This is easier to explain with a picture. This satellite view from Google Maps shows Bus Terminal 2. The red arrow (I added that so don't look for it) points to gate 4, where you buy tickets and catch buses to Udon Thani.",
   },
   {
-    src: busTerminal2UdonThaniBusTicketOfficeImage,
+    src: `${imagePath}/bus-terminal-2/udon-thani-bus-ticket-office.jpeg`,
     alt: 'Nakhon Ratchasima Bus Terminal 2 Udon Thani bus ticket office',
     caption: "This is the ticket office you're looking for, by gate 4. The staff here quite enthusiastically speak some (very basic) English.",
   },
@@ -41,22 +27,22 @@ export const busTerminal2Images = [
 
 export const busTimesImages = [
   {
-    src: busTimesTimetableImage,
+    src: `${imagePath}/bus-times/timetable.jpeg`,
     alt: 'Nakhon Ratchasima to Udon Thani bus timetable',
     caption: "The Nakhon Ratchasima to Udon Thani bus timetable at gate 4. The left column with my finger underneath it is the departure times from Nakhon Ratchasima. The right column with my finger underneath it is the departure times from Kumphawapi, a district just outside Udon Thani (the timetable doesn't include the arrival times in Udon).",
   },
   {
-    src: busTimesTicketImage,
+    src: `${imagePath}/bus-times/ticket.jpeg`,
     alt: 'Nakhon Ratchasima to Udon Thani bus ticket',
     caption: "This is the ticket you're given. 270 is the price.",
   },
   {
-    src: busTimesBusFrontImage,
+    src: `${imagePath}/bus-times/bus-front.jpeg`,
     alt: 'Nakhon Ratchasima to Udon Thani bus front',
     caption: "It's pretty hard to get onto the wrong bus seeing as it's right in front of where you buy your ticket, but just in case, this is what you're looking for (taken at a rest-stop, not in the bus terminal).",
   },
   {
-    src: busTimesBusSideImage,
+    src: `${imagePath}/bus-times/bus-side.jpeg`,
     alt: 'Nakhon Ratchasima to Udon Thani bus side',
     caption: "And to make it even easier, it says 'Ratchasima' and 'Udon Thani' on the side.",
   },
@@ -64,7 +50,7 @@ export const busTimesImages = [
 
 export const takingTheBusAtBusTerminal2Images = [
   {
-    src: takingTheBusAtBusTerminal2FreeToiletsImage,
+    src: `${imagePath}/taking-the-bus/at-bus-terminal-2/free-toilets.jpeg`,
     alt: 'Free toilets at Bus Terminal 2',
     caption: 'Free toilets next to Bus Terminal 2.',
   },
@@ -72,17 +58,17 @@ export const takingTheBusAtBusTerminal2Images = [
 
 export const takingTheBusOnBoardImages = [
   {
-    src: takingTheBusOnBoardLegRoomImage,
+    src: `${imagePath}/taking-the-bus/on-board/leg-room.jpeg`,
     alt: 'On board leg-room',
     caption: 'Not all leg-room is created equally. There was noticeably more leg-room for the seats on the left of the bus, after the toilet',
   },
   {
-    src: takingTheBusOnBoardBlockedToiletImage,
+    src: `${imagePath}/taking-the-bus/on-board/blocked-toilet.jpeg`,
     alt: 'On board blocked toilet',
     caption: 'While there is a toilet on board, a plastic crate was placed in front of the door making it entirely inaccessible.',
   },
   {
-    src: takingTheBusOnBoardTvImage,
+    src: `${imagePath}/taking-the-bus/on-board/tv.jpeg`,
     alt: 'On board TV',
     caption: "There are no charging ports accessible from the seats. What's worse is that a number of (Thai language) movies were played throughout the journey on the TV at the front of the bus, with the volume barely audible, even if my Thai had been good enough to understand them. For this journey I'd say it's imperetive to have some good noise-cancelling headphones, and a sufficiently-charged device to connect them to.",
   },
@@ -90,7 +76,7 @@ export const takingTheBusOnBoardImages = [
 
 export const takingTheBusTravellingToUdonThaniImages = [
   {
-    src: takingTheBusTravellingToUdonThaniFillingUpImage,
+    src: `${imagePath}/taking-the-bus/travelling-to-udon-thani/filling-up.jpeg`,
     alt: 'The bus filling up',
     caption: 'The bus filled-up as we went.',
   },

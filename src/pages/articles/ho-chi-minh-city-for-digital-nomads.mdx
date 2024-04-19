@@ -4,40 +4,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import citySunsetImage from '#/ho-chi-minh-city-for-digital-nomads/city/sunset.jpeg'
-
-import rivergateResidenceBedImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/bed.jpeg'
-import rivergateResidenceRoomImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/room.jpeg'
-import rivergateResidenceDeskImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/desk.jpeg'
-import rivergateResidenceRivergateResidenceImage from '#/ho-chi-minh-city-for-digital-nomads/rivergate-residence/rivergate-residence.jpeg'
-
-import filthyVeganSundayRoastImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/sunday-roast.jpeg'
-import filthyVeganFullEnglishImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/full-english.jpeg'
-import filthyVeganPizzaImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/pizza.jpeg'
-import filthyVeganBurgerImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/burger.jpeg'
-import filthyVeganBrownieImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/brownie.jpeg'
-import filthyVeganSausageRollImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/sausage-roll.jpeg'
-import filthyVeganOutsideImage from '#/ho-chi-minh-city-for-digital-nomads/filthy-vegan/outside.jpeg'
-
-import tueTinChayQuanRiceWithMeatImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/rice-with-meat.jpeg'
-import tueTinChayQuanSpringRollsImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/spring-rolls.jpeg'
-import tueTinChayQuanDuckWithRiceImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/duck-with-rice.jpeg'
-import tueTinChayQuanPhoNoodlesImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/pho-noodles.jpeg'
-import tueTinChayQuanNoodlesWithMeatImage from '#/ho-chi-minh-city-for-digital-nomads/tue-tin-chay-quan/noodles-with-meat.jpeg'
-
-import theJoiFactoryVeganTwixImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-twix.jpeg'
-import theJoiFactoryVeganBigBiteImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-big-bite.jpeg'
-import theJoiFactoryHealthyHeartSmoothieImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/healthy-heart-smoothie.jpeg'
-import theJoiFactoryVeganMiQuangImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/vegan-mi-quang.jpeg'
-import theJoiFactoryBanhMiBiChaImage from '#/ho-chi-minh-city-for-digital-nomads/the-joi-factory/banh-mi-bi-cha.jpeg'
-
-import runningDistrict4RiversideStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/district-4-riverside-strava.jpeg'
-import runningSeptember23rdParkStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/september-23rd-park-strava.jpeg'
-import runningTaoDanParkStravaImage from '#/ho-chi-minh-city-for-digital-nomads/running/tao-dan-park-strava.jpeg'
-
-import socialisingWalkingStreetImage1 from '#/ho-chi-minh-city-for-digital-nomads/socialising/walking-street-1.jpeg'
-import socialisingWalkingStreetImage2 from '#/ho-chi-minh-city-for-digital-nomads/socialising/walking-street-2.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-03-08T15:30:00+07:00',
@@ -68,9 +34,11 @@ export const rivergateResidenceDetails = {
   },
 }
 
+export const imagePath = '/images/articles/ho-chi-minh-city-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: citySunsetImage,
+    src: `${imagePath}/city/sunset.jpeg`,
     alt: 'Sunset taken from Rivergate Residence',
     caption: 'Sunset over Ho Chi Minh City, taken from the 7th floor of Rivergate Residence.'
   }
@@ -78,22 +46,22 @@ export const cityImages = [
 
 export const rivergateResidenceImages = [
   {
-    src: rivergateResidenceBedImage,
+    src: `${imagePath}/rivergate-residence/bed.jpeg`,
     alt: 'Rivergate Residence bed',
     caption: 'You have a double bed, and I quite liked some of the artwork.',
   },
   {
-    src: rivergateResidenceRoomImage,
+    src: `${imagePath}/rivergate-residence/room.jpeg`,
     alt: 'Rivergate Residence room',
     caption: "It's a fairly spacious room for a studio. I was able to do (slightly cramped) yoga in the space between the bed and the TV.",
   },
   {
-    src: rivergateResidenceDeskImage,
+    src: `${imagePath}/rivergate-residence/desk.jpeg`,
     alt: 'Rivergate Residence desk',
     caption: "I've had worse places to setup for the day.",
   },
   {
-    src: rivergateResidenceRivergateResidenceImage,
+    src: `${imagePath}/rivergate-residence/rivergate-residence.jpeg`,
     alt: 'Rivergate Residence from outside',
     caption: "On the ground floor there's a WinMart and a 7-11, so getting essentials is easy.",
   },
@@ -101,37 +69,37 @@ export const rivergateResidenceImages = [
 
 export const filthyVeganImages = [
   {
-    src: filthyVeganSundayRoastImage,
+    src: `${imagePath}/filthy-vegan/sunday-roast.jpeg`,
     alt: 'Filthy Vegan Sunday roast',
     caption: "There aren't too many other places in South-East Asia to find a vegan Sunday roast. It'll set you back 200,000 VND.",
   },
   {
-    src: filthyVeganFullEnglishImage,
+    src: `${imagePath}/filthy-vegan/full-english.jpeg`,
     alt: 'Filthy Vegan full English breakfast',
     caption: 'A vegan full English is a bit more common, but this one is as good as they come. It costs 140,000 VND.',
   },
   {
-    src: filthyVeganPizzaImage,
+    src: `${imagePath}/filthy-vegan/pizza.jpeg`,
     alt: 'Filthy Vegan vegan pizza',
     caption: "The cashew cheese is homemade, and some of the best vegan cheese I've had. Here it's used on this vegan pizza, which costs 199,999 VND.",
   },
   {
-    src: filthyVeganBurgerImage,
+    src: `${imagePath}/filthy-vegan/burger.jpeg`,
     alt: 'Filthy Vegan bacon cashew cheese burger with fries',
     caption: 'A vegan bacon cashew cheese burger with fries is 150,000 VND.',
   },
   {
-    src: filthyVeganBrownieImage,
+    src: `${imagePath}/filthy-vegan/brownie.jpeg`,
     alt: 'Filthy Vegan chocolate brownie with custard',
     caption: "This vegan chocolate brownie with custard is something else you won't see very often in this part of the world, and is 45,000 VND.",
   },
   {
-    src: filthyVeganSausageRollImage,
+    src: `${imagePath}/filthy-vegan/sausage-roll.jpeg`,
     alt: 'Filthy Vegan sausage roll with chips, beans and gravy',
     caption: 'Sausage roll with chips, beans and gravy. Classic Vietnamese food for 230,000 VND.',
   },
   {
-    src: filthyVeganOutsideImage,
+    src: `${imagePath}/filthy-vegan/outside.jpeg`,
     alt: 'Filthy Vegan from outside',
     caption: "Filthy Vegan is on the second floor. It can feel slightly like you're walking into someone's house, but the locals who work downstairs are very welcoming, then you'll see a staircase to your right as you go in."
   }
@@ -139,27 +107,27 @@ export const filthyVeganImages = [
 
 export const tueTinChayQuanImages = [
   {
-    src: tueTinChayQuanRiceWithMeatImage,
+    src: `${imagePath}/tue-tin-chay-quan/rice-with-meat.jpeg`,
     alt: 'Tue Tin Chay Quan rice and vegan grilled meat',
     caption: 'All food items at Tue Tin Chay Quan are 40,000 VND. This is rice and vegan grilled meat.',
   },
   {
-    src: tueTinChayQuanSpringRollsImage,
+    src: `${imagePath}/tue-tin-chay-quan/spring-rolls.jpeg`,
     alt: 'Tue Tin Chay Quan spring rolls with vegan pork sausage',
     caption: 'Spring rolls with vegan pork sausage.',
   },
   {
-    src: tueTinChayQuanDuckWithRiceImage,
+    src: `${imagePath}/tue-tin-chay-quan/duck-with-rice.jpeg`,
     alt: 'Tue Tin Chay Quan vegan roasted duck with rice',
     caption: 'Vegan roasted duck with rice.',
   },
   {
-    src: tueTinChayQuanPhoNoodlesImage,
+    src: `${imagePath}/tue-tin-chay-quan/pho-noodles.jpeg`,
     alt: 'Tue Tin Chay Quan pho noodles',
     caption: 'Along with a banh mi, pho is the first thing I think of when I think of Vietnamese food.',
   },
   {
-    src: tueTinChayQuanNoodlesWithMeatImage,
+    src: `${imagePath}/tue-tin-chay-quan/noodles-with-meat.jpeg`,
     alt: 'Tue Tin Chay Quan noodles with vegan grilled meat',
     caption: 'Noodles with vegan grilled meat.',
   },
@@ -167,27 +135,27 @@ export const tueTinChayQuanImages = [
 
 export const theJoiFactoryImages = [
   {
-    src: theJoiFactoryVeganTwixImage,
+    src: `${imagePath}/the-joi-factory/vegan-twix.jpeg`,
     alt: 'The Joi Factory vegan Twix',
     caption: 'The Joi Factory offer several vegan desserts. This vegan Twix was divine, and costs 75,000 VND (plus 10% tax).',
   },
   {
-    src: theJoiFactoryVeganBigBiteImage,
+    src: `${imagePath}/the-joi-factory/vegan-big-bite.jpeg`,
     alt: 'The Joi Factory vegan big bite',
     caption: "This vegan big bite wasn't that big, but it did taste good. It's made with vegan cashew cheese and costs 110,000 VND (plus 10% tax).",
   },
   {
-    src: theJoiFactoryHealthyHeartSmoothieImage,
+    src: `${imagePath}/the-joi-factory/healthy-heart-smoothie.jpeg`,
     alt: 'The Joi Factory healthy heart smoothie',
     caption: 'The Joi Factory offer four different smoothies, all of which are 100% natural with no additives, including sugar. This Healthy Heart smoothie is 75,000 VND (plus 10% tax).',
   },
   {
-    src: theJoiFactoryVeganMiQuangImage,
+    src: `${imagePath}/the-joi-factory/vegan-mi-quang.jpeg`,
     alt: 'The Joi Factory vegan mi quang',
     caption: 'A vegan mi quang for 78,000 VND (plus 10% tax).',
   },
   {
-    src: theJoiFactoryBanhMiBiChaImage,
+    src: `${imagePath}/the-joi-factory/banh-mi-bi-cha.jpeg`,
     alt: 'The Joi Factory banh mi bi cha',
     caption: 'They do three different kinds of banh mi. This banh mi bi cha (🤷‍♂️) on French baguette is 45,000 VND (plus 10% tax), but can also be part of a meal deal.',
   },
@@ -195,19 +163,19 @@ export const theJoiFactoryImages = [
 
 export const runningImages = [
   {
-    src: runningDistrict4RiversideStravaImage,
+    src: `${imagePath}/running/district-4-riverside-strava.jpeg`,
     alt: 'District 4 riverside Strava map',
     caption: 'My run along the district 4 riverside',
     url: 'https://www.strava.com/activities/8415478622',
   },
   {
-    src: runningSeptember23rdParkStravaImage,
+    src: `${imagePath}/running/september-23rd-park-strava.jpeg`,
     alt: 'September 23rd Park Strava map',
     caption: 'September 23rd Park',
     url: 'https://www.strava.com/activities/8468754705',
   },
   {
-    src: runningTaoDanParkStravaImage,
+    src: `${imagePath}/running/tao-dan-park-strava.jpeg`,
     alt: 'Tao Dan Park Strava map',
     caption: 'My Tao Dan Park run',
     url: 'https://www.strava.com/activities/8496310046',
@@ -216,12 +184,12 @@ export const runningImages = [
 
 export const socialisingImages = [
   {
-    src: socialisingWalkingStreetImage1,
+    src: `${imagePath}/socialising/walking-street-1.jpeg`,
     alt: 'Partying on Bui Vien walking street',
     caption: "The second abandoned pub crawl on Bui Vien walking street. I'm not sure why no one else looks happy."
   },
   {
-    src: socialisingWalkingStreetImage2,
+    src: `${imagePath}/socialising/walking-street-2.jpeg`,
     alt: 'On Bui Vien walking street',
     caption: "The third Bui Vien pub crawl. I don't know why I wore the same t-shirt for both of them.",
   },
@@ -269,13 +237,15 @@ If I have one criticism, it's that the Internet is 95% reliable, but it gets pat
 
 I'm going to make a revelation about Vietnam: There's a lot of Vietnamese food here.
 
-Yeah I know that's obvious, but the reason that I bring it up is that if you go to a touristy city in this region, usually a large percentage of the vegan restaurants are aimed at foreigners. When you look at a map of vegan restaurants in Ho Chi Minh, you'll see dozens of them (118 according to Happy Cow). So your first thought if you've been to other major tourist cities in this region, is that you'll be able to get loads of vegan western food.
+Yeah I know that's obvious, but the reason that I bring it up is that if you go to a touristy city in this region, usually a large percentage of the vegan restaurants are aimed at foreigners. When you look at a map of vegan restaurants in Ho Chi Minh, you'll see dozens of them so your first thought if you've been to other major tourist cities in this region, is that you'll be able to get loads of vegan western food.
 
 The reality is actually that the vast, vast majority of these vegan restaurants serve Vietnamese food. You can count on your fingers those that serve Western food.
 
 Fortunately I like Vietnamese food. Unfortunately I don't like it for every meal, and it's in getting these non-Vietnamese meals that you'll find your options limited. Such places do exist, but you may find yourself going to them more often that you'd like.
 
 ### Filthy Vegan
+
+<MapLink name='86 Đ. Cô Bắc' url='https://maps.app.goo.gl/r5LK4sCjV4jUZ14G8' />
 
 This was the first and the last place that I ate at while in Ho Chi Minh. It's a vegan restaurant located on the second floor above a local shop, owned and run by a British guy from Crawley called Kieron. And while it does have some Mexican dishes, and some Italian, the menu is decidedly British, so it's perhaps the last thing you'd expect to find in the heart of Saigon.
 
@@ -285,9 +255,9 @@ Unsurprisingly it's more expensive than eating in a local restaurant. Most items
 
 <ImageGallery images={filthyVeganImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/filthy-vegan-ho-chi-minh-city-174499'>Visit Filthy Vegan on Happy Cow</ExternalLink>
-
 ### Tue Tin Chay Quan
+
+<MapLink name='39/9 Đỗ Quang Đẩu' url='https://maps.app.goo.gl/wo5MTA5PGFyNJt2e9' />
 
 Tue Tin Chay Quan became my go-to Vietnamese restaurant in Ho Chi Minh. It's a short walk from Bui Vien walking street, which is the disgustingly touristy (and fun) party street akin to Khao San Road in Bangkok. However, as Tue Tin Chay Quan is down a little alley it doesn't get too much spill-over of tourists and I found more locals dined here than foreigners.
 
@@ -297,23 +267,23 @@ To save confusion, all food items on the menu (barring some desserts) are 40,000
 
 <ImageGallery images={tueTinChayQuanImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/tue-tin-chay-quan-ho-chi-minh-city-213908'>Visit Tue Tin Chay Quan on Happy Cow</ExternalLink>
-
 ### The Joi Factory
+
+<MapLink name='212B Nguyễn Trãi' url='https://maps.app.goo.gl/Nsoc2dxdfXnYbn2x5' />
 
 From outside it looks quite small, but once you go inside The Joi Factory is freaking huge. It's spread over two floors and has several sofas, so it's the place I came in Ho Chi Minh when I wanted to read my book for an hour or two. Although quite new, it's become incredibly popular incredibly quickly. Unknowingly I came here on a "vegan day" (not it's actual name) in Vietnam, and there was a 45-minute wait for a table.
 
 I didn't wait.
 
-Every other time I came here I got a seat no problem. The majority of the menu is vegan. It's a picture menu that's translated into English and vegan items are clearly marked. All the staff speak near-fluent English as well, so it's a very easy place to quiz the menu if you're unsure. You'll pay a little more than at other restaurants, but to quote The Joi Factory (from one of their comments on Happy Cow), they operate a socially responsible business _"which entails paying people properly, sourcing high quality, fresh ingredients, reducing our plastic waste as much as running an F&B business allows."_ This comes across on their food. For example, this was the only place I found in Ho Chi Minh to get a fruit smoothie that was actually healthy and not loaded with sugar.
+Every other time I came here I got a seat no problem. The majority of the menu is vegan. It's a picture menu that's translated into English and vegan items are clearly marked. All the staff speak near-fluent English as well, so it's a very easy place to quiz the menu if you're unsure. You'll pay a little more than at other restaurants, but to quote The Joi Factory, they operate a socially responsible business _"which entails paying people properly, sourcing high quality, fresh ingredients, reducing our plastic waste as much as running an F&B business allows."_ This comes across on their food. For example, this was the only place I found in Ho Chi Minh to get a fruit smoothie that was actually healthy and not loaded with sugar.
 
 It's perhaps not a place to come for a big feed. It's more a coffee shop kind of place, with quite light meals, but it's all really good food. It's a really nice place to come to get away from it all when the craziness of Ho Chi Minh becomes a bit too much.
 
 <ImageGallery images={theJoiFactoryImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/the-joi-factory-ho-chi-minh-city-272491'>Visit The Joi Factory on Happy Cow</ExternalLink>
-
 ### Thái Hòa
+
+<MapLink name='60 Hàm Nghi,' url='https://maps.app.goo.gl/Y1ohxzj3HdMAuRtH9' />
 
 Thái Hòa, and the next door Phương Hà, are two nearly identical stores that have the greatest selection of western food that I found anywhere in Ho Chi Minh.
 
@@ -326,8 +296,6 @@ A couple of weeks passed-by and as I grew tired of Vietnamese food, I reneged on
 They have all kinds of raw nuts and seeds; something that was a staple of my diet before becoming a nomad, but that I've eaten a lot less of since because they aren't things that many restaurants serve. I also got some wholewheat pasta, some vegan sauces and some chickpeas, so I could make some wholefood dinners for myself.
 
 If you want to do any cooking while you're in Ho Chi Minh, then Thái Hòa is the place to come for the staples you need to cook with (it's not so great for fruit and veg). Just try to come here when you're relaxed, and don't come at a time that it's busy. Seriously.
-
-<ExternalLink url='https://goo.gl/maps/492kkF6MgJbZNDjp7'>View Thái Hòa on Google Maps</ExternalLink>
 
 ## Where to run in Ho Chi Minh City
 

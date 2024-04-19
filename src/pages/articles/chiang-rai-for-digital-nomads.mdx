@@ -6,35 +6,6 @@ import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
-import cityClockTowerImage from '#/chiang-rai-for-digital-nomads/city/clock-tower.jpeg'
-
-import saikaewBedImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/bed.jpeg'
-import saikaewDeskImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/desk.jpeg'
-import saikaewLakeImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/lake.jpeg'
-import saikaewRoomImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/room.jpeg'
-import saikaewSelfieImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/selfie.jpeg'
-import saikaewToiletImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/toilet.jpeg'
-import saikaewViewImage from '#/chiang-rai-for-digital-nomads/saikaew-resort/view.jpeg'
-
-import kundaBurgerImage from '#/chiang-rai-for-digital-nomads/kunda/jalapeno-burger.jpeg'
-import kundaBunlessComboImage from '#/chiang-rai-for-digital-nomads/kunda/bunless-combo.jpeg'
-import kundaViewImage from '#/chiang-rai-for-digital-nomads/kunda/view.jpeg'
-
-import vegMeUpVampireImage from '#/chiang-rai-for-digital-nomads/veg-me-up/vampire-blood-smoothie-bowl.jpeg'
-import vegMeUpMojitoImage from '#/chiang-rai-for-digital-nomads/veg-me-up/mojito.jpeg'
-import vegMeUpChaochelaImage from '#/chiang-rai-for-digital-nomads/veg-me-up/chaochela-smoothie-bowl.jpeg'
-
-import buffet1Image from '#/chiang-rai-for-digital-nomads/oasis/buffet-1.jpeg'
-import buffet2Image from '#/chiang-rai-for-digital-nomads/oasis/buffet-2.jpeg'
-import oasis2013Image from '#/chiang-rai-for-digital-nomads/oasis/2013.jpg'
-
-import heavenBurgerVeganBreakfastPlateImage from '#/chiang-rai-for-digital-nomads/heaven-burger/vegan-breakfast-plate.jpeg'
-import heavenBurgerFriedCrispyMushroomImage from '#/chiang-rai-for-digital-nomads/heaven-burger/fried-crispy-mushroom.jpeg'
-import heavenBurgerMixedBerrySmoothieImage from '#/chiang-rai-for-digital-nomads/heaven-burger/mixed-berry-smoothie.jpeg'
-import heavenBurgerAvocadoMushroomSandwichImage from '#/chiang-rai-for-digital-nomads/heaven-burger/avocado-mushroom-sandwich.jpeg'
-
-import runningStravaImage from '#/chiang-rai-for-digital-nomads/running/strava.jpeg'
-
 export const meta = {
   author: 'Jethro Williams',
   date: '2023-01-27T15:18:15+07:00',
@@ -64,9 +35,11 @@ export const saikeawResortDetails = {
   },
 }
 
+export const imagePath = '/images/articles/chiang-rai-for-digital-nomads'
+
 export const cityImages = [
   {
-    src: cityClockTowerImage,
+    src: `${imagePath}/city/clock-tower.jpeg`,
     alt: 'Chiang Rai clock tower',
     caption: 'The Chiang Rai clock tower marks the centre of the city.'
   }
@@ -74,37 +47,37 @@ export const cityImages = [
 
 export const saikaewResortImages = [
   {
-    src: saikaewRoomImage,
+    src: `${imagePath}/saikaew-resort/room.jpeg`,
     alt: 'Saikaew Resort double room',
     caption: "With nothing but fish able to see in the room, I didn't bother closing the curtains at night, meaning I woke up to this view everyday.",
   },
   {
-    src: saikaewViewImage,
+    src: `${imagePath}/saikaew-resort/view.jpeg`,
     alt: 'Saikaew Resort double room balcony',
     caption: 'The balcony, right outside the room window, is the perfect place to sit with a cup of tea, to read a book, or to meditate while listening to the wildlife in the lake.',
   },
   {
-    src: saikaewLakeImage,
+    src: `${imagePath}/saikaew-resort/lake.jpeg`,
     alt: 'Saikaew Resort lake',
     caption: 'The lake is teeming with fish, birds and other wildlife.',
   },
   {
-    src: saikaewSelfieImage,
+    src: `${imagePath}/saikaew-resort/selfie.jpeg`,
     alt: 'Selfie at Saikaew Resort',
     caption: "A fine example of why I don't take selfies.",
   },
   {
-    src: saikaewBedImage,
+    src: `${imagePath}/saikaew-resort/bed.jpeg`,
     alt: 'Saikaew Resort double bed',
     caption: "Where you'll be sleeping.",
   },
   {
-    src: saikaewDeskImage,
+    src: `${imagePath}/saikaew-resort/desk.jpeg`,
     alt: 'Saikaew Resort double room desk',
     caption: 'A comfortable place to sit and work.',
   },
   {
-    src: saikaewToiletImage,
+    src: `${imagePath}/saikaew-resort/toilet.jpeg`,
     alt: 'Saikaew Resort double room toilet',
     caption: 'You even get a nice, natural toilet.',
   },
@@ -112,17 +85,17 @@ export const saikaewResortImages = [
 
 export const kundaImages = [
   {
-    src: kundaBurgerImage,
+    src: `${imagePath}/kunda/jalapeno-burger.jpeg`,
     alt: 'Kunda jalapeño burger',
     caption: 'The jalapeño burger costs 280 baht.',
   },
   {
-    src: kundaBunlessComboImage,
+    src: `${imagePath}/kunda/bunless-combo.jpeg`,
     alt: 'Kunda bunless combo',
     caption: 'The bunless combo is a naked burger, a (very delicious) side salad and a drink of your choice (I had a chai tea) for 350 baht.',
   },
   {
-    src: kundaViewImage,
+    src: `${imagePath}/kunda/view.jpeg`,
     alt: 'Kunda view',
     caption: "Not only is the food delicious, you have an amazing view while you're eating.",
   },
@@ -130,17 +103,17 @@ export const kundaImages = [
 
 export const vegMeUpImages = [
   {
-    src: vegMeUpVampireImage,
+    src: `${imagePath}/veg-me-up/vampire-blood-smoothie-bowl.jpeg`,
     alt: 'Veg Me Up Vampire Blood smoothie bowl',
     caption: "Vampire Blood smoothie bowl. I'm not sure I approve of the name, but it tasted amazing. The smoothie is made from strawberry, dragon fruit and watermelon.",
   },
   {
-    src: vegMeUpMojitoImage,
+    src: `${imagePath}/veg-me-up/mojito.jpeg`,
     alt: 'Veg Me Up Bloody Mary mojito',
     caption: "Bloody Mary mojito. I'm not sure why so many of the menu item names contain blood. Strange for vegan items. This cold pressed juice is made from watermelon, peppermint and lime.",
   },
   {
-    src: vegMeUpChaochelaImage,
+    src: `${imagePath}/veg-me-up/chaochela-smoothie-bowl.jpeg`,
     alt: 'Veg Me Up Chaochela smoothie bowl',
     caption: 'Chaochela smoothie bowl. This bloodless smoothie is made from mango.',
   },
@@ -148,17 +121,17 @@ export const vegMeUpImages = [
 
 export const oasisImages = [
   {
-    src: buffet1Image,
+    src: `${imagePath}/oasis/buffet-1.jpeg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'From the buffet, this plate cost me 80 baht.',
   },
   {
-    src: buffet2Image,
+    src: `${imagePath}/oasis/buffet-2.jpeg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'This one was 90 baht.',
   },
   {
-    src: oasis2013Image,
+    src: `${imagePath}/oasis/2013.jpg`,
     alt: 'Oasis Vegetaurant buffet',
     caption: 'A throwback to when I ate here in 2013.',
   },
@@ -166,22 +139,22 @@ export const oasisImages = [
 
 export const heavenBurgerImages = [
   {
-    src: heavenBurgerVeganBreakfastPlateImage,
+    src: `${imagePath}/heaven-burger/vegan-breakfast-plate.jpeg`,
     alt: 'Heaven Burger vegan breakfast plate',
     caption: "This vegan breakfast plate is the most expensive item on the vegan menu at 179 baht. At first glance, it looks slightly peculiar. Who'd have thought a plate containing mango and baked beans would work? But somehow, it really does.",
   },
   {
-    src: heavenBurgerFriedCrispyMushroomImage,
+    src: `${imagePath}/heaven-burger/fried-crispy-mushroom.jpeg`,
     alt: 'Heaven Burger fried crispy mushroom with teriyaki sauce on vegan burger bun',
     caption: 'This one is fried crispy mushroom with teriyaki sauce on a vegan burger bun, and costs 149 baht.',
   },
   {
-    src: heavenBurgerMixedBerrySmoothieImage,
+    src: `${imagePath}/heaven-burger/mixed-berry-smoothie.jpeg`,
     alt: 'Heaven Burger mixed berry smoothie',
     caption: 'A mixed berry smoothie for 60 baht.',
   },
   {
-    src: heavenBurgerAvocadoMushroomSandwichImage,
+    src: `${imagePath}/heaven-burger/avocado-mushroom-sandwich.jpeg`,
     alt: 'Heaven Burger avocado mushroom sandwich',
     caption: 'This avocado mushroom sandwich with fries will cost you 129 baht.',
   },
@@ -189,7 +162,7 @@ export const heavenBurgerImages = [
 
 export const runningImages = [
   {
-    src: runningStravaImage,
+    src: `${imagePath}/running/strava.jpeg`,
     alt: 'Strava map',
     caption: 'My first run in Chiang Rai',
     url: 'https://www.strava.com/activities/8137341605',
@@ -254,11 +227,13 @@ Veganism isn't as common in Thailand as you might expect for a Buddhist country,
 
 So if you've been spoiled by the gluttony of vegan restaurants in tourist hubs like Bangkok and Chiang Mai, it might initially be a bit of a shock how little is obviously on offer in Chiang Rai. However once you settle down and explore a bit, you realise that Chiang Rai does have quite a few good restaurants selling vegan food.
 
-<ExternalLink url="https://www.happycow.net/searchmap?s=3&location=Chiang+Rai%2C+Thailand&metric=mi&limit=81&order=rating&lat=19.9072&lng=99.831&zoom=11&page=1">Happy Cow</ExternalLink> is my go-to resource for finding vegan restaurants in most places in the world, and Chiang Rai is no different. Searching for vegan food on local delivery apps like Grab and FoodPanda is an alternative choice. Even if you have no intention of ordering from the app, it can let you know which places offer vegan food. It's also worth noting the fruit market. It's a short walk from the bus station, and sells whole fruits, but also some pre-cut fruit, often mixed into fruit salad (expect to pay about 50 baht). Getting one of these with some nuts and seeds from 7-11, and you've got a substantial and healthy meal.
+As well as the Chiang Rai's restaurants, it's also worth noting the fruit market. It's a short walk from the bus station, and sells whole fruits, but also some pre-cut fruit, often mixed into fruit salad (expect to pay about 50 baht). Getting one of these with some nuts and seeds from 7-11, and you've got a substantial and healthy meal.
 
-Vegan restaurants in Chiang Rai go beyond what I'll mention here, but my favourite places were:
+My favourite restaurants were:
 
 ### Kunda Vegan Vegetarian
+
+<MapLink name='372 Trairat Rd' url='https://maps.app.goo.gl/tEhCGKNr7eERf4cc8' />
 
 One word comes to mind when I think of Kunda: Clean. And I'm not talking about the premesis.
 
@@ -270,9 +245,9 @@ The burger, the bun, even the sauce is homemade with love. And when you eat clea
 
 <ImageGallery images={kundaImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/kunda-vegan-vegetarian-chaing-rai-138460'>Visit Kunda on Happy Cow</ExternalLink>
-
 ### Veg Me Up
+
+<MapLink name='934 13 Phaholyothin Rd' url='https://maps.app.goo.gl/zw2Mi4hPiNeKbtZy7' />
 
 This is a juice bar/smoothie bowl cafe rather than a restaurant, but it makes my list of vegan restaurants in Chiang Rai, just because it was the best place I found to get a my fruit fix.
 
@@ -286,13 +261,13 @@ The smoothie bowls are 185 baht and the juices are 80 baht each.
 
 <ImageGallery images={vegMeUpImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/veg-me-up-chiang-rai-317317'>Visit Veg Me Up on Happy Cow</ExternalLink>
-
 ### Oasis Vegetaurant
+
+<MapLink name='612/93 Sirikorn Market' url='https://maps.app.goo.gl/1jmSuXwq66yyfLeL9' />
 
 Oasis is your typical "local" Thai vegan buffet. It has made-to-order food too, but I've never felt the need to order any because the buffet's always been so good. The menu is 100% vegan, so you can order anything with confidence, and if you come here with 100 baht, you'll be leaving with change.
 
-There's at least one other such restaurant in Chiang Rai (<ExternalLink url='https://www.happycow.net/reviews/tamachat-chiang-rai-5147'>Tamachat</ExternalLink> comes to mind), but Oasis holds a special place in my heart because when I first came to Chiang Rai in 2013, this was my best, and perhaps only source of vegan food.
+There's at least one other such restaurant in Chiang Rai (<ExternalLink url='https://maps.app.goo.gl/P9JoaZwCsBtfY5RL7'>Tamachat</ExternalLink> comes to mind), but Oasis holds a special place in my heart because when I first came to Chiang Rai in 2013, this was my best, and perhaps only source of vegan food.
 
 Now 2022, it hasn't changed a bit. The same decor, the same food, the same great prices.
 
@@ -300,9 +275,9 @@ As with all places of this type, the food isn't going to blow you away. It's mor
 
 <ImageGallery images={oasisImages} />
 
-<ExternalLink url='https://www.happycow.net/reviews/oasis-vegetaurant-chiang-rai-5146'>Visit Oasis Vegetaurant on Happy Cow</ExternalLink>
-
 ### Heaven Burger
+
+<MapLink name='1025/9 Jetyod Rd' url='https://maps.app.goo.gl/hnv94JGYf59Gfawu9' />
 
 Although not a vegan, or even vegetarian restaurant, Heaven Burger became my go-to restaurant in Chiang Rai, because despite serving meat, it was completely trustworthy and reliable.
 
@@ -313,8 +288,6 @@ So after a day working on my laptop, when I might not finish until 7:30pm, it wa
 The vegan menu is pretty big, containing 14 items (although the seven non-sandwich/burger items weren't always available), so you get plenty of variety if you come here multiple times. The quality is great, and the most expensive item on the vegan menu is 179 baht (with burgers starting at 129 baht). So you can come here, get a burger and chips with a smoothie, and still pay less than 200 baht.
 
 <ImageGallery images={heavenBurgerImages} />
-
-<ExternalLink url='https://www.happycow.net/reviews/heaven-burger-chiang-rai-293904'>Visit Heaven Burger on Happy Cow</ExternalLink>
 
 ## Where to run in Chiang Rai
 
