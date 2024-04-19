@@ -35,6 +35,64 @@ export const zhongzhengApartmentDetails = {
   },
 }
 
+export const xinhiApartmentDetails = {
+  dates: {
+    checkIn: '2024-04-18',
+    checkOut: '2024-05-30',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/876987032092375540',
+  },
+  roomType: 'Entire rental unit in Xinyi District',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 2141.76,
+      '25% monthly price discount': -535.26,
+      'Cleaning fee': 37.18,
+      'Service fee': 209.40,
+      'Taxes': 82.18,
+    },
+  },
+}
+
+export const imagePath = '/images/articles/taipei-for-digital-nomads'
+
+export const zhongzhengApartmentImages = [
+  {
+    src: `${imagePath}/zhongzheng-apartment/bed.jpeg`,
+    alt: 'Zhongzheng apartment bed and sofa',
+    caption: "If like me, you place importance on the amount of natural light a room gets, you might be lured-in by the big windows you see here - the blinds aren't even open all the way in this photo. Unfortunately the apartment is in the middle of a horseshoe, with residential apartments and businesses flanking it on both sides, meaning that in the absence of any drapes or translucent curtains, if you leave the blinds open, people in adjacent rooms can see in (particularly when you're lying in bed), but if you close them no light gets in. The best middle-ground I found was to entirely close the left blind while sleeping, and to half-close the right one. It didn't give me total privacy, but it did at least stop the apartment immediately to the left being able to see in from about a metre away, which would be weird while sleeping, and it let in enough light that I at least rose with daylight.",
+  },
+  {
+    src: `${imagePath}/zhongzheng-apartment/sofa.jpeg`,
+    alt: 'Zhongzheng apartment sofa and living area',
+    caption: "The biggest downside to Taipei is that accommodation is not cheap, especially you're used to places like Eastern Europe and South-East Asia (as I am). Here you pay more for a tiny room than you do for a large apartment in either of those, but it at least has all the essentials. As there's only one surface in the apartment, the desk serves as both a workstation and a kitchen surface. On top of the microwave it an electric hob that you can bring down to the desk for cooking, and in the cabinet under the desk are a couple of pans. A limited amount of utensils and crockery are provided, although I think they just threw-in whatever they had lying around because it includes two dinner knives, but no forks. Luckily I'm a seasoned nomad and carry a lot of my own kitchenware to overcome the shortcomings of my hosts.",
+  },
+  {
+    src: `${imagePath}/zhongzheng-apartment/wall.jpeg`,
+    alt: 'Zhongzheng apartment brick wall',
+    caption: 'Apart from the main room, going through this doorway takes you to the bathroom, sink, and a closet.',
+  },
+  {
+    src: `${imagePath}/zhongzheng-apartment/sink.jpeg`,
+    alt: 'Zhongzheng apartment sink',
+    caption: "There is only one sink in the apartment, so it serves as both your bathroom sink and your kitchen sink. It's slightly alien to me to be brushing my teeth and washing my dishes in the same sink, but perhaps I've lived too much of a charmed life.",
+  },
+  {
+    src: `${imagePath}/zhongzheng-apartment/bathroom.jpeg`,
+    alt: 'Zhongzheng apartment bathroom',
+    caption: 'The bathroom is compact, but it has all you need. The space-age looking washing machine is also a dryer, so doing your laundry while staying here is very efficient. All the buttons are labelled in Chinese, and Google Translate only helps you so much, so I pretty much just guessed the cycle I was running each time, but my clothes always came out clean.',
+  },
+  {
+    src: `${imagePath}/zhongzheng-apartment/outside.jpeg`,
+    alt: 'Zhongzheng apartment from outside',
+    caption: "This is the apartment building from the outside. You go in through the doors in the middle of this picture, then the apartment is up on the first floor. I really loved the area, it's in a great location. The street the apartment is on has a tonne of electronic shops, so if you're into tech it will be your wet dream.",
+  },
+]
+
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
@@ -63,7 +121,13 @@ TODO
 
 TODO
 
+## Who is Taipei suitable for?
+
+TODO
+
 ## Where I stayed
+
+TODO
 
 ### 5 mins to MRT Zhongxiao Xinsheng, studio for 2
 
@@ -73,14 +137,36 @@ TODO
 
 TODO
 
+<ImageGallery images={zhongzhengApartmentImages} />
+
+### 5 mins to MRT Taipei 101, elevator studio for 2
+
+<MapLink name='245 Zhuangjing Road' url='https://maps.app.goo.gl/6fc5v2QquVgRf4DT9' />
+
+<AccommodationTable details={xinhiApartmentDetails} />
+
+TODO
+
+TODO: Add photos
+
 ## Where to get vegan food in Taipei
 
 TODO
+
+TODO: Add photos - Use this image gallery to add photos for restaurants/shops that aren't prominent enought to get their own section below
+
+### Yuli Your Home
+
+TODO
+
+TODO: Add photos
+
+TODO: Add other restaurants
 
 ## Where to run in Taipei
 
 TODO
 
-## Being sociable in Taipei
+## How to be sociable in Taipei
 
 TODO
