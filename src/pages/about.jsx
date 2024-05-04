@@ -1,7 +1,8 @@
 import Head from 'next/head'
 
 import { Container } from '@/components/Container'
-import portraitImage from './portrait.jpg'
+
+export const imagePath = '/images/about'
 
 const About = () => {
   return (
@@ -15,42 +16,42 @@ const About = () => {
           <div className="flex lg:flex-col lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 md:block lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square -rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square rotate-1 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square -rotate-6 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={portraitImage.src}
+                src={`${imagePath}/portrait.jpg`}
                 alt="On Bui Vien Walking Street in Ho Chi Minh City"
                 className="aspect-square -rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
