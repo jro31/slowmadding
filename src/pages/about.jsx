@@ -1,15 +1,61 @@
 import Head from 'next/head'
 
 import { Container } from '@/components/Container'
+import Timeline from '@/components/Timeline'
 
-export const imagePath = '/images/about'
+import { parsedTimelineData } from '@/lib/timelineData'
 
-const About = () => {
+const imagePath = '/images/about'
+
+const digitalNomad = 'Digital nomad'
+const backpackingTrip = 'Backpacking trip'
+const mexico08 = "Mexico '08"
+const dalhousie = 'Dalhousie'
+const canada05 = "Canada '05"
+
+const startDate = 'Start date'
+const endDate = 'End date'
+
+const timelineDates = {
+  [digitalNomad]: {
+    [startDate]: '2022-10-07',
+    [endDate]: null,
+  },
+  [backpackingTrip]: {
+    [startDate]: '2008-11-20',
+    [endDate]: '2018-11-29',
+  },
+  [mexico08]: {
+    [startDate]: '2008-06-24',
+    [endDate]: '2008-07-20',
+  },
+  [dalhousie]: {
+    [startDate]: '2006-08-27',
+    [endDate]: '2007-05-01',
+  },
+  [canada05]: {
+    [startDate]: '2005-05-17',
+    [endDate]: '2005-09-06',
+  },
+}
+
+const introText = {
+  [digitalNomad]: 'Where being a digital nomad has taken me.',
+  [backpackingTrip]:
+    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing a coding bootcamp in Bali in 2018 that paved the way for me to become a software engineer, and ultimately a digital nomad.',
+  [mexico08]: 'A university reunion in Mexico.',
+  [dalhousie]:
+    'A university exchange to Dalhouse University in Nova Scotia with some time to travel over the Christmas break.',
+  [canada05]:
+    'My first time travelling was on the summer break after my first year of university, starting with a couple of months working in Vancouver before going by boat up to Alaska, then by bus from Anchorage to New York.',
+}
+
+const About = ({ timelines }) => {
   return (
     <>
       <Head>
         <title>About</title>
-        <meta name="description" content="About slowmadding.com" />
+        <meta name="description" content="All about slowmadding.com" />
       </Head>
       <Container className="mt-16 sm:mt-32">
         <div className="grid grid-cols-1 gap-y-16 lg:grid-cols-2 lg:grid-rows-[auto_1fr] lg:gap-y-12">
@@ -168,8 +214,30 @@ const About = () => {
           </div>
         </div>
       </Container>
+
+      <Timeline timelines={timelines} digitalNomad={digitalNomad} />
     </>
   )
 }
 
 export default About
+
+export async function getStaticProps() {
+  let timelineDetails = {}
+
+  Object.keys(timelineDates).map((timelineName) => {
+    timelineDetails[timelineName] = {
+      introText: introText[timelineName],
+      timelineData: parsedTimelineData(
+        timelineDates[timelineName][startDate],
+        timelineDates[timelineName][endDate]
+      ),
+    }
+  })
+
+  return {
+    props: {
+      timelines: timelineDetails,
+    },
+  }
+}

@@ -8,7 +8,7 @@ import {
 } from '@/lib/timelineData/variables'
 import { formatDateRange, usersDate } from '@/lib/formatDate'
 
-const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
+const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
   let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
 
@@ -163,4 +163,4 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
   )
 }
 
-export default TimelineComponent
+export default TimelineGraphic
