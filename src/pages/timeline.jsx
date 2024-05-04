@@ -100,7 +100,13 @@ const Timeline = ({ timelines }) => {
           content="A timeline of my digital nomad and backpacking trips."
         />
       </Head>
-      <SimpleLayout title={title} intro={timelines[currentTimeline].introText}>
+      <SimpleLayout
+        title={title}
+        intro={timelines[currentTimeline].introText}
+        HeaderTag="div"
+        TitleTag="h2"
+        titleSize="small"
+      >
         <div className="relative mb-3 flex">
           <div className="flex flex-1 justify-center lg:hidden">
             <OverlayMenu title={currentTimeline}>
