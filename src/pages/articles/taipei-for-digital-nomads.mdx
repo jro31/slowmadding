@@ -186,6 +186,49 @@ export const veganFoodImages = [
   },
 ]
 
+export const yuliYourHomeImages = [
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/fried-vegan-shrimp-rings-curry.jpeg`,
+    alt: 'Yuli Your Home fried vegan shrimp rings curry',
+    caption: 'Yuli is a fully vegan restaurant that offers curries, bibimaps and hot pot. This is the fried vegan shrimp rings curry for NT$235.',
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/fried-vegan-fish-fillet-curry.jpeg`,
+    alt: 'Yuli Your Home fried vegan fish fillet curry',
+    caption: "Or my personal favourite for when I'm feeling a bit lavish is the fried vegan fish fillet curry for NT$260.",
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/toona-sauce-bibimap.jpeg`,
+    alt: 'Yuli Your Home toona sauce bibimap',
+    caption: "I've eaten bibimap many times in many different restaurants, and I'll be honest, I have no idea what it means. What is the difference between a poke bowl, a salad and a bibimap? 🤷‍♂️. None-the-less, I always seem to like whatever arrives, so here we are again. This is the toona sauce bibimap for NT$220.",
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/assorted-boiled-dumplings.jpeg`,
+    alt: 'Yuli Your Home boiled dumplings',
+    caption: 'Whether I get a curry or a bibimap, I always got some dumplings on the side. Assorted boiled dumplings are NT$95 for six.',
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/assorted-pan-fried-dumplings.jpeg`,
+    alt: 'Yuli Your Home pan-fried dumplings',
+    caption: "Or if that doesn't appeal to you then get them pan-fried instead, and get fat and burn your mouth like I did for NT$100.",
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/days-off.jpeg`,
+    alt: 'Yuli Your Home days off - April 2024',
+    caption: "The days that Yuli is closed changes from week-to-week seemlingly without logic. From what I saw they keep Google Maps updated with the correct days, or if you look in the window they post which days they're going to be closed for that month, like here showing April 2024 (they write the month before the day like total nobheads though).",
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/vegetable-curry.jpeg`,
+    alt: 'Yuli Your Home vegetable curry',
+    caption: "The cheapest main dish on the menu is the vegetable curry, which is only NT$160. The curries come with either brown rice or noodles. Typically I'd get brown rice because it sounds healthier and soaks up all the soup, but when I wanted to live a little I'd get noodles.",
+  },
+  {
+    src: `${imagePath}/vegan-food/yuli-your-home/basil-and-lemon-bibimap.jpeg`,
+    alt: 'Yuli Your Home basil and lemon bibimap',
+    caption: 'Another bibimap (🤷‍♂️) is this basil and lemon bibimap, also for NT$220 and including a vegan fried egg (not pictured).',
+  },
+]
+
 export const burgerSuVeggieImages = [
   {
     src: `${imagePath}/vegan-food/burger-su-veggie/truffle-neo-burger.jpeg`,
@@ -262,6 +305,44 @@ export const mayurIndianKitchenImages = [
     src: `${imagePath}/vegan-food/mayur-indian-kitchen/mix-bean-salad.jpeg`,
     alt: 'Mayur Indian Kitchen vegetarian restaurant mix bean salad',
     caption: 'TODO: Mix bean salad - NT$180',
+  },
+]
+
+export const groceryStoreImages = [
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/vegan-instant-noodles.jpeg`,
+    alt: 'Vegan instant noodles in 7-11',
+    caption: "As is typical for Asia, you won't find any vegan sections in any of the supermarkets, and will instead find very occasional vegan items dotted around the city. Probably the most prominent are these vegan instant noodles which I saw in pretty much every supermarket I went to, includin branches of Carrefour, PX Mart, and even as pictured here, in 7-11.",
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/vegan-burger.jpeg`,
+    alt: 'Frozen vegan burger in PX Mart Xinyi Sanxing',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/omnipork.jpeg`,
+    alt: 'Omnipork dishes in Carrefour Jinan',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/wholewheat-spaghetti.jpeg`,
+    alt: 'Wholewheat spaghetti in Fresh Mart supermarket in Far Eastern Sogo Taipei Zhongxiao',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/vegan-biscuits.jpeg`,
+    alt: "Vegan biscuits in Mia C'bon Taipei 101",
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/plant-based-meat.jpeg`,
+    alt: 'Frozen plant-based meatballs and plant-based sausages in Carrefour Songren',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/vegan-food/grocery-stores/vegan-dumplings.jpeg`,
+    alt: 'Frozen vegan dumplings in Carrefour Jinan',
+    caption: 'TODO',
   },
 ]
 
@@ -432,7 +513,7 @@ TODO
 
 TODO
 
-TODO: Add photos
+<ImageGallery images={yuliYourHomeImages} />
 
 ### Burger Su Veggie
 
@@ -452,11 +533,11 @@ TODO: Keep this one?
 
 <ImageGallery images={mayurIndianKitchenImages} />
 
-### Supermarkets
+### Grocery stores
 
-TODO
+TODO: Local fruit shops have better selection and better selection than supermarkets
 
-TODO: Add photos
+<ImageGallery images={groceryStoreImages} />
 
 ## Running in Taipei
 
