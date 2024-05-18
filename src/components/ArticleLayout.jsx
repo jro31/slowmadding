@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 import { useRouter } from 'next/router'
 
 import { renderToString } from 'react-dom/server'
@@ -29,9 +30,7 @@ const ArticleLayout = ({
   isRssFeed = false,
   previousPathname,
 }) => {
-  // To get article headings from an article:
-  // const articleHeadings = useArticleHeadings()
-  // console.log(articleHeadings(renderToString(children)))
+  const articleHeadings = useArticleHeadings()
 
   let router = useRouter()
 
@@ -57,7 +56,7 @@ const ArticleLayout = ({
                 type="button"
                 onClick={() => router.back()}
                 aria-label="Go back to articles"
-                className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:mb-0 lg:-mt-2 xl:-top-1.5 xl:left-0 xl:mt-0"
+                className="group mb-8 flex h-10 w-10 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 transition dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0 dark:ring-white/10 dark:hover:border-zinc-700 dark:hover:ring-white/20 lg:absolute lg:-left-5 lg:-mt-2 lg:mb-0 xl:-top-1.5 xl:left-0 xl:mt-0"
               >
                 <ArrowLeftIcon className="h-4 w-4 stroke-zinc-500 transition group-hover:stroke-zinc-700 dark:stroke-zinc-500 dark:group-hover:stroke-zinc-400" />
               </button>
@@ -75,6 +74,28 @@ const ArticleLayout = ({
                   <span className="ml-3">{formatDate(meta.date)}</span>
                 </time>
               </header>
+
+              {/* TODO: Nest headings beneath parents */}
+              {/* TODO: Style properly */}
+              <div className="mx-auto mt-6 max-w-xl">
+                <ul className="rounded-2xl bg-white/90 p-6 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                  <h3 className="mb-4 text-base font-semibold leading-7">
+                    In this article
+                  </h3>
+                  {articleHeadings(renderToString(children), true).map(
+                    (articleHeading) =>
+                      articleHeading.headingId && (
+                        <Link
+                          key={`${articleHeading.headingId}-in-this-article-link`}
+                          href={`#${articleHeading.headingId}`}
+                        >
+                          <li>{articleHeading.headingText}</li>
+                        </Link>
+                      )
+                  )}
+                </ul>
+              </div>
+
               <Prose className="mt-8">{children}</Prose>
             </article>
           </div>

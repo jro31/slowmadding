@@ -10,12 +10,19 @@ const useArticleHeadings = () => {
     const extractHeading = (headingElement) =>
       headingElement.replace(/(<([^>]+)>)/gi, '')
 
+    const extractId = (headingElement) => {
+      let match = headingElement.match(/id=\"(.*?)\"/)
+
+      return match ? match[1] : null
+    }
+
     const buildChronologicalArray = () => {
       returnVariable = []
       headingElements().map((headingElement) => {
         returnVariable.push({
           headingLevel: `h${headingLevel(headingElement)}`,
           headingText: extractHeading(headingElement),
+          headingId: extractId(headingElement),
         })
       })
     }
