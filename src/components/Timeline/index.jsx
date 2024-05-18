@@ -26,6 +26,8 @@ import { Popover } from '@headlessui/react'
 
 import clsx from 'clsx'
 
+import { formatDateRange, usersDate } from '@/lib/formatDate'
+
 import OverlayMenu from '../OverlayMenu'
 import SimpleLayout from '../SimpleLayout'
 import TimelineGraphic from './TimelineGraphic'
@@ -44,10 +46,19 @@ const Timeline = ({ timelines, digitalNomad }) => {
   const handleModeToggle = () =>
     setCompactMode((prevCompactMode) => !prevCompactMode)
 
+  const adjustedDepartureDate = (departureDate) =>
+    new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
+
   return (
     <SimpleLayout
-      title="Timeline"
-      intro={timelines[currentTimeline].introText}
+      title="Trips"
+      intro={`${currentTimeline} - ${formatDateRange(
+        timelines[currentTimeline].timelineData.slice(-1)[0].stays.slice(-1)[0]
+          .arrival,
+        adjustedDepartureDate(
+          timelines[currentTimeline].timelineData[0].stays[0].departure
+        )
+      )}`}
       HeaderTag="div"
       TitleTag="h2"
       titleSize="small"
@@ -121,6 +132,7 @@ const Timeline = ({ timelines, digitalNomad }) => {
         timelineData={timelines[currentTimeline].timelineData}
         ascending={ascending}
         compactMode={compactMode}
+        adjustedDepartureDate={adjustedDepartureDate}
       />
 
       <BackToTopLink />

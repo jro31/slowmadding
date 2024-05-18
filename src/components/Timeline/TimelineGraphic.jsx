@@ -8,7 +8,12 @@ import {
 } from '@/lib/timelineData/variables'
 import { formatDateRange, usersDate } from '@/lib/formatDate'
 
-const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
+const TimelineGraphic = ({
+  timelineData,
+  ascending,
+  compactMode,
+  adjustedDepartureDate,
+}) => {
   let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
 
@@ -72,11 +77,6 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
                   ? true
                   : !stayOrderFirst
 
-              const adjustedDepartureDate =
-                new Date(stay[departure]) > new Date(usersDate)
-                  ? usersDate
-                  : stay[departure]
-
               return (
                 <div
                   key={`country-${countryIterator}-place-${stayIterator}-section`}
@@ -108,7 +108,7 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
                               Math.max(
                                 numberOfNights(
                                   stay[arrival],
-                                  adjustedDepartureDate
+                                  adjustedDepartureDate(stay[departure])
                                 ) * 15,
                                 106
                               ),
@@ -149,7 +149,10 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
                     >
                       <div className="font-bold">{stay[place]}</div>
                       <div>
-                        {formatDateRange(stay[arrival], adjustedDepartureDate)}
+                        {formatDateRange(
+                          stay[arrival],
+                          adjustedDepartureDate(stay[departure])
+                        )}
                       </div>
                     </div>
                   </div>

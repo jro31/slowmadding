@@ -1,3 +1,5 @@
+// TODO: Add redirect from Timeline page to here to keep Google happy? Or on the other hand, fuck Google.
+
 import Head from 'next/head'
 
 import { Container } from '@/components/Container'
@@ -37,17 +39,6 @@ const timelineDates = {
     [startDate]: '2005-05-17',
     [endDate]: '2005-09-06',
   },
-}
-
-const introText = {
-  [digitalNomad]: 'Where being a digital nomad has taken me.',
-  [backpackingTrip]:
-    'Before I was a digital nomad, I went on a backpacking trip that started with being a lifty in Canada in 2008, led to six years as an English teacher in Thailand and China, and finished with doing a coding bootcamp in Bali in 2018 that paved the way for me to become a software engineer, and ultimately a digital nomad.',
-  [mexico08]: 'A university reunion in Mexico.',
-  [dalhousie]:
-    'A university exchange to Dalhouse University in Nova Scotia with some time to travel over the Christmas break.',
-  [canada05]:
-    'My first time travelling was on the summer break after my first year of university, starting with a couple of months working in Vancouver before going by boat up to Alaska, then by bus from Anchorage to New York.',
 }
 
 const About = ({ timelines }) => {
@@ -105,10 +96,21 @@ const About = ({ timelines }) => {
           </div>
           <div className="lg:order-first lg:row-span-2">
             <h1 className="text-4xl font-bold tracking-tight text-zinc-800 dark:text-zinc-100 sm:text-5xl">
-              I'm Jethro, I'm a digital nomad.
+              About Slowmadding
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
+              {/* TODO: Make these more prominent */}
+              <p>"Travel broadens the mind"</p>
+              <p>"To travel is to live"</p>
+              <p>"Travel is the only thing you buy that makes you richer"</p>
+
               <p>
+                These are just some of the reasons that people turn to a life of
+                travel. And they're all utter bollocks, this is just the stupid
+                shit that people say on Instagram.
+              </p>
+
+              {/* <p>
                 That's just a fancy way of saying I'm not grown up enough to
                 settle down and start being an adult yet, but that I'm too lazy
                 to travel properly, so spend several weeks or even months
@@ -209,7 +211,7 @@ const About = ({ timelines }) => {
               <p>
                 It is my attempt to find the perfect balance between routine and
                 adventure.
-              </p>
+              </p> */}
             </div>
           </div>
         </div>
@@ -227,7 +229,6 @@ export async function getStaticProps() {
 
   Object.keys(timelineDates).map((timelineName) => {
     timelineDetails[timelineName] = {
-      introText: introText[timelineName],
       timelineData: parsedTimelineData(
         timelineDates[timelineName][startDate],
         timelineDates[timelineName][endDate]
