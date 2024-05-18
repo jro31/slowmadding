@@ -18,6 +18,8 @@ const useArticleHeadings = () => {
 
     const buildChronologicalArray = () => {
       returnVariable = []
+      if (!headingElements()) return
+
       headingElements().map((headingElement) => {
         returnVariable.push({
           headingLevel: `h${headingLevel(headingElement)}`,
@@ -29,6 +31,8 @@ const useArticleHeadings = () => {
 
     const buildImportanceObject = () => {
       returnVariable = {}
+      if (!headingElements()) return
+
       headingElements().map((headingElement) => {
         if (`h${headingLevel(headingElement)}Headings` in returnVariable) {
           returnVariable[`h${headingLevel(headingElement)}Headings`].push(

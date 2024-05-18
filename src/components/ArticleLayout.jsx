@@ -77,24 +77,26 @@ const ArticleLayout = ({
 
               {/* TODO: Nest headings beneath parents */}
               {/* TODO: Style properly */}
-              <div className="mx-auto mt-6 max-w-xl">
-                <ul className="rounded-2xl bg-white/90 p-6 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-                  <h3 className="mb-4 text-base font-semibold leading-7">
-                    In this article
-                  </h3>
-                  {articleHeadings(renderToString(children), true).map(
-                    (articleHeading) =>
-                      articleHeading.headingId && (
-                        <Link
-                          key={`${articleHeading.headingId}-in-this-article-link`}
-                          href={`#${articleHeading.headingId}`}
-                        >
-                          <li>{articleHeading.headingText}</li>
-                        </Link>
-                      )
-                  )}
-                </ul>
-              </div>
+              {articleHeadings(renderToString(children), true).length > 0 && (
+                <div className="mx-auto mt-6 max-w-xl">
+                  <ul className="rounded-2xl bg-white/90 p-6 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
+                    <h3 className="mb-4 text-base font-semibold leading-7">
+                      In this article
+                    </h3>
+                    {articleHeadings(renderToString(children), true).map(
+                      (articleHeading) =>
+                        articleHeading.headingId && (
+                          <Link
+                            key={`${articleHeading.headingId}-in-this-article-link`}
+                            href={`#${articleHeading.headingId}`}
+                          >
+                            <li>{articleHeading.headingText}</li>
+                          </Link>
+                        )
+                    )}
+                  </ul>
+                </div>
+              )}
 
               <Prose className="mt-8">{children}</Prose>
             </article>
