@@ -16,35 +16,17 @@
 
 import { useState } from 'react'
 
-import {
-  ArrowDownIcon,
-  ArrowUpIcon,
-  ArrowsPointingInIcon,
-  ArrowsPointingOutIcon,
-} from '@heroicons/react/24/outline'
-import { Popover } from '@headlessui/react'
-
-import clsx from 'clsx'
-
 import { formatDateRange, usersDate } from '@/lib/formatDate'
 
-import OverlayMenu from '../OverlayMenu'
 import SimpleLayout from '../SimpleLayout'
 import TimelineGraphic from './TimelineGraphic'
 import BackToTopLink from '../BackToTopLink'
-
-const toggleButtonClassnames =
-  'h-6 w-6 cursor-pointer stroke-zinc-800 hover:stroke-teal-500 dark:stroke-zinc-500 dark:hover:stroke-zinc-400'
+import Buttons from './Buttons'
 
 const Timeline = ({ timelines, digitalNomad }) => {
   const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
   const [ascending, setAscending] = useState(false)
   const [compactMode, setCompactMode] = useState(false)
-
-  const handleAscendingToggle = () =>
-    setAscending((prevAscending) => !prevAscending)
-  const handleModeToggle = () =>
-    setCompactMode((prevCompactMode) => !prevCompactMode)
 
   const adjustedDepartureDate = (departureDate) =>
     new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
@@ -63,70 +45,15 @@ const Timeline = ({ timelines, digitalNomad }) => {
       TitleTag="h2"
       titleSize="small"
     >
-      <div className="relative mb-3 flex">
-        <div className="flex flex-1 justify-center lg:hidden">
-          <OverlayMenu title={currentTimeline}>
-            {Object.keys(timelines).map((timelineName) => (
-              <li key={`${timelineName}-timeline-mobile-link`}>
-                <Popover.Button
-                  className="block py-2"
-                  onClick={(e) => setCurrentTimeline(e.target.textContent)}
-                >
-                  {timelineName}
-                </Popover.Button>
-              </li>
-            ))}
-          </OverlayMenu>
-        </div>
-
-        {/* TODO: Is it possible to merge code duplicated in the desktop navbar without overcomplicating? */}
-        <div className="hidden flex-1 justify-center lg:flex">
-          <ul className="flex rounded-full bg-white/90 px-3 text-sm font-medium text-zinc-800 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur dark:bg-zinc-800/90 dark:text-zinc-200 dark:ring-white/10">
-            {Object.keys(timelines).map((timelineName) => (
-              <li key={`${timelineName}-timeline-desktop-link`}>
-                <div
-                  onClick={(e) => setCurrentTimeline(e.target.textContent)}
-                  className={clsx(
-                    'relative block cursor-pointer px-3 py-2 transition',
-                    currentTimeline === timelineName
-                      ? 'text-teal-500 dark:text-teal-400'
-                      : 'hover:text-teal-500 dark:hover:text-teal-400'
-                  )}
-                >
-                  {timelineName}
-                  {currentTimeline === timelineName && (
-                    <span className="absolute inset-x-1 -bottom-px h-px bg-gradient-to-r from-teal-500/0 via-teal-500/40 to-teal-500/0 dark:from-teal-400/0 dark:via-teal-400/40 dark:to-teal-400/0" />
-                  )}
-                </div>
-              </li>
-            ))}
-          </ul>
-        </div>
-        <div className="absolute right-0 flex flex-initial items-center gap-4 rounded-full bg-white/90 px-3 py-2 shadow-lg shadow-zinc-800/5 ring-1 ring-zinc-900/5 backdrop-blur transition dark:bg-zinc-800/90 dark:ring-white/10 dark:hover:ring-white/20">
-          {ascending ? (
-            <ArrowDownIcon
-              onClick={handleAscendingToggle}
-              className={toggleButtonClassnames}
-            />
-          ) : (
-            <ArrowUpIcon
-              onClick={handleAscendingToggle}
-              className={toggleButtonClassnames}
-            />
-          )}
-          {compactMode ? (
-            <ArrowsPointingInIcon
-              onClick={handleModeToggle}
-              className={toggleButtonClassnames}
-            />
-          ) : (
-            <ArrowsPointingOutIcon
-              onClick={handleModeToggle}
-              className={toggleButtonClassnames}
-            />
-          )}
-        </div>
-      </div>
+      <Buttons
+        currentTimeline={currentTimeline}
+        timelines={timelines}
+        setCurrentTimeline={setCurrentTimeline}
+        ascending={ascending}
+        setAscending={setAscending}
+        compactMode={compactMode}
+        setCompactMode={setCompactMode}
+      />
 
       <TimelineGraphic
         timelineData={timelines[currentTimeline].timelineData}

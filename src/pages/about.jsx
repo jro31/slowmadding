@@ -105,10 +105,24 @@ const About = ({ timelines }) => {
               <p>"Travel is the only thing you buy that makes you richer"</p>
 
               <p>
-                These are just some of the reasons that people turn to a life of
-                travel. And they're all utter bollocks, this is just the stupid
-                shit that people say on Instagram.
+                This is some of the stupid shit that people who've never been
+                anywhere say on Instagram.
               </p>
+
+              <p>
+                Travel is fun. It allows you to meet a lot of people. It allows
+                you to spend your time in less financially demanding places. And
+                it's suitable for people who just aren't wired to stay still.
+              </p>
+
+              <p>
+                A nomadic lifestyle stifles your instinctive ability to slump
+                into an irrelevant routine, then act irrationally to prevent
+                that routine getting disrupted. When you don't stay anywhere
+                long enough to [grow roots], then you don't...
+              </p>
+
+              <p>It's a lifestyle for people who are scared to</p>
 
               {/* <p>
                 That's just a fancy way of saying I'm not grown up enough to
@@ -217,6 +231,10 @@ const About = ({ timelines }) => {
         </div>
       </Container>
 
+      {/* TODO: I think there's no need to have all trips readily available here */}
+      {/* Instead, just include 'Digital Nomad' in the intiial timeline */}
+      {/* Then at the bottom of the timeline, have an 'Other trips' link that links to a 'Trips' page */}
+      {/* That should look identical to the previous 'Timeline' page, barring using 'Trips' for the title/navigation */}
       <Timeline timelines={timelines} digitalNomad={digitalNomad} />
     </>
   )
