@@ -614,6 +614,48 @@ export const placesData = [
     [articlePath]: '/articles/sofia-for-digital-nomads',
   },
   {
+    [place]: places[countries.taiwan].taipei,
+    [country]: countries.taiwan,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: false,
+        [description]:
+          'More expensive than Eastern Europe and South-East Asia, particularly for accommodation, expect to pay upwards of NT$1,800 per night for a decent room, around NT$250 for a meal in a nice restaurant, and NT$200 for a large local beer.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'No connection issues at all during my time. My first room had consistent download speeds and upload speeds of around 250mb/s and 130mb/s respectively, while my second room was closer to 60mb/s and 30mb/s. 4G is equally fast the city over.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          "The roads aren't good for running given how long it can take to cross them, but there are several running tracks through the city, and the riverside is perfect for long runs.",
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          "Many vegan and vegan-friendly restaurants all over the city. Local places are easier if you're with someone that speaks Chinese, but even if you're not it's an easy city to be vegan.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "Drivers here are passive and law-obiding, so the roads are safe, and I don't know if crime exists here. You can leave your wallet on a table and it'll still be there when you get back.",
+      },
+      [social]: {
+        [verdict]: true,
+        [description]:
+          "It's not a big drinking city, but there are many Meetups for things like hiking and fitness (as well as a small number for drinking).",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Wide, clear pavements, clean air, Taipei is a great city to expore on foot. The only frustration is how long it can take to cross the road.',
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].udonThani,
     [country]: countries.thailand,
     [criteria]: {
