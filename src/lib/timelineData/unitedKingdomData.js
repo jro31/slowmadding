@@ -57,5 +57,11 @@ export const unitedKingdomData = {
         [departure]: '2023-06-14',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-06-14',
+        [departure]: '2024-07-06',
+      },
+    },
   ],
 }

@@ -1,12 +1,12 @@
 import { countries, places } from '@/lib/placeNames'
 import { dates, arrival, departure } from '@/lib/timelineData/variables'
 
-export const taiwanData = {
-  [places[countries.taiwan].taipei]: [
+export const hungaryData = {
+  [places[countries.hungary].budapest]: [
     {
       [dates]: {
-        [arrival]: '2024-03-21',
-        [departure]: '2024-06-13',
+        [arrival]: '2024-07-06',
+        [departure]: '2024-08-15',
       },
     },
   ],

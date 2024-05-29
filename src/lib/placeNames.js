@@ -9,6 +9,7 @@ export const countries = {
   ecuador: 'Ecuador',
   france: 'France',
   greece: 'Greece',
+  hungary: 'Hungary',
   indonesia: 'Indonesia',
   laos: 'Laos',
   mexico: 'Mexico',
@@ -145,6 +146,9 @@ export const places = {
   },
   [countries.greece]: {
     athens: 'Athens',
+  },
+  [countries.hungary]: {
+    budapest: 'Budapest',
   },
   [countries.indonesia]: {
     bali: 'Bali',
