@@ -58,6 +58,29 @@ export const xinyiApartmentDetails = {
   },
 }
 
+export const zhongshanApartmentDetails = {
+  dates: {
+    checkIn: '2024-05-30',
+    checkOut: '2024-06-13',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/4900477',
+  },
+  roomType: 'Entire rental unit in 台灣台北, Taiwan',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 559.34,
+      '10% weekly price discount': -55.98,
+      'Cleaning fee': 15.76,
+      'Service fee': 95.06,
+      // 'Taxes': 82.18,
+    },
+  },
+}
+
 export const imagePath = '/images/articles/taipei-for-digital-nomads'
 
 export const simCardImages = [
@@ -633,3 +656,13 @@ TODO
 - Compare the two
 
 <ImageGallery images={xinyiApartmentImages} />
+
+### J62 Room with much sunlight and view,5 min to MRT
+
+<MapLink name='No. 284, Jilin Rd' url='https://maps.app.goo.gl/Pj2Q27EoLF7iaaUD7' />
+
+<AccommodationTable details={zhongshanApartmentDetails} />
+
+TODO
+
+TODO: Add photos
