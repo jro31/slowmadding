@@ -10,17 +10,49 @@ export const meta = {
 
 export const imagePath = '/images/articles/airbnb-checklist-for-digital-nomads'
 
+export const kitchenImages = [
+  {
+    src: `${imagePath}/kitchen/athens-neos-kosmos-kitchen.jpeg`,
+    alt: 'Athens Neos Kosmos Airbnb kitchen',
+    caption: "You can't always expect to have a nice kitchen to cook in, but when you do get one like I had in Neos Kosmos, Athens, it makes such a difference to your stay.",
+  }
+]
+
+export const fridgeImages = [
+  {
+    src: `${imagePath}/fridge/bucharest-fridge.jpeg`,
+    alt: 'Bucharest Airbnb fridge',
+    caption: "Perhaps the best Airbnb I've ever stayed in was in Bucharest. Not only did it include a fridge, but it came full of beverages I was welcome to.",
+  }
+]
+
+export const exerciseImages = [
+  {
+    src: `${imagePath}/exercise/phnom-penh-exercise-mat.jpeg`,
+    alt: 'Phnom Penh Airbnb exercise space',
+    caption: "When I stayed in Phnom Penh I didn't consider how much space I needed to exercise, leading to some very cramped and frustrating workouts where my ability to do yoga was severly impeded by the lack of space around my exercise mat.",
+  }
+]
+
 export const bedImages = [
   {
-    src: `${imagePath}/athens-koukaki-bed.jpeg`,
+    src: `${imagePath}/bed/athens-koukaki-bed.jpeg`,
     alt: 'Athens Koukaki Airbnb bed',
-    caption: "This was the bed that I had in an Airbnb in Athens, Greece. Due to the genius design of the bed-frame, my feet couldn't stretch over the end because of that lip, and I absolutely hated it.",
+    caption: "This was the bed that I had in an Airbnb in Koukaki, Athens. Due to the genius design of the bed-frame, my feet couldn't stretch over the end because of that lip, and I absolutely hated it.",
   },
   {
-    src: `${imagePath}/sofia-bed.jpeg`,
+    src: `${imagePath}/bed/sofia-bed.jpeg`,
     alt: 'Sofia Airbnb bed',
     caption: "When I stayed in Sofia in Bulgaria I had a lovely room; it even has a chandelier above the bed. Unfortunately that bed consists of two single mattresses, which you can see if you look closely at the picture. I may as well just have got a room with a single bed, because I couldn't sleep in the middle of this one.",
   },
+]
+
+export const workstationImages = [
+  {
+    src: `${imagePath}/workstation/ho-chi-minh-city-workstation.jpeg`,
+    alt: 'Ho Chi Minh City Airbnb workstation',
+    caption: "I can work from almost anywhere; it's one of my superpowers. In bed, on a sofa, even standing. I can still be nice to have the space to setup a workstation though, like I did here in my Airbnb in Ho Chi Minh City.",
+  }
 ]
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
@@ -66,8 +98,6 @@ Note that this is not a booking guide - I won't go into any detail below for thi
 
 TODO: When proof-reading, double-check that the sections below match the checklist
 
-TODO: Add any other photos?
-
 ### Does the room receive sufficient natural light?
 
 It may seem a little ridiculous to some people that this is first on my list, but I've made the mistake of staying in some dingy rooms before, and I absolutely hate it.
@@ -80,6 +110,8 @@ I strictly don't eat animal produce. Particularly in countries where I don't spe
 
 I actually carry a lot of items with me. In my suitcase I have a chopping board, a knife, cutlery, a bowl, a cup, a tea towel and even a blender. This on its own is sufficient for making simple meals, but it's nice if I can cook properly. It's always worth checking the description and the photos to see what kitchen facilities an Airbnb provides.
 
+<ImageGallery images={kitchenImages} />
+
 ### Is there an electric kettle?
 
 I drink a lot of tea. A lot. To the point that I've even thought about carrying a kettle in my suitcase. Collapsible silicone kettles do now exist.
@@ -91,6 +123,8 @@ Until I do, I need to have a kettle in my room. Heating up water on the stove is
 For anyone who intends on preparing food for themselves, making sure that the room includes a refrigerator is essential.
 
 As I start and finish everyday with fruit, being able to store it in the room is an absolute minimum requirement for anywhere I stay.
+
+<ImageGallery images={fridgeImages} />
 
 ### Is there vegan food available nearby?
 
@@ -107,6 +141,8 @@ Hosts may list the distance to the nearest stores in their description, but I ty
 Bodyweight workouts of various types count for the majority of workouts I do. Bodyweight strength, yoga and pilates, shadowboxing, core workouts; on a typical day I'll do one or more of these. I carry a fitness mat and a pair of yoga blocks that combined take up about a third of the space in my suitcase - that's how important doing this exercise is to me. As such I always check the photos to ensure than an Airbnb has an area of floor space big enough to have a workout in.
 
 It's a bonus if this floor space is in view of the TV, as I can plug-in my Apple TV and do these workouts on a bigger screen than just my phone.
+
+<ImageGallery images={exerciseImages} />
 
 ### Is there somewhere to run nearby?
 
@@ -165,3 +201,5 @@ As I invariably sleep alone then not being able to sleep in the middle of the be
 ### Is there a suitable workstation?
 
 There's a reason this is at the bottom of my list - I just don't think it's very important. I use any equipment for work other than my laptop, so I can be perfectly happy working from bed for eight hours with my laptop on my thighs. If I have a sofa or an armchair in my room, that'll do too. If there's a desk or a dining table that I can setup at, then that's nice but I definitely don't consider having a "workstation" as essential.
+
+<ImageGallery images={workstationImages} />
