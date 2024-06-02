@@ -20,11 +20,13 @@ const SimpleLayout = ({
   return (
     <Container className="mt-16 sm:mt-32">
       <HeaderTag className="max-w-2xl">
-        <TitleTag
-          className={`font-bold tracking-tight text-zinc-800 dark:text-zinc-100 ${titleSizeClasses()}`}
-        >
-          {title}
-        </TitleTag>
+        {title && (
+          <TitleTag
+            className={`font-bold tracking-tight text-zinc-800 dark:text-zinc-100 ${titleSizeClasses()}`}
+          >
+            {title}
+          </TitleTag>
+        )}
         {intro && (
           <p className="mt-6 text-base text-zinc-600 dark:text-zinc-400">
             {intro}

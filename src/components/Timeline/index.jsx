@@ -16,34 +16,32 @@
 
 import { useState } from 'react'
 
-import { formatDateRange, usersDate } from '@/lib/formatDate'
+import { usersDate } from '@/lib/formatDate'
 
 import SimpleLayout from '../SimpleLayout'
 import TimelineGraphic from './TimelineGraphic'
-import BackToTopLink from '../BackToTopLink'
 import Buttons from './Buttons'
 
-const Timeline = ({ timelines, digitalNomad }) => {
-  const [currentTimeline, setCurrentTimeline] = useState(digitalNomad)
+const adjustedDepartureDate = (departureDate) =>
+  new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
+
+const Timeline = ({
+  title = null,
+  timelines,
+  defaultTimeline,
+  mainPageFeature = true,
+}) => {
+  const [currentTimeline, setCurrentTimeline] = useState(defaultTimeline)
   const [ascending, setAscending] = useState(false)
   const [compactMode, setCompactMode] = useState(false)
 
-  const adjustedDepartureDate = (departureDate) =>
-    new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
-
   return (
     <SimpleLayout
-      title="Trips"
-      intro={`${currentTimeline} - ${formatDateRange(
-        timelines[currentTimeline].timelineData.slice(-1)[0].stays.slice(-1)[0]
-          .arrival,
-        adjustedDepartureDate(
-          timelines[currentTimeline].timelineData[0].stays[0].departure
-        )
-      )}`}
-      HeaderTag="div"
-      TitleTag="h2"
-      titleSize="small"
+      title={title}
+      intro={timelines[currentTimeline].introText}
+      {...(mainPageFeature
+        ? {}
+        : { HeaderTag: 'div', TitleTag: 'h2', titleSize: 'small' })}
     >
       <Buttons
         currentTimeline={currentTimeline}
@@ -61,8 +59,6 @@ const Timeline = ({ timelines, digitalNomad }) => {
         compactMode={compactMode}
         adjustedDepartureDate={adjustedDepartureDate}
       />
-
-      <BackToTopLink />
     </SimpleLayout>
   )
 }

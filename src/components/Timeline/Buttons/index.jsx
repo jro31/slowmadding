@@ -11,18 +11,23 @@ const Buttons = ({
   compactMode,
   setCompactMode,
 }) => {
+  console.log(timelines)
   return (
-    <div className="relative mb-3 flex">
-      <MobileTripSelector
-        currentTimeline={currentTimeline}
-        timelines={timelines}
-        setCurrentTimeline={setCurrentTimeline}
-      />
-      <DesktopTripSelector
-        timelines={timelines}
-        currentTimeline={currentTimeline}
-        setCurrentTimeline={setCurrentTimeline}
-      />
+    <div className="relative mb-3 flex min-h-10">
+      {Object.keys(timelines).length > 1 && (
+        <>
+          <MobileTripSelector
+            currentTimeline={currentTimeline}
+            timelines={timelines}
+            setCurrentTimeline={setCurrentTimeline}
+          />
+          <DesktopTripSelector
+            timelines={timelines}
+            currentTimeline={currentTimeline}
+            setCurrentTimeline={setCurrentTimeline}
+          />
+        </>
+      )}
       <ViewButtons
         ascending={ascending}
         setAscending={setAscending}

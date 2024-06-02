@@ -2,18 +2,16 @@
 
 import Head from 'next/head'
 
+import { parsedTimelineData } from '@/lib/timelineData'
+
 import { Container } from '@/components/Container'
 import Timeline from '@/components/Timeline'
-
-import { parsedTimelineData } from '@/lib/timelineData'
+import BackToTopLink from '@/components/BackToTopLink'
+import Link from 'next/link'
 
 const imagePath = '/images/about'
 
 const digitalNomad = 'Digital nomad'
-const backpackingTrip = 'Backpacking trip'
-const mexico08 = "Mexico '08"
-const dalhousie = 'Dalhousie'
-const canada05 = "Canada '05"
 
 const startDate = 'Start date'
 const endDate = 'End date'
@@ -22,22 +20,6 @@ const timelineDates = {
   [digitalNomad]: {
     [startDate]: '2022-10-07',
     [endDate]: null,
-  },
-  [backpackingTrip]: {
-    [startDate]: '2008-11-20',
-    [endDate]: '2018-11-29',
-  },
-  [mexico08]: {
-    [startDate]: '2008-06-24',
-    [endDate]: '2008-07-20',
-  },
-  [dalhousie]: {
-    [startDate]: '2006-08-27',
-    [endDate]: '2007-05-01',
-  },
-  [canada05]: {
-    [startDate]: '2005-05-17',
-    [endDate]: '2005-09-06',
   },
 }
 
@@ -231,11 +213,26 @@ const About = ({ timelines }) => {
         </div>
       </Container>
 
-      {/* TODO: I think there's no need to have all trips readily available here */}
-      {/* Instead, just include 'Digital Nomad' in the intiial timeline */}
-      {/* Then at the bottom of the timeline, have an 'Other trips' link that links to a 'Trips' page */}
-      {/* That should look identical to the previous 'Timeline' page, barring using 'Trips' for the title/navigation */}
-      <Timeline timelines={timelines} digitalNomad={digitalNomad} />
+      {/* TODO: Do you want a title for the timeline? */}
+      {/* TODO: Does it need any intro text? */}
+      <Timeline
+        timelines={timelines}
+        defaultTimeline={digitalNomad}
+        mainPageFeature={false}
+      />
+
+      <Container className="mt-16 sm:mt-32">
+        <div className="flex justify-center">
+          <Link
+            href="/trips"
+            className="cursor-pointer text-center font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-400"
+          >
+            Take a look at some of the trips I took before becoming a digital
+            nomad
+          </Link>
+        </div>
+        <BackToTopLink />
+      </Container>
     </>
   )
 }
