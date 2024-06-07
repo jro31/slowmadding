@@ -35,43 +35,43 @@ const About = ({ timelines }) => {
           <div className="flex lg:flex-col lg:pl-20">
             <div className="max-w-xs px-2.5 lg:max-w-none">
               <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
+                src={`${imagePath}/archery-in-wulai.jpeg`}
+                alt="Archery in Wulai"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 md:block lg:max-w-none">
               <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
+                src={`${imagePath}/philopappos-hill-selfie.jpeg`}
+                alt="Philopappos Hill selfie"
                 className="aspect-square -rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
+                src={`${imagePath}/rowing-in-wulai.jpeg`}
+                alt="Rowing in Wulai"
                 className="aspect-square rotate-1 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
-                className="aspect-square -rotate-6 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
-              />
-            </div>
-            <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
-              <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
+                src={`${imagePath}/outside-gaziview.jpeg`}
+                alt="Outside Gaziview"
                 className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={`${imagePath}/portrait.jpg`}
-                alt="On Bui Vien Walking Street in Ho Chi Minh City"
+                src={`${imagePath}/tingtao-cafe-cat.jpeg`}
+                alt="Tingtao Cafe cat"
+                className="aspect-square -rotate-6 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+            <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
+              <img
+                src={`${imagePath}/qingtiangang-grassland.jpeg`}
+                alt="Qingtiangang Grassland"
                 className="aspect-square -rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>

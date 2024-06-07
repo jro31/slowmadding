@@ -11,7 +11,6 @@ const Buttons = ({
   compactMode,
   setCompactMode,
 }) => {
-  console.log(timelines)
   return (
     <div className="relative mb-3 flex min-h-10">
       {Object.keys(timelines).length > 1 && (
