@@ -113,7 +113,7 @@ export const languageImages = [
   {
     src: `${imagePath}/language/dangerous-cliff-sign.jpeg`,
     alt: 'Dangerous cliff sign in Fulong',
-    caption: 'The other thing I loved was how little the pictures on the signs around Taiwan left to the imagination.',
+    caption: 'The other thing I loved was how little the pictures on the signs around Taiwan leave to the imagination.',
   },
   {
     src: `${imagePath}/language/snakes-and-wasps-sign.jpeg`,
@@ -127,6 +127,27 @@ export const trashImages = [
     src: `${imagePath}/trash/trash-bags-in-carrefour.jpeg`,
     alt: 'Blue trash bags in Carrefour',
     caption: "The first few days I was in Taipei, I was worrying occupied and stressed-out trying to find blue government-issued trash bags. The mistake I was making was looking on the shelves. In actuality they're kept behind the counter with the cigarettes and alcohol, such is their value. This is the Carrefour local to my first room. The trash bags are the two shelves of blue things, behind those yellow crates.",
+  },
+]
+
+export const suitabilityImages = [
+  {
+    src: `${imagePath}/suitability/archery.jpeg`,
+    alt: 'Archery at Yun Hsien Resort in Wulai',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/suitability/rowing.jpeg`,
+    alt: 'Rowing in Yun Hsien Lake in Wulai',
+    caption: 'TODO',
+  },
+]
+
+export const theElderlyImages = [
+  {
+    src: `${imagePath}/dislikes/the-elderly/old-woman-swearing.jpeg`,
+    alt: 'Old woman swearing while waiting to cross Zhongxiao E Rd',
+    caption: 'TODO',
   },
 ]
 
@@ -144,9 +165,15 @@ export const veganFoodImages = [
     url: 'https://maps.app.goo.gl/HxyVDihXdF6PeBXw7',
   },
   {
+    src: `${imagePath}/vegan-food/lai-xin-vegan-restaurant.jpeg`,
+    alt: 'Lai Xin Vegan Restaurant mixed dumplings',
+    caption: "Lai Xin Vegan Restaurant is a local place specialising in dumplings. From the outside it looks quite unfriendly to people that don't speak Chinese, but when I went in I was greated incredibly warmly, they gave me an English menu, and one of the ladies working here spoke good English and told me about the food in great detail, asking me about my what I like and making recommendations. The dishes aren't huge, so you're probably going to want to buy two or three. As well as dumplings they offer noodle dishes, rice dishes and soups, each costing about NT$80 each. Dumplings are NT$80 for 10, and if you can't decide which to get, you can get a mixed plate, as I did here. I was told which dumplings were which, but I can't remember. On the plate though, are cabbage dumplings, radish dumplings (the red ones I think), bok choy dumplings (I think the green ones), Chinese cabbage dumplings, boiled gourd dumplings and pumpkin dumplings (orange).",
+    url: 'https://maps.app.goo.gl/qe9DUjTpT89wjGmG7',
+  },
+  {
     src: `${imagePath}/vegan-food/vege-creek.jpeg`,
     alt: 'Vege Creek',
-    caption: "Vege Creek is a chain of vegan restaurants located in the food courts of various shopping malls (at least the branches I went to were) where they have a refrigerator of ingredients much like in a supermarket. You just pick your ingredients (typically you'll choose a type of noodles, some veggies and anything else you want like tofu; they also have combo boxes to save you choosing), take them to the counter and pay, and they'll make them into a soup for you. This one was in the Taipei 101 branch and includes a combo box, quinoa noodles, and some additional mushrooms and bean curd for NT$236.",
+    caption: "Vege Creek is a chain of vegan restaurants with several locations in Taipei, where they have a refrigerator of ingredients much like in a supermarket. You just pick your ingredients (typically you'll choose a type of noodles, some veggies and anything else you want like tofu; they also have combo boxes to save you choosing), take them to the counter and pay, and they'll make them into a soup for you. This one was in the Taipei 101 branch and includes a combo box, quinoa noodles, and some additional mushrooms and bean curd for NT$236.",
     url: 'https://maps.app.goo.gl/fubkqXDQF6SKzdUb8',
   },
   {
@@ -256,7 +283,7 @@ export const burgerSuVeggieImages = [
   {
     src: `${imagePath}/vegan-food/burger-su-veggie/pickles-hot-dog.jpeg`,
     alt: 'Burger Su Veggie vegan pickes hot dog',
-    caption: "I know what you're thinking - that hot dog's sitting more on the bun than in it so is going to be really hard to eat so it'd make much more sense to use a knife and fork than eat it like a hot dog. Yes, I thought the same but tried to eat it like a hot dog anyway, spilt the saugage on myself getting mustard all over t-shirt and my shorts, and even in my watch strap. It was impressive how much of a mess I made, harking back very much to my days as a toddler. Once I'd composed myself, I rebuilt my hot dog and ate it with a knife and fork. If you too want to remember how it feels to be young, the vegan pickles hot dog costs NT$159.",
+    caption: "I know what you're thinking - that hot dog's sitting more on the bun than it is in it, so is going to be really hard to eat so it'd make much more sense to use a knife and fork than eat it like a hot dog. Yes, I thought the same but tried to eat it like a hot dog anyway, spilt the saugage on myself getting mustard all over t-shirt and my shorts, and even in my watch strap. It was impressive how much of a mess I made, harking back to my days as a toddler. Once I'd composed myself, I rebuilt my hot dog and ate it with a knife and fork. If you too want to remember how it feels to be young, the vegan pickles hot dog costs NT$159.",
   },
   {
     src: `${imagePath}/vegan-food/burger-su-veggie/pickles-neo-burger.jpeg`,
@@ -543,8 +570,6 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-Three things that annoyed me about Taipei - Crossing the road, the elderly, urinals, trash in YouBike baskets, dogs in buggies
-
 TODO: Add any photos that don't fit elsewhere
 
 ## Getting into Taipei
@@ -643,7 +668,7 @@ Mandarin is the national language. While other languages, primarily Taiwanese ar
 
 When setting the language on Google Translate, choose 'Chinese (Traditional)'. Traditional refers to the writing system. Simplified charcters were introduced on the Chinese mainland to increase literacy rates, but as they never made it to Taiwan, traditional characters are still used.
 
-The one thing that took me a bit of getting used to in Taipei, is that if you don't look like a local person in more touristy countries, for example Thailand, then local people won't ever attempt to speak to you in the local language. The vast majority of foriegn visitor to Thailand don't speak Thai, and locals know that.
+The one thing that took me a bit of getting used to in Taipei, is that if you don't look like a local person in more touristy countries, for example Thailand, then local people won't ever attempt to speak to you in the local language. The vast majority of foriegn visitors to Thailand don't speak Thai, and locals know that.
 
 Taipei is a bit different. There aren't that many foreigners here, and of those that are, many speak Mandarin. As such it's quite common for local people to speak to you in Mandarin, then look shocked when you don't understand.
 
@@ -683,9 +708,19 @@ I found that the tap water had a bit of a funny taste to it compared to bottled 
 
 ## Who is Taipei suitable for?
 
-TODO: Outdoorsy people, not party people 🥳
+Let me start by saying who Taipei is not suitable for. It is not a place to come if your goal when travelling is to get drunk and party as much as possible. I've read that Taiwan consumes the least alcohol of any east Asian country by far, and having been here it's hard to dispute that. It's not a country that has a drinking culture, and there isn't enough of a foriegn presence here that one's been built for the tourists.
+
+When local people go out to bars, they typically only have one or two drinks. And while there are bars you can go to if you want to get drunk, unlike in many other places in the world, if you do it here you'll be the outlier.
+
+It's also not a place where you really see people sitting in coffee shops on their laptops all day. Being an island, Covid didn't affect Taiwan to the extent it affected other places, so remote working isn't really a thing among local people, and it doesn't attract many digital nomads (and long may that continue). So if you're a person who's attracted to the usual digital nomad hubs (Medellin, Mexico City, Chiang Mai, Bali, Lisbon etc.) that offer a faux local culture that really just caters to foreigners, then Taipei probably isn't for you either.
+
+The people that Taipei is suitable for are those that are active. Almost all activities I did here hiking or running or cycling or snorkelling etc. It's surrounded by mountains, so there is no end of hikes you can go on and places to explore.
+
+Within the city itself, it's a place very comfortable with foreigners, but not to the extent the culture has really changed to cater to them. If you want to get completely off the beaten path, then it's not for you. Similarly, if you want to go to a tourist-aimed city where everything is easy and translated to English, then it's not for you either. It sits somewhere in the middle.
 
 TODO: Add outdoorsy photos
+
+<ImageGallery images={suitabilityImages} />
 
 ## Is now a good time to visit Taipei?
 
@@ -694,6 +729,32 @@ Taiwan's existence as an independent country is predicated on the US having the 
 The goal of any good dictator is to retain and strengthen power at all costs, aspirations which seldom conjoin with freedom and quality of life for the people. Such events in Taiwan could be akin to The Taliban returning to power in Afghanistan.
 
 Whether this reality plays-out in a year, in a hundred, or never at all no one knows, but if it does then gone will be the lifestyle that makes Taiwan such an amazing place to be. So to play it safe I'd suggest that should you desire to come here at all, then make it sooner rather than later.
+
+## Things I didn't like about Taipei
+
+I've spent this article so far, waxing lyrical about how much I loved Taipei, and how it's one of my favourite places in the world. To prove my impartiality, I searched deep within to think of some things I didn't like here, and I came up with [five].
+
+### Crossing the road
+
+TODO
+
+### The elderly
+
+TODO
+
+<ImageGallery images={theElderlyImages} />
+
+### Urinals
+
+TODO
+
+### Dogs in buggies
+
+TODO
+
+### Trash in YouBike baskets
+
+TODO
 
 ## Getting vegan food in Taipei
 
@@ -704,8 +765,6 @@ A peculiarity about Taipei that I hated, is that almost all restaurants close fo
 I'm again unsure if this is legally required or just a custom, but almost all restaurants provide free drinking water, and there's no expectation that you buy a drink when you eat somewhere. Tipping is not done in Taiwan either (and I actually saw some locals get a little angry at a foreigner who suggested we leave a tip), so when you go to a restaurant you really just pay for the food that you eat and nothing more - exactly how it should be. Although note that fancier restaurant may add a mandatory 10% service charge.
 
 My favourite restaurants in Taipei are detailed below, and I'll add a paragraph about shopping for vegan groceries.
-
-TODO: Most restaurants close in the afternoon, free water
 
 <ImageGallery images={veganFoodImages} />
 
@@ -787,7 +846,7 @@ In the unlikely event that you can't find something close to you, then because o
 
 All of this is great if you don't mind running around in circles. For shorter runs and guided runs or runs when you're listening to an audiobook or a podcast, it can be nice to be running around a flat track where you don't really have to think about where you're going or where you're stepping. Doing that for long, slow runs will drive you up the wall, so if you want to actually run somewhere without having to stop to cross the road every two minutes, then the only place I went in Taipei that's viable is along the riverside.
 
-TODO: Add any other photos?
+TODO: Add any other running photos?
 
 ### Da'an Park
 
@@ -848,6 +907,8 @@ I stayed in three different areas in Taipei, and I loved all of them, and with t
 As for why I don't recommend Ximen - I only went there one time. It was to check-out the area as I found that accommodation there was cheaper than in other parts of the city. With good reason. It's crowded, full of tourists and homeless people, and is generally awful. Unless you like shopping, and I hate shopping, there's nothing nice about it.
 
 The reason that the rest of Taipei is so nice, is that all the shit bits of Taipei are located there. Ximen's sacrifice allows the rest of the city to flourish.
+
+## Where I stayed
 
 ### 5 mins to MRT Zhongxiao Xinsheng, studio for 2
 
