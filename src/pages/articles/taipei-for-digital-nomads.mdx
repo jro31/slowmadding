@@ -26,6 +26,16 @@ I think the best indicator of how much I loved it, was that I initially came her
 
 TODO: Add any photos that don't fit elsewhere
 
+export const cityImages = [
+  {
+    src: `${imagePath}/city/wulai-selfie.jpeg`,
+    alt: 'Yun Hsien Resort selfie',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
 ## Who is Taipei suitable for?
 
 Let me start by saying who Taipei is not suitable for. It is not a place to come if your goal when travelling is to get drunk and party as much as possible. I've read that Taiwan consumes the least alcohol of any east Asian country by far, and having been here it's hard to dispute that. It's not a country that has a drinking culture, and there isn't enough of a foriegn presence here that one's been built for the tourists.
@@ -43,12 +53,35 @@ export const suitabilityImages = [
   {
     src: `${imagePath}/suitability/archery.jpeg`,
     alt: 'Archery at Yun Hsien Resort in Wulai',
-    caption: 'TODO',
+    caption: 'Yun Hsien Resort is a resort in Wulai, where one of the activities on offer is archery, and they provide absolutely no instruction. Never fired a bow and arrow before? Me neither, but I figured it out. All of my arrows hit the target.',
   },
   {
     src: `${imagePath}/suitability/rowing.jpeg`,
     alt: 'Rowing in Yun Hsien Lake in Wulai',
-    caption: 'TODO',
+    caption: 'Yun Hsien Lake has rowing boats for hire, which was pretty fun.',
+  },
+  {
+    src: `${imagePath}/suitability/bitoujiao-trail.jpeg`,
+    alt: 'Bitoujiao Trail',
+    caption: 'This is the Bitoujiao Trail - an easy but at times breathtaking trail in north-east Taiwan.',
+  },
+  {
+    src: `${imagePath}/suitability/tingtao-cafe.jpeg`,
+    alt: 'Tingtao Cafe cat',
+    caption: "Cats are everywhere in Taiwan. Top of a mountain, middle of the night, doesn't matter. \"Meow... meow.\" Hiking along the Bitoujiao Trail you'll get to the Tingtao Cafe, complete with cat.",
+    url: 'https://maps.app.goo.gl/CZ2iXdsnJKJNmSvD8',
+  },
+  {
+    src: `${imagePath}/suitability/heping-island-geopark.jpeg`,
+    alt: 'Heping Island Geopark pagoda',
+    caption: 'Heping Island Geopark is somewhat ruined by the volume of tourists, but still offers some good experiences.',
+    url: 'https://maps.app.goo.gl/cKRAWMLB3LUereJe7',
+  },
+  {
+    src: `${imagePath}/suitability/fulong-selfie.jpeg`,
+    alt: 'Maao Bay',
+    caption: "This is a selfie I took at Maao Bay, just in front of Xinbeishigongliaoqufulian Elementary School. And no, I didn't make that up.",
+    url: 'https://maps.app.goo.gl/Gnqv32FXh7uT8ro2A',
   },
 ]
 
@@ -779,7 +812,38 @@ While there are some events centred around alcohol, they are in the minority wit
 
 The only real downside I found, is that almost every group had its events on the weekend (usually Saturday), so on weekdays there wouldn't be very much going on, yet suddenly on the weekends there would be ten events I wanted to attend, yet I only had the time for one or two.
 
-TODO: Add photos
+export const sociableImages = [
+  {
+    src: `${imagePath}/sociable/qingtiangang-grassland.jpeg`,
+    alt: 'Qingtiangang Grassland',
+    caption: 'At a hiking Meetup on the Qingtiangang Grassland.',
+    url: 'https://maps.app.goo.gl/hRVdkoEV4yzL7dxH6',
+  },
+  {
+    src: `${imagePath}/sociable/zhinan-temple.jpeg`,
+    alt: 'Zhinan Temple',
+    caption: "If you can, make a visit to Zhinan Temple. It's on a mountainside, and offers beautiful views of Taipei.",
+  },
+  {
+    src: `${imagePath}/sociable/jidong-park.jpeg`,
+    alt: 'Jidong Park',
+    caption: "This is Jidong Park (also known as East Park if you couldn't tell), and marks Taiwan's easternmost point. Unless you wander through the grass and down towards the sea over there.",
+    url: 'https://maps.app.goo.gl/YA6Ca1gmBKtnUQUi8',
+  },
+  {
+    src: `${imagePath}/sociable/yingge-old-street.jpeg`,
+    alt: 'Yingge Old Street',
+    caption: "Yingge Old Street is the newest old street I've ever been to. It looked like it'd been built about ten minutes ago.",
+  },
+  {
+    src: `${imagePath}/sociable/old-caoling-tunnel.jpeg`,
+    alt: 'Old Caoling Tunnel',
+    caption: 'This is Old Caoling Tunnel - a former railway tunnel, now used primarily by cyclists.',
+    url: 'https://maps.app.goo.gl/ai6sJb2G3D1UYGJQ6',
+  },
+]
+
+<ImageGallery images={sociableImages} />
 
 ## Staying in Taipei
 
