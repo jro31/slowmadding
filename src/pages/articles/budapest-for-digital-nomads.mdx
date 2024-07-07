@@ -1,0 +1,52 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-08-16T15:31:00+07:00', // TODO: Update this
+  title: 'Budapest for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Hungary'],
+}
+
+export const apartmentDetails = {
+  dates: {
+    checkIn: '2024-07-06',
+    checkOut: '2024-08-15',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/51031151',
+  },
+  roomType: 'Entire condo in Budapest, Hungary',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 1485.96,
+      'Cleaning fee': 44.35,
+      'Service fee': 194.96,
+      Taxes: 106.45,
+    },
+  },
+}
+
+export const imagePath = '/images/articles/budapest-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Where I stayed
+
+### Liget Budapest Apartment For Mid-Term
+
+<MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
+
+<AccommodationTable details={apartmentDetails} />
+
+TODO
+
+TODO: Add photos
