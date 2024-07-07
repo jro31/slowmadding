@@ -1,6 +1,9 @@
+import Link from 'next/link'
+
 import ArticleLayout from '@/components/ArticleLayout'
 import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
@@ -10,6 +13,66 @@ export const meta = {
   description: '', // TODO
   keywords: ['Hungary'],
 }
+
+export const imagePath = '/images/articles/budapest-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+## Arriving in Budapest
+
+The first thing to note when you arrive at Budapest Ferenc Liszt International Airport, is that the only ATMs in the airport are Euronet ATMs. Euronet ATMs charge high fees. Banks in Hungary do not charge any fees to withdraw cash, even with a foreign card, so I'd advise against withdrawing money at the airport unless absolutely necessary.
+
+Taxis are available at the airport and accept card payments, but a cheaper way to get to the town centre is to take the 100E bus, also known as the <ExternalLink url='https://bkk.hu/en/travel-information/airport-express/'>Airport Express</ExternalLink>. This is what I did when I arrived in Budapest, and it was very easy.
+
+Follow the signs to Public Transportation and you will quickly see a bus with 100E sitting there (if there's not one there, you'll see plenty of signs). This bus costs 2,200 HUF, and you can pay with a bank card by holding it against the card reader just inside the bus doors. At this point, the bank card is your ticket.
+
+There are several (at least four) English-speaking helpers directing gormless foreigners such as myself how to board and pay for the bus, so you really can't fuck it up.
+
+The journey to the town centre takes roughly 40 minutes. It then makes three stops, all pretty close to each other.
+
+The first is at the <ExternalLink url='https://maps.app.goo.gl/EKaPcEH9w1vz5HRY9'>Kálvin tér metro station</ExternalLink>, the second is at the <ExternalLink url='https://maps.app.goo.gl/qQqRx5qP5q8TvJZu7'>Astoria metro station</ExternalLink>, and then lastly it terminates at the <ExternalLink url='https://maps.app.goo.gl/GLpCmYsSxuWuXS9f6'>Deák Ferenc tér metro station</ExternalLink>. Unless you're staying out in the middle of nowhere, there will be transport links from one these stops to get you to your room, if its not walkable already.
+
+I got off at Astoria, and from there is was a couple of stops on the metro before I was in easy walking distance of my room.
+
+It's worth noting that the Airport Express is the only transport you can pay directly with your bank card. For details of how to pay for other transportation, see <Link href='#getting-around-budapest'>Getting around Budapest</Link>.
+
+## Getting a SIM card in Budapest
+
+There are three main mobile operators in Hungary: Telekom (you'll also see it refered to as T-Mobile), Vodafone and Yettel. Telekom is the biggest of the three.
+
+Knowing that they typically charge higher prices, I avoided the stores in the airport selling SIMs. My UK SIM had actually found a local network, so for once I was in no rush to get connected. Instead I went to the Telekom store in Westend shopping mall.
+
+After getting into a fight with their ticketing machine, which would only give me a number if I put it into German, I got immediately called up and told the attendant I wanted to get a prepaid SIM card.
+
+_"We've sold out of prepaid SIM cards"_ was her response. _"We'll have some more, maybe on Tuesday."_
+
+_"Oh, is there anywhere else I can try?"_ I asked, meaning are they in stock at any other Telekom stores.
+
+_"Maybe Vodafone or Yettel"_ she replied.
+
+I wandered out of the store slightly aghast that Hungary's biggest mobile network had run-out of SIM cards, but quickly noticed that there was a Vodafone store and a Yettel store almost next door. There were no customers in Yettel, and the staff all looked like they'd had enough of life, so I went into Vodafone. They had someone on the door to do the ticketing machine for me. _"It'll be about a 20 minute wait,"_ he told me.
+
+By this point I was losing my patience, but I waited for what turned-out to be more like 30 minutes before getting called-up. The sales rep needed my passport and email address, but he also asked me what my mother's maiden name was. I've never been asked for that in person before, and as it's used as the security question for so many apps, handing it over made me a little uncomfortable. Hungary was not making getting a SIM an enjoyable process.
+
+Eventually though, for a cost of 6,500 HUF (4,990 for a 20GB data package, the rest allegedly for the cost of the SIM), I had a Hungarian mobile network, including propaganda telling me to download the Vodafone app to manage my account.
+
+_"App not available in your region"_ was the response from the AppStore (my Apple account is registered in the UK). I don't know why I wasn't surprised.
+
+The data package was valid for 30 days, so being unable to top-up via the app I...
+
+TODO
+
+## Getting around Budapest
+
+TODO
+
+## Where I stayed
+
+### Liget Budapest Apartment For Mid-Term
+
+<MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
 
 export const apartmentDetails = {
   dates: {
@@ -32,18 +95,6 @@ export const apartmentDetails = {
     },
   },
 }
-
-export const imagePath = '/images/articles/budapest-for-digital-nomads'
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-TODO
-
-## Where I stayed
-
-### Liget Budapest Apartment For Mid-Term
-
-<MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
 
 <AccommodationTable details={apartmentDetails} />
 
