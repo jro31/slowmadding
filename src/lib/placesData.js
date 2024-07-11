@@ -653,7 +653,7 @@ export const placesData = [
           'Wide, clear pavements, clean air, Taipei is a great city to expore on foot. The only frustration is how long it can take to cross the road.',
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/taipei-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].udonThani,
