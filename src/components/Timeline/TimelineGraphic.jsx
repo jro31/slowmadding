@@ -8,7 +8,10 @@ import {
 } from '@/lib/timelineData/variables'
 import { formatDateRange, usersDate } from '@/lib/formatDate'
 
-const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
+const adjustedDepartureDate = (departureDate) =>
+  new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
+
+const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
   let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
 
@@ -59,23 +62,18 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
             key={`country-${countryIterator}-section`}
             className="z-10 bg-white dark:bg-zinc-900"
           >
-            <h1
+            <h3
               className={`border-zinc-800 pl-5 text-xl font-bold tracking-tight text-zinc-800 dark:border-zinc-100 dark:text-zinc-100 sm:text-2xl lg:sticky lg:top-7 lg:z-50 lg:float-left lg:my-8 lg:w-0 lg:translate-x-10 lg:whitespace-nowrap lg:border-l-0 lg:pl-0${
                 countryIterator === 0 ? ' border-l-0' : ' border-l-4'
               }`}
             >
               {countryVisit[country]}
-            </h1>
+            </h3>
             {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
               stayOrderFirst =
                 countryIterator === 0 && stayIterator === 0
                   ? true
                   : !stayOrderFirst
-
-              const adjustedDepartureDate =
-                new Date(stay[departure]) > new Date(usersDate)
-                  ? usersDate
-                  : stay[departure]
 
               return (
                 <div
@@ -90,7 +88,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                     <div
                       className={`absolute right-0 border-r-2 dark:border-zinc-100 border-zinc-800${
                         stayOrderFirst
-                          ? ' lg:left-0 lg:right-auto lg:border-r-0 lg:border-l-2'
+                          ? ' lg:left-0 lg:right-auto lg:border-l-2 lg:border-r-0'
                           : ''
                       } ${lineClasses(
                         countryIterator,
@@ -108,7 +106,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                               Math.max(
                                 numberOfNights(
                                   stay[arrival],
-                                  adjustedDepartureDate
+                                  adjustedDepartureDate(stay[departure])
                                 ) * 15,
                                 106
                               ),
@@ -127,7 +125,7 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                     <div
                       className={`absolute left-0 border-l-4 dark:border-zinc-100 border-zinc-800${
                         stayOrderFirst
-                          ? ' lg:right-0 lg:left-auto lg:border-l-0 lg:border-r-2'
+                          ? ' lg:left-auto lg:right-0 lg:border-l-0 lg:border-r-2'
                           : ' lg:border-l-2'
                       } ${lineClasses(
                         countryIterator,
@@ -149,7 +147,10 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
                     >
                       <div className="font-bold">{stay[place]}</div>
                       <div>
-                        {formatDateRange(stay[arrival], adjustedDepartureDate)}
+                        {formatDateRange(
+                          stay[arrival],
+                          adjustedDepartureDate(stay[departure])
+                        )}
                       </div>
                     </div>
                   </div>
@@ -163,4 +164,4 @@ const TimelineComponent = ({ timelineData, ascending, compactMode }) => {
   )
 }
 
-export default TimelineComponent
+export default TimelineGraphic

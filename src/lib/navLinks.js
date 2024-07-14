@@ -12,8 +12,8 @@ const navLinks = [
     text: 'Places',
   },
   {
-    path: '/timeline',
-    text: 'Timeline',
+    path: '/about',
+    text: 'About',
   },
 ]
 
