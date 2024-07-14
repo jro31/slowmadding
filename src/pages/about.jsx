@@ -1,5 +1,3 @@
-// TODO: Add redirect from Timeline page to here to keep Google happy? Or on the other hand, fuck Google.
-
 import Head from 'next/head'
 
 import { parsedTimelineData } from '@/lib/timelineData'
@@ -263,8 +261,6 @@ const About = ({ timelines }) => {
         </div>
       </Container>
 
-      {/* TODO: Do you want a title for the timeline? */}
-      {/* TODO: Does it need any intro text? */}
       <Timeline
         timelines={timelines}
         defaultTimeline={digitalNomad}
@@ -277,7 +273,7 @@ const About = ({ timelines }) => {
             href="/trips"
             className="cursor-pointer text-center font-medium text-zinc-800 transition hover:text-teal-500 dark:text-zinc-200 dark:hover:text-teal-400"
           >
-            Take a look at some of the trips I took before becoming a digital
+            Take a look at the backpacking trip that preceded becoming a digital
             nomad
           </Link>
         </div>
