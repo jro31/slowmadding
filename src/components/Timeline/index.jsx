@@ -16,14 +16,9 @@
 
 import { useState } from 'react'
 
-import { usersDate } from '@/lib/formatDate'
-
 import SimpleLayout from '../SimpleLayout'
 import TimelineGraphic from './TimelineGraphic'
 import Buttons from './Buttons'
-
-const adjustedDepartureDate = (departureDate) =>
-  new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
 
 const Timeline = ({
   title = null,
@@ -57,7 +52,6 @@ const Timeline = ({
         timelineData={timelines[currentTimeline].timelineData}
         ascending={ascending}
         compactMode={compactMode}
-        adjustedDepartureDate={adjustedDepartureDate}
       />
     </SimpleLayout>
   )

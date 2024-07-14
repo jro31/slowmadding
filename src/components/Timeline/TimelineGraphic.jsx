@@ -8,12 +8,10 @@ import {
 } from '@/lib/timelineData/variables'
 import { formatDateRange, usersDate } from '@/lib/formatDate'
 
-const TimelineGraphic = ({
-  timelineData,
-  ascending,
-  compactMode,
-  adjustedDepartureDate,
-}) => {
+const adjustedDepartureDate = (departureDate) =>
+  new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
+
+const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
   let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
 
