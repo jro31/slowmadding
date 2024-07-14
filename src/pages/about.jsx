@@ -72,7 +72,21 @@ const About = ({ timelines }) => {
               <img
                 src={`${imagePath}/qingtiangang-grassland.jpeg`}
                 alt="Qingtiangang Grassland"
-                className="aspect-square -rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+                className="aspect-square rotate-2 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+            <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
+              <img
+                src={`${imagePath}/maao-bay.jpeg`}
+                alt="Maao Bay"
+                className="aspect-square -rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
+              />
+            </div>
+            <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
+              <img
+                src={`${imagePath}/yun-hsien-resort.jpeg`}
+                alt="Yun Hsien Resort"
+                className="aspect-square rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
           </div>
@@ -81,133 +95,169 @@ const About = ({ timelines }) => {
               About Slowmadding
             </h1>
             <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
-              {/* TODO: Make these more prominent */}
-              <p>"Travel broadens the mind"</p>
-              <p>"To travel is to live"</p>
-              <p>"Travel is the only thing you buy that makes you richer"</p>
-
-              <p>
-                This is some of the stupid shit that people who've never been
-                anywhere say on Instagram.
+              <p className="font-bold">"Travel broadens the mind"</p>
+              <p className="font-bold">"To travel is to live"</p>
+              <p className="font-bold">
+                "Travel is the only thing you buy that makes you richer"
               </p>
 
               <p>
-                Travel is fun. It allows you to meet a lot of people. It allows
-                you to spend your time in less financially demanding places. And
-                it's suitable for people who just aren't wired to stay still.
+                This is just some of the stupid shit that people who've never
+                been anywhere say on Instagram.
+              </p>
+
+              <p>
+                Travel is fun. It allows you to meet a lot of people. It lets
+                you to spend your time in less financially demanding places. It
+                enables you to stay in climates you're suited to. And it's
+                suitable for people who just aren't wired to stay still.
               </p>
 
               <p>
                 A nomadic lifestyle stifles your instinctive ability to slump
                 into an irrelevant routine, then act irrationally to prevent
-                that routine getting disrupted. When you don't stay anywhere
-                long enough to [grow roots], then you don't...
+                that routine getting disrupted.
               </p>
 
-              <p>It's a lifestyle for people who are scared to</p>
+              <p>
+                That in a nutshell, is why I'm a digtial nomad. It's a lifestyle
+                for people scared of commitment to any place, person or way of
+                being, because when you're a nomad and you don't like how things
+                are going, you don't have to face the reality of trying to make
+                the best of it, you just leave.
+              </p>
 
-              {/* <p>
-                That's just a fancy way of saying I'm not grown up enough to
-                settle down and start being an adult yet, but that I'm too lazy
-                to travel properly, so spend several weeks or even months
-                staying everywhere I go.
-              </p>
               <p>
-                I work as a freelance software engineer, so I can earn a living
-                from anywhere with an Internet connection. I'm a big believer in
-                not working too much, and have found that I can work two days
-                per week and still save money, so I don't really do any more.
+                You could term it as a coward's lifestyle, and you'd perhaps be
+                right to do so, but in today's polarised world so much is out of
+                the control of any individual that being ready, willing and able
+                to change location at a moment's notice could also be viewed as
+                the ultimate acceptance of reality.
               </p>
+
               <p>
-                I'm also vegan, I run, I don't have many friends, I'm scared of
-                commitment, I'm British with German citizenship (thanks Brexit),
-                I do yoga sometimes, and I hate people that walk slowly. Or that
-                walk the same speed as me, but one metre behind.
+                Yet let's not ignore the biggest motivator. Living the life of
+                an affluent nomad, going where you please, to whatever climate
+                you choose and to the people you feel like surrounding yourself
+                with - it's fun. It's a fun way to spend your finite time on
+                earth.
               </p>
+
               <p>
-                If you're not the same as at least one of these, then you're
-                probably not going to find much useful on this app. If you are
-                the same, you're still not going to find much useful on this
-                app.
+                Long before I was a digital nomad, I went on a backpacking trip
+                that lasted arguably more than ten years. Whether you include
+                the time I was settled and teaching English abroad as part of
+                the same trip is debatable. The motivation for that trip though,
+                which started right after my graduation from university, was
+                that there's a big world out there, and I don't want to spend
+                the next forty years of my short life sitting in an office in
+                London. So I left.
               </p>
+
               <p>
-                I built it to write occasional articles about useful things I
-                discover on my travels, so that I can pass on my wisdom and tell
-                myself that I'm doing some good in the world.
+                With very little money in my pocket I went to cheap countries
+                and learned to exist on the bare minimum, going to richer places
+                with higher salaries when I needed to top it up.
               </p>
+
               <p>
-                This isn't a backpacking blog. I've paid my dues as a
-                backpacker, with years of staying in hostel dorms, Couchsurfing
-                before the perverts ruined it, camping at the side of the road,
-                and even sleeping under the stars occasionally, which is another
-                way of saying I slept rough because I was too cheap to pay for a
-                hostel.
+                Ten years later, still abroad but a little older and a little
+                wiser, I accepted that while still enjoying the lifestyle, there
+                was no future and no retirement in just making what I needed to
+                get by each month. So I asked myself, how exactly can I build my
+                perfect life?
               </p>
+
               <p>
-                I cherish those days, but they are long behind me. As a digital
-                nomad, I don't need to save every penny that I can because I'm
-                making money as I travel. If you're looking for advice on the
-                cheapest way to do things, this isn't the place for you.
+                I've never been a believer in hard work. You do it when you have
+                to, but if the opportunity is there to earn more money for less
+                work, then you take it every time. If I can get by on four, or
+                three, or even two days work per week, then why work for five?
+                Life is too short and there is no pride in working hard for no
+                reason. I want to enjoy my time, not spend it working.
               </p>
+
               <p>
-                I'm also someone who has little interest in tourist sites. I
-                derive a lot more enjoyment from just going to places and
-                existing. Interacting with locals, or sometimes just people
-                watching. Just becoming comfortable in the places that I go.
-                That is how I experience the world, so don't come here looking
-                for reviews of Machu Picchu or Angkor Wat.
+                The other side of that, is if I can reduce how much I spend,
+                then I won't need to earn so much to begin with.
               </p>
+
               <p>
-                I take very few photos, and even fewer selfies (if I want to
-                know what I look like, I'll look in the mirror). So nor will
-                this be a place for tips on places to go for the most Instagram
-                likes. My motivation for nomadding is more simple: Routines are
-                a dangerous thing.
+                Ten years backpacking hadn't satiated my hunger to go to
+                different places. Looking forward to a two-week vacation every
+                year just wasn't going to cut it for me. And in living in
+                Thailand while teaching English, I'd learned how much happier I
+                am in warmer climates.
               </p>
+
               <p>
-                I find that if I stay in the same place too long, I become
-                obsessed with my routine. My world becomes very small, and I
-                care about things that, once I take a step back and look at them
-                from a distance, I realise are entirely insignificant.
+                So I wanted a life that allowed me to earn the most money for
+                the least work, with the freedom to do it from the cheapest
+                places and the best climates.
               </p>
+
               <p>
-                When I lived in Bangkok, I used to take the underground to work
-                everyday. I lived near to a quiet station, and I would travel to
-                work at a quiet time of day. As such, it wasn't uncommon for me
-                to have the entire platform to myself.
+                At this point, aged around 32, I'd never written a line of code
+                in my life. Yet when I pondered this riddle, software
+                development is an industry known for high salaries and remote
+                work. And so just like that (it took a bit longer) I decided:
+                I'm going to be a software developer.
               </p>
+
               <p>
-                I would work six days per week, and would get so obsessed with
-                my own world, that I had a spot on the platform, right
-                underneath the air conditioner, that I would stand everyday. If
-                I came into the station and someone was standing in my spot on
-                the platform, it would ruin my day. That's what I mean when I
-                say I become too obsessed with my routine and care about
-                insignificant things.
+                At that point I'd describe myself as a motivated idiot, but
+                sometimes motivation is all you need.
               </p>
+
               <p>
-                So on the one hand, I want to be a nomad so that I'm continually
-                moving around, and I don't have the opportunity for my world to
-                become so small that I care about things that don't matter, but
-                on the other, backpacking, and moving from hostel to hostel
-                every two or three days can be just as stressful. At that point,
-                you crave a routine. You dream of being settled down and having
-                a nine-to-five job, and to live in a place that you can call
-                home. My personality matches that lifestyle no more than it
-                matches being settled and doing the same thing everyday.
+                To cut a long and painful story very short, I learned to code,
+                moved back to London and worked as a software developer at a
+                couple of start-ups for three years until I had the experience I
+                needed to go it alone and start freelancing. Within a matter of
+                days I had my first, and to this point only client, who needed
+                me to work for two days per week, earning me enough that, from
+                the right places in the world, I could live comfortably and even
+                save a little on the side.
               </p>
+
               <p>
-                Nomadding is my attempt to find the perfect middle-ground.
-                Having weeks or months everywhere I go means that I'm not moving
-                around so much that I long for continuity and routine, but that
-                I don't stay in each place long enough to build-up such a
-                routine that I start to care about things that really don't
-                matter.
+                So I gave up my flat in London, booked a flight to Thailand, and
+                in the time since I haven't looked back.
               </p>
+
               <p>
-                It is my attempt to find the perfect balance between routine and
-                adventure.
-              </p> */}
+                I'm yet to go anywhere I've had to wear more than a t-shirt and
+                shorts. And with the blessing of being a dual-national with two
+                of the best passports you can have for travelling, it took four
+                very hard and stressful years, but I turned my dream into a
+                reality.
+              </p>
+
+              <p>
+                I now work two days per week, and live very comfortably doing
+                so, even saving a bit for my eventual retirement. I scoff at the
+                idea of ever again working more. I have the ultimate freedom to
+                travel anywhere in the world I want to at a moment's notice, and
+                I live a sometimes lonely, but ultimately fun and rewarding
+                lifestyle
+              </p>
+
+              <p>
+                Slowmadding, this website, is one of my hobby projects for my
+                five-day weekends. Partly it's a place that I can write code.
+                Partly it's a way to pass on what I've learned to people that
+                live, or that want to live a similar lifestyle. And partly it's
+                just a record for my own sake - something to look back on about
+                the places I've been.
+              </p>
+
+              <p>
+                Hopefully if you've made it here, then it gives some value to
+                you. Ultimately all I'll say, is make sure to forge your own
+                path. I built my life this way because it's the way that I want
+                to live, but don't try and copy it. You have to find what you
+                want to do.
+              </p>
             </div>
           </div>
         </div>
