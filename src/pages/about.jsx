@@ -170,8 +170,8 @@ const About = ({ timelines }) => {
                 I've never been a believer in hard work. You do it when you have
                 to, but if the opportunity is there to earn more money for less
                 work, then you take it every time. If I can get by on four, or
-                three, or even two days work per week, then why work for five?
-                Life is too short and there is no pride in working hard for no
+                three, or even two days work per week, then why work five? Life
+                is too short and there is no pride in working hard for no
                 reason. I want to enjoy my time, not spend it working.
               </p>
 
@@ -197,8 +197,8 @@ const About = ({ timelines }) => {
               <p>
                 At this point, aged around 32, I'd never written a line of code
                 in my life. Yet when I pondered this riddle, software
-                development is an industry known for high salaries and remote
-                work. And so just like that (it took a bit longer) I decided:
+                development was an industry known for high salaries and remote
+                work. And so just like that (it took a bit longer) I decided -
                 I'm going to be a software developer.
               </p>
 
