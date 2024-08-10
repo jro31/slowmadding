@@ -5,6 +5,7 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -535,4 +536,30 @@ export const apartmentImages = [
 
 ## Summary
 
-TODO
+export const summaryPoints = {
+  positive: [
+    'Very walkable',
+    'Good places to run',
+    'Gorgeous architecture',
+    'Very accessible public transport',
+    'Pay for everything with Apple Pay',
+    'Cheap supermarkets',
+    'Decathlon, Sports Direct and Primark',
+  ],
+  neutral: [
+    'Adequate social scene',
+    'Some good vegan restaurants',
+  ],
+  negative: [
+    'Drug addicts everywhere',
+    'Everyone smokes',
+    'Tipping',
+    'Expensive relative to comparable cities in the region',
+    "The worst mobile infrastructure I've encountered anywhere",
+    'You have to pay extra for sauce in restaurants',
+    'You have to pay to use the toilets in shopping malls',
+    'Tesco can fuck off',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
