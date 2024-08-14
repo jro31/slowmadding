@@ -21,6 +21,56 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
+export const cityImages = [
+  {
+    src: `${imagePath}/city/mother-church-of-our-lady-of-the-assumption.jpeg`,
+    alt: 'Mother Church of our Lady of the Assumption',
+    caption: "This is the Mother Church of our Lady of the Assumption. No, I didn't make that up.",
+  },
+  {
+    src: `${imagePath}/city/st-stephens-basilica.jpeg`,
+    alt: "St. Stephen's Basilica",
+    caption: "Probably the best thing about Budapest is its architecture. Around seemingly every corner you stumble upon some wonder. This is the St. Stephen's Basilica.",
+  },
+  {
+    src: `${imagePath}/city/liberty-bridge.jpeg`,
+    alt: 'Liberty Bridge',
+    caption: 'Budapest is dissected by the Danube River, with Buda on the west and Pest on the east. Both sides are worth visiting, as are some of the bridges connecting them. This is Liberty Bridge.',
+  },
+  {
+    src: `${imagePath}/city/erzsebet-bridge.jpeg`,
+    alt: 'Erzsébet Bridge',
+    caption: 'Taken from Erzsébet Bridge, this picture is looking north and includes Buda Castle.',
+  },
+  {
+    src: `${imagePath}/city/trump-poster.jpeg`,
+    alt: 'Trump poster',
+    caption: "About a week after the assasination attempt on Donald Trump, these posters got plastered around town. Someone here's definitely a Trump fan.",
+  },
+  {
+    src: `${imagePath}/city/lumiere-hall.jpeg`,
+    alt: 'Lumiere Hall',
+    caption: "If you walk through Lumiere Hall, which you probably will seeing as it's right in the tourist centre, they have a moon floating there for some reason.",
+  },
+  {
+    src: `${imagePath}/city/stefania-utca.jpeg`,
+    alt: 'Stefánia utca',
+    caption: "Budapest doesn't get great sunsets, but if you happen to be wandering down a long road on the way back from Lidl at the right time you might catch one. This is on Stefánia utca.",
+  },
+  {
+    src: `${imagePath}/city/w-budapest.jpeg`,
+    alt: 'W Budapest at night',
+    caption: "It's also worth getting drunk in the city centre at least once. Not because it's fun, but because as you stumble around the streets drunk, some of the architecture is even better at night.",
+  },
+  {
+    src: `${imagePath}/city/vorosmarty-utca.jpeg`,
+    alt: 'Vörösmarty utca',
+    caption: 'This one is near to Vörösmarty utca metro station.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
 ## How affordable is Budapest?
 
 In terms of affordability, Budapest is a mid-tier European country. Cheaper than western Europe and Nordic countries, but more expensive than eastern European countries like Romania.
@@ -556,7 +606,7 @@ export const summaryPoints = {
     'Tipping',
     'Expensive relative to comparable cities in the region',
     "The worst mobile infrastructure I've encountered anywhere",
-    'You have to pay extra for sauce in restaurants',
+    'You have to pay for sauce in restaurants',
     'You have to pay to use the toilets in shopping malls',
     'Tesco can fuck off',
   ]
