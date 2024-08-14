@@ -155,6 +155,48 @@ export const placesData = [
     [articlePath]: '/articles/bucharest-for-digital-nomads',
   },
   {
+    [place]: places[countries.hungary].budapest,
+    [country]: countries.hungary,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: false,
+        [description]:
+          'Expensive relative to comparable cities in the region, particularly for accommodation. I paid around 21,000 HUF per night for one of the cheaper private accommodations on Airbnb, a plate of food in a restaurant is about 3,500 HUF, a beer in a bar costs around 1,500 HUF, and a single trip on public transport is 450 HUF.',
+      },
+      [internet]: {
+        [verdict]: false,
+        [description]:
+          "Internet in my Airbnb was slow but useable, but the mobile networks in Budapest are the least user-friendly I've encountered anywhere.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'A 2km jogging track in City Park, and around the city the pavements are wide and pollution minimal.',
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          "Not the best selection, but it's good enough. Plenty of vegan or vegan-friendly restaurants all over the city.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'A lot of drug addicts in the city, but none ever felt threatening even when walking back at night.',
+      },
+      [social]: {
+        [verdict]: true,
+        [description]:
+          "There's not that much going on, but there is a small community of Meetup events that you can use to meet people.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'A very walkable city. Pavement are wide, roads are easy to cross, and cars obey traffic signals.',
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].chiangMai,
     [country]: countries.thailand,
     [criteria]: {

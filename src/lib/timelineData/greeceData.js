@@ -9,5 +9,11 @@ export const greeceData = {
         [departure]: '2023-10-26',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-08-15',
+        [departure]: '2024-09-26',
+      },
+    },
   ],
 }
