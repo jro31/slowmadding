@@ -1,0 +1,675 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-08-18T19:05:00+03:00',
+  title: 'Budapest for Digital Nomads',
+  description: "Hungary's capital Budapest is an architectural joy, but once its beauty has worn-off, what are you left with? How does it feel to stay here as a digital nomad?",
+  keywords: ['Hungary'],
+}
+
+export const imagePath = '/images/articles/budapest-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Budapest is a city that will immediately strike you with its beauty. It's very walkable, so is a great place to come for a quick holiday to see its architecture. I'd less enthusiastically recommend it to digital nomads who plan on staying longer. Once the beauty has worn-off, there's not too much to keep you here.
+
+The social scene in Budapest is ok, but a little uninspiring. The food is fine. The Internet's useable. Apart from having great public transport, nothing here stands-out. It's just... alright. When I think back over my time here, I feel pretty emotionless.
+
+The city centre, despite its beauty, lacks character. It's filled with drug addicts and tourists, lots of businesses to cater to the latter, and not much else. Although feeling almost like London, you can find at least one branch of Primark, Sports Direct and Decathlon, which combined are responsible for about 95% of my wardrobe, so that's nice.
+
+Outside of the city centre is a lot more pleasant. It's walkable and there's a big park, but there's just not too much going on. If you want to come somewhere to exist anonymously for a while; perhaps to get your head down and to learn a new skill, then that might be what you're looking for. I felt that my six-weeks here was more than long enough, and by the end I was ready to leave.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/mother-church-of-our-lady-of-the-assumption.jpeg`,
+    alt: 'Mother Church of our Lady of the Assumption',
+    caption: "This is the Mother Church of our Lady of the Assumption. No, I didn't make that up.",
+  },
+  {
+    src: `${imagePath}/city/st-stephens-basilica.jpeg`,
+    alt: "St. Stephen's Basilica",
+    caption: "Probably the best thing about Budapest is its architecture. Around seemingly every corner you stumble upon some wonder. This is the St. Stephen's Basilica.",
+  },
+  {
+    src: `${imagePath}/city/liberty-bridge.jpeg`,
+    alt: 'Liberty Bridge',
+    caption: 'Budapest is bisected by the Danube River, with Buda on the west and Pest on the east. Both sides are worth visiting, as are some of the bridges connecting them. This is Liberty Bridge.',
+  },
+  {
+    src: `${imagePath}/city/erzsebet-bridge.jpeg`,
+    alt: 'Erzsébet Bridge',
+    caption: 'Taken from Erzsébet Bridge, this picture is looking north and includes Buda Castle.',
+  },
+  {
+    src: `${imagePath}/city/trump-poster.jpeg`,
+    alt: 'Trump poster',
+    caption: "About a week after the assasination attempt on Donald Trump, these posters got plastered around town. Someone here's definitely a Trump fan.",
+  },
+  {
+    src: `${imagePath}/city/lumiere-hall.jpeg`,
+    alt: 'Lumiere Hall',
+    caption: "If you walk through Lumiere Hall, which you probably will seeing as it's right in the tourist centre, they have a moon floating there for some reason.",
+  },
+  {
+    src: `${imagePath}/city/stefania-utca.jpeg`,
+    alt: 'Stefánia utca',
+    caption: "Budapest doesn't get great sunsets, but if you happen to be wandering down a long road on the way back from Lidl at the right time you might catch one. This is on Stefánia utca.",
+  },
+  {
+    src: `${imagePath}/city/w-budapest.jpeg`,
+    alt: 'W Budapest at night',
+    caption: "It's also worth getting drunk in the city centre at least once. Not because it's fun, but because as you stumble around the streets drunk, some of the architecture is even better at night. This is the W Budapest hotel.",
+  },
+  {
+    src: `${imagePath}/city/vorosmarty-utca.jpeg`,
+    alt: 'Vörösmarty utca',
+    caption: 'Taken near to Vörösmarty utca metro station.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## How affordable is Budapest?
+
+In terms of affordability, Budapest is a mid-tier European country. Cheaper than western Europe and Nordic countries, but more expensive than eastern European countries like Romania.
+
+As with anywhere, the majority of my budget went on accommodation. I paid an equivalent of 21,376 HUF per night for my Airbnb. This was very much at the cheaper end of private Airbnbs on offer.
+
+A plate of food in a restaurant costs in the region of 3,500 HUF, a beer around 1,500 HUF, a single journey on public transport is 450 HUF, and I paid 5,000 HUF to get my hair cut (at <ExternalLink url='https://maps.app.goo.gl/fWN2b2oq9RkVo7EZ8'>Alrashid Fodrászat</ExternalLink>, which I really recommend).
+
+### Is it worth it?
+
+Short answer: No.
+
+Budapest is very Instagrammable (I hate myself for even saying that). It has beautiful architecture and is a very pretty place. If that matters to you then it may be worth the cost, but it doesn't matter to me.
+
+When I go somewhere, I find value in things like social opportunities, the amount of green space, how walkable a city is and the overall lifestyle it offers me. In that regard there are cheaper places in Europe that offer just as much. For example, a year prior to coming to Budapest I spent a month in Bucharest in Romania. Bucharest is a very similar city in all the ways that matter to me (and even has some stunning architecture of its own), but my accommodation in Bucharest cost just 64% of what I paid in Budapest, and it was a much, much nicer room. There's nothing here that justifies the increase in cost over cheaper EU cities.
+
+## Arriving in Budapest
+
+The first thing to note when you arrive at Budapest Ferenc Liszt International Airport, is that the only ATMs in the airport are Euronet ATMs. Euronet ATMs charge high fees. Banks in Hungary do not charge any fees to withdraw cash, even with a foreign card, so I'd advise against withdrawing money at the airport unless absolutely necessary.
+
+Taxis are available at the airport and accept card payments, but a cheaper way to get to the town centre is to take the 100E bus, also known as the <ExternalLink url='https://bkk.hu/en/travel-information/airport-express/'>Airport Express</ExternalLink>.
+
+Follow the signs to Public Transportation and you will soon see a 100E bus sitting there (if there's not one there, you'll see plenty of signs). This bus costs 2,200 HUF, and you can pay with a bank card by holding it against the card reader just inside the bus doors. At this point, your bank card is your ticket.
+
+There are several (at least four) English-speaking helpers directing gormless foreigners such as myself how to board and pay for the bus, so you really can't fuck it up.
+
+The journey to the town centre takes roughly 40 minutes. It then makes three stops, all pretty close to each other.
+
+The first is at the <ExternalLink url='https://maps.app.goo.gl/EKaPcEH9w1vz5HRY9'>Kálvin tér metro station</ExternalLink>, the second is at the <ExternalLink url='https://maps.app.goo.gl/qQqRx5qP5q8TvJZu7'>Astoria metro station</ExternalLink>, and then lastly it terminates at the <ExternalLink url='https://maps.app.goo.gl/GLpCmYsSxuWuXS9f6'>Deák Ferenc tér metro station</ExternalLink>. Unless you're staying out in the middle of nowhere, there will be transport links from one these stops to get you to your room. I got off at Astoria, and from there is was a couple of stops on the metro before I was in easy walking distance of my room.
+
+It's worth noting that the Airport Express is the only transport you can pay for directly with your bank card. For details of how to pay for other transportation, see <Link href='#getting-around-budapest'>Getting around Budapest</Link>.
+
+## How to pay for things in Budapest
+
+The local currency in Hungary is the forint. When you look at prices you'll see this abbreviated to either Ft (most commonly) or HUF.
+
+On my first full day in Budapest, I withdrew 15,000 HUF. I needn't have bothered, because I didn't buy a single thing during my stay that I couldn't pay for with Apple Pay. While it's not quite a cashless society, in that I didn't go anywhere that doesn't accept cash, you can very easily get by here without using cash. There's one exception:
+
+### Tipping
+
+I hate tipping. Paying people extra to do very simple tasks like carrying a plate of food five metres seems absolutely nonsensical to me.
+
+People say that tipping is to pay for good service, but how can you carry a plate of food five metres badly? Do we really hold these people in such low regard that we're rewarding them for not fucking-up tasks that three year-olds can complete?
+
+With that being said, I don't leave tips very often. Unless I'm either guilted into it, or I actually do receive exceptional service (for example, I gave a tip to the barber who cut my hair because he did a really good job), then I do my part to eradicate tipping from the world.
+
+That's good because tipping in Budapest, as with other parts of Europe, is really dumb.
+
+For context, if you receive a service in the UK where tipping is an option, for example if you eat at a restaurant, and you pay by card, the card machine will give you the option of adding a tip before you pay.
+
+In Budapest, paying by card is just as widespread and tipping is just as expected, yet for some reason you don't get that option. Which means that if you are a person inclined to leave tips, then not only do I hate you, but you also have to carry around cash everywhere with you, for the sole purpose of leaving tips.
+
+It's a pain in the arse, and I wish that businesses would just pay their staff properly and price their services accordingly.
+
+## Getting a SIM card in Budapest
+
+There are three main mobile operators in Hungary: Telekom (you'll also see it refered to as T-Mobile), Vodafone and Yettel. Telekom is the biggest of the three.
+
+Knowing that they typically charge higher prices, I avoided the stores in the airport selling SIMs. My UK SIM had actually found a local network, so for once I was in no rush to get connected. Instead I went to the Telekom store in Westend shopping mall the next day.
+
+After getting into a fight with their ticketing machine, which would only give me a queue number if I put it into German, I got immediately called up and told the attendant I wanted to get a prepaid SIM card.
+
+_"We've sold out of prepaid SIM cards"_ was her response. _"We'll have some more, maybe on Tuesday."_
+
+_"Oh, is there anywhere else I can try?"_ I asked, meaning are they in stock at any other Telekom stores.
+
+_"Maybe Vodafone or Yettel"_ she replied.
+
+I wandered out of the store slightly aghast that Hungary's biggest mobile operator had run-out of SIM cards, but quickly noticed that there was a Vodafone store and a Yettel store almost next door. There were no customers in Yettel, and the staff all looked like they'd had enough of life, so I went into Vodafone. They had someone on the door to do the ticketing machine for me. _"It'll be about a 20 minute wait,"_ he told me.
+
+By this point I was losing my patience, but I waited for what turned-out to be 30 minutes before getting called-up. The sales rep needed my passport and email address, but he also asked me what my mother's maiden name was. I've never been asked for that in person before, and as it's used as the security question for so many apps, handing it over made me a little uncomfortable. If I'd had my thinking hat on I'd have given a fake answer here, but I didn't, I had my fucking Hell Budapest is driving me up the wall hat on, which is not conducive to good decision making. So I'm looking forward to having my identity stolen any day now. Hungary was not making getting a SIM an enjoyable process.
+
+Eventually though, for a cost of 6,500 HUF (4,990 for a 20GB data package, the rest allegedly for the cost of the SIM), I had a Hungarian mobile network, including propaganda telling me to download the Vodafone app to manage my account.
+
+_"App not available in your region"_ was the response from the AppStore.
+
+The data package was valid for 30 days, and being unable to top-up via the app because I couldn't download it on the UK AppStore, I eventually figured-out how to do so on their Hungarian-only website with the help of Google Translate. I've never been to any country that's ballsed-up their mobile networks this much before.
+
+If you can avoid having to deal with them (for example, by having a SIM from another EU country), then I recommend you do.
+
+export const gettingASimImages = [
+  {
+    src: `${imagePath}/getting-a-sim/vodafone-prices.jpeg`,
+    alt: 'Vodafone prices',
+    caption: "These were the prices I was shown in the Vodafone store. As Google Translate tells me, napra means day, so 30 napra means it's valid for 30 days. EU-ban felhasználható is how much of the data you buy is valid in other EU countries. 100%-ban means all of it.",
+  },
+]
+
+<ImageGallery images={gettingASimImages} />
+
+## Getting around Budapest
+
+The first thing I'll say is that Budapest is a very walkable city. The pavements are wide, crossing the road is easy and any pollution is unnoticeable. This should be your primary mode of transport.
+
+For when you can't be arsed, Budapest's public transport network is the best I've ever experienced from an outsider's perspective and is very easy to use, with the exception of there being a bit of a learning curve.
+
+I never take taxis because I'm not a millionaire, but Bolt seems to be the ride-hailing app of choice here - I saw more cars with 'Bolt' plastered on than any other service, but Uber also has a presence, as do other services I've never heard of.
+
+export const gettingAroundImages = [
+  {
+    src: `${imagePath}/getting-around/bolt.jpeg`,
+    alt: 'Bolt taxis',
+    caption: "While there are other services available, Bolt certainly dominates in Budapest. You'll see more cars with Bolt insignia driving around than any other companies.",
+  },
+  {
+    src: `${imagePath}/getting-around/uber.jpeg`,
+    alt: 'Uber taxi',
+    caption: "Uber also have a presence.",
+  },
+]
+
+<ImageGallery images={gettingAroundImages} />
+
+### Public transport
+
+So why is public transport here so good from an outsider's perspective? Because the <ExternalLink url='https://bkk.hu/en/tickets-and-passes/budapestgo/'>BudapestGO</ExternalLink> app is so good. And why is there a learning curve? Because you have to know to validate a ticket before boarding any bus, tram or metro train, and if you don't, you're in violation even if you have bought a ticket.
+
+The above link goes to the BKK website, which includes tutorials (and even videos) in English about how to take public transport, so I'll keep my own description brief, but as an overview:
+
+- You need to buy a ticket **before** boarding any bus, tram or metro train, and there are two kinds of tickets:
+  - Paper tickets
+  - Electronic tickets
+- Paper tickets can be bought at ticket machines in metro stations, and at _some_ bus and tram stops.
+- Elecronic tickets can be bought through the BudapestGO app.
+- As well as single journey tickets, you can get blocks of 10 single journey tickets (for a slight discount), passes, and 30/90 minute tickets (where you can take an unlimited number of journeys within the time-limit). For simplicity's sake, I'm only going to focus on single journey tickets here.
+- Regardless of whether you buy a paper or an electronic ticket, you **must validate the ticket before starting your journey**.
+  - This is the part that takes a bit of getting used to. In most other cities, if you buy a ticket from a machine in a metro station and get on a train, your ticket is valid. Here your ticket is not valid until it's been validated.
+- For paper tickets, validating your ticket means putting it into the validation machine and waiting for it to stamp the ticket. At metro stations you do this before going down into the station (somewhere close to the ticket machine). On buses/trams there will be a validation machine on board near every door, and you should do so as soon as you get on.
+- For electronic tickets on the BudapestGO app, once you've purchased a ticket through the app you'll see that your ticket has a 'Validate' button. Tap this button to open up a QR code scanner. In metro stations you'll find a QR code somewhere around the ticket validation machine, on buses and trams **the QR code is outside the vehicle, next to the door** (this took me a little while to figure-out). You must scan this QR code, and if successful, a seemingly random image will appear on screen with a caption of 'Full Fare'.
+- The next point of confusion, is that once you have validated your ticket, **it is valid for that bus/tram only** - if your journey consists of multiple buses/trams, then you must buy and validate mutliple tickets (unless you're using timed tickets, in which case you still need to validate your ticket for each vehicle). This is not true of the metro. On the metro your ticket is valid until you leave a metro station, so you can transfer and take multiple trains on a single ticket.
+
+It all sounds a bit of a pain and, like I said, there's a bit of a learning curve. My suggestion is to not even bother with paper tickets. So long as you have a reliable Internet connection then the BudapestGO app is honestly a joy to use. I never had issues buying tickets and the QR code scanner to validate my tickets worked in a fraction of a second each time. While both being great, neither are the reason I loved this app so much.
+
+The reason I thought it was so great, is it offers a service more comprehensive than Google Maps for getting around and for taking public transport. You can save as many places as you want (for example, the Airbnb you're staying at), and then from wherever you are in Budapest, go onto the app, tell it where you want to go, and it'll generate a choice of routes that include walking, buses, trams and metro trains to get you there both as quickly as possible, and as cheaply as possible. There's even a button to say that you're already in a vehicle, and it will give you a map and the times of where this vehicle is going before it reaches your destination.
+
+In most cities in the world, metro trains are fairly usable by outsiders, but buses are a pain to figure-out.
+
+Not in Budapest, they have done a phenomenal job of making the entire transport network accessible, with the exception of having to learn how to validate tickets. Once you've got that down, getting around Budapest is really, really easy.
+
+export const publicTransportImages = [
+  {
+    src: `${imagePath}/getting-around/public-transport/ticket-machine.jpeg`,
+    alt: 'Ticket machine',
+    caption: "This is one of the ticket machines for buying paper tickets. As well as in metro stations, you'll find them dotted around the city. They're not located at many bus stops, so if you are planning to use paper tickets, I recommend buying several at once to save having to search for a machine when you want to take a bus.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-single-ticket.jpeg`,
+    alt: 'BudapestGO single ticket',
+    caption: "Instead though, I recommend using the BudapestGO app. Tickets can easily be bought through the app, and look like this. Note the 'Validate' button - you're going to need that.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-widget.jpeg`,
+    alt: 'BudapestGO iOS widget',
+    caption: "The BudapestGO app also has a very useful widget. To save even having to unlock your phone, the widget shows your ticket with a 'Validate' button, so if a bus sneaks up on you, you don't have to fumble around outside the doors like a nobhead.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/bus-door-qr-codes.jpeg`,
+    alt: 'Bus QR codes',
+    caption: "It's important to note that you must validate your elecronic tickets before you board a vehicle. For buses and trams, that means scanning one of the QR codes on either side of the door here. You can apparently also just hold your phone up to the blue bit above the QR code, and even if your phone is still locked, it'll recognise there's a ticket and validate it. I never had the guts to try, because I thought I'd look a right door-knob standing there holding my phone against the window if it didn't work.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/ticket-validator.jpeg`,
+    alt: 'Paper ticket validator',
+    caption: "If you have a paper ticket, you instead need to have it punched in a validator machine that you'll find behind a giant lesbian. Post your ticket inside the little slot and it'll punch it automatically. On buses and trams these are on board, so do it as soon as you get on.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/metro-escalator.jpeg`,
+    alt: 'Metro escalator',
+    caption: "On the metro, you validate your ticket before going down into the station. If you get here without validating, you've gone too far.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-full-fare.jpeg`,
+    alt: 'BudapestGO full fare image',
+    caption: "If your electronic ticket successfully validates, you'll be shown a screen that looks something like this. For reasons I don't understand, the image changes each time, but you will see some image, and it will say 'Full Fare' underneath.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-validated-ticket.jpeg`,
+    alt: 'BudapestGO validated ticket',
+    caption: "At this point, if you look at your ticket on the app, it will now say 'Validated'. If an inspector asks to see your ticket, tap on the little icon of an inspector at the top-right of the ticket. This will display a QR code for them to scan.",
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-map.jpeg`,
+    alt: 'BudapestGO map',
+    caption: 'The BudapestGO app is incredibly user-friendly and exceeds Google Maps in helping you to plan journeys. This is a screenshot I took after boarding a number 7 bus and telling the app I was on board. It gave me an interactive map of the route.',
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/budapestgo-on-board-journey-planner.jpeg`,
+    alt: 'BudapestGO on board journey planner',
+    caption: 'And scrolling up it tells you more information about your journey. Vegan Love was my destination for this trip, and Szent Gellért tér - Műegyetem M was the stop I needed to get off at.',
+  },
+  {
+    src: `${imagePath}/getting-around/public-transport/destination-display.jpeg`,
+    alt: 'Bus destination display',
+    caption: "You'll also find destination screens on board, although to my eyes they feel backwards. In this photo, Szinyei Merse utca is the next stop (I'd expect that to be at the top). Bajza utca is the stop after that, followed by Munkácsy Mihály utca. Zugló vasútállomás is the terminal stop, so don't sit there waiting for your stop to get to the top of the screen.",
+  },
+]
+
+<ImageGallery images={publicTransportImages} />
+
+## Being sociable in Budapest
+
+If you search on Meetup for Budapest, you'll find that the small number of free events that have people attending them, largely revolve around alcohol. Not all. There's a silent book club, and a casual coffee event each week for example (I didn't attend either), but most events are held in bars, and sometimes hosted by the bar. You'll find two or three of these each week that are worth attending, so there's enough of a social scene that you won't get bored. In truth though, it's lacking a bit in terms of atmosphere and variety.
+
+For example, I'd have loved if there was a hiking group or a running group (perhaps there is on other platforms and I just didn't look hard enough). And the events I did attend just felt a bit tame and lifeless.
+
+It could be worse - it's better to have this than nothing at all, but I've certainly been places where the social scene was more my cup of tea. Here being sociable always felt a bit of a chore.
+
+## Is it easy to get by with English in Budapest?
+
+Yes. In particular in the city centre where you're surrounded by tourists, almost everyone who serves you speaks basic English and most signs and menus are translated.
+
+Outside of the city centre you'll encounter occasional people with no English, but I still found it all pretty easy.
+
+## Things I didn't like about Budapest
+
+### Smoking
+
+I'll preface this by saying that I have an unhealthy hatred of smoking. To me, if you smoke you're an idiot, if you smoke in public you're a prick, and if you smoke around people that're exercising then no words do justice to the disdain I have for you.
+
+With that out of the way, everyone in Budapest smokes, which doesn't leave the locals in great stead in my mind.
+
+Thankfully it's banned indoors, but forget about sitting outside at a restaurant or a bar if you want a smoke-free meal, and when you go to the park, be fully prepared for someone to sit down at the bench next to you and light a cigarette.
+
+export const smokingImages = [
+  {
+    src: `${imagePath}/dislikes/smoking/tram.jpeg`,
+    alt: 'A tram at Astoria',
+    caption: 'No other picture I took sums-up Budapest quite so well.',
+  },
+]
+
+<ImageGallery images={smokingImages} />
+
+### Drug addiction/Homelessness
+
+It does, I'm sure, sound a little insensitive to voice displeasure at the homeless, but I've grouped it in with drug addiction because in many cases they're one and the same. You get homelessness in people who've just run-out of money, and you get homelessness in people who, through drugs or not, are out of their minds. In Budapest it's the latter.
+
+In some particular areas, for example outside Budapest-Keleti train station, it's far more evident than in others, but in truth you can go all over the city and see people that're not getting the social support they need.
+
+### Paying to use the toilet
+
+Before coming to Budapest I'd never been to a shopping mall where you had to pay to use the toilet before. Here it's almost all of them.
+
+My guess is it's in response to the levels of homelessness, but it's a pain, particularly at places that only accept cash, when everything else in Budapest you can pay for by card.
+
+## Running in Budapest
+
+The primary reason I chose the accommodation that I did, was that it was right next to the imaginitively named <ExternalLink url='https://maps.app.goo.gl/VjTjtzR8mACJDssLA'>City Park</ExternalLink>. While you're free to jog anywhere in this park, at the south-east end is a 2km jogging track. Go around this jogging track and you'll also find a four-lane 200m running track. These were the two places that I did all of my running in Budapest, using the jogging track for slower runs, and the running track for sprints.
+
+Be warned that this is a public park. Despite signs and basic courtesy telling people that these are for runners only, it is not well respected. You will encounter people with kids, dog walkers, people on bikes and scooters and even people walking along smoking, using the jogging track as a path. The first time I used the 200m running track to do sprints, right after I started a group of parents with a dozen or so children decided that the running track and attached workout equipment would be a great place to let their kids play, despite people running on the track and others working-out. And despite there being a huge playground a five minute walk from there.
+
+You can't fix the collective stupidity of humanity.
+
+If you don't happen to be staying within striking distance of City Park, I'd say that the streets of Budapest are all pretty comfortable for running on, even though I didn't do so myself. The pavements are wide and don't really get too busy anywhere, there's not much pollution, and you never have to wait too long when crossing the road. Along the river would certainly be a good option.
+
+Be warned that everyone smokes in Budapest, and they do so without regard for others. The second-hand smoke you breathe while running will be your biggest obstacle.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/city-park-jogging-track.jpeg`,
+    alt: 'City Park jogging track',
+    caption: "The jogging track at City Park forms a 2km circuit at the south-east end of the park. It's a very pleasant track, ruined only by non-runners using it for other recreational activities, despite there being that big path right next to it there.",
+  },
+  {
+    src: `${imagePath}/running/city-park-running-track.jpeg`,
+    alt: 'City Park running track',
+    caption: 'Next to the jogging track you encounter a four-lane 200m running track, which is ideal if you want to do sprints.',
+  },
+  {
+    src: `${imagePath}/running/city-park-runners-only-sign.jpeg`,
+    alt: 'City Park runners only sign',
+    caption: 'Despite this sign being posted at every entrance to the jogging track, all of those pictured and more feel the need to use it for things other than running.',
+  },
+  {
+    src: `${imagePath}/running/city-park-jogging-track-map.jpeg`,
+    alt: 'City Park jogging track map',
+    caption: 'This map shows the enire park, with the jogging track marked from one of my runs here. The 200m running track is between the green and the red dots.',
+  },
+]
+
+<ImageGallery images={runningImages} />
+
+## Getting vegan food in Budapest
+
+### Restaurants
+
+Given the price increase compared to cooking for yourself, and the fact that tipping is expected in most restaurants, I didn't eat out in Budapest as much as I do in other places. Still, I got around to a few vegan restaurants while I was here.
+
+My favourite of these was <ExternalLink url='https://maps.app.goo.gl/imXQvyvuqpH7YEmJ6'>Vegazzi Specialty Pizzeria</ExternalLink>. It's a fully vegan pizzeria and they served me one of the best pizzas I've ever had. If you only visit one restaurant while in Budapest, make it this one.
+
+The best value meal I had was at <ExternalLink url='https://maps.app.goo.gl/StkCYTKGjn1fM6tN8'>Ganesha Vega Ételbár</ExternalLink>. It's a fully vegan restaurant and they have a 'Daily offer', where for 2,790 HUF you get a... plate of food. <ExternalLink url='https://maps.app.goo.gl/JkCTD9K8Uz3aDmQC8'>Menyország Szíve Biobolt</ExternalLink> is another vegan restaurant that has a very similar deal, where for 3,000 HUF you get a large plate of whatever they've cooked that day. 2,500 HUF gets you a normal-sized plate, and 1,900 HUF a small. Being a short walk from my Airbnb, I probably would have come here a lot more, had the elderly Chinese couple that run it not taken the world's longest summer holiday.
+
+If you want to take a run at diabetes, the best junk food I had came at <ExternalLink url='https://maps.app.goo.gl/uqtFjmi4JdQYze6h9'>Vegan Love</ExternalLink>. Not only did I like this place for the food, but I liked it because you order through a computer screen, and computer screens don't expect tips. The other good junk food I had was at <ExternalLink url='https://maps.app.goo.gl/AbJTwwbrtiViKz9Q7'>EPOCH Vegan Burger</ExternalLink>. It's a bit of a toss-up which one did a better job of clogging my arteries.
+
+For something a bit healthier, you can try <ExternalLink url='https://maps.app.goo.gl/uwRuB7Bxn14tZgYb8'>Rira</ExternalLink>. Rira is the only non-vegan restaurant on this list. It's a vegetarian restaurant, but the menu clearly differentiates the vegan and the vegetarian offerings, and you might live a bit longer. <ExternalLink url='https://maps.app.goo.gl/8HJn4zVavzTBySSA7'>Tahina Bite</ExternalLink> also emphasises health. As you'd expect for a place focussing on tahina, it's middle-eastern food, so think falafel and hummus.
+
+<ExternalLink url='https://maps.app.goo.gl/s2x5WBqfNmJxMtVUA'>Happy Veggie</ExternalLink> served me my first meal in Budapest. I'm sure they're awash with pride. They serve vegan Asian food that very much reminded me of the things I was eating in Taiwan.
+
+<ExternalLink url='https://maps.app.goo.gl/JDGBm8sVXrLVFz3B9'>Kozmosz Vegan</ExternalLink> is a nice little family-run vegan restaurant, selling burgers and other main dishes. They're really friendly, which I hate. That, combined with the menu saying _'Our prices don't include any service fee or tips'_ at the bottom of every page just guilts me into feeling I have to leave more money behind.
+
+Congratulations, you've carried food five metres.
+
+export const veganRestaurantImages = [
+  {
+    src: `${imagePath}/vegan-food/restaurants/vegazzi-specialty-pizzeria.jpeg`,
+    alt: 'Vegazzi Specialty Pizzeria - Pinsa Ungherese',
+    caption: "Vegazzi Specialty Pizzeria is a fully vegan pizzeria that does some of the best pizza I've ever had - I can't recommend it highly enough. This is the Pinsa Ungherese and costs 3,890 HUF.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/ganesha-vega-etelbar.jpeg`,
+    alt: 'Ganesha Vega Ételbár - Daily offer',
+    caption: "Ganesha Vega Ételbár is the best value restaurant I went to. On the menu they have a 'Daily offer' for 2,790 HUF. I didn't know what that was when I ordered it. Now I've eaten it, I still don't know what it is, but it tasted good.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/menyorszag-szive-biobolt.jpeg`,
+    alt: 'Menyország Szíve Biobolt - Large daily menu',
+    caption: 'Very similarly, Menyország Szíve Biobolt have a potluck daily menu for 1,900 HUF, 2,500 HUF or 3,000 HUF, depending on size. This is what 3,000 HUF gets you.',
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/vegan-love.jpeg`,
+    alt: 'Vegan Love - Double Cheezeburger',
+    caption: "For when you're bored with life and want to play heart-attack chicken, give Vegan Love a go. They serve the junkiest of junk food, like this double cheezeburger. 3,400 HUF on its own, or with fries for an extra 900 HUF for when you really want to test yourself.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/epoch-vegan-burger.jpeg`,
+    alt: 'EPOCH Vegan Burger',
+    caption: "EPOCH Vegan Burger offer a similar experience, except their juices don't contain any sugar or preservatives, which makes it healthy. I got the 'Double Epoch Large Menu', which consists of a Double Epoch burger, a large fries and a large drink (I went with peach juice) for 4,200 HUF.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/rira.jpeg`,
+    alt: 'Rira - Spinach Samboose Box',
+    caption: "Rira is a vegetarian (not vegan) restaurant that emphasises health. The 'Spinach Samboose Box' comes on a plate and they look quite deep-fried, so I'm not sure how that can be healthy, but none-the-less, it did have a bit of grapefruit there. This plate was 3,490 HUF.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/tahina-bite.jpeg`,
+    alt: 'Tahina Bite - Mediterranean bowl',
+    caption: 'Tahina Bite emphasises serving healthy, vegan dishes made from natural, fresh ingredients without additives. This is the Mediterranean bowl for 4,600 HUF.',
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/happy-veggie.jpeg`,
+    alt: 'Happy Veggie - Vegetarian Korean Bibimbap',
+    caption: "Having only shortly before left Taiwan, where I had loads of bibimap despite having no idea what it means, I was happy to find this Korean Bibimap at Happy Veggie in Budapest. I still don't know what a bibimap is - it looks just like a poke bowl to me, but it tasted good. It costs 3,580 HUF.",
+  },
+  {
+    src: `${imagePath}/vegan-food/restaurants/kozmosz-vegan.jpeg`,
+    alt: 'Kozmosz Vegan - Bean burger',
+    caption: "Kozmosz Vegan is a lovely little family-run vegan restaurant where they try to guilt you into leaving a tip by stressing on every page of the menu that service is not included. The food's good though. This is a bean burger with fries for 3,200 HUF.",
+  },
+]
+
+<ImageGallery images={veganRestaurantImages} />
+
+### Supermarkets
+
+There are four main supermarket chains that you'll see around Budapest: Lidl, Aldi, Tesco and Spar.
+
+I found that Spar was the least vegan-friendly of these, so I wouldn't really bother with it.
+
+Lidl and Aldi are similarly-priced. Lidl is a little more numerous, and a bit more vegan-friendly, but Aldi is still worth a visit. Tesco is more expensive than any of the other three, so only really worth going to for things you can't find elsewhere.
+
+The other downside to Tesco, is that unlike in the other supermarkets mentioned here, in order to get its special offers you have to have a Tesco Clubcard. If you go to the till and do not scan a Clubcard, you're paying full price even for items on special offer.
+
+If you have a Clubcard from another country, it doesn't work here. I tried with my UK Clubcard. And what you'll see on the receipts, is that they direct you to download their app in order to register for a Clubcard.
+
+_"This app is currently not available in your country or region."_
+
+If you're registered for the UK AppStore as I am, or presumably any country other than Hungary, then you can't get the Clubcard app. That's brilliant, Tesco.
+
+Initially I decided I just wouldn't shop at Tesco, because fuck Tesco. They had some things I wanted though, so after a lot of time using Google Translate on their website, I was able to sign-up for a Hungary Clubcard membership using a fake name and address (in order to not spam my Airbnb host with junk mail).
+
+They gave me a barcode, and saving a screenshot of that barcode to the Photos app on my phone, I could scan it at the self-service tills and do my Tesco shops and actually get their special offers. What a pain in the arse.
+
+To save you the trouble, I'll add the screenshot of this barcode to the pictures below.
+
+Between Lidl, Aldi and Tesco, you can get most ingredients, so are only really limited by the equipment provided in your accommodation.
+
+export const veganSupermarketImages = [
+  {
+    src: `${imagePath}/vegan-food/supermarkets/hummus-pasta.jpeg`,
+    alt: 'Hummus pasta',
+    caption: 'Hummus pasta - one of my go-to meals almost anywhere in the world. The only necessary ingredients are wholewheat pasta and hummus, so you can make it anywhere civilised by cooking the pasta, saving half a cup of the cooking water, and mixing it back in with a pot of hummus. In this iteration I added-in some garlic, chickpeas and dried parsley. The wholewheat pasta came from Tesco, all other ingredients from Lidl.',
+  },
+  {
+    src: `${imagePath}/vegan-food/supermarkets/gyro-wraps.jpeg`,
+    alt: 'Vegan gyros',
+    caption: 'Wraps are another great go-to because you can basically shove-in whatever ingredients you can get your hands on. This one is a wholewheat wrap with hummus, garlic, olives, kidney beans and vegan gyros - I added in the lettuce and spinach after taking the photo. All ingredients from Lidl.',
+  },
+  {
+    src: `${imagePath}/vegan-food/supermarkets/sandwiches.jpeg`,
+    alt: 'Vegan sandwiches',
+    caption: 'For some reason when you get over to this part of Europe, despite other vegan items often being scant, they sell loads of vegan cheese. Here I had it in a sandwich with hummus and pre-prepared salad, with some quite spicy crisps. All ingredients from Lidl.',
+  },
+  {
+    src: `${imagePath}/vegan-food/supermarkets/tesco-vegan-food.jpeg`,
+    alt: 'Tesco vegan/vegetarian fridge',
+    caption: "Of all the supermarkets, Tesco has by far the biggest dedicated vegan/vegetarian section, but I found what they offered to be largely shite. It's mostly unhealthy, processed foods.",
+  },
+  {
+    src: `${imagePath}/vegan-food/supermarkets/tesco-clubcard.jpeg`,
+    alt: 'Tesco Clubcard',
+    caption: "To be eligible for special offers in Tesco you need a Clubcard, and getting a Clubcard is a massive headache. To save you the trouble, here's mine. Save it to the photos on your phone, and scan it with one of the hand-held scanners at the self-service tills.",
+  },
+]
+
+<ImageGallery images={veganSupermarketImages} />
+
+## Is the tap water drinkable in Budapest?
+
+Yes, I drank tap water for the duration of my stay, however I found it tastes slightly chemically. To counter that, I'd fill-up a jug of water and leave it out for a few hours to let any chemicals evaporate. It would taste a bit better after that.
+
+## Where to stay in Budapest
+
+Budapest is split-up into numbered districts like in Hunger Games, where District V (of 23) is considered the city centre.
+
+I stayed in District XIV (also known as Zugló), which is about a 50 minute walk from the city centre. When I told one local I was staying in District XIV, she responded _“Why are you staying there? District XIV is for local people.”_ I took that as a compliment. The truth is that having a park nearby is very important to me for both running and my mental health, and District XIV is home to City Park (Városliget in Hungarian).
+
+While I did venture into the centre quite a lot for restaurants, socialising, shopping and exploring, I was always pretty happy to leave again. There are three kinds of people that you encounter in the city centre: Homeless people, drug addicts, and worst of all, tourists. Save for the beautiful architecture and the slew of businesses, it's just not a very pleasant place to be. And while you will predictably find more accommodation in the city centre, I would advise against staying there. I would also avoid staying near the Budapest-Keleti train station. When you walk past it, even in the daytime (which I did a lot to get to the town centre), it feels very much like drug addict central.
+
+Beyond this, I didn't go anywhere in Budapest that didn't feel liveable. Even though it doesn't have as much going on, I certainly wouldn't discount Buda (the west side of the river) either. It always struck me as quite pleasant when I went over there.
+
+## Where I stayed
+
+### Liget Budapest Apartment For Mid-Term
+
+<MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
+
+export const apartmentDetails = {
+  dates: {
+    checkIn: '2024-07-06',
+    checkOut: '2024-08-15',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/51031151',
+  },
+  roomType: 'Entire condo in Budapest, Hungary',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 1485.96,
+      'Cleaning fee': 44.35,
+      'Service fee': 194.96,
+      Taxes: 106.45,
+    },
+  },
+}
+
+<AccommodationTable details={apartmentDetails} />
+
+Private accommodation in Budapest sits right at the limit of what I'm willing to pay. As such, when I filtered private Airbnbs down to my price range, there weren't very many available. This apartment looked the best of those that were, in large part because it's a very short walk from City Park, and that was my main reason for booking it.
+
+For either walking, running, reading or relaxing, I went to City Park on almost every day I was in Budapest, so it was integral to both my fitness and my mental health while I was here. For that reason alone, this isn't a bad place to stay.
+
+As for the room itself, it's pretty compact having just one main room. The small kitchen and bathroom are separate, and the bed is on a raised platform. Most of the pictures below I took immediately on arriving. Once I'd rolled-up the rug and moved the tables and stools off to the side so the main room was a large, empty space, I quite liked it. It was more than enough space to exercise, and both of the sofas are perfectly comfortable for working on a laptop, which are the two main activities I do in my accommodation. The Internet isn't the fastest, but it's good enough for video calls. Download speeds of around 12mb/s, upload speeds of about 1.8mb/s.
+
+The kitchen is deceptively well equipped, with a jumble-sale's worth of pans to choose from and way more crockery than you're ever going to use. Having an empty cupboard to store food would have actually been better, but I'm certainly not going to complain about a kitchen being too well equipped. As with everything else here, the bathroom is compact, and it's in a way impressive that they got a toilet, shower, boiler, sink and washing machine in such a small space, but it does come at a cost. The boiler is right above the toilet, so you need to be paying attention when you stand up or sit down. That boiler cost me a lot of brain cells.
+
+It's also the weirdest/worst toilet I've ever used. I thought that the shape of a toilet was pretty standardised the world over, but apparently not. The part of the bowl that has water in is not only tiny, but it's at the very front of the bowl, so you're basically shitting onto a slightly slanted shelf, where it'll then very slowly slide into the water. There's no way to shit in this toilet without needing to clean it with a toilet brush afterwards. I'm not sure who came up with that design, but they probably shouldn't work with toilets anymore.
+
+A big positive of the room is it comes with a moderately-sized yard equipped with a couple of tables and several chairs. It's not huge, but if you value vitamin D like I do, it's nice to come out here and sit with a cup of tea in the mornings. The downside is that the room next door also have a yard. Why is that a downside?
+
+The room is located in a compound of several similar-sized rooms, most of which contain permanent residents - none of whom caused me any issues, and some of whom even bordered on being friendly. It does at times feel a bit like living in a scene from Trailer Park Boys given the number of underdressed, overweight people sitting around smoking and drinking beer in the afternoons, but the room is around the back of the compound through a locked gate, so you have a lot of privacy.
+
+The exception is the room next door - you share the locked gate with them. A fairly young couple lives there, and like everyone else here (and in all of Budapest) they smoke like chimneys, always at the table and chairs outside their room. On cold days that won't be an issue, but I stayed here during a heatwave where the high temperature each day got as high as 38°C. The room does not have AC; just a couple of fans, so keeping the windows open is imperetive to staying cool.
+
+When the wind's blowing in the right direction, the smoke from the couple next door just blows straight into the room, so I'd often have to keep the windows closed just to keep the smoke out, which was a huge annoyance. Staying cool without AC in 38°C is challenging enough already.
+
+The apartment is located in District XIV, which is a local area. You're about a 50 minute walk from the touristy city centre. You have a frustrating number of supermarkets (6 Lidls, 2 Aldis and 2 Tescos) that are all about a 30 minute walk from the room, but none that are closer. I went to many of these to see different parts of Budapest, so while getting groceries is a pain if you're in a rush, look at it as a way of exploring the city.
+
+Apart from the park, there's not much of note nearby, but there are bus stops metres from the entrance to the compound, so you can get anywhere you're likely to want to go pretty quickly.
+
+This a very no-frills room. If you're pretty low maintenance then you'll be fine here, although given the lack of AC, I'd recommend avoiding it during the summer. Apart from the people next door smoking, the only other issue I had was the host was a bit of a pain on a couple of occasions.
+
+When I checked-into the room, I messaged her to say I was outside, and her mother, who was meeting me here, left me out on the street for about 25 minutes despite being in the room.
+
+For longer stays, a mid-term clean is required (at cost to you). The cleaner cancelled on me twice, and even on the day she did eventually come, re-arranged when she was due to arrive in just over an hour. It seemed to be of no comprehension to either the cleaner or the host (who arranged it) that each time I was planning my day around being out of the room while the cleaner was here.
+
+The most egregious thing though, was I arranged with the host to check-out of the room at 11:30am on my final day. A couple of hours after we'd agreed to this, she messaged me to say _"people are coming to change the gas metre between 9am and 11am, can you let them in?"_
+
+I didn't respond kindly to this. When I'm trying to pack and get ready to leave somewhere after living there for almost six weeks, the last thing I need is workmen coming in and out. She told me that she'd try and arrange another time.
+
+That was the last I heard until 10:11am on my checkout day she messages me to say _"they're coming now, but don't worry it'll only take 5 mins,"_ then almost immediately there was a knock at the door.
+
+Shockingly they ran into issues changing the metre so were still there after 30 minutes, at which point I gave up, and in a pretty bad mood decided to leave early. Right as I was picking-up my bag the host showed-up, and still had the gall to ask for a 5-star review.
+
+It's consequently very hard for me to recommend staying here, but it could be worse. The room has the essentials and there's a really nice park a short walk away. Given that it's fairly cheap by Budapest standards, if you're on a tight budget then I wouldn't shy away from staying here, but if you've got the money then I'd recommend looking for somewhere better.
+
+export const apartmentImages = [
+  {
+    src: `${imagePath}/apartment/living-area-front.jpeg`,
+    alt: 'Apartment living area front',
+    caption: "The apartment's a studio, but that doesn't mean it's not spacious. In the living area alone there are three small tables, a TV, a fan, and for reasons I still don't understand, a sequin mannequin.",
+  },
+  {
+    src: `${imagePath}/apartment/living-area-rear.jpeg`,
+    alt: 'Apartment living area rear',
+    caption: "And that's before I mention the two sofas. The one at the rear has a gimpy leg so sit-down on it lightly. The one on the left doubles as a second bed - useful if you're not comfortable going up and down the ladder.",
+  },
+  {
+    src: `${imagePath}/apartment/yoga-mat.jpeg`,
+    alt: 'Apartment cleared for yoga',
+    caption: "As much as it's nice they provided all this stuff, I really love just having a big empty space, so I quickly cleared away the tables, stools and the rug. Once I'd done that I had loads of space for exercise. Exercising under the sleeping platform was a bit tight if you raised your arms in the air, but closer to the TV are high ceilings, which is great. Oh no wait, some numpty has hung a light down from the ceiling.",
+  },
+  {
+    src: `${imagePath}/apartment/bed.jpeg`,
+    alt: 'Apartment bed',
+    caption: "Up the ladder is the sleeping area. It's basic and it does get quite hot up here, but you have a fan as well as a couple of bedside lights. There's also a light switch for the main apartment light, so you don't have to climb the ladder in the dark.",
+  },
+  {
+    src: `${imagePath}/apartment/kitchen.jpeg`,
+    alt: 'Apartment kitchen',
+    caption: "The kitchen is very well equipped - almost too much so. There's so much equipment, crockery and cutlery in all these cupboards that it took some rearranging to have the space to store the food I bought, but I won't complain about having too many pans.",
+  },
+  {
+    src: `${imagePath}/apartment/kitchen-table.jpeg`,
+    alt: 'Apartment kitchen table',
+    caption: "There's also a small (and wobbly) table with a couple of chairs in here.",
+  },
+  {
+    src: `${imagePath}/apartment/sink.jpeg`,
+    alt: 'Apartment sink and washing machine',
+    caption: "In the bathroom is the apartment's washing machine.",
+  },
+  {
+    src: `${imagePath}/apartment/toilet.jpeg`,
+    alt: 'Apartment shower and toilet',
+    caption: "I always thought that toilet bowls had a standard design. How wrong I was. Not only does the toilet bowl have a tiny hole in it, but it's at the front of the bowl. Unless you shuffle all the way to the front of the seat, you're basically shitting onto a shelf. It's weird. A great place to be a toilet brush though, you're never short of work. The other frustration is you see the boiler right above the toilet? Yep, that's one way to kill some brain cells.",
+  },
+  {
+    src: `${imagePath}/apartment/yard.jpeg`,
+    alt: 'Apartment yard',
+    caption: "The apartment has a private yard up to the green gate. Between the green gate and the locked red gate is next door's yard. You have a couple of tables and several chairs, and at certain times of day it gets loads of sun, so I spent a lot of time sitting out here drinking tea. Out of view to the right is a clothes horse. A cat that lives in the compound has a bit of an affinity for killing mice and leaving them decapitated in the yard, so look-out for that. I would just leave it to the insects to clean it up.",
+  },
+  {
+    src: `${imagePath}/apartment/entrance.jpeg`,
+    alt: 'Apartment entrance',
+    caption: 'The entrance from the main road.',
+  },
+]
+
+<ImageGallery images={apartmentImages} />
+
+## Summary of Budapest
+
+export const summaryPoints = {
+  positive: [
+    'Very walkable',
+    'Good places to run',
+    'Gorgeous architecture',
+    'Very accessible public transport',
+    'You can pay for everything with Apple Pay',
+    'Cheap supermarkets',
+    'Decathlon, Sports Direct and Primark',
+  ],
+  neutral: [
+    'Adequate social scene',
+    'Some good vegan restaurants',
+  ],
+  negative: [
+    'Drug addicts everywhere',
+    'Everyone smokes',
+    'Tipping',
+    'Expensive relative to comparable cities in the region',
+    "The worst mobile infrastructure I've encountered anywhere",
+    'You have to pay for sauce in restaurants',
+    'You have to pay to use the toilets in shopping malls',
+    'Tesco can fuck off',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+### Final thoughts
+
+When I arrived in Budapest, I wasn't in a great place. A couple of months earlier, while in Taiwan, I'd torn my calf muscle while running, which had made exercise difficult for a while. I'd just recovered from that, and then I got sick with a pretty nasty cough, which I took with me for a visit back home to the UK. Through most of this period, I hadn't been able to exercise properly, and it had taken its toll mentally.
+
+By the time I left Budapest I did so in a much, much better place physically and mentally than when I'd arrived. I'd spent my time here focussed very little on socialising or sight-seeing or getting to know the city, and had really zeroed-in on myself. I exercised almost every day I was here, and by every metric that my Apple Watch and my body fat monitor gathers, I became a healthier person, not only compared to when I arrived, but compared to many months before as well.
+
+My running times were better, my resting heart-rate was lower, my weight was down, my VO² max was up, and just looking in the mirror, for the first time in a long time, I saw a fit and healthy person looking back at me.
+
+Beyond the physical, I was in a great place mentally. I found myself smiling for no reason, happy with life, able to handle adversity well. And I took steps forward in my personal development, some of which I'd been wanting to take for years but had never found the motivation.
+
+I learned or started learning some new and important coding skills. A long-term grievance of mine is that I only speak one language. I think it's important, especially as you age, to keep your mind elastic by continually learning and even now, approaching 40 and speaking only English, I have a dream of speaking many languages. Starting a new language every year or two and really focussing on it, and using the freedom of being a digital nomad to go and live in countries that speak it. I've fantasised about that for years, yet it was in Budapest that I took the first steps to making it a reality, returning to learning Thai, the only language other than English that I have even a basic knowledge of, and I started incorporating Thai study into every day.
+
+Should I keep up with them, these steps towards being a healthier person and of learning new coding skills and of learning languages could have a profound impact on my future, and it was here, in Budapest, that it all started.
+
+It wasn't in Athens, or in Bangkok, or in Taipei, cities that I regard much more highly. It was here, in Budapest, that I found the motivation and the time to make big steps towards being a happier, healthier, more productive person. At which point you may be asking why I don't regard Budapest more highly if it was the genesis for such a positive transformation. And it's simply that I'm not sure how much being in Budapest had to do with it.
+
+I can't put my finger on what it was about my time here that drove things in such a positive direction, but I attribute it more to my circumstances than to my surroundings. But maybe, just maybe it was Budapest. Maybe there is some intangible here that drives positivity. Maybe as a fifty year-old polyglot I'll return and reminisce about it being the place where it all began.
+
+I'll remember my time here very fondly as a positive time of my life. Perhaps unfairly, I won't credit Budapest for being the reason. It feels like I turned a corner in my life while being in Budapest, but not because of Budapest.
+
+### Do I want to come back again?
+
+Not really.
