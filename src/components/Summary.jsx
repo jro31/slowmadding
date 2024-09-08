@@ -10,19 +10,19 @@ const Bullet = ({ children, disposition }) => {
     <div className="mt-2 flex gap-3">
       {disposition === 'positive' && (
         <CheckCircleIcon
-          className="h-8 w-8 text-zinc-900 dark:text-zinc-100"
+          className="h-8 w-8 flex-none text-zinc-900 dark:text-zinc-100"
           aria-label={description}
         />
       )}
       {disposition === 'neutral' && (
         <MinusCircleIcon
-          className="h-8 w-8 text-zinc-700 dark:text-zinc-300"
+          className="h-8 w-8 flex-none text-zinc-700 dark:text-zinc-300"
           aria-label={description}
         />
       )}
       {disposition === 'negative' && (
         <XCircleIcon
-          className="h-8 w-8 text-zinc-500 dark:text-zinc-400"
+          className="h-8 w-8 flex-none text-zinc-500 dark:text-zinc-400"
           aria-label={description}
         />
       )}
