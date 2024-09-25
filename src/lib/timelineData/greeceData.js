@@ -12,7 +12,7 @@ export const greeceData = {
     {
       [dates]: {
         [arrival]: '2024-08-15',
-        [departure]: '2024-09-26',
+        [departure]: '2024-10-31',
       },
     },
   ],
