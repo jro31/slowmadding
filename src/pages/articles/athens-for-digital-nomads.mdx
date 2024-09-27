@@ -6,7 +6,7 @@ import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-09-26T17:55:00+07:00', // TODO: Update this
+  date: '2024-10-31T17:55:00+07:00', // TODO: Update this
   title: 'Athens for Digital Nomads',
   description: 'Known for its ruins and its history, how does Athens fare for the more modern lifestyle of a digital nomad?',
   keywords: ['Greece'],
@@ -350,6 +350,47 @@ export const kynosargousApartmentImages = [
 ]
 
 <ImageGallery images={kynosargousApartmentImages} />
+
+### Dream apartment in Kallithea
+
+<MapLink name='Leoforos Eleftheriou Venizelou 152' url='https://maps.app.goo.gl/LVcn9oQdNJjP3J9A8' />
+
+export const kallitheaApartmentDetails = {
+  dates: {
+    checkIn: '2024-09-26',
+    checkOut: '2024-10-31',
+  },
+  platform: {
+    name: 'Airbnb',
+    url: 'https://www.airbnb.com/rooms/929394116413004365',
+  },
+  roomType: 'Entire rental unit in Kallithea, Greece',
+  price: {
+    currencyPrefix: '£',
+    currencySuffix: 'GBP',
+    sections: {
+      Room: 1732.05,
+      'Monthly stay discount': -259.90,
+      'Cleaning fee': 12.67,
+      'Service fee': 260.87,
+      'Service fee savings': -51.97,
+    },
+  },
+}
+
+<AccommodationTable details={kallitheaApartmentDetails} />
+
+TODO
+
+export const kallitheaApartmentImages = [
+  // {
+  //   src: `${imagePath}/kallithea-apartment/.jpeg`,
+  //   alt: 'Kallithea apartment ',
+  //   caption: '',
+  // },
+]
+
+{/* <ImageGallery images={kallitheaApartmentImages} /> */}
 
 ## Where to get vegan food in Athens
 
