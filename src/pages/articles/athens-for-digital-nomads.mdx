@@ -106,9 +106,19 @@ In my second room in Athens I was very close to <ExternalLink url='https://maps.
 
 The last place I ran in Athens was <ExternalLink url='https://maps.app.goo.gl/U1Dofn9awMivcpEb8'>The National Garden</ExternalLink>. I came here when running with someone else, and although fairly pleasant, it's too small to run any distance and there are a lot of people wandering around. I'd avoid running here unless you're desparate.
 
-### Nea Smyrni park
+### Nea Smyrni Park
 
 TODO
+
+export const neaSmyrniParkImages = [
+  {
+    src: `${imagePath}/running/nea-smyrni-park/nea-smyrni-park.jpeg`,
+    alt: 'Nea Smyrni Park',
+    caption: 'The north-east edge of Nea Smyrni Park is the flattest part of the loop.',
+  },
+]
+
+<ImageGallery images={neaSmyrniParkImages} />
 
 ### Grigoris Lamprakis Kallithea Municipal Stadium
 
@@ -122,72 +132,54 @@ TODO
 
 TODO
 
-### Philopappos Hill
-
-TODO
-
-### The National Garden
-
-TODO
-
-export const runningImages = [
+export const runToTheSeaImages = [
   {
-    src: `${imagePath}/running/nea-smyrni-park-strava.jpeg`,
-    alt: 'Nea Smyrni Park running Strava',
-    caption: 'This anti-clockwise route around Nea Smyrni Park is pretty established for people exercising. If you draw a north-south line down the middle of this image, the left side is all up-hill.',
-    url: 'https://www.strava.com/activities/10017636507',
-  },
-  {
-    src: `${imagePath}/running/to-the-sea-strava.jpeg`,
+    src: `${imagePath}/running/run-to-the-sea/run-to-the-sea-strava.jpeg`,
     alt: 'Running to the sea Strava',
     caption: 'Following the tram tracks, you get a great run down to the sea and back without the need to navigate.',
     url: 'https://www.strava.com/activities/9716643625',
   },
   {
-    src: `${imagePath}/running/philopappos-hill-strava.jpeg`,
-    alt: 'Philopappos Hill running Strava',
-    caption: "Philopappos Hill is better for walking than running, although that's pretty good elevation for a 5k.",
-    url: 'https://www.strava.com/activities/9903324652',
-  },
-  {
-    src: `${imagePath}/running/the-national-garden-strava.jpeg`,
-    alt: 'The National Garden running Strava',
-    caption: "The National Garden is the squiggly bit at the top. The part within the garden is roughly 5k, with the run to and from the park making-up the rest. It's not a great place to run.",
-    url: 'https://www.strava.com/activities/9747668112',
-  },
-  {
-    src: `${imagePath}/running/nea-smyrni-park.jpeg`,
-    alt: 'Nea Smyrni Park',
-    caption: 'The north-east edge of Nea Smyrni Park is the flattest part of the loop.',
-  },
-  {
-    src: `${imagePath}/running/neos-kosmos-tram-tracks.jpeg`,
+    src: `${imagePath}/running/run-to-the-sea/neos-kosmos-tram-tracks.jpeg`,
     alt: 'Neos Kosmos tram tracks',
     caption: "The tram goes from Neos Kosmos all the way to the sea, so if you want a decent run without having to navigate, run along the pavement while following the tram tracks. This photo looks towards the sea, so you can also see why running on the left (into oncoming traffic) you'll have a lot more shade going out than you will coming back.",
   },
   {
-    src: `${imagePath}/running/beach.jpeg`,
+    src: `${imagePath}/running/run-to-the-sea/beach.jpeg`,
     alt: 'The beach',
     caption: "You get some pretty nice views if you run to the beach, although in the back of your mind you know that the worst is still to come. It's all up-hill from here.",
   },
+]
+
+<ImageGallery images={runToTheSeaImages} />
+
+### Philopappos Hill
+
+TODO
+
+export const philopapposHillImages = [
   {
-    src: `${imagePath}/running/philopappos-hill-park.jpeg`,
+    src: `${imagePath}/running/philopappos-hill/philopappos-hill-park.jpeg`,
     alt: 'Philopappos Hill Park',
     caption: "This is Philopappos Hill that I took on a walk here one day. If you look to the top of the hill on the right, there's a monument. I'm not sure what, I probably should have stopped and read the plaque at least once. Running up that hill and around the park a couple of times makes it a 5k, but it's definitely not friendly running terrain.",
   },
   {
-    src: `${imagePath}/running/philopappos-hill-acropolis-selfie.jpeg`,
+    src: `${imagePath}/running/philopappos-hill/philopappos-hill-acropolis-selfie.jpeg`,
     alt: 'Philopappos Hill Acropolis selfie',
     caption: 'But you do get some nice views. This is The Acropolis behind my giant face after running up Philopappos Hill for the first time.',
   },
   {
-    src: `${imagePath}/running/philopappos-hill-city-selfie.jpeg`,
+    src: `${imagePath}/running/philopappos-hill/philopappos-hill-city-selfie.jpeg`,
     alt: 'Philopappos Hill City selfie',
     caption: 'You can also see out to the sea, so you get pretty much 360° views.',
   },
 ]
 
-<ImageGallery images={runningImages} />
+<ImageGallery images={philopapposHillImages} />
+
+### The National Garden
+
+TODO
 
 ## Being sociable in Athens
 
@@ -267,37 +259,37 @@ Because of how readily-available vegan food is in Athens, I wouldn't really reco
 
 export const peasImages = [
   {
-    src: `${imagePath}/peas/zen-palette.jpeg`,
+    src: `${imagePath}/vegan-food/peas/zen-palette.jpeg`,
     alt: 'Peas zen palette',
     caption: "This is called the zen palette. I don't know why, but I don't care when it's this good. It's tempeh, tofu and seitan with salad and pita bread. Sounds like a great post-workout meal. It costs €11.50.",
   },
   {
-    src: `${imagePath}/peas/tutti-fruity-jackfruit-burger.jpeg`,
+    src: `${imagePath}/vegan-food/peas/tutti-fruity-jackfruit-burger.jpeg`,
     alt: 'Peas tutti fruity jackfruit burger',
     caption: "The tutti fruity burger is a jackfruit burger. I'm not sure about that name either. The burger is €7.50, with the fries for another €2.",
   },
   {
-    src: `${imagePath}/peas/seitan-club.jpeg`,
+    src: `${imagePath}/vegan-food/peas/seitan-club.jpeg`,
     alt: 'Peas seitan club',
     caption: "The seitan club sandwich is truly a work of art. So good, you can't have just one. Or I can't have just one. It costs €9.50 and includes fries.",
   },
   {
-    src: `${imagePath}/peas/epic-steak.jpeg`,
+    src: `${imagePath}/vegan-food/peas/epic-steak.jpeg`,
     alt: 'Peas epic steak',
     caption: 'The epic steak is four steaks made from seitan and they were absolutely delightful. This plate will cost you €11.50.',
   },
   {
-    src: `${imagePath}/peas/acai-energy-smoothie.jpeg`,
+    src: `${imagePath}/vegan-food/peas/acai-energy-smoothie.jpeg`,
     alt: 'Peas açai energy smoothie',
     caption: 'They also have some smoothies and juices on the menu. The açai energy smoothie is açai, guarana, banana and almond milk for €5.90.',
   },
   {
-    src: `${imagePath}/peas/mountain-peak.jpeg`,
+    src: `${imagePath}/vegan-food/peas/mountain-peak.jpeg`,
     alt: 'Peas mountain peak',
     caption: "This one is called 'mountain peak' (🤷‍♂️) and consists of kebab slices made from lentils, chickpeas and wheat flour. It costs €11.50.",
   },
   {
-    src: `${imagePath}/peas/quinoa-lover-burger.jpeg`,
+    src: `${imagePath}/vegan-food/peas/quinoa-lover-burger.jpeg`,
     alt: 'Peas quinoa lover burger',
     caption: 'My first meal in Athens, I always love a good burger. This is the quinoa lover burger for €7.50, with an added slice of vegan cheese for €1, and fries for €2.',
   },
@@ -319,32 +311,32 @@ I'll stress that it's not a place that you should travel far to visit, there's l
 
 export const breadFactoryImages = [
   {
-    src: `${imagePath}/bread-factory/vegan-tahini-cookies.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/vegan-tahini-cookies.jpeg`,
     alt: 'Bread Factory vegan tahini cookies',
     caption: 'Clearly-marked vegan items are dotted all around Bread Factory, including these tahini cookies.',
   },
   {
-    src: `${imagePath}/bread-factory/vegan-sunflower-seed-dessert.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/vegan-sunflower-seed-dessert.jpeg`,
     alt: 'Bread Factory vegan sunflower seed dessert',
     caption: "I don't remember what this one is called, but it's basically sunflower seeds held together by some sticky goodness.",
   },
   {
-    src: `${imagePath}/bread-factory/vegan-burger.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/vegan-burger.jpeg`,
     alt: 'Bread Factory vegan burger',
     caption: "It's not just sweets either, they sell hot vegan food, including this vegan burger for €2.98.",
   },
   {
-    src: `${imagePath}/bread-factory/vegan-shelves.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/vegan-shelves.jpeg`,
     alt: 'Bread Factory vegan shelves',
     caption: "While this shelf is exlusively vegan, you'll find other items throughout the store.",
   },
   {
-    src: `${imagePath}/bread-factory/vegan-chocolate-rocks.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/vegan-chocolate-rocks.jpeg`,
     alt: 'Bread Factory vegan chocolate rocks',
     caption: "Vegan chocolate rocks. Nope, I don't know what they are, but they're damn good. And damn addictive. I wonder why I got fat in Athens? They cost €3.89",
   },
   {
-    src: `${imagePath}/bread-factory/outside.jpeg`,
+    src: `${imagePath}/vegan-food/bread-factory/outside.jpeg`,
     alt: 'Bread Factory outside at night',
     caption: "One of the best things about Bread Factory is it's open 24 hours per day, so is a great place to get drunk food. I took this photo at 1:35am.",
   },
@@ -352,7 +344,7 @@ export const breadFactoryImages = [
 
 <ImageGallery images={breadFactoryImages} />
 
-### Supermarkets
+### Groceries
 
 Given how vegan-friendly the restaurant-scene is in Athens, supermarkets leave a little to be desired. For some reason every supermarket, even smaller ones, have vegan cheese. Beyond that, most don't have any dedicated vegan sections, just a few unintentionally vegan items dotted around the store.
 
@@ -360,45 +352,45 @@ For example, I did the majority of my shopping at Lidl, where you can buy wholew
 
 Combine that with the usual fruits and vegetables and you won't go hungry shopping in the supermarkets in Athens, but compared to places I've been previously (I'm thinking particularly of Bucharest), the supermarkets in Athens aren't overly vegan-friendly. The vegan food they have is mostly vegan by accident.
 
-export const supermarketsImages = [
+export const groceriesImages = [
   {
-    src: `${imagePath}/supermarkets/lidl-vegan-cheese.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/lidl-vegan-cheese.jpeg`,
     alt: 'Lidl vegan cheese',
     caption: "For some reason, despite lacking in other vegan products, vegan cheese in incredibly plentiful in Athens' supermarkets. These are just some of what is available in Lidl in Neos Kosmos.",
   },
   {
-    src: `${imagePath}/supermarkets/cheese-and-tomato-baguette.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/cheese-and-tomato-baguette.jpeg`,
     alt: 'Vegan cheese and tomato baguette',
     caption: 'A result was that many of the meals I made in Athens included vegan cheese, such as this vegan cheese and tomato baguette.',
   },
   {
-    src: `${imagePath}/supermarkets/gnocchi.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/gnocchi.jpeg`,
     alt: 'Lidl wholemeal gnocchi with vegan cheese',
     caption: 'Or this vegan wholemeal gnocchi (also available at Lidl) with vegan cheese.',
   },
   {
-    src: `${imagePath}/supermarkets/spaghetti-bolognese.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/spaghetti-bolognese.jpeg`,
     alt: 'Vegan spaghetti bolognese',
     caption: "Apart from vegan cheese, the other thing I got through a tonne of in Athens was wholewheat spaghetti. Here I made bolognese with a pre-made vegan sauce from Lidl which was on special offer, but I also made hummus pasta more times than I'd care to admit.",
   },
   {
-    src: `${imagePath}/supermarkets/toastie.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/toastie.jpeg`,
     alt: 'Vegan cheese toastie',
     caption: "My first room came with a toastie machine, so guess what? Vegan cheese and tomato toasties, that's what.",
   },
   {
-    src: `${imagePath}/supermarkets/cheese-tomato-and-olive-baguette.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/cheese-tomato-and-olive-baguette.jpeg`,
     alt: 'Vegan cheese, tomato and olive wholewheat baguette',
     caption: 'Variety is the spice of life, so I put olives in this baguette for the excitement. And because I was about to leave Athens and had load of olives left.',
   },
   {
-    src: `${imagePath}/supermarkets/sandwich.jpeg`,
+    src: `${imagePath}/vegan-food/groceries/sandwich.jpeg`,
     alt: 'Vegan cheese and salad sandwich',
     caption: 'Vegan cheese and salad sandwiches, all ingredients from Lidl suprisingly.',
   },
 ]
 
-<ImageGallery images={supermarketsImages} />
+<ImageGallery images={groceriesImages} />
 
 ## Is the tap water drinkable in Athens?
 
@@ -478,37 +470,37 @@ After such a shitty start, I was really sad when I had to leave this place. It's
 
 export const neosKosmosApartmentImages = [
   {
-    src: `${imagePath}/neos-kosmos-apartment/living-room.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/living-room.jpeg`,
     alt: 'Neos Kosmos apartment living room',
     caption: "The living room is pretty big, with a lot of floor space to exercise. The one downside is the TV is annoyingly small for such a big room. The door leads onto the large but largely useless balcony.",
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/bed.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/bed.jpeg`,
     alt: 'Neos Kosmos apartment bed',
     caption: 'Interesting to absolutely no one except me, that is the same Ikea bed that I had in my flat in London before I became a digital nomad. Out of shot is plenty of cupboard space, an air-conditioner and a radiator, a couple of useful shelves for keeping things on, and another door onto the balcony.',
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/kitchen.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/kitchen.jpeg`,
     alt: 'Neos Kosmos apartment kitchen',
     caption: "The kitchen is equipped with everything you expect in an Airbnb. An oven, microwave, four hobs, loads of pots, pans, cuttlery, crockery and cooking utensils, a large fridge-freezer, and even a washing machine. The surface and chairs at the bottom-right of the picture are great for cooking, eating and working, especially with a couple of easy-access plugs. The one downside is that the nearest air-conditioner is in the bedroom, which doesn't really reach into the kitchen, so on hot days it's not the best place to work.",
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/bathroom.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/bathroom.jpeg`,
     alt: 'Neos Kosmos apartment bathroom',
     caption: 'Compared to the rest of the apartment, the bathroom is very basic, but it has everything you need.',
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/view.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/view.jpeg`,
     alt: 'Neos Kosmos apartment view',
     caption: "I didn't find much use for the balcony, other than to sit on until I stopped sweating after a run and to take occasional photos, but I did get some nice photos.",
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/outside.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/outside.jpeg`,
     alt: 'Neos Kosmos apartment from outside',
     caption: "The apartment is in a very nice, local area. It's on the fourth floor, at the back of the building.",
   },
   {
-    src: `${imagePath}/neos-kosmos-apartment/wifi-speed.jpeg`,
+    src: `${imagePath}/accommodation/neos-kosmos-apartment/wifi-speed.jpeg`,
     alt: 'Neos Kosmos apartment wifi speed',
     caption: "The wifi speeds leave a lot to be desired. They're just fast enough to make video calls, but compared to other Airbnbs I've stayed in, are quite unimpressive.",
   },
@@ -568,52 +560,52 @@ If money was of no object, I'd gladly stay here again. It's a very nice room onc
 
 export const koukakiApartmentImages = [
   {
-    src: `${imagePath}/koukaki-apartment/living-room.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/living-room.jpeg`,
     alt: 'Koukaki apartment living room',
     caption: "The living room has plenty of space, a decent-sized TV, a comfortable sofa bed and nice armchair, an air conditioner and lots of natural light. If only some doorknob hadn't hung the light down so low from the ceiling, it would have been perfect.",
   },
   {
-    src: `${imagePath}/koukaki-apartment/entertainment-unit.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/entertainment-unit.jpeg`,
     alt: 'Koukaki apartment entertainment unit',
     caption: 'No, this is not an optical illusion, the entertainment unit really does lean-over at that angle. For my own peace of mind I moved all the books down into the cupboard at the bottom.',
   },
   {
-    src: `${imagePath}/koukaki-apartment/kitchen.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/kitchen.jpeg`,
     alt: 'Koukaki apartment kitchen',
     caption: "The kitchen is equipped with everything you need (except a microwave), and even with the table and chairs has plenty of space. If you were entertaining and needed to move the table out so people could sit around it, there's space for that.",
   },
   {
-    src: `${imagePath}/koukaki-apartment/bedroom.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/bedroom.jpeg`,
     alt: 'Koukaki apartment bedroom',
     caption: 'The bedroom has loads of storage space, loads of natural light, a good workstation and an air conditioner hidden behind the light.',
   },
   {
-    src: `${imagePath}/koukaki-apartment/bed.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/bed.jpeg`,
     alt: 'Koukaki apartment bed',
     caption: "Unfortunately some genius decided to build the wooden bed frame up to where your feet would normally hang-over the end. If you're a hair over six-foot and you can't be comfortable curled-up, I'd reconsider staying here. This bed will not be your friend.",
   },
   {
-    src: `${imagePath}/koukaki-apartment/bathroom.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/bathroom.jpeg`,
     alt: 'Koukaki apartment bathroom',
     caption: "The bathroom is the only place in the apartment that isn't so spacious, but it has everything you need, including a washing machine. There's a folding clothes rack that lives on the balcony that you can use to dry your clothes.",
   },
   {
-    src: `${imagePath}/koukaki-apartment/balcony.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/balcony.jpeg`,
     alt: 'Koukaki apartment balcony',
     caption: 'My favourite thing about this apartment is the balcony. I sat out here and had a cup of tea almost every morning. One of the first things I did after moving-in was retract the awnings that are hanging down here. Not only does this give you a lot of light on the balcony, but it allows a lot more natural light into the apartment.',
   },
   {
-    src: `${imagePath}/koukaki-apartment/airbnb-go-home.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/airbnb-go-home.jpeg`,
     alt: 'Koukaki apartment "Airbnb go home" sign',
     caption: '"Airbnb go home". Someone isn\'t very happy that Airbnb guests stay here, but I wouldn\'t worry much about it. The walls here are pretty thin so you get a good idea of who\'s in the adjacent rooms, and given the turn-over of people I think that most of the apartments are rented-out as Airbnbs. This is written in the elevator.',
   },
   {
-    src: `${imagePath}/koukaki-apartment/outside.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/outside.jpeg`,
     alt: 'Koukaki apartment outside',
     caption: 'The apartment is on a fairly busy road. The benefit of having such nearby bars and restaurants more than offsets the added noise. The apartment is on the first floor, to the left of the green awning.',
   },
   {
-    src: `${imagePath}/koukaki-apartment/market.jpeg`,
+    src: `${imagePath}/accommodation/koukaki-apartment/market.jpeg`,
     alt: 'Koukaki apartment market',
     caption: 'Every Friday the road behind the apartment closes and becomes a market selling fresh produce.',
   },
@@ -673,47 +665,47 @@ TODO
 
 export const kynosargousApartmentImages = [
   {
-    src: `${imagePath}/kynosargous-apartment/bedroom.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/bedroom.jpeg`,
     alt: 'Kynosargous apartment bedroom',
     caption: 'I arrived at the room after dark, which meant I got to take some nice nightime photos before messing everything up. The bedroom is very pleasant. Out of shot there is an air conditioner, a cupboard containing a lot of spare towels, and an empty cupboard to keep your things. There is no desk.',
   },
   {
-    src: `${imagePath}/kynosargous-apartment/living-room.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/living-room.jpeg`,
     alt: 'Kynosargous apartment living room',
     caption: "Luckily I don't need a desk to work at. If you're like me and prefer working from your bed or from a sofa more than you do a desk, then this bad boy is your dream. It's comfortable for many hours at a time, and even better has a plug right behind that easily reaches your laptop while you're sitting here. The doors lead-out onto the balcony.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/tv.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/tv.jpeg`,
     alt: 'Kynosargous apartment TV',
     caption: "The coffee table is actually glass. I thought it was plastic until I tried picking it up, but it's pretty damn heavy, and moving it into the hallway every day to have space to exercise was as much of a workout as the workout. Once it is out the way and you move the green chair next to the sofa, you have a decent-sized space to exercise in. The TV is quite good, and next to it is one of those little machines that spits-out air freshener at you. It always smells nice, even if being sprayed by air freshener isn't exactly what you want while exercising.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/kitchen.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/kitchen.jpeg`,
     alt: 'Kynosargous apartment kitchen',
     caption: "The kitchen's pretty big, although is lacking a bit in terms of equipment. There's no microwave, no chopping board, not even a tea towel - Luckily I carry the latter two of those in my suitcase. And in order not to scratch the non-stick pan I went to Lidl and bought my own wooden spoon.  You do though have plenty of pans, crockery, and cutlery. Barely in view to the right is the man-sized fridge/freezer.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/bathroom.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/bathroom.jpeg`,
     alt: 'Kynosargous apartment bathroom',
     caption: "The corner of the sink is dangerously close to the toilet. When you sit down, you have to be very mindful to keep your head back lest you headbutt the sink, which isn't what you want when you stumble in here in the middle of the night.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/shower.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/shower.jpeg`,
     alt: 'Kynosargous apartment shower',
     caption: "The shower looks very fancy, but the shower head mount leaves a little to be desired.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/hall.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/hall.jpeg`,
     alt: 'Kynosargous apartment hall',
     caption: 'The front door is behind the camera to the left. The living room is behind the camera to the right. The kitchen is all the way at the end (you can see the fridge). The bathroom is the doorway before the kitchen on the left. The bedroom is the doorway before the kitchen on the right.',
   },
   {
-    src: `${imagePath}/kynosargous-apartment/balcony.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/balcony.jpeg`,
     alt: 'Kynosargous apartment balcony',
     caption: "The balcony is small and the view isn't going to give you many great photos, but it's very nice to sit out here with a cup of tea before the sun gets too hot.",
   },
   {
-    src: `${imagePath}/kynosargous-apartment/outside.jpeg`,
+    src: `${imagePath}/accommodation/kynosargous-apartment/outside.jpeg`,
     alt: 'Kynosargous apartment from outside',
     caption: 'The building from outside. The entrance is the wooden door to the right of Lunch Hall. The apartment is at the back of the building on the third floor.',
   },
@@ -754,67 +746,67 @@ TODO
 
 export const kallitheaApartmentImages = [
   {
-    src: `${imagePath}/kallithea-apartment/living-room.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/living-room.jpeg`,
     alt: 'Kallithea apartment living room',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/tv.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/tv.jpeg`,
     alt: 'Kallithea apartment TV',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/kitchen.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/kitchen.jpeg`,
     alt: 'Kallithea apartment kitchen',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/dining-table.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/dining-table.jpeg`,
     alt: 'Kallithea apartment dining table',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/desk.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/desk.jpeg`,
     alt: 'Kallithea apartment desk',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/hall.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/hall.jpeg`,
     alt: 'Kallithea apartment hall',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/shower.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/shower.jpeg`,
     alt: 'Kallithea apartment shower',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/washing-machine.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/washing-machine.jpeg`,
     alt: 'Kallithea apartment washing machine',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/bed.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/bed.jpeg`,
     alt: 'Kallithea apartment bed',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/bedroom.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/bedroom.jpeg`,
     alt: 'Kallithea apartment bedroom',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/porch.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/porch.jpeg`,
     alt: 'Kallithea apartment porch',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/courtyard.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/courtyard.jpeg`,
     alt: 'Kallithea apartment courtyard',
     caption: 'TODO',
   },
   {
-    src: `${imagePath}/kallithea-apartment/outside.jpeg`,
+    src: `${imagePath}/accommodation/kallithea-apartment/outside.jpeg`,
     alt: 'Kallithea apartment ',
     caption: 'TODO',
   },
