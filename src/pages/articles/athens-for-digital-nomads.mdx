@@ -17,7 +17,9 @@ export const imagePath = '/images/articles/athens-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-TODO: Introduce Athens
+Just saying the word 'Athens' invokes emotion. It's one of the world's oldest cities, and the birthplace of democracy. The birthplace of western civilisation. Hippocrates, the father of modern medicine flourished here. Socrates, the father of western philosophy was from here.
+
+But none of that really matters because it's not 400BC anymore. What's it like now?
 
 I've spent time here for each of the past two summers. The overriding theme from the first of these was of Athens being an incredibly fun, sociable place, and that's what brought me back here.
 
@@ -85,9 +87,67 @@ Of the capital cities in the region that I've been to as a digital nomad, it's n
 
 Athens is in the slightly annoying place of almost everywhere accepting card payments. Once in a blue moon you'll encounter somewhere that doesn't accept cards. And because of that you keep cash in your pocket just in case. If you've got a Visa or Mastercard though, you'll be fine 99% of the time here.
 
-## Things I don't like about Athens
+## Socialising in Athens
 
-TODO: Omit this? Everything is kind of covered in other sections.
+Athens is certainly one of the easier cities I've been to establish a social life. There are regular social events on places like Meetup, and many of these attract the same people week after week, so you can actually get to know people over a prolonged period.
+
+Most of these events that aren't based around something dorky like Bitcoin or coding, are instead based around alcohol. And while the people are friendly and the events are plentiful, there are a couple of major caveats that come with socialising in Athens.
+
+The first of these, is that like everywhere in this part of the world, everyone smokes. A lot. Everywhere.
+
+People mostly don't smoke inside here (they do in clubs), but because of the climate, most bars and consequently most social events are set outdoors, or at least somewhere that can be perceived as outdoors. Which means that once you're in a crowd of people, some will be smoking.
+
+Nothing makes me go home more quickly than having to breathe-in second-hand smoke, and nothing makes me stay at home more than the thought of it.
+
+The other caveat is that socialising happens late here. Uncomfortably late.
+
+I'm approaching 40 as I write this, so perhaps that has something to do with it, but I just don't like going out that late. I don't see the point of it. Even in my younger years, going out in the UK you'd be in the pub by 7, the club by 10, and in bed by about 1am, so your body clock's not going to get thrown too far out-of-whack by having a night-out.
+
+Here they just don't do that. Clubs often don't open until midnight. When I ask locals why they don't go out after they finish work at 5pm on Friday like normal people, they tell me that they instead go home and have a nap, and then go out at night. Because that makes sense.
+
+If you're going to have a proper night-out here though, you're going to be out until after sunrise. That's your Saturday gone as well then. Nothing's fun about that.
+
+Athens is a really fun city, and it's a really easy place to meet people. But they do make it easy to talk yourself into staying at home.
+
+export const socialImages = [
+  {
+    src: `${imagePath}/social/outside-gaziview-selfie.jpeg`,
+    alt: 'Outside Gaziview selfie',
+    caption: "I took this photo before going into Gaziview nightclub. Apparently it's not dignified enough or something.",
+  },
+  {
+    src: `${imagePath}/social/outside-gaziview.jpeg`,
+    alt: 'Outside Gaziview',
+    caption: 'Someone else took this one 🥱',
+  },
+  {
+    src: `${imagePath}/social/blabla-high-bar.jpeg`,
+    alt: 'BlaBla at High Bar in August',
+    caption: 'This is the Blabla Language Exchange at High Bar in late August. Being at a rooftop bar in August when the weather is beautiful - what beats it?',
+  },
+  {
+    src: `${imagePath}/social/final-blabla.jpeg`,
+    alt: 'BlaBla at High Bar in October',
+    caption: 'Being at a rooftop bar in October when you only have t-shirts and shorts fucking sucks. Other people are wearing jackets.',
+  },
+  {
+    src: `${imagePath}/social/the-place.jpeg`,
+    alt: 'BlaBla at The Place',
+    caption: "The other downside of a rooftop bar is it's not very rain-proof. We had to move to 'The Place', a nearby bar when the rooftop bar closed because it was too wet.",
+  },
+  {
+    src: `${imagePath}/social/house-party.jpeg`,
+    alt: 'Apollon Tower house party',
+    caption: 'BlaBla is a great way to meet people, but many people in Athens are very sociable and some people you meet there organise their own events. This was a house party in Apollon Tower hosted by someone I met at BlaBla.',
+  },
+  {
+    src: `${imagePath}/social/blabla-october.jpeg`,
+    alt: 'BlaBla at High Bar',
+    caption: "That's my 'I'm drunk and trying not to look like a nob but not succeeding' face.",
+  },
+]
+
+<ImageGallery images={socialImages} />
 
 ## Running in Athens
 
@@ -261,68 +321,6 @@ export const philopapposHillImages = [
 The last place I've run in Athens is <ExternalLink url='https://maps.app.goo.gl/U1Dofn9awMivcpEb8'>The National Garden</ExternalLink>. I came here when running with someone else who wanted to run here, and although fairly pleasant, it's too small to run any distance and there are a lot of people wandering around.
 
 I'd avoid running here unless you're desparate.
-
-## Socialising in Athens
-
-Athens is certainly one of the easier cities I've been to establish a social life. There are regular social events on places like Meetup, and many of these attract the same people week after week, so you can actually get to know people over a prolonged period.
-
-Most of these events that aren't based around something dorky like Bitcoin or coding, are instead based around alcohol. And while the people are friendly and the events are plentiful, there are a couple of major caveats that come with socialising in Athens.
-
-The first of these, is that like everywhere in this part of the world, everyone smokes. A lot. Everywhere.
-
-People mostly don't smoke inside here (they do in clubs), but because of the climate, most bars and consequently most social events are set outdoors, or at least somewhere that can be perceived as outdoors. Which means that once you're in a crowd of people, some will be smoking.
-
-Nothing makes me go home more quickly than having to breathe-in second-hand smoke, and nothing makes me stay at home more than the thought of it.
-
-The other caveat is that socialising happens late here. Uncomfortably late.
-
-I'm approaching 40 as I write this, so perhaps that has something to do with it, but I just don't like going out that late. I don't see the point of it. Even in my younger years, going out in the UK you'd be in the pub by 7, the club by 10, and in bed by about 1am, so your body clock's not going to get thrown too far out-of-whack by having a night-out.
-
-Here they just don't do that. Clubs often don't open until midnight. When I ask locals why they don't go out after they finish work at 5pm on Friday like normal people, they tell me that they instead go home and have a nap, and then go out at night. Because that makes sense.
-
-If you're going to have a proper night-out here though, you're going to be out until after sunrise. That's your Saturday gone as well then. Nothing's fun about that.
-
-Athens is a really fun city, and it's a really easy place to meet people. But they do make it easy to talk yourself into staying at home.
-
-export const socialImages = [
-  {
-    src: `${imagePath}/social/outside-gaziview-selfie.jpeg`,
-    alt: 'Outside Gaziview selfie',
-    caption: "I took this photo before going into Gaziview nightclub. Apparently it's not dignified enough or something.",
-  },
-  {
-    src: `${imagePath}/social/outside-gaziview.jpeg`,
-    alt: 'Outside Gaziview',
-    caption: 'Someone else took this one 🥱',
-  },
-  {
-    src: `${imagePath}/social/blabla-high-bar.jpeg`,
-    alt: 'BlaBla at High Bar in August',
-    caption: 'This is the Blabla Language Exchange at High Bar in late August. Being at a rooftop bar in August when the weather is beautiful - what beats it?',
-  },
-  {
-    src: `${imagePath}/social/final-blabla.jpeg`,
-    alt: 'BlaBla at High Bar in October',
-    caption: 'Being at a rooftop bar in October when you only have t-shirts and shorts fucking sucks. Other people are wearing jackets.',
-  },
-  {
-    src: `${imagePath}/social/the-place.jpeg`,
-    alt: 'BlaBla at The Place',
-    caption: "The other downside of a rooftop bar is it's not very rain-proof. We had to move to 'The Place', a nearby bar when the rooftop bar closed because it was too wet.",
-  },
-  {
-    src: `${imagePath}/social/house-party.jpeg`,
-    alt: 'Apollon Tower house party',
-    caption: 'BlaBla is a great way to meet people, but many people in Athens are very sociable and some people you meet there organise their own events. This was a house party in Apollon Tower hosted by someone I met at BlaBla.',
-  },
-  {
-    src: `${imagePath}/social/blabla-october.jpeg`,
-    alt: 'BlaBla at High Bar',
-    caption: "That's my 'I'm drunk and trying not to look like a nob but not succeeding' face.",
-  },
-]
-
-<ImageGallery images={socialImages} />
 
 ## Getting vegan food in Athens
 
@@ -956,8 +954,16 @@ export const summaryPoints = {
 
 ## Final thoughts
 
-TODO: Perhaps omit this section
+I've been to Athens twice, and had two very contrasting experiences. One was hugely sociable, with lots of partying, where as the other was much more isolated and focussed on self-improvement. I enjoyed both of them equally.
+
+I've stayed in four different areas, and loved each of them. Athens is a place where I just love being here, but I can't put my finger on why.
+
+Maybe I find the architecture pleasing. Maybe it's the fiery temperament of the people. Maybe there's just something in the air. Or perhaps I just happen to come here each year when I'm in a good place mentally, I don't know what it is.
+
+It's hard for me to recommend Athens as a destination, because when I think of the things I look for, Athens doesn't tick many of the boxes. I always look for green space. There isn't much of it here. I like places that are cheap so I don't have to think about what I'm spending. Athens isn't very cheap. I hate smoking and everyone that smokes. Everyone here smokes. There's no reason I should like it here, but for some reason I do. For some reason, I just come here, and I'm happy, and I can't tell you in the slightest why.
+
+Maybe it's just me, I don't know. I've met my share of people locals and foreigners who really don't like Athens. So maybe you'll come here and curse me out for recommending it. But I come to Athens and I'm happy, and that's as simple as I can say it.
 
 ## Do I want to come back again?
 
-TODO
+Yes. And I don't know why.
