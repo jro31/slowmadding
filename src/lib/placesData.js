@@ -124,7 +124,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'My Airbnb wifi consistently had download speeds over 600mb/s, and upload speeds over 500mb/s. 4G is available throughout the city and is fast enough to do video calls.',
+          'My Airbnb wifi consistently had download speeds over 600mbps, and upload speeds over 500mbps. 4G is available throughout the city and is fast enough to do video calls.',
       },
       [running]: {
         [verdict]: true,
@@ -625,7 +625,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'The connection in my room was 100% reliable and sufficient for video calls (roughly 45mb/s download speed, 30mb/s upload).',
+          'The connection in my room was 100% reliable and sufficient for video calls (roughly 45mbps download speed, 30mbps upload).',
       },
       [running]: {
         [verdict]: true,
@@ -667,7 +667,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'No connection issues at all during my time. My first room had consistent download speeds and upload speeds of around 250mb/s and 130mb/s respectively, while my second room was closer to 60mb/s and 30mb/s. 4G is equally fast the city over.',
+          'No connection issues at all during my time. My first room had consistent download speeds and upload speeds of around 250mbps and 130mbps respectively, while my second room was closer to 60mbps and 30mbps. 4G is equally fast the city over.',
       },
       [running]: {
         [verdict]: true,
