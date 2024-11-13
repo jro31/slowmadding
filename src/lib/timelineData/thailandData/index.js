@@ -109,6 +109,12 @@ export const thailandData = {
         [departure]: '2024-01-31',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-11-29',
+        [departure]: '2024-12-11',
+      },
+    },
   ],
   [places[countries.thailand].kohPhiPhi]: [
     {
@@ -269,6 +275,12 @@ export const thailandData = {
         [departure]: '2024-02-17',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-11-14',
+        [departure]: '2024-11-29',
+      },
+    },
   ],
   [places[countries.thailand].phitsanulok]: [
     {
@@ -309,6 +321,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2023-12-07',
         [departure]: '2023-12-23',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2024-12-11',
+        [departure]: '2025-01-08',
       },
     },
   ],
