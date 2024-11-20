@@ -99,7 +99,7 @@ export const bahtBusImages = [
 
 <MapLink name='378/148 Thappraya Road, Soi 15' url='https://maps.app.goo.gl/j2GiFYBs2e2TZ4iF7' />
 
-export const gResidenceDetails = {
+export const gResidenceFirstStayDetails = {
   dates: {
     checkIn: '2023-11-16',
     checkOut: '2023-11-30',
@@ -119,7 +119,29 @@ export const gResidenceDetails = {
   },
 }
 
-<AccommodationTable details={gResidenceDetails} />
+<AccommodationTable details={gResidenceFirstStayDetails} />
+
+export const gResidenceSecondStayDetails = {
+  dates: {
+    checkIn: '2024-11-14',
+    checkOut: '2024-11-29',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/g-residence.html',
+  },
+  roomType: 'Apartment with balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 16110.28,
+      '7% VAT': 1127.72,
+    },
+  },
+}
+
+<AccommodationTable details={gResidenceSecondStayDetails} />
 
 My attitude to staying in towns that have party areas, is that I never stay in the party areas. If I want to party then nothing's stopping me from going there, but when I don't then I want to be away from them.
 
