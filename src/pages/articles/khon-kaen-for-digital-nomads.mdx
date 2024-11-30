@@ -6,32 +6,23 @@ import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-02-22T17:00:00+07:00',
+  date: '2024-12-11T17:00:00+07:00', // TODO: Update this
   title: 'Khon Kaen for Digital Nomads',
   description: "Foreigners tend to avoid Isaan. Even its big cities like Khon Kaen don't make it onto most people's Thailand itinerary, which makes it a very appealing place if you want to get away from the tourism and go somewhere local. How suitable is it for a digital nomad?",
   keywords: ['Thailand'],
 }
 
-export const manomonResidenceDetails = {
-  dates: {
-    checkIn: '2024-01-23',
-    checkOut: '2024-01-31',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
-  },
-  roomType: 'Deluxe King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 6183.49,
-    },
-  },
-}
-
 export const imagePath = '/images/articles/khon-kaen-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Khon Kaen is a city that, for most, isn't on their itinerary for Thailand. It's one of Isaan's big four cities, located both geographically and characteristically between Udon Thani and Nakhon Ratchasima. Where as Udon has a nascent but noticable tourist presence, Nakhon Ratchasima has little to offer foreigners beyond a local experience, Khon Kaen lands somewhere in the middle. You will see other foreigners here and there is a small (and I do mean small) area of foreigner-aimed bars, but in the main it's a city that most visitors to Thailand don't have a reason to stop in. For me that's a mistake.
+
+The only regret from my week here is I wasn't able to stay longer, because I really loved it and would have relished more time to get to know the city.
+
+It's a deceptively vegan-friendly place, with even one western-style vegan restaurant, which I really wasn't expecting in the middle of Isaan. There are some big night markets that are fun to explore, as well as providing a useful source of food. There's a large reservoir that has a path going all the way around that makes for a lovely place to walk and run. It's safe, it's incredibly affordable, the Internet is fast and reliable, it's pleasant to walk around, the people are friendly and the small foreigner-aimed bar area gives you somewhere fun to go in the evenings.
+
+Save for being in a major tourist city, Khon Kaen really offers everything that you look for as a digital nomad. As long as you're comfortable with isolation (which you really should be living this lifestyle), then I strongly recommend you give it a look.
 
 export const cityImages = [
   {
@@ -51,43 +42,65 @@ export const cityImages = [
   },
 ]
 
-export const manomonResidenceImages = [
+<ImageGallery images={cityImages} />
+
+## Being sociable in Khon Kaen
+
+I arrived in Khon Kaen very conscious about how out of shape I'd become, and as such wasn't really eager to explore the nightlife, instead focussing on my health. I did still manage one drunken night out though.
+
+There are no organised events for meeting other people that I came across here. Instead, there's a small cluster of foreigner-aimed bars in front of the Pullman Hotel that are a good place to come and start chatting to people. At a guess I'd say there are ten bars here. I went to three or four of them, but spent most of my night chatting to people in a place called <ExternalLink url='https://maps.app.goo.gl/gCL7CyAhNCBoZJt49'>My Bar</ExternalLink>.
+
+These are very typical bars that you find all over Thailand. Absolutely nothing special here and nothing to write home about, and it's a pretty meagre offering when you compare it even to Udon, but if you want to have a few beers and chat to some other forigners, then it's the only such area in Khon Kaen that I found.
+
+Coming to Khon Kaen is going to be because you want to go somewhere local that hasn't been ruined by tourism yet. A lack of foriegner-aimed amenities is the price you pay.
+
+## Where to run in Khon Kaen
+
+I had a couple of runs while I was in Khon Kaen, both at the <ExternalLink url='https://maps.app.goo.gl/Bd3z54zFjnYtsPxJA'>Bueng Kaen Nakhon Reservoir</ExternalLink>.
+
+Isaan is notorious, in my mind if no one elses, for putting lovely pathways or running tracks around all large bodies of water in their cities. It was true in Nakhon Ratchasima, it was true in Udon Thani, and it's true here. There are a couple of different paths going around Bueng Kaen Nakhon Reservoir.
+
+The inner path which I ran on is more suited to pedestrians. It's fine for doing slow runs, which is all I wanted to do here, but would be less suitable for sprints or intervals, as in places you have to go up steps or around sharp corners. The outer path is I think technically a cycle track, although it's also used by pedestrians. I didn't run on this so I can't comment on if it's any better, but if you do want to do faster runs, maybe give this a look.
+
+One lap of the reservoir is about 3.2km, and it's a really pleasant place to run, so long as you like to run in the daytime.
+
+Unfortunately one of Khon Kaen's night markets is the <ExternalLink url='https://maps.app.goo.gl/Z6poqaTFbNis29yq9'>Bueng Kaen Nakhon Night Market</ExternalLink>. It takes place at the north end of the reservoir and gets very crowded. And while the night market itself doesn't cover the inner pathway around the lake, there's so much spillover of people that this northern part of the lake would be a massive pain to try and run through in the evenings.
+
+If you're going slow enough it would be no issue, but if you do want to run here at night time, perhaps consider doing three-quarter laps on the quieter parts of the lake, and changing direction after each one to avoid the night market.
+
+export const runningImages = [
   {
-    src: `${imagePath}/manomon-residence/bed.jpeg`,
-    alt: 'Manomon Residence bed',
-    caption: 'Manomon Residence is phenomenal value. For less than 800 baht per night you get a large bed with loads of space around it. Plenty of space for exercise.',
+    src: `${imagePath}/running/strava.jpeg`,
+    alt: 'Bueng Kaen Nakhon Reservoir Strava map',
+    caption: 'Bueng Kaen Nakhon Reservoir has a circumference of about 3.2km. This run of 9.6km was three laps of the lake.',
+    url: 'https://www.strava.com/activities/10630980705',
   },
   {
-    src: `${imagePath}/manomon-residence/tv.jpeg`,
-    alt: 'Manomon Residence TV',
-    caption: 'In front of the bed is a large TV and a surface that makes a good workstation, as well as a fridge, and most importantly an electric kettle. The wifi in the room is fast and stable.',
-  },
-  {
-    src: `${imagePath}/manomon-residence/windows.jpeg`,
-    alt: 'Manomon Residence windows',
-    caption: "The large windows let in lots of glorious natural light, while the AC keeps the room cool. This table doesn't have a plug nearby, but other than that is another option to work at. The room I had faces south-west so was especially pleasant at sundown.",
-  },
-  {
-    src: `${imagePath}/manomon-residence/bathroom.jpeg`,
-    alt: 'Manomon Residence bathroom',
-    caption: "You can't really see it here, but the sink was peculiarly low. I didn't notice until I had to shave and realised wow, my back hurts. Other than that, it's a really nice bathroom as well. I can't believe how cheap this room was.",
-  },
-  {
-    src: `${imagePath}/manomon-residence/balcony.jpeg`,
-    alt: 'Manomon Residence balcony',
-    caption: "There's another sink on the balcony suitable for washing things (clothes, blenders, tea cups etc). Or if you're too lazy to go out there you can just use the sink in the bathroom like me.",
-  },
-  {
-    src: `${imagePath}/manomon-residence/view.jpeg`,
-    alt: 'Manomon Residence view',
-    caption: 'The view from the balcony is nice if you like looking at cars and the sides of other buildings.',
-  },
-  {
-    src: `${imagePath}/manomon-residence/outside.jpeg`,
-    alt: 'Manomon Residence from outside',
-    caption: "In a slightly strange design, the hotel's reception is up those stairs on the second floor, but the elevator goes down to the car park on the ground floor, so it's much more efficient to walk through the car park when going out. Once I'd realised this, I didn't go back through reception until I had to check-out.",
+    src: `${imagePath}/running/bueng-kaen-nakhon-reservoir-path.jpeg`,
+    alt: 'Buen Kaen Nakhon Reservoir path',
+    caption: "Given the various obstacles you encounter, it's not a route that's really suitable for intervals or sprints, but coming here for slow runs or even a walk, it's a really pleasant path that goes the entire way around the lake.",
   },
 ]
+
+<ImageGallery images={runningImages} />
+
+## Where to get vegan food in Khon Kaen
+
+There's good news and there's bad news when it comes to getting vegan food in Khon Kaen. The good news is that it's a surprisingly vegan-friendly city. Mostly it's Thai food, but it goes slightly beyond the typical เจ (jay) buffets because you can also get vegan food made to order and there's even a small almost-vegan supermarket. There's also one western-style vegan restaurant.
+
+The bad news is that apart from Kem-Kon, everything closes by 7pm, so in terms of getting dinner, it's not a very vegan-friendly city, so make sure you have a big lunch.
+
+There's one Subway restaurant in town which is open late (9pm) and at the time of writing offers a plant-based chicken sandwich. I don't recommend it, I've never eaten a Subway and felt good about my life, but it's there as a last resort for when you need dinner.
+
+### Su Ting Sian
+
+<MapLink name='108/86 Soi Anamai 23' url='https://maps.app.goo.gl/FdkzQz8NE9xkwjrX9' />
+
+My favourite restaurant in Khon Kaen, Su Ting Sian, is a fully-vegan restaurant with a menu in English and Thai and pictures for a lot of the items. The incredibly friendly staff don't speak much English, but pointing at the menu is sufficient.
+
+It has several tables inside to sit at. Sadly it's not air conditioned, but there are many fans so it feels pretty cool in the restaurant, and it's always quiet so you can pick a table right in front of a fan.
+
+The portion sizes are massive, and closing at 4pm each day I'd often come here for a late lunch, get two meals and skip dinner because it was enough to last me until bed. It's almost exclusively Thai food on the menu, which I recommend you stick to, because it's really high quality. The one non-Thai dish that I had (spaghetti) was... interesting. No shortage of sauce.
 
 export const suTingSianImages = [
   {
@@ -127,6 +140,24 @@ export const suTingSianImages = [
   },
 ]
 
+<ImageGallery images={suTingSianImages} />
+
+### Kem-Kon Khon Kaen
+
+<MapLink name='633/1 Glang Muang Rd' url='https://maps.app.goo.gl/G4oknkKExTnBdha57' />
+
+Kem-Kon Khon Kaen was the restaurant I wasn't expecting in Khon Kaen. It's a western-style vegan restaurant like I'd expect to find in Bangkok, not in the middle of Isaan.
+
+That's the good news. The bad news is the location really sucks. I'm someone who walks everywhere I go when I stay somewhere. I hate taking taxis or motorcycle taxis (unless I'm drunk), and I hate getting food delivered. So I walked to Kem-Kon, and it's way outside the city centre, taking me about an hour to walk to from my hotel, in an almost industrial area at the side of a main road.
+
+That's the reason I only made it here once during my stay, and why it's not so viable for dinner, despite being open until 10pm each night. I wouldn't want to walk down the side of that road after dark.
+
+Or you could just take a taxi here like a normal person.
+
+That aside, it's a great place. I'd have been here everyday were it in the city centre. While the restaurant itself is very much styled as a western restaurant, the menu has a mix of Thai and foreign dishes, dominated by the Thai offerings. It's fully-vegan so you can order here with impunity from dishes such as garlicky chicken with rice (85 baht), cashew cheese lasagna (195 baht) and butter grilled seafood (155 baht).
+
+Even though the location sucks, it's worth the walk.
+
 export const kemKonKhonKaenImages = [
   {
     src: `${imagePath}/kem-kon-khon-kaen/teriyaki-tofu-bowl.jpeg`,
@@ -154,6 +185,26 @@ export const kemKonKhonKaenImages = [
     caption: "The only downside to Kem Kon is that it's bloody miles outside the city centre. The restaurant is quite hard to spot, looking slightly timid in this almost industrial area of the city. This is what you're looking for. It says Kem Kon in very, very small and slightly illegible writing between the two windows, just to make it easier to find.",
   },
 ]
+
+<ImageGallery images={kemKonKhonKaenImages} />
+
+### Real Vegan
+
+<MapLink name='71 Ammat Rd' url='https://maps.app.goo.gl/Mv7okxFePUYpjxyL7' />
+
+I'm slightly confused by the name of this place as it seems to be known as both 'Real Vegan' and as 'Tawanthong Vegetarian Food'. There are a couple of businesses here, so perhaps one name is for the restaurant, the other for the shop. Regardless, I'm going to refer to it just as Real Vegan, as this was the most prominent signage I saw.
+
+The first of the two businesses here is the typical Thai เจ buffet that you get everywhere in Thailand, although I'd say this one is pretty high quality. These buffets can be a bit hit-and-miss, and I liked everything I ate here. As is customary with such restaurants, it stops serving each day at 2pm, so you really want to be here by 12:30pm to ensure there's a good selection of food left.
+
+The second business, and the reason that I really loved this place, is what is probably the best shop for getting vegan food I've encountered anywhere, particularly on this side of the world. Stumbling upon it in Khon Kaen of all places is something I really didn't expect, but I was in heaven.
+
+Beware that despite having a big sign saying 'Real Vegan', this shop isn't quite vegan. There are many products that contain honey, and I noticed one that quite subtly contained milk, so perhaps they were stocking it in error. Apart from that it's aisles of vegan produce, including a great selection of nuts and seeds (great for smoothies and for getting snacks, particularly for long bus journeys) and it has two aisles of just tea.
+
+Tea is one of the things that I really struggle to buy in Thailand, because the major supermarkets only stock very over-priced imported teas. When you can find it, Thailand has some amazing local teas but they're often only available in local shops and being new in town, I don't always know where to go.
+
+Finding this place was my own personal heaven. I bought enough tea that I'm still drinking it now, four weeks and two locations later.
+
+While the restaurant closes at 2pm, the shop is open until 6pm each day. If you have a kitchen this place will be even better, but even if you don't, there's enough healthy, vegan snacky food here that you can get supplies to last you through the Khon Kaen daily fast, enforced once all the restaurants have closed.
 
 export const realVeganImages = [
   {
@@ -183,37 +234,32 @@ export const realVeganImages = [
   },
 ]
 
-export const runningImages = [
-  {
-    src: `${imagePath}/running/strava.jpeg`,
-    alt: 'Bueng Kaen Nakhon Reservoir Strava map',
-    caption: 'Bueng Kaen Nakhon Reservoir has a circumference of about 3.2km. This run of 9.6km was three laps of the lake.',
-    url: 'https://www.strava.com/activities/10630980705',
-  },
-  {
-    src: `${imagePath}/running/bueng-kaen-nakhon-reservoir-path.jpeg`,
-    alt: 'Buen Kaen Nakhon Reservoir path',
-    caption: "Given the various obstacles you encounter, it's not a route that's really suitable for intervals or sprints, but coming here for slow runs or even a walk, it's a really pleasant path that goes the entire way around the lake.",
-  },
-]
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-Khon Kaen is a city that, for most, isn't on their itinerary for Thailand. It's one of Isaan's big four cities, located both geographically and characteristically between Udon Thani and Nakhon Ratchasima. Where as Udon has a nascent but noticable tourist presence, Nakhon Ratchasima has little to offer foreigners beyond a local experience, Khon Kaen lands somewhere in the middle. You will see other foreigners here and there is a small (and I do mean small) area of foreigner-aimed bars, but in the main it's a city that most visitors to Thailand don't have a reason to stop in. For me that's a mistake.
-
-The only regret from my week here is I wasn't able to stay longer, because I really loved it and would have relished more time to get to know the city.
-
-It's a deceptively vegan-friendly place, with even one western-style vegan restaurant, which I really wasn't expecting in the middle of Isaan. There are some big night markets that are fun to explore, as well as providing a useful source of food. There's a large reservoir that has a path going all the way around that makes for a lovely place to walk and run. It's safe, it's incredibly affordable, the Internet is fast and reliable, it's pleasant to walk around, the people are friendly and the small foreigner-aimed bar area gives you somewhere fun to go in the evenings.
-
-Save for being in a major tourist city, Khon Kaen really offers everything that you look for as a digital nomad. As long as you're comfortable with isolation (which you really should be living this lifestyle), then I strongly recommend you give it a look.
-
-<ImageGallery images={cityImages} />
+<ImageGallery images={realVeganImages} />
 
 ## Where I stayed
 
 ### Manomon Residence
 
 <MapLink name='1/99 Thanon Prachasamoson' url='https://maps.app.goo.gl/fADZgcLEPaxdudAz6' />
+
+export const manomonResidenceDetails = {
+  dates: {
+    checkIn: '2024-01-23',
+    checkOut: '2024-01-31',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
+  },
+  roomType: 'Deluxe King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 6183.49,
+    },
+  },
+}
 
 <AccommodationTable details={manomonResidenceDetails} />
 
@@ -231,88 +277,42 @@ The location of Manomon is decent. Most of the places you're going to want to go
 
 Honestly, I have nothing bad to say about this place. The staff were lovely, although once I'd discovered it was quicker to take the elevator down to the car park instead of going through the lobby, I didn't interact with them too much. If I didn't love Isaan already, the value you can get here is amazing. A room this nice for less than 800 baht per night really is something.
 
+export const manomonResidenceImages = [
+  {
+    src: `${imagePath}/manomon-residence/bed.jpeg`,
+    alt: 'Manomon Residence bed',
+    caption: 'Manomon Residence is phenomenal value. For less than 800 baht per night you get a large bed with loads of space around it. Plenty of space for exercise.',
+  },
+  {
+    src: `${imagePath}/manomon-residence/tv.jpeg`,
+    alt: 'Manomon Residence TV',
+    caption: 'In front of the bed is a large TV and a surface that makes a good workstation, as well as a fridge, and most importantly an electric kettle. The wifi in the room is fast and stable.',
+  },
+  {
+    src: `${imagePath}/manomon-residence/windows.jpeg`,
+    alt: 'Manomon Residence windows',
+    caption: "The large windows let in lots of glorious natural light, while the AC keeps the room cool. This table doesn't have a plug nearby, but other than that is another option to work at. The room I had faces south-west so was especially pleasant at sundown.",
+  },
+  {
+    src: `${imagePath}/manomon-residence/bathroom.jpeg`,
+    alt: 'Manomon Residence bathroom',
+    caption: "You can't really see it here, but the sink was peculiarly low. I didn't notice until I had to shave and realised wow, my back hurts. Other than that, it's a really nice bathroom as well. I can't believe how cheap this room was.",
+  },
+  {
+    src: `${imagePath}/manomon-residence/balcony.jpeg`,
+    alt: 'Manomon Residence balcony',
+    caption: "There's another sink on the balcony suitable for washing things (clothes, blenders, tea cups etc). Or if you're too lazy to go out there you can just use the sink in the bathroom like me.",
+  },
+  {
+    src: `${imagePath}/manomon-residence/view.jpeg`,
+    alt: 'Manomon Residence view',
+    caption: 'The view from the balcony is nice if you like looking at cars and the sides of other buildings.',
+  },
+  {
+    src: `${imagePath}/manomon-residence/outside.jpeg`,
+    alt: 'Manomon Residence from outside',
+    caption: "In a slightly strange design, the hotel's reception is up those stairs on the second floor, but the elevator goes down to the car park on the ground floor, so it's much more efficient to walk through the car park when going out. Once I'd realised this, I didn't go back through reception until I had to check-out.",
+  },
+]
+
 <ImageGallery images={manomonResidenceImages} />
-
-## Where to get vegan food in Khon Kaen
-
-There's good news and there's bad news when it comes to getting vegan food in Khon Kaen. The good news is that it's a surprisingly vegan-friendly city. Mostly it's Thai food, but it goes slightly beyond the typical เจ (jay) buffets because you can also get vegan food made to order and there's even a small almost-vegan supermarket. There's also one western-style vegan restaurant.
-
-The bad news is that apart from Kem-Kon, everything closes by 7pm, so in terms of getting dinner, it's not a very vegan-friendly city, so make sure you have a big lunch.
-
-There's one Subway restaurant in town which is open late (9pm) and at the time of writing offers a plant-based chicken sandwich. I don't recommend it, I've never eaten a Subway and felt good about my life, but it's there as a last resort for when you need dinner.
-
-### Su Ting Sian
-
-<MapLink name='108/86 Soi Anamai 23' url='https://maps.app.goo.gl/FdkzQz8NE9xkwjrX9' />
-
-My favourite restaurant in Khon Kaen, Su Ting Sian, is a fully-vegan restaurant with a menu in English and Thai and pictures for a lot of the items. The incredibly friendly staff don't speak much English, but pointing at the menu is sufficient.
-
-It has several tables inside to sit at. Sadly it's not air conditioned, but there are many fans so it feels pretty cool in the restaurant, and it's always quiet so you can pick a table right in front of a fan.
-
-The portion sizes are massive, and closing at 4pm each day I'd often come here for a late lunch, get two meals and skip dinner because it was enough to last me until bed. It's almost exclusively Thai food on the menu, which I recommend you stick to, because it's really high quality. The one non-Thai dish that I had (spaghetti) was... interesting. No shortage of sauce.
-
-<ImageGallery images={suTingSianImages} />
-
-### Kem-Kon Khon Kaen
-
-<MapLink name='633/1 Glang Muang Rd' url='https://maps.app.goo.gl/G4oknkKExTnBdha57' />
-
-Kem-Kon Khon Kaen was the restaurant I wasn't expecting in Khon Kaen. It's a western-style vegan restaurant like I'd expect to find in Bangkok, not in the middle of Isaan.
-
-That's the good news. The bad news is the location really sucks. I'm someone who walks everywhere I go when I stay somewhere. I hate taking taxis or motorcycle taxis (unless I'm drunk), and I hate getting food delivered. So I walked to Kem-Kon, and it's way outside the city centre, taking me about an hour to walk to from my hotel, in an almost industrial area at the side of a main road.
-
-That's the reason I only made it here once during my stay, and why it's not so viable for dinner, despite being open until 10pm each night. I wouldn't want to walk down the side of that road after dark.
-
-Or you could just take a taxi here like a normal person.
-
-That aside, it's a great place. I'd have been here everyday were it in the city centre. While the restaurant itself is very much styled as a western restaurant, the menu has a mix of Thai and foreign dishes, dominated by the Thai offerings. It's fully-vegan so you can order here with impunity from dishes such as garlicky chicken with rice (85 baht), cashew cheese lasagna (195 baht) and butter grilled seafood (155 baht).
-
-Even though the location sucks, it's worth the walk.
-
-<ImageGallery images={kemKonKhonKaenImages} />
-
-### Real Vegan
-
-<MapLink name='71 Ammat Rd' url='https://maps.app.goo.gl/Mv7okxFePUYpjxyL7' />
-
-I'm slightly confused by the name of this place as it seems to be known as both 'Real Vegan' and as 'Tawanthong Vegetarian Food'. There are a couple of businesses here, so perhaps one name is for the restaurant, the other for the shop. Regardless, I'm going to refer to it just as Real Vegan, as this was the most prominent signage I saw.
-
-The first of the two businesses here is the typical Thai เจ buffet that you get everywhere in Thailand, although I'd say this one is pretty high quality. These buffets can be a bit hit-and-miss, and I liked everything I ate here. As is customary with such restaurants, it stops serving each day at 2pm, so you really want to be here by 12:30pm to ensure there's a good selection of food left.
-
-The second business, and the reason that I really loved this place, is what is probably the best shop for getting vegan food I've encountered anywhere, particularly on this side of the world. Stumbling upon it in Khon Kaen of all places is something I really didn't expect, but I was in heaven.
-
-Beware that despite having a big sign saying 'Real Vegan', this shop isn't quite vegan. There are many products that contain honey, and I noticed one that quite subtly contained milk, so perhaps they were stocking it in error. Apart from that it's aisles of vegan produce, including a great selection of nuts and seeds (great for smoothies and for getting snacks, particularly for long bus journeys) and it has two aisles of just tea.
-
-Tea is one of the things that I really struggle to buy in Thailand, because the major supermarkets only stock very over-priced imported teas. When you can find it, Thailand has some amazing local teas but they're often only available in local shops and being new in town, I don't always know where to go.
-
-Finding this place was my own personal heaven. I bought enough tea that I'm still drinking it now, four weeks and two locations later.
-
-While the restaurant closes at 2pm, the shop is open until 6pm each day. If you have a kitchen this place will be even better, but even if you don't, there's enough healthy, vegan snacky food here that you can get supplies to last you through the Khon Kaen daily fast, enforced once all the restaurants have closed.
-
-<ImageGallery images={realVeganImages} />
-
-## Where to run in Khon Kaen
-
-I had a couple of runs while I was in Khon Kaen, both at the <ExternalLink url='https://maps.app.goo.gl/Bd3z54zFjnYtsPxJA'>Bueng Kaen Nakhon Reservoir</ExternalLink>.
-
-Isaan is notorious, in my mind if no one elses, for putting lovely pathways or running tracks around all large bodies of water in their cities. It was true in Nakhon Ratchasima, it was true in Udon Thani, and it's true here. There are a couple of different paths going around Bueng Kaen Nakhon Reservoir.
-
-The inner path which I ran on is more suited to pedestrians. It's fine for doing slow runs, which is all I wanted to do here, but would be less suitable for sprints or intervals, as in places you have to go up steps or around sharp corners. The outer path is I think technically a cycle track, although it's also used by pedestrians. I didn't run on this so I can't comment on if it's any better, but if you do want to do faster runs, maybe give this a look.
-
-One lap of the reservoir is about 3.2km, and it's a really pleasant place to run, so long as you like to run in the daytime.
-
-Unfortunately one of Khon Kaen's night markets is the <ExternalLink url='https://maps.app.goo.gl/Z6poqaTFbNis29yq9'>Bueng Kaen Nakhon Night Market</ExternalLink>. It takes place at the north end of the reservoir and gets very crowded. And while the night market itself doesn't cover the inner pathway around the lake, there's so much spillover of people that this northern part of the lake would be a massive pain to try and run through in the evenings.
-
-If you're going slow enough it would be no issue, but if you do want to run here at night time, perhaps consider doing three-quarter laps on the quieter parts of the lake, and changing direction after each one to avoid the night market.
-
-<ImageGallery images={runningImages} />
-
-## Being sociable in Khon Kaen
-
-I arrived in Khon Kaen very conscious about how out of shape I'd become, and as such wasn't really eager to explore the nightlife, instead focussing on my health. I did still manage one drunken night out though.
-
-There are no organised events for meeting other people that I came across here. Instead, there's a small cluster of foreigner-aimed bars in front of the Pullman Hotel that are a good place to come and start chatting to people. At a guess I'd say there are ten bars here. I went to three or four of them, but spent most of my night chatting to people in a place called <ExternalLink url='https://maps.app.goo.gl/gCL7CyAhNCBoZJt49'>My Bar</ExternalLink>.
-
-These are very typical bars that you find all over Thailand. Absolutely nothing special here and nothing to write home about, and it's a pretty meagre offering when you compare it even to Udon, but if you want to have a few beers and chat to some other forigners, then it's the only such area in Khon Kaen that I found.
-
-Coming to Khon Kaen is going to be because you want to go somewhere local that hasn't been ruined by tourism yet. A lack of foriegner-aimed amenities is the price you pay.
