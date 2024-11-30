@@ -242,7 +242,7 @@ export const realVeganImages = [
 
 <MapLink name='1/99 Thanon Prachasamoson' url='https://maps.app.goo.gl/fADZgcLEPaxdudAz6' />
 
-export const manomonResidenceDetails = {
+export const manomonResidenceFirstStayDetails = {
   dates: {
     checkIn: '2024-01-23',
     checkOut: '2024-01-31',
@@ -261,7 +261,29 @@ export const manomonResidenceDetails = {
   },
 }
 
-<AccommodationTable details={manomonResidenceDetails} />
+<AccommodationTable details={manomonResidenceFirstStayDetails} />
+
+export const manomonResidenceSecondStayDetails = {
+  dates: {
+    checkIn: '2024-11-29',
+    checkOut: '2024-12-11',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
+  },
+  roomType: 'Deluxe King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 10504.67,
+      '7% VAT': 735.33,
+    },
+  },
+}
+
+<AccommodationTable details={manomonResidenceSecondStayDetails} />
 
 As with other places in Isaan, accommodation in Khon Kaen is absolutely phenomenal value, and Manomon Residence is no exception.
 
