@@ -75,8 +75,8 @@ const About = ({ timelines }) => {
             </div>
             <div className="hidden max-w-xs px-2.5 lg:block lg:max-w-none">
               <img
-                src={`${imagePath}/maao-bay.jpeg`}
-                alt="Maao Bay"
+                src={`${imagePath}/philopappos-hill-sunset-selfie.jpeg`}
+                alt="Philopappos Hill sunset selfie"
                 className="aspect-square -rotate-3 rounded-2xl bg-zinc-100 object-cover dark:bg-zinc-800"
               />
             </div>
