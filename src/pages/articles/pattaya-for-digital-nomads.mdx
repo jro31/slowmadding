@@ -194,9 +194,26 @@ TODO
 
 ## Where to get vegan food in Pattaya
 
-Given the number of tourists, Pattaya has a pretty meagre vegan scene. Dozens of Indian and Middle Eastern restaurants claim to be vegetarian, but I found these to be pretty vegan-unfriendly, with vegan items not being marked on the menu, and items you'd typically expect to be vegan, like a falafel wrap, coming with mayonnaise inside.
+Pattaya attracts tourists from all over the world. There are many Middle-Eastern tourists, and even more Indian tourists. A consequence of which is that tourist areas of Pattaya are overflowing with Middle-Eastern and Indian restaurants. And when it comes to finding vegan food, that isn't a bad thing.
 
-The four most vegan-friendly places I found are the following.
+Almost all Middle-Eastern restaurants have vegan options like hummus and falfel, and even non-vegetarian Indian restaurants offer curries, breads and rices that are or can be made vegan. There are so many of these restaurants that recommending any of them is somewhat futile, because you'd have to walk past dozens of others just to get there. Unless you're averse to Middle-Eastern or Indian food, I'd suggest just wandering around until you find somewhere that takes your fancy. The staff typically speak good English and understand what vegan means.
+
+If you're instead after vegan western or Thai food, then the offerings are a bit slimmer. I'll detail my favourites below.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/three-idiots-aloo-palak.jpeg`,
+    alt: '3 Idiots aloo palak',
+    caption: "This is the aloo palak from 3 Idiots The Veggie Hub in Jomtien. It's one of the weirdest restaurants I've ever been to, from the obscure design of the menu, and the weird mix of food it contains, to the decor of the restaurant itself. However, the food I got here on my one visit was excellent. If it had been priced a little more reasonably I'd have certainly come back again. However, 130 baht for the aloo palak, and 120 baht for the jeera rice you can see here, plus a 10% service charge and 7% VAT not included in the (one of my pet peeves) meant the price was way about other similar restaurants in Pattaya. I do recommend coming once though.",
+  },
+  {
+    src: `${imagePath}/vegan-food/lebanese-house-hummus.jpeg`,
+    alt: 'Lebanese House hummus',
+    caption: 'If I could only eat one food for the rest of my life, it would be hummus. This comes Lebanese House, a restaurant in food court of The Avenue shopping mall in central Pattaya. It costs 75 baht.',
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
 
 ### Yes Vegan
 
@@ -230,6 +247,11 @@ export const yesVeganImages = [
     caption: "And this is the spicy vegan sausage salad with wasabi. This was the first time I've ever had wasabi on something that's not sushi, but damn, it gave it a really addictive kick. Definitely one to try when you come here. It costs 125 baht.",
   },
   {
+    src: `${imagePath}/vegan-food/yes-vegan/pumpkin-soup.jpeg`,
+    alt: 'Yes Vegan pumpkin soup',
+    caption: "I'm not someone that's usually into soup. No one's ever had a soup and thought \"mmmmm, that was a filling soup.\" There are five western soups on the menu at Yes Vegan, and for some reason I was kind of into soup for a bit, so I got through them. They cost between 95 baht and 120 baht. This is the pumpkin soup for 95 baht.",
+  },
+  {
     src: `${imagePath}/vegan-food/yes-vegan/watermelon-smoothie.jpeg`,
     alt: 'Yes Vegan watermelon smoothie',
     caption: 'There are five different smoothies on the menu, each costing either 80 or 90 baht. This is the watermelon smoothie for 80 baht.',
@@ -250,9 +272,19 @@ export const yesVeganImages = [
     caption: "Or this stir-fried vegan sirloin with black pepper at 145 baht. That's Asian food, right?",
   },
   {
+    src: `${imagePath}/vegan-food/yes-vegan/green-curry.jpeg`,
+    alt: 'Yes Vegan vegan chicken in green curry',
+    caption: "There are a couple of Thai curries on the menu, which are basically soups. Neither are the most sightly meal I've ever had, but they tasted good and healthy. This one is the green curry with vegan chicken, which is 125 baht on its own, and an extra 25 baht for the brown rice.",
+  },
+  {
+    src: `${imagePath}/vegan-food/yes-vegan/fried-vegan-chicken-with-mushroom-sauce.jpeg`,
+    alt: 'Yes Vegan fried vegan chicken with mushroom sauce',
+    caption: 'Fried vegan chicken with mushroom sauce. It costs 145 baht.',
+  },
+  {
     src: `${imagePath}/vegan-food/yes-vegan/vegan-double-spicy-chicken-burger.jpeg`,
     alt: 'Yes Vegan vegan double spicy chicken burger with French fries',
-    caption: "When I arrived in Pattaya I'd been sitting on a bus from Huahin all day so really needed something to fill the hole. The vegan double spicy chicken burger with French fries is a real jaw-dislocator, but it did the job. It costs 175 baht.",
+    caption: "When I arrived in Pattaya for the first time, I'd been sitting on a bus from Huahin all day so really needed something to fill the hole. The vegan double spicy chicken burger with French fries is a real jaw-dislocator, but it did the job. It costs 175 baht.",
   },
   {
     src: `${imagePath}/vegan-food/yes-vegan/fried-mushroom-with-vegan-cheese-sandwich.jpeg`,
@@ -293,6 +325,11 @@ export const yesVeganImages = [
     src: `${imagePath}/vegan-food/yes-vegan/vegan-chicken-with-yellow-rice.jpeg`,
     alt: 'Yes Vegan vegan chicken with yellow rice',
     caption: 'Vegan chicken with yellow rice. For when white rice becomes politically incorrect. 155 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/yes-vegan/fried-vegan-chicken-with-basil-leaf-sauce.jpeg`,
+    alt: 'Yes Vegan fried vegan chicken with basil leaf sauce',
+    caption: "I hope you like chillies. I hate them, but for reasons unbeknownst even to me, I have convinced myself that they're good for me. So when I get served something like this fried vegan chicken with basil leaf sauce for 125 baht and it comes covered in chillies, rather than scrape them off and leave them, I find that if you mix them into some rice and quickly have a swig of water, you can swallow them without having to bite. So you get all the health benefits with none of the pain.",
   },
 ]
 
@@ -370,13 +407,23 @@ export const fiveStarJRestaurantImages = [
   },
   {
     src: `${imagePath}/vegan-food/five-star-j-restaurant/tri-colour-pasta.jpeg`,
-    alt: 'Five Star J Restaurant with vegan parmesan',
+    alt: 'Five Star J Restaurant tri-colour pasta with vegan parmesan',
     caption: 'Again breaking my cardinal rule of not buying pasta in restaurants (I must have been drunk), I got this tri-colour pasta with vegan parmesan, and was suprisingly undisappointed. It cost 169 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/five-star-j-restaurant/spinach-soup.jpeg`,
+    alt: 'Five Star J Restaurant spinach soup',
+    caption: "This spinach soup was listed on the menu as being made with fresh spinach, which I was very dubious about. I heard the food processor from the kitchen as they were making it, and it certainly was made with fresh spinach. When you've been nourished by little but beer for a couple of weeks, getting a fresh, deep green spinach soup like this does you the world of good. I really recommend it. It costs 149 baht.",
   },
   {
     src: `${imagePath}/vegan-food/five-star-j-restaurant/tempeh-panang-curry.jpeg`,
     alt: 'Five Star J Restaurant tempeh panang curry with black rice',
     caption: "In a weird twist of fate, the only thing I got at Five Star J that I didn't like was this tempeh panang curry with black rice. Who'd have thought they wouldn't be so great at Thai food? If I've sold it to you it costs 169 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/five-star-j-restaurant/massaman-tofu-chicken-curry.jpeg`,
+    alt: 'Five Star J Restaurant massaman tofu chicken curry',
+    caption: "Thankfully this one was a bit better. It's a massaman tofu-chicken curry. It's 169 baht on its own, plus 49 baht for the black rice.",
   },
   {
     src: `${imagePath}/vegan-food/five-star-j-restaurant/shiitake-burger.jpeg`,
@@ -392,6 +439,11 @@ export const fiveStarJRestaurantImages = [
     src: `${imagePath}/vegan-food/five-star-j-restaurant/chicken-burger.jpeg`,
     alt: 'Five Star J Restaurant chicken burger',
     caption: 'Oh chicken burger my chicken burger, how I miss thee. At 199 baht you were quite delicious.',
+  },
+  {
+    src: `${imagePath}/vegan-food/five-star-j-restaurant/mama-noodles-with-soy-duck.jpeg`,
+    alt: 'Five Star J Restaurant Mama Thai noodles with soy duck',
+    caption: "I've never quite understood Thailand's obsession with instant noodles. To me instant noodles are called instant noodles because they're for people who're too lazy to cook properly. So when you go to a restaurant, why would you ever order something made from instant noodles, like I did here? These are Mama Thai noodles with soy duck for 179 baht.",
   },
 ]
 
