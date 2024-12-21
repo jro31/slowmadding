@@ -118,7 +118,7 @@ const About = ({ timelines }) => {
               </p>
 
               <p>
-                That in a nutshell, is why I'm a digtial nomad. It's a lifestyle
+                That in a nutshell, is why I'm a digital nomad. It's a lifestyle
                 for people scared of commitment to any place, person or way of
                 being, because when you're a nomad and you don't like how things
                 are going, you don't have to face the reality of trying to make
