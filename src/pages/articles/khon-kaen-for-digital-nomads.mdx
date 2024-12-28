@@ -3,6 +3,7 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -106,57 +107,95 @@ export const runningImages = [
 
 ## Where to get vegan food in Khon Kaen
 
-There's good news and there's bad news when it comes to getting vegan food in Khon Kaen. The good news is that it's a surprisingly vegan-friendly city. Mostly it's Thai food, but it goes slightly beyond the typical เจ (jay) buffets because you can also get vegan food made to order and there's even a small almost-vegan supermarket. There's also one western-style vegan restaurant.
+Khon Kaen has a small number of vegan Thai restaurants, so you aren't going to go hungry here. That's the good news.
 
-The bad news is that apart from Kem-Kon, everything closes by 7pm, so in terms of getting dinner, it's not a very vegan-friendly city, so make sure you have a big lunch.
+The bad news is that these typically close very early, so by mid-afternoon your options get a lot more limited. The other bad news is that if you don't like Thai food, you're kind of shit outta luck.
 
-There's one Subway restaurant in town which is open late (9pm) and at the time of writing offers a plant-based chicken sandwich. I don't recommend it, I've never eaten a Subway and felt good about my life, but it's there as a last resort for when you need dinner.
+There's one branch of Subway in Khon Kaen. They're open until 9pm and at the time of writing have a vegan chicken sub on the menu for when you get really desperate. Kem-Kon Khon Kaen (below) are also open late and do delivery (with some caveats). That aside, get used to eating Thai and eating early.
+
+I typically don't eat dinner anyway, so this suits me, but if you can't go without an evening meal, all these restaurants do take-away, so the option is there to get something to reheat in a microwave later.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/boon-baramee.jpeg`,
+    alt: 'Boon Baramee Vegetarian Food',
+    caption: "Boon Baramee is a vegan restaurant down by the lake. I discovered it quite late in my stay so only came here once, but it's definitely a good option. Unlike in those below, the staff speak very good English. This plate of three choices from the buffet with rice only cost 50 baht.",
+    url: 'https://maps.app.goo.gl/jxEmgNDt2RxTYy3n7',
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
 
 ### Su Ting Sian
 
 <MapLink name='108/86 Soi Anamai 23' url='https://maps.app.goo.gl/FdkzQz8NE9xkwjrX9' />
 
-My favourite restaurant in Khon Kaen, Su Ting Sian, is a fully-vegan restaurant with a menu in English and Thai and pictures for a lot of the items. The incredibly friendly staff don't speak much English, but pointing at the menu is sufficient.
+Su Ting Sian is a fully-vegan restaurant with a picture menu in Thai and questionable English. The incredibly friendly staff don't speak much English, but pointing works if you don't speak Thai.
 
-It has several tables inside to sit at. Sadly it's not air conditioned, but there are many fans so it feels pretty cool in the restaurant, and it's always quiet so you can pick a table right in front of a fan.
+It has several tables inside to sit at. It's not air conditioned but there are many fans so it feels pretty cool in the restaurant. It's often quiet so pick a table right in front of a fan if it's hot outside.
 
-The portion sizes are massive, and closing at 4pm each day I'd often come here for a late lunch, get two meals and skip dinner because it was enough to last me until bed. It's almost exclusively Thai food on the menu, which I recommend you stick to, because it's really high quality. The one non-Thai dish that I had (spaghetti) was... interesting. No shortage of sauce.
+The portion sizes are massive, and closing at 4pm each day it's a good place to come for a late lunch. It's almost exclusively Thai food on the menu, which I recommend you stick to, because it's mostly really good. There are a small number of western (pasta) dishes on the menu. These I don't recommend.
 
 export const suTingSianImages = [
   {
-    src: `${imagePath}/su-ting-sian/water-dumplings.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/water-dumplings.jpeg`,
     alt: 'Su Ting Sian water dumplings',
     caption: "This is written in the menu as water dumplings. It's good to see dumplings being served in their natural habitat for a change. They'll cost you 50 baht.",
   },
   {
-    src: `${imagePath}/su-ting-sian/panang-curry.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/yong-tau-foo.jpeg`,
+    alt: 'Su Ting Sian yong tau foo',
+    caption: "This is listed on the menu as Yong Tau foo, and no I didn't know what that means when I ordered it either. Turns-out it means a load of weird things in a red liquid. I quite liked it, and it only cost 45 baht. Interestingly enough, after taking this photo I dropped my phone in it.",
+  },
+  {
+    src: `${imagePath}/vegan-food/su-ting-sian/spring-rolls.jpeg`,
+    alt: 'Su Ting Sian spring rolls',
+    caption: 'I really enjoyed these vegetable spring rolls - something deep-fried does you good once in a while. When hungover. They cost 45 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/su-ting-sian/panang-curry.jpeg`,
     alt: 'Su Ting Sian panang curry',
     caption: "The portion sizes are no joke here, I always felt a bit greedy getting two mains every time I came, I've just never been someone who can come to a restaurant and only have one meal. This is the panang curry for 60 baht.",
   },
   {
-    src: `${imagePath}/su-ting-sian/spicy-fried-with-basil-leaves.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/spicy-fried-with-basil-leaves.jpeg`,
     alt: 'Su Ting Sian stir fried with basil leaves',
     caption: "'Stir fried with basil leaves' is how this is listed in the menu. Stir fried what I never found out, but I like a bit of danger with my meal. Whatever it is it costs 45 baht.",
   },
   {
-    src: `${imagePath}/su-ting-sian/spaghetti-with-mushroom-tomato-sauce.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/spaghetti-with-mushroom-tomato-sauce.jpeg`,
     alt: 'Su Ting Sian spaghetti with mushroom tomato sauce',
     caption: 'Believe it or not, this is a spaghetti dish, spaghetti with mushroom tomato sauce to be precise. And yes, there is actually spaghetti underneath the excessive amount of sauce. It costs 70 baht.',
   },
   {
-    src: `${imagePath}/su-ting-sian/inside.jpeg`,
-    alt: 'Su Ting Sian inside',
-    caption: "It was always very quiet when I came here, which is good for me. There's no AC, but plenty of fans keep the restaurant pleasantly cool.",
+    src: `${imagePath}/vegan-food/su-ting-sian/spaghetti-carbonara.jpeg`,
+    alt: 'Su Ting Sian spaghetti carbonara with mushroom sauce',
+    caption: "Western food is not their forte. This is a spaghettic carbonara with mushroom sauce, and though it actually looks pretty nice, I don't recommend it. The sauce tasted like salad cream. It probably was salad cream. Yours for 70 baht.",
   },
   {
-    src: `${imagePath}/su-ting-sian/quick-fried-water-spinach.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/pad-thai.jpeg`,
+    alt: 'Su Ting Sian pad Thai',
+    caption: "The other dish I don't recommend here is the pad Thai. For some reason it's the first dish many people overseas think of when they think of Thai food, but it defintely isn't the best, and here it was particularly average. Although at 45 baht you can't complain.",
+  },
+  {
+    src: `${imagePath}/vegan-food/su-ting-sian/quick-fried-water-spinach.jpeg`,
     alt: 'Su Ting Sian quick-fried water spinach seasoned with chilli and soy sauce',
     caption: 'Perhaps being raised with the dumplings, this is listed in the menu as quick-fried water spinach seasoned with chilli and soy sauce for 45 baht.',
   },
   {
-    src: `${imagePath}/su-ting-sian/green-curry.jpeg`,
+    src: `${imagePath}/vegan-food/su-ting-sian/kale-with-crispy-pork.jpeg`,
+    alt: 'Su Ting Sian kale with crispy pork',
+    caption: "I quite liked this kale with crispy pork for 50 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/su-ting-sian/green-curry.jpeg`,
     alt: 'Su Ting Sian green curry',
     caption: 'The green curry is 60 baht, and is definitely green.',
+  },
+  {
+    src: `${imagePath}/vegan-food/su-ting-sian/inside.jpeg`,
+    alt: 'Su Ting Sian inside',
+    caption: "It was always very quiet when I came here, which is good for me. There's no AC, but plenty of fans keep the restaurant pleasantly cool.",
   },
 ]
 
@@ -166,45 +205,57 @@ export const suTingSianImages = [
 
 <MapLink name='71 Ammat Rd' url='https://maps.app.goo.gl/Mv7okxFePUYpjxyL7' />
 
-I'm slightly confused by the name of this place as it seems to be known as both 'Real Vegan' and as 'Tawanthong Vegetarian Food'. There are a couple of businesses here, so perhaps one name is for the restaurant, the other for the shop. Regardless, I'm going to refer to it just as Real Vegan, as this was the most prominent signage I saw.
+I can't stress how much I like this place.
 
-The first of the two businesses here is the typical Thai เจ buffet that you get everywhere in Thailand, although I'd say this one is pretty high quality. These buffets can be a bit hit-and-miss, and I liked everything I ate here. As is customary with such restaurants, it stops serving each day at 2pm, so you really want to be here by 12:30pm to ensure there's a good selection of food left.
+It's actually two businesses in one. There's a point-and-hope เจ ("jay") buffet restaurant similar to those that you'll find all over Thailand, and there's an (almost) vegan health-food shop better than any other I've come across in the world.
 
-The second business, and the reason that I really loved this place, is what is probably the best shop for getting vegan food I've encountered anywhere, particularly on this side of the world. Stumbling upon it in Khon Kaen of all places is something I really didn't expect, but I was in heaven.
+The Thai name ตะวันทองมังสะวิรัติ is pronounced roughly as 'dtà wan tɔɔng mang sà wí rát', and translates to Golden Sun Vegetarian. For some reason it also has an English name 'Real Vegan'. Perhaps intended for clarity for non-Thai speakers, it's actually a bit confusing because you'll see this place referred to as both Tawanthong Vegetarian and Real Vegan.
 
-Beware that despite having a big sign saying 'Real Vegan', this shop isn't quite vegan. There are many products that contain honey, and I noticed one that quite subtly contained milk, so perhaps they were stocking it in error. Apart from that it's aisles of vegan produce, including a great selection of nuts and seeds (great for smoothies and for getting snacks, particularly for long bus journeys) and it has two aisles of just tea.
+The restaurant here is great. As is customary for such restaurants, they open early and close early (6am to 2pm), so you really want to be here by about 12:30pm to ensure there's a good selection left. The staff don't speak any English, so get ready with your best sign-language ready if you don't speak Thai. As such restaurants go, this one is pretty high quality and typically great value.
 
-Tea is one of the things that I really struggle to buy in Thailand, because the major supermarkets only stock very over-priced imported teas. When you can find it, Thailand has some amazing local teas but they're often only available in local shops and being new in town, I don't always know where to go.
+One thing I noted is that on my first visit to Khon Kaen in January 2024, I didn't speak any Thai. I would typically get rice with five choices from the buffet and a bottle of water, and be charged 120 baht. By my return at the end of 2024 I was about four months into learning Thai and could hold my own in a conversation, and so would order in Thai as opposed to caveman noises. I would again get five choices from the buffet with a bottle of water, but instead be charged 80 baht.
 
-Finding this place was my own personal heaven. I bought enough tea that I'm still drinking it now, four weeks and two locations later.
+I've often heard of restaurants giving better prices to people who can speak the local language, but this was the first time I unequivocally experienced it. Ordering the exact same thing in Thai compared to English took 33% off the price.
 
-While the restaurant closes at 2pm, the shop is open until 6pm each day. If you have a kitchen this place will be even better, but even if you don't, there's enough healthy, vegan snacky food here that you can get supplies to last you through the Khon Kaen daily fast, enforced once all the restaurants have closed.
+The second business here is a shop that thinks it's vegan, but isn't quite (I scanned the ingredients of many items they sell, and found one quite subtly containing milk). That aside it's aisles of just vegan produce, including a great selection of nuts and seeds, which I get through a lot of, and two aisles of just tea.
+
+If I died and went to heaven it would look something like this. And while the restaurant closes at 2pm, the shop stays open until 6pm, so you can buy nuts until sunset, just like you've always wanted.
 
 export const realVeganImages = [
   {
-    src: `${imagePath}/real-vegan/five-choices-from-the-buffet-with-rice-1.jpeg`,
-    alt: 'Real Vegan five choices fron the buffet with rice',
-    caption: 'Real Vegan, if that is its real name, is both a restaurant and a store/supermarket. In this photo I got five choices from the buffet with rice. With a bottle of water it came to 120 baht.',
+    src: `${imagePath}/vegan-food/real-vegan/five-choices-with-rice-1.jpeg`,
+    alt: 'Real Vegan five choices from the buffet with rice',
+    caption: "The restaurant at Real Vegan, if that is its real name, is your typical เจ buffet, but I found this one to be pretty high quality. I bought this plate of rice with five options from the buffet on my first visit to Khon Kaen when I couldn't speak any Thai. With a bottle of water I was charged 120 baht.",
   },
   {
-    src: `${imagePath}/real-vegan/store.jpeg`,
-    alt: 'Real Vegan store',
-    caption: "While the restaurant is decent, the real prize here is the store which has a mammoth selection of vegan produce. One of the best I've encountered anywhere.",
+    src: `${imagePath}/vegan-food/real-vegan/five-choices-with-rice-2.jpeg`,
+    alt: 'Real Vegan five choices from the buffet with rice',
+    caption: 'By my second visit I could speak Thai. I again ordered five options from the buffet with rice and a bottle of water. This time it was 80 baht.',
   },
   {
-    src: `${imagePath}/real-vegan/sign.jpeg`,
-    alt: 'Real Vegan sign',
-    caption: "While it's also known as Tawanthong Vegetarian Food for some reason, it's kind of hard to dispute that it's actually called Real Vegan, seeing as they have a giant sign that says Real Vegan on it.",
+    src: `${imagePath}/vegan-food/real-vegan/five-choices-with-rice-3.jpeg`,
+    alt: 'Real Vegan five choices from the buffet with rice',
+    caption: 'And again.',
   },
   {
-    src: `${imagePath}/real-vegan/five-choices-from-the-buffet-with-rice-2.jpeg`,
-    alt: 'Real Vegan five choices fron the buffet with rice',
-    caption: 'Including the spring roll, this is five choices from the buffet with rice again. With a bottle of water it cost 115 baht.',
-  },
-  {
-    src: `${imagePath}/real-vegan/buffet.jpeg`,
+    src: `${imagePath}/vegan-food/real-vegan/buffet.jpeg`,
     alt: 'Real Vegan buffet',
     caption: 'The buffet. Get here before 12:30pm to ensure they have a good selection remaining.',
+  },
+  {
+    src: `${imagePath}/vegan-food/real-vegan/store.jpeg`,
+    alt: 'Real Vegan store',
+    caption: "While the restaurant is really good, the real prize here is the health food store, which is my favourite anywhere in the world. Apart from one item I found containing milk, which I'm assuming they stock in error, the entire shop is vegan.",
+  },
+  {
+    src: `${imagePath}/vegan-food/real-vegan/nuts.jpeg`,
+    alt: 'Real Vegan store nuts',
+    caption: 'They have two aisles of just teas, and here just some of the nuts and seeds they sell. You want to know what Heaven looks like? This is what Heaven looks like.',
+  },
+  {
+    src: `${imagePath}/vegan-food/real-vegan/sign.jpeg`,
+    alt: 'Real Vegan sign',
+    caption: "The Thai name ตะวันทองมังสะวิรัติ translates to Golden Sun Vegetarian. Perhaps for clarity of non-Thai speakers, in English it's called Real Vegan. That actually makes things more confusing as you'll see it referred to as both.",
   },
 ]
 
@@ -228,47 +279,47 @@ In that sense it's a funny little place. Great to have a vegan restaurant that d
 
 export const kemKonKhonKaenImages = [
   {
-    src: `${imagePath}/kem-kon-khon-kaen/teriyaki-tofu-bowl.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/teriyaki-tofu-bowl.jpeg`,
     alt: 'Kem Kon Khon Kaen teriyaki tofu bowl',
     caption: "Putting the Ku Klux Klan to shame with their alliteration, Kem Kon Khon Kaen is a vegan restaurant like I wasn't expecting to find here. Western-style vegan restaurants are usually reserved for Bangkokkk, Chiang Mai and the other tourist-heavy places. This is the teriyaki tofu bowl for 85 baht.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/inside.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/inside.jpeg`,
     alt: 'Kem Kon Khon Kaen inside',
     caption: 'Kem Kon reminds me of Veganerie in Bangkok. Similar decor and feel, with a similar (albeit smaller) menu.',
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/mung-bean-fries.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/mung-bean-fries.jpeg`,
     alt: 'Kem Kon Khon Kaen mung bean fries',
     caption: 'These are allegedly mung bean fries. Tasted the same as potato fries, which is no bad thing. They cost 65 baht.',
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/strawberry-freppe-smoothie.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/strawberry-freppe-smoothie.jpeg`,
     alt: 'Kem Kon Khon Kaen strawberry freppe smoothie',
     caption: "This is listed in the menu as a 'Strawberry Freppe Smoothie'. I'm not sure what freppe means; I lost track of the various names for coffee shop drinks years ago when they expanded from tea and coffee. Maybe it's a typo of frappe? Anyway, it was good and it costs 125 baht.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/outside.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/outside.jpeg`,
     alt: 'Kem Kon Khon Kaen from outside',
     caption: "The main downside to visiting Kem Kon in person, is that it's bloody miles outside the city centre. It's hard to spot, looking slightly timid in this almost industrial area south of the city. This is what you're looking for. It says Kem Kon in very, very small and slightly illegible writing between the two windows, just to make it easier to find.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/grab-menu-options.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/grab-menu-options.jpeg`,
     alt: 'Kem Kon Khon Kaen Grab menu options',
     caption: "No problem though, because they do delivery through Grab. It's just that some things, including the restaurant name, are only in Thai. You'll see these two options for any main dishes that you order. The first one is asking your spice level, where the options translate in order to No spicy, Mildly spicy, Normal Spicy and, according to Google Translate, Spicy enough to shake your head. I'm someone that likes a little bit of spice, but I can't handle very spicy food. I went for mildly spicy each time, and that was nice. The second option is translated, and offers vegan or J. 'Jay' (or เจ in Thai) is a more limiting form of veganism that also disallows things such as onion and garlic.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/pad-thai.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/pad-thai.jpeg`,
     alt: 'Kem Kon Khon Kaen take-away pad Thai with vegan sour pork balls',
     caption: "While it's great to have a vegan restaurant that delivers until late, the portions are rather unimpressive. At the above restaurants you can spend half the money to get twice as much food. This is the pad Thai with vegan sour pork balls for 155 baht.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/grilled-protein.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/grilled-protein.jpeg`,
     alt: 'Kem Kon Khon Kaen take-away grilled protein with rice',
     caption: "The grilled protein with rice is a bit cheaper at 89 baht, but by itself it's not a meal. You're going to want to order at least two things at a time.",
   },
   {
-    src: `${imagePath}/kem-kon-khon-kaen/stir-fried-morning-glory.jpeg`,
+    src: `${imagePath}/vegan-food/kem-kon-khon-kaen/stir-fried-morning-glory.jpeg`,
     alt: 'Kem Kon Khon Kaen take-away stir-fried morning glory with crispy pork',
     caption: 'Even selecting mildly spicy, your food can have a bit of a kick to it. This is the stir-fried morning glory with crispy pork for 135 baht.',
   },
@@ -381,9 +432,22 @@ export const manomonResidenceImages = [
 
 ## Summary of Khon Kaen
 
-TODO
+export const summaryPoints = {
+  positive: [
+    'Has my favourite health food shop in the world',
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
 
-## Final thougts
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
 
 TODO
 
