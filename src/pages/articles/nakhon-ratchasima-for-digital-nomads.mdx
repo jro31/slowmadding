@@ -5,6 +5,7 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -70,6 +71,30 @@ export const cityImages = [
 ]
 
 <ImageGallery images={cityImages} />
+
+## Why does it have two names?
+
+TODO
+
+## Who is Nakhon Ratchasima suitable for?
+
+TODO
+
+## How affordable is Nakhon Ratchasima?
+
+TODO
+
+## Is Nakhon Ratchasima safe?
+
+TODO
+
+## Is it easy to get by with English in Nakhon Ratchasima?
+
+TODO
+
+## Things I don't like about Nakhon Ratchasima
+
+TODO
 
 ## Being sociable in Nakhon Ratchasima
 
@@ -326,7 +351,7 @@ export const terminal21Images = [
 
 <MapLink name='168/9 Jomsurangyard Rd' url='https://maps.app.goo.gl/JzvgdeGea5YuqzuM7' />
 
-export const romyenGardenPlaceDetails = {
+export const romyenGardenPlaceFirstStayDetails = {
   dates: {
     checkIn: '2023-11-30',
     checkOut: '2023-12-07',
@@ -348,7 +373,31 @@ export const romyenGardenPlaceDetails = {
   },
 }
 
-<AccommodationTable details={romyenGardenPlaceDetails} />
+<AccommodationTable details={romyenGardenPlaceFirstStayDetails} />
+
+export const romyenGardenPlaceSecondStayDetails = {
+  dates: {
+    checkIn: '2025-01-08',
+    checkOut: '2025-01-23',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
+  },
+  roomType: 'Superior King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 13316.48,
+      '7% VAT': 932.15,
+      '10% Property service charge': 1424.86,
+      'booking.com pays': -1253.88,
+    },
+  },
+}
+
+<AccommodationTable details={romyenGardenPlaceSecondStayDetails} />
 
 Staying here was a rarity to me, in that I'd call it a proper hotel. It has a concierge, it has room service, it has snacks in the room that they charge you money for if you eat.
 
@@ -412,3 +461,27 @@ export const romyenGardenPlaceImages = [
 ]
 
 <ImageGallery images={romyenGardenPlaceImages} />
+
+## Summary of Nakhon Ratchasima
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
+
+TODO: Keep this section?
+
+## Do I want to come back again?
+
+TODO
