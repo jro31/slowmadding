@@ -122,70 +122,86 @@ It seems to be an Isaan tendency that if there's a large body of water, they bui
 
 ### Nong Prajak Park
 
-The first one, nearby to my room during my first stay in Udon, is <ExternalLink url='https://maps.app.goo.gl/bSi7JBXBdiskQGp56'>Nong Prajak Park</ExternalLink>. It's a lake of a 3.1km circumference with a running track and separated cycling track all the way around. Regardless of if you're running, it's such a pleasant route that you should make sure to come here.
+The first one, nearby to my room during my first stay in Udon, is <ExternalLink url='https://maps.app.goo.gl/bSi7JBXBdiskQGp56'>Nong Prajak Park</ExternalLink>. It's a lake with a 3.1km circumference and a running track and separated cycling track all the way around. Regardless of if you're running, it's such a pleasant route that you should make sure to come here.
 
 If you come during the daytime you'll have the whole thing to yourself. After dark it has a few dark spots and can get a little crowded, with the only other downside being that as you run past the entrance for cars, not only do you have to contend with occasional traffic crossing your path, but there are also a couple of sets of stairs (four steps down, four steps up) that you have to negotiate.
 
 Both of these are a non-issue on slow, steady runs, but prohibit Nong Prajak Park from being suitable for sprints or intervals.
 
+export const nongPrajakParkImages = [
+  {
+    src: `${imagePath}/running/nong-prajak-park/cycling-track.jpeg`,
+    alt: 'Nong Prajak Park cycling track',
+    caption: "At Nong Prajak Park the running track and cycling track are separated (the picture is actually of the cycling track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
+  },
+]
+
+<ImageGallery images={nongPrajakParkImages} />
+
 ### Nong Bua Public Park
 
-<ExternalLink url='https://maps.app.goo.gl/3P3RPVyTWnfKQZZ46'>Nong Bua Public Park</ExternalLink> has a circumference of 1.8km, so it's a little under three laps to run a 5k. Like Nong Prajak Park, it's an incredibly pleasant place to come, and I'd recommend it regardless of if you're running. I came here a couple of times just to go for a walk. It's also perfect for a slow and steady run. The reason it's not great for sprints or intervals is it has a couple of bottle-necks, particularly around the Thai-Chinese Cultural Center on the southern part of the route.
+<ExternalLink url='https://maps.app.goo.gl/3P3RPVyTWnfKQZZ46'>Nong Bua Public Park</ExternalLink> has a circumference of 1.8km, so it's a little under three laps to run a 5k. Like Nong Prajak Park, it's an incredibly pleasant place to come, and I'd recommend it regardless of if you're running. As with Nong Prajak, it's great for slow and steady runs. The reason it's not great for sprints is it has a couple of bottle-necks, particularly around the Thai-Chinese Cultural Center on the southern part of the route.
 
 There you're running on a slightly narrow walkway, often with groups of school kids coming in the opposite direction. And while they're very mindful to step aside when they see you, they aren't always paying attention. Not great if you're sprinting into them at full speed.
 
-You might think that going around the outside of a lake, the running track wouldn't have any sharp corners, but as it snakes around the trees, that's not entirely true. In the daytime the park is pretty quiet but somewhat inexplicably, in the evenings when it's much busier with people running, there are some folks who rent-out roller skates, meaning you have kids falling all over the place. That is no issue on a slow and steady run, but this is not a place for fast runs.
+You might think that going around the outside of a lake, the running track wouldn't have any sharp corners, but as it snakes around the trees, that's not entirely true. In the daytime the park is pretty quiet but somewhat inexplicably, in the evenings when it's much busier with people running, there are some folks who rent-out roller skates, meaning you have kids falling all over the place. That's no issue on a slow run, but this is not a place to go quickly.
 
-### Nong Sim Public Park
-
-<ExternalLink url='https://maps.app.goo.gl/aHtARibkVdQhksbt9'>Nong Sim Public Park</ExternalLink> is the shortest and most inconspicuous of the three parks listed here, but is actually the best overall for running.
-
-It has a circumference of around 1.3km, so you've got a little under four laps in order to do a 5k. Unlike in Nong Prajak Park, there is no intersecting traffic or steps here, and unlike in Nong Bua Park, there are no bottle-necks or sharp corners. It's flat and wide the whole way around, and even after sundown is well illuminated and remains fairly quiet. I'm really not sure why more people don't come here. It's so inconspicous that it's not even named on Google Maps yet.
-
-That's why I say it's the best park overall for running. If you want to go for a slow and steady run, then any of the parks here are perfect, but if you want to do sprints or intervals, then Nong Sim is the only one I recommend.
-
-export const runningImages = [
+export const nongBuaParkImages = [
   {
-    src: `${imagePath}/running/nong-prajak-park-strava.jpeg`,
-    alt: 'Nong Prajak Park Strava map',
-    caption: 'The route at Nong Prajak Park. Two laps of the park comes to 6.2km.',
-    url: 'https://www.strava.com/activities/8928631847',
-  },
-  {
-    src: `${imagePath}/running/nong-bua-park-strava.jpeg`,
-    alt: 'Nong Bua Park Strava map',
-    caption: 'In Nong Bua Park, one lap is 1.8km, so I had to go a little over five laps to reach 10k.',
-    url: 'https://www.strava.com/activities/10356056203',
-  },
-  {
-    src: `${imagePath}/running/nong-sim-park-strava.jpeg`,
-    alt: 'Nong Sim Park Strava map',
-    caption: 'Nong Sim is the smallest of the three parks. To do 5k is a little under four laps.',
-    url: 'https://www.strava.com/activities/10372085769',
-  },
-  {
-    src: `${imagePath}/running/nong-prajak-park.jpeg`,
-    alt: 'Nong Prajak Park cycle path',
-    caption: "There are running and cycling tracks that go all the way around each of these parks. This is Nong Prajak Park where the running track and cycling tracks are separated (the picture is actually of the cycle track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
-  },
-  {
-    src: `${imagePath}/running/nong-bua-park.jpeg`,
+    src: `${imagePath}/running/nong-bua-park/running-track-daytime.jpeg`,
     alt: 'Nong Bua Park running track',
     caption: "In Nong Bua Park the running track and cycling track aren't separated, but cyclists (blue) go clockwise on the outside, while runners (red) go anti-clockwise on the inside, so there's little risk of collision.",
   },
   {
-    src: `${imagePath}/running/nong-bua-park-after-dark.jpeg`,
+    src: `${imagePath}/running/nong-bua-park/running-track-nighttime.jpeg`,
     alt: 'Nong Bua Park running track after dark',
     caption: "After sundown, Nong Bua Park is especially beautiful, although it does get a little crowded, particularly with non-runners. It's much better to run here during the daytime.",
   },
+]
+
+<ImageGallery images={nongBuaParkImages} />
+
+### Nong Sim Public Park
+
+<ExternalLink url='https://maps.app.goo.gl/aHtARibkVdQhksbt9'>Nong Sim Public Park</ExternalLink> is the shortest and most inconspicuous of the three listed here, but is the best overall for running.
+
+It has a circumference of around 1.3km, so you've got a little under four laps in order to do a 5k. Unlike in Nong Prajak Park, there is no intersecting traffic or stairs here, and unlike in Nong Bua Park, there are no bottle-necks or sharp corners. It's flat and wide the whole way around so is suitable for sprinting.
+
+There are a several workout areas dotted around the park. Three of these have pull-up bars, so a good way to exercise I found was to come here and walk a couple of laps of the park, and do a set of pull-ups at every bar I passed.
+
+Even after sundown Nong Sim remains well illuminated and fairly quiet. I'm really not sure why more people don't come here. It's so inconspicous that it's not even named on Google Maps yet.
+
+A word of warning - it's right next to a large school. If you come here as the kids are coming out, then it gets quite crowded with loitering children. Other than that it's perfect.
+
+export const nongSimParkImages = [
   {
-    src: `${imagePath}/running/nong-sim-park.jpeg`,
+    src: `${imagePath}/running/nong-sim-park/running-track.jpeg`,
     alt: 'Nong Sim Park running track',
     caption: "Nong Sim Park is the best overall park for running. Like Nong Bua Park, runners go anti-clockwise on the inside (green) while cyclists go clockwise on the outside (blue), but it's so wide and so quiet, even after sundown, that the risk of a collision or running into a bottle-neck is minimal.",
   },
+  {
+    src: `${imagePath}/running/nong-sim-park/workout-area.jpeg`,
+    alt: 'Nong Sim Park workout area',
+    caption: 'There are several workout areas dotted around the park. Three of these have pull-up bars. So walking a couple of laps, doing a set of pull-ups at every bar you pass is a good way to get your exercise for the day.',
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset-trees.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: "Even if you don't plan on running, Nong Sim Park is a beautiful place to come and relax.",
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset-clouds.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: 'You get some great sunsets here too.',
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: "Even after dark it remains well illuminated and doesn't get too busy.",
+  },
 ]
 
-<ImageGallery images={runningImages} />
+<ImageGallery images={nongSimParkImages} />
 
 ## Where to get vegan food in Udon Thani
 
