@@ -1,16 +1,15 @@
 import Head from 'next/head'
-import Link from 'next/link'
+
 import clsx from 'clsx'
 
 import ActivityList from '@/components/ActivityList'
 import { Container } from '@/components/Container'
 
-import { platforms } from '@/components/CircledIcon'
+import CircledIcon, { platforms } from '@/components/CircledIcon'
 
 import { generateRssFeed } from '@/lib/generateRssFeed'
 
 import { getAllArticles } from '@/lib/getAllArticles'
-import CircledIcon from '@/components/CircledIcon'
 
 const title = 'Slowmadding - Your guide to being a digital nomad'
 const description =
@@ -86,9 +85,7 @@ const Home = ({ activities }) => {
             {Object.keys(platforms).map((platform) => (
               <CircledIcon
                 key={`${platforms[platform]} logo`}
-                as={Link}
                 platform={platforms[platform]}
-                size="small"
               />
             ))}
           </div>
