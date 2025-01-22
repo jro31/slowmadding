@@ -3,56 +3,29 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-12-31T17:50:00+07:00',
+  date: '2025-01-22T19:55:00+07:00',
   title: 'Udon Thani for Digital Nomads',
-  description: "Udon Thani is one of the four 'big' cities located in Thailand's Isaan region, a huge area of the country largely ignored by foreign tourists. Not being ruined by tourism, Udon retains the friendliness that Thailand is famous for. Don't dismiss it just because everyone else does.",
+  description: "Udon Thani is one of the four 'big' cities in Thailand's Isaan region, but it isn't really on many people's radars. What does it offer for a digital nomad?",
   keywords: ['Thailand'],
 }
 
-export const jamjureeHomeDetails = {
-  dates: {
-    checkIn: '2023-04-20',
-    checkOut: '2023-05-04',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/jamjuree-home/hotel/udon-thani-th.html',
-  },
-  roomType: 'Family Studio',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      'Room (including taxes and fees)': 10668.56,
-    },
-  },
-}
-
-export const phattharasayaHomeDetails = {
-  dates: {
-    checkIn: '2023-12-07',
-    checkOut: '2023-12-23',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
-  },
-  roomType: 'One-bedroom apartment',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Apartment: 12710.28,
-      '7% VAT': 889.72,
-      'booking.com pays': -1292.00,
-    },
-  },
-}
-
 export const imagePath = '/images/articles/udon-thani-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Thailand is one of the most visited countries in the world, and the north-eastern region of Isaan takes-up about one third of the country. For reasons I've never understood it gets largely ignored by tourists. If anywhere in Isaan ever is going to break-into the consciousness of tourists, my guess is that it will be Udon Thani.
+
+While tourism here is still minimal and largely unnoticeable compared to more touristy places in Thailand, by simply being the closest big city to Laos it does attract a few stragglers travelling north. There's also a large community of retired expats here, meaning an area of foreigner-aimed bars in the centre of the city has sprung-up to cater to their insatiable drinking habits. That alone makes it more foreigner-friendly than anywhere else in Isaan.
+
+Don't make the mistake of thinking this is even close to somewhere like Chiang Mai. There are maybe 50 bars on soi Samphan Thamit and the surrounding area that are very foreigner-friendly. Getting away from this area and the centre of the city, you can walk all day and only see only a handful of non-Thai faces.
+
+Udon is a very relaxed, very welcoming city. It's safe, it's cheap, it's pleasant to walk around, and it has some big lakes within easy reach of the city that are great for exercising. It's no surprise then that since my first visit in 2023, I've been here three times, most recently staying for a month, and will likely be back many more times in the coming years.
+
+For so long as my fears are not realised and Udon stays off the mass-tourism radar, it'll remain one of my favourite places in the world.
 
 export const cityImages = [
   {
@@ -82,308 +55,425 @@ export const cityImages = [
   },
 ]
 
-export const jamjureeHomeImages = [
+<ImageGallery images={cityImages} />
+
+## Who is Udon Thani suitable for?
+
+It's a city that has something for everyone, so long as you're aware it's not a touristy place.
+
+For the people who like to be active, there are three large lakes within the city that have running tracks around them. I've been told that there's some good hiking outside the city, although I've not explored this myself.
+
+There's some beautiful architecture here, for the people who can appreciate that, or for the ones who want to pull stupid faces and take a selfie to post on Instagram for no one to care about.
+
+And for the alcoholics there are quite a few bars.
+
+This isn't Pattaya. If you're expecting a city of bars and clubs, it's not that at all. The bar area is fairly modest, it's just bigger than anywhere else in Isaan. And this isn't Chiang Mai. If you want endless tours and menus written in English, then go to Chiang Mai.
+
+It is not a touristy city. It's still a local place, but there is a modest foreign presence so you won't be treated like an alien either. For me at least, it's in that nice middle-ground.
+
+## How affordable is Udon Thani?
+
+As with everywhere in Isaan, you'll notice that things are much cheaper than in other parts of Thailand. I'm yet to stay in accommodation here that's cost me more than 770 baht per night, and I've stayed in some really nice places (see below). You can easily get meals in local restaurants for well under 100 baht, and even in fancy restaurants you'll do well to spend 300 baht. A small bottle of local beer will be about 80 baht.
+
+## Is it easy to get by with English in Udon Thani?
+
+You will encounter many people in Udon that don't speak English, particularly once you leave the city centre, so you'll definitely find things easier if you speak a bit of Thai. For example, don't expect English menus if you go to local restaurants.
+
+On the other hand, I've been approached by more strangers in Udon wanting to strike up a conversation to practice their English, than I have anywhere else in Thailand.
+
+## Is Udon Thani safe?
+
+Yes, very. Soi dogs and uneven pavements are your biggest worry.
+
+## How is the Internet in Udon Thani?
+
+I've stayed in two separate accommodations in Udon, and in both the connection has been stable, and many times faster than I need to make video calls.
+
+## Buying tea in Udon Thani
+
+Thailand has some amazing local teas. There's a huge variety, and they only cost about 30 baht for a pack of 20 tea bags. Unfortunately, all of the major supermarkets chains in Thailand elect not to stock these teas, instead favouring imported brands that sell for closer to 200 baht for 20 tea bags.
+
+I drink a lot of tea. Probably an unhealthy amount. Green tea before 2pm, caffeine-free tea afterwards. So one of the first things I do anytime I go somewhere new is scour the city, usually on foot, searching for places that sell local tea.
+
+In Udon, the best place I found is <ExternalLink url='https://maps.app.goo.gl/HF4aQexySr2sbspA9'>ใจดีจัง</ExternalLink> (which translates to 'so kind'). It's directly opposite the Tang Ngeesoon Superstore, and is a little health food store stocking among other things, lots of Thai teas.
+
+It's a local shop. The staff don't speak any English and many of the packs of tea only have Thai writing on them (Google Translate is helpful). But they offer one aisle of nothing but tea, most of which are priced at 30 baht for 20 tea bags.
+
+If you are like me, you will be here a lot. Their selection is far greater and far cheaper than in any of the supermarkets in Udon.
+
+export const teaImages = [
   {
-    src: `${imagePath}/jamjuree-home/outside.jpeg`,
-    alt: 'Jamjuree Home Udon Thani',
-    caption: 'Jamjuree Home behind an umbrella.',
+    src: `${imagePath}/tea/so-kind-outside.jpeg`,
+    alt: 'ใจดีจัง from outside',
+    caption: 'ใจดีจัง is directly opposite the Tang Ngeesoon Superstore (which you can see in the reflection). Every time I came here, someone was sitting on the step selling something, so look for that.',
   },
   {
-    src: `${imagePath}/jamjuree-home/apartment.jpeg`,
-    alt: 'Jamjuree Home family studio',
-    caption: "The room is called a studio but that's being pretty modest. When there's a wall separating the bedroom from the rest of the apartment, isn't that a one-bedroom? There's a desk and chair out of shot at the bottom of the picture which make a good workstation.",
-  },
-  {
-    src: `${imagePath}/jamjuree-home/bed.jpeg`,
-    alt: 'Jamjuree Home family studio bed',
-    caption: "The bed is comfortable and comes with two elephants.",
-  },
-  {
-    src: `${imagePath}/jamjuree-home/kitchen.jpeg`,
-    alt: 'Jamjuree Home family studio kitchen',
-    caption: "Other than a microwave there are no cooking facilities in the kitchen, but it's still nice to have plates, bowls, cutlery, a large fridge, a place to wash up, and somewhere to sit and eat (as well as an alternative place to sit and work).",
-  },
-  {
-    src: `${imagePath}/jamjuree-home/bathroom.jpeg`,
-    alt: 'Jamjuree Home family studio bathroom',
-    caption: 'The shower is hot and powerful.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/balcony.jpeg`,
-    alt: 'Jamjuree Home family studio balcony',
-    caption: 'As well as the large balcony in the common area, you have a private balcony in your room.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/downstairs-common-area.jpeg`,
-    alt: 'Jamjuree Home downstairs common area',
-    caption: 'There is a huge common area that spans two floors.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/a-home-is-made-of-love-and-dreams.jpeg`,
-    alt: 'Jamjuree Home downstairs common area',
-    caption: '"A home is made of love and dreams." I don\'t really know what that means, but it sounds nice. In the downstairs common area.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/upstairs-common-area.jpeg`,
-    alt: 'Jamjuree Home upstairs common area',
-    caption: 'The upstairs common area includes even more seating and a large balcony.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/breakfast.jpeg`,
-    alt: 'Jamjuree Home breakfast',
-    caption: 'Breakfast is provided everyday between 8am and 10:30am. The owner understands what vegan means so made a me a salad, a potato and mushroom soup and (not pictured) a small fruit salad and a small vegan cake every morning.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/green-tea.jpeg`,
-    alt: 'Jamjuree Home green tea',
-    caption: 'Breakfast also included a very fancy green tea. Great way to start the day.',
-  },
-  {
-    src: `${imagePath}/jamjuree-home/fit-gym-udon.jpeg`,
-    alt: 'Fit Gym Udon',
-    caption: 'Fit Gym Udon is a short walk away, and is a really good place for a workout.',
+    src: `${imagePath}/tea/so-kind-tea.jpeg`,
+    alt: 'ใจดีจัง tea aisle',
+    caption: "They have one aisle of nothing but tea. The ones on the left are mostly translated into English, the ones on the right aren't. Expect to pay about 30 baht for a pack of 20 tea bags. They also sell some loose teas, although no loose leaf green tea sadly.",
   },
 ]
 
-export const phattharasayaHomeImages = [
+<ImageGallery images={teaImages} />
+
+## Being sociable in Udon Thani
+
+If you don't drink beer, I'm not really sure what there is to do in Udon as a lone foreigner. I'm unaware of any Meetup events or alike for meeting new people. But then I drink beer, so it doesn't really matter.
+
+The foreigner-friendly bars are all on or around <ExternalLink url='https://maps.app.goo.gl/W77qTZcFDDpDfvrE6'>soi Samphan Thamit</ExternalLink>, so head there and have a wander until you find what you're looking for. Many of them are hostess bars, but there are plenty of others where you can drink alone without being hassled. If you're looking for a sports bar & restaurant there's a good sports bar & restaurant called <ExternalLink url='https://maps.app.goo.gl/6pf2RbMf4hH3FxVA8'>The Sports Bar & Restaurant</ExternalLink>. They have several screens that can play different events, so even if you walk past and they aren't playing the Everton game it's worth wandering in and asking if they can put it on one of the screens.
+
+Many bars in this area have TVs and no customers, so whatever game it is that you want to see, you can usually find somewhere to put it on.
+
+If you go out in this area enough, one thing you might notice is even if you go to a different bar on a different night, you'll see the same people again and again. There seems to be a small number of expats here whose lives are to go to every single bar, every single day, so you can oddly get to know the same people by going to different bars each time.
+
+Most close at 1am, although some will stay open for as long as there are customers, so you'll be able to find somewhere to drink for as long as you can stay conscious.
+
+## Where to run in Udon Thani
+
+It seems to be an Isaan tendency that if there's a large body of water, they build a running track around it. And I love them for that. It creates some really great places to run. In Udon I've run at three such lakes, and each of them is a joy.
+
+### Nong Prajak Park
+
+The first one, nearby to my room during my first stay in Udon, is <ExternalLink url='https://maps.app.goo.gl/bSi7JBXBdiskQGp56'>Nong Prajak Park</ExternalLink>. It's a lake with a 3.1km circumference and a running track and separated cycling track all the way around. Regardless of if you're running, it's such a pleasant route that you should make sure to come here.
+
+If you come during the daytime you'll have the whole thing to yourself. After dark it has a few dark spots and can get a little crowded, with the only other downside being that as you run past the entrance for cars, not only do you have to contend with occasional traffic crossing your path, but there are also a couple of sets of stairs (four steps down, four steps up) that you have to negotiate.
+
+Both of these are a non-issue on slow runs, but kind of prohibit Nong Prajak Park from being suitable for sprints.
+
+export const nongPrajakParkImages = [
   {
-    src: `${imagePath}/phattharasaya-home/apartment.jpeg`,
-    alt: 'Phattharasaya Home apartment',
-    caption: "The apartment is pretty compact, but it has everything you need. I used to live in a room similar to this in Bangkok, and I learned to love how small it was. It was quick to clean, I couldn't buy stuff I didn't need because I had nowhere to put it, I loved it. The bar at the back of this photo is a good place to prepare and eat food, and can even be made into a workstation (although I preferred to work on the sofa).",
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/bedroom.jpeg`,
-    alt: 'Phattharasaya Home bedroom',
-    caption: "The bed is comfortable, out of shot to the right is a cupboard big enough to store plenty of clothes, and to the left is an air conditioner. What I really loved about this room is how much natural light comes in, especially in the morning. I was up on the fourth floor, so could close just the drapes and leave the curtains open without worry of people seeing in. The window faces east, so you get woken-up each morning with the sun on your face. It's glorious.",
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/kitchen.jpeg`,
-    alt: 'Phattharasaya Home kitchen',
-    caption: 'The kitchen is basic, but importantly it has a kettle, and slightly less importantly it has a couple of hobs and a saucepan. The fridge is a good size and comes with plenty (eleven) water bottles when you check-in, which is always welcome after a long journey. These get partially restocked whenever you have the room made-up. In the cupboard above the extractor fan is a wok, a collinder, some plates and bowls and a chopping board. On the shelf to the left of the extractor fan are some cooking utensils, cutlery, a knife and a couple of mugs.',
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/bathroom.jpeg`,
-    alt: 'Phattharasaya Home bathroom',
-    caption: "When I first saw the bathroom I thought it didn't even have a sink. Turns-out it's behind the door.",
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/view.jpeg`,
-    alt: 'Phattharasaya Home view',
-    caption: 'If you wake up early in the morning you get a great view off the balcony.',
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/downstairs.jpeg`,
-    alt: 'Phattharasaya Home downstairs',
-    caption: 'The entrance is the door on the left, which you access with a key card. There is no security or front desk staff (although there are a lot of CCTV cameras). The room furthest to the right is the laundry room, which has two washing machines and one dryer.',
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/insect.jpeg`,
-    alt: 'Phattharasaya Home insect',
-    caption: 'This dude guards the laundry room sometimes.',
-  },
-  {
-    src: `${imagePath}/phattharasaya-home/outside.jpeg`,
-    alt: 'Phattharasaya Home outside',
-    caption: "Phattharasaya Home is down the side road of a side road and is pretty new, so don't expect taxi drivers to know where it is. This is what you're looking for.",
+    src: `${imagePath}/running/nong-prajak-park/cycling-track.jpeg`,
+    alt: 'Nong Prajak Park cycling track',
+    caption: "At Nong Prajak Park the running track and cycling track are separated (this picture is actually of the cycling track), and if you come here at lunchtime you'll have the whole place to yourself.",
   },
 ]
 
-export const veganFoodImages = [
-  {
-    src: `${imagePath}/vegan-food/mango-sticky-rice.jpeg`,
-    alt: 'Mango sticky rice from UD Town',
-    caption: "Mango sticky rice is my go-to vegan food in Thailand. It's the one vegan meal (dessert) that you can reliably get all over the country, even in non-touristy, rural areas. In Udon Thani there are at least three vendors selling mango sticky rice from the late afternoon onwards in UD Town. Expect to pay 50 baht.",
-  },
-  {
-    src: `${imagePath}/vegan-food/villa-market-vegan-pesto.jpeg`,
-    alt: 'Villa Market vegan pesto',
-    caption: 'Buying imported western items in Thailand you expect to pay a premium. Villa Market in UD Town sells vegan pesto for 151 baht.',
-  },
-  {
-    src: `${imagePath}/vegan-food/pesto-pasta.jpeg`,
-    alt: 'Pesto pasta',
-    caption: "Wholewheat spaghetti is 100 baht per pack in Villa Market, while a can of chickepeas is 75 baht. Along with a jar of pesto, that'll suffice for two meals for 326 baht.",
-  },
-  {
-    src: `${imagePath}/vegan-food/villa-market-vegan-pasta-sauces.jpeg`,
-    alt: 'Villa Market vegan pasta sauces',
-    caption: "Villa Market also have some other vegan pasta sauces. There's a vegan cheese sauce that costs 161 baht per jar, while these tomato-based sauces with plant-based meat are \"just\" 106 baht each and good for two servings.",
-  },
-  {
-    src: `${imagePath}/vegan-food/villa-market-vegan-cheese.jpeg`,
-    alt: 'Villa Market vegan cheese',
-    caption: 'Villa Market stocks a small number of other intentionally vegan items, like packs of vegan cheese slices for 151 baht, as well as lesser-spotted vegan bread.',
-  },
-]
+<ImageGallery images={nongPrajakParkImages} />
 
-export const primanisImages = [
-  {
-    src: `${imagePath}/primanis/channa-masala.jpeg`,
-    alt: "Primani's channa masala",
-    caption: 'Anything with chickpeas makes me happy. The channa masala now costs 140 baht.',
-  },
-  {
-    src: `${imagePath}/primanis/yellow-dal.jpeg`,
-    alt: "Primani's yellow dal",
-    caption: 'I always appreciate when my curry comes in a bucket. This is the yellow dal.',
-  },
-  {
-    src: `${imagePath}/primanis/inside.jpeg`,
-    alt: "Inside Primani's",
-    caption: "It's a fairly pleasant place to sit, although can at times feel a little too quiet.",
-  },
-  {
-    src: `${imagePath}/primanis/aloo-jeera.jpeg`,
-    alt: "Primani's aloo jeera",
-    caption: 'Aloo jeera. It tastes better than it looks.',
-  },
-]
+### Nong Bua Public Park
 
-export const maeyaImages = [
-  {
-    src: `${imagePath}/maeya/vegan-panang-curry.jpeg`,
-    alt: 'Maeya vegan panang curry with rice',
-    caption: 'The updated menu at Maeya has a three-page vegan section. The vegan panang curry with rice now costs 89 baht.',
-  },
-  {
-    src: `${imagePath}/maeya/mixed-fruits-with-sweet-and-spicy-sauce.jpeg`,
-    alt: 'Maeya mixed fruits with sweet and spicy sauce',
-    caption: "This is mixed fruits with sweet and spicy sauce. It's an absolute trip to eat because the sauce really is spicy and you don't expect that as the after-taste of fruit. Definitely something to try once, maybe not twice. It costs 115 baht.",
-  },
-  {
-    src: `${imagePath}/maeya/vegan-fried-tofu-with-sweet-and-spicy-sauce.jpeg`,
-    alt: 'Maeya vegan fried tofu with sweet and spicy sauce',
-    caption: "The vegan fried tofu with sweet and spicy sauce is 120 baht. Using the same sauce as the fruit, it's one to take your time over.",
-  },
-  {
-    src: `${imagePath}/maeya/vegan-fried-tofu.jpeg`,
-    alt: 'Maeya vegan fried tofu',
-    caption: "Or if you like your tofu without an incessant burning in your mouth, maybe just stick to the vegan fried tofu for 90 baht.",
-  },
-  {
-    src: `${imagePath}/maeya/vegan-green-curry-soup.jpeg`,
-    alt: 'Maeya vegan green curry soup',
-    caption: 'A vegan green curry with rice is 89 baht.',
-  },
-  {
-    src: `${imagePath}/maeya/vegan-stir-fried-morning-glory.jpeg`,
-    alt: 'Maeya vegan stir fried morning glory',
-    caption: 'And just because nothing can ever be easy, they put chillies on top of their stir-fried morning glory. I never leave food on my plate, but they were not a good time. 95 baht.',
-  }
-]
+<ExternalLink url='https://maps.app.goo.gl/3P3RPVyTWnfKQZZ46'>Nong Bua Public Park</ExternalLink> has a circumference of 1.8km, so it's a little under three laps to run a 5k. Like Nong Prajak Park, it's an incredibly pleasant place to come, and I'd recommend it regardless of if you're running. As with Nong Prajak, it's great for slow and steady runs. The reason it's not great for sprints is it has a couple of bottle-necks, particularly around the Thai-Chinese Cultural Center on the southern part of the route.
 
-export const zingZingJayImages = [
-  {
-    src: `${imagePath}/zing-zing-jay/two-choices-from-the-buffet.jpeg`,
-    alt: 'Zing Zing Jay (ชิ้งชิงเจ) buffet',
-    caption: 'There are a couple of options when coming here. Either point and hope from the buffet, or order from the a la carte menu. These are a couple of point and hope choices. One is a green curry, and the other some kind of rice ball that is really, really good. Altogether they cost 85 baht.',
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/menu.jpeg`,
-    alt: 'Zing Zing Jay (ชิ้งชิงเจ) menu',
-    caption: "The woman who runs this restaurant and the man (presumably her husband) who helps out don't speak any English, but the a la carte menu is translated, so if you don't speak Thai, pointing at the menu is sufficient.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/pad-thai.jpeg`,
-    alt: 'Zing Zing Jay (ชิ้งชิงเจ) pad Thai',
-    caption: 'Pad Thai from the a la carte menu. The taste was pretty good. The presentation was less so. It costs 50 baht.',
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/shop.jpeg`,
-    alt: 'Zing Zing Jay (ชิ้งชิงเจ) shop',
-    caption: "They also have a little shop selling vegan items to cook with. The black bowls on the left of the top shelf are instant 'just add hot water' noodles. I didn't try them, but if you are staying somewhere without a kitchen but want to be able to eat at home, these would be an option. They cost 80 baht each.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/three-choices-from-the-buffet.jpeg`,
-    alt: 'Zing Zing Jay (ชิ้งชิงเจ) buffet',
-    caption: "Three point and hope choices. Two were good (the closest two), the one behind was not, but if something tastes that bad, it has to be good for you right? It was made of green leaves, so I'm sure it was. All of this came to 120 baht.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/inside.jpeg`,
-    alt: 'Inside Zing Zing Jay (ชิ้งชิงเจ)',
-    caption: "Inside. It's a small, family-run restaurant.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/outside.jpeg`,
-    alt: 'Outside Zing Zing Jay (ชิ้งชิงเจ)',
-    caption: "From outside look for the yellow 'jay' (เจ) sign.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/srisu-fried-banana.jpeg`,
-    alt: 'Srisu Fried Banana',
-    caption: "Completely unrelated to Zing Zing Jay, but often located just outside (about a 30 second walk south) is this 'jay' dessert vendor that Google Translate tells me is called 'Srisu Fried Banana.' If you come to Zing Zing Jay and she happens to be here, the desserts she sells are really good.",
-  },
-  {
-    src: `${imagePath}/zing-zing-jay/srisu-fried-banana-desserts.jpeg`,
-    alt: 'Srisu Fried Banana desserts',
-    caption: 'The desserts from Srisu Fried Banana come in a bag, but I took them back to my room and put them on a plate. The orange ones are 2 baht each. No idea what they are, but they taste nice. The big one is filled with banana and some other stuff, and costs 10 baht. The brown ones were 15 baht for seven. Some were filled with banana, others with something else (I think sweet potato). This whole plate cost 35 baht.',
-  },
-]
+There you're running on a slightly narrow walkway, often with groups of school kids coming in the opposite direction. And while they're very mindful to step aside when they see you, they aren't always paying attention. Not great if you're sprinting into them at full speed.
 
-export const runningImages = [
+You might think that going around the outside of a lake, the running track wouldn't have any sharp corners, but as it snakes around the trees, that's not entirely true. In the daytime the park is pretty quiet but somewhat inexplicably, in the evenings when it's much busier with people running, there are some folks who rent-out roller skates, meaning you have kids falling all over the place.
+
+export const nongBuaParkImages = [
   {
-    src: `${imagePath}/running/nong-prajak-park-strava.jpeg`,
-    alt: 'Nong Prajak Park Strava map',
-    caption: 'The route at Nong Prajak Park. Two laps of the park comes to 6.2km.',
-    url: 'https://www.strava.com/activities/8928631847',
-  },
-  {
-    src: `${imagePath}/running/nong-bua-park-strava.jpeg`,
-    alt: 'Nong Bua Park Strava map',
-    caption: 'In Nong Bua Park, one lap is 1.8km, so I had to go a little over five laps to reach 10k.',
-    url: 'https://www.strava.com/activities/10356056203',
-  },
-  {
-    src: `${imagePath}/running/nong-sim-park-strava.jpeg`,
-    alt: 'Nong Sim Park Strava map',
-    caption: 'Nong Sim is the smallest of the three parks. To do 5k is a little under four laps.',
-    url: 'https://www.strava.com/activities/10372085769',
-  },
-  {
-    src: `${imagePath}/running/nong-prajak-park.jpeg`,
-    alt: 'Nong Prajak Park cycle path',
-    caption: "There are running and cycling tracks that go all the way around each of these parks. This is Nong Prajak Park where the running track and cycling tracks are separated (the picture is actually of the cycle track), and if you come here at lunchtime, you'll have the whole thing to yourself.",
-  },
-  {
-    src: `${imagePath}/running/nong-bua-park.jpeg`,
+    src: `${imagePath}/running/nong-bua-park/running-track-daytime.jpeg`,
     alt: 'Nong Bua Park running track',
     caption: "In Nong Bua Park the running track and cycling track aren't separated, but cyclists (blue) go clockwise on the outside, while runners (red) go anti-clockwise on the inside, so there's little risk of collision.",
   },
   {
-    src: `${imagePath}/running/nong-bua-park-after-dark.jpeg`,
+    src: `${imagePath}/running/nong-bua-park/running-track-nighttime.jpeg`,
     alt: 'Nong Bua Park running track after dark',
     caption: "After sundown, Nong Bua Park is especially beautiful, although it does get a little crowded, particularly with non-runners. It's much better to run here during the daytime.",
   },
+]
+
+<ImageGallery images={nongBuaParkImages} />
+
+### Nong Sim Public Park
+
+<ExternalLink url='https://maps.app.goo.gl/aHtARibkVdQhksbt9'>Nong Sim Public Park</ExternalLink> is the shortest and most inconspicuous of the three listed here, but is the best overall for running.
+
+It has a circumference of around 1.3km, so you've got a little under four laps to do a 5k. Unlike in Nong Prajak Park, there is no intersecting traffic or stairs here, and unlike in Nong Bua Park, there are no bottle-necks or sharp corners. It's flat and wide the whole way around so is suitable for fast runs.
+
+There are a several workout areas dotted around the park. Three of these have pull-up bars, so a good way I found to exercise was to come here and walk a couple of laps of the park, and do a set of pull-ups at every bar I passed.
+
+Even after sundown Nong Sim remains well illuminated and fairly quiet. I'm really not sure why more people don't come here. It's so inconspicuous that it's not even named on Google Maps yet.
+
+A word of warning - it's right next to a large school. If you come here as the kids are coming out, then it gets quite crowded with loitering children. Other than that it's perfect.
+
+export const nongSimParkImages = [
   {
-    src: `${imagePath}/running/nong-sim-park.jpeg`,
+    src: `${imagePath}/running/nong-sim-park/running-track.jpeg`,
     alt: 'Nong Sim Park running track',
     caption: "Nong Sim Park is the best overall park for running. Like Nong Bua Park, runners go anti-clockwise on the inside (green) while cyclists go clockwise on the outside (blue), but it's so wide and so quiet, even after sundown, that the risk of a collision or running into a bottle-neck is minimal.",
   },
+  {
+    src: `${imagePath}/running/nong-sim-park/workout-area.jpeg`,
+    alt: 'Nong Sim Park workout area',
+    caption: 'There are several workout areas dotted around the park. Three of these have pull-up bars, so walking a couple of laps, doing a set of pull-ups at every bar you pass is a good way to get your exercise for the day.',
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset-trees.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: "Even if you don't plan on running, Nong Sim Park is a beautiful place to come and relax.",
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset-clouds.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: 'You get some great sunsets here too.',
+  },
+  {
+    src: `${imagePath}/running/nong-sim-park/sunset.jpeg`,
+    alt: 'Nong Sim Park sunset',
+    caption: "Even after dark it remains well illuminated and doesn't get too busy.",
+  },
 ]
 
-export default (props) => <ArticleLayout meta={meta} {...props} />
+<ImageGallery images={nongSimParkImages} />
 
-Udon Thani is Thailand's best kept secret, and counter-productive to writing this article, I hope it stays that way.
+## Where to get vegan food in Udon Thani
 
-It's a really, really friendly town, with just enough alien presence that there's a quite extensive area of foreigner-aimed bars in the centre of town. Great to head to if you want to get a drink and have someone to talk to. Leave this immediate area and it becomes very local with not much English spoken.
+As you'd expect in a city that doesn't attract many tourists, options for vegan food in Udon Thani are minimal, and you're limited to Thai food and a couple of Indian restaurants.
 
-It's one of those rare places that's found just enough tourism to be welcoming to an outsider, but not so much that it's ruined what made it nice in the first place.
+A short walk from Fountain Roundabout, as well as Maeya (below) you'll find a cluster of three point-and-hope 'jay' buffet restaurants all within close proximity to one another. In each I found the food to be really good, and the staff really, really friendly, so I recommend all of them.
 
-I enjoyed my first stay so much that in the first iteration of this article I proclaimed Udon _"my new favourite place in the world."_ Come my second visit I was staying in very different accommodation in a different part of the city, giving me a very different but equally rewarding experience, doing nothing to deter me from my original proclamation. It's still my favourite place in the world. It's cheap, even by Thai standards, the people are really friendly and welcoming, there are big parks that are great for running, there's a fun area of bars for when you need to let loose and the Internet's fast and reliable. What more could you want?
+The first of these is <ExternalLink url='https://maps.app.goo.gl/ptust5rPzWfBS7QR8'>Phaisathathan Vegeterian Restaurant</ExternalLink>, which is a lovely little family place that the kids help to run. Beware that they close at 2pm. The next is <ExternalLink url='https://maps.app.goo.gl/nBMzamfevngyqw6N6'>Guan-Im Healthy Vegetarian Kitchen</ExternalLink> which you'll find down a side road near to Maeya. They also close quite early, at 2:30pm. And lastly is <ExternalLink url='https://maps.app.goo.gl/y8Siek7CUw4Z83zq5'>Mit Jay Shop</ExternalLink>, more easily located on a main road and they stay open until 5pm, so are the best best for a cheap late lunch.
 
-Well perhaps better vegan food and more organised social events, but you know when they happen? When there are too many tourists, and I'd rather it stay as it is and I'll go out by myself and eat Thai food everyday.
+A small number of other 'jay' buffet restaurants can be found in the city, such as <ExternalLink url='https://maps.app.goo.gl/hAB38HAMqt4fUidZ9'>Zing Zing Jay</ExternalLink>. It's another lovely little place run by this old couple. Completely unrelated, but often located right outside is a vegan dessert vendor who sells fried banana among other treats.
 
-<ImageGallery images={cityImages} />
+There are a couple of Indian restaurants in Udon. Primani's (below) is my preference of the two, but I also found <ExternalLink url='https://maps.app.goo.gl/z968HMWTkjc5UHxq6'>Kera</ExternalLink> to be really nice, just a bit too expensive. A plate of plain rice at Kera is 79 baht, which they justify as it being rice from India, but I think I'd rather just have Thai rice that's cheap. If you can overlook that, they have many vegan choices on the menu (more than Primani's), and the staff understand what vegan means. The restaurant is a bit out of the way, but they're also on Grab. Search for 'Kera Indian cafe & restaurant'.
+
+The only thing I've found in Udon even slightly resembling vegan western food, is there's a man with a bicycle, who sets-up next to the <ExternalLink url='https://maps.app.goo.gl/PV2RmAVt4XGQaTkX9'>entrance to the Makro car park</ExternalLink> and sells very basic vegan burgers.
+
+From the town centre, getting to Makro is quite a long and not very pleasant walk down the side of a main road. And seeing as this is just a man on a bike, that's a long way to go for someone who might not be there. But hey, if he is he's the only person I've found selling vegan burgers in Udon.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/mit-jay-shop.jpeg`,
+    alt: 'Mit Jay Shop buffet plate',
+    caption: "You're mostly limited to Thai food when it comes to getting vegan food in Udon. Luckily the restaurants are pleasant places to come and the food they serve is good. This is a serving from the buffet of Mit Jay Shop. Including the bottle of water it cost 80 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-healthy-vegetarian-kitchen.jpeg`,
+    alt: 'Guan-Im Healthy Vegetarian Kitchen buffet plate',
+    caption: "Very nearby you'll find Guan-Im Healthy Vegetarian Kitchen, where I paid 70 baht for this.",
+  },
+  {
+    src: `${imagePath}/vegan-food/phaisach-tana-jay-vegeterian.jpeg`,
+    alt: 'Phaisach Tana Jay Vegeterian buffet plate',
+    caption: 'The cheapest of this little cluster of vegan restaurants is Phaisach Tana Jay Vegeterian. This meal cost me 55 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/phaisach-tana-jay-vegeterian-inside.jpeg`,
+    alt: 'Phaisach Tana Jay Vegeterian inside',
+    caption: "Phaisach Tana Jay Vegeterian is a lovely little family-run restaurant, where the kids help out. Don't be surprised if the person serving you is about 8 years old.",
+  },
+  {
+    src: `${imagePath}/vegan-food/zing-zing-jay.jpeg`,
+    alt: 'Zing Zing Jay buffet plate',
+    caption: 'Another option a little further north is Zing Zing Jay, run by an elderly Thai couple. As well as the buffet they also have a bilingual a la carte menu. This is rice with two choices from the buffet. One is a green curry, and the other some kind of rice ball that is really, really good. Altogether it cost 85 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/srisu-fried-banana.jpeg`,
+    alt: 'Srisu Fried Banana',
+    caption: "Unrelated to Zing Zing Jay but often located just outside is a 'jay' dessert vendor called 'Srisu Fried Banana.'",
+  },
+  {
+    src: `${imagePath}/vegan-food/srisu-fried-banana-desserts.jpeg`,
+    alt: 'Srisu Fried Banana desserts',
+    caption: "The desserts from Srisu Fried Banana come in a bag. This is after I took them back to my room and put them on a plate. The orange ones are 2 baht each. No idea what they are, but they taste nice. The big one is filled with banana and some other stuff, and costs 10 baht. The brown ones were 15 baht for seven. Some were filled with banana, others with something else (I think sweet potato). This whole plate cost 35 baht, and I didn't even get diabetes.",
+  },
+  {
+    src: `${imagePath}/vegan-food/mango-sticky-rice.jpeg`,
+    alt: 'Mango sticky rice from UD Town',
+    caption: "The one vegan option you can reliably buy all over Thailand, is mango with sticky rice. It might not be healthy, but at least it exists. There are a couple of vendors that sell it in UD Town. Expect to pay 50-60 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/kera-plain-naan.jpeg`,
+    alt: 'Kera Indian Cafe and Restaurant plain naan',
+    caption: 'If you get fed-up of Thai food, then your options are somewhat limited. Kera is an Indian restuarant to the north of the city centre. The food is very good and there are plenty of vegan options on the menu, but expect to pay north of 400 baht for a curry with rice, bread and an appetizer. This is the plain naan for 45 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/indy-burger-stand.jpeg`,
+    alt: 'Indy Burger',
+    caption: "The only other option for non-Thai vegan food is if you're willing to chance walking all the way down to Makro, you might find the Indy Burger bicycle, which sells vegan burgers at the entrance to the car park.",
+  },
+  {
+    src: `${imagePath}/vegan-food/indy-burger-burger.jpeg`,
+    alt: 'A burger from Indy Burger',
+    caption: "They're basic, but I haven't found any other vegan burgers in Isaan yet. This is the spicy burger. They also sell a non-spicy burger. Both are 49 baht each.",
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
+
+### Maeya
+
+<MapLink name='79-81 Ratchapatsadu Rd' url='https://maps.app.goo.gl/XFDdGaWj2DkHHtFW6' />
+
+The most reliable place to get vegan food in Udon Thani is Maeya. It's a pretty posh looking place where the waiters all wear white shirts and black trousers. Don't let that put you off though. Udon Thani is so cheap that in even the posh Thai restaurants you'll do well to spend 300 baht.
+
+The reason I like it, despite being many times more expensive than the nearby 'jay' buffet restaurants, is it's just easy. And sometimes you just want easy.
+
+By sometimes, I mean when you're hungover. And by easy, I mean they have a bilingual menu with a three page vegan section, that you can point to if you don't have the energy to speak Thai, and unlike in the buffet restaurants, you actually know what it is you're getting.
+
+It's also a pleasant place to sit. I'd often come here with my headphones and listen to a podcast while having lunch. And they're reliably open seven days per week from 10am to 10pm.
+
+A couple of warnings. This is unapologetically a Thai restaurant. What I mean by that, is in touristy parts of Thailand they'll temper the spice levels for foreign palates. They don't do that here. Items on the menu are marked with zero, one or two chillies. Even some marked with zero chillies come with more chillies than I can comfortably eat. Order food marked as spicy at your peril. And don't order anything that comes with gravy. It's disgusting. What they call gravy in Thailand is not what you think of as gravy. Here it's some gloopy shite that is horrible to eat.
+
+Maeya are on Grab. Search for แม่หยา - ศรีสุข, but be warned that the entire menu is in Thai. So good luck with that.
+
+export const maeyaImages = [
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-stir-fried-morning-glory.jpeg`,
+    alt: 'Maeya vegan stir fried morning glory',
+    caption: "You want to know how many chillies this is marked with on the menu? Zero. This is what they think has a spice level of zero. I almost died. It's the vegan stir fried morning glory for 95 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/mixed-fruits-with-sweet-and-spicy-sauce.jpeg`,
+    alt: 'Maeya mixed fruits with sweet and spicy sauce',
+    caption: "This on the other hand is marked with one chilli. It's the mixed fruits with sweet and spicy sauce, and it's an absolute trip to eat because the sauce really is spicy and you don't expect that as the after-taste of fruit. Definitely something to try once. Maybe not twice. It costs 115 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-fried-tofu-with-sweet-and-spicy-sauce.jpeg`,
+    alt: 'Maeya vegan fried tofu with sweet and spicy sauce',
+    caption: "The vegan fried tofu with sweet and spicy sauce is 120 baht. Presumably using the same sauce as on the fruit, it's also one to take your time over.",
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-fried-tofu.jpeg`,
+    alt: 'Maeya vegan fried tofu',
+    caption: 'Or if you like your tofu without an incessant burning in your mouth, maybe just stick to the vegan fried tofu for 90 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-panang-curry.jpeg`,
+    alt: 'Maeya vegan panang curry with rice',
+    caption: 'Despite being the kind of restaurant that has funny-shaped plates and where the waiters wear shirts and trousers, you can still find some great value on the menu. A vegan panang curry with rice is only 89 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-green-curry-soup.jpeg`,
+    alt: 'Maeya vegan green curry soup',
+    caption: 'Or the vegan green curry with rice is the same price.',
+  },
+
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-stir-fried-mixed-vegetables.jpeg`,
+    alt: 'Maeya vegan stir fried mixed vegetables',
+    caption: "The safest bet is probably the vegan stir fried mixed vegetables. They actually don't put any chillies on this. And they don't hide any in the middle like in some other dishes. It costs 95 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/maeya/vegan-taro-rice.jpeg`,
+    alt: 'Maeya vegan taro rice in clay rice pot',
+    caption: "This is on the menu as the 'vegan taro fried rice in clay pot'. It only costs 79 baht so I'm not going to complain too much, but that doesn't look like a clay pot to me.",
+  },
+]
+
+<ImageGallery images={maeyaImages} />
+
+### Primani's
+
+<MapLink name='299/38 Soi Fairach 1' url='https://maps.app.goo.gl/RWzgP97QUbYzx5nC6' />
+
+Your best bet for getting vegan non-Thai food is Primani's Indian Restaurant. When I first came here it was a purely Indian restaurant with a dedicated vegetarian section in its menu. They've since rewritten the menu to include some classic Indian dishes like pizza, and relegated all vegetarian curries to the 'sides' section.
+
+There are fewer vegan dishes than in Kera, but it's priced much more reasonably. A channa masala will cost you 140 baht, rice starts at 30 baht and the cheapest vegan bread, the chapati, is just 20 baht, so you can get a curry, rice and bread for under 200 baht. A small price to pay to eat something that's not Thai food.
+
+Beware that some curries that you might expect to be vegan, aren't always unless you specifically request it. The owner speaks fluent English and understands what vegan means, and explained to me that the gravy they use in the channa masala isn't vegan unless requested.
+
+They're on Grab, but the menu is entirely in Thai. They're also on FoodPanda, and the menu is in English for some reason, so order with FoodPanda. Add in the comments that you want any amiguous items veganised, and they have the fastest delivery of any restaurant I've ever ordered from. I've twice had it take 17 minutes from the second I pressed 'Order', to the motorycle pulling-up at my room a mile away with my food.
+
+export const primanisImages = [
+  {
+    src: `${imagePath}/vegan-food/primanis/channa-masala.jpeg`,
+    alt: "Primani's channa masala",
+    caption: 'Anything with chickpeas makes me happy. The channa masala is 140 baht, but beware of those chillies.',
+  },
+  {
+    src: `${imagePath}/vegan-food/primanis/masala-papadum.jpeg`,
+    alt: "Primani's masala papadum",
+    caption: "There aren't many vegan appetisers on the menu, but the masala papadum is like a poor man's pizza. It's 100 baht. So maybe it's a rich man's pizza.",
+  },
+  {
+    src: `${imagePath}/vegan-food/primanis/papadum.jpeg`,
+    alt: "Primani's papadum",
+    caption: 'I think I preferred just the plain papadum. You get twice as many of them any they only cost 50 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/primanis/yellow-dal.jpeg`,
+    alt: "Primani's yellow dal",
+    caption: 'Nothing says class like getting your food in a bucket. This is the yellow dal.',
+  },
+  {
+    src: `${imagePath}/vegan-food/primanis/aloo-jeera.jpeg`,
+    alt: "Primani's aloo jeera",
+    caption: 'The aloo jeera tastes better than it looks. Which is lucky.',
+  },
+  {
+    src: `${imagePath}/vegan-food/primanis/inside.jpeg`,
+    alt: "Inside Primani's",
+    caption: "Inside Primani's.",
+  },
+]
+
+<ImageGallery images={primanisImages} />
+
+### Grocery shopping
+
+There are several large supermarkets in Udon. None sell much in the way of intentionally vegan items.
+
+Your best choice is <ExternalLink url='https://maps.app.goo.gl/YpcPijeUggJAudGh7'>Villa Market</ExternalLink> at the south end of UD Town. They sell mostly imported items for a much higher price than you'd pay for them elsewhere in the world, but you can get a few good things. For example, they sell wholewheat pasta and vegan pesto for roughly double the price you'd pay in the UK, but hey, beggars can't be choosers. They're also the only place I've been in Udon that sells hummus, but a small pot will set you back 200 baht; about four-times the price in the UK.
+
+Also in UD Town is a branch of <ExternalLink url='https://maps.app.goo.gl/xVzMoeQ9aJWjPjY68'>Lotus's</ExternalLink>. As with all branches of Lotus's, it's pretty uninspiring from a vegan perspective, but is good for fruit at least. There's also a branch of <ExternalLink url='https://maps.app.goo.gl/JgR7xcwb5r4QCzst9'>Tops</ExternalLink> in the basement of Central, but the less said about that the better.
+
+If you venture further outside the city centre, you'll find some cheaper, but equally vegan-unfriendly supermarkets, such as <ExternalLink url='https://maps.app.goo.gl/t8mKLGotb4ZBkh8r8'>Tang Ngeesoon Superstore</ExternalLink> and <ExternalLink url='https://maps.app.goo.gl/m9gALmKx72udY7Yw5'>Ung Seng Heng</ExternalLink> (my translation). From a vegan perspective, I found nothing of interest in either.
+
+In the market stalls of UD Town or outside the <ExternalLink url='https://maps.app.goo.gl/TsA9DaAmEEhhMrQ16'>7-11</ExternalLink> at the north end of soi Samphan Thamit you can reliably find fruit vendors every day.
+
+export const groceriesImages = [
+  {
+    src: `${imagePath}/vegan-food/groceries/villa-market-vegan-pesto.jpeg`,
+    alt: 'Villa Market vegan pesto',
+    caption: 'Grocery shopping in Udon is pretty uninispiring from a vegan perspective. Your best bet is Villa Market in UD Town, which stocks primarily imported items. Just be ready to pay double what you would in your home country, like a jar of vegan pesto that costs 151 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/villa-market-wholewheat-pasta.jpeg`,
+    alt: 'Villa Market wholewheat pasta',
+    caption: 'They also sell wholewheat pasta for 99 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/pesto-pasta.jpeg`,
+    alt: 'Vegan pesto pasta',
+    caption: "Mix them together with some chickpeas and you've got... food.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/villa-market-nuts-and-seeds.jpeg`,
+    alt: 'Villa Market Prenature nuts and seeds',
+    caption: "Villa Market is also my go-to in Udon for getting nuts and seeds, and contrary to most other items in the store, they're actually very fairly-priced.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/villa-market-hummus.jpeg`,
+    alt: 'Villa Market hummus',
+    caption: "Unfortunately the hummus isn't. The cheapest pot of hummus they sell is 187 baht for 200 grams. The rest of them will cost you over 200 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/tang-ngeesoon-superstore.jpeg`,
+    alt: 'Tang Ngeesoon Superstore from outside',
+    caption: "Venturing out of the city centre you'll find some much better value supermarkets, such as Tang Ngeesoon Superstore. You still won't find anything that you want to buy, but at least you won't find anything you want to buy at a reasonable price.",
+  },
+]
+
+<ImageGallery images={groceriesImages} />
 
 ## Where I stayed
 
 ### Jamjuree Home
 
-<MapLink name='10/9 Benchang Rd' url='https://goo.gl/maps/HZyt78p1y2EUtek16' />
+<MapLink name='10/9 Benchang Rd' url='https://maps.app.goo.gl/aSiEZwAtc1J3QeXMA' />
+
+export const jamjureeHomeDetails = {
+  dates: {
+    checkIn: '2023-04-20',
+    checkOut: '2023-05-04',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/jamjuree-home/hotel/udon-thani-th.html',
+  },
+  roomType: 'Family Studio',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 9063.17,
+      'Taxes & fees': 1605.39,
+    },
+  },
+}
 
 <AccommodationTable details={jamjureeHomeDetails} />
-
-The most important thing when you go somewhere is booking the right accommodation. If you're like me and you work from your room then you're going to be spending a lot of time there, so you need to get it right, and boy did I.
 
 Jamjuree Home is more a homestay than a hotel, although the guests have a segregated area which consists of four rooms and a large, two-floor common area. Udon Thani is a non-touristy city and I stayed here in the low season of a post-covid world. That meant for much of my stay I was the only guest. I arrived here having booked a standard bedroom, but the hotel owner, who's one of the sweetest people I've ever met, offered to upgrade me to the family studio that you see in the details above at no extra cost.
 
@@ -405,7 +495,70 @@ The common area is huge, especially considering I was the only guest most of the
 
 All of this would make it an amazing place to stay, but perhaps the best thing about Jamjuree Home is the location. You're about a 30-minute walk from the city centre, which puts you in a local, quiet area, but it's a comfortable walk when you do go into town. You have a couple of local 'jay' (vegan) restaurants nearby, as well as a 7-11 and some other convenience stores, and I went to the nearby <ExternalLink url='https://goo.gl/maps/H1NSMQvBwVb25u6NA'>Fit Gym</ExternalLink> three times during my stay, which is a huge, well-equipped but not very well attended gym that costs just 160 baht for a day pass. The crown jewel though, is Nong Prajak Park, just a short walk from Jamjuree Home.
 
-It has a cycle path and separated running track all the way around its 3.1km circumference. It's the perfect place to come for a run or a walk when you need exercise, or it's nice to just come and sit by the water. Having it so nearby is the cherry on top of this already perfect accommodation.
+It has a cycle path and separated running track all the way around its 3.1km circumference. It's the perfect place to go for a run or a walk when you need exercise, or it's nice to just go and sit by the water. Having it so nearby is the cherry on top of this already perfect accommodation.
+
+export const jamjureeHomeImages = [
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/outside.jpeg`,
+    alt: 'Jamjuree Home Udon Thani',
+    caption: 'Jamjuree Home behind an umbrella.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/apartment.jpeg`,
+    alt: 'Jamjuree Home family studio',
+    caption: "The room is called a studio but that's being pretty modest. When there's a wall separating the bedroom from the rest of the apartment, isn't that a one-bedroom? There's a desk and chair out of shot at the bottom of the picture which make a good workstation.",
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/bed.jpeg`,
+    alt: 'Jamjuree Home family studio bed',
+    caption: "The bed is comfortable and comes with two elephants.",
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/kitchen.jpeg`,
+    alt: 'Jamjuree Home family studio kitchen',
+    caption: "Other than a microwave there are no cooking facilities in the kitchen, but it's still nice to have plates, bowls, cutlery, a large fridge, a place to wash up, and somewhere to sit and eat (as well as an alternative place to sit and work).",
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/bathroom.jpeg`,
+    alt: 'Jamjuree Home family studio bathroom',
+    caption: 'The shower is hot and powerful.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/balcony.jpeg`,
+    alt: 'Jamjuree Home family studio balcony',
+    caption: 'As well as the large balcony in the common area, you have a private balcony in your room.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/downstairs-common-area.jpeg`,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: 'The huge common area spans two floors.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/a-home-is-made-of-love-and-dreams.jpeg`,
+    alt: 'Jamjuree Home downstairs common area',
+    caption: '"A home is made of love and dreams." I don\'t know what that means but it sounds nice. In the downstairs common area.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/upstairs-common-area.jpeg`,
+    alt: 'Jamjuree Home upstairs common area',
+    caption: 'The upstairs common area includes even more seating and a large balcony.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/breakfast.jpeg`,
+    alt: 'Jamjuree Home breakfast',
+    caption: 'Breakfast is provided every day between 8am and 10:30am. The owner understands what vegan means so made a me a salad, a potato and mushroom soup and (not pictured) a small fruit salad and a small vegan cake every morning.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/green-tea.jpeg`,
+    alt: 'Jamjuree Home green tea',
+    caption: 'Breakfast also included a very fancy green tea. Great way to start the day.',
+  },
+  {
+    src: `${imagePath}/accommodation/jamjuree-home/fit-gym-udon.jpeg`,
+    alt: 'Fit Gym Udon',
+    caption: 'Fit Gym Udon is a short walk away, and is a really good place for a workout.',
+  },
+]
 
 <ImageGallery images={jamjureeHomeImages} />
 
@@ -413,154 +566,165 @@ It has a cycle path and separated running track all the way around its 3.1km cir
 
 <MapLink name='198/89 Adunlayadet 4 Alley' url='https://maps.app.goo.gl/zk9FgueEEkV7GJK9A' />
 
-<AccommodationTable details={phattharasayaHomeDetails} />
+export const phattharasayaHomeFirstStayDetails = {
+  dates: {
+    checkIn: '2023-12-07',
+    checkOut: '2023-12-23',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
+  },
+  roomType: 'One-bedroom apartment',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Apartment: 12710.28,
+      '7% VAT': 889.72,
+      'booking.com pays': -1292.00,
+    },
+  },
+}
 
-I loved my first stay in Udon so much, in large part because I loved my accommodation. So it was with dismay that Jamjuree Home, the accommodation from my first stay, was fully-booked when I made plans to return.
+<AccommodationTable details={phattharasayaHomeFirstStayDetails} />
 
-I struggled so much to find an adequate replacement that I considered changing my itinerary to skip Udon Thani altogether, although eventually I opted to take a chance on the brand new Phattharasaya Home, and I'm glad that I did. It was a blessing in disguise as it gave me a very different, but equally satisfying experience in Udon.
+export const phattharasayaHomeSecondStayDetails = {
+  dates: {
+    checkIn: '2024-12-11',
+    checkOut: '2025-01-08',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
+  },
+  roomType: 'One-bedroom apartment',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Apartment: 16676.22,
+      '7% VAT': 1167.34,
+    },
+  },
+}
 
-The service is far less personal. There are no ever-present staff at the apartment, so you have to message the manager to let her know of your arrival time so she can meet you there. That anonymity's not always a bad thing. I'm a very private person so hate the feeling of people knowing my business, like when and how often I go out. Here there are no worries.
+<AccommodationTable details={phattharasayaHomeSecondStayDetails} />
 
-Only twice during my sixteen-night stay did anyone enter my room, when the maid came around to clean, and on both occasions I was given 24 hours notice. That's my kind of service.
+I'd loved my first stay in Udon so much in part because I'd loved staying at Jamjuree Home, so it was with dismay that I discovered it to be fully-booked when I made plans to return.
 
-I was either the first, or one of the first people to stay in this particular apartment (there are six apartments here altogether). I know this because loads of the stuff still had plastic packaging on it, including the TV which I had the privilege of unwrapping. While there is some comfort in knowing everything is brand new, I tend to prefer staying somewhere that's a little more worn-in, and that proved true as there had definitely been some shoddy workmaship putting this room together.
+I struggled so much to find an adequate replacement that I considered skipping Udon altogether, although eventually I decided to take a chance on the brand new Phattharasaya Home. It was a blessing in disguise as it gives a very different, but equally satisfying experience in Udon.
 
-For example, when I sat on one of the bar stools for the first time, a screw dropped-out the bottom. I did my best to replace it, but lacking a screwdriver I didn't do a very good job. Or on the two-tiered coffee table, the second tier is only attached to two of the legs, meaning that if you put anything on either of the opposing corners, it just tips-up. Someone was rushing when they put that together. Or the most frustrating thing was that the water pressure for both the sinks (kitchen and bathroom) is diabolical; you get nothing but a dribble out of each of the taps. I checked that the shut-off valves were fully open so initially concluded that being up on the fourth (top) floor of this building, the water pressure was just weak. Yet seeing as the shower, the toilet, and the tap on the balcony all have perfectly adequate water pressure, I too put this down to some questionable workmanship. And while these discrepancies would have driven me crazy had I rented this room long-term, for a two-week stay I just learnt to live with them.
+The service is far less personal, that's the first thing to note. You're renting an apartment. There are no ever-present staff at the building, so even to check-in you have to message the manager to let her know your arrival time. That will likely be the only time you see her, or anyone else while staying here. The only interaction I had with anyone during my stay, was on Line to arrange the cleaner to come around once per week.
 
-Need to fill-up a pan with water? Put it in the sink, turn on the tap, go and do something else for two minutes and come back. I've only got one arse, why do I need two bar stools? I'll just sit on the one that isn't about to collapse.
+During my first stay I was either the first, or one of the first people to stay in this particular apartment (there are six apartments in the building). I know this because most of it still had plastic on, including the TV which I had the privilege of unwrapping. And while it can be nice to know that everything's brand new, I prefer things to be a little more worn-in, and I found by my second stay they'd gone through their growing pains and fixed anything that didn't work.
 
-Once I'd understood and learned to work around the shortcomings, the apartment is actually very well equipped. The sofa's really comfortable. Too comfortable actually, I spent way too much time there, using it to code and to watch TV on. I believe it doubles as a sofa bed although I never had to check, and having cup holders in the arms of the sofa? Why don't all sofas have them? Genius move.
+That made it a more enjoyable stay, and it really is a great place. A very comfortable room. The sofa's a little too comfortable actually, because I would sit there for hours. The room's wifi is fast and reliable and there's a TV. Not a very good one, but it is there.
 
-The room's wifi is really fast and reliable; I had absolutely no connection issues here, and... there's a TV. The picture quality is adequate, the sound quality is dog shit. I had to connect my headphones to my Apple TV anytime I watched anything. Perhaps the best thing about this room though?
-
-I long for natural light. I think blackout curtains are a curse on the world, and love nothing more than waking-up with the sun on my face. Being up on the fourth floor I could comfortably leave the curtains open, closing only the drapes, without worry of people looking in, and as the room faces east, the sun is so bright in the mornings.
-
-Every morning here I got woken-up by sunshine, which is such a good way to start the day. Anyone who uses blackout curtains, I just hate you. You're a scourge on society.
+What I really love about these apartments though, is how much natural light gets in. They have floor-to-ceiling, east-facing windows. And if you, like me, love waking up with the sun on your face, then you too will love it here. On my first stay I was on the fourth (top) floor. On my second I'd been relegated to the third floor, but it barely made any difference. It's still such a great place to stay with so much light getting in.
 
 On the ground floor of the building is a laundry room, accessible with your key card, but heed these warnings:
 
-You know how people feel the need to put technology in places where it's really not needed? Toasters with bluetooth, that kind of thing. Well this laundry room is a fine example, as rather than accepting coins or tokens to operate the machines, they have little touch-screen computers on the front. Touch this screen and a QR code appears, which you can scan with your banking app if, and only if, you have a Thai bank account.
+You know how people feel the need to put technology in places where it's really not needed? Toasters with bluetooth, that kind of thing. Well this laundry room is a fine example, as rather than accepting coins or tokens like normal people, the machines have little touch-screen computers on the front. Touch this screen and a QR code appears, which you can scan with your banking app if, and only if, you have a Thai bank account.
 
-I do, from my time living in Bangkok, but if you're here as a tourist and don't have a local account, then sorry, you can't use the washing machines here.
+I do, but if you're here as a tourist and don't have a local account, then sorry, you can't use the washing machines.
 
-Why is that better than just taking coins?
+That's not actually a bad thing anyway, because these machines are a bit shit. Once the machine (eventually) receives confirmation of your payment, it starts all by itself. Yep, you have no say over the settings, they're all decided for you and you can't change them. For the washer, that's a cold wash without much spinning so your clothes will be not very clean and dripping wet.
 
-Anyway, you scan this QR code and pay through your banking app, the machine (eventually) receives confirmation of your payment and starts all by itself. Yep, you have absolutely no say over the settings, they're all decided for you and you can't change them. For the washer, that's a cold wash without much spinning so your clothes will be not very clean and dripping wet when the cycle's finished.
+A better option is to go to one of the nearby launderettes. Although there are closer options, I would go to the <ExternalLink url='https://maps.app.goo.gl/1QHRwTCA2g4PzkT38'>Otteri</ExternalLink> at the north end of Adulyadej Road, about a 10-15 minute walk from the room.
 
-There are two washers and one dryer. Luckily as no one else is able to actually use these machines I didn't have any competition for the dryer on the two times I did my laundry here, but the only reason... the only reason you would use this laundry room is for the convenience of having it in the building.
+The location of the apartment is down a side road off a side road, so is very local, but you're only a five minute walk from the neaerest 7-11. Central shopping mall, which marks the centre of Udon, is about a 15 minute walk, with the train station and UD Town being a similar distance. Nong Sim Park is just beyond Otteri, and is a great place to go for a walk or run.
 
-Each of the machines is 50 baht; if you're willing to walk to one of the nearby self-serve launderettes, you'll pay 20 baht, or you can get your clothes done in a service wash for not much more than you'll pay for the cold cycle and dryer here. So take having a laundry room in the building with a pinch of salt.
+You will encounter some soi dogs down these streets, but I've always found them to be pretty docile, even when stumbling back drunk in the middle of the night. The only exception to this was new year, when presumably they'd been traumatised by fireworks all night. Then a couple of them were a bit aggressive, but no more than you expect in Thailand.
 
-The location of the apartment is down a side road off a side road, so is very local, but you're only a five minute walk from a 7-11 and loads of other businesses. Central shopping mall, which marks the centre of Udon, is about a 15 minute walk away, with the train station and UD Town being a similar distance. Nong Bua Public Park is a little further (you have to figure-out where to cross the railway tracks), and in the other direction, Nong Sim Park is even closer.
+I also saw a snake walking back after a night out one time but that was pretty deferential too. The animals are very passive in Udon.
 
-The location is actually really perfect. You're far enough from the town centre that you're away from the small foreigner area and you feel like you're staying somewhere local, but you're also close enough that you're only a fifteen minute walk from the bars if you do decide to go out.
+I was walking back after a night out, not the snake.
 
-Most people in Udon (and Thailand) use a motorcycle to get around, but I'm someone who loves to walk everywhere. On arriving at Phattharasaya Home I noted that between the apartment and the main road there's a pack of soi dogs that seemed very passive as I encountered them during the daytime. Packs of dogs have a tendency to get more aggressive after dark, so after my first night out I had a bit of a concern walking back in the middle of the night. I needn't have been worried, these dogs are very docile. Just be aware that the street isn't that well lit and they tend to sit in the darkest spots, so give them a wide berth when you walk by and they leave you alone.
+I've stayed here for a total of six weeks now, and when I inevitably come back to Udon next time, I'll probably stay here again. I don't really have a bad word to say about it. Just be aware that it's an apartment, not a hotel. If you're looking for staff to help you and breakfast each morning, it's not for you. You're better looking at Jamjuree Home.
 
-I also saw a snake walking back one day but that seemed pretty deferential too. The animals are friendly in Udon.
-
-I was walking, the snake wasn't walking.
-
-Phattharasaya Home is still very new, and I'd say it's still going through some growing pains, but I really loved my stay. I would have no qualms with staying here again. It's a comfortable, fully-equipped apartment, at a very fair rate for a short-term stay.
+export const phattharasayaHomeImages = [
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/first-stay-apartment.jpeg`,
+    alt: 'Phattharasaya Home fourth floor apartment',
+    caption: "The apartment, from my first stay up on the fourth floor.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/second-stay-apartment.jpeg`,
+    alt: 'Phattharasaya Home third floor apartment',
+    caption: "When I came back for my second stay I had to do a double-take. Why's everything backwards? I thought I was going crazy. Turns-out, despite being in the room directly below, this room is a mirror image of the one above, with the bedroom on the left and the kitchen on the right. When everything else is exactly the same, that took some getting used to.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/second-stay-bedroom.jpeg`,
+    alt: 'Phattharasaya Home bedroom',
+    caption: "While the bed is very comfortable, the real prize in here is the floor-to-ceiling, east-facing windows. It's a great place to wake up each morning. Out of shot is a large wardrobe and an air-conditioner.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/first-stay-kitchen.jpeg`,
+    alt: 'Phattharasaya Home kitchen',
+    caption: 'The kitchen is small, but it has everything you need. A fridge, kettle, a couple of hobs, a saucepan, and out-of-shot, a cupboard with a wok, a collinder, a chopping board and a few other things.',
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/second-stay-bathroom.jpeg`,
+    alt: 'Phattharasaya Home bathroom',
+    caption: "When I first saw the bathroom I thought it didn't even have a sink. Turns-out it's behind the door.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/second-stay-tv.jpeg`,
+    alt: 'Phattharasaya Home TV',
+    caption: "There's a TV. I'll say no more about it.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/first-stay-view.jpeg`,
+    alt: 'Phattharasaya Home view',
+    caption: 'If you wake up early in the morning you get a great view off the balcony.',
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/downstairs.jpeg`,
+    alt: 'Phattharasaya Home downstairs',
+    caption: "The entrance is the door on the left, which you access with a key card. There is no security or front desk staff (although there are a lot of CCTV cameras). The room furthest to the right is the laundry room, but I wouldn't bother.",
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/insect.jpeg`,
+    alt: 'Phattharasaya Home insect',
+    caption: 'This dude guards the laundry room sometimes.',
+  },
+  {
+    src: `${imagePath}/accommodation/phattharasaya-home/outside.jpeg`,
+    alt: 'Phattharasaya Home outside',
+    caption: "Phattharasaya Home is down the side road of a side road, so don't expect taxi drivers to know where it is. This is what you're looking for.",
+  },
+]
 
 <ImageGallery images={phattharasayaHomeImages} />
 
-## Where to get vegan food in Udon Thani
+## Summary of Udon Thani
 
-If there's one criticism I could level at Udon Thani, this is it. While there is some vegan food available here, it lacks variety.
+export const summaryPoints = {
+  positive: [
+    'Very running-friendly',
+    'Cheap',
+    'Good Internet',
+    'Friendly people',
+    'A fun place to have a beer',
+    'Some really good local vegan food',
+  ],
+  negative: [
+    'All the supermarkets are a bit shit',
+    'Very little non-Thai vegan food',
+  ]
+}
 
-I love Thai food as much as the next man. That's not true, I think Thai food's very overrated, but Thai people get upset when I say that. It's something that I like to eat sometimes. It's not something that I like to eat all the time, and there aren't many options in Udon for non-Thai vegan food.
+<Summary summaryPoints={summaryPoints} />
 
-If you're in self-catering and have cooking facilities, there are three main supermarkets in the centre of Udon, as well as others further out such as <ExternalLink url='https://maps.app.goo.gl/Aj4y8TRzbcvnkWQLA'>Tang Ngeesoon Superstore</ExternalLink>; I haven't been in there but it might be worth a look. The three in the centre are Lotus's and Villa Market in <ExternalLink url='https://maps.app.goo.gl/xzkc4W3Q29eHXxyP9'>UD Town</ExternalLink>, and Tops in the basement of <ExternalLink url='https://maps.app.goo.gl/ptbyLZmV4rG7VPUh9'>Central Udon Thani</ExternalLink>.
+## Final thoughts
 
-Lotus's can fuck off, there's absolutely nothing useful in there and it's just a giant waste of space. Tops has a small number of intentionally vegan items like pasta sauces. My one reservation about Tops is that you only get their special offers if you have a loyalty card, and seeing as I can't be arsed to sign-up for a loyalty card, I didn't buy anything when I went there because everything I wanted was on special offer.
+Do you ever go somewhere, absolutely love it, then return a few years later to find it's completely changed for the worse, usually because of tourism?
 
-The best of the three is Villa Market. Any vegan item that Tops has, they also have, as well as a very small number of others, and if something is on special offer here, you get the discount without a loyalty card.
+That's my fear with Udon. Right now it's one of my favourite places in the world. It's Thailand's best kept secret, and I hope it stays that way. But given the current push to ramp-up tourism in Thailand, I'm not sure how long it'll stay that way. It's surely only a matter of time until it gets "discovered".
 
-I'll stress that this is the best of three terrible options. They really don't offer much that's vegan-friendly and what they do offer is expensive. In this part of the world beggars can't be choosers and here you can pick-up a jar of vegan pesto for 151 baht, a pack of wholewheat pasta for 100 baht, and a can of chickpeas for 75 baht. That's two healthyish meals for 326 baht.
+If my fears are correct, then now is the time to visit. Given what I've just said, I hope you don't.
 
-UD Town stretches north up to adjacent with Bangkok Hospital, with sporadic sections of market stalls. Within these collective markets you'll find several vendors selling freshly cut fruit, and at least three more that sell mango with sticky rice.
+## Do I want to come back again?
 
-These markets only open in the late afternoon. If you want fresh fruit before that there are two vendors that reliably set-up outside the <ExternalLink url='https://maps.app.goo.gl/yHgwYXHyWhyKXha28'>7-11 at the north end of Samphan Thamit Road</ExternalLink>, as well as a few others less dependably dotted around the city.
-
-As with all of Thailand, most 7-11 branches stock at least one vegan frozen meal that they can heat-up in store. I'd recommend avoiding this as much as possible. For as long as you can stomach them, my favourite restaurants in Udon are as follows.
-
-<ImageGallery images={veganFoodImages} />
-
-### Primani's
-
-<MapLink name='299/38 Soi Fairach 1' url='https://maps.app.goo.gl/RWzgP97QUbYzx5nC6' />
-
-Because this is the only restaurant I found in Udon to get non-Thai vegan food, I ate here more than the quality justifies, including getting delivery off FoodPanda. That doesn't mean it's terrible, but it won't blow you away either.
-
-It's an Indian restaurant that since my first stay has expanded into selling other types of cuisine, although nothing vegan was added to the new menu. They sell four curries that are natively vegan, with the channa masala being the pick of the bunch.
-
-In expanding their menu they also reduced their prices a bit, so a channa masala will now cost you 140 baht, with rice starting at 30 baht. There are two vegan breads on the menu (chapati and tandoori roti) which start at 20 baht each, so you can get a curry, rice and bread for under 200 baht. A small price to pay to not eat Thai food for a change.
-
-The owner speaks fluent English and understands what vegan means.
-
-<ImageGallery images={primanisImages} />
-
-### Maeya
-
-<MapLink name='79-81 Ratchapatsadu Rd' url='https://maps.app.goo.gl/XFDdGaWj2DkHHtFW6' />
-
-Maeya is the easiest option when it comes to getting vegan food in Udon. Like Primani's, they re-wrote their menu after my first visit, and now have a three page vegan section. The staff don't really speak English, but as the menu's in Thai and English you just have to point at what you want.
-
-Unlike many other restaurants in Udon, it's realiably open at the times it's supposed to be, and the quality is mostly very good, just don't order anything with gravy, it's disgusting.
-
-Another warning to heed is they don't temper the spice levels for foreigners like in many other parts of the country. Each item is marked on the menu with either zero, one or two chillies, and even one chilli is what I would consider very spicy. Order two chillies at your peril.
-
-<ImageGallery images={maeyaImages} />
-
-### Zing Zing Jay
-
-<MapLink name='232/15 Thanon Udondutsadi' url='https://maps.app.goo.gl/C8vyHc1bj2ZFyLRg6' />
-
-Being the closest vegan restaurant to my first room in Udon, I came here a few times. It's a typical point-and-hope local family run 'jay' buffet, although they also have a cook-to-order menu on the wall that's translated into English.
-
-No one here speaks any English, but you can get by pointing at the buffet if you lack the Thai to communicate. As always with this kind of place, the buffet's a bit hit-and-miss. Some things on offer tasted amazing, others less so, but it's very cheap so you can afford a few misses.
-
-Entirely unrelated to Zing Zing Jay, but often located very nearby is a vegan dessert vendor selling some deep fried goodies. I got a plateful of desserts from her for 35 baht, so I definitely recommend paying here a visit if she's around when you come here.
-
-<ImageGallery images={zingZingJayImages} />
-
-## Where to run in Udon Thani
-
-It seems to be an Isaan tendency that if there's a large body of water, they build a running track around it. And I love them for that. It creates some really great places to run. In Udon I've run at three such lakes, and each of them is a joy.
-
-### Nong Prajak Park
-
-The first one, nearby to my room during my first stay in Udon, is <ExternalLink url='https://maps.app.goo.gl/bSi7JBXBdiskQGp56'>Nong Prajak Park</ExternalLink>. It's a lake of a 3.1km circumference with a running track and separated cycling track all the way around. Regardless of if you're running, it's such a pleasant route that you should make sure to come here.
-
-If you come during the daytime you'll have the whole thing to yourself. After dark it has a few dark spots and can get a little crowded, with the only other downside being that as you run past the entrance for cars, not only do you have to contend with occasional traffic crossing your path, but there are also a couple of sets of stairs (four steps down, four steps up) that you have to negotiate.
-
-Both of these are a non-issue on slow, steady runs, but prohibit Nong Prajak Park from being suitable for sprints or intervals.
-
-### Nong Bua Public Park
-
-<ExternalLink url='https://maps.app.goo.gl/3P3RPVyTWnfKQZZ46'>Nong Bua Public Park</ExternalLink> has a circumference of 1.8km, so it's a little under three laps to run a 5k. Like Nong Prajak Park, it's an incredibly pleasant place to come, and I'd recommend it regardless of if you're running. I came here a couple of times just to go for a walk. It's also perfect for a slow and steady run. The reason it's not great for sprints or intervals is it has a couple of bottle-necks, particularly around the Thai-Chinese Cultural Center on the southern part of the route.
-
-There you're running on a slightly narrow walkway, often with groups of school kids coming in the opposite direction. And while they're very mindful to step aside when they see you, they aren't always paying attention. Not great if you're sprinting into them at full speed.
-
-You might think that going around the outside of a lake, the running track wouldn't have any sharp corners, but as it snakes around the trees, that's not entirely true. In the daytime the park is pretty quiet but somewhat inexplicably, in the evenings when it's much busier with people running, there are some folks who rent-out roller skates, meaning you have kids falling all over the place. That is no issue on a slow and steady run, but this is not a place for fast runs.
-
-### Nong Sim Public Park
-
-<ExternalLink url='https://maps.app.goo.gl/aHtARibkVdQhksbt9'>Nong Sim Public Park</ExternalLink> is the shortest and most inconspicuous of the three parks listed here, but is actually the best overall for running.
-
-It has a circumference of around 1.3km, so you've got a little under four laps in order to do a 5k. Unlike in Nong Prajak Park, there is no intersecting traffic or steps here, and unlike in Nong Bua Park, there are no bottle-necks or sharp corners. It's flat and wide the whole way around, and even after sundown is well illuminated and remains fairly quiet. I'm really not sure why more people don't come here. It's so inconspicous that it's not even named on Google Maps yet.
-
-That's why I say it's the best park overall for running. If you want to go for a slow and steady run, then any of the parks here are perfect, but if you want to do sprints or intervals, then Nong Sim is the only one I recommend.
-
-<ImageGallery images={runningImages} />
-
-## Being sociable in Udon Thani
-
-I've found no pre-organised events to attend in Udon, so if you're here alone and you want to go out you're more or less limited to wandering to the town centre and finding a bar. And you'll have a great time.
-
-All the bars are based on or around <ExternalLink url='https://maps.app.goo.gl/W77qTZcFDDpDfvrE6'>Samphan Thamit Alley</ExternalLink>, so head there and have a wander until you find what you're looking for. It's an area aimed at foreigners so whether you want to sit alone in a dark corner, to party, or to watch some football you can find it here. Many bars have hostesses, but there are plenty that don't if you want to be left alone.
-
-What I learned is that beyond the small number of tourists, there's a community of expats in Udon, mostly married to locals, who go around the bars and drink everyday. On my first stay in Udon I went out twice to two completely separate bars and I saw some of the same people in both. When I came back to Udon for my second stay seven months later, I went out again to yet another bar, and one of these men was there that night too. His life seems to be going to every bar in Udon, everyday, so there's some surprising social continuity in just going to the bars alone.
-
-Most bars close at midnight or 1am, but some stay open for as long as there are customers, so you'll be able to find somewhere to drink for so long as you can stand, which is always dangerous. I've had some quite impressive hangovers in Udon.
+Absolutely. I'd be very surprised if I'm not back again by the end of the year.
