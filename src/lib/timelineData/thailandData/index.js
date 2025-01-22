@@ -4,6 +4,14 @@ import { bangkokData } from './bangkokData'
 
 export const thailandData = {
   [places[countries.thailand].bangkok]: bangkokData,
+  [places[countries.thailand].buriram]: [
+    {
+      [dates]: {
+        [arrival]: '2025-02-06',
+        [departure]: '2025-02-13',
+      },
+    },
+  ],
   [places[countries.thailand].chiangMai]: [
     {
       [dates]: {
@@ -313,6 +321,14 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2013-05-23',
         [departure]: '2013-05-25',
+      },
+    },
+  ],
+  [places[countries.thailand].ubonRatchathani]: [
+    {
+      [dates]: {
+        [arrival]: '2025-01-23',
+        [departure]: '2025-02-06',
       },
     },
   ],
