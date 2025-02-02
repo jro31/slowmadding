@@ -5,16 +5,234 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-12-15T18:50:00+07:00',
+  date: '2025-02-02T20:40:00+07:00',
   title: 'Nakhon Ratchasima for Digital Nomads',
-  description: "Nakhon Ratchasima is the biggest city in Isaan and the third biggest city in Thailand, yet there's barely a foreigner in sight. Why is that? What does this city offer to those who dare to venture here?",
+  description: "Nakhon Ratchasima is the biggest city in Isaan and the third biggest in Thailand, yet there's barely a tourist in sight. Why is that? What does this city offer to a digital nomad who ventures here?",
   keywords: ['Thailand', 'Korat'],
 }
 
-export const romyenGardenPlaceDetails = {
+export const imagePath = '/images/articles/nakhon-ratchasima-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Nakhon Ratchasima, also known as Korat, is the third largest city in Thailand in terms of urban population (behind Bangkok and Chiang Mai), making it the largest in Isaan.
+
+Given the number of foreign tourists that visit Thailand (over 35 million in 2024), Korat is a very curious place. Being the third largest city in the country you'd expect it to get at least some spill-over of the crowds flocking to the islands or up to Chiang Mai, but there's none. There's basically no tourist industry here at all.
+
+Foreign faces, particularly younger foreign faces (below 40) are so rare here that I garnered a degree of attention sometimes just walking down the street, particularly when I wandered off down small side roads, which I have a tendency of doing. Some people shouting 'Hello' at me from their rooms or from their motorbikes, excited that they got to share their fledgling English, others staring like they'd seen an alien.
+
+Because of that lack of a tourist industry, it took me a little while to settle into Nakhon Ratchasima in the sense of it feeling like a place I belonged. In tourist-heavy places, you'll be beckoned, shouted to, and sometimes even dragged into bars and restaurants and massage shops. And while the motivation for that may be nothing but money, it's still nice to be welcomed, even as a walking wallet. Here it's the opposite. While everyone I encountered was more than friendly eventually, at times you'd see a mortified look on some staff member's faces as you approached them in a shop or restaurant. Speaking to them in Thai always made that look go away.
+
+After a few days in Korat I'd established my regular restaurants and my favourite bar and had become a familiar face and got to know the people a bit. That was the point I started enjoying it here. Compared to touristy cities where you're pre-loved for your money, it took a bit of time.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/angry-woman-street-art.jpeg`,
+    alt: 'Angry woman street art',
+    caption: "If you wander around Korat aimlessly you'll happen upon some quite cool street art. Combine that with all the craft beer and Korat is actually a bit hipster. I call this one the angry woman.",
+  },
+  {
+    src: `${imagePath}/city/angry-pot-street-art.jpeg`,
+    alt: 'Angry pot street art',
+    caption: 'I call this one the angry pot.',
+  },
+  {
+    src: `${imagePath}/city/big-gold-thing.jpeg`,
+    alt: 'Big gold thing',
+    caption: 'One of those big gold things.',
+  },
+  {
+    src: `${imagePath}/city/ya-mo-monument.jpeg`,
+    alt: 'Ya Mo monument',
+    caption: "When I did an online Thai class with one of my teachers and told her I was in Korat, she told me that I had to go and see the Ya Mo monument. I'm not sure why, but there were lots of Thai people very excited to see it.",
+  },
+  {
+    src: `${imagePath}/city/bung-ta-lua-park-bridge.jpeg`,
+    alt: 'Bung Ta Lua Park bridge',
+    caption: 'A slightly overstated bridge in Bung Ta Lua Park.',
+  },
+  {
+    src: `${imagePath}/city/chaloem-phrakiat-ratchakan-thi-9-park.jpeg`,
+    alt: 'Horse ornament next to the lake',
+    caption: 'Right next to Bung Ta Lua Park is Chaloem Phrakiat Ratchakan Thi 9 Park. Combining them both makes this a very pleasant area to come for a walk or a run.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## Who is Nakhon Ratchasima suitable for?
+
+Given what I said above, I'd say that Nakhon Ratchasima is more suited to people who have the time to get to know it as a city. Coming here for three days would have been futile for me, because I wouldn't have felt remotely settled by then. If you're an extroverted person, which I am not, then you can perhaps settle-in a bit quicker than I did, but I'd still recommend giving it at least a couple of weeks.
+
+It's also not a place for the socially-needy. I'll get into having a social life (or a lack of one) below, but you're most likely going to be spending a lot of time alone, and almost every other foreigner you encounter here will be a heavy-drinking male above the age of 60.
+
+## Why does it have two names?
+
+This city, and the province of which it's the capital, are known both as Nakhon Ratchasima and as Korat.
+
+Korat is the name used in everyday conversation. If you want to say to a local person that you're coming here, then you'd tell them that you're going to Korat (you'll sound a bit odd saying that you're going to Nakhon Ratchasima).
+
+Nakhon Ratchasima is the official name. It's what you see on Google Maps and it's what's printed on your train ticket when you come here. Which begs the question, why does it have two names?
+
+The older of the two names is Korat. It evolved from the name Sima, which in ancient Sanskrit means border/frontier, as an early settlement here was a frontier town during the Dvaravati period (6th to 11th centuries).
+
+The name Nakhon Ratchasima was introduced in the 17th century. It translates to 'Great City of the King of Siam', and was given to reflect the city's importance as a stronghold at the eastern edge of the Ayutthaya kingdom.
+
+Despite officially being called Nakhon Ratchasima since then, for more than 300 years people have been all _'fuck you, we'll call it what we want,'_ and with a stubborness that I respect continue to call it Korat to this day.
+
+A more modern equivalent is how in Vietnam Saigon is known as Saigon to everyone, but its official name is Ho Chi Minh City and the government refuses to let that go.
+
+## How affordable is Nakhon Ratchasima?
+
+It's dirt cheap. While my hotel was close to 1,000 baht per night (more than this during my first visit), it's certainly not necessary to pay so much. In fact, the hotel next to mine has 'Hotel 400B' painted in large blue letters on the side, as all classy hotels do. Meals in local restaurants start at 40 baht.
+
+export const affordabilityImages = [
+  {
+    src: `${imagePath}/affordability/hotel-400b.jpeg`,
+    alt: '400 baht hotel next to Romyen',
+    caption: '"Hotel 400B"',
+  },
+]
+
+<ImageGallery images={affordabilityImages} />
+
+## Is Nakhon Ratchasima safe?
+
+100%. As with anywhere in Thailand, pedestrians are few and far between as locals opt for literally anything but walking. Therefore, going down quiet side roads the soi dogs can be a bit territorial, particularly if you're running. That's about as bad as it gets.
+
+## Is it easy to get by with English in Nakhon Ratchasima?
+
+Certainly don't expect English to be spoken - it often won't be. In particular at the local places that I ate the staff didn't speak any English, so if you speak Thai it'll make life easier. Even if you don't, the people are very patient and welcoming, so caveman noises and sign language will probably be sufficient to get your point across.
+
+## Being sociable in Nakhon Ratchasima
+
+Foreigner-central in Korat is a bar called <ExternalLink url='https://maps.app.goo.gl/dSMAMfZTYoajNx358'>Monkey Bar</ExternalLink>. If you want to go somewhere where there's more white faces than Thai, then this is the place for you. I came here one time. I didn't really enjoy it.
+
+The customers are primarily retired male expats, many of whom look like they regret their life choices, and the staff are all young Thai girls who look like they're in the process of regretting theirs. The vibe is just a bit weird.
+
+It's basically the only foreigner-aimed bar in the city though, so if that's what you're looking for you're kind of stuck with it. There's also a newly opened bar called <ExternalLink url='https://maps.app.goo.gl/Ur5UjWbxrSJUiWcE6'>Hole in One</ExternalLink>. I never made it there, but it's perhaps worth checking-out.
+
+What I enjoyed more about Korat, is that there's a surprisingly vibrant craft beer scene. And while the price of a beer in these may be more than double what you'll pay for a generic local beer, I enjoyed working my way through them. My favourite was a bar called <ExternalLink url='https://maps.app.goo.gl/W3he4idcmdndSgK57'>Must So Kiss</ExternalLink>. I never understand the names of craft beer places - it seems to just be a competition to out-weird any other craft beer bar names. Ignore the name, there's nothing sexual about this place at all, and I found it was a really nice place to come and have a drink.
+
+For most of my time sitting at the bar here I was the only customer, but that worked quite well because the barmaid spoke English to a similar level as my Thai, so we both got a chance to practice and she taught me a lot about Korat.
+
+Wandering around the city you'll find a few other craft been shops, such as <ExternalLink url='https://maps.app.goo.gl/ocseaYWh9hmSRqDy8'>Some Might Say</ExternalLink> (the same owner as Must So Kiss), or <ExternalLink url='https://maps.app.goo.gl/dX54Shw6tWxzusmU7'>Tin's Thing Brewery</ExternalLink>. And you know what I learned while here? I don't get hangovers when I drink craft beer. That was quite a revelation.
+
+If you're not into going to bars alone (weirdo), there are no Meetup events in Korat, but there is an <ExternalLink url='https://www.facebook.com/share/9zsrEmH4EEvahEUf'>Expats in Korat / Nakhon Ratchasima</ExternalLink> Facebook group. Events get posted on there occasionally, so give that a look and you might get lucky.
+
+export const socialisingImages = [
+  {
+    src: `${imagePath}/socialising/must-so-kiss.jpeg`,
+    alt: 'Must So Kiss from outside',
+    caption: "My favourite bar in Korat is a little craft beer bar called Must So Kiss (don't ask).",
+  },
+  {
+    src: `${imagePath}/socialising/must-so-kiss-hazy-ipa.jpeg`,
+    alt: 'Must So Kiss hazy IPA',
+    caption: "This beer was called 'Hazy IPA'. It cost 190 baht, and given it was 6.5% should have given me an ungodly hangover on a couple of occasions given the amount I drank. Waking up with a clear head, feeling spritely on both occasions taught me a valuable lesson: I don't get hungover on craft beers. Worth the extra money for sure.",
+  },
+]
+
+<ImageGallery images={socialisingImages} />
+
+## Where to run in Nakhon Ratchasima
+
+All of my runs in Korat have been at <ExternalLink url='https://maps.app.goo.gl/udgpDHDPhjVxAT1d6'>Bung Ta Lua Park</ExternalLink>. It's a lake with a circumference of just over 3km. It has a wide running path on the outside, and a separated cycle path on the inside. That's nice and all, but as I've done all my runs in the middle of the day, I've never been here and not had pretty much the entire lake to myself. And if you're feeling greedy, there's <ExternalLink url='https://maps.app.goo.gl/S9uSVtoWwyikrn5D9'>another lake</ExternalLink> right next to it that'll add about an extra kilometre onto your route, although you have to cross a road to get to it.
+
+There's something army-related next to the lake. Perhaps a barracks, because you'll often see army-looking people doing drills in and around some of the buildings off to the side of the lake. And I think they're also responsible for its maintenance because army-dressed people will sometimes be out cutting the grass and emptying the bins.
+
+There also must be an air force base somewhere in Korat, because it's very common to see fighter jets pissing around in the skies above the lake. It's quite fun to watch actually, because they'll be flying upside down and stuff, but it doesn't half make a racket. You'll be able to hear these planes from all over Korat, but they seem to particularly like flying over the lake.
+
+The only negative about running at this lake is it isn't that easy to get to. From my hotel I'd walk down this soi of which I don't think they ever get foreigners, because my presence would elicit a wide mix of reactions. The first time I decided to jog to the lake, and down this soi I got chased by a couple of dogs, from which thereafter I walked until I got to the lake. While it is possible to get here on main roads, from where I was staying it would have added a bit onto my journey.
+
+If Bang Ta Lua isn't convenient for you, consider the <ExternalLink url='https://maps.app.goo.gl/yejjHik5LR3B99C39'>Nakhon Ratchasima Municipal Sport Stadium</ExternalLink>. I didn't run here as it was further from my hotel than the lake, but from what I can see it's a public stadium that includes a running track, so should be viable.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/bung-ta-lua-park-running-track.jpeg`,
+    alt: 'Bung Ta Lua Park running track',
+    caption: "Bung Ta Lua Park has a running track (outside) and a cycle track (inside) that go the entire way around the lake. While it even suggests that faster runners go on the right, you're unlikely to see anyone else running here, particularly if you come in the daytime.",
+  },
+  {
+    src: `${imagePath}/running/bung-ta-lua-park.jpeg`,
+    alt: 'Bung Ta Lua Park',
+    caption: "Even if you're not running, Bung Ta Lua Park is a nice place to come for a walk. I found that I could just about fit walking to and around the lake on my lunch break.",
+  },
+]
+
+<ImageGallery images={runningImages} />
+
+## Getting vegan food in Nakhon Ratchasima
+
+I hope you like Thai food. And even if you do, by the time you leave you're going to be sick of it. That's because the only vegan-friendly restaurants within easy access of the city centre are your typical เจ ('jay') buffet restaurants. And while the quality of these is pretty good, I need more variety in my life.
+
+The best value one is a place called <ExternalLink url='https://maps.app.goo.gl/aUTqnkUj21CGmHpL8'>Vegetarian Food For Health</ExternalLink>. It's a lovely family-run restaurant. The staff here don't really speak any English, but they're very friendly and patient. They close at 6pm, but as is standard in such places, anything can be got to take away if you want something to reheat for dinner. Rice with three choices from the buffet and a soup will cost you 40 baht.
+
+My other go-to in Korat is the nearby <ExternalLink url='https://maps.app.goo.gl/n9sDdfst7gxNBnZe6'>Guanyin Vegetarian Restaurant</ExternalLink>. It's a little more expensive; I didn't get a meal here that cost less than 60 baht, but the quality is really good and they offer a little more variety than Vegetarian Food For Health. The staff very sweetly try to speak English (even though I'd speak to them in Thai). They also close at 6pm.
+
+A little out of the centre, across the railway tracks and at the back of petrol station forecourt, is a restaurant called <ExternalLink url='https://maps.app.goo.gl/M7dCnUkdfsyg6LKL7'>อุทยานอาหารเจ-มังสวิรัติ</ExternalLink>, which translates roughly to 'Vegan-Vegetarian Food Park'. It's actually a lovely little place. Very nicely decorated, pleasant to sit in, and yet for some reason they serve you food on prison trays. I believe it to be vegetarian rather than a vegan restaurant. Despite all the เจ signs, some food definitely looked like it contained egg. Rice with three choices from the buffet is 45 baht, but beware that they close at 3pm.
+
+Another option is the vegetarian (not vegan) kiosk in the Pier 21 food court on the fourth floor of <ExternalLink url='https://maps.app.goo.gl/fU67owWhAJy2xo4p9'>Terminal 21</ExternalLink>. To be honest, it's a bit shit, especially later in the day when the food looks old and there aren't many choices left, but it is at least open later than the above options, allegedly staying open until 10pm. Rice with three choices from the buffet is 47 baht.
+
+Once you get tired of eating at all the เจ restaurants in Korat (which you will if you stay here for a while), the only other option is there's a small number of Indian restaurants scattered inconveniently outside the city centre. I came to one of these - <ExternalLink url='https://maps.app.goo.gl/SJZFNFFXckybLkrR7'>A Curry Pot</ExternalLink>, when I was hungover and couldn't face any more Thai food.
+
+It was far from the best Indian food I've ever eaten, it was overpriced, the staff seemed a bit annoyed that I was asking them about the food and what was vegan-friendly, despite being the only customer in the restaurant, and the atmosphere wasn't exactly serene as the whole time I was there the waiter watched videos on his phone loud enough so he could hear them over the relaxing restaurant music. Despite that, it was nice to eat something that wasn't Thai food. I'd do it again.
+
+The location is north of the city centre, but they're also on Grab as 'A curry pot restaurant - nuu ช้างเผือก', although if you get delivery you'll miss-out listening to the waiter's favourite YouTube videos.
+
+In terms of grocery shopping, there's a Foodland supermarket in the basement of Terminal 21, which isn't that great except it has a suspiciously large number of vegan frozen meals. About 50% of their frozen produce is vegan. It's very odd when the rest of the supermarket isn't very vegan-friendly at all. If you have a microwave in your room then it might be worth a look. Across the street from Terminal 21 you'll find a big <ExternalLink url='https://maps.app.goo.gl/NuFmsPZH4ADaLn8w5'>Big C</ExternalLink>. All their nuts were on special offer last time I was in Korat. That was like Christmas for me.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/vegetarian-food-for-health-plate.jpeg`,
+    alt: 'Vegetarian Food For Health - rice with four choices from the buffet',
+    caption: "Vegetarian Food For Health is the best value restaurant I went to in Korat. Just because rice with three choices from the buffet and a soup only costs 40 baht, doesn't mean it's small.",
+  },
+  {
+    src: `${imagePath}/vegan-food/vegetarian-food-for-health-outside.jpeg`,
+    alt: 'Vegetarian Food For Health - outside',
+    caption: "Vegetarian Food For Health is a proudly 'jay' restaurant, so look for the usual red and yellow เจ.",
+  },
+  {
+    src: `${imagePath}/vegan-food/guanyin-vegetarian-restaurant-plate.jpeg`,
+    alt: 'Guanyin Vegetarian Restaurant plate',
+    caption: "Guanyin Vegetarian Restaurant is very similar, although as it's a bit bigger, you have more selection at the buffet. It's also a bit more expensive. This meal cost me 70 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/vegan-vegetarian-food-park-inside.jpeg`,
+    alt: 'อุทยานอาหารเจ-มังสวิรัติ inside',
+    caption: "อุทยานอาหารเจ-มังสวิรัติ (Vegan-Vegetarian Food Park) is an absolutely beautiful restaurant. Out of shot there's even a little water feature just outside an open window.",
+  },
+  {
+    src: `${imagePath}/vegan-food/vegan-vegetarian-food-park-tray.jpeg`,
+    alt: 'อุทยานอาหารเจ-มังสวิรัติ buffet tray',
+    caption: "So it's kind of a shame they serve their food on prison trays. Rice with three choices from the buffet is 45 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/pier-21-vegetarian.jpeg`,
+    alt: 'Pier 21 vegetarian',
+    caption: "On the fourth floor of Terminal 21 you'll find the Pier 21 food court, and within it a vegetarian kiosk. It's not the best, but at least it exists. Rice with three choices costs 47 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/a-curry-pot-chana-masala.jpeg`,
+    alt: 'A Curry Pot chana masala',
+    caption: "For when you get tired of eating Thai food, which you will, the only other vegan options in Korat are the smattering of Indian restaurants all located in the arse end of nowhere. Not only are they a pain to get to, but they're somewhat unreasonably priced in comparison. When other restaurants on this list serve rice with three buffet choices for 40 baht, charging 55 baht for just plain rice doesn't quite seem fair, but that's the non-Thai food tax. Here is a chana masala, which will cost you 169 baht. Add on rice, some bread, an appetiser and a drink, and you can expect to pay 350 to 400 baht, like the kings who came before you.",
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
+
+## Where I stayed
+
+### Romyen Garden Place
+
+<MapLink name='168/9 Jomsurangyard Rd' url='https://maps.app.goo.gl/JzvgdeGea5YuqzuM7' />
+
+export const romyenGardenPlaceFirstStayDetails = {
   dates: {
     checkIn: '2023-11-30',
     checkOut: '2023-12-07',
@@ -36,377 +254,140 @@ export const romyenGardenPlaceDetails = {
   },
 }
 
-export const imagePath = '/images/articles/nakhon-ratchasima-for-digital-nomads'
+<AccommodationTable details={romyenGardenPlaceFirstStayDetails} />
 
-export const cityImages = [
-  {
-    src: `${imagePath}/city/big-gold-thing.jpeg`,
-    alt: 'Big gold thing',
-    caption: 'One of those big gold things.',
+export const romyenGardenPlaceSecondStayDetails = {
+  dates: {
+    checkIn: '2025-01-08',
+    checkOut: '2025-01-23',
   },
-  {
-    src: `${imagePath}/city/bung-ta-lua-park-bridge.jpeg`,
-    alt: 'Bung Ta Lua Park bridge',
-    caption: 'A somewhat overstated bridge in Bung Ta Lua Park.',
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
   },
-  {
-    src: `${imagePath}/city/horse.jpeg`,
-    alt: 'Horse ornament next to the lake',
-    caption: 'Just north of Bung Ta Lua Park (possibly considered part of the same park) is another lake, making this a very pleasant area to come for a walk or a run.',
+  roomType: 'Superior King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 13316.48,
+      '7% VAT': 932.15,
+      '10% Property service charge': 1424.86,
+      'booking.com pays': -1253.88,
+    },
   },
-  {
-    src: `${imagePath}/city/lake.jpeg`,
-    alt: 'Lake',
-    caption: "This lake isn't as big as the one in Bung Ta Lua Park, but it's still a good kilometre around the outside.",
-  },
-]
+}
+
+<AccommodationTable details={romyenGardenPlaceSecondStayDetails} />
+
+You might not think it given the price, but Romyen is actually a pretty fancy hotel. Korat is just that cheap.
+
+They offer four different room sizes. The superior room is ironically the smallest at 33m², the deluxe room is slightly bigger at 37m², and they also offer 66m² and 94m² apartments. I stayed in the 37m² deluxe room during my first stay, but what I realised is that the only difference in size is in the "kitchen". And the reason I say "kitchen", is that it doesn't actually contain any kitchen stuff - it's just the space where a kitchen should be.
+
+They don't actually equip any of the kitchens with plates or cutlery or anything to cook with, presumably to encourage you to order room service. Therefore the only practical difference between the rooms is that the deluxe room includes a microwave and an armchair, which is definitely not worth the extra 250 baht per night.
+
+Frustratingly, the hotel restaurant is not at all vegan-friendly. The only vegan food item they offer is a seasonal fruit salad, which as I found contains only two kinds of fruit. Even so I do like this place, and will probably stay here again next time I'm in Korat.
+
+The location's really good. You're pretty central in Korat, there's a 7-11 very nearby, the vegan restaurants listed above are within easy walking distance, and you're about a twenty minute walk from Bung Ta Lua Park. The hotel pool is strategically placed to be the first thing you see when you come here but doesn't get much use. Perhaps the most under-appreciated feature is the hotel gym. I say that because I've been up there many times, yet never seen another sole in there. And it's a surprisingly well equipped for a hotel gym. Loads of different handles and fixtures that you wouldn't expect. It even has a battle rope.
+
+There's also a spa on site, and one thing I do like about this hotel, is they don't charge excessively for on site services like most hotels do. A one-hour Thai massage at the spa is 250 baht, which is the same as you'd expect to pay on the street, and they also include some drinks and snacks in the room, but charge you the same as you'd pay in 7-11, so you don't have to quickly replace them before they notice.
+
+The room includes a very comfortable king bed and a decent desk and chair which make a good workstation. The TV's not the best, but it's good enough to do workouts on, and in the room you get a kettle, a fridge, a good shower and fast, reliable wifi. Even the superior room is spacious enough that you can comfortably have a workout in the space between the bed and the TV.
 
 export const romyenGardenPlaceImages = [
   {
     src: `${imagePath}/romyen-garden-place/bed.jpeg`,
-    alt: 'Romyen Garden Place bed',
-    caption: "The bed was comfortable, there's plenty of space for your clothes in that cupboard and the armchair is a great place to work on your laptop.",
+    alt: 'Romyen Garden Place king bed',
+    caption: "Taken from my second stay, this is the bed in the 'superior' room, but it's no different from the one in the deluxe room.",
   },
   {
     src: `${imagePath}/romyen-garden-place/room.jpeg`,
-    alt: 'Romyen Garden Place room',
-    caption: "There's also a desk and a chair that make a good workstation. The TV was a bit shit, but you can't have everything. There was just space to do yoga and other exercise between the bed and the TV.",
+    alt: 'Romyen Garden Place superior room',
+    caption: 'Between the bed and the TV, you have the space for a workout and the desk and chair make a good workstation.',
   },
   {
-    src: `${imagePath}/romyen-garden-place/kitchen.jpeg`,
-    alt: 'Romyen Garden Place kitchen',
-    caption: 'The kitchen looks like it might be nicely equipped, what with all those cupboards and drawers. The kitchen contains nothing more than you can see here; a fridge with ice compartment, a microwave, a couple of (too small) tea cups and glasses, and most importantly, a kettle.',
+    src: `${imagePath}/romyen-garden-place/superior-room-kitchen.jpeg`,
+    alt: 'Romyen Garden Place superior room kitchen',
+    caption: 'Apart from getting an armchair next to the bed in the deluxe room, the only other difference is in the size of the kitchen. In the superior room you have three columns of empty cupboards and drawers.',
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/deluxe-room-kitchen.jpeg`,
+    alt: 'Romyen Garden Place deluxe room kitchen',
+    caption: "Where as in the deluxe room you get five columns of empty cupboards and drawers. Well worth the extra money, I think you'll agree. Both rooms include a kettle and a fridge, with the only other difference being that the deluxe room comes with a microwave.",
   },
   {
     src: `${imagePath}/romyen-garden-place/bathroom.jpeg`,
     alt: 'Romyen Garden Place bathroom',
-    caption: 'The bathroom was clean and spacious.',
+    caption: "The bathroom is the same in both rooms. Interestingly, the shower door can be quite hard to open so it's sometimes a bit of a fight to get out of the shower in the morning.",
   },
   {
     src: `${imagePath}/romyen-garden-place/balcony.jpeg`,
     alt: 'Romyen Garden Place balcony',
-    caption: "Although there's no sink in the kitchen, there is one just outside on the balcony, as well as a chair and a stool, which made it a good place to sit and stop sweating after a run, and to dry any wet clothes on.",
+    caption: 'You also have a sink on the balcony, but during my second stay it was so slow to drain that it was easier to clean-out my blender in the bathroom.',
   },
   {
-    src: `${imagePath}/romyen-garden-place/view.jpeg`,
-    alt: 'Romyen Garden Place view',
-    caption: "If you look in the right direction at the right time of day, the view's not so bad either.",
+    src: `${imagePath}/romyen-garden-place/deluxe-room-view.jpeg`,
+    alt: 'Romyen Garden Place deluxe room view',
+    caption: "The balcony from my first stay faced roughly west, which meant some pleasant views come sunset. If I understood the emergency exit map correctly, then all deluxe rooms face west.",
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/superior-room-view.jpeg`,
+    alt: 'Romyen Garden Place superior room view',
+    caption: "The balcony from my stay in the superior room faced north, meaning I didn't get any nice sunsets or sunrises, but there was a local crazy woman who would come and hangout on that road to the left and shout and herself for a few hours everyday, so I'd sometimes come out here and watch her instead.",
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/pool.jpeg`,
+    alt: 'Romyen Garden Place pool',
+    caption: "The first thing you'll walk past when you arrive is the pool. It doesn't have any practical value, but it does look nice.",
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/gym-weights.jpeg`,
+    alt: 'Romyen Garden Place gym weight-training area',
+    caption: "Of more use is the surprisingly well-equipped hotel gym. A decent weight-training area, with far more attachments and gadgets than you can clearly see here. There's even a battle rope.",
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/gym-cardio.jpeg`,
+    alt: 'Romyen Garden Place gym cardio machines',
+    caption: 'They also have some cardio machines, although with Bung Ta Lua Park only a twenty-minute walk away you would have to be some kind of special to want to run on a treadmill instead.',
+  },
+  {
+    src: `${imagePath}/romyen-garden-place/seasonal-fruit-salad.jpeg`,
+    alt: 'Romyen Garden Place seasonal fruit salad',
+    caption: "While there is a restaurant on site, it's not at all vegan-friendly with the only option being the seasonal fruit salad. It contains two kinds of fruit.",
   },
 ]
-
-export const veganFoodImages = [
-  {
-    src: `${imagePath}/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-packaging.jpeg`,
-    alt: '7-11 stir-fried basil vegetarian protein with rice packaging',
-    caption: "In the bigger branches of 7-11 you can find up to four different frozen vegan meals. The most common one, usually available even in smaller branches, is this stir-fried basil vegetarian protein with rice. You know it's vegan because it has the red and yellow เจ symbol on it.",
-  },
-  {
-    src: `${imagePath}/vegan-food/stir-fried-basil-vegetarian-protein-with-rice-microwaved.jpeg`,
-    alt: '7-11 stir-fried basil vegetarian protein with rice after coming out the microwave',
-    caption: "It doesn't look all that when it comes out the microwave, but it tastes fine, and it's very welcome to be able to get a vegan meal 24/7 at almost any 7-11 branch in the country.",
-  },
-]
-
-export const vegetarianFoodForHealthImages = [
-  {
-    src: `${imagePath}/vegetarian-food-for-health/buffet-with-rice-4.jpeg`,
-    alt: 'Vegetarian Food For Health buffet with rice',
-    caption: "It's a typical Thai 'jay' restaurant with a point-and-hope buffet. Everything is vegan, so even though you might not know what you're eating, at least you'll know that it doesn't have meat. This plate of three choices with rice and a free soup (not pictured) cost 40 baht.",
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/buffet-with-rice-1.jpeg`,
-    alt: 'Vegetarian Food For Health buffet with rice',
-    caption: 'For some reason these three choices with rice cost 45 baht.',
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/takeaway-spring-rolls.jpeg`,
-    alt: 'Vegetarian Food For Health buffet spring rolls',
-    caption: 'Any item they sell can be requested for take-away, but many items are already pre-packaged to take home, including these spring rolls for 30 baht.',
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/outside.jpeg`,
-    alt: 'Vegetarian Food For Health from outside',
-    caption: "เจ is pronounced 'jay', and essentially means vegan (it's a little more complicated than that). Any restaurant or food stand that has เจ in their signage (almost always in yellow on a red background) is going to be vegan. This is 'Vegetarian Food For Health' from the outside, so what you're looking for if you're struggling to find it.",
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/buffet-with-rice-3.jpeg`,
-    alt: 'Vegetarian Food For Health buffet with rice',
-    caption: 'Rice with three choices from the buffet for 45 baht again.',
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/inside.jpeg`,
-    alt: 'Vegetarian Food For Health inside',
-    caption: "Inside. Even though there's only four tables, there was never any shortage of seating on the times I came here.",
-  },
-  {
-    src: `${imagePath}/vegetarian-food-for-health/buffet-with-rice-2.jpeg`,
-    alt: 'Vegetarian Food For Health buffet with rice',
-    caption: 'Another rice with three choices from the buffet.',
-  },
-]
-
-export const terminal21Images = [
-  {
-    src: `${imagePath}/terminal-21/rice-with-three-choices-1.jpeg`,
-    alt: 'Terminal 21 vegetarian buffet with rice',
-    caption: 'On the fourth floor of Terminal 21 in the Pier 21 food court is a vegetarian buffet. Three choices from the buffet with rice costs 44 baht.',
-  },
-  {
-    src: `${imagePath}/terminal-21/rice-with-three-choices-2.jpeg`,
-    alt: 'Terminal 21 vegetarian buffet with rice',
-    caption: "It might not look all that, but you can't really complain for 44 baht.",
-  },
-  {
-    src: `${imagePath}/terminal-21/rice-with-three-choices-3.jpeg`,
-    alt: 'Terminal 21 vegetarian buffet with rice',
-    caption: 'Another three choices with rice, just for the variety.',
-  },
-  {
-    src: `${imagePath}/terminal-21/vegetarian-buffet.jpeg`,
-    alt: 'Terminal 21 vegetarian buffet',
-    caption: "They don't really speak any English, so it's just a point-and-hope buffet.",
-  },
-  {
-    src: `${imagePath}/terminal-21/vegetarian-food-kiosk.jpeg`,
-    alt: 'Terminal 21 vegetarian food kiosk',
-    caption: "There are many other restaurants within the food court. This is what you're looking for. It's number 6 if that helps.",
-  },
-  {
-    src: `${imagePath}/terminal-21/pier-21-fruit-stand.jpeg`,
-    alt: 'Terminal 21 fruit stand',
-    caption: "Within the same food court there's a fruit stand where each bag of fruit is 17 baht.",
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-vegan-cheese.jpeg`,
-    alt: 'Terminal 21 Foodland vegan cheese',
-    caption: 'On the basement level is Foodland supermarket which has occasional vegan items, like these vegan cheese slices.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-vegan-bread.jpeg`,
-    alt: 'Terminal 21 Foodland vegan bread',
-    caption: 'It also has vegan bread, which is surprisingly hard to find in this part of the world.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-vegan-ready-meals.jpeg`,
-    alt: 'Terminal 21 Foodland vegan frozen meals',
-    caption: 'Where Foodland really stands-out though, is they have a huge selection of vegan frozen meals.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-vegan-meats.jpeg`,
-    alt: 'Terminal 21 Foodland vegan frozen meats',
-    caption: "These weren't so useful for me as I only had a microwave in my kitchen, but there's also a selection of various vegan meats.",
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-packaging.jpeg`,
-    alt: 'Terminal 21 Foodland plant-based spaghetti carbonara package',
-    caption: 'The plant-based spaghetti carbonara, available at Foodland. Looks delicious.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-plant-based-spaghetti-carbonara-microwaved.jpeg`,
-    alt: 'Terminal 21 Foodland plant-based spaghettic carbonara',
-    caption: 'Well it does until it comes out the microwave anyway.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-vegan-meatballs-with-rice-packaging.jpeg`,
-    alt: 'Terminal 21 Foodland vegan meatballs with rice package',
-    caption: 'These vegan meatballs with rice are also available at Foodland.',
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-frozen-vegan-meatballs-with-rice-microwaved.jpeg`,
-    alt: 'Terminal 21 vegan meatballs with rice',
-    caption: "I think you can appreciate why I'd usually have two meals at a time.",
-  },
-  {
-    src: `${imagePath}/terminal-21/foodland-24-hour-entrance.jpeg`,
-    alt: 'Terminal 21 Foodland 24 hour entrance',
-    caption: "Even though Terminal 21 closes at 9pm everyday, Foodland is open 24 hours and after the shopping mall is closed you can get in by using this escalator. Along with every branch of 7-11 also being open 24/7, there's a surprisingly large selection of vegan frozen food available in the middle of the night in Nakhon Ratchasima.",
-  },
-]
-
-export const runningImages = [
-  {
-    src: `${imagePath}/running/strava.jpeg`,
-    alt: 'Bung Ta Lua Park Strava',
-    caption: 'Bung Ta Lua Park is the bottom circuit and is 3.2km in circumference. Crossing a road at the north end takes you to another smaller lake that has a pedestrian path around the outside that is also good for running.',
-    url: 'https://www.strava.com/activities/10319497505',
-  },
-  {
-    src: `${imagePath}/running/bung-ta-lua-park.jpeg`,
-    alt: 'Bung Ta Lua Park running track',
-    caption: "The running track in Bung Ta Lua Park goes the entire way around the lake. The right path is for runners, with faster runners on the right and slower runners on the left (even though I was the only runner when I came here). The path on the left for cyclists is separated by a little verge and a line of trees so you don't have to worry about cyclists straying into your way.",
-  },
-]
-
-export const laundryImages = [
-  {
-    src: `${imagePath}/laundry/rich-laundry.jpeg`,
-    alt: 'Rich laundry',
-    caption: "Rich laundry. Although they have self-service machines outside, it's such good value to get a service wash that why spend the time?",
-  },
-]
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-Nakhon Ratchasima, also known as Korat, is the third largest city in Thailand (behind Bangkok and Chiang Mai) in terms of urban population, and is the largest in Isaan, yet very few foreign tourists ever visit. Why is that? And what does this city offer a digital nomad?
-
-While this was technically my third ever visit to Korat, the previous two came in 2012 and were simply overnight stops to break-up longer trips I was taking. This was the first time I'd ever stopped here with the intention of getting to know Nakhon Ratchasima as a city.
-
-I came from Pattaya, and should probably point-out that I partied a lot in Pattaya, and as a result managed to pick-up a pretty nasty cold/flu/covid bug that I brought with me, limiting the scope of what I could do, including not going out socially at all. Still, I spent plenty of time wandering the city and getting a feel for it.
-
-It's not quite the most isolated place I've been in Thailand as a digital nomad. When I was in Loei earlier this year, I didn't see another foreigner for the entire week. It's not like that here, but it's only one step above. If you go out for a three hour walk in Nakhon Ratchasima, you'll perhaps run-into five other foreigners.
-
-If you're used to Bangkok, Pattaya, Chiang Mai or any other tourist-heavy places where there are twenty foreigners in your peripheral vision at any one time, Nakhon Ratchasima will be a bit of a shock. Very little here is aimed at foreigners, and very little English is spoken.
-
-I really liked it though. It's a very calm, relaxed place, without much going on. A nice change of pace from Pattaya. Compared to Udon, where I find the local people to be very forward and I'd often have locals come and talk to me, here everyone pretty much left me alone.
-
-Wandering down quiet side-roads by myself, as I do a lot, I did get some strange looks in the vein of _"what's this weird foreigner doing down our street?"_ And I found that in most cases, if I made eye contact with or acknowledged someone, rather than returning that acknowledgement, they averted their gaze and walked past me looking uncomfortable.
-
-That wasn't always true. For example, there was a woman always sitting outside her house, down one of the side roads near my hotel. Everytime I walked past here, she'd ask me (in English) _"where you go?"_ and was very smiley and friendly.
-
-Perhaps because of the poor levels of English, I did find that some people (like fruit vendors, people working in local restaurants etc) even looked a little mortified when I approached, only to relax and start smiling when I spoke to them in Thai, even if it was in my very broken Thai. Given the lack of foreigners here, most people, even those in service roles, don't have to speak any English or interact with any foreigners, so it can be a bit of a shock to them when someone like me approaches.
-
-I like that though. I haven't studied any Thai since 2016 and I never got very far. It's only when I'm forced to use it (or when I'm drunk) that I speak Thai, so I enjoyed that I had to.
-
-One thing I did find is that the online information is wholly unreliable in Nakhon Ratchasima. What I mean is that I have a few resources that I rely on as a digital nomad to provide me with accurate and up-to-date information, but I quickly realised that online information in English about Nakhon Ratchasima is completely out-of-date, and to learn about this city, I just had to wander around and figure things out, like back when I was backpacking before I owned a smartphone.
-
-It was actually quite fun. My backpacking days are some of the happiest of my life, yet now when I go somewhere new, I figure everything out on my phone before I leave my room. Rarely do I go out anymore to aimlessly explore. Nakhon Ratchasima was a throwback to the good old days.
-
-Because nothing here is aimed at foreigners, there's really not that much 'to do'. You won't find many bars or restaurants calling to you in English. There aren't many massage shops. It's just a nice place to be, where you won't get bothered or harrassed, and you can just exist.
-
-The perfect place to come for a detox, if you've done a bit too much partying in Pattaya.
-
-<ImageGallery images={cityImages} />
-
-## Where I stayed
-
-### Romyen Garden Place
-
-<MapLink name='168/9 Jomsurangyard Rd' url='https://maps.app.goo.gl/JzvgdeGea5YuqzuM7' />
-
-<AccommodationTable details={romyenGardenPlaceDetails} />
-
-Staying here was a rarity to me, in that I'd call it a proper hotel. It has a concierge, it has room service, it has snacks in the room that they charge you money for if you eat.
-
-I typically don't go for such places because they cost more and I generally don't like them. I ponied-up for this room though, because even though it was noticeably more expensive than other rooms in Korat, there seemed to be a real lack of kettles offered in hotel rooms here, and a kettle is a minimum requirement for me given the amount of tea I drink.
-
-The deluxe king room is the bigger of the two "room" sizes that they offer (37m² vs 33m²), although they also offer apartments where the size goes up from there. And despite the fact the room was filled with snacks I couldn't eat because they were cheaper at 7-11, I actually really liked it.
-
-It had a very comfortable king-sized bed with enough space in front of it to exercise. There's loads of cupboard space, a nice bathroom, a comfortable armchair that I worked from a lot, as well as a desk and a comfortable chair that made a good workstation (although lacking in nearby plugs).
-
-The TV was a bit shit. It's quite small, and the way it's attached to the wall it faces towards the ceiling slightly, so isn't actually that good to watch from bed. And the sound quality was garbage. I had to connect my headphones just so I could hear what I was watching.
-
-Perhaps my biggest frustration was that the room appears to include a kitchen. It has a kitchen surface and a load of drawers and cupboards.
-
-Yep, all the drawers and cupboards are empty. Completely empty. No cutlery, no crockery, absolutely nothing.
-
-If you've ever read the article I wrote about <Link href='/articles/what-to-pack-as-a-digital-nomad'>what to pack as a digital nomad</Link>, you'll know that I carry some emergency kitchenware for when none is provided. In my suitcase I have a knife and a chopping board, a set of cutlery, a collapsible silicone bowl, a proper-sized tea cup, as well as my blender.
-
-Usually when I stay somewhere I'll only need one or two of these items. This was the first place in a while where I needed all of them.
-
-This is the problem with staying somewhere that has room service. They want you to pay for their room service, so don't give you any way of feeding yourself. Well fuck you guys, I brought my own kitchen with me.
-
-I would have actually been happy to order from the restaurant, with the exception of it having absolutely nothing vegan on the menu. There's also a pool and a gym on site, although as I didn't use either, I can't add much more other than to say they're definitely there.
-
-What they do offer in the kitchen is a kettle, a microwave and a fridge (with ice compartment). The kettle is a minimum requirement, but as I'll get to in the section below, the microwave and fridge were also pretty essential, and I was thankful to have them.
-
-Multiple wifi connections reach all corners of the hotel and are fast and reliable, so I have no complaints there, and I really liked the location. You're close enough to Bung Ta Lua Park that you can easily go for a run (see below), Terminal 21 is about a twenty minute walk in the other direction, my favourite vegan restaurant in Nakhon Ratchasima is less than ten minutes walk, and there are a couple of 7-11s and some vendors very close. I couldn't really ask for much more.
-
-It's definitely not the cheapest place in Korat, but take that with a pinch of salt because this city is dirt cheap anyway. I was glad I'd spent the extra money. It was a very comfortable stay.
 
 <ImageGallery images={romyenGardenPlaceImages} />
 
-## Where to get vegan food in Nakhon Ratchasima
+## Summary of Nakhon Ratchasima
 
-To my knowledge, there are no late night restaurants that serve vegan food in Nakhon Ratchasima, so the routine I got into was to have one hot meal per day for lunch. The reason I was so thankful to have a microwave and a fridge in my room, is in the evenings I'd have one or two vegan frozen meals that I'd store in my fridge's ice compartment.
+export const summaryPoints = {
+  positive: [
+    'Some very cool street art',
+    'Lots of craft beer',
+    'Cheap',
+    'Very walkable',
+    'Good transport links to other parts of the country',
+    'Big lake',
+  ],
+  negative: [
+    'Very little variety in the available vegan food',
+    'Uninspiring nightlife',
+  ]
+}
 
-Most 7-11s offer at least one vegan frozen meal, with bigger branches offering up to four, and while they can heat them up for you in store, I prefer to take them home to heat-up when I want. The limited variety of the 7-11 frozen meals would have got tiresome though. Here's how I got by.
+<Summary summaryPoints={summaryPoints} />
 
-<ImageGallery images={veganFoodImages} />
+## Final thoughts
 
-### Vegetarian Food For Health
+The only real foreign presence in Korat is that of retirement-age men. There are no other 'young' foreigners in Korat, and I say that unironically as someone that turns 40 this year. It's very rare I feel conscious about being too young, but that's kind of how it felt in the one foreigner-aimed bar here, which is why I think I preferred going to craft beer places that had a younger, local crowd (or no crowd at all).
 
-<MapLink name='60/1 Suranari Rd' url='https://maps.app.goo.gl/Q2h8CDdfw8Cm2smP9' />
+If you're a young digital nomad who's socially needy and wants to hang around with people your own age, this is probably not a place you're going to want to come. It's really only suitable for those comfortable in their own company.
 
-I happened upon this restaurant just by wandering around, but it became the closest thing that I had to a 'go-to' in Nakhon Ratchasima.
+The flip-side is that it's not a place that's been influenced by tourism at all. That's not good if you want things to be easy. If you want everyone who serves you to speak English and all your menus to be in English, then it's not the place for you either. But then if you want everything to be like it is at home, why did you leave in the first place?
 
-It's your typical local 'jay' buffet restaurant (meaning that it's fully vegan) with a point-and-hope buffet, but I didn't get anything I didn't like. Everything they sell is available as take away, and they have plenty of items already pre-packaged, so after getting my lunch, I'd usually get something else to take with me that I'd have as part of my dinner.
+Despite its size, Korat is a local city. Be sure you know what that means before committing to come here long-term.
 
-Three choices from the buffet with rice costs 45 baht, and the take away items I got were typically 30 baht.
+## Do I want to come back again?
 
-Not a word of English is spoken so we had to communicate in Thai, but they were very patient with me while I slowly interpreted the things they said, and all interactions were conducted with a smile.
-
-They only have four tables, but often I'd find myself the only customer, and never did I have to share a table with anyone else. Thank God.
-
-<ImageGallery images={vegetarianFoodForHealthImages} />
-
-### Terminal 21
-
-<MapLink name='Thanon Mittraphap' url='https://maps.app.goo.gl/vKHPScdYfEMVVRb39' />
-
-Terminal 21 was the other place in Korat that served my vegan needs. I bought food from four different places, but as they're all within Terminal 21 I'm going to group them all together.
-
-Firstly, in the Pier 21 food court on the fourth floor is a vegetarian (note, not vegan) food kiosk. I stress that it's not vegan because on one my visits I got three things from the buffet only to sit down and on closer inspection, realise one of them was made with egg. Which was shit.
-
-While it's primarily a point-and-hope buffet, they do also offer some food made to order.
-
-If you've made it to Nakhon Ratchasima, then I'd assume by now you're familiar with the way that Terminal 21 (and many other large shopping mall) food courts work in Thailand, but just in case you're not, you have to firstly go to the counter where two or three girls (it's always girls for some reason) are sitting, and get a card with some credit on. Just hand-over as much money as you want to top-up; you don't need to say anything. I typically add 200 baht, but you'll do well to spend more than 100 given how cheap these food courts are. Then when you go to any of the kiosks, you hand-over this card to pay; you cannot pay with cash. Once you've finished your meal, go back to the counter where you got your card, hand it back over, and you'll be refunded any money remaining.
-
-The vegetarian kiosk is fairly bog-standard, but it's good enough and it's cheap. Rice with three choices from the buffet costs 44 baht.
-
-Within the same food court (so you'll need to pay with the same card and cannot pay with cash) is a fresh fruit vendor, who sells bags of the usual fruits (watermelon, pappaya, pineapple etc) at 17 baht each. I typically buy these from street vendors, but the one fruit vendor I went to in Korat gave me what I can only assume are foreigner prices.
-
-Typically, even in Bangkok, you'll never spend more than 20 baht on any of these fruits, so when the street vendor here charged me 30 baht for a pretty small bag of pineapple, I was all fuck you, I'll buy it from Terminal 21 where it's 17 baht no matter your skin colour.
-
-Down on the ground floor of Terminal 21 they had what I assume was a temporary collection of food stands (it might be permanent), and among these was a vendor selling strawberries at very fair prices. Berries usually cost a fortune in Thailand, so I tend to just not eat them, but here they were selling decent-sized punnets of strawberries for 100 baht, which brightened-up my daily smoothies.
-
-Then lastly in Terminal 21, is the Foodland supermarket, located in the basement. It's worth noting that, despite being within the shopping mall, Foodland is open 24 hours, and there is an outdoor escalator to take you down there (as well as to the 24 hour Jetts Fitness if you fancy a late night workout) after the shopping mall has closed.
-
-The reason I include Foodland, is that within most parts of the supermaket, I could find occasional vegan items. It sells vegan cheese slices, albeit very expensively (149 baht for 7 slices), which are very hard to find in Thailand. It also sells vegan bread, which again is hard to find in Thailand. Almost all bread here is made with either milk or butter. They also have a small (fairly disappointing) selection of fruits and vegetables, as well the vegan items like rice and pasta you'd typically expect to find in a supermarket.
-
-The reason I include it, is for some reason it has the largest selection of vegan frozen meals I've ever encountered anywhere on this side of the world. Seriously, I couldn't believe my eyes when I saw it.
-
-Just vegan frozen meal after vegan frozen meal. They had more vegan frozen meals than they had non-vegan frozen meals, which kind of makes me think that they've done it by mistake, or the supermarket's buyer has gone rogue.
-
-I don't think I've ever encoutered a frozen section in a mainstream supermarket that has more vegan than non-vegan stuff. So to have it in Korat of all places, where it's otherwise a struggle to find vegan food at all, just seemed odd.
-
-Still, until they realise this place is a vegan goldmine, and I'm sure you can now appreciate why it was so invaluable for me to have both the microwave and the fridge with ice compartment in my room.
-
-For however much the rest of the city is lacking in vegan food, Terminal 21 will keep you alive while you're here.
-
-<ImageGallery images={terminal21Images} />
-
-## Where to run in Nakhon Ratchasima
-
-Given my state of ill-health, I only made it out for one short, slow run in Nakhon Ratchasima, at <ExternalLink url='https://maps.app.goo.gl/udgpDHDPhjVxAT1d6'>Bung Ta Lua Park</ExternalLink>. That was a shame, because Bung Ta Lua Park was a joy to run in.
-
-As is common-place in Thailand, especially Isaan, if they have a lake, then they just build a running and a cycling track around it. I really wish they did that everywhere, it makes it such a welcoming place to come and exercise. The running track has a 3.2km circumference, is very wide all the way around, and is mostly away from roads so you're breathing clean air. It's also right next to another, smaller lake that has a path (not exactly a running track) around it that adds perhaps another kilometre on top.
-
-I ran in the mid-morning, and there wasn't another runner on the track; I had the whole thing to myself. It was joyous, or would have been if I hadn't been so sick at the same time.
-
-I ran there from my hotel, and the streets of Korat were perfectly pleasant to run on in their own right, with the exception that I got chased by a couple of dogs.
-
-That's pretty normal in this part of the world and I've never actually got bitten, they just snap at your heels a bit. That probably wouldn't be an issue if you stick to main roads.
-
-<ImageGallery images={runningImages} />
-
-## Where to do laundry in Nakhon Ratchasima
-
-With a lack of tourists comes a lack of launderettes, and while I was for once staying in a hotel posh enough that they would do my laundry for me, I didn't want to give them the satisfaction (or the money) of using an overpriced hotel service, so off I wandered to find a launderette.
-
-What I found was a place called <ExternalLink url='https://maps.app.goo.gl/79SJHM81YXyrAm6w7'>Rich Laundry</ExternalLink>. There were a small number of staff which welcomingly includes an old man who spoke the best English I encountered in Nakhon Ratchasima. I guess he doesn't get to practice too often, and my conversation with this guy was about as deep as I had with anyone in Korat, as he really seemed like he wanted to talk.
-
-Needless to say, this made communication a lot easier and it was the cheapest laundry I've had done anywhere in Thailand. Usually launderettes will either charge you by weight, or charge you by item. This guy just took my clothes, looked at the bag and said _"120 baht."_ Compare that to 300 baht for a similar-sized load in Pattaya, and I appreciated this place.
-
-I took it in in the afternoon, and he offered to have it ready by 9am the next morning. I had no intention of being up that early so I said lunchtime would be fine. Back I went the next day and everything was there, and everything was clean.
-
-There might not be many launderettes in Korat, but all you need is one good one, and this is it.
-
-<ImageGallery images={laundryImages} />
-
-## Being sociable in Nakhon Ratchasima
-
-As I mentioned earlier, given the illness I was carrying I wasn't able to go out socially at all while I was in Nakhon Ratchasima, so I can give you very little insight into how it ranks as a social town. What I will do is detail how I would have gone about being sociable here, had I been feeling better.
-
-Before coming here (and before I got sick) I'd searched for events on Meetup. There are none, so forget about that as a resource. I found one Facebook group; <ExternalLink url='https://www.facebook.com/share/9zsrEmH4EEvahEUf'>Expats in Korat / Nakhon Ratchasima</ExternalLink> that looked fairly active and potentially useful for meeting people. I would guess by adding a post on there you'd be able to find someone to go for a beer with. It also hosts occasional events.
-
-My first port of call though, would be a bar called <ExternalLink url='https://maps.app.goo.gl/CnvUAuH89jmK9PLt5'>Monkey Bar</ExternalLink> that I wandered past several times during my stay. It was the only place I encountered that consistently had foreigners in. Even if it was only three or four, no matter what time of day I went past, there was some white person sat in there drinking. So I think your best bet would be to go there and grab a beer, see what you can learn and who you can talk to and take it from there, and I'm sure you'll have a social life in no time.
+I'd gladly come back again, but at the same time not much about Korat excites me. It's a nice, unexciting place to exist for a while. That's the best way I can describe it.
