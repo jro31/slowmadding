@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import ArticleLayout from '@/components/ArticleLayout'
 import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
@@ -21,7 +23,20 @@ Ubon Ratchathani is one of Isaan's 'big four' cities, although it's noticably sm
 
 TODO
 
-TODO: Add city photos
+export const cityImages = [
+  {
+    src: `${imagePath}/city/empty-grave.jpeg`,
+    alt: 'Empty grave',
+    caption: "I can't help but feel like something's missing.",
+  },
+  {
+    src: `${imagePath}/city/sunrise.jpeg`,
+    alt: 'Sunrise at The Outside Inn',
+    caption: 'Sunrish out the front of The Outside Inn, where I stayed in Ubon.',
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Who is Ubon Ratchathani suitable for?
 
@@ -43,13 +58,21 @@ Definitely don't expect English to be spoken. You will encounter many people tha
 
 ## What is the layout of Ubon Ratchathani?
 
-Ubon's layout it weird. <ExternalLink url='https://maps.app.goo.gl/B9LcfZWguZSfDKyg6'>The airport</ExternalLink>'s in the middle of the city, with the entrance in what you'd basically consider the city centre. Yet for some reason the <ExternalLink url='https://maps.app.goo.gl/fx8qfmiPNJnniuzt6'>railway station</ExternalLink> is way off to the south of the city, across the river, and the <ExternalLink url='https://maps.app.goo.gl/KVonjhUdgKWpDNEG6'>bus terminal</ExternalLink> is way off in the north.
+Ubon's layout it weird. <ExternalLink url='https://maps.app.goo.gl/B9LcfZWguZSfDKyg6'>The airport</ExternalLink>'s in the middle of the city, with the entrance in what you'd basically consider the city centre. Yet for some reason the <ExternalLink url='https://maps.app.goo.gl/fx8qfmiPNJnniuzt6'>railway station</ExternalLink> is way off to the south of the city across the river, and the <ExternalLink url='https://maps.app.goo.gl/KVonjhUdgKWpDNEG6'>bus terminal</ExternalLink> is way off in the north.
 
 As there were no trains at convenient times for when I wanted to leave Ubon, I wandered up to the bus terminal one day to try and figure-out the times of buses to Buriram. As is standard in Thailand, there is no central ticketing area, and instead you have to deal with multiple companies. But there seemed to be about five different companies with buses to Buriram, and none of them could understand that I didn't want to take a bus that day, I was just asking about times.
 
-I was there at about 2pm, and what I did learn was that it was more than three hours until the next bus, at which point I just said fuck it, a 7am train doesn't sound so bad after all.
+I was there at about 2pm, and what I did learn was that it was more than three hours until the next bus, at which point I just said fuck it, a 7am train doesn't sound so bad now.
 
-TODO: Add bus station photo
+export const layoutImages = [
+  {
+    src: `${imagePath}/layout/bus-terminal.jpeg`,
+    alt: 'Ubon Ratchathani bus terminal',
+    caption: 'Ubon Ratchathani Bus Terminal',
+  },
+]
+
+<ImageGallery images={layoutImages} />
 
 ## Is Ubon Ratchathani safe?
 
@@ -61,9 +84,7 @@ TODO
 
 ## Where to buy tea in Ubon Ratchathani
 
-TODO
-
-TODO: Add images
+The only place I found to buy local Thai tea in Ubon was Utthayan Bunniyom (see details <Link href='#utthayan-bunniyom'>below</Link>).
 
 ## Going to immigration in Ubon Ratchathani
 
@@ -191,52 +212,58 @@ export const runningImages = [
 
 ## Where to get vegan food in Ubon Ratchathani
 
-TODO
+The vegan scene in Ubon is surprisingly good. There aren't many vegan-friendly restaurants, but unlike in other cities in Isaan, you actually have some variety here, and you're not limited to เจ buffets.
 
 ### Grow Up Eatery and Farm
 
-TODO
+<MapLink name='Khuanthani Rd' url='https://maps.app.goo.gl/beK8Y2y8e4nbQnGN8' />
+
+Grow Up Eatery and Farm is the easiest place to get vegan food in Ubon. It's a healh-focussed restaurant that serves meat, but their bilingual menu includes a vegan section, so you know what you're ordering, and you can just point at the menu if you don't speak any Thai.
+
+They do healthy smoothies made with oat milk, smoothie bowls, a vegan kale soup that I got every time I came here, and some plant-based meat dishes with rice or noodles.
+
+Prices are higher than you'll pay in local places, but worth it for when you want something healthy and easy.
 
 export const growUpEateryAndFarmImages = [
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/stir-fried-plant-based-crispy-pork-with-noodles.jpeg`,
     alt: 'Grow Up Eatery and Farm stir-fried plant-based cripy pork with noodles',
-    caption: 'TODO',
+    caption: 'This is the stir-fried plant-based cripy pork with noodles, which will cost you 105 baht.',
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/power-kale-smoothie.jpeg`,
     alt: 'Grow Up Eatery and Farm power kale smoothie',
-    caption: 'TODO',
+    caption: "They sell many kinds of smoothies, including some made with oat milk. This is the 'Power Kale' smoothie, made with kale, apple, pineapple, banana, oat milk and granola for 110 baht.",
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/vegan-kale-soup.jpeg`,
     alt: 'Grow Up Eatery and Farm vegan kale soup',
-    caption: 'TODO',
+    caption: "Getting adequately nourished as a vegan digital nomad isn't always that easy, so when you have the opportunity, you take it. I got this vegan kale soup every time I came to Grow Up. It costs 65 baht.",
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/stir-fried-plant-based-crispy-pork-with-rice.jpeg`,
     alt: 'Grow Up Eatery and Farm stir-fried plant-based crispy pork with shiitake mushrooms and brown rice',
-    caption: 'TODO',
+    caption: 'Another of the plant-based meat dishes is this stir-fried plant-based crispy pork with shiitake mushrooms and brown rice, which costs 139 baht.',
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/mixed-berry-smoothie.jpeg`,
     alt: 'Grow Up Eatery and Farm mixed berry smoothie',
-    caption: 'TODO',
+    caption: "Berries also aren't that easy to come by (cheaply) in Thailand, so you can take them when you can get them. Even though I'd bet my life that this mixed berry smoothie was made from frozen berries, it was still good to have. This one also cost 110 baht, and as well as berries includes banana, oat milk and granola.",
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/inside.jpeg`,
     alt: 'Grow Up Eatery and Farm inside',
-    caption: 'TODO',
+    caption: "It's a very big restaurant that gets a lot of light. It was rarely ever busy when I came here though, so you won't have to worry about finding somewhere to sit.",
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/plant-based-pork-and-spinach-wrap.jpeg`,
     alt: 'Grow Up Eatery and Farm plant-based pork and spinach wrap',
-    caption: 'TODO',
+    caption: 'The plant-based pork and spinach wrap was probably the least exciting of the plant-based meat dishes, and I feel like they forgot to put and fake meat in it. It costs 100 baht.',
   },
   {
     src: `${imagePath}/vegan-food/grow-up-eatery-and-farm/avocado-smoothie.jpeg`,
     alt: 'Grow Up Eatery and Farm avocado smoothie',
-    caption: 'TODO',
+    caption: 'Another of the oat milk smoothies is the avocado smoothie, which also includes banana and granola, and also costs 110 baht.',
   },
 ]
 
@@ -244,37 +271,88 @@ export const growUpEateryAndFarmImages = [
 
 ### Utthayan Bunniyom
 
-TODO
+<MapLink name='Thepyothi Rd' url='https://maps.app.goo.gl/nPWHMvQqBXQk7KTe9' />
+
+Utthayan Bunniyom is a place that you're definitely going to want to visit in Ubon. It's a little vegan complex that includes a restaurant, a juice bar, a shop and a market.
+
+As I was told by someone who works here, the idea was conceived by some local monks to provide food at below cost so that everyone can eat well. The เจ restaurant food is made from vegetables grown at their local farm/commune (I couldn't quite tell which with the language barrier) a little outside of town. It's then sold at rice with one choice from the buffet for 15 baht, rice with two choices for 20 baht, or rice with three choices for 25 baht. One of the cheapest meals you'll find anywhere in Thailand.
+
+Given that, you can't really complain about having to do your own washing up once you've finished eating. There are some bowls of water and cloths at the back of the dining area. This is fair enough, as I was also told that everyone who works here is a volunteer, so expecting them to clean-up after you is a bit much. As it's a buddhist complex, taking your shoes off before going into the dining area and into the store is expected. The store's particularly weird because you see people doing their shopping bare-foot, but it's well worth it.
+
+It's the only place that I found in Ubon to buy local teas, and sell them really cheaply - just 22 baht for 20 tea bags. They also have a small selection of nuts and seeds, and other things you might like (I really liked the crispy seaweed I bought here). Worth noting that the store isn't completely vegan. Perhaps unintentionally, I noticed that some crackers that they sold contained butter.
+
+At the front of the complex, the vegan market is worth a visit, especially for fruit and veg. As fruit and veg is so readily available all over Ubon, this is less exciting, but if you are going to buy some fruit, may as well get it here and support somewhere that's really doing some good for the world.
+
+export const utthayanBunniyomImages = [
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/buffet-meal.jpeg`,
+    alt: 'Utthayan Bunniyom three choices from the buffet with rice',
+    caption: "The restaruant at Utthayan Bunniyom is as cheap as you'll find anywhere in Thailand. I was splashing-out when I got rice with three choices from the buffet. It cost 25 baht. Just remember to do your washing up.",
+  },
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/store-outside.jpeg`,
+    alt: 'Utthayan Bunniyom store',
+    caption: "There's also a store on site. Remember that you have to take your shoes off before going in.",
+  },
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/tea-bags.jpeg`,
+    alt: 'Utthayan Bunniyom local tea bags',
+    caption: "It's the only place I found in Ubon to buy local Thai teas, and here they only cost 22 baht for twenty tea bags.",
+  },
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/loose-tea.jpeg`,
+    alt: 'Utthayan Bunniyom loose tea',
+    caption: 'They also sell loose teas, although unfortunately not any loose leaf green tea. That would have been God being a bit too kind to me.',
+  },
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/nuts.jpeg`,
+    alt: 'Utthayan Bunniyom nuts',
+    caption: "You'll find nuts here cheaper than you'll pay in the supermarket. I paid 165 baht for 500g of cashews, and 176 baht for 500g of almonds (lower than the labelled prices).",
+  },
+  {
+    src: `${imagePath}/vegan-food/utthayan-bunniyom/market.jpeg`,
+    alt: 'Utthayan Bunniyom market',
+    caption: "Out the front is a little market that's a great place to stock-up on fruit.",
+  },
+]
+
+<ImageGallery images={utthayanBunniyomImages} />
 
 ### Baan-Khao-Hom
 
-TODO
+<MapLink name='Ponpan Rd' url='https://maps.app.goo.gl/V3E24W8k3z8rRaAS7' />
+
+Baan-Khao-Hom is a no-frills Indian restaurant fairly centrally-located in Ubon. It doesn't exactly ooze class - I think it's a family-run place and everyone lives on site, because if you go to the bathroom you'll see all their toothbrushes, but I quite liked it.
+
+There's a vegetarian page to their menu where all the curries barring the paneer curries are vegan. None of these are more than 150 baht, rice is 20 baht, a chapati or a roti is 35 baht and a soda water is 20 baht. That's a pretty decent feed for 225 baht.
+
+Note that when you ask for the bill, they'll either just tell you the amount, or they'll scribble something illegible on a bit of paper. On one occasion, once I'd paid and left the restaurant I realised I'd been over-charged by 30 baht. From that point on I was very careful, knowing the price of my meal before I asked for the bill, and it never happened again, so I assume it was done in error rather than malice. Just in case, double check the price before you pay.
 
 export const baanKhaoHomImages = [
   {
     src: `${imagePath}/vegan-food/baan-khao-hom/daal.jpeg`,
     alt: 'Baan-Khao-Hom daal',
-    caption: 'TODO',
+    caption: 'This is the daal, which costs 140 baht, with yellow rice for another 20.',
   },
   {
     src: `${imagePath}/vegan-food/baan-khao-hom/chana-masala.jpeg`,
     alt: 'Baan-Khao-Hom chana masala',
-    caption: 'TODO',
+    caption: 'My favourite curry on the menu, as is pretty standard for me, was the chana masala. I always like anything with chickpeas. Here it costs 150 baht.',
   },
   {
     src: `${imagePath}/vegan-food/baan-khao-hom/rajma.jpeg`,
     alt: 'Baan-Khao-Hom rajma',
-    caption: 'TODO',
+    caption: "This one is called 'rajma'. It was my first time having it. It was mostly kidney beans. At 120 baht it's the cheapest vegan curry on the menu.",
   },
   {
     src: `${imagePath}/vegan-food/baan-khao-hom/chapati.jpeg`,
     alt: 'Baan-Khao-Hom chapati',
-    caption: 'TODO',
+    caption: 'I always like to get some break with my curry. At Baan-Khao-Hom a chapati is 35 baht.',
   },
   {
     src: `${imagePath}/vegan-food/baan-khao-hom/outside.jpeg`,
     alt: 'Baan-Khao-Hom outside',
-    caption: 'TODO',
+    caption: 'This is how it looks from the outside.',
   },
 ]
 
@@ -282,7 +360,39 @@ export const baanKhaoHomImages = [
 
 ### The Outside Inn Mexican restaurant
 
-TODO
+I stayed at The Outside Inn for my time in Ubon. Part of the reason for that, was that I saw that its attached restaurant included some vegan items on the menu. I was somewhat disappointed therefore to find that by my arrival they'd been crossed-off. Still, I persisted and asked the staff what on the menu could be made vegan.
+
+We chatted for a while and one option I was told was the enchiladas could be made vegan. I stressed that I didn't want anything with dairy, and this was understood. Why they were then served with a dollop of sour cream on top was beyond me, but thankfully the rest of the meal was vegan, so I just scraped it off rather than making a scene.
+
+That deterred me for about a week, but the convenience of potentially being able to eat at the on-side restaurant dragged me back for another try. This time was a different member of staff; a young girl who spoke really good English and knew exactly what vegan means. After I initially agreed to her recommendation of ordering the tofu burrito and going and sitting down, I was told that they didn't have any tofu, but I could have the fajitas instead.
+
+These came with sour cream as well, but at least it was in a separate bowl this time. I'm not sure why they were determined to give me sour cream.
+
+Apart from that this was a really good meal. The fajitas were absolutely delicious.
+
+As I ate here on two occasions, and on both was served non-vegan food, it's quite hard for me to recommend eating here. But even if it's very hard work, where else can you get vegan Mexican food in Isaan? Getting any kind of non-Thai vegan food in Isaan is a struggle, so it's kind of worth it. Just really stress, no milk, no cream, no sour cream. Please!
+
+And hopefully at some point they'll return their natively vegan items to the menu.
+
+export const theOutsideInnMexicanRestaurantImages = [
+  {
+    src: `${imagePath}/vegan-food/the-outside-inn-mexican-restaurant/enchiladas.jpeg`,
+    alt: 'The Outside Inn Mexican restaurant enchiladas',
+    caption: 'For my first meal here I got the enchiladas made vegan. Apart from that big dollop of sour cream. They cost 249 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/the-outside-inn-mexican-restaurant/fajitas.jpeg`,
+    alt: 'The Outside Inn Mexican restaurant fajitas',
+    caption: 'My second meal here was the vegan fajitas, also with sour cream, but at least it was separated this time. And ignoring that, they were really, really good. They cost 240 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/the-outside-inn-mexican-restaurant/beer-sign.jpeg`,
+    alt: 'The Outside Inn beer sign',
+    caption: "That's the kind of encouragement I look for.",
+  },
+]
+
+<ImageGallery images={theOutsideInnMexicanRestaurantImages} />
 
 ## Where I stayed
 
