@@ -95,6 +95,12 @@ export const thailandData = {
         [departure]: '2024-03-02',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-04-03',
+        [departure]: '2025-04-17',
+      },
+    },
   ],
   [places[countries.thailand].kanchanaburi]: [
     {
@@ -293,6 +299,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2024-11-14',
         [departure]: '2024-11-29',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2025-03-20',
+        [departure]: '2025-04-03',
       },
     },
   ],
