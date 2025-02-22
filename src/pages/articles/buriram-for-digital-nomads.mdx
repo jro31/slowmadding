@@ -75,7 +75,15 @@ If they get the same paranoia I get when I'm high, that's understandable.
 
 Some other bars I bookmarked but never made it to while I was in Buriram, were <ExternalLink url='https://maps.app.goo.gl/NgAZrhyCyGRbyLdy6'>Nekromantix</ExternalLink>, which looks like a 90's themed craft beer bar, which is right up my alley. I walked past <ExternalLink url='https://maps.app.goo.gl/s6KXmG5ssZLwhcvm7'>2Bars</ExternalLink> on a couple of occasions and it always looked dead, hence I never ventured inside. But hey, perhaps on another night it's good. And <ExternalLink url='https://maps.app.goo.gl/65RDDuHDs2V6z63F6'>MarieJane Craft</ExternalLink> is another craft beer bar, which I'd assume by the name also sells weed. <ExternalLink url='https://maps.app.goo.gl/8rB9S2h64QwxVTyJA'>Bamboo Bar</ExternalLink> always had foreigners in it drinking, even in the middle of the day, however nothing about it ever made me want to join them, but perhaps it's what you're looking for.
 
-TODO: Add photos
+export const socialImages = [
+  {
+    src: `${imagePath}/social/amsterram.jpeg`,
+    alt: 'Amsterram',
+    caption: "Amsterram is a weed themed bar, if you couldn't tell from the name (Amster, as in Amsterdam, ram, as in Buriram... I assume). That means that when you come here they sell weed alongside alcohol and you'll be offered a joint along with your beer. I politely declined. Weed makes me paranoid, so I don't have it often. The downside is that the vibe in the bar is... it's probably great if you're high, but I just found the stoner music kind of depressing, so I only stayed for one beer.",
+  },
+]
+
+<ImageGallery images={socialImages} />
 
 ## Things I don't like about Buriram
 
@@ -97,7 +105,45 @@ An alternative is the <ExternalLink url='https://maps.app.goo.gl/3vRo4VsHTCJpQby
 
 I came here in the middle of the day and there wasn't another sole here, because all Thai people are scared of the sun, so you'll likely have the track to yourself. It's an eight-lane 400m track (with a ninth lane on the straight), and is a better choice than Khlong Lalom if you want to do a fast run or sprints.
 
-TODO: Add photos
+export const runningImages = [
+  {
+    src: `${imagePath}/running/khlong-lalom-path.jpeg`,
+    alt: 'Khlong Lalom path',
+    caption: 'Khlong Lalom is the best place I found in Buriram to go running. To run an entire circuit is 5.36km, although you have to cross some roads.',
+  },
+  {
+    src: `${imagePath}/running/khlong-lalom-path-corner.jpeg`,
+    alt: 'Khlong Lalom path corner',
+    caption: "It's also worth noting that the people that built the path only knew how to build right angles, so there are some oddly sharp corners.",
+  },
+  {
+    src: `${imagePath}/running/khlong-lalom-running-map.jpeg`,
+    alt: 'Khlong Lalom running map',
+    caption: 'My guess is that once upon a time, the moat would have made a full circle, otherwise it would have been a pretty pointless moat. What remains of it is what you can see here, from the map I recorded while running here. You can see where roads intersect it, dividing it into five different sections, and how the middle of the five is by far the biggest.',
+  },
+  {
+    src: `${imagePath}/running/khlong-lalom-workout-area.jpeg`,
+    alt: 'Khlong Lalom workout area',
+    caption: "You'll find several workout areas dotted around the route, including occasional pull-up bars.",
+  },
+  {
+    src: `${imagePath}/running/khlong-lalom-lake.jpeg`,
+    alt: 'Khlong Lalom lake',
+    caption: "But even if you're not running, it's a nice place to come for a walk. I walked a lap of the lake on my lunch break on days I was working.",
+  },
+  {
+    src: `${imagePath}/running/buriram-rajabhat-university-running-track.jpeg`,
+    alt: 'Buriram Rajabhat University stadium running track',
+    caption: "An alternative to running at Khlong Lalom is to come to the Buriram Rajabhat University running track. It's a standard 400m track in full view of the glorious sunlight. As Thai people descended from vampires, they're all scared of the sun so you'll have the whole thing to yourself.",
+  },
+  {
+    src: `${imagePath}/running/buriram-rajabhat-university-running-track-entrance.jpeg`,
+    alt: 'Buriram Rajabhat University stadium entrance',
+    caption: "It might look like you can access it from the main road, but you can't. You've got to come onto the campus, then look for this big tree.",
+  },
+]
+
+<ImageGallery images={runningImages} />
 
 ## Getting vegan food in Buriram
 
@@ -107,11 +153,34 @@ As well as the below, you could try <ExternalLink url='https://maps.app.goo.gl/8
 
 ### ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล
 
-<ExternalLink url='https://maps.app.goo.gl/qnnmXG8XL4XDRWk47'>ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล</ExternalLink> as this restaurant is named on Google Maps, translates to 'Vegetarian restaurant Buriram behind the municipal market', which is quite a useful way of putting it. It's behind the "midnight market" (which opens at 4pm and closes at 9pm) and is the best option for vegan food in Buriram.
+<ExternalLink url='https://maps.app.goo.gl/qnnmXG8XL4XDRWk47'>ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล</ExternalLink> as this restaurant is named on Google Maps, translates to 'Vegetarian restaurant Buriram behind the municipal market', which is quite a useful way of putting it. It's behind the "midnight market" (which opens at 4pm and closes at 9pm) and is the best option for vegan food in Buriram. Luckily the restaurant doesn't follow the same hours as the market, and is open from 6am to 4:30pm seven days per week.
 
 It's your typical point-and-hope เจ ('jay') buffet, but I always thought the quality here was decent, if a little more expensive than equivalent restaurants in other parts of Isaan. This will probably be where you get most of your nourishment in Buriram
 
-TODO: Add photos
+export const municipalMarketVeganRestaurantImages = [
+  {
+    src: `${imagePath}/vegan-food/municipal-market-vegan-restaurant/last-dish.jpeg`,
+    alt: 'ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล buffet plate',
+    caption: "ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล is a standard point-and-hope 'jay' buffet, although they had a higher than average number of sausage-type things on sticks. This plate costs me 70 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/municipal-market-vegan-restaurant/third-dish.jpeg`,
+    alt: 'ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล buffet plate',
+    caption: "I was feeling extravagant one day so decided to get two sausage-type things on sticks. It bumped the price up to 90 baht, but I have no regrets. I'd do it again.",
+  },
+  {
+    src: `${imagePath}/vegan-food/municipal-market-vegan-restaurant/outside.jpeg`,
+    alt: 'ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล from outside',
+    caption: 'The restaurant is tucked-away in the corner of the municipal market but it quite easy to find with all the usual เจ insignia.',
+  },
+  {
+    src: `${imagePath}/vegan-food/municipal-market-vegan-restaurant/first-dish.jpeg`,
+    alt: 'ร้านอาหารเจ บุรีรัมย์หลังตลาดเทศบาล buffet plate',
+    caption: "They kept on warning me that the food I chose was spicy. I normally can't handle spicy food, but this wasn't really spicy at all. Either that or I'm really tough now. I think it just wasn't really spicy at all. This plate cost 70 baht.",
+  },
+]
+
+<ImageGallery images={municipalMarketVeganRestaurantImages} />
 
 ### La Paz
 
@@ -121,7 +190,40 @@ If you don't know how to speak Thai (or are just too hungover like I was), then 
 
 There's plenty of comfortable and the shop is air conditioned, which is always nice.
 
-TODO: Add photos
+export const laPazImages = [
+  {
+    src: `${imagePath}/vegan-food/la-paz/stir-fried-spicy-basil-and-vegan-crispy-pork.jpeg`,
+    alt: 'La Paz stir-fried spicy basil and vegan crispy pork with rice',
+    caption: 'There are five items on the vegan venu at La Paz, ranging in price from 69 baht to 119 baht. This is the stir-fried spicy basil and vegan cripy pork with rice, which costs 99 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/la-paz/vegan-tonkatsu.jpeg`,
+    alt: 'La Paz vegan tonkatsu',
+    caption: "The best, and most expensive item on the vegan menu is the vegan tonkatsu. And no, I don't know what that means either, but it does taste good. At 119 baht, it's only for the more affluent among us.",
+  },
+  {
+    src: `${imagePath}/vegan-food/la-paz/vegan-menu.jpeg`,
+    alt: 'La Paz vegan menu',
+    caption: 'The reason that La Paz is the easiest place to get vegan food in Buriram is it has a bi-lingual, vegan, picture-menu. Perfect for hangover days.',
+  },
+  {
+    src: `${imagePath}/vegan-food/la-paz/vegan-pork-and-shiitake-rice.jpeg`,
+    alt: 'La Paz vegan pork and shiitake rice',
+    caption: 'The vegan pork and shiitake rice might look like what you shat-up this morning, but it tasted really good. It costs 79 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/la-paz/fried-japanese-tofu.jpeg`,
+    alt: 'La Paz fried Japanese tofu with teriyaki sauce',
+    caption: "Another one of the 69 baht offerings is the fried Japanese tofu with teriykai sauce. And I would bet everything I have that they didn't get that tofu from Japan.",
+  },
+  {
+    src: `${imagePath}/vegan-food/la-paz/inside.jpeg`,
+    alt: 'La Paz inside',
+    caption: 'The restaurant itself has lots of comfortable seating and not many customers, which is exactly what I look for in a restaurant.',
+  },
+]
+
+<ImageGallery images={laPazImages} />
 
 ### The Salad Lab
 
@@ -131,7 +233,15 @@ You take a bowl (small is 89 baht, large is 129 baht), fill it up with as much s
 
 It wasn't a very exciting meal, but hey, it got a large quantity and variety of veg into me that day, so it was welcome all the same.
 
-TODO: Add photos
+export const theSaladLabImages = [
+  {
+    src: `${imagePath}/vegan-food/the-salad-lab/large-bowl.jpeg`,
+    alt: 'The Salad Lab large bowl',
+    caption: "This is the large bowl, which costs 129 baht. I packed it so full that you can't see the mass of veggies underneath, but there was a lot of goodness in this bowl.",
+  },
+]
+
+<ImageGallery images={theSaladLabImages} />
 
 ## Where I stayed
 
