@@ -7,7 +7,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-02-22T20:40:00+07:00', // TODO: Update this
+  date: '2025-03-07T20:40:00+07:00', // TODO: Update this
   title: 'Buriram for Digital Nomads',
   description: '', // TODO
   keywords: ['Thailand', 'Buri Ram'],
@@ -25,7 +25,25 @@ That's not a bad thing. It's pretty rare that I stay somewhere for only a week, 
 
 Of couse, in a city so small you're limited in what is availabe, and the lack of vegan food here started to grate at me after just a week. That will perhaps preclude me from ever coming back long-term, but with that exception I found it a really lovely, friendly town, where I enjoyed spending my time.
 
-TODO: Add any city images
+export const cityImages = [
+  {
+    src: `${imagePath}/city/welcome-to-buriram-sign.jpeg`,
+    alt: 'Welcome to Buriram sign',
+    caption: 'Welcome to Buriram',
+  },
+  {
+    src: `${imagePath}/city/workout-area.jpeg`,
+    alt: 'Sansuk Road workout area',
+    caption: "Buriram has lots of workout areas in some very curious places, like here on Sunsuk Road. While I'm in favour of giving people a way to exercise, forcing pedestrians to walk in the road might not be the best way of doing so.",
+  },
+  {
+    src: `${imagePath}/city/sunrise.jpeg`,
+    alt: 'Sunrise',
+    caption: 'I was staying in fifth floor room with east-facing windows, meaning if I woke up in time I saw some beautiful sunrises over Buriram.',
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Who is Buriram suitable for?
 
@@ -77,9 +95,14 @@ Some other bars I bookmarked but never made it to while I was in Buriram, were <
 
 export const socialImages = [
   {
+    src: `${imagePath}/social/bee-stop-toilet-sign.jpeg`,
+    alt: 'Bee Stop Bar and Grill toilet',
+    caption: "Bee Stop is a classy bar. I suggest wearing a shirt and shoes so you don't get turned away.",
+  },
+  {
     src: `${imagePath}/social/amsterram.jpeg`,
     alt: 'Amsterram',
-    caption: "Amsterram is a weed themed bar, if you couldn't tell from the name (Amster, as in Amsterdam, ram, as in Buriram... I assume). That means that when you come here they sell weed alongside alcohol and you'll be offered a joint along with your beer. I politely declined. Weed makes me paranoid, so I don't have it often. The downside is that the vibe in the bar is... it's probably great if you're high, but I just found the stoner music kind of depressing, so I only stayed for one beer.",
+    caption: "Amsterram is a weed themed bar, if you couldn't tell from the name (Amster, as in Amsterdam, ram, as in Buriram... I assume). That means that when you come here they sell weed alongside alcohol and you'll be offered a joint (middle shelf) along with your beer. I politely declined. Weed makes me paranoid, so I don't have it often. The downside is that the vibe in the bar is... it's probably great if you're high, but I just found the stoner music kind of depressing, so I only stayed for one beer.",
   },
 ]
 
@@ -273,31 +296,69 @@ export const snowHouseBurriamDetails = {
 
 I have very mixed feelings about Snow House. Some things about it I loved, and some I just didn't.
 
-I had a great start here, because despite arriving here just after 10:30am, they let me check-in right away, despite check-in time not being until 2pm. That's always very welcome, and I found the staff to be very friendly and personable.
+I had a great start here, because despite arriving here just after 10:30am when check-in time was 2pm, they let me check-in right away. That's always very welcome, and I found the staff to be very friendly and personable.
 
-But then once I got up to the room, a couple of things instantly annoyed me. The first was that there were cigarette butts on both the floor of the balcony, and in the sink on the balcony. These weren't hard to spot, and as they got ignored by the housekeepers who came into my room everyday of my stay after that, I can assume they just don't get paid to clean the balcony or something, because it was disgusting on there. Just ignore the fact that there's a balcony in this room, because it's just dirty.
+But then once I got up to the room, a couple of things instantly annoyed me. The first was that there were cigarette butts on both the floor of the balcony, and in the sink of the balcony. These weren't hard to spot, and as they got ignored by the housekeepers who came into my room everyday of my stay after that, I can assume they just don't get paid to clean the balcony, because it was disgusting out there. Not just cigarette butts, but the floor out there didn't look like it'd been cleaned in months either. Just ignore the fact that there's a balcony in this room, because it's not really usable.
 
 The other thing that the cleaners did that annoyed me, was there was no bag in the bin. That's never good for me because I drink so much tea and eat so much fruit, the remnants of which always end up in the bin, that I'm just going to make a mess of the bin if there isn't a bag in there.
 
 I never like to complain, especially if my complaint could get someone else into trouble, as it could the housekeepers if they aren't cleaning the room properly. And they're paid so little that wouldn't be fair. So instead I went to 7-11 to get a plastic bag that I could then use in the bin. Ok, surely they won't forget to replace it again.
 
-Bzzzt, wrong. The next day they actually did replace the bag with another bin liner, but the day after forgot. Off I went to 7-11. By the end of my stay and was just using this bin without a bag, which made it kind of disgusting. I'm not sure what that game was we were playing. It was a bit weird.
+Bzzzt, wrong. The next day they actually did replace the bag with another bin liner, but the day after forgot. Off I went to 7-11. By the end of my stay I was just using this bin without a bag, which made it kind of disgusting. I'm not sure what that game was we were playing. It was a bit weird.
 
-Apart from the balcony, the room was actually pretty nice. Huge, east-facing windows, and being up on the fifth floor (out of seven) I was high enough that I could leave the curtains open while I slept, which I always do anyway, but here I didn't have to worry about people watching me sleep. I woke-up drenched in glorious daylight every day, which I love. The desk being right in front of a window was a boon too.
+Apart from the balcony, the room was actually pretty nice. Huge, east-facing windows, and being up on the fifth floor (out of seven) I was high enough that I could leave the curtains open while I slept, which I always do anyway, but here I didn't have to worry about people watching me sleep. I woke-up drenched in glorious daylight every day, which I love. The desk being right in front of a window was great too.
 
 A downside was that the room was just a little bit too small to be comfortable though. I moved the bed about a foot closer to the window than it was when I checked-in. That gave me a bit more space to exercise (although that extra foot of floor space that was previously covered by the bed was predictably dusty), but it just felt a little bit too small. The room was listed at 22m². I've stayed in 22m² rooms before that didn't feel so cramped, but here it just did. There was also an annoying number of ants in the room. They seemed to be everywhere.
 
-Another downside was that the walls just weren't that soundproof. I had a corner room so was only sharing one wall, but anytime the couple in that room were talking, or watching a movie, or fucking, as they did a lot, I got to listen to it. That was fun.
+The walls just weren't that soundproof either. I had a corner room so was only sharing one wall, but anytime the couple in that room were talking, or watching a movie, or fucking, as they did a lot, I got to listen to it. That was fun.
 
 The Internet was fast enough (25.5mbps download, 26.4mbps upload). It was slightly unstable, but mostly ok.
 
-One thing I absolutely loved about this place though, was that apart from the aggressive soi dogs that lived outside, the location here was perfect. It's a short walk from the university, meaning it's a very student-centric are which is my kind of vibe. 7-11 is nearby (about a three minute walk) as are a couple of fruit vendors that setup every day. In the surrounding streets you've got pretty much everything you need, from coffee shops to launderettes (of which there are multiple), and you're an easy walk from Khlong Lalom, which is a great place for a walk or run (above), and the first two vegan-friendly restaurants I mentioned above are easy to get to too.
+One thing I absolutely loved about this place though, was that apart from the aggressive soi dogs that lived outside, the location here was perfect. It's a short walk from the university, meaning it's a very student-centric area which is my kind of vibe. 7-11 is nearby (about a three minute walk) as are a couple of fruit vendors that setup every day. In the surrounding streets you've got pretty much everything you need, from coffee shops to launderettes (of which there are multiple), and you're an easy walk from Khlong Lalom, which is a great place for a walk or run (above), and the first two vegan-friendly restaurants I mentioned above are easy to get to.
 
-It's why I have such mixed feelings about Snow House. I either loved or hated everything here. Loved the location. Loved the friendliness of the staff. Loved how much light gets into the room. Hated that the balcony never got cleaned. Hated how many ants were in the room. Hated I could hear the people next door fucking.
+It's why I have such mixed feelings about Snow House. I either loved or hated everything here. Loved the location. Loved the friendliness of the staff. Loved how much light gets into the room. Hated that the balcony never got cleaned. Hated that they refused to give me a bin liner. Hated how many ants were in the room. Hated I could hear the people next door fucking.
 
 In a city like Buriram there aren't that many options, so you take what you can get. I'd certainly look to see if I could find anywhere better before coming back again, but despite everything I've just said, Snow House might still be the best option.
 
-TODO: Add photos
+export const snowHouseBuriramImages = [
+  {
+    src: `${imagePath}/snow-house-buriram/room.jpeg`,
+    alt: 'Snow House Buriram standard room',
+    caption: 'One of the best things here was the floor-to-ceiling east-facing windows. So much daylight streamed through the windows in the mornings. I loved it.',
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/bed.jpeg`,
+    alt: 'Snow House Buriram standard room bed',
+    caption: 'Unfortunately, the room is just a little too small to be comfortable. This was the position of the bed as I checked-in. I pushed it about a foot closer to the window, and that made the space at the bottom right of this photo just about sufficient for exercise, but it did always feel very cramped.',
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/storage-space.jpeg`,
+    alt: 'Snow House Buriram standard room storage space',
+    caption: 'You have plenty of storage space, as well as a fridge and a kettle. Unfortunately the wall behind them is annoyingly thin, and you can expect to be able to hear quite clearly what your neighbours are up to.',
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/bathroom.jpeg`,
+    alt: 'Snow House Buriram bathroom',
+    caption: 'The bathroom is pretty standard.',
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/balcony.jpeg`,
+    alt: 'Snow House Buriram balcony',
+    caption: "While the room has a balcony, assume that it doesn't. It was so filthy out there with cigarette butts and other stains on the floor and in the sink that it was basically unusable. Despite this being very obvious, the housekeepers didn't clean it through the duration of my stay.",
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/outside.jpeg`,
+    alt: 'Snow House Buriram from outside',
+    caption: "Snow House isn't hard to spot, but can be surrounded by some quite aggressive dogs at night-time.",
+  },
+  {
+    src: `${imagePath}/snow-house-buriram/monthly-rental-prices.jpeg`,
+    alt: 'Snow House Buriram monthly rental prices',
+    caption: 'One thing to be aware of is that Snow House offer monthly rental prices. While these exclude the cost of electricity and water, it only costs 6,000 baht to stay for a month, or 5,000 baht per month if you stay for longer. At the rate I paid to stay here, it would have only taken me staying for eleven nights until it would have been cheaper to just pay for a whole month, so if you do plan on a longer stay, contact them first.',
+  },
+]
+
+<ImageGallery images={snowHouseBuriramImages} />
 
 ## Summary of Buriram
 
