@@ -3,6 +3,7 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -42,513 +43,153 @@ export const cityImages = [
 
 <ImageGallery images={cityImages} />
 
-## Which area to stay in Bangkok
-
-Bangkok centres around Sukhumvit. Other people will dispute that, claiming that Siam or even Silom are the centre of Bangkok, and that's ok, they're allowed to be wrong. When coming to Bangkok for the first time and trying to figure-out where to stay, start at Sukhumvit (around the <ExternalLink url='https://maps.app.goo.gl/Xg26jaXChYttBn7NA'>Terminal 21 shopping mall</ExternalLink>) and work outwards from there until you find what you're looking for.
-
-If you head north-west just a few hundred metres, you'll get to <ExternalLink url='https://maps.app.goo.gl/oAMsdqDJrtFT9qYt9'>Nana</ExternalLink>, which is a disgustingly touristy area. If you're coming to Bangkok for daytime drinking and prostitutes, then look no further. I don't recommend it.
-
-Continue north-west from there another kilometre and you'll make it to <ExternalLink url='https://maps.app.goo.gl/iaXMD9CX4nwAMjQa7'>Siam</ExternalLink>. If you love shopping, and particularly shopping malls, then this is your dream. Siam Paragon and Central World are two of best known hi-so (high-society) shopping malls in the region, and MBK is great for a faux Thai experience. There's not much else here of interest, and as the shopping malls are so easily accessible no matter where you're staying, I'd recommend looking elsewhere.
-
-Continue on and you'll get to <ExternalLink url='https://maps.app.goo.gl/Jbnu3ccEQ97PrZMA7'>Khao San Road</ExternalLink> and <ExternalLink url='https://maps.app.goo.gl/jQcpibjnFuCZ1rjp9'>Chinatown</ExternalLink>. Khao San is famously the place where backpackers stay in Bangkok. There are some very cheap rooms on and around Khao San Road, and it's a renowned party spot. By this far out, the transport links are a little lacking, but it's still easy to get a taxi to if you want a night out. If you're a digital nomad who actually has work to get done then it's not a good area to stay in. It's much better for the younger, unemployed crowd.
-
-Chinatown is very cheap. If you're here on a budget then it's a lively place where you can find a cheap room. Otherwise I'd recommend avoiding it.
-
-Starting again from Terminal 21, if instead you go south-east, the further you travel the more you'll be in areas favoured by expats over tourists. Firstly you'll get to <ExternalLink url='https://maps.app.goo.gl/zqUjKRKbRip3TsC29'>Phrom Pong</ExternalLink>. I recommend Phrom Pong for someone coming to Bangkok for the first time. You're away from the extreme tourism of Nana and Sukhumvit, but you're still in a very forigner-friendly area. The entire city is easily accessible from here as you're walking distance from Terminal 21 and a couple of Bangkok's parks.
-
-Beyond Phrom Pong you get to <ExternalLink url='https://maps.app.goo.gl/f5u5rtgS2zriWnpf8'>Thong Lo</ExternalLink>, and then to <ExternalLink url='https://maps.app.goo.gl/ejcsQQqsjzqguJkZ9'>Ekkamai</ExternalLink>. Both areas are heavily favoured by expats so are great if you want to meet foreigners living in rather than visiting Bangkok. They're more 'trendy' areas, so you can find some overpriced bars if you're into that kind of thing. Travelling on from there things get more local and less expensive. <ExternalLink url='https://maps.app.goo.gl/QwRyuwjg2oucFwLb7'>On Nut</ExternalLink> is an area popular with expats on a tighter budget.
-
-If you go south-west from Terminal 21 you get to Sathorn/Silom area. <ExternalLink url='https://maps.app.goo.gl/qP9FNoXyDchk8eARA'>Silom</ExternalLink> was once a bustling area of the city, but since the pandemic it's died a bit. I love <ExternalLink url='https://maps.app.goo.gl/TkXqKsRfuUrsYB8V7'>Sathorn</ExternalLink>. It's a deceptively big district that I stayed in for more than three years when I lived in Bangkok, and while some areas are popular with expats, it has some very local parts too. It's not a cheap area to stay in, but it is nice.
-
-Heading north from Sukhumvit you get to much less touristy areas of the city, but that still feel like the city centre. <ExternalLink url='https://maps.app.goo.gl/abDyKZXZmhUUmVtU6'>Rama 9</ExternalLink> has some (much better value) shopping malls but there isn't too much else of note here. A bit further on is Ladprao. I lived and worked in Ladprao for a couple of years, and in a way it feels like its own city, having its own downtown area around <ExternalLink url='https://maps.app.goo.gl/5dNb8DBAAbEswx3KA'>Phahon Yothin</ExternalLink>. There are a couple of shopping malls there and Chattuchak has three inter-connected parks which make the biggest green space within the city. And while Chattuchak is famed for its weekend market, this isn't an area that tourists usually choose to stay in, so there aren't too many hotels or foreigner-aimed businesses away from the market.
-
-For years I wanted to live between Saphan Kwai and <ExternalLink url='https://maps.app.goo.gl/8pMTwj1YfdLVLSgE7'>Ari</ExternalLink>. I always thought it was the perfect area, bustling with life and only a short walk from Chattuchak Park, but away from all the tourists and within easy reach of some fun bars around Victory Monument and Ladprao. Unfortunately I never managed to stay there when living in Bangkok, and as it's so void of tourists I've never been able to find anywhere that I want to stay there since becoming a digital nomad. If you're looking to stay in a good, local area with lots to do nearby, then this is an area to consider, if you can find a room that fits your needs anyway.
-
-If you like staying in big cities, then Bangkok has exactly what you're looking for. The trouble is finding it, especially if you've never been here. Touristy areas can be easily visited for the day, but I don't recommend staying in them. If you've never been here before and you're completely unsure where to go, then around Phrom Pong/Thong Lo is a safe option. You'll have everything you need nearby and most people you encounter will speak English.
-
-## Where I stayed
-
-### Nandha Hotel
-
-<MapLink name='14/11-15 Sukhumvit 33' url='https://goo.gl/maps/dmXWTJaZAavw6MAK8' />
-
-export const nandhaHotelDetails = {
-  dates: {
-    checkIn: '2022-10-07',
-    checkOut: '2022-10-20',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/home-place.html',
-  },
-  roomType: 'Classic Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 12672,
-      '7% VAT': 887.04,
-      '10% Property service charge': 1267.20,
-    },
-  },
-}
-
-<AccommodationTable details={nandhaHotelDetails} />
-
-Speaking of which, Nandha will forever hold the distinction of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them. As a place to start it really wasn't bad. The rooms are big, with ample space to do yoga and other exercise. There's a table with a couple of chairs that makes a great workstation. Primarily though, it's because it's on Sukhumvit soi 33, which is a really good location in Bangkok. You're no more than 10 minutes walk away from Phrom Pong BTS station, and it's not too much further in the other direction to get to Sukhumvit MRT. There are shopping malls including supermarkets nearby, and it's walking distance to both Benchasiri Park and Benchakitti Park; both great places to run.
-
-It's a bike-themed hotel, which is weird. They have bike bells on the doors instead of doorbells, and the bike bells are completely indistinguishable from one another so it's impossible to know if someone is trying to get into your room or not. When the housekeepers are doing their daily rounds, that got annoying because I could never tell when someone was about to come into the room.
-
-Other than that I can't fault this place. The wifi is fast, it's very comfortable, and I thought the cost was really fair. I'd happily stay again, although anytime I've looked since, the price has been massively inflated.
-
-export const nandhaHotelImages = [
-  {
-    src: `${imagePath}/nandha-hotel/room.jpeg`,
-    alt: 'Nandha Hotel Classic Superior Double Room',
-    caption: "It's a pretty big room. Plenty of space for exercise. Out of shot is another table and chairs that makes for a good workstation.",
-  }
-]
-
-<ImageGallery images={nandhaHotelImages} />
-
-### V Check Inn Sukhumvit 22
-
-<MapLink name='318-318/1 Sukhumvit Soi 22' url='https://goo.gl/maps/JHV6y2C2wbVGewJ37' />
-
-export const vCheckInnDetails = {
-  dates: {
-    checkIn: '2022-10-20',
-    checkOut: '2022-11-03',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
-  },
-  roomType: 'Deluxe Double Room with Balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 15308.41,
-      '7% VAT': 1071.59,
-    },
-  },
-}
-
-<AccommodationTable details={vCheckInnDetails} />
-
-I got attracted to V Check Inn by the large balcony, which is only available for the 5th floor rooms. If you can get one of those then this is a really good value hotel.
-
-It's located at the non-Sukhumvit end of Sukhumvit soi 22. That's a pretty long soi, of which the other end is a tourist trap of bars and massage parlours, once you get down to this end though you're away from all that. There's a collection of street vendors and a 7-11 behind the hotel, and you can walk to the Queen Sirikit end of Benchakitti Park in about 15 minutes. If you want to avoid the touristy end of soi 22, there are a couple of roads you can cut-down to get onto soi 24 instead, which comes out right next to Phrom Pong BTS. Asok BTS, and Sukhumvit and Queen Sirikit MRT stations are also easily walkable.
-
-The room itself is decent. The bed is comfortable and the balcony is a great place if you need some time to sit and think (smoke weed) or if you just want to eat some food. A couple of small grievances that I had were that they don't make-up the room automatically, you have to specifically ask someone on the front desk. That's fine, except there's not always someone there, so if your bin's full you end up waiting 10 minutes for them to come back from the toilet, just to ask them to make up the room.
-
-The other frustration was that there is a very loud water pump. I'm used to sleeping in loud places, but it was significant enough that it bugged me when I first arrived. It goes on for a few seconds, off for a few seconds, on for a few seconds, off for a few seconds, all day and all night long. Like anything consistent you get used to it as background noise, but if you do get easily disturbed, it's something to consider.
-
-I'd definitely be willing to stay here again in a pinch. It was perfectly comfortable, I liked the location and the local amenities, and I enjoyed chatting with the owners.
-
-export const vCheckInnImages = [
-  {
-    src: `${imagePath}/v-check-inn/desk.jpeg`,
-    alt: 'V Check Inn desk',
-    caption: 'The desk is a good place to setup your laptop and work for the day.'
-  },
-  {
-    src: `${imagePath}/v-check-inn/bed.jpeg`,
-    alt: 'V Check Inn bed',
-    caption: 'The bed was comfortable enough.',
-  },
-  {
-    src: `${imagePath}/v-check-inn/balcony.jpeg`,
-    alt: 'V Check Inn balcony',
-    caption: "The standout feature of the room is the balcony. It's huge and you get a great view. I'd often come out here to eat, or to sit and think."
-  },
-]
-
-<ImageGallery images={vCheckInnImages} />
-
-### RoomQuest Sukhumvit 36
-
-<MapLink name='129 Soi Napha Sap 5 Sukhumvit 36' url='https://goo.gl/maps/Y9qUDVncb7qzdZYd8' />
-
-export const roomQuestFirstStayDetails = {
-  dates: {
-    checkIn: '2022-12-01',
-    checkOut: '2022-12-16',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Standard King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 12249.39,
-      '7% VAT': 857.46,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestFirstStayDetails} />
-
-export const roomQuestSecondStayDetails = {
-  dates: {
-    checkIn: '2023-04-06',
-    checkOut: '2023-04-20',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 10121.99,
-      'Taxes & fees': 1790.47,
-      'Cashback (paid after 60 days)': -417.54,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestSecondStayDetails} />
-
-export const roomQuestThirdStayDetails = {
-  dates: {
-    checkIn: '2023-05-11',
-    checkOut: '2023-05-24',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 9785.85,
-      'Taxes & fees': 1730.07,
-      'Cashback (paid after 60 days)': -864.69,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestThirdStayDetails} />
-
-export const roomQuestFourthStayDetails = {
-  dates: {
-    checkIn: '2023-10-27',
-    checkOut: '2023-11-09',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Deluxe Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 14487.38,
-      '7% VAT': 1014.12,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestFourthStayDetails} />
-
-export const roomQuestFifthStayDetails = {
-  dates: {
-    checkIn: '2024-03-02',
-    checkOut: '2024-03-21',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Superior King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 16465.33,
-      '7% VAT': 1152.57,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestFifthStayDetails} />
-
-export const roomQuestSixthStayDetails = {
-  dates: {
-    checkIn: '2024-11-01',
-    checkOut: '2024-11-14',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Superior King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 14091.48,
-      '7% VAT': 986.40,
-    },
-  },
-}
-
-<AccommodationTable details={roomQuestSixthStayDetails} />
-
-I know what you're thinking, _"Wow, he's stayed here five times, he must really love this hotel."_ Not really, but it's cheap and ticks all the boxes.
-
-I love its location in Thong Lo, which is an area that has the right mix of touristy and local for me. The hotel is about a 10 minute walk down soi 36, away from the traffic and the hustle and bustle, yet you're only about a two-minute walk from Vibe, a vegetarian coffee shop/restaurant. Alt.eatery, one of my favourite vegan restaurants in Bangkok, is only about a ten-minute walk, and as you expand further there are more and more vegan-friendly places. By walking no more than thirty minutes from the room, you have enough vegan food available that you'll never get bored, no matter how long you stay.
-
-A large 7-11 is about a two-minute walk from the hotel, and it's about a ten-minute walk to Thong Lo BTS station. Benjasiri Park is about a 25-minute walk, with Benchakitti Park being about 40-minutes away. Both of these are great for running.
-
-Coupled with the excellent location, the rooms are basic, but do the important things really well. This hotel has the fastest or one of the fastest Internet connections I've ever experienced; you can consistently expect 500+mbps upload and download speeds, and it's stable. I don't recall the connection ever cutting-out. The AC is cold, the bed is comfortable, and depending on the room type, there is plenty of desk space.
-
-In order to induce as much confusion as possible, the rooms are named differently depending on if you look on booking.com or Agoda, so I'll simplify their names to standard, superior and deluxe.
-
-Standard is the most basic of the three rooms, and while it would do in a pinch, I don't recommend it simply because the price difference to the superior room is negligible (and at times it's actually cheaper), and the superior rooms are much nicer.
-
-The standard room is pretty small (20m²). There's just about space to exercise and you get a small desk, a small TV, and the door to the balcony lets in _some_ natural light. The superior room at 25m² is noticeably bigger, giving you a lot more empty space, the desk is huge, the TV is much bigger, being 55" if I had to guess, and there are large windows that allow in a lot more natural light. In one of the times I had a superior room, it even had a sofa.
-
-The deluxe room is the biggest of the three (28m²), but has a noticable jump in price and in my opinion isn't worth it. For a start it has two TVs, which is more annoying than anything. As I only have one Apple TV, I'm limited to either watching TV from the sofa _or_ from the bed, but not both unless I reconnect each time. Beyond that and a guaranteed sofa, the deluxe room really offers nothing more than the superior room, so take the superior if it's available.
-
-For the reasons I've already stated, I do find myself coming back here again and again, but even so, it's not a hotel I hold in especially high regard. The rooms are decent, but the bathrooms especially could do with a bit of a touch-up. The hotel offers zero in terms of facilities except a pool that, on my first stay I was advised not to swim in because it was turning green, and of which I'm yet to see anyone swim in during all of my stays. It just sits there unused behind reception, and that's not surprising. It's too small to properly swim in, but it's indoors, so you don't get the benefit of relaxing in the sun. It would be much better if they replaced it with something useful like a lounge or a coffee shop or a gym.
-
-And I have to give a word about the staff. With a couple of exceptions, the staff I've met during my stays here have all been lovely, however none have really been notable, and I don't blame them for that. The front-desk staff have to work twelve-hour shifts day after day. If someone ever requested I work a twelve-hour shift, I'd quit on the spot just for them having the gall to ask. I cannot imagine being expected to do it day after day, which probably explains the ridiculously high turnover.
-
-On all of my five stays, not one member of the front-of-house staff has remained from my previous stay. There's been a 100% turnover rate each time, with the only exception being the maid, who's a very sweet young Thai girl that doesn't speak a word of English. She's been here for all of my stays and seems quite happy. Apart from her, encountering continually demotivated and tired staff doesn't breed great memories. Where the staff can often be a stand-out feature of the place you stay, here they are not.
-
-The lack of facilities, the unremakableness of the rooms, and the indifference of the staff stop this hotel from living long in the memory. Yet for the great location, the lightning fast Internet, the relative comfort, and the more-than-reasonable price, no hotel in Bangkok has been able to tempt me away.
-
-I'll probably stay here when I'm in Bangkok again, I just won't look forward to it very much.
-
-export const roomQuestImages = [
-  {
-    src: `${imagePath}/room-quest/standard-room-bed.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 standard king room bed',
-    caption: 'The standard king room. For the uninspiring ruler.',
-  },
-  {
-    src: `${imagePath}/room-quest/standard-room-desk.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 standard king room desk and TV',
-    caption: "There's just enough space between the bed and the TV to exercise in the standard room.",
-  },
-  {
-    src: `${imagePath}/room-quest/superior-room-bed.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 superior double room',
-    caption: "There's a noticeable jump-up in size if you get the superior room. Whether or not you get a sofa seems like pot-luck, but you'll definitely have more space.",
-  },
-  {
-    src: `${imagePath}/room-quest/superior-room-desk.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 superior double room desk and TV',
-    caption: "The TV's bigger in the superior double room too. At a guess I'd say it's 55\".",
-  },
-  {
-    src: `${imagePath}/room-quest/superior-room-bathroom.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 superior double room bathroom',
-    caption: "The bathroom's just as bad.",
-  },
-  {
-    src: `${imagePath}/room-quest/deluxe-room.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 deluxe room',
-    caption: "The biggest and most expensive of the rooms is the deluxe room, which has two TVs. I'm not sure who'd want to watch two TVs at once, but it is bigger.",
-  },
-  {
-    src: `${imagePath}/room-quest/deluxe-room-bathroom.jpeg`,
-    alt: 'RoomQuest Sukhumvit 36 deluxe room bathroom',
-    caption: "The bathroom's still shit.",
-  },
-]
-
-<ImageGallery images={roomQuestImages} />
-
-### Parvena Hotel Sathorn
-
-<MapLink name='592 Sathon Soi 3 Suanplu Soi 5 Sathon Tai Rd' url='https://goo.gl/maps/VbtYBABCZjweJpxh6' />
-
-export const parvenaHotelSathornDetails = {
-  dates: {
-    checkIn: '2023-03-11',
-    checkOut: '2023-03-23',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
-  },
-  roomType: 'Standard Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 8175.70,
-      '7% VAT': 572.30,
-      '10% Property service charge': 874.80,
-    },
-  },
-}
-
-<AccommodationTable details={parvenaHotelSathornDetails} />
-
-I used to live about a 20-minute walk from here. Despite being so close, I wouldn't come to this area very often. My work was in a different direction, the city centre was in a different direction, the supermarkets I went to were in a different direction. I just had very little reason to come here, but every time I did I always thought to myself _"Wow! What a fun, vibrant area."_ Then I wouldn't come back for another six months. Now with the freedom of a digital nomad, I decided that I'd stay here and get to know this area properly, and it really is a great area.
-
-Although there are a few expats mulling around, as there are anywhere in Bangkok, it's a pretty local area. There's loads going on with street food and other vendors lining all along the road outside the hotel, which gives it a very bustling, fun vibe. It also means that you can get everything you need just metres from the hotel entrance. There's a 7-11 twenty metres away, and if you're willing to walk for five minutes you'll pass five of them. There's also a fully vegan restaurant (Bai Plu House) just a couple of minutes away, a nice coffee shop with vegan options (Bartels) that opened in January 2023, which is a lovely place to sit with a book, several laundrettes within easy walk, quite a few weed shops, and if you're willing to venture a bit further, you can get to Silom and all it offers. And for those who're really lazy, the hotel offers a free tuk-tuk to anywhere within 3 miles (which includes Silom or Lumphini MRT stations). I only used this service once, preferring to walk because it's a nice area to just be in.
-
-As for the hotel itself, I liked it. I was up on the top (8th) floor, so had good views and was well away from the traffic below. The room is spacious enough, if not huge. I had the space to do yoga, the bed was comfy, it included a large fridge and had a kettle (although no cups). The TV was a decent size, the AC worked really well, it has a balcony that's big enough to sit on, and the shower is hot and powerful.
-
-For all the above I loved this place, however there are a couple of deal-breakers that stop me from staying here again.
-
-Firstly, for some inexplicable reason the Internet connection requires you to go through a login page, which is an absolute pain because anytime you put your device to sleep you have to sign-in again. Every time I turn on my laptop, I have to sign-in. Every time I look at my phone, I have to sign-in. Every time I turn on my Apple TV, I have to sign-in.
-
-Worse still is that although this wifi has a respectable download speed (typically around 68mbps), the upload speed is atrocious. The fastest of the many speed tests I did was just 4.53mbps. That means you can watch Netflix and you can work on your laptop without a problem, but the second you need to make a video call you'll be continually dropping-out. It was so bad that I just tethered my laptop to my mobile hotspot to make video calls (AIS 5G had great reception in the room).
-
-The second reason that I wouldn't return is that although there's a desk and chair to work at, they are incredibly uncomfortable, and I have low standards. Apart from video calls I almost exclusively worked from the bed because it was so bad. The chair was flat and made from wood, and the height of the desk just didn't work with it. Despite using a laptop stand I was getting a sore back within minutes.
-
-It's a shame this place suffers from two such easily fixable things. As a digital nomad what two things do you need? A moderately comfortable place to work, and a good Internet connection. This hotel offers neither, so despite having so much going for it, it's a hard place for me to recommend.
-
-export const parvenaHotelSathornImages = [
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/room.jpeg`,
-    alt: 'Parvena Hotel Sathorn room',
-    caption: "It's an alright-sized room, and the bed is comfortable.",
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/bathroom.jpeg`,
-    alt: 'Parvena Hotel Sathorn bathroom',
-    caption: "The bathroom... if you couldn't tell.",
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/desk.jpeg`,
-    alt: 'Parvena Hotel Sathorn desk',
-    caption: "The world's not most comfortable desk.",
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/balcony.jpeg`,
-    alt: 'Parvena Hotel Sathorn balcony',
-    caption: "There's a decent view from the balcony.",
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/shower-picture.jpeg`,
-    alt: 'Parvena Hotel Sathorn shower picture',
-    caption: "It's an interesting choice of art to put in the shower. I don't hate it.",
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/outside.jpeg`,
-    alt: 'Parvena Hotel Sathorn from outside',
-    caption: 'Parvena Hotel Sathorn. That tuk-tuk is always sittng there and takes guests anywhere within 3 miles of the hotel for free.',
-  },
-  {
-    src: `${imagePath}/parvena-hotel-sathorn/weed-donuts.jpeg`,
-    alt: 'Leaf Cannabis Cafe vegan donuts',
-    caption: "There are several weed shops in the area surrounding the hotel. These vegan cannabis donuts came from 'Leaf Cannabis Cafe', which is about a three-minute walk away. They make watching Netflix more fun."
-  }
-]
-
-<ImageGallery images={parvenaHotelSathornImages} />
-
-### Rezt Bangkok
-
-<MapLink name='75 Sukhumvit soi 22' url='https://maps.app.goo.gl/qdZ16EZTgxxtcV8c7' />
-
-export const reztBangkokDetails = {
-  dates: {
-    checkIn: '2025-02-13',
-    checkOut: '2025-02-27',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/rezt-bangkok/hotel/bangkok-th.html',
-  },
-  roomType: 'Premier King Bed',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 16760.03,
-      'Taxes & fees': 2963.98,
-      'Cashback (paid after 60 days)': -771.12,
-    },
-  },
-}
-
-<AccommodationTable details={reztBangkokDetails} />
-
-Given the ratings and reviews that Rezt has, my stay was a little disappointing.
-
-Check-in was a bit of a mess as the guy on the desk seemed a little confused about what he was actually doing, then when I finally got into the room to find all the blinds closed, I pulled on the string to open one of them and it immediately fell off the ceiling. That was a sign of things to come, as a lot about Rezt felt it had been done a bit half-arsed.
-
-I'm not someone who likes to cause a fuss, so on complaining that the blind had fallen down, I omitted that the kettle in the room worked... a little too well. If it was on the stand, it was boiling whether it was turned-on or not. As someone who gets through about ten cups of tea per day, this was really annoying as I couldn't put the kettle on and go and do something else, because if I forgot about it, it'd just boil and boil and boil unti I burned the hotel down, so I just got used to standing next to it instead.
-
-It also took me a bit of time to get used to the design of the room, which sucks. There's very little surface space in the room - a couple of bedside tables, a tiny desk, and some shelves. Which is why it's completely bemusing that the room's safe is attached to the only shelf that's at a reasonable height. I therefore had to store my clothes on a high shelf that I couldn't really see comfortably, and I had to make my tea and my daily smoothies on shelf that was so low that I couldn't see without bending down, because the shelf with the safe on got in the way.
-
-The view out of the room was non-existent as, despite being on the top (fifth) floor, I was facing the drab, windowless sides of the EmSphere building. To be fair, it's probably better than it having windows because at least this way I could sleep with the blinds open, confident that no one could see in. But still, I was envious of the rooms on the other side of the hotel, which I assume look over, among other things, Benjasiri Park.
-
-The shower in the room wasn't great either, as it was one of those showers with two shower heads (a rainy one and a handheld one). Yet the knob that was supposed to turn one off and turn on the other didn't work properly, so no matter the setting you had water coming out of both.
-
-All of the above was an annoyance, but it wasn't the end of the world. I'm yet to even get to the thing that pissed me off the most about this room:
-
-One morning at about 11am, I was having an online Thai class with one of my tutors. I had headphones on, so no sound was emitting from my laptop, and I was speaking in a normal voice - the same volume as you're reading this article in your head.
-
-About 45 minutes into the lesson, the room phone rings. It's someone from reception. And they tell me the person in the room next door has complained that they can hear me speaking. As I was in the middle of a class, I didn't really respond, I just unplugged the phone from the wall and continued the class, speaking extra loudly.
-
-After the class was finished, I went down to reception and asked the guy... _"the fuck?"_ I politely explained to him that I was speaking in a normal voice within daytime hours, what's he bothering me for? And he agreed. _"Yes, I know, it's very stupid,"_ he told me. Well if you know, then why did you call me to tell me? Every hotel has morons staying in it. When they make a stupid complaint, you ignore them. You don't call me and tell me about it. And if me speaking in a normal voice is audible in the adjacent rooms, then that's more of an indictment on the hotel and the soundproofing of the walls than anything else.
-
-I left the phone unplugged for the rest of my stay so they'd have to knock on my door next time they wanted to relay a stupid complaint, but it still pissed me off that it had even got back to me. If you're someone who ever has to make phone calls or video calls, then don't stay here. You apparently can't make a normal volume call without the staff ringing your phone to tell you about it. Of all the things wrong with this hotel, this was the one that bugged me the most. You kind of want the staff to have a bit of common sense.
-
-If I haven't put you off yet, then there are some positives about staying here too. The wifi was decent enough. 66mbps download speed and 49mbps upload speed on the one speed test I did, and it was a stable connection, which is more important. The room just about has the space for some (slightly cramped) exercise, and the bed is comfortable. And the location, for better or worse, is very, very central.
-
-You're literally next door to EmSphere; one of the three shopping malls that comprises Em District. That means it's a very, very touristy area, but also you can get everything you need really, really conveniently.
-
-Rezt is down an alleyway off soi 22, and right opposite the end of the alleyway is Makro, a budget supermarket. At the entrance to EmSphere is Gourmet Market, another supermarket. So you can get basically anything within a two minute walk. 7-11 and other shops are also very nearby.
-
-The hotel is located only about 50m from Benjasiri Park, as the crow flies. Unfortunately there's no way to cut-through the back of the alleyway the hotel's on (I looked), so instead the quickest way to the park is to go out the alleyway, and then cut around past the EmSphere service entrance, but even then it's only five minutes until you're in the park, which is amazing for going for your midday run. Veganerie, one of the better vegan restaurants in Bangkok, is a short walk through the park, and in Emporium in the fourth floor food court is Talalaks, one of the better budget vegan restaurants. Other lesser places exist in the surrounding area, but those were my two go-tos while staying here.
-
-I'll reiterate that the north end of Sukhumvit 22 is very, very touristy. And when there are tourists, services pop-up to meet their needs. What I mean is there are a lot of adult services on offer in the alley Rezt is in and in the surrounding area of soi 22. If you're a man you'll get hollered-at every time you walk down the street, which is fine, but just be aware that it's not a family-friendly area. You might not want to stay here with kids. Or a girlfriend that gets jealous easily.
-
-My stay at Rezt was a bit disappointing. I had hoped for better, but I guess when it comes down to it, for a digital nomad you want a reliable Internet connection. It has that. You want convenience. It definitely has that. You want a park nearby. It has that. It ticks the boxes of all the essentials. Even so, I have no intention of staying here again.
-
-TODO: Add photos
-
-### Sereine Sukhumvit 39 Hotel
-
-<MapLink name='19 Sukhumvit soi 39' url='https://maps.app.goo.gl/6esToKzmsYJkjWir6' />
-
-export const sereineDetails = {
-  dates: {
-    checkIn: '2025-02-27',
-    checkOut: '2025-03-20',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/sereine-sukhumvit-39-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Studio Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 30703.32,
-      'Taxes & fees': 5437.38,
-      'Cashback (paid after 60 days)': -7857.34,
-    },
-  },
-}
-
-<AccommodationTable details={sereineDetails} />
+## Arriving in Bangkok
 
 TODO
 
-TODO: Add photos
+## How affordable is Bangkok?
 
-## Where to get vegan food in Bangkok
+TODO
+
+## Paying for things in Bangkok
+
+TODO
+
+## Getting around Bangkok
+
+TODO
+
+### Taxis
+
+### Motorcycle taxis
+
+### Ride-hailing apps
+
+### MRT and BTS
+
+### Taking the bus
+
+## Is it easy to get by with English in Bangkok?
+
+TODO
+
+## Is Bangkok safe?
+
+TODO
+
+## Who is Bangkok suitable for?
+
+TODO
+
+## Is the tap water drinkable in Bangkok?
+
+TODO
+
+## Things I don't like about Bangkok
+
+TODO
+
+## Being sociable in Bangkok
+
+There are few places in the world that I've found it easier to be sociable than Bangkok. The Meetup community in Bangkok is really, really active, so you can find an event that you want to attend pretty much seven days per week. Whether that be running clubs, meeting people over coffee, doing yoga, language exchange or going out and getting shit-faced, you're going to be able to find plenty of Meetups to suit your taste, and for whatever reason, I found that the people I met at Meetups in Bangkok were more open to staying in touch and being subsequently social than in many other places in the world.
+
+While I obviously suggest finding events to suit your taste, groups that I've attended and can vouch for are the <ExternalLink url='https://www.meetup.com/lumpini-running-club/'>Lumpini Running Club Bangkok</ExternalLink>, which runs in Lumphini Park twice per week on Tuesdays and Thursdays in the early evening, often followed by dinner. The <ExternalLink url='https://www.meetup.com/bangkok-cultural-exchange-meetup/'>Bangkok Cultural Exchange Meetup</ExternalLink> runs language exchange events that actually are about exchanging language. I say that with surprise, because most language exchange events are just a guise for everyone to get drunk while speaking English. A language exchange group that is absolutely nothing to do with exchanging language is <ExternalLink url='https://www.meetup.com/language-exchange-and-activities-and-social-in-bangkok/'>Language Exchange and Activities and Social in Bangkok</ExternalLink>. They run weekly events at a bar called 'The Hangover', so that should tell you something. The events are a bit hit-and-miss, depending on who shows up.
+
+If you're interested in getting vegan food while meeting new people, checkout <ExternalLink url='https://www.meetup.com/bangkok-vegan-meetup/'>Bangkok Vegan Meetup</ExternalLink>, which hosts events at differing vegan-friendly restaurants around Bangkok. There are many other Meetups that I've been to in Bangkok, and I haven't been to a bad one yet, so you'll be able to find something to suit your tastes, no matter what they are.
+
+If for some reason Meetup isn't able to give you what you need, other platforms are similarly active, and Bangkok isn't a hard place to meet people by just going out, given how friendly the locals are and how many tourists there are here.
+
+export const socialImages = [
+  {
+    src: `${imagePath}/social/language-exchange-and-activities-and-social-in-bangkok.jpeg`,
+    alt: 'Language Exchange and Party and Social in Bangkok',
+    caption: "I'm really good at showing up to places and getting drunk. I'm really bad at remembering to take any photos, so the few I have were sourced from other people. This is the 'Language Exchange and Activies and Social in Bangkok' Meetup group that takes place in The Hangover every Saturday.",
+  },
+  {
+    src: `${imagePath}/social/bangkok-vegan-meetup.jpeg`,
+    alt: 'Bangkok Vegan Meetup',
+    caption: "The 'Bangkok Vegan Meetup' Christmas dinner.",
+  },
+  {
+    src: `${imagePath}/social/lumpini-running-club-bangkok.jpeg`,
+    alt: 'Lumpini Running Club Bangkok',
+    caption: "The 'Lumpini Running Club Bangkok' run in Lumphini Park every Tuesday and Thursday. It's a good way to meet new people, assert your dominance by running quickly, and then go out and get dinner together.",
+  },
+  {
+    src: `${imagePath}/social/bkk-meet-and-mingle.jpeg`,
+    alt: 'BKK Meet and Mingle',
+    caption: "This was the inaugural 'BKK Meet and Mingle' meetup, which took place at 'Mowgli Day & Night Restaurant' in May 2023.",
+  },
+]
+
+<ImageGallery images={socialImages} />
+
+## Where to run in Bangkok
+
+Bangkok has a small number of nice parks to run in, but not much else, so consider that when looking for accommodation. Although some people do run along the pavements, the amount of congestion of both pedestrians and cars makes it a no-go for me.
+
+When I lived in Ladprao I used to run in the three closely connected parks by Mo Chit BTS station. Chatuchak Park is the best known of these, and is connected to Queen Sirikit Park and Wachirabenchathat Park. If you're in that area, this is a great place to run, but I lived there before I got my first smartphone so don't have any Strava maps to share unfortunately.
+
+As a new tourist in Bangkok, it's unlikely that you'll be staying in that area so let me instead focus on a couple of options that you have in the more popular areas of town.
+
+The first of these is pretty simple: Benchasiri Park. It's a small park next to Emporium shopping mall. It has a roughly 700m circumference, so for a 5k run it's seven laps. Doing any more than that becomes a little cumbersome, and it can get busy in the mornings and evenings with a couple of annoying bottlenecks on the route. However, if you come here in the daytime it's quiet enough that you can have a pleasant run. There are toilets in the park and three different shops to buy water/snacks at, so if you're still adjusting to the heat in Bangkok, this is a good place to start.
+
+The rest of the runs I'm going to detail will build into my favourite Bangkok route, but it's a little hard to explain, so I'll go step-by-step. Looking at the Strava maps below will make it clearer.
+
+The most obvious place to run in Bangkok is Lumphini Park. The primary reason I lived in Sathorn for three years is that I wanted to be close to Lumphini Park, so I've really got my laps in there. Although you can make your own route through the inside of the park, there's a very established running lap that goes around the outside that is slightly over 2.5km. It's a wide track the whole way around, so even in the mornings and evenings when it's a lot busier, you still have the space to go at a good pace. As always, I recommend running in the daytime when you'll be the only one running, but that's because my sadomasochistic side loves the heat.
+
+Closer to Sukhumvit you'll find Benchakitti Park. I use the term 'park' slightly loosely, because it's more a lake with a track around it. The track is shared with some gormless pedstrians who will inevitably veer onto the running side, so all the more reason to come at a quiet time. At roughly 1.8km, each lap of the lake is just over a mile.
+
+Until recently that was the extent of Benchakitti Park, but it's now expanded to be roughly three times the size with the addition of the connected Benchakitti Forest Park. In the south half of the forest park there's a road that's suitable for runners, and above the park is a skywalk that's good for running along. The rest of the park is a bit zig-zaggy and hard to see where you're going, so not especially run-friendly, although fine if you're going slowly.
+
+That's all well and good, but wouldn't it be wonderful if you could run between Lumphini Park and Benchakitti Park without having to cross any roads? Well duh-duh-dum duh-duh-dum, you can.
+
+A little known feature of Bangkok is the raised walkway coloquially known as 'The Green Mile'. In the past accessing it from the Sukhumvit end was near impossible unless you knew what you were looking for. With the development of Benchakitti Forest Park it's now much easier to find.
+
+The Green Mile is basically a long walkway open only to pedestrians and cyclists that connects the north-west corner of Benchakitti Park to Thanon Witthayu (Wireless Road), a very short distance from Lumphini Park. So you can connect these three parks without having to cross a single road or worry about a single car or motorcycle.
+
+The typical route I do, is to start at the south end of Benchakitti Park, do a half-lap before going onto The Green Mile, running to and then doing a lap of Lumphini, before going back onto The Green Mile, turning-off onto the Benchakitti Forest Park Skywalk, running down that to the end, and then finishing back at the south end of Benchakitti Park. That route is roughly 7.7km, but you can obviously add-on as you need by doing additional laps of any of the three parks that it takes you through.
+
+It's not really a route to do for speed, largely because The Green Mile includes some staircases that'll distort your pace, but other than that it's a lovely route to run, and my favourite route to do in Bangkok.
+
+There are a few other small parks and running tracks that you can use for running in a pinch. If you want to have a good run here though, while still being somewhat central, I'd recommend staying around one of the parks that I've mentioned here. Having them within walking distance really does make Bangkok more enjoyable.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/benchasiri-park-strava.jpeg`,
+    alt: 'Benchasiri Park running Strava',
+    caption: "Benchasiri Park. You can't really get lost on this one, you just go around the outside. 5km is about seven laps of the park.",
+    url: 'https://www.strava.com/activities/9122804003',
+  },
+  {
+    src: `${imagePath}/running/lumphini-park-strava.jpeg`,
+    alt: 'Lumphini Park running Strava',
+    caption: "Lumphini Park. It's pretty clear as you're running it, but this is the standard running route around Lumphini. One lap is just over 2.5km.",
+    url: 'https://www.strava.com/activities/7991751358',
+  },
+  {
+    src: `${imagePath}/running/benchakitti-park-strava.jpeg`,
+    alt: 'Benchakitti Park running Strava',
+    caption: "Benchakitti Park. There's a marked running track the entire way around. One lap is just over a mile.",
+    url: 'https://www.strava.com/activities/7999468155',
+  },
+  {
+    src: `${imagePath}/running/benchakitti-forest-park-strava.jpeg`,
+    alt: 'Benchakitt Forest Park running Strava',
+    caption: 'This run combines Benchakitti Park (on the right) with Benchakitti Forest Park including the Benchakitti Forest Park Skywalk (the zig-zaggy diagonal line that starts at the top-left of the map), and the first part of the Green Mile (the flat horizontal line at the top of the map).',
+    url: 'https://www.strava.com/activities/8246246586',
+  },
+  {
+    src: `${imagePath}/running/green-mile-strava.jpeg`,
+    alt: 'Green Mile running Strava',
+    caption: "Bringing it all together, this run starts at the south end of Benchakitti Park. It does half a lap of the lake before veering off and onto the Green Mile, which takes you all the way over to Lumphini Park without having to cross any roads. There's then one lap of Lumphini before going back onto the Green Mile, and just over halfway along, turning onto the Benchakitti Forest Park Skywalk, and finally back to Benchakitti Park. If you were to stop where you started, at the south end of Benchakitti Park, it's roughly a 7.7km run, without crossing a single road. If you want to extend the route, you can add on laps of Lumphini Park, or as I did here, add on laps of Benchakitti Park until you've gone as far as you want.",
+    url: 'https://www.strava.com/activities/8034699881',
+  },
+]
+
+<ImageGallery images={runningImages} />
+
+## Getting vegan food in Bangkok
 
 When I first lived in Bangkok in 2012, it wasn't at all vegan-friendly. It's since grown into a vegan powerhouse, with more vegan and vegan-friendly restaurants than you can hope to get to. These are my recommendations for the best of vegan Bangkok.
 
@@ -1101,102 +742,536 @@ export const pacoImages = [
 
 <ImageGallery images={pacoImages} />
 
-## Where to run in Bangkok
+### Food delivery apps
 
-Bangkok has a small number of nice parks to run in, but not much else, so consider that when looking for accommodation. Although some people do run along the pavements, the amount of congestion of both pedestrians and cars makes it a no-go for me.
+TODO
 
-When I lived in Ladprao I used to run in the three closely connected parks by Mo Chit BTS station. Chatuchak Park is the best known of these, and is connected to Queen Sirikit Park and Wachirabenchathat Park. If you're in that area, this is a great place to run, but I lived there before I got my first smartphone so don't have any Strava maps to share unfortunately.
+## Which area to stay in Bangkok
 
-As a new tourist in Bangkok, it's unlikely that you'll be staying in that area so let me instead focus on a couple of options that you have in the more popular areas of town.
+Bangkok centres around Sukhumvit. Other people will dispute that, claiming that Siam or even Silom are the centre of Bangkok, and that's ok, they're allowed to be wrong. When coming to Bangkok for the first time and trying to figure-out where to stay, start at Sukhumvit (around the <ExternalLink url='https://maps.app.goo.gl/Xg26jaXChYttBn7NA'>Terminal 21 shopping mall</ExternalLink>) and work outwards from there until you find what you're looking for.
 
-The first of these is pretty simple: Benchasiri Park. It's a small park next to Emporium shopping mall. It has a roughly 700m circumference, so for a 5k run it's seven laps. Doing any more than that becomes a little cumbersome, and it can get busy in the mornings and evenings with a couple of annoying bottlenecks on the route. However, if you come here in the daytime it's quiet enough that you can have a pleasant run. There are toilets in the park and three different shops to buy water/snacks at, so if you're still adjusting to the heat in Bangkok, this is a good place to start.
+If you head north-west just a few hundred metres, you'll get to <ExternalLink url='https://maps.app.goo.gl/oAMsdqDJrtFT9qYt9'>Nana</ExternalLink>, which is a disgustingly touristy area. If you're coming to Bangkok for daytime drinking and prostitutes, then look no further. I don't recommend it.
 
-The rest of the runs I'm going to detail will build into my favourite Bangkok route, but it's a little hard to explain, so I'll go step-by-step. Looking at the Strava maps below will make it clearer.
+Continue north-west from there another kilometre and you'll make it to <ExternalLink url='https://maps.app.goo.gl/iaXMD9CX4nwAMjQa7'>Siam</ExternalLink>. If you love shopping, and particularly shopping malls, then this is your dream. Siam Paragon and Central World are two of best known hi-so (high-society) shopping malls in the region, and MBK is great for a faux Thai experience. There's not much else here of interest, and as the shopping malls are so easily accessible no matter where you're staying, I'd recommend looking elsewhere.
 
-The most obvious place to run in Bangkok is Lumphini Park. The primary reason I lived in Sathorn for three years is that I wanted to be close to Lumphini Park, so I've really got my laps in there. Although you can make your own route through the inside of the park, there's a very established running lap that goes around the outside that is slightly over 2.5km. It's a wide track the whole way around, so even in the mornings and evenings when it's a lot busier, you still have the space to go at a good pace. As always, I recommend running in the daytime when you'll be the only one running, but that's because my sadomasochistic side loves the heat.
+Continue on and you'll get to <ExternalLink url='https://maps.app.goo.gl/Jbnu3ccEQ97PrZMA7'>Khao San Road</ExternalLink> and <ExternalLink url='https://maps.app.goo.gl/jQcpibjnFuCZ1rjp9'>Chinatown</ExternalLink>. Khao San is famously the place where backpackers stay in Bangkok. There are some very cheap rooms on and around Khao San Road, and it's a renowned party spot. By this far out, the transport links are a little lacking, but it's still easy to get a taxi to if you want a night out. If you're a digital nomad who actually has work to get done then it's not a good area to stay in. It's much better for the younger, unemployed crowd.
 
-Closer to Sukhumvit you'll find Benchakitti Park. I use the term 'park' slightly loosely, because it's more a lake with a track around it. The track is shared with some gormless pedstrians who will inevitably veer onto the running side, so all the more reason to come at a quiet time. At roughly 1.8km, each lap of the lake is just over a mile.
+Chinatown is very cheap. If you're here on a budget then it's a lively place where you can find a cheap room. Otherwise I'd recommend avoiding it.
 
-Until recently that was the extent of Benchakitti Park, but it's now expanded to be roughly three times the size with the addition of the connected Benchakitti Forest Park. In the south half of the forest park there's a road that's suitable for runners, and above the park is a skywalk that's good for running along. The rest of the park is a bit zig-zaggy and hard to see where you're going, so not especially run-friendly, although fine if you're going slowly.
+Starting again from Terminal 21, if instead you go south-east, the further you travel the more you'll be in areas favoured by expats over tourists. Firstly you'll get to <ExternalLink url='https://maps.app.goo.gl/zqUjKRKbRip3TsC29'>Phrom Pong</ExternalLink>. I recommend Phrom Pong for someone coming to Bangkok for the first time. You're away from the extreme tourism of Nana and Sukhumvit, but you're still in a very forigner-friendly area. The entire city is easily accessible from here as you're walking distance from Terminal 21 and a couple of Bangkok's parks.
 
-That's all well and good, but wouldn't it be wonderful if you could run between Lumphini Park and Benchakitti Park without having to cross any roads? Well duh-duh-dum duh-duh-dum, you can.
+Beyond Phrom Pong you get to <ExternalLink url='https://maps.app.goo.gl/f5u5rtgS2zriWnpf8'>Thong Lo</ExternalLink>, and then to <ExternalLink url='https://maps.app.goo.gl/ejcsQQqsjzqguJkZ9'>Ekkamai</ExternalLink>. Both areas are heavily favoured by expats so are great if you want to meet foreigners living in rather than visiting Bangkok. They're more 'trendy' areas, so you can find some overpriced bars if you're into that kind of thing. Travelling on from there things get more local and less expensive. <ExternalLink url='https://maps.app.goo.gl/QwRyuwjg2oucFwLb7'>On Nut</ExternalLink> is an area popular with expats on a tighter budget.
 
-A little known feature of Bangkok is the raised walkway coloquially known as 'The Green Mile'. In the past accessing it from the Sukhumvit end was near impossible unless you knew what you were looking for. With the development of Benchakitti Forest Park it's now much easier to find.
+If you go south-west from Terminal 21 you get to Sathorn/Silom area. <ExternalLink url='https://maps.app.goo.gl/qP9FNoXyDchk8eARA'>Silom</ExternalLink> was once a bustling area of the city, but since the pandemic it's died a bit. I love <ExternalLink url='https://maps.app.goo.gl/TkXqKsRfuUrsYB8V7'>Sathorn</ExternalLink>. It's a deceptively big district that I stayed in for more than three years when I lived in Bangkok, and while some areas are popular with expats, it has some very local parts too. It's not a cheap area to stay in, but it is nice.
 
-The Green Mile is basically a long walkway open only to pedestrians and cyclists that connects the north-west corner of Benchakitti Park to Thanon Witthayu (Wireless Road), a very short distance from Lumphini Park. So you can connect these three parks without having to cross a single road or worry about a single car or motorcycle.
+Heading north from Sukhumvit you get to much less touristy areas of the city, but that still feel like the city centre. <ExternalLink url='https://maps.app.goo.gl/abDyKZXZmhUUmVtU6'>Rama 9</ExternalLink> has some (much better value) shopping malls but there isn't too much else of note here. A bit further on is Ladprao. I lived and worked in Ladprao for a couple of years, and in a way it feels like its own city, having its own downtown area around <ExternalLink url='https://maps.app.goo.gl/5dNb8DBAAbEswx3KA'>Phahon Yothin</ExternalLink>. There are a couple of shopping malls there and Chattuchak has three inter-connected parks which make the biggest green space within the city. And while Chattuchak is famed for its weekend market, this isn't an area that tourists usually choose to stay in, so there aren't too many hotels or foreigner-aimed businesses away from the market.
 
-The typical route I do, is to start at the south end of Benchakitti Park, do a half-lap before going onto The Green Mile, running to and then doing a lap of Lumphini, before going back onto The Green Mile, turning-off onto the Benchakitti Forest Park Skywalk, running down that to the end, and then finishing back at the south end of Benchakitti Park. That route is roughly 7.7km, but you can obviously add-on as you need by doing additional laps of any of the three parks that it takes you through.
+For years I wanted to live between Saphan Kwai and <ExternalLink url='https://maps.app.goo.gl/8pMTwj1YfdLVLSgE7'>Ari</ExternalLink>. I always thought it was the perfect area, bustling with life and only a short walk from Chattuchak Park, but away from all the tourists and within easy reach of some fun bars around Victory Monument and Ladprao. Unfortunately I never managed to stay there when living in Bangkok, and as it's so void of tourists I've never been able to find anywhere that I want to stay there since becoming a digital nomad. If you're looking to stay in a good, local area with lots to do nearby, then this is an area to consider, if you can find a room that fits your needs anyway.
 
-It's not really a route to do for speed, largely because The Green Mile includes some staircases that'll distort your pace, but other than that it's a lovely route to run, and my favourite route to do in Bangkok.
+If you like staying in big cities, then Bangkok has exactly what you're looking for. The trouble is finding it, especially if you've never been here. Touristy areas can be easily visited for the day, but I don't recommend staying in them. If you've never been here before and you're completely unsure where to go, then around Phrom Pong/Thong Lo is a safe option. You'll have everything you need nearby and most people you encounter will speak English.
 
-There are a few other small parks and running tracks that you can use for running in a pinch. If you want to have a good run here though, while still being somewhat central, I'd recommend staying around one of the parks that I've mentioned here. Having them within walking distance really does make Bangkok more enjoyable.
+## Where I stayed
 
-export const runningImages = [
+### Nandha Hotel
+
+<MapLink name='14/11-15 Sukhumvit 33' url='https://goo.gl/maps/dmXWTJaZAavw6MAK8' />
+
+export const nandhaHotelDetails = {
+  dates: {
+    checkIn: '2022-10-07',
+    checkOut: '2022-10-20',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/home-place.html',
+  },
+  roomType: 'Classic Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12672,
+      '7% VAT': 887.04,
+      '10% Property service charge': 1267.20,
+    },
+  },
+}
+
+<AccommodationTable details={nandhaHotelDetails} />
+
+Speaking of which, Nandha will forever hold the distinction of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them. As a place to start it really wasn't bad. The rooms are big, with ample space to do yoga and other exercise. There's a table with a couple of chairs that makes a great workstation. Primarily though, it's because it's on Sukhumvit soi 33, which is a really good location in Bangkok. You're no more than 10 minutes walk away from Phrom Pong BTS station, and it's not too much further in the other direction to get to Sukhumvit MRT. There are shopping malls including supermarkets nearby, and it's walking distance to both Benchasiri Park and Benchakitti Park; both great places to run.
+
+It's a bike-themed hotel, which is weird. They have bike bells on the doors instead of doorbells, and the bike bells are completely indistinguishable from one another so it's impossible to know if someone is trying to get into your room or not. When the housekeepers are doing their daily rounds, that got annoying because I could never tell when someone was about to come into the room.
+
+Other than that I can't fault this place. The wifi is fast, it's very comfortable, and I thought the cost was really fair. I'd happily stay again, although anytime I've looked since, the price has been massively inflated.
+
+export const nandhaHotelImages = [
   {
-    src: `${imagePath}/running/benchasiri-park-strava.jpeg`,
-    alt: 'Benchasiri Park running Strava',
-    caption: "Benchasiri Park. You can't really get lost on this one, you just go around the outside. 5km is about seven laps of the park.",
-    url: 'https://www.strava.com/activities/9122804003',
+    src: `${imagePath}/nandha-hotel/room.jpeg`,
+    alt: 'Nandha Hotel Classic Superior Double Room',
+    caption: "It's a pretty big room. Plenty of space for exercise. Out of shot is another table and chairs that makes for a good workstation.",
+  }
+]
+
+<ImageGallery images={nandhaHotelImages} />
+
+### V Check Inn Sukhumvit 22
+
+<MapLink name='318-318/1 Sukhumvit Soi 22' url='https://goo.gl/maps/JHV6y2C2wbVGewJ37' />
+
+export const vCheckInnDetails = {
+  dates: {
+    checkIn: '2022-10-20',
+    checkOut: '2022-11-03',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
+  },
+  roomType: 'Deluxe Double Room with Balcony',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 15308.41,
+      '7% VAT': 1071.59,
+    },
+  },
+}
+
+<AccommodationTable details={vCheckInnDetails} />
+
+I got attracted to V Check Inn by the large balcony, which is only available for the 5th floor rooms. If you can get one of those then this is a really good value hotel.
+
+It's located at the non-Sukhumvit end of Sukhumvit soi 22. That's a pretty long soi, of which the other end is a tourist trap of bars and massage parlours, once you get down to this end though you're away from all that. There's a collection of street vendors and a 7-11 behind the hotel, and you can walk to the Queen Sirikit end of Benchakitti Park in about 15 minutes. If you want to avoid the touristy end of soi 22, there are a couple of roads you can cut-down to get onto soi 24 instead, which comes out right next to Phrom Pong BTS. Asok BTS, and Sukhumvit and Queen Sirikit MRT stations are also easily walkable.
+
+The room itself is decent. The bed is comfortable and the balcony is a great place if you need some time to sit and think (smoke weed) or if you just want to eat some food. A couple of small grievances that I had were that they don't make-up the room automatically, you have to specifically ask someone on the front desk. That's fine, except there's not always someone there, so if your bin's full you end up waiting 10 minutes for them to come back from the toilet, just to ask them to make up the room.
+
+The other frustration was that there is a very loud water pump. I'm used to sleeping in loud places, but it was significant enough that it bugged me when I first arrived. It goes on for a few seconds, off for a few seconds, on for a few seconds, off for a few seconds, all day and all night long. Like anything consistent you get used to it as background noise, but if you do get easily disturbed, it's something to consider.
+
+I'd definitely be willing to stay here again in a pinch. It was perfectly comfortable, I liked the location and the local amenities, and I enjoyed chatting with the owners.
+
+export const vCheckInnImages = [
+  {
+    src: `${imagePath}/v-check-inn/desk.jpeg`,
+    alt: 'V Check Inn desk',
+    caption: 'The desk is a good place to setup your laptop and work for the day.'
   },
   {
-    src: `${imagePath}/running/lumphini-park-strava.jpeg`,
-    alt: 'Lumphini Park running Strava',
-    caption: "Lumphini Park. It's pretty clear as you're running it, but this is the standard running route around Lumphini. One lap is just over 2.5km.",
-    url: 'https://www.strava.com/activities/7991751358',
+    src: `${imagePath}/v-check-inn/bed.jpeg`,
+    alt: 'V Check Inn bed',
+    caption: 'The bed was comfortable enough.',
   },
   {
-    src: `${imagePath}/running/benchakitti-park-strava.jpeg`,
-    alt: 'Benchakitti Park running Strava',
-    caption: "Benchakitti Park. There's a marked running track the entire way around. One lap is just over a mile.",
-    url: 'https://www.strava.com/activities/7999468155',
-  },
-  {
-    src: `${imagePath}/running/benchakitti-forest-park-strava.jpeg`,
-    alt: 'Benchakitt Forest Park running Strava',
-    caption: 'This run combines Benchakitti Park (on the right) with Benchakitti Forest Park including the Benchakitti Forest Park Skywalk (the zig-zaggy diagonal line that starts at the top-left of the map), and the first part of the Green Mile (the flat horizontal line at the top of the map).',
-    url: 'https://www.strava.com/activities/8246246586',
-  },
-  {
-    src: `${imagePath}/running/green-mile-strava.jpeg`,
-    alt: 'Green Mile running Strava',
-    caption: "Bringing it all together, this run starts at the south end of Benchakitti Park. It does half a lap of the lake before veering off and onto the Green Mile, which takes you all the way over to Lumphini Park without having to cross any roads. There's then one lap of Lumphini before going back onto the Green Mile, and just over halfway along, turning onto the Benchakitti Forest Park Skywalk, and finally back to Benchakitti Park. If you were to stop where you started, at the south end of Benchakitti Park, it's roughly a 7.7km run, without crossing a single road. If you want to extend the route, you can add on laps of Lumphini Park, or as I did here, add on laps of Benchakitti Park until you've gone as far as you want.",
-    url: 'https://www.strava.com/activities/8034699881',
+    src: `${imagePath}/v-check-inn/balcony.jpeg`,
+    alt: 'V Check Inn balcony',
+    caption: "The standout feature of the room is the balcony. It's huge and you get a great view. I'd often come out here to eat, or to sit and think."
   },
 ]
 
-<ImageGallery images={runningImages} />
+<ImageGallery images={vCheckInnImages} />
 
-## Being sociable in Bangkok
+### RoomQuest Sukhumvit 36
 
-There are few places in the world that I've found it easier to be sociable than Bangkok. The Meetup community in Bangkok is really, really active, so you can find an event that you want to attend pretty much seven days per week. Whether that be running clubs, meeting people over coffee, doing yoga, language exchange or going out and getting shit-faced, you're going to be able to find plenty of Meetups to suit your taste, and for whatever reason, I found that the people I met at Meetups in Bangkok were more open to staying in touch and being subsequently social than in many other places in the world.
+<MapLink name='129 Soi Napha Sap 5 Sukhumvit 36' url='https://goo.gl/maps/Y9qUDVncb7qzdZYd8' />
 
-While I obviously suggest finding events to suit your taste, groups that I've attended and can vouch for are the <ExternalLink url='https://www.meetup.com/lumpini-running-club/'>Lumpini Running Club Bangkok</ExternalLink>, which runs in Lumphini Park twice per week on Tuesdays and Thursdays in the early evening, often followed by dinner. The <ExternalLink url='https://www.meetup.com/bangkok-cultural-exchange-meetup/'>Bangkok Cultural Exchange Meetup</ExternalLink> runs language exchange events that actually are about exchanging language. I say that with surprise, because most language exchange events are just a guise for everyone to get drunk while speaking English. A language exchange group that is absolutely nothing to do with exchanging language is <ExternalLink url='https://www.meetup.com/language-exchange-and-activities-and-social-in-bangkok/'>Language Exchange and Activities and Social in Bangkok</ExternalLink>. They run weekly events at a bar called 'The Hangover', so that should tell you something. The events are a bit hit-and-miss, depending on who shows up.
+export const roomQuestFirstStayDetails = {
+  dates: {
+    checkIn: '2022-12-01',
+    checkOut: '2022-12-16',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Standard King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 12249.39,
+      '7% VAT': 857.46,
+    },
+  },
+}
 
-If you're interested in getting vegan food while meeting new people, checkout <ExternalLink url='https://www.meetup.com/bangkok-vegan-meetup/'>Bangkok Vegan Meetup</ExternalLink>, which hosts events at differing vegan-friendly restaurants around Bangkok. There are many other Meetups that I've been to in Bangkok, and I haven't been to a bad one yet, so you'll be able to find something to suit your tastes, no matter what they are.
+<AccommodationTable details={roomQuestFirstStayDetails} />
 
-If for some reason Meetup isn't able to give you what you need, other platforms are similarly active, and Bangkok isn't a hard place to meet people by just going out, given how friendly the locals are and how many tourists there are here.
+export const roomQuestSecondStayDetails = {
+  dates: {
+    checkIn: '2023-04-06',
+    checkOut: '2023-04-20',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 10121.99,
+      'Taxes & fees': 1790.47,
+      'Cashback (paid after 60 days)': -417.54,
+    },
+  },
+}
 
-export const socialImages = [
+<AccommodationTable details={roomQuestSecondStayDetails} />
+
+export const roomQuestThirdStayDetails = {
+  dates: {
+    checkIn: '2023-05-11',
+    checkOut: '2023-05-24',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Superior Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 9785.85,
+      'Taxes & fees': 1730.07,
+      'Cashback (paid after 60 days)': -864.69,
+    },
+  },
+}
+
+<AccommodationTable details={roomQuestThirdStayDetails} />
+
+export const roomQuestFourthStayDetails = {
+  dates: {
+    checkIn: '2023-10-27',
+    checkOut: '2023-11-09',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Deluxe Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 14487.38,
+      '7% VAT': 1014.12,
+    },
+  },
+}
+
+<AccommodationTable details={roomQuestFourthStayDetails} />
+
+export const roomQuestFifthStayDetails = {
+  dates: {
+    checkIn: '2024-03-02',
+    checkOut: '2024-03-21',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Superior King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 16465.33,
+      '7% VAT': 1152.57,
+    },
+  },
+}
+
+<AccommodationTable details={roomQuestFifthStayDetails} />
+
+export const roomQuestSixthStayDetails = {
+  dates: {
+    checkIn: '2024-11-01',
+    checkOut: '2024-11-14',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+  },
+  roomType: 'Superior King Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 14091.48,
+      '7% VAT': 986.40,
+    },
+  },
+}
+
+<AccommodationTable details={roomQuestSixthStayDetails} />
+
+I know what you're thinking, _"Wow, he's stayed here five times, he must really love this hotel."_ Not really, but it's cheap and ticks all the boxes.
+
+I love its location in Thong Lo, which is an area that has the right mix of touristy and local for me. The hotel is about a 10 minute walk down soi 36, away from the traffic and the hustle and bustle, yet you're only about a two-minute walk from Vibe, a vegetarian coffee shop/restaurant. Alt.eatery, one of my favourite vegan restaurants in Bangkok, is only about a ten-minute walk, and as you expand further there are more and more vegan-friendly places. By walking no more than thirty minutes from the room, you have enough vegan food available that you'll never get bored, no matter how long you stay.
+
+A large 7-11 is about a two-minute walk from the hotel, and it's about a ten-minute walk to Thong Lo BTS station. Benjasiri Park is about a 25-minute walk, with Benchakitti Park being about 40-minutes away. Both of these are great for running.
+
+Coupled with the excellent location, the rooms are basic, but do the important things really well. This hotel has the fastest or one of the fastest Internet connections I've ever experienced; you can consistently expect 500+mbps upload and download speeds, and it's stable. I don't recall the connection ever cutting-out. The AC is cold, the bed is comfortable, and depending on the room type, there is plenty of desk space.
+
+In order to induce as much confusion as possible, the rooms are named differently depending on if you look on booking.com or Agoda, so I'll simplify their names to standard, superior and deluxe.
+
+Standard is the most basic of the three rooms, and while it would do in a pinch, I don't recommend it simply because the price difference to the superior room is negligible (and at times it's actually cheaper), and the superior rooms are much nicer.
+
+The standard room is pretty small (20m²). There's just about space to exercise and you get a small desk, a small TV, and the door to the balcony lets in _some_ natural light. The superior room at 25m² is noticeably bigger, giving you a lot more empty space, the desk is huge, the TV is much bigger, being 55" if I had to guess, and there are large windows that allow in a lot more natural light. In one of the times I had a superior room, it even had a sofa.
+
+The deluxe room is the biggest of the three (28m²), but has a noticable jump in price and in my opinion isn't worth it. For a start it has two TVs, which is more annoying than anything. As I only have one Apple TV, I'm limited to either watching TV from the sofa _or_ from the bed, but not both unless I reconnect each time. Beyond that and a guaranteed sofa, the deluxe room really offers nothing more than the superior room, so take the superior if it's available.
+
+For the reasons I've already stated, I do find myself coming back here again and again, but even so, it's not a hotel I hold in especially high regard. The rooms are decent, but the bathrooms especially could do with a bit of a touch-up. The hotel offers zero in terms of facilities except a pool that, on my first stay I was advised not to swim in because it was turning green, and of which I'm yet to see anyone swim in during all of my stays. It just sits there unused behind reception, and that's not surprising. It's too small to properly swim in, but it's indoors, so you don't get the benefit of relaxing in the sun. It would be much better if they replaced it with something useful like a lounge or a coffee shop or a gym.
+
+And I have to give a word about the staff. With a couple of exceptions, the staff I've met during my stays here have all been lovely, however none have really been notable, and I don't blame them for that. The front-desk staff have to work twelve-hour shifts day after day. If someone ever requested I work a twelve-hour shift, I'd quit on the spot just for them having the gall to ask. I cannot imagine being expected to do it day after day, which probably explains the ridiculously high turnover.
+
+On all of my five stays, not one member of the front-of-house staff has remained from my previous stay. There's been a 100% turnover rate each time, with the only exception being the maid, who's a very sweet young Thai girl that doesn't speak a word of English. She's been here for all of my stays and seems quite happy. Apart from her, encountering continually demotivated and tired staff doesn't breed great memories. Where the staff can often be a stand-out feature of the place you stay, here they are not.
+
+The lack of facilities, the unremakableness of the rooms, and the indifference of the staff stop this hotel from living long in the memory. Yet for the great location, the lightning fast Internet, the relative comfort, and the more-than-reasonable price, no hotel in Bangkok has been able to tempt me away.
+
+I'll probably stay here when I'm in Bangkok again, I just won't look forward to it very much.
+
+export const roomQuestImages = [
   {
-    src: `${imagePath}/social/language-exchange-and-activities-and-social-in-bangkok.jpeg`,
-    alt: 'Language Exchange and Party and Social in Bangkok',
-    caption: "I'm really good at showing up to places and getting drunk. I'm really bad at remembering to take any photos, so the few I have were sourced from other people. This is the 'Language Exchange and Activies and Social in Bangkok' Meetup group that takes place in The Hangover every Saturday.",
+    src: `${imagePath}/room-quest/standard-room-bed.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 standard king room bed',
+    caption: 'The standard king room. For the uninspiring ruler.',
   },
   {
-    src: `${imagePath}/social/bangkok-vegan-meetup.jpeg`,
-    alt: 'Bangkok Vegan Meetup',
-    caption: "The 'Bangkok Vegan Meetup' Christmas dinner.",
+    src: `${imagePath}/room-quest/standard-room-desk.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 standard king room desk and TV',
+    caption: "There's just enough space between the bed and the TV to exercise in the standard room.",
   },
   {
-    src: `${imagePath}/social/lumpini-running-club-bangkok.jpeg`,
-    alt: 'Lumpini Running Club Bangkok',
-    caption: "The 'Lumpini Running Club Bangkok' run in Lumphini Park every Tuesday and Thursday. It's a good way to meet new people, assert your dominance by running quickly, and then go out and get dinner together.",
+    src: `${imagePath}/room-quest/superior-room-bed.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 superior double room',
+    caption: "There's a noticeable jump-up in size if you get the superior room. Whether or not you get a sofa seems like pot-luck, but you'll definitely have more space.",
   },
   {
-    src: `${imagePath}/social/bkk-meet-and-mingle.jpeg`,
-    alt: 'BKK Meet and Mingle',
-    caption: "This was the inaugural 'BKK Meet and Mingle' meetup, which took place at 'Mowgli Day & Night Restaurant' in May 2023.",
+    src: `${imagePath}/room-quest/superior-room-desk.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 superior double room desk and TV',
+    caption: "The TV's bigger in the superior double room too. At a guess I'd say it's 55\".",
+  },
+  {
+    src: `${imagePath}/room-quest/superior-room-bathroom.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 superior double room bathroom',
+    caption: "The bathroom's just as bad.",
+  },
+  {
+    src: `${imagePath}/room-quest/deluxe-room.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 deluxe room',
+    caption: "The biggest and most expensive of the rooms is the deluxe room, which has two TVs. I'm not sure who'd want to watch two TVs at once, but it is bigger.",
+  },
+  {
+    src: `${imagePath}/room-quest/deluxe-room-bathroom.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 deluxe room bathroom',
+    caption: "The bathroom's still shit.",
   },
 ]
 
-<ImageGallery images={socialImages} />
+<ImageGallery images={roomQuestImages} />
+
+### Parvena Hotel Sathorn
+
+<MapLink name='592 Sathon Soi 3 Suanplu Soi 5 Sathon Tai Rd' url='https://goo.gl/maps/VbtYBABCZjweJpxh6' />
+
+export const parvenaHotelSathornDetails = {
+  dates: {
+    checkIn: '2023-03-11',
+    checkOut: '2023-03-23',
+  },
+  platform: {
+    name: 'booking.com',
+    url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
+  },
+  roomType: 'Standard Double Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 8175.70,
+      '7% VAT': 572.30,
+      '10% Property service charge': 874.80,
+    },
+  },
+}
+
+<AccommodationTable details={parvenaHotelSathornDetails} />
+
+I used to live about a 20-minute walk from here. Despite being so close, I wouldn't come to this area very often. My work was in a different direction, the city centre was in a different direction, the supermarkets I went to were in a different direction. I just had very little reason to come here, but every time I did I always thought to myself _"Wow! What a fun, vibrant area."_ Then I wouldn't come back for another six months. Now with the freedom of a digital nomad, I decided that I'd stay here and get to know this area properly, and it really is a great area.
+
+Although there are a few expats mulling around, as there are anywhere in Bangkok, it's a pretty local area. There's loads going on with street food and other vendors lining all along the road outside the hotel, which gives it a very bustling, fun vibe. It also means that you can get everything you need just metres from the hotel entrance. There's a 7-11 twenty metres away, and if you're willing to walk for five minutes you'll pass five of them. There's also a fully vegan restaurant (Bai Plu House) just a couple of minutes away, a nice coffee shop with vegan options (Bartels) that opened in January 2023, which is a lovely place to sit with a book, several laundrettes within easy walk, quite a few weed shops, and if you're willing to venture a bit further, you can get to Silom and all it offers. And for those who're really lazy, the hotel offers a free tuk-tuk to anywhere within 3 miles (which includes Silom or Lumphini MRT stations). I only used this service once, preferring to walk because it's a nice area to just be in.
+
+As for the hotel itself, I liked it. I was up on the top (8th) floor, so had good views and was well away from the traffic below. The room is spacious enough, if not huge. I had the space to do yoga, the bed was comfy, it included a large fridge and had a kettle (although no cups). The TV was a decent size, the AC worked really well, it has a balcony that's big enough to sit on, and the shower is hot and powerful.
+
+For all the above I loved this place, however there are a couple of deal-breakers that stop me from staying here again.
+
+Firstly, for some inexplicable reason the Internet connection requires you to go through a login page, which is an absolute pain because anytime you put your device to sleep you have to sign-in again. Every time I turn on my laptop, I have to sign-in. Every time I look at my phone, I have to sign-in. Every time I turn on my Apple TV, I have to sign-in.
+
+Worse still is that although this wifi has a respectable download speed (typically around 68mbps), the upload speed is atrocious. The fastest of the many speed tests I did was just 4.53mbps. That means you can watch Netflix and you can work on your laptop without a problem, but the second you need to make a video call you'll be continually dropping-out. It was so bad that I just tethered my laptop to my mobile hotspot to make video calls (AIS 5G had great reception in the room).
+
+The second reason that I wouldn't return is that although there's a desk and chair to work at, they are incredibly uncomfortable, and I have low standards. Apart from video calls I almost exclusively worked from the bed because it was so bad. The chair was flat and made from wood, and the height of the desk just didn't work with it. Despite using a laptop stand I was getting a sore back within minutes.
+
+It's a shame this place suffers from two such easily fixable things. As a digital nomad what two things do you need? A moderately comfortable place to work, and a good Internet connection. This hotel offers neither, so despite having so much going for it, it's a hard place for me to recommend.
+
+export const parvenaHotelSathornImages = [
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/room.jpeg`,
+    alt: 'Parvena Hotel Sathorn room',
+    caption: "It's an alright-sized room, and the bed is comfortable.",
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/bathroom.jpeg`,
+    alt: 'Parvena Hotel Sathorn bathroom',
+    caption: "The bathroom... if you couldn't tell.",
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/desk.jpeg`,
+    alt: 'Parvena Hotel Sathorn desk',
+    caption: "The world's not most comfortable desk.",
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/balcony.jpeg`,
+    alt: 'Parvena Hotel Sathorn balcony',
+    caption: "There's a decent view from the balcony.",
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/shower-picture.jpeg`,
+    alt: 'Parvena Hotel Sathorn shower picture',
+    caption: "It's an interesting choice of art to put in the shower. I don't hate it.",
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/outside.jpeg`,
+    alt: 'Parvena Hotel Sathorn from outside',
+    caption: 'Parvena Hotel Sathorn. That tuk-tuk is always sittng there and takes guests anywhere within 3 miles of the hotel for free.',
+  },
+  {
+    src: `${imagePath}/parvena-hotel-sathorn/weed-donuts.jpeg`,
+    alt: 'Leaf Cannabis Cafe vegan donuts',
+    caption: "There are several weed shops in the area surrounding the hotel. These vegan cannabis donuts came from 'Leaf Cannabis Cafe', which is about a three-minute walk away. They make watching Netflix more fun."
+  }
+]
+
+<ImageGallery images={parvenaHotelSathornImages} />
+
+### Rezt Bangkok
+
+<MapLink name='75 Sukhumvit soi 22' url='https://maps.app.goo.gl/qdZ16EZTgxxtcV8c7' />
+
+export const reztBangkokDetails = {
+  dates: {
+    checkIn: '2025-02-13',
+    checkOut: '2025-02-27',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/rezt-bangkok/hotel/bangkok-th.html',
+  },
+  roomType: 'Premier King Bed',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 16760.03,
+      'Taxes & fees': 2963.98,
+      'Cashback (paid after 60 days)': -771.12,
+    },
+  },
+}
+
+<AccommodationTable details={reztBangkokDetails} />
+
+Given the ratings and reviews that Rezt has, my stay was a little disappointing.
+
+Check-in was a bit of a mess as the guy on the desk seemed a little confused about what he was actually doing, then when I finally got into the room to find all the blinds closed, I pulled on the string to open one of them and it immediately fell off the ceiling. That was a sign of things to come, as a lot about Rezt felt it had been done a bit half-arsed.
+
+I'm not someone who likes to cause a fuss, so on complaining that the blind had fallen down, I omitted that the kettle in the room worked... a little too well. If it was on the stand, it was boiling whether it was turned-on or not. As someone who gets through about ten cups of tea per day, this was really annoying as I couldn't put the kettle on and go and do something else, because if I forgot about it, it'd just boil and boil and boil unti I burned the hotel down, so I just got used to standing next to it instead.
+
+It also took me a bit of time to get used to the design of the room, which sucks. There's very little surface space in the room - a couple of bedside tables, a tiny desk, and some shelves. Which is why it's completely bemusing that the room's safe is attached to the only shelf that's at a reasonable height. I therefore had to store my clothes on a high shelf that I couldn't really see comfortably, and I had to make my tea and my daily smoothies on shelf that was so low that I couldn't see without bending down, because the shelf with the safe on got in the way.
+
+The view out of the room was non-existent as, despite being on the top (fifth) floor, I was facing the drab, windowless sides of the EmSphere building. To be fair, it's probably better than it having windows because at least this way I could sleep with the blinds open, confident that no one could see in. But still, I was envious of the rooms on the other side of the hotel, which I assume look over, among other things, Benjasiri Park.
+
+The shower in the room wasn't great either, as it was one of those showers with two shower heads (a rainy one and a handheld one). Yet the knob that was supposed to turn one off and turn on the other didn't work properly, so no matter the setting you had water coming out of both.
+
+All of the above was an annoyance, but it wasn't the end of the world. I'm yet to even get to the thing that pissed me off the most about this room:
+
+One morning at about 11am, I was having an online Thai class with one of my tutors. I had headphones on, so no sound was emitting from my laptop, and I was speaking in a normal voice - the same volume as you're reading this article in your head.
+
+About 45 minutes into the lesson, the room phone rings. It's someone from reception. And they tell me the person in the room next door has complained that they can hear me speaking. As I was in the middle of a class, I didn't really respond, I just unplugged the phone from the wall and continued the class, speaking extra loudly.
+
+After the class was finished, I went down to reception and asked the guy... _"the fuck?"_ I politely explained to him that I was speaking in a normal voice within daytime hours, what's he bothering me for? And he agreed. _"Yes, I know, it's very stupid,"_ he told me. Well if you know, then why did you call me to tell me? Every hotel has morons staying in it. When they make a stupid complaint, you ignore them. You don't call me and tell me about it. And if me speaking in a normal voice is audible in the adjacent rooms, then that's more of an indictment on the hotel and the soundproofing of the walls than anything else.
+
+I left the phone unplugged for the rest of my stay so they'd have to knock on my door next time they wanted to relay a stupid complaint, but it still pissed me off that it had even got back to me. If you're someone who ever has to make phone calls or video calls, then don't stay here. You apparently can't make a normal volume call without the staff ringing your phone to tell you about it. Of all the things wrong with this hotel, this was the one that bugged me the most. You kind of want the staff to have a bit of common sense.
+
+If I haven't put you off yet, then there are some positives about staying here too. The wifi was decent enough. 66mbps download speed and 49mbps upload speed on the one speed test I did, and it was a stable connection, which is more important. The room just about has the space for some (slightly cramped) exercise, and the bed is comfortable. And the location, for better or worse, is very, very central.
+
+You're literally next door to EmSphere; one of the three shopping malls that comprises Em District. That means it's a very, very touristy area, but also you can get everything you need really, really conveniently.
+
+Rezt is down an alleyway off soi 22, and right opposite the end of the alleyway is Makro, a budget supermarket. At the entrance to EmSphere is Gourmet Market, another supermarket. So you can get basically anything within a two minute walk. 7-11 and other shops are also very nearby.
+
+The hotel is located only about 50m from Benjasiri Park, as the crow flies. Unfortunately there's no way to cut-through the back of the alleyway the hotel's on (I looked), so instead the quickest way to the park is to go out the alleyway, and then cut around past the EmSphere service entrance, but even then it's only five minutes until you're in the park, which is amazing for going for your midday run. Veganerie, one of the better vegan restaurants in Bangkok, is a short walk through the park, and in Emporium in the fourth floor food court is Talalaks, one of the better budget vegan restaurants. Other lesser places exist in the surrounding area, but those were my two go-tos while staying here.
+
+I'll reiterate that the north end of Sukhumvit 22 is very, very touristy. And when there are tourists, services pop-up to meet their needs. What I mean is there are a lot of adult services on offer in the alley Rezt is in and in the surrounding area of soi 22. If you're a man you'll get hollered-at every time you walk down the street, which is fine, but just be aware that it's not a family-friendly area. You might not want to stay here with kids. Or a girlfriend that gets jealous easily.
+
+My stay at Rezt was a bit disappointing. I had hoped for better, but I guess when it comes down to it, for a digital nomad you want a reliable Internet connection. It has that. You want convenience. It definitely has that. You want a park nearby. It has that. It ticks the boxes of all the essentials. Even so, I have no intention of staying here again.
+
+TODO: Add photos
+
+### Sereine Sukhumvit 39 Hotel
+
+<MapLink name='19 Sukhumvit soi 39' url='https://maps.app.goo.gl/6esToKzmsYJkjWir6' />
+
+export const sereineDetails = {
+  dates: {
+    checkIn: '2025-02-27',
+    checkOut: '2025-03-20',
+  },
+  platform: {
+    name: 'Agoda',
+    url: 'https://www.agoda.com/sereine-sukhumvit-39-hotel/hotel/bangkok-th.html',
+  },
+  roomType: 'Studio Room',
+  price: {
+    currencyPrefix: null,
+    currencySuffix: 'THB',
+    sections: {
+      Room: 30703.32,
+      'Taxes & fees': 5437.38,
+      'Cashback (paid after 60 days)': -7857.34,
+    },
+  },
+}
+
+<AccommodationTable details={sereineDetails} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Bangkok
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
+
+TODO
+
+## Do I want to come back again?
+
+TODO
