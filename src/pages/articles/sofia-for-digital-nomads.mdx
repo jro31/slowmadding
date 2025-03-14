@@ -14,26 +14,28 @@ export const meta = {
   keywords: ['Bulgaria'],
 }
 
-export const apartmentDetails = {
-  dates: {
-    checkIn: '2023-07-13',
-    checkOut: '2023-08-10',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/48028489',
-  },
-  roomType: 'Entire rental unit hosted by Silviya',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 1180.97,
-      '45% monthly price discount': -531.52,
-      'Service fee': 82.76,
+export const apartmentStays = [
+  {
+    dates: {
+      checkIn: '2023-07-13',
+      checkOut: '2023-08-10',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/48028489',
+    },
+    roomType: 'Entire rental unit hosted by Silviya',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1180.97,
+        '45% monthly price discount': -531.52,
+        'Service fee': 82.76,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/sofia-for-digital-nomads'
 
@@ -242,7 +244,7 @@ Unfortunately though, negative experiences weigh heavier on the mind than positi
 
 <MapLink name='Neofit Rilski 20' url='https://goo.gl/maps/BzNezHrddTxiU1JR9' />
 
-<AccommodationTable details={apartmentDetails} />
+<AccommodationTable stays={apartmentStays} />
 
 Evolution: "I've spent 3.5 billion years perfecting a biological rhythm where people rise and sleep with daylight."
 

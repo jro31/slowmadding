@@ -232,53 +232,52 @@ export const veganFoodImages = [
 
 <MapLink name='168/9 Jomsurangyard Rd' url='https://maps.app.goo.gl/JzvgdeGea5YuqzuM7' />
 
-export const romyenGardenPlaceFirstStayDetails = {
-  dates: {
-    checkIn: '2023-11-30',
-    checkOut: '2023-12-07',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
-  },
-  roomType: 'Deluxe King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 7975.36,
-      '7% VAT': 558.28,
-      '10% Property service charge': 853.36,
-      'booking.com pays': -891.77,
+export const romyenGardenPlaceStays = [
+  {
+    dates: {
+      checkIn: '2023-11-30',
+      checkOut: '2023-12-07',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
+    },
+    roomType: 'Deluxe King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 7975.36,
+        '7% VAT': 558.28,
+        '10% Property service charge': 853.36,
+        'booking.com pays': -891.77,
+      },
     },
   },
-}
-
-<AccommodationTable details={romyenGardenPlaceFirstStayDetails} />
-
-export const romyenGardenPlaceSecondStayDetails = {
-  dates: {
-    checkIn: '2025-01-08',
-    checkOut: '2025-01-23',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
-  },
-  roomType: 'Superior King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 13316.48,
-      '7% VAT': 932.15,
-      '10% Property service charge': 1424.86,
-      'booking.com pays': -1253.88,
+  {
+    dates: {
+      checkIn: '2025-01-08',
+      checkOut: '2025-01-23',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/romyen-garden-place.html',
+    },
+    roomType: 'Superior King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 13316.48,
+        '7% VAT': 932.15,
+        '10% Property service charge': 1424.86,
+        'booking.com pays': -1253.88,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={romyenGardenPlaceSecondStayDetails} />
+<AccommodationTable stays={romyenGardenPlaceStays} />
 
 You might not think it given the price, but Romyen is actually a pretty fancy hotel. Korat is just that cheap.
 

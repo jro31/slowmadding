@@ -483,49 +483,48 @@ export const fiveStarJRestaurantImages = [
 
 <MapLink name='378/148 Thappraya Road, Soi 15' url='https://maps.app.goo.gl/j2GiFYBs2e2TZ4iF7' />
 
-export const gResidenceFirstStayDetails = {
-  dates: {
-    checkIn: '2023-11-16',
-    checkOut: '2023-11-30',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/g-residence.html',
-  },
-  roomType: 'Apartment with balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 15624.11,
-      '7% VAT': 1093.69,
+export const gResidenceStays = [
+  {
+    dates: {
+      checkIn: '2023-11-16',
+      checkOut: '2023-11-30',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/g-residence.html',
+    },
+    roomType: 'Apartment with balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 15624.11,
+        '7% VAT': 1093.69,
+      },
     },
   },
-}
-
-<AccommodationTable details={gResidenceFirstStayDetails} />
-
-export const gResidenceSecondStayDetails = {
-  dates: {
-    checkIn: '2024-11-14',
-    checkOut: '2024-11-29',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/g-residence.html',
-  },
-  roomType: 'Apartment with balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 16110.28,
-      '7% VAT': 1127.72,
+  {
+    dates: {
+      checkIn: '2024-11-14',
+      checkOut: '2024-11-29',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/g-residence.html',
+    },
+    roomType: 'Apartment with balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 16110.28,
+        '7% VAT': 1127.72,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={gResidenceSecondStayDetails} />
+<AccommodationTable stays={gResidenceStays} />
 
 A good general rule I have when staying anywhere, is stay away from the city centre. You can always travel in when you want to be around the action, but it's nice to be able to get away from it when you want a break. This rule definitely applies to Pattaya. Give yourself some distance from all the craziness.
 
@@ -599,28 +598,30 @@ export const gResidenceImages = [
 
 <MapLink name='Soi Kho Pai 4' url='https://maps.app.goo.gl/V1KnQZp71PSg1V5h7' />
 
-export const olympusCityGardenDetails = {
-  dates: {
-    checkIn: '2024-02-01',
-    checkOut: '2024-02-17',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/olympus-city-garden-nongprue-banglamung.html',
-  },
-  roomType: 'Double Room with Balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 19860.14,
-      '7% VAT': 1390.21,
-      'booking.com pays': -1700.03,
+export const olympusCityGardenStays = [
+  {
+    dates: {
+      checkIn: '2024-02-01',
+      checkOut: '2024-02-17',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/olympus-city-garden-nongprue-banglamung.html',
+    },
+    roomType: 'Double Room with Balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 19860.14,
+        '7% VAT': 1390.21,
+        'booking.com pays': -1700.03,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={olympusCityGardenDetails} />
+<AccommodationTable stays={olympusCityGardenStays} />
 
 In the absence of availability at G Residence, I stayed at Olympus City Garden on my second visit to Pattaya. It's an apartment block, so don't make the mistake of thinking that you're staying at a hotel. You're not.
 

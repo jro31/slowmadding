@@ -453,27 +453,29 @@ export const groceriesImages = [
 
 <MapLink name='10/9 Benchang Rd' url='https://maps.app.goo.gl/aSiEZwAtc1J3QeXMA' />
 
-export const jamjureeHomeDetails = {
-  dates: {
-    checkIn: '2023-04-20',
-    checkOut: '2023-05-04',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/jamjuree-home/hotel/udon-thani-th.html',
-  },
-  roomType: 'Family Studio',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 9063.17,
-      'Taxes & fees': 1605.39,
+export const jamjureeHomeStays = [
+  {
+    dates: {
+      checkIn: '2023-04-20',
+      checkOut: '2023-05-04',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/jamjuree-home/hotel/udon-thani-th.html',
+    },
+    roomType: 'Family Studio',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 9063.17,
+        'Taxes & fees': 1605.39,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={jamjureeHomeDetails} />
+<AccommodationTable stays={jamjureeHomeStays} />
 
 Jamjuree Home is more a homestay than a hotel, although the guests have a segregated area which consists of four rooms and a large, two-floor common area. Udon Thani is a non-touristy city and I stayed here in the low season of a post-covid world. That meant for much of my stay I was the only guest. I arrived here having booked a standard bedroom, but the hotel owner, who's one of the sweetest people I've ever met, offered to upgrade me to the family studio that you see in the details above at no extra cost.
 
@@ -566,50 +568,49 @@ export const jamjureeHomeImages = [
 
 <MapLink name='198/89 Adunlayadet 4 Alley' url='https://maps.app.goo.gl/zk9FgueEEkV7GJK9A' />
 
-export const phattharasayaHomeFirstStayDetails = {
-  dates: {
-    checkIn: '2023-12-07',
-    checkOut: '2023-12-23',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
-  },
-  roomType: 'One-bedroom apartment',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Apartment: 12710.28,
-      '7% VAT': 889.72,
-      'booking.com pays': -1292.00,
+export const phattharasayaHomeStays = [
+  {
+    dates: {
+      checkIn: '2023-12-07',
+      checkOut: '2023-12-23',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
+    },
+    roomType: 'One-bedroom apartment',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Apartment: 12710.28,
+        '7% VAT': 889.72,
+        'booking.com pays': -1292.00,
+      },
     },
   },
-}
-
-<AccommodationTable details={phattharasayaHomeFirstStayDetails} />
-
-export const phattharasayaHomeSecondStayDetails = {
-  dates: {
-    checkIn: '2024-12-11',
-    checkOut: '2025-01-08',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
-  },
-  roomType: 'One-bedroom apartment',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Apartment: 16676.22,
-      '7% VAT': 1167.34,
+  {
+    dates: {
+      checkIn: '2024-12-11',
+      checkOut: '2025-01-08',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/phathrsyaaohm.html',
+    },
+    roomType: 'One-bedroom apartment',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Apartment: 16676.22,
+        '7% VAT': 1167.34,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={phattharasayaHomeSecondStayDetails} />
+<AccommodationTable stays={phattharasayaHomeStays} />
 
 I'd loved my first stay in Udon so much in part because I'd loved staying at Jamjuree Home, so it was with dismay that I discovered it to be fully-booked when I made plans to return.
 
