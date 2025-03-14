@@ -12,27 +12,29 @@ export const meta = {
   keywords: ['Cambodia'],
 }
 
-export const mResidenceDetails = {
-  dates: {
-    checkIn: '2022-12-16',
-    checkOut: '2023-01-13',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/595464793635869888',
-  },
-  roomType: 'Entire condo hosted by Ratha',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 690.81,
-      '10% monthly price discount': -69.01,
-      'Cleaning fee': 17.38,
-      'Service fee': 72.60,
+export const mResidenceStays = [
+  {
+    dates: {
+      checkIn: '2022-12-16',
+      checkOut: '2023-01-13',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/595464793635869888',
+    },
+    roomType: 'Entire condo hosted by Ratha',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 690.81,
+        '10% monthly price discount': -69.01,
+        'Cleaning fee': 17.38,
+        'Service fee': 72.60,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/phnom-penh-for-digital-nomads'
 
@@ -191,7 +193,7 @@ On the bright side, there are limited places to run, there are a lot of good res
 
 <MapLink name='10 Samdach Louis Em St. (282)' url='https://goo.gl/maps/qd9nNdhEkXa1rXXM7' />
 
-<AccommodationTable details={mResidenceDetails} />
+<AccommodationTable stays={mResidenceStays} />
 
 You know how sometimes you find yourself staying somewhere, where the host has thought of every little thing and does absolutely everything that they can to make you comfortable?
 

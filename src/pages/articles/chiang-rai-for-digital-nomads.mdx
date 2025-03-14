@@ -14,26 +14,28 @@ export const meta = {
   keywords: ['Thailand'],
 }
 
-export const saikeawResortDetails = {
-  dates: {
-    checkIn: '2022-11-17',
-    checkOut: '2022-12-01',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/saikaew-resort.html',
-  },
-  roomType: 'Double room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 10382.36,
-      '7% VAT': 726.77,
-      '10% Property service charge': 1110.91,
+export const saikeawResortStays = [
+  {
+    dates: {
+      checkIn: '2022-11-17',
+      checkOut: '2022-12-01',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/saikaew-resort.html',
+    },
+    roomType: 'Double room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 10382.36,
+        '7% VAT': 726.77,
+        '10% Property service charge': 1110.91,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/chiang-rai-for-digital-nomads'
 
@@ -195,7 +197,7 @@ There aren't many places in the world where I feel comfortable buying things wit
 
 <MapLink name='220 Moo 24 Sankhongluang Rd' url='https://goo.gl/maps/Th1xiWAneLPnfyFM7' />
 
-<AccommodationTable details={saikeawResortDetails} />
+<AccommodationTable stays={saikeawResortStays} />
 
 Welcome to Heaven!
 

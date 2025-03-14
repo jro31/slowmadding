@@ -199,6 +199,7 @@ export const places = {
   },
   [countries.thailand]: {
     bangkok: 'Bangkok',
+    buriram: 'Buriram',
     chiangMai: 'Chiang Mai',
     chiangRai: 'Chiang Rai',
     huahin: 'Huahin',
@@ -217,6 +218,7 @@ export const places = {
     pattaya: 'Pattaya',
     phitsanulok: 'Phitsanulok',
     phuketTown: 'Phuket Town',
+    ubonRatchathani: 'Ubon Ratchathani',
     udonThani: 'Udon Thani',
   },
   [countries.unitedKingdom]: {

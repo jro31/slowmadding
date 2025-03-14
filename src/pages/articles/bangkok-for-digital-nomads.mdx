@@ -506,28 +506,30 @@ If you like staying in big cities, then Bangkok has exactly what you're looking 
 
 <MapLink name='14/11-15 Sukhumvit 33' url='https://goo.gl/maps/dmXWTJaZAavw6MAK8' />
 
-export const nandhaHotelDetails = {
-  dates: {
-    checkIn: '2022-10-07',
-    checkOut: '2022-10-20',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/home-place.html',
-  },
-  roomType: 'Classic Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 12672,
-      '7% VAT': 887.04,
-      '10% Property service charge': 1267.20,
+export const nandhaHotelStays = [
+  {
+    dates: {
+      checkIn: '2022-10-07',
+      checkOut: '2022-10-20',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/home-place.html',
+    },
+    roomType: 'Classic Superior Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 12672,
+        '7% VAT': 887.04,
+        '10% Property service charge': 1267.20,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={nandhaHotelDetails} />
+<AccommodationTable stays={nandhaHotelStays} />
 
 Speaking of which, Nandha will forever hold the distinction of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them. As a place to start it really wasn't bad. The rooms are big, with ample space to do yoga and other exercise. There's a table with a couple of chairs that makes a great workstation. Primarily though, it's because it's on Sukhumvit soi 33, which is a really good location in Bangkok. You're no more than 10 minutes walk away from Phrom Pong BTS station, and it's not too much further in the other direction to get to Sukhumvit MRT. There are shopping malls including supermarkets nearby, and it's walking distance to both Benchasiri Park and Benchakitti Park; both great places to run.
 
@@ -551,27 +553,29 @@ export const nandhaHotelImages = [
 
 <MapLink name='318-318/1 Sukhumvit Soi 22' url='https://goo.gl/maps/JHV6y2C2wbVGewJ37' />
 
-export const vCheckInnDetails = {
-  dates: {
-    checkIn: '2022-10-20',
-    checkOut: '2022-11-03',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
-  },
-  roomType: 'Deluxe Double Room with Balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 15308.41,
-      '7% VAT': 1071.59,
+export const vCheckInnStays = [
+  {
+    dates: {
+      checkIn: '2022-10-20',
+      checkOut: '2022-11-03',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/stay-sukhumvit-22.html',
+    },
+    roomType: 'Deluxe Double Room with Balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 15308.41,
+        '7% VAT': 1071.59,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={vCheckInnDetails} />
+<AccommodationTable stays={vCheckInnStays} />
 
 I got attracted to V Check Inn by the large balcony, which is only available for the 5th floor rooms. If you can get one of those then this is a really good value hotel.
 
@@ -607,139 +611,126 @@ export const vCheckInnImages = [
 
 <MapLink name='129 Soi Napha Sap 5 Sukhumvit 36' url='https://goo.gl/maps/Y9qUDVncb7qzdZYd8' />
 
-export const roomQuestFirstStayDetails = {
-  dates: {
-    checkIn: '2022-12-01',
-    checkOut: '2022-12-16',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Standard King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 12249.39,
-      '7% VAT': 857.46,
+export const roomQuestStays = [
+  {
+    dates: {
+      checkIn: '2022-12-01',
+      checkOut: '2022-12-16',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+    },
+    roomType: 'Standard King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 12249.39,
+        '7% VAT': 857.46,
+      },
     },
   },
-}
-
-<AccommodationTable details={roomQuestFirstStayDetails} />
-
-export const roomQuestSecondStayDetails = {
-  dates: {
-    checkIn: '2023-04-06',
-    checkOut: '2023-04-20',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 10121.99,
-      'Taxes & fees': 1790.47,
-      'Cashback (paid after 60 days)': -417.54,
+  {
+    dates: {
+      checkIn: '2023-04-06',
+      checkOut: '2023-04-20',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+    },
+    roomType: 'Superior Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 10121.99,
+        'Taxes & fees': 1790.47,
+        'Cashback (paid after 60 days)': -417.54,
+      },
     },
   },
-}
-
-<AccommodationTable details={roomQuestSecondStayDetails} />
-
-export const roomQuestThirdStayDetails = {
-  dates: {
-    checkIn: '2023-05-11',
-    checkOut: '2023-05-24',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Superior Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 9785.85,
-      'Taxes & fees': 1730.07,
-      'Cashback (paid after 60 days)': -864.69,
+  {
+    dates: {
+      checkIn: '2023-05-11',
+      checkOut: '2023-05-24',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/oyo-1001-ongkara-hotel/hotel/bangkok-th.html',
+    },
+    roomType: 'Superior Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 9785.85,
+        'Taxes & fees': 1730.07,
+        'Cashback (paid after 60 days)': -864.69,
+      },
     },
   },
-}
-
-<AccommodationTable details={roomQuestThirdStayDetails} />
-
-export const roomQuestFourthStayDetails = {
-  dates: {
-    checkIn: '2023-10-27',
-    checkOut: '2023-11-09',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Deluxe Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 14487.38,
-      '7% VAT': 1014.12,
+  {
+    dates: {
+      checkIn: '2023-10-27',
+      checkOut: '2023-11-09',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+    },
+    roomType: 'Deluxe Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 14487.38,
+        '7% VAT': 1014.12,
+      },
     },
   },
-}
-
-<AccommodationTable details={roomQuestFourthStayDetails} />
-
-export const roomQuestFifthStayDetails = {
-  dates: {
-    checkIn: '2024-03-02',
-    checkOut: '2024-03-21',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Superior King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 16465.33,
-      '7% VAT': 1152.57,
+  {
+    dates: {
+      checkIn: '2024-03-02',
+      checkOut: '2024-03-21',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+    },
+    roomType: 'Superior King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 16465.33,
+        '7% VAT': 1152.57,
+      },
     },
   },
-}
-
-<AccommodationTable details={roomQuestFifthStayDetails} />
-
-export const roomQuestSixthStayDetails = {
-  dates: {
-    checkIn: '2024-11-01',
-    checkOut: '2024-11-14',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
-  },
-  roomType: 'Superior King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 14091.48,
-      '7% VAT': 986.40,
+  {
+    dates: {
+      checkIn: '2024-11-01',
+      checkOut: '2024-11-14',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/ongkara-bangkok.html',
+    },
+    roomType: 'Superior King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 14091.48,
+        '7% VAT': 986.40,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={roomQuestSixthStayDetails} />
+<AccommodationTable stays={roomQuestStays} />
 
 I know what you're thinking, _"Wow, he's stayed here five times, he must really love this hotel."_ Not really, but it's cheap and ticks all the boxes.
 
@@ -811,28 +802,30 @@ export const roomQuestImages = [
 
 <MapLink name='592 Sathon Soi 3 Suanplu Soi 5 Sathon Tai Rd' url='https://goo.gl/maps/VbtYBABCZjweJpxh6' />
 
-export const parvenaHotelSathornDetails = {
-  dates: {
-    checkIn: '2023-03-11',
-    checkOut: '2023-03-23',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
-  },
-  roomType: 'Standard Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 8175.70,
-      '7% VAT': 572.30,
-      '10% Property service charge': 874.80,
+export const parvenaHotelSathornStays = [
+  {
+    dates: {
+      checkIn: '2023-03-11',
+      checkOut: '2023-03-23',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/parvena-hostel.html',
+    },
+    roomType: 'Standard Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 8175.70,
+        '7% VAT': 572.30,
+        '10% Property service charge': 874.80,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={parvenaHotelSathornDetails} />
+<AccommodationTable stays={parvenaHotelSathornStays} />
 
 I used to live about a 20-minute walk from here. Despite being so close, I wouldn't come to this area very often. My work was in a different direction, the city centre was in a different direction, the supermarkets I went to were in a different direction. I just had very little reason to come here, but every time I did I always thought to myself _"Wow! What a fun, vibrant area."_ Then I wouldn't come back for another six months. Now with the freedom of a digital nomad, I decided that I'd stay here and get to know this area properly, and it really is a great area.
 
@@ -894,28 +887,30 @@ export const parvenaHotelSathornImages = [
 
 <MapLink name='75 Sukhumvit soi 22' url='https://maps.app.goo.gl/qdZ16EZTgxxtcV8c7' />
 
-export const reztBangkokDetails = {
-  dates: {
-    checkIn: '2025-02-13',
-    checkOut: '2025-02-27',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/rezt-bangkok/hotel/bangkok-th.html',
-  },
-  roomType: 'Premier King Bed',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 16760.03,
-      'Taxes & fees': 2963.98,
-      'Cashback (paid after 60 days)': -771.12,
+export const reztBangkokStays = [
+  {
+    dates: {
+      checkIn: '2025-02-13',
+      checkOut: '2025-02-27',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/rezt-bangkok/hotel/bangkok-th.html',
+    },
+    roomType: 'Premier King Bed',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 16760.03,
+        'Taxes & fees': 2963.98,
+        'Cashback (paid after 60 days)': -771.12,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={reztBangkokDetails} />
+<AccommodationTable stays={reztBangkokStays} />
 
 Given the ratings and reviews that Rezt has, my stay was a little disappointing.
 
@@ -989,28 +984,30 @@ export const reztBangkokImages = [
 
 <MapLink name='19 Sukhumvit soi 39' url='https://maps.app.goo.gl/6esToKzmsYJkjWir6' />
 
-export const sereineDetails = {
-  dates: {
-    checkIn: '2025-02-27',
-    checkOut: '2025-03-20',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/sereine-sukhumvit-39-hotel/hotel/bangkok-th.html',
-  },
-  roomType: 'Studio Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 30703.32,
-      'Taxes & fees': 5437.38,
-      'Cashback (paid after 60 days)': -7857.34,
+export const sereineStays = [
+  {
+    dates: {
+      checkIn: '2025-02-27',
+      checkOut: '2025-03-20',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/sereine-sukhumvit-39-hotel/hotel/bangkok-th.html',
+    },
+    roomType: 'Studio Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 30703.32,
+        'Taxes & fees': 5437.38,
+        'Cashback (paid after 60 days)': -7857.34,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={sereineDetails} />
+<AccommodationTable stays={sereineStays} />
 
 TODO
 

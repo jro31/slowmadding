@@ -4,6 +4,14 @@ import { bangkokData } from './bangkokData'
 
 export const thailandData = {
   [places[countries.thailand].bangkok]: bangkokData,
+  [places[countries.thailand].buriram]: [
+    {
+      [dates]: {
+        [arrival]: '2025-02-06',
+        [departure]: '2025-02-13',
+      },
+    },
+  ],
   [places[countries.thailand].chiangMai]: [
     {
       [dates]: {
@@ -87,6 +95,12 @@ export const thailandData = {
         [departure]: '2024-03-02',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-04-03',
+        [departure]: '2025-04-17',
+      },
+    },
   ],
   [places[countries.thailand].kanchanaburi]: [
     {
@@ -107,6 +121,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2024-01-23',
         [departure]: '2024-01-31',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2024-11-29',
+        [departure]: '2024-12-11',
       },
     },
   ],
@@ -189,6 +209,12 @@ export const thailandData = {
         [departure]: '2024-02-01',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-01-08',
+        [departure]: '2025-01-23',
+      },
+    },
   ],
   [places[countries.thailand].nongKhai]: [
     {
@@ -269,6 +295,18 @@ export const thailandData = {
         [departure]: '2024-02-17',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2024-11-14',
+        [departure]: '2024-11-29',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2025-03-20',
+        [departure]: '2025-04-03',
+      },
+    },
   ],
   [places[countries.thailand].phitsanulok]: [
     {
@@ -298,6 +336,14 @@ export const thailandData = {
       },
     },
   ],
+  [places[countries.thailand].ubonRatchathani]: [
+    {
+      [dates]: {
+        [arrival]: '2025-01-23',
+        [departure]: '2025-02-06',
+      },
+    },
+  ],
   [places[countries.thailand].udonThani]: [
     {
       [dates]: {
@@ -309,6 +355,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2023-12-07',
         [departure]: '2023-12-23',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2024-12-11',
+        [departure]: '2025-01-08',
       },
     },
   ],

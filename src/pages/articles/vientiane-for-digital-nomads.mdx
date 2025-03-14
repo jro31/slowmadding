@@ -12,44 +12,50 @@ export const meta = {
   keywords: ['Laos'],
 }
 
-export const csApartmentDetails = {
-  dates: {
-    checkIn: '2023-12-25',
-    checkOut: '2024-01-10',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/la/cs-apartment.html',
-  },
-  roomType: 'One-Bedroom Apartment',
-  price: {
-    currencyPrefix: '$',
-    currencySuffix: 'USD',
-    sections: {
-      Room: 270.80,
-      '7% Tax': 18.96,
+export const csApartmentStays = [
+  {
+    dates: {
+      checkIn: '2023-12-25',
+      checkOut: '2024-01-10',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/la/cs-apartment.html',
+    },
+    roomType: 'One-Bedroom Apartment',
+    price: {
+      currencyPrefix: '$',
+      currencySuffix: 'USD',
+      sections: {
+        Room: 270.80,
+        '7% Tax': 18.96,
+      },
     },
   },
-}
+]
 
-export const patuxayPlaceDetails = {
-  dates: {
-    checkIn: '2024-01-10',
-    checkOut: '2024-01-23',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/patuxay-place/hotel/vientiane-la.html',
-  },
-  roomType: 'Superior Double',
-  price: {
-    currencyPrefix: '$',
-    currencySuffix: 'USD',
-    sections: {
-      'Room (including taxes and fees)': 390.00,
+export const patuxayPlaceStays = [
+  {
+    dates: {
+      checkIn: '2024-01-10',
+      checkOut: '2024-01-23',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/patuxay-place/hotel/vientiane-la.html',
+    },
+    roomType: 'Superior Double',
+    price: {
+      currencyPrefix: '$',
+      currencySuffix: 'USD',
+      sections: {
+        Room: 331.37,
+        'Taxes & fees': 58.63,
+        'Cashback (paid after 60 days)': -58.99,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/vientiane-for-digital-nomads'
 
@@ -390,7 +396,7 @@ By the time I left I was lamenting that I had to leave, hoping I can make it bac
 
 <MapLink name='384 Haisok Chanthabuly' url='https://maps.app.goo.gl/7ETjLt8ZGTLNJNBY7' />
 
-<AccommodationTable details={csApartmentDetails} />
+<AccommodationTable stays={csApartmentStays} />
 
 CS Apartment is both cheaper and more highly-rated than any comparable rooms that you can find in Vientiane, which begs the question, when I decided to stay in Vientiane beyond my booking and CS Apartment had availability, why did I opt to move elsewhere?
 
@@ -422,7 +428,7 @@ A lot of people love this place, hence all the positive reviews (9.0 on booking.
 
 <MapLink name='12 Ban Sisavath' url='https://maps.app.goo.gl/JFU22g5B7tNNGArB9' />
 
-<AccommodationTable details={patuxayPlaceDetails} />
+<AccommodationTable stays={patuxayPlaceStays} />
 
 Moving to Patuxay Place saved my visit to Vientiane. I was getting so depressed by the lack of daylight in CS Apartment that I contemplated leaving Laos altogether. I'm so glad that I decided to stay, because within a couple of days of moving to Patuxay Place, with their east-facing windows in all rooms, I was getting so much morning daylight that my mood picked right up.
 

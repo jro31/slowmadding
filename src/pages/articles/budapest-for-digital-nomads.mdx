@@ -367,7 +367,7 @@ Given the price increase compared to cooking for yourself, and the fact that tip
 
 My favourite of these was <ExternalLink url='https://maps.app.goo.gl/imXQvyvuqpH7YEmJ6'>Vegazzi Specialty Pizzeria</ExternalLink>. It's a fully vegan pizzeria and they served me one of the best pizzas I've ever had. If you only visit one restaurant while in Budapest, make it this one.
 
-The best value meal I had was at <ExternalLink url='https://maps.app.goo.gl/StkCYTKGjn1fM6tN8'>Ganesha Vega Ételbár</ExternalLink>. It's a fully vegan restaurant and they have a 'Daily offer', where for 2,790 HUF you get a... plate of food. <ExternalLink url='https://maps.app.goo.gl/JkCTD9K8Uz3aDmQC8'>Menyország Szíve Biobolt</ExternalLink> is another vegan restaurant that has a very similar deal, where for 3,000 HUF you get a large plate of whatever they've cooked that day. 2,500 HUF gets you a normal-sized plate, and 1,900 HUF a small. Being a short walk from my Airbnb, I probably would have come here a lot more, had the elderly Chinese couple that run it not taken the world's longest summer holiday.
+The best value meal I had was at <ExternalLink url='https://maps.app.goo.gl/StkCYTKGjn1fM6tN8'>Ganesha Vega Ételbár</ExternalLink>. It's a fully vegan restaurant and they have a 'Daily offer', where for 2,790 HUF you get a... plate of food. <ExternalLink url='https://maps.app.goo.gl/JkCTD9K8Uz3aDmQC8'>Menyország Szíve Biobolt</ExternalLink> is another vegan restaurant that has a very similar deal, where for 3,000 HUF you get a large plate of whatever they've cooked that day. 2,500 HUF gets you a normal-sized plate, and 1,900 HUF a small. Being a short walk from my Airbnb, I probably would have come here a lot more had the elderly Chinese couple that run it not taken the world's longest summer holiday.
 
 If you want to take a run at diabetes, the best junk food I had came at <ExternalLink url='https://maps.app.goo.gl/uqtFjmi4JdQYze6h9'>Vegan Love</ExternalLink>. Not only did I like this place for the food, but I liked it because you order through a computer screen, and computer screens don't expect tips. The other good junk food I had was at <ExternalLink url='https://maps.app.goo.gl/AbJTwwbrtiViKz9Q7'>EPOCH Vegan Burger</ExternalLink>. It's a bit of a toss-up which one did a better job of clogging my arteries.
 
@@ -503,29 +503,31 @@ Beyond this, I didn't go anywhere in Budapest that didn't feel liveable. Even th
 
 <MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
 
-export const apartmentDetails = {
-  dates: {
-    checkIn: '2024-07-06',
-    checkOut: '2024-08-15',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/51031151',
-  },
-  roomType: 'Entire condo in Budapest, Hungary',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 1485.96,
-      'Cleaning fee': 44.35,
-      'Service fee': 194.96,
-      Taxes: 106.45,
+export const apartmentStays = [
+  {
+    dates: {
+      checkIn: '2024-07-06',
+      checkOut: '2024-08-15',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/51031151',
+    },
+    roomType: 'Entire condo in Budapest, Hungary',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1485.96,
+        'Cleaning fee': 44.35,
+        'Service fee': 194.96,
+        Taxes: 106.45,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={apartmentDetails} />
+<AccommodationTable stays={apartmentStays} />
 
 Private accommodation in Budapest sits right at the limit of what I'm willing to pay. As such, when I filtered private Airbnbs down to my price range, there weren't very many available. This apartment looked the best of those that were, in large part because it's a very short walk from City Park, and that was my main reason for booking it.
 
@@ -652,7 +654,7 @@ export const summaryPoints = {
 
 <Summary summaryPoints={summaryPoints} />
 
-### Final thoughts
+## Final thoughts
 
 When I arrived in Budapest, I wasn't in a great place. A couple of months earlier, while in Taiwan, I'd torn my calf muscle while running, which had made exercise difficult for a while. I'd just recovered from that, and then I got sick with a pretty nasty cough, which I took with me for a visit back home to the UK. Through most of this period, I hadn't been able to exercise properly, and it had taken its toll mentally.
 
@@ -672,6 +674,6 @@ I can't put my finger on what it was about my time here that drove things in suc
 
 I'll remember my time here very fondly as a positive time of my life. Perhaps unfairly, I won't credit Budapest for being the reason. It feels like I turned a corner in my life while being in Budapest, but not because of Budapest.
 
-### Do I want to come back again?
+## Do I want to come back again?
 
 Not really.

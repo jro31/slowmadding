@@ -1,0 +1,138 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2024-12-04T17:50:00+07:00',
+  title: 'Taking a Bus from Pattaya to Khon Kaen',
+  description: "Do you want to travel between Pattaya and Khon Kaen? I bet you're thinking that you have to take a bus into Bangkok and change. You fool!",
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/taking-a-bus-from-pattaya-to-khon-kaen'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Now this is a story all about how my life got flipped-turned upside down. And I'd like to take a minute just sit right there, I'll tell you how I took a bus from Pattaya to Khon Kaen.
+
+When you're in Pattaya and want to get to Khon Kaen, the obvious thing to do is to take a bus, a van, or even a taxi into Bangkok just a couple of hours away, from where you can take a bus, a train, or even fly directly to Khon Kaen.
+
+If you want to take the train or fly, then this is almost certainly what you'll end up doing. But given Bangkok's notoriously bad traffic, taking a bus into Bangkok, just to take another bus out again makes no sense. So how can you take a bus to Khon Kaen without going into Bangkok?
+
+## What are your options?
+
+### Nakhonchai Air
+
+When I asked the staff at my apartment building in Pattaya how to make this trip, they recommended Nakhonchai Air to me, which they assured me goes from <ExternalLink url='https://maps.app.goo.gl/vm7AMJSniFcx9uPi7'>Pattaya's north bus terminal</ExternalLink>.
+
+They have a website that partially translates to English (none of the useful information unfortunately). According to their website, the only such route is from <ExternalLink url='https://www.nakhonchaiair.com/ncaweb/routeinfo-en-132'>Rayong to Khon Kaen</ExternalLink>, which I assume stops in Pattaya.
+
+As you must transfer to a different bus in Nakhon Ratchasima anyway (with a 40+ minute layover), I decided it wasn't worth digging any further. I can make such a trip myself, without the worry of having problems connecting.
+
+### Chan Tour
+
+I learned that there are two companies that have direct buses to Khon Kaen, both located conveniently close to each other.
+
+The first of these is <ExternalLink url='https://maps.app.goo.gl/ZFKr49rujc2fdcYw9'>Chan Tour</ExternalLink>. They have a small office / waiting room, and when you wander in there you won't find any signs in English, so get your best Thai ready.
+
+What they offer are two daily buses to Khon Kaen - one at 10am and one at 9pm, each priced at 650 baht.
+
+I immediately dismissed these as an option. My expectation was that the journey to Khon Kaen would be about 10-12 hours. Taking the 9pm bus, the best case scenario would be arriving in Khon Kaen at 7am having not slept very well, and with seven hours until the check-in time at my hotel.
+
+10am conversely seemed too late. If it is a 12 hour journey, I don't really want to arrive at 10pm either. I'd much rather have an early start and arrive in Khon Kaen with some of the evening remaining.
+
+export const chanTourImages = [
+  {
+    src: `${imagePath}/chan-tour/khon-kaen-bus-times.jpeg`,
+    alt: 'Chan Tour - Pattaya to Khon Kaen timetable',
+    caption: "This signs in the Chan Tour ticket office don't have any English on them. This is the one to Khon Kaen (it actually says 'Rayong to Khon Kaen'). It departs at 10am and 9pm with a price of 650 baht.",
+  },
+]
+
+<ImageGallery images={chanTourImages} />
+
+### 407 Pattana
+
+The other company I found with direct buses to Khon Kaen is <ExternalLink url='https://maps.app.goo.gl/61hpUGcMWXD28osdA'>407 Pattana</ExternalLink>, just a couple of minutes walk from the Chan Tour office.
+
+It's located on a petrol station forecourt, and looks a little bit like a mechanics until you get close enough to see the bus times listed. They have one daily bus to Khon Kaen. The sign says it leaves at 5:40pm. I asked the person sitting in the office and he told me 6pm. Regadless of which it is, that means arriving in Khon Kaen at some point before 6am, which I have no interest in.
+
+I didn't ask how much a ticket costs.
+
+export const pattanaImages = [
+  {
+    src: `${imagePath}/pattana/ticket-office.jpeg`,
+    alt: '407 Pattana ticket office',
+    caption: "With a big 'Dirt Power Shop' sign, this doesn't really look like a bus ticket office from a distance. Only once you walk across the petrol station forecourt do you get close enough to see the bus times.",
+  },
+]
+
+<ImageGallery images={pattanaImages} />
+
+### You can go your own way
+
+In the year prior to this I'd taken a bus from Pattaya to Nakhon Ratchasima, and on a separate trip, a bus from Nakhon Ratchasima to Udon Thani (which stopped in Khon Kaen), and was fairly confident that taking a bus to Nakhon Ratchasima and then finding the next bus going to Khon Kaen would be better than any of these options. So that's the one I chose.
+
+<ExternalLink url='https://maps.app.goo.gl/cUYdmtgb8s6B6KMV6'>Sri Mongkol</ExternalLink> have an office on Pattaya 3rd Road, with two daily buses going to Nakhon Ratchasima - one at 7:30am and one at 11am. I bought a ticket on the 7:30am bus.
+
+A ticket to Nakhon Ratchasima is 400 baht. I bought mine a couple of days in advance, but it's not really necessary.
+
+## Leg 1 - Pattaya to Nakhon Ratchasima
+
+I arrived at their ticket office at about 6:55am on the day of travel. Many passengers were already here, which was quite pleasing to me because I'm normally irrationally paranoid about arriving early, so maybe I'm maturing.
+
+The ticket office was closed at this point, and it wasn't until 7:15am that someone arrived to open it. Several passengers hadn't bought tickets in advance and all got one without issue, so I'd speculate that apart from holidays, you don't need to buy in advance.
+
+The tickets give assigned seats, and one issue seemed to be that a couple of people had been assigned seats that didn't exist. There are three seats in a row, but on the left side of the bus they don't start until row 5 because of the stairs. Yet people seemed to have been assigned seats 1A to 4A anyway, which caused a bit of confusion, but the bus was fairly empty so no big deal.
+
+I was in seat 6A, which peculiarly was the exact same seat I'd been assigned when I'd made this journey a year earlier, and I'm pretty sure it was the same bus too. Weird.
+
+The seats are comfortable, but worth noting that there are no ports to charge your devices, so make sure your power bank's charged.
+
+We left a little late, at 7:44am. The first stop of note was <ExternalLink url='https://maps.app.goo.gl/gNaZU7emq6R6tKYa8'>Chonburi</ExternalLink>, where after a 5-10 minute stop where no one got on or off, we left again at 9:34am.
+
+The next stop of note was at 12:02pm, when we stopped in <ExternalLink url='https://maps.app.goo.gl/gVJ83rW8dswvZxYH8'>Kabinburi</ExternalLink> to refuel. This stop was a little frustrating, because while the driver took the opportunity to go and relieve himself and buy some food, he left all of the passengers on the bus so no one else could. We left again at 12:10pm.
+
+The bus eventually arrived at <ExternalLink url='https://maps.app.goo.gl/a85xjcpiLmRFChip7'>Nakhon Ratchasima Bus Terminal 2</ExternalLink> at 3:08pm - 7 hours and 38 minutes after our scheduled departure time of 7:30am (or 7 hours and 24 minutes after our actual departure time).
+
+## Leg 2 - Nakhon Ratchasima to Khon Kaen
+
+In Nakhon Ratchasima bus terminal, each company has a separate ticket office, of which their buses arrive and depart from the gate just outside, and conveniently the Sri Mongkol office is right next to the company that goes to Udon (via Khon Kaen) at gate 4. Their next bus was leaving at 3:40pm, which was perfect because it gave me the chance to stretch my legs first. A ticket was 137 baht.
+
+This bus wasn't quite so empty as the one prior, and some people had to share a double seat. Luckily no one ever wants to sit next to me, so I didn't have to.
+
+This bus departed at 3:41pm, and also didn't offer any ports for charging your devices.
+
+The longest stop we made was at <ExternalLink url='https://maps.app.goo.gl/Cb2qmz9UqEtWRBp1A'>Phon Bus Terminal</ExternalLink>, where we arrived at 5:37pm and departed at 5:41pm, so not really time to get off.
+
+We pulled-into <ExternalLink url='https://maps.app.goo.gl/hYAc2DzrzQoDuHQf9'>Khon Kaen Bus Terminal 3</ExternalLink> at 7:02pm - 3 hours and 21 minutes after departing.
+
+export const legTwoImages = [
+  {
+    src: `${imagePath}/leg-two/ticket.jpeg`,
+    alt: 'Nakhon Ratchasima to Khon Kaen ticket',
+    caption: "This is your ticket. I can't make much sense of the scribble on it - it possibly says 137 (the price). However the ticket inspector on board understood, and it got me to Khon Kaen.",
+  },
+  {
+    src: `${imagePath}/leg-two/on-board.jpeg`,
+    alt: 'On board the Nackhon Ratchasima to Khon Kaen bus',
+    caption: 'This bus has four seats per row instead of three, but I still found it pretty comfortable.',
+  },
+]
+
+<ImageGallery images={legTwoImages} />
+
+## Arrival in Khon Kaen
+
+Bus Terminal 3 is annoying way outside the centre of Khon Kaen. However it has plenty of taxis and tuk-tuks waiting there (they don't hassle you), or it is served well by Grab.
+
+## Final thoughts
+
+The total journey time to Khon Kaen was 11 hours and 32 minutes from the scheduled departure time of 7:30am in Pattaya (or 11 hours and 18 minutes from our actual departure time). The total cost was 537 baht (cheaper than both Nakhonchai Air and Chan Tour).
+
+It was a very easy, very stress-free, and honestly enjoyable journey. I love the opportunity to work through my backlog of podcasts, and given that doing things this way I got to leave and arrive at humane hours, and didn't have to worry about getting a particular connecting bus in Nakhon Ratchasima, I think that doing things this way was the better overall choice than using a company offering a direct service to Khon Kaen.
+
+Perhaps if you like the simplicity of not having to change bus, or of being herded from one bus to another without having to think for yourself, then you'd consider one of the other options. For me though, this was fine, and I'll gladly travel this way again next time.

@@ -194,6 +194,47 @@ export const placesData = [
           'A very walkable city. Pavement are wide, roads are easy to cross, and cars obey traffic signals.',
       },
     },
+    [articlePath]: '/articles/budapest-for-digital-nomads',
+  },
+  {
+    [place]: places[countries.thailand].buriram,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          "Buriram's actually a bit more expensive than other cities in Isaan, but it's still great value and cheaper than more touristy places like Bangkok.",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]: 'Good enough for video calls where I was staying.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          "There's a segmented lake that makes a route of almost 5.5km if you do the whole thing, and you can use the university running track.",
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          'A couple of vegan-friendly restaurants, but not enough to keep you satisfied for long.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "It's a very student-centric city and it feels it. A very relaxed vibe, although some unnecessarily aggressive soi dogs.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There's actually a few foreigner-aimed bars in the city - more than in nearby bigger cities, but they're a bit dry.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "It's a calm city and the traffic isn't overwhelming, so it's very comfortable to walk around.",
+      },
+    },
     [articlePath]: null, // TODO
   },
   {
@@ -696,6 +737,48 @@ export const placesData = [
       },
     },
     [articlePath]: '/articles/taipei-for-digital-nomads',
+  },
+  {
+    [place]: places[countries.thailand].ubonRatchathani,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          "Perhaps the cheapest place I've stayed in Thailand, which is really saying something. My hotel was just over 550 baht per night, rice with one topping starts at 15 baht in one of the vegan restaurants, a bottle of Leo is just 65 baht in the one foreigner bar (normal price, not happy hour).",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          "Didn't have any connection issues during my stay. It wasn't the fastest connection, but it was good enough for video calls.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Even in a state of reconstruction, Huai Wang Nong lake is a great place to run, and there are other options.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "A small number of vegan-friendly restaurants, but not enough that you aren't going back to the same ones again and again.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "It's a very, calm, friendly place where people say hello to you on the street. I had no sense of crime being a thing here during my stay.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There's one foreigner-aimed bar in town, there are a couple of craft beer bars, and some other places dotted around the city, but it's a little uninspiring.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "A very easy city to walk around. The traffic doesn't move very quickly.",
+      },
+    },
+    [articlePath]: null, // TODO
   },
   {
     [place]: places[countries.thailand].udonThani,
