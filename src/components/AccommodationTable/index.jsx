@@ -3,25 +3,22 @@ import Dates from './Dates'
 import PriceBreakdown from './PriceBreakdown'
 import RoomType from './RoomType'
 
-const AccommodationTable = ({ details }) => {
-  return (
-    <div>
+const AccommodationTable = ({ stays }) => {
+  return stays.map((stay) => (
+    <div key={`${stay.dates.checkIn}-to-${stay.dates.checkOut}-accommodation`}>
       <div className="flex flex-col gap-5 sm:gap-2">
-        <Dates dates={details.dates} />
-        <BookingPlatform
-          name={details.platform.name}
-          url={details.platform.url}
-        />
-        {details.roomType && <RoomType roomType={details.roomType} />}
+        <Dates dates={stay.dates} />
+        <BookingPlatform name={stay.platform.name} url={stay.platform.url} />
+        {stay.roomType && <RoomType roomType={stay.roomType} />}
         <PriceBreakdown
-          dates={details.dates}
-          currencyPrefix={details.price.currencyPrefix}
-          currencySuffix={details.price.currencySuffix}
-          sectionsObject={details.price.sections}
+          dates={stay.dates}
+          currencyPrefix={stay.price.currencyPrefix}
+          currencySuffix={stay.price.currencySuffix}
+          sectionsObject={stay.price.sections}
         />
       </div>
     </div>
-  )
+  ))
 }
 
 export default AccommodationTable

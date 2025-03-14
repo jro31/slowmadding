@@ -272,27 +272,29 @@ export const theSaladLabImages = [
 
 <MapLink name='527/99 Jira Nakorn Soi 4' url='https://maps.app.goo.gl/TyyNZUzR8co9ejjR6' />
 
-export const snowHouseBurriamDetails = {
-  dates: {
-    checkIn: '2025-02-06',
-    checkOut: '2025-02-13',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/snow-house-buriram/hotel/buriram-th.html',
-  },
-  roomType: 'Standard Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 3429.96,
-      'Taxes & fees': 682.87,
+export const snowHouseBurriamStays = [
+  {
+    dates: {
+      checkIn: '2025-02-06',
+      checkOut: '2025-02-13',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/snow-house-buriram/hotel/buriram-th.html',
+    },
+    roomType: 'Standard Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 3429.96,
+        'Taxes & fees': 682.87,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={snowHouseBurriamDetails} />
+<AccommodationTable stays={snowHouseBurriamStays} />
 
 I have very mixed feelings about Snow House. Some things about it I loved, and some I just didn't.
 

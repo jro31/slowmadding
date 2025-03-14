@@ -12,27 +12,29 @@ export const meta = {
   keywords: ['Saigon', 'Vietnam'],
 }
 
-export const rivergateResidenceDetails = {
-  dates: {
-    checkIn: '2023-01-13',
-    checkOut: '2023-02-10',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/26011961',
-  },
-  roomType: 'Entire condo hosted by Micheal',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 754.34,
-      '6% weekly price discount': -45.21,
-      'Cleaning fee': 6.52,
-      'Service fee': 81.30,
+export const rivergateResidenceStays = [
+  {
+    dates: {
+      checkIn: '2023-01-13',
+      checkOut: '2023-02-10',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/26011961',
+    },
+    roomType: 'Entire condo hosted by Micheal',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 754.34,
+        '6% weekly price discount': -45.21,
+        'Cleaning fee': 6.52,
+        'Service fee': 81.30,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/ho-chi-minh-city-for-digital-nomads'
 
@@ -217,7 +219,7 @@ Within a city of so much life and vibrancy, how an area so devoid of personality
 
 <MapLink name='151-155 Đ. Bến Vân Đồn' url='https://goo.gl/maps/iPaK6c77hdnJ2Exs5' />
 
-<AccommodationTable details={rivergateResidenceDetails} />
+<AccommodationTable stays={rivergateResidenceStays} />
 
 I chose this place primarily for its location, but don't let that hide the fact it's a pretty nice room in its own right. It's a studio, but it's comfortably spacious, even if not overflowing with space. There are a couple of large cupboards, and many smaller cupboards and shelves so you're going to have far more space than you need to unpack all your things. The decor's pretty nice and there are a couple of pieces of art that my artisticly banal brain appreciated, including a picture opposite the bed that was simply the words _"Do more or what makes you happy."_ When that's the last thing you see before bed and the first thing you see as you wake up every morning, it becomes quite inspiring.
 

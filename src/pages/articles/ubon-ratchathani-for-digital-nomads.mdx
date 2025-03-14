@@ -396,27 +396,29 @@ export const theOutsideInnMexicanRestaurantImages = [
 
 <MapLink name='11 Suriyat Road' url='https://maps.app.goo.gl/hCeZkTpW6S8QzxLF7' />
 
-export const theOutsideInnDetails = {
-  dates: {
-    checkIn: '2025-01-23',
-    checkOut: '2025-02-06',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/the-outside-inn/hotel/ubon-ratchathani-th.html',
-  },
-  roomType: 'Jasmine - Deluxe Air Conditioning Room King Bed',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 6575.39,
-      'Taxes & fees': 1164.27,
+export const theOutsideInnStays = [
+  {
+    dates: {
+      checkIn: '2025-01-23',
+      checkOut: '2025-02-06',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/the-outside-inn/hotel/ubon-ratchathani-th.html',
+    },
+    roomType: 'Jasmine - Deluxe Air Conditioning Room King Bed',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 6575.39,
+        'Taxes & fees': 1164.27,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={theOutsideInnDetails} />
+<AccommodationTable stays={theOutsideInnStays} />
 
 Even though one of the reasons that I chose to stay here, was the ultimately not very vegan-friendly on-site vegan-friendly restaurant (see above), I still tried my best to enjoy my stay. The room was pretty large, especially for the price, with plenty of space on the floor to exercise. The bed was comfortable, and while it wasn't brimming with facilities, it had the essentials - a fridge, a kettle, a desk with a chair, and a fast, reliable wifi connection (210mbps download speed, 215mbps upload). They have a water cooler in the communal area that you're encouraged to use (I think they regretted saying that to me seeing as I drink the water of an elephant), although the bottles for it were empty for about a week of my stay. And the location here is pretty good. The nearest 7-11 is about a six minute walk, Huai Wang Nong is about 12 minutes on foot, and the town centre is an easy walk too.
 

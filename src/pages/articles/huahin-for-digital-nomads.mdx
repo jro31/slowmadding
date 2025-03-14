@@ -14,67 +14,70 @@ export const meta = {
   keywords: ['Thailand', 'Hua Hin'],
 }
 
-export const baanYokmhaneeFirstStayDetails = {
-  dates: {
-    checkIn: '2023-03-23',
-    checkOut: '2023-04-06',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/baan-yokmhanee.html',
-  },
-  roomType: 'Standard room with balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 10419.66,
-      '7% VAT': 729.38,
-      '10% Property service charge': 1041.97,
+export const baanYokmhaneeStays = [
+  {
+    dates: {
+      checkIn: '2023-03-23',
+      checkOut: '2023-04-06',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/baan-yokmhanee.html',
+    },
+    roomType: 'Standard room with balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 10419.66,
+        '7% VAT': 729.38,
+        '10% Property service charge': 1041.97,
+      },
     },
   },
-}
+  {
+    dates: {
+      checkIn: '2023-11-09',
+      checkOut: '2023-11-16',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/baan-yokmhanee/hotel/hua-hin-cha-am-th.html',
+    },
+    roomType: 'Standard',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 5596.35,
+        'Taxes & fees': 990.68,
+        '5% discount': -279.88,
+      },
+    },
+  },
+]
 
-export const baanYokmhaneeSecondStayDetails = {
-  dates: {
-    checkIn: '2023-11-09',
-    checkOut: '2023-11-16',
-  },
-  platform: {
-    name: 'Agoda',
-    url: 'https://www.agoda.com/baan-yokmhanee/hotel/hua-hin-cha-am-th.html',
-  },
-  roomType: 'Standard',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 5596.35,
-      'Taxes & fees': 990.68,
-      '5% discount': -279.88,
+export const skyVillaHuaHinGuesthouseStays = [
+  {
+    dates: {
+      checkIn: '2024-02-17',
+      checkOut: '2024-03-02',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/sky-villa-hua-hin-guesthouse-adults-only.html',
+    },
+    roomType: 'Deluxe Double Room with Balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 18224.30,
+        '7% VAT': 1275.70,
+      },
     },
   },
-}
-
-export const skyVillaHuaHinGuesthouseDetails = {
-  dates: {
-    checkIn: '2024-02-17',
-    checkOut: '2024-03-02',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/sky-villa-hua-hin-guesthouse-adults-only.html',
-  },
-  roomType: 'Deluxe Double Room with Balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 18224.30,
-      '7% VAT': 1275.70,
-    },
-  },
-}
+]
 
 export const imagePath = '/images/articles/huahin-for-digital-nomads'
 
@@ -450,9 +453,7 @@ It's not exciting, there really isn't very much going on, but you can exist peac
 
 <MapLink name='250/199 Soi 90 Petchkasem Rd' url='https://goo.gl/maps/n6MZk993wTytMqou9' />
 
-<AccommodationTable details={baanYokmhaneeFirstStayDetails} />
-
-<AccommodationTable details={baanYokmhaneeSecondStayDetails} />
+<AccommodationTable stays={baanYokmhaneeStays} />
 
 The Internet here is dog shit. I love everything else about this place.
 
@@ -482,7 +483,7 @@ Apart from that, this room is close to perfect. Some cooking equipment would be 
 
 <MapLink name='8/67 Soi Hua Hin 98' url='https://maps.app.goo.gl/PYhxeX7iY1eT9wf5A' />
 
-<AccommodationTable details={skyVillaHuaHinGuesthouseDetails} />
+<AccommodationTable stays={skyVillaHuaHinGuesthouseStays} />
 
 On booking.com, Sky Villa is named _'Sky Villa Hua Hin Guesthouse - Adults-Only'_. When I booked I took the 'Adults-Only' part to mean that they don't want children running around, making a mess and disturbing people who're relaxing by the pool. It was only once I arrived and saw the information folder in the bedroom, with 'The Hotel for Single Travellers' written in big writing next to pictures of scantily-clad women that I was like oh... I'm staying at a sex hotel. Or at least that's the way they're trying to market it.
 

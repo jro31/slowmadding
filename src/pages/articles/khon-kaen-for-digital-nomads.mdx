@@ -330,48 +330,47 @@ export const kemKonKhonKaenImages = [
 
 <MapLink name='1/99 Thanon Prachasamoson' url='https://maps.app.goo.gl/fADZgcLEPaxdudAz6' />
 
-export const manomonResidenceFirstStayDetails = {
-  dates: {
-    checkIn: '2024-01-23',
-    checkOut: '2024-01-31',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
-  },
-  roomType: 'Deluxe King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 6183.49,
+export const manomonResidenceStays = [
+  {
+    dates: {
+      checkIn: '2024-01-23',
+      checkOut: '2024-01-31',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
+    },
+    roomType: 'Deluxe King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 6183.49,
+      },
     },
   },
-}
-
-<AccommodationTable details={manomonResidenceFirstStayDetails} />
-
-export const manomonResidenceSecondStayDetails = {
-  dates: {
-    checkIn: '2024-11-29',
-    checkOut: '2024-12-11',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
-  },
-  roomType: 'Deluxe King Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 10504.67,
-      '7% VAT': 735.33,
+  {
+    dates: {
+      checkIn: '2024-11-29',
+      checkOut: '2024-12-11',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/manomon-residence-amphoe-mueang-khon-kaen.html',
+    },
+    roomType: 'Deluxe King Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 10504.67,
+        '7% VAT': 735.33,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={manomonResidenceSecondStayDetails} />
+<AccommodationTable stays={manomonResidenceStays} />
 
 In both of my stays at Manomon Residence I've been in the deluxe king room, which at 33m² is ironically the smallest room they offer. I'm not sure when it became normal for the king to sleep in the smallest room. As there's not much in the room other than the bed, it's a very spacious room, even for a fat king. Sufficiently spacious for yoga and bodyweight workouts.
 

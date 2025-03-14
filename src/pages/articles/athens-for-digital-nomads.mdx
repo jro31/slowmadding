@@ -496,29 +496,31 @@ I haven't explored the north, east or west of the city enough to recommend stayi
 
 <MapLink name='Eggeli 68' url='https://goo.gl/maps/nCAzLD6TbGTsS9v88' />
 
-export const neosKosmosApartmentDetails = {
-  dates: {
-    checkIn: '2023-08-10',
-    checkOut: '2023-09-21',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/23088380',
-  },
-  roomType: 'Entire condo hosted by Chris',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 1943.34,
-      '25% monthly price discount': -485.94,
-      'Cleaning fee': 25.71,
-      'Service fee': 188.99,
+export const neosKosmosApartmentStays = [
+  {
+    dates: {
+      checkIn: '2023-08-10',
+      checkOut: '2023-09-21',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/23088380',
+    },
+    roomType: 'Entire condo hosted by Chris',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1943.34,
+        '25% monthly price discount': -485.94,
+        'Cleaning fee': 25.71,
+        'Service fee': 188.99,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={neosKosmosApartmentDetails} />
+<AccommodationTable stays={neosKosmosApartmentStays} />
 
 This was the first and only place I stayed that wasn't self check-in during this particular stint in Europe. I got off the plane from Sofia and neither my UK nor my Bulgarian mobile networks would connect, so instead I used the airport wifi and messaged the hosts saying I was leaving the airport, so would be at the room soon. I was assured that someone would be there to meet me.
 
@@ -600,29 +602,31 @@ export const neosKosmosApartmentImages = [
 
 <MapLink name='Veikou 94-96' url='https://maps.app.goo.gl/NsJaUsPAPDzGCa1D9' />
 
-export const koukakiApartmentDetails = {
-  dates: {
-    checkIn: '2023-09-21',
-    checkOut: '2023-10-26',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/907995934616161000',
-  },
-  roomType: 'Entire condo hosted by Anastasios',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 2149.05,
-      '30% monthly price discount': -644.70,
-      'Cleaning fee': 17.09,
-      'Service fee': 193.85,
+export const koukakiApartmentStays = [
+  {
+    dates: {
+      checkIn: '2023-09-21',
+      checkOut: '2023-10-26',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/907995934616161000',
+    },
+    roomType: 'Entire condo hosted by Anastasios',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 2149.05,
+        '30% monthly price discount': -644.70,
+        'Cleaning fee': 17.09,
+        'Service fee': 193.85,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={koukakiApartmentDetails} />
+<AccommodationTable stays={koukakiApartmentStays} />
 
 Under other circumstances, this isn't a room I'd have chosen to stay in, but as there was a high possibility I'd have a friend staying with me, I went for a place in a more touristy area than usual. Despite differing from my usual criteria, I really liked it.
 
@@ -703,29 +707,31 @@ export const koukakiApartmentImages = [
 
 <MapLink name='Kallirrois 39' url='https://maps.app.goo.gl/UjE2VwPRqPMEnSVU8' />
 
-export const kynosargousApartmentDetails = {
-  dates: {
-    checkIn: '2024-08-15',
-    checkOut: '2024-09-26',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/1137515152391443012',
-  },
-  roomType: 'Entire rental unit in Athina, Greece',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 2125.83,
-      '18% monthly price discount': -382.51,
-      'Cleaning fee': 25.52,
-      'Service fee': 248.83,
+export const kynosargousApartmentStays = [
+  {
+    dates: {
+      checkIn: '2024-08-15',
+      checkOut: '2024-09-26',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/1137515152391443012',
+    },
+    roomType: 'Entire rental unit in Athina, Greece',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 2125.83,
+        '18% monthly price discount': -382.51,
+        'Cleaning fee': 25.52,
+        'Service fee': 248.83,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={kynosargousApartmentDetails} />
+<AccommodationTable stays={kynosargousApartmentStays} />
 
 I really loved this room. It's a good vibes kind of place. Or maybe I was just happy when I was here, I'm not sure, but I was certainly sad when I had to leave.
 
@@ -801,30 +807,32 @@ export const kynosargousApartmentImages = [
 
 <MapLink name='Leoforos Eleftheriou Venizelou 152' url='https://maps.app.goo.gl/LVcn9oQdNJjP3J9A8' />
 
-export const kallitheaApartmentDetails = {
-  dates: {
-    checkIn: '2024-09-26',
-    checkOut: '2024-10-31',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/929394116413004365',
-  },
-  roomType: 'Entire rental unit in Kallithea, Greece',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 1732.05,
-      'Monthly stay discount': -259.90,
-      'Cleaning fee': 12.67,
-      'Service fee': 260.87,
-      'Service fee savings': -51.97,
+export const kallitheaApartmentStays = [
+  {
+    dates: {
+      checkIn: '2024-09-26',
+      checkOut: '2024-10-31',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/929394116413004365',
+    },
+    roomType: 'Entire rental unit in Kallithea, Greece',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1732.05,
+        'Monthly stay discount': -259.90,
+        'Cleaning fee': 12.67,
+        'Service fee': 260.87,
+        'Service fee savings': -51.97,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={kallitheaApartmentDetails} />
+<AccommodationTable stays={kallitheaApartmentStays} />
 
 I booked this room as a bit of a hail-Mary, having not been to Kallithea before, but having grown frustrated at being unable to find anywhere else that ticked all my boxes. And once again, Athens delivered. This is another great room.
 

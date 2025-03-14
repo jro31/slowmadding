@@ -503,29 +503,31 @@ Beyond this, I didn't go anywhere in Budapest that didn't feel liveable. Even th
 
 <MapLink name='Thököly út 65' url='https://maps.app.goo.gl/EJZhrTe7HTvJiXWv9' />
 
-export const apartmentDetails = {
-  dates: {
-    checkIn: '2024-07-06',
-    checkOut: '2024-08-15',
-  },
-  platform: {
-    name: 'Airbnb',
-    url: 'https://www.airbnb.com/rooms/51031151',
-  },
-  roomType: 'Entire condo in Budapest, Hungary',
-  price: {
-    currencyPrefix: '£',
-    currencySuffix: 'GBP',
-    sections: {
-      Room: 1485.96,
-      'Cleaning fee': 44.35,
-      'Service fee': 194.96,
-      Taxes: 106.45,
+export const apartmentStays = [
+  {
+    dates: {
+      checkIn: '2024-07-06',
+      checkOut: '2024-08-15',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/51031151',
+    },
+    roomType: 'Entire condo in Budapest, Hungary',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1485.96,
+        'Cleaning fee': 44.35,
+        'Service fee': 194.96,
+        Taxes: 106.45,
+      },
     },
   },
-}
+]
 
-<AccommodationTable details={apartmentDetails} />
+<AccommodationTable stays={apartmentStays} />
 
 Private accommodation in Budapest sits right at the limit of what I'm willing to pay. As such, when I filtered private Airbnbs down to my price range, there weren't very many available. This apartment looked the best of those that were, in large part because it's a very short walk from City Park, and that was my main reason for booking it.
 
