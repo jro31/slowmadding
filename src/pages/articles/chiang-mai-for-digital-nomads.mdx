@@ -12,26 +12,28 @@ export const meta = {
   keywords: ['Thailand'],
 }
 
-export const dewyHouseDetails = {
-  dates: {
-    checkIn: '2022-11-03',
-    checkOut: '2022-11-17',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/dewyhouse.html',
-  },
-  roomType: 'Deluxe Double Room',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 13650,
-      '7% VAT': 955.50,
-      '1% City tax': 136.50,
+export const dewyHouseStays = [
+  {
+    dates: {
+      checkIn: '2022-11-03',
+      checkOut: '2022-11-17',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/dewyhouse.html',
+    },
+    roomType: 'Deluxe Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 13650,
+        '7% VAT': 955.50,
+        '1% City tax': 136.50,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
 
@@ -166,7 +168,7 @@ Hopefully this is a temporary blip, and in a couple of years once it's had the t
 
 <MapLink name='19/2 Charoensuk Rd' url='https://goo.gl/maps/pJzR7m9bw8yWEvZ97' />
 
-<AccommodationTable details={dewyHouseDetails} />
+<AccommodationTable stays={dewyHouseStays} />
 
 I paid a lot more than I had to in order to stay here. Chiang Mai has much cheaper beds, but from the photos and the positive reviews, I decided it would be worth spending extra to stay at DewyHouse.
 

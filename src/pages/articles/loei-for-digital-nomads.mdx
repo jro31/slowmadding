@@ -12,25 +12,27 @@ export const meta = {
   keywords: ['Thailand'],
 }
 
-export const loeiHuenHaoHugHomeAndResortDetails = {
-  dates: {
-    checkIn: '2023-05-04',
-    checkOut: '2023-05-11',
-  },
-  platform: {
-    name: 'booking.com',
-    url: 'https://www.booking.com/hotel/th/loei-huen-hao-hug-home-amp-resort.html',
-  },
-  roomType: 'Queen room with balcony',
-  price: {
-    currencyPrefix: null,
-    currencySuffix: 'THB',
-    sections: {
-      Room: 6214.95,
-      '7% VAT': 435.05,
+export const loeiHuenHaoHugHomeAndResortStays = [
+  {
+    dates: {
+      checkIn: '2023-05-04',
+      checkOut: '2023-05-11',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/loei-huen-hao-hug-home-amp-resort.html',
+    },
+    roomType: 'Queen room with balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 6214.95,
+        '7% VAT': 435.05,
+      },
     },
   },
-}
+]
 
 export const imagePath = '/images/articles/loei-for-digital-nomads'
 
@@ -228,7 +230,7 @@ Perhaps a welcome one, as I always enjoy time away from that blatant tourism, bu
 
 <MapLink name='999 Moo 7 Nokkwang Rd' url='https://goo.gl/maps/EuW3Wxdxk1472MAH9' />
 
-<AccommodationTable details={loeiHuenHaoHugHomeAndResortDetails} />
+<AccommodationTable stays={loeiHuenHaoHugHomeAndResortStays} />
 
 I liked Huen Hao Hug Home... eventually. It took some getting used to.
 
