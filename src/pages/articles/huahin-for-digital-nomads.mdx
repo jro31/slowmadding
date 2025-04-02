@@ -8,11 +8,64 @@ import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-03-13T16:25:00+07:00',
+  date: '2025-04-17T16:25:00+07:00', // TODO: Update this
   title: 'Huahin for Digital Nomads',
   description: "Huahin doesn't get the same attention as other beach towns in Thailand, but does that mean it should be avoided by digital nomads? Maybe you should consider coming here instead of Phuket, Pattaya, Krabi or any of the islands.",
   keywords: ['Thailand', 'Hua Hin'],
 }
+
+export const imagePath = '/images/articles/huahin-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Huahin is a town famous for being the favoured holiday destination of the late king Rama IX, and as such has a reputation of being a beach destination in Thailand for locals, compared to the likes of Koh Samui or Phuket which are primarily visited by foreigners.
+
+That felt true on my first visit in 2016, as a short break while living in Bangkok. By the time I returned as a digital nomad in 2023 I found that Huahin had become a hot-spot for foreign retirees, and when a town in Thailand becomes inundated with male retirees who have a much higher disposable income than the average Thai, the town will change to part them from that money, much to their delight.
+
+Don't make the mistake of thinking Huahin is equivalent to Pattaya or Patong in the services it offers; it's not even close. This is still a very sleepy town in comparison, and is a long way from a place you'd consider a sexpat destination. However, a couple of new bar areas have sprung up since my first visit, and there's no shortage of massage parlours now.
+
+Your main motivation to visit should be that Huahin's just a nice, relaxed place to be. There's really not much going on, but if you like to merely exist, then Huahin's a great place to exist. Plus it's the quickest and easiest place that I've found in Thailand to <Link href='/articles/getting-a-visa-extension-in-huahin'>get a visa extension</Link> so it's worth the trip down here just for that.
+
+It's a town known for its beach, but if that's your motivation I'd say don't bother. I'm not really a fan of beaches to begin with, so perhaps it's not my opinion you should seek, but to me they're just sandy and hot. There are two reasons that I like going to the beach.
+
+The first is that it can be nice to swim in the sea sometimes, and the second is the serenity of the sound of the water. A quiet beach is a perfect place to meditate. Based on that, you know the best way to ruin a perfecltly good beach? Jet-skis.
+
+The beach in Huahin is long and straight. It's not like in a cove, where you're protected from sound. On a straight beach, a jet-ski two miles away still makes an endless, annoying whirring sound like you're on a racetrack. On Huahin beach the endless “waaaaaaaaaaaaahhhh” of jet-skis drowns-out the sound of the ocean, so forget about going there to relax. And seeing as the doorknobs that ride these jet-skis feel the need to ride them close to the shore, then you can forget about having a relaxing swim as well.
+
+Maybe out of the town there are some quieter bays, I haven't really explored this, but the main tourist beach? An absolute waste of time. It's away from the beach that Huahin is pleasant to be.
+
+It's not exciting, there really isn't very much going on, but you can exist peacefully.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/soi-98.jpeg`,
+    alt: 'Huahin soi 98',
+    caption: 'With the beach in Huahin running almost perfectly north to south, the sois mostly run east to west meaning you can get some nice views at the right time of day. This is on soi 98.',
+  },
+  {
+    src: `${imagePath}/city/welcome-to-huahin.jpeg`,
+    alt: 'Welcome to Huahin graffiti just off soi 102',
+    caption: '"Sex or life. Welcome to Huahin Haa Ha." I don\'t know why, but something feels very sinister about this graffiti just off soi 102.',
+  },
+  {
+    src: `${imagePath}/city/beach.jpeg`,
+    alt: 'Huahin Beach',
+    caption: "A long straight beach. Do you know what'd make that better? Well I wouldn't have though so either, but apparently a load of nobheads on jet-skis. This is between sois 73 and 75.",
+  },
+  {
+    src: `${imagePath}/city/sign.jpeg`,
+    alt: 'Huahin Shopping Mall',
+    caption: 'Sage advice.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## Where I stayed
+
+### Baan Yokmhanee
+
+<MapLink name='250/199 Soi 90 Petchkasem Rd' url='https://goo.gl/maps/n6MZk993wTytMqou9' />
 
 export const baanYokmhaneeStays = [
   {
@@ -57,52 +110,29 @@ export const baanYokmhaneeStays = [
   },
 ]
 
-export const skyVillaHuaHinGuesthouseStays = [
-  {
-    dates: {
-      checkIn: '2024-02-17',
-      checkOut: '2024-03-02',
-    },
-    platform: {
-      name: 'booking.com',
-      url: 'https://www.booking.com/hotel/th/sky-villa-hua-hin-guesthouse-adults-only.html',
-    },
-    roomType: 'Deluxe Double Room with Balcony',
-    price: {
-      currencyPrefix: null,
-      currencySuffix: 'THB',
-      sections: {
-        Room: 18224.30,
-        '7% VAT': 1275.70,
-      },
-    },
-  },
-]
+<AccommodationTable stays={baanYokmhaneeStays} />
 
-export const imagePath = '/images/articles/huahin-for-digital-nomads'
+The Internet here is dog shit. I love everything else about this place.
 
-export const cityImages = [
-  {
-    src: `${imagePath}/city/soi-98.jpeg`,
-    alt: 'Huahin soi 98',
-    caption: 'With the beach in Huahin running almost perfectly north to south, the sois mostly run east to west meaning you can get some nice views at the right time of day. This is on soi 98.',
-  },
-  {
-    src: `${imagePath}/city/welcome-to-huahin.jpeg`,
-    alt: 'Welcome to Huahin graffiti just off soi 102',
-    caption: '"Sex or life. Welcome to Huahin Haa Ha." I don\'t know why, but something feels very sinister about this graffiti just off soi 102.',
-  },
-  {
-    src: `${imagePath}/city/beach.jpeg`,
-    alt: 'Huahin Beach',
-    caption: "A long straight beach. Do you know what'd make that better? Well I wouldn't have though so either, but apparently a load of nobheads on jet-skis. This is between sois 73 and 75.",
-  },
-  {
-    src: `${imagePath}/city/sign.jpeg`,
-    alt: 'Huahin Shopping Mall',
-    caption: 'Sage advice.',
-  },
-]
+The location of Baan Yokmhanee is really good. You're about a three minute walk from the beach (albeit across a main road) so if you fancy a morning run or to sit on the beach for some reason, you really don't have to go far. There are several restaurants not more than a couple of minutes away, with a 7-11 and the soi 94 bar area not much farther.
+
+The bars are almost dangerously close actually. When it's that easy to get to a bar, you often find yourself going to a bar, so treat that as a positive or a negative depending on your outlook, but I have had some fun there.
+
+You're about a five minute walk from the Market Village shopping mall, which has a Lotus's supermarket among other shops, and from there you can catch a minibus to Mo Chit in Bangkok. Blueport shopping mall is about a 10-15 minute walk in the other direction and is home to Huahin immigration in case you need to extend your visa, and that's where you can catch minibuses to Ekkamai in Bangkok, so you have a lot of useful things within easy walking distance.
+
+There is a gym in Market Village (Jetts Fitness) but it's very overpriced for short-term visitors; a day pass costs 500 baht. A little further away, down soi 88, is Body Fit 88 which has any equipment you need for a good workout, and only costs 190 baht for a day pass. To walk to the centre of town from the room takes about 25 minutes.
+
+As for the hotel itself, the room is huge. It has a double bed, a sofa, a desk and a separate dining table, a bathroom, a sort of kitchen, and a tonne of empty space, which is great for exercising.
+
+I say a 'sort of kitchen' because it's more just the space where a kitchen would be. You have a surface, a sink, a refrigerator, some cutlery, a couple of bowls and a hot water dispenser, but there isn't actually any cooking equipment. No oven, no stove and no microwave.
+
+The staff are consistently friendly and attentive. Despite booking through a different platform, come my second stay they'd remembered my name and saved me the same room as my first (408) to stay in again, which was a nice touch. You don't often get remembered as a digital nomad.
+
+The room is made-up daily, which is useful if you get sand everywhere. For all of these things the room is perfect, particularly for the price (although there are cheaper rooms in Huahin). The downside is that the Internet is shocking. It's a connection that you have to sign-into through a login page, of which you get logged-out everytime you put your phone or your laptop down. Seriously, you put down your phone to go to the toilet, and by the time you come back you have to go through the login page again. And it doesn't remember your username or password so you have to type them.
+
+When you are logged-in the speeds are perfectly respectable, with download and upload speeds of roughly 50mbps, but it's just a pain to have to login every time. The saving grace is that I was able to get a very strong 5G signal in my room (AIS), so most of the time I wouldn't bother connecting to the wifi and would just use my data.
+
+Apart from that, this room is close to perfect. Some cooking equipment would be welcome, otherwise the location and the facilities are really spot-on. It's hard to recommend a room to digital nomads when the Internet is so bad, but I do really like it. It's worth putting-up with the shitty Internet in order to stay here.
 
 export const baanYokmhaneeImages = [
   {
@@ -141,6 +171,62 @@ export const baanYokmhaneeImages = [
     caption: 'Baan Yokmhanee from outside.',
   },
 ]
+
+<ImageGallery images={baanYokmhaneeImages} />
+
+### Sky Villa Hua Hin Guesthouse
+
+<MapLink name='8/67 Soi Hua Hin 98' url='https://maps.app.goo.gl/PYhxeX7iY1eT9wf5A' />
+
+export const skyVillaHuaHinGuesthouseStays = [
+  {
+    dates: {
+      checkIn: '2024-02-17',
+      checkOut: '2024-03-02',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/sky-villa-hua-hin-guesthouse-adults-only.html',
+    },
+    roomType: 'Deluxe Double Room with Balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 18224.30,
+        '7% VAT': 1275.70,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={skyVillaHuaHinGuesthouseStays} />
+
+On booking.com, Sky Villa is named _'Sky Villa Hua Hin Guesthouse - Adults-Only'_. When I booked I took the 'Adults-Only' part to mean that they don't want children running around, making a mess and disturbing people who're relaxing by the pool. It was only once I arrived and saw the information folder in the bedroom, with 'The Hotel for Single Travellers' written in big writing next to pictures of scantily-clad women that I was like oh... I'm staying at a sex hotel. Or at least that's the way they're trying to market it.
+
+Some not very subtle hints lead me to believe it's German-owned, and you know what they're like. Beyond the information folder being overly provocative though, it feels a pretty normal hotel.
+
+I came here from Pattaya where I'd done way too much partying, so was much more concerned about improving my fitness than I was going to bars, so didn't take advantage of the 'Adults-Only' theme and I didn't really see any other evidence of sexed-up single people bringing girls back. It seemed to mostly be couples staying here, so I think other people took the 'Adults-Only' thing like I did. This hotel seems to attract no more horn-dogs than anywhere else.
+
+All that considered it's a really great place. I was in the Deluxe Double Room with Balcony, which at 42m² is the bigger of the two room sizes they offer (smaller rooms are 32m²), and feels absolutely huge for someone travelling alone. Double bed, sofa, desk, and still loads of empty space to exercise. The large windows let in a tonne of natural light and I really enjoyed sitting out on the balcony with a cup of green tea in the mornings. It's a really great place to just be relaxed.
+
+Out on the balcony you also have a second sink; great for cleaning your blender after making a smoothie, and in the bathroom, the shower's a stand-out feature because of how powerful it is. Internet here is lightning fast and very reliable, making it much more digital nomad friendly than Baan Yokmhanee. In the room the only thing that's a little disappointing is the TV. It was fine to use for workouts once I'd plugged-in my Apple TV, but I didn't bother watching any Netflix on it. It was too small and old.
+
+The room is made-up everyday, and one thing I really loved is that as well as giving you a couple of bottles of drinking water, as is standard in most hotels, they fill-up the kettle. It's about a 1.5l kettle, so getting that much free water is nice, because it's about an eight minute walk to the nearest 7-11 where carrying water back in the Huahin sun is a bit of a chore.
+
+In terms of facilities offered by the hotel, the most obvious one is the pool, and that's how I justified the extra cost of staying here. Yet as is standard I spent everyday here planning on going for a swim, or at least going and reading my book next to the pool, but never actually did. I'm not sure if I've ever made it to a swimming pool in all my time as a digital nomad, so why I continue to think it's worth paying extra to be in hotels with pools, I'm not sure. But from a distance the pool looked really nice. Even better because no kids are allowed here.
+
+The location is on soi 98, a very short walk from Blueport shopping mall. Like Baan Yokmhanee, the beach is very close (across a main road), but it's a bit more of a walk into the town centre (roughly 30 minutes). I don't particularly mind that, and I actually like this area, but if you're someone who needs to be in the centre of things it might not be for you.
+
+If I had to level one criticism, and this is going to sound pedantic but it really annoyed me, it's that the key is huge because it includes a large block of plastic, necessary to insert in order to get power in the room. No problem, I thought, I'll just disassemble the keyring like I normally do when hotels feel the need to give me giant keys.
+
+Nope, they've literally soldered the keyring together so you cannot take any parts of it off, so you have to log-around this giant block of plastic with you everywhere you go. That was an annoyance when I was walking and it was just sitting in my pocket, but on a couple of occasions I woke up early and it stopped me going for a run.
+
+The reception is only staffed from 8:30am to 5:30pm. I had a couple of days when I was up early (about 6am) and thought to myself _"wow, this would be a nice morning to go for a run on the beach,"_ but then remembered that with reception being closed, I couldn't leave my key there so would have to carry this giant block of plastic on my run so did yoga instead.
+
+When it's literally just a small key that you need to get into your room, it's madness that you're forced to haul-around a giant block of plastic with you all day.
+
+But it's ok, I'm over it. Other than that it's a really great place. The staff were incredibly friendly, and I'm pretty sure one of them was stalking me, which is always good for the ego.
 
 export const skyVillaImages = [
   {
@@ -189,6 +275,30 @@ export const skyVillaImages = [
     caption: 'The information page about nightlife in Huahin, just in case you were in any doubt.',
   },
 ]
+
+<ImageGallery images={skyVillaImages} />
+
+## Where to get vegan food in Huahin
+
+While it's not as barren as some of the non-touristy towns in Thailand, the vegan offerings in Huahin are yet to catch-up with the increase in foreign tourism and the selection of restaurants is still a little disappionting. That being said, there are a few decent places. These are my favourites.
+
+### Huahin Vegan
+
+<MapLink name='178/221 soi 82' url='https://maps.app.goo.gl/v3q5VWjqLwFRThDZ6' />
+
+Huahin Vegan can fuck off, and I say that out of love.
+
+On my first two visits to Huahin, Huahin Vegan was located in the now defunct Huahin Shopping Mall. By my third the shopping mall had closed down and the restaurant had moved to a bigger premises on the corner of soi 82, hiring new staff in the process who, as I learned, weren't exactly service-minded.
+
+The moment that sticks with me is I went to the restaurant, had a look at the menu for a couple of minutes and was ready to order. I tried to get the attention of one of the waitresses who, to be fair, was quite busy. But rather than acknowledging me, telling me she'd be there in a minute, anything like that, she would look at me, see I wanted to order, and ignore me. This went on for what felt like a good five minutes. Eventually though, she found the time to come over to my table.
+
+On the table next to me were a couple. They'd been looking at the menu and been ready to order for all of about three seconds. When this waitress came over to our tables, she decided, despite seeing me wanting to order for several minutes now, that she'd go to their table first, at which point my patience at the lack of acknowledgement finally ran out and I very audibly exclaimed _"well fuck me then I guess."_
+
+In part due to my annoyance at this waitress, and in part down to the embarrassment of momentarily losing control of my emotions, I didn't return to Huahin Vegan for well over a week, despite it being by far the best source of vegan food in Huahin and a place I'd previously go to every day or two. And while I did eventually swallow my pride and go back, there was now an obvious awkwardness between me and this waitress, who regrettably had persisted in existing.
+
+The two minutes of your life that you spent reading that story you are never getting back, and it does nothing to detract from the fact there is no better place to get vegan food in Huahin. Even if I no longer hold the front-of-house staff with the regard I once did (to be fair, the rest of the staff are all excellent), the food here has always been high quality.
+
+It's a fully-vegan menu with a mix of foreign and local foods, typically costing about 150 baht per dish. The plates aren't huge so I'd usually get a couple of things, but even that doesn't break the bank. This should be the first place you go when you come to Huahin.
 
 export const huahinVeganImages = [
   {
@@ -278,6 +388,18 @@ export const huahinVeganImages = [
   },
 ]
 
+<ImageGallery images={huahinVeganImages} />
+
+### Veggie Tales
+
+<MapLink name='11/60 soi 43' url='https://maps.app.goo.gl/ViUriQA9mD3ivgSp8' />
+
+Given the distance from where I've stayed in Huahin, right on the other side of town, I've only made it to Veggie Tales a couple of times. That's a shame because it's a really great place.
+
+Despite its name, it's not actually a vegetarian restaurant. The menu is split into pesco vegetarian, lacto-ovo vegetarian and vegan. Or to use normal words, fish, vegetarian and vegan. Vegan items therefore are very clearly labelled, so you can be confident in what you're ordering. The food they offer is a mix of Thai and western, with Thai probably dominating the menu slightly, although it's a big menu so there are plenty of non-Thai offerings if you've had enough of Thai food. All that I ordered was really high quality, and it's pretty cheap as well. I didn't have anything here that cost more than 120 baht, so you can order a few items without breaking the bank.
+
+It's situated down a residential soi north of the city centre, and is an extension of what feels like a family home. While there is a non-air conditioned indoor area, the majority of tables are outside. It's a beautiful, very tranquil garden to sit in, and on both my visits I was the only customer so it was very relaxing, though being outdoors I'd be wary of coming here at mosquito time.
+
 export const veggieTalesImages = [
   {
     src: `${imagePath}/veggie-tales/vegan-garlic-bread.jpeg`,
@@ -315,6 +437,20 @@ export const veggieTalesImages = [
     caption: 'More tasty than it is sightly, this fruit salad with coconut yogurt for 70 baht comes off the breakfast menu (served all day) that also includes vegan pancakes and granola. ',
   },
 ]
+
+<ImageGallery images={veggieTalesImages} />
+
+### S and S Indian Restarant
+
+<MapLink name='75/1 33 Phet Kasem Rd' url='https://maps.app.goo.gl/MuqYx1PT1FSNbRKw9' />
+
+I first visited S&S in 2016, and at that point it was a rinky-dink restaurant on soi 94 with cheap looking furniture and three boys very loudly playing video games. While the food was decent, the atmosphere was not.
+
+Fast-forward eight years to 2024, S&S has now moved onto the main road to a huge premises with two floors of beautiful wooden tables, and seems to be doing rather well for itself. The menu has 27 vegetarian curries on it, of which all but the seven paneer curries can be made vegan. Each one costs 175 baht. Frustratingly they aren't marked on the menu as vegan, but the staff speak fluent English and understand what vegan means, so are very accommodating.
+
+As it was close to my accommodation for my most recent visit to Huahin, I came here a lot so tried six of the curries, all of which I thought were excellent. There are five vegan rices on the menu (from 70 baht each), as well as two vegan breads (from 25 baht each). That's curry, rice and bread for 270 baht and it's a decent-sized meal.
+
+I've been to at least three other Indian restaurants in Huahin, and none of them are as good, so if you have an inkling for Indian food while you're in Huahin, make the trip out here. It's worth it.
 
 export const sAndSImages = [
   {
@@ -364,6 +500,18 @@ export const sAndSImages = [
   },
 ]
 
+<ImageGallery images={sAndSImages} />
+
+### Ogen
+
+<MapLink name='250/89 Soi 94' url='https://maps.app.goo.gl/UvMZ7ppd7rEKjGJw9' />
+
+In a more vegan-friendly city, Ogen wouldn't make it onto my list. It's a little expensive by Thai standards and there isn't too much on the menu that's vegan.
+
+That being said, vegan choices are marked on the menu, which is always big for me. I like to be able to order without asking staff which items I can have. And they do really good hummus, and if you know me, I do like good hummus. Forget about love, money and romantic gestures, hummus is the key to my heart.
+
+They're located on soi 94, right before the railway track and the subsequent bar area, so it's a good place to come for a pre-beer feed. Staff are friendly, and there's plenty of seating at all times except peak dinner time, when it becomes popular with couples which can be entertaining, as many of these are over-the-hill, wealthy foreign retirees, trying to make conversation with out-of-their-league young Thai girls who have no interest in anything but their money, and just sit there looking at the their phone the whole time, ignoring them.
+
 export const ogenImages = [
   {
     src: `${imagePath}/ogen/hummus-ogen.jpeg`,
@@ -402,177 +550,6 @@ export const ogenImages = [
   },
 ]
 
-export const runningImages = [
-  {
-    src: `${imagePath}/running/strava-beach.jpeg`,
-    alt: 'Huahin beach Strava map',
-    caption: "My one barefoot run in Huahin. Later that day I'd go onto sprain my ankle. Ah, the memories.",
-    url: 'https://www.strava.com/activities/8767224942',
-  },
-  {
-    src: `${imagePath}/running/strava-road.jpeg`,
-    alt: 'Huahin beach and road Strava map',
-    caption: "What I eventually settled on as the best way to run in Huahin was to start by running along the beach, but to finish on the road once I'd had enough of going backwards and forwards. Neither place are ideal for running.",
-    url: 'https://www.strava.com/activities/10784053580',
-  },
-]
-
-export const socialImages = [
-  {
-    src: `${imagePath}/social/chang-market.jpeg`,
-    alt: 'Chang Market',
-    caption: "If you go down soi 88 far enough that you cross the railway tracks you get to Chang Market. I don't recommend it, the music was terrible when I went and it was so loud that you wouldn't be able to have a conversation with your friends even if you had any, I just thought this was a nice picture.",
-  },
-]
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-Huahin is a town famous for being the favoured holiday destination of the late king Rama IX, and as such has a reputation of being a beach destination in Thailand for locals, compared to the likes of Koh Samui or Phuket which are primarily visited by foreigners.
-
-That felt true on my first visit in 2016, as a short break while living in Bangkok. By the time I returned as a digital nomad in 2023 I found that Huahin had become a hot-spot for foreign retirees, and when a town in Thailand becomes inundated with male retirees who have a much higher disposable income than the average Thai, the town will change to part them from that money, much to their delight.
-
-Don't make the mistake of thinking Huahin is equivalent to Pattaya or Patong in the services it offers; it's not even close. This is still a very sleepy town in comparison, and is a long way from a place you'd consider a sexpat destination. However, a couple of new bar areas have sprung up since my first visit, and there's no shortage of massage parlours now.
-
-Your main motivation to visit should be that Huahin's just a nice, relaxed place to be. There's really not much going on, but if you like to merely exist, then Huahin's a great place to exist. Plus it's the quickest and easiest place that I've found in Thailand to <Link href='/articles/getting-a-visa-extension-in-huahin'>get a visa extension</Link> so it's worth the trip down here just for that.
-
-It's a town known for its beach, but if that's your motivation I'd say don't bother. I'm not really a fan of beaches to begin with, so perhaps it's not my opinion you should seek, but to me they're just sandy and hot. There are two reasons that I like going to the beach.
-
-The first is that it can be nice to swim in the sea sometimes, and the second is the serenity of the sound of the water. A quiet beach is a perfect place to meditate. Based on that, you know the best way to ruin a perfecltly good beach? Jet-skis.
-
-The beach in Huahin is long and straight. It's not like in a cove, where you're protected from sound. On a straight beach, a jet-ski two miles away still makes an endless, annoying whirring sound like you're on a racetrack. On Huahin beach the endless “waaaaaaaaaaaaahhhh” of jet-skis drowns-out the sound of the ocean, so forget about going there to relax. And seeing as the doorknobs that ride these jet-skis feel the need to ride them close to the shore, then you can forget about having a relaxing swim as well.
-
-Maybe out of the town there are some quieter bays, I haven't really explored this, but the main tourist beach? An absolute waste of time. It's away from the beach that Huahin is pleasant to be.
-
-It's not exciting, there really isn't very much going on, but you can exist peacefully.
-
-<ImageGallery images={cityImages} />
-
-## Where I stayed
-
-### Baan Yokmhanee
-
-<MapLink name='250/199 Soi 90 Petchkasem Rd' url='https://goo.gl/maps/n6MZk993wTytMqou9' />
-
-<AccommodationTable stays={baanYokmhaneeStays} />
-
-The Internet here is dog shit. I love everything else about this place.
-
-The location of Baan Yokmhanee is really good. You're about a three minute walk from the beach (albeit across a main road) so if you fancy a morning run or to sit on the beach for some reason, you really don't have to go far. There are several restaurants not more than a couple of minutes away, with a 7-11 and the soi 94 bar area not much farther.
-
-The bars are almost dangerously close actually. When it's that easy to get to a bar, you often find yourself going to a bar, so treat that as a positive or a negative depending on your outlook, but I have had some fun there.
-
-You're about a five minute walk from the Market Village shopping mall, which has a Lotus's supermarket among other shops, and from there you can catch a minibus to Mo Chit in Bangkok. Blueport shopping mall is about a 10-15 minute walk in the other direction and is home to Huahin immigration in case you need to extend your visa, and that's where you can catch minibuses to Ekkamai in Bangkok, so you have a lot of useful things within easy walking distance.
-
-There is a gym in Market Village (Jetts Fitness) but it's very overpriced for short-term visitors; a day pass costs 500 baht. A little further away, down soi 88, is Body Fit 88 which has any equipment you need for a good workout, and only costs 190 baht for a day pass. To walk to the centre of town from the room takes about 25 minutes.
-
-As for the hotel itself, the room is huge. It has a double bed, a sofa, a desk and a separate dining table, a bathroom, a sort of kitchen, and a tonne of empty space, which is great for exercising.
-
-I say a 'sort of kitchen' because it's more just the space where a kitchen would be. You have a surface, a sink, a refrigerator, some cutlery, a couple of bowls and a hot water dispenser, but there isn't actually any cooking equipment. No oven, no stove and no microwave.
-
-The staff are consistently friendly and attentive. Despite booking through a different platform, come my second stay they'd remembered my name and saved me the same room as my first (408) to stay in again, which was a nice touch. You don't often get remembered as a digital nomad.
-
-The room is made-up daily, which is useful if you get sand everywhere. For all of these things the room is perfect, particularly for the price (although there are cheaper rooms in Huahin). The downside is that the Internet is shocking. It's a connection that you have to sign-into through a login page, of which you get logged-out everytime you put your phone or your laptop down. Seriously, you put down your phone to go to the toilet, and by the time you come back you have to go through the login page again. And it doesn't remember your username or password so you have to type them.
-
-When you are logged-in the speeds are perfectly respectable, with download and upload speeds of roughly 50mbps, but it's just a pain to have to login every time. The saving grace is that I was able to get a very strong 5G signal in my room (AIS), so most of the time I wouldn't bother connecting to the wifi and would just use my data.
-
-Apart from that, this room is close to perfect. Some cooking equipment would be welcome, otherwise the location and the facilities are really spot-on. It's hard to recommend a room to digital nomads when the Internet is so bad, but I do really like it. It's worth putting-up with the shitty Internet in order to stay here.
-
-<ImageGallery images={baanYokmhaneeImages} />
-
-### Sky Villa Hua Hin Guesthouse
-
-<MapLink name='8/67 Soi Hua Hin 98' url='https://maps.app.goo.gl/PYhxeX7iY1eT9wf5A' />
-
-<AccommodationTable stays={skyVillaHuaHinGuesthouseStays} />
-
-On booking.com, Sky Villa is named _'Sky Villa Hua Hin Guesthouse - Adults-Only'_. When I booked I took the 'Adults-Only' part to mean that they don't want children running around, making a mess and disturbing people who're relaxing by the pool. It was only once I arrived and saw the information folder in the bedroom, with 'The Hotel for Single Travellers' written in big writing next to pictures of scantily-clad women that I was like oh... I'm staying at a sex hotel. Or at least that's the way they're trying to market it.
-
-Some not very subtle hints lead me to believe it's German-owned, and you know what they're like. Beyond the information folder being overly provocative though, it feels a pretty normal hotel.
-
-I came here from Pattaya where I'd done way too much partying, so was much more concerned about improving my fitness than I was going to bars, so didn't take advantage of the 'Adults-Only' theme and I didn't really see any other evidence of sexed-up single people bringing girls back. It seemed to mostly be couples staying here, so I think other people took the 'Adults-Only' thing like I did. This hotel seems to attract no more horn-dogs than anywhere else.
-
-All that considered it's a really great place. I was in the Deluxe Double Room with Balcony, which at 42m² is the bigger of the two room sizes they offer (smaller rooms are 32m²), and feels absolutely huge for someone travelling alone. Double bed, sofa, desk, and still loads of empty space to exercise. The large windows let in a tonne of natural light and I really enjoyed sitting out on the balcony with a cup of green tea in the mornings. It's a really great place to just be relaxed.
-
-Out on the balcony you also have a second sink; great for cleaning your blender after making a smoothie, and in the bathroom, the shower's a stand-out feature because of how powerful it is. Internet here is lightning fast and very reliable, making it much more digital nomad friendly than Baan Yokmhanee. In the room the only thing that's a little disappointing is the TV. It was fine to use for workouts once I'd plugged-in my Apple TV, but I didn't bother watching any Netflix on it. It was too small and old.
-
-The room is made-up everyday, and one thing I really loved is that as well as giving you a couple of bottles of drinking water, as is standard in most hotels, they fill-up the kettle. It's about a 1.5l kettle, so getting that much free water is nice, because it's about an eight minute walk to the nearest 7-11 where carrying water back in the Huahin sun is a bit of a chore.
-
-In terms of facilities offered by the hotel, the most obvious one is the pool, and that's how I justified the extra cost of staying here. Yet as is standard I spent everyday here planning on going for a swim, or at least going and reading my book next to the pool, but never actually did. I'm not sure if I've ever made it to a swimming pool in all my time as a digital nomad, so why I continue to think it's worth paying extra to be in hotels with pools, I'm not sure. But from a distance the pool looked really nice. Even better because no kids are allowed here.
-
-The location is on soi 98, a very short walk from Blueport shopping mall. Like Baan Yokmhanee, the beach is very close (across a main road), but it's a bit more of a walk into the town centre (roughly 30 minutes). I don't particularly mind that, and I actually like this area, but if you're someone who needs to be in the centre of things it might not be for you.
-
-If I had to level one criticism, and this is going to sound pedantic but it really annoyed me, it's that the key is huge because it includes a large block of plastic, necessary to insert in order to get power in the room. No problem, I thought, I'll just disassemble the keyring like I normally do when hotels feel the need to give me giant keys.
-
-Nope, they've literally soldered the keyring together so you cannot take any parts of it off, so you have to log-around this giant block of plastic with you everywhere you go. That was an annoyance when I was walking and it was just sitting in my pocket, but on a couple of occasions I woke up early and it stopped me going for a run.
-
-The reception is only staffed from 8:30am to 5:30pm. I had a couple of days when I was up early (about 6am) and thought to myself _"wow, this would be a nice morning to go for a run on the beach,"_ but then remembered that with reception being closed, I couldn't leave my key there so would have to carry this giant block of plastic on my run so did yoga instead.
-
-When it's literally just a small key that you need to get into your room, it's madness that you're forced to haul-around a giant block of plastic with you all day.
-
-But it's ok, I'm over it. Other than that it's a really great place. The staff were incredibly friendly, and I'm pretty sure one of them was stalking me, which is always good for the ego.
-
-<ImageGallery images={skyVillaImages} />
-
-## Where to get vegan food in Huahin
-
-While it's not as barren as some of the non-touristy towns in Thailand, the vegan offerings in Huahin are yet to catch-up with the increase in foreign tourism and the selection of restaurants is still a little disappionting. That being said, there are a few decent places. These are my favourites.
-
-### Huahin Vegan
-
-<MapLink name='178/221 soi 82' url='https://maps.app.goo.gl/v3q5VWjqLwFRThDZ6' />
-
-Huahin Vegan can fuck off, and I say that out of love.
-
-On my first two visits to Huahin, Huahin Vegan was located in the now defunct Huahin Shopping Mall. By my third the shopping mall had closed down and the restaurant had moved to a bigger premises on the corner of soi 82, hiring new staff in the process who, as I learned, weren't exactly service-minded.
-
-The moment that sticks with me is I went to the restaurant, had a look at the menu for a couple of minutes and was ready to order. I tried to get the attention of one of the waitresses who, to be fair, was quite busy. But rather than acknowledging me, telling me she'd be there in a minute, anything like that, she would look at me, see I wanted to order, and ignore me. This went on for what felt like a good five minutes. Eventually though, she found the time to come over to my table.
-
-On the table next to me were a couple. They'd been looking at the menu and been ready to order for all of about three seconds. When this waitress came over to our tables, she decided, despite seeing me wanting to order for several minutes now, that she'd go to their table first, at which point my patience at the lack of acknowledgement finally ran out and I very audibly exclaimed _"well fuck me then I guess."_
-
-In part due to my annoyance at this waitress, and in part down to the embarrassment of momentarily losing control of my emotions, I didn't return to Huahin Vegan for well over a week, despite it being by far the best source of vegan food in Huahin and a place I'd previously go to every day or two. And while I did eventually swallow my pride and go back, there was now an obvious awkwardness between me and this waitress, who regrettably had persisted in existing.
-
-The two minutes of your life that you spent reading that story you are never getting back, and it does nothing to detract from the fact there is no better place to get vegan food in Huahin. Even if I no longer hold the front-of-house staff with the regard I once did (to be fair, the rest of the staff are all excellent), the food here has always been high quality.
-
-It's a fully-vegan menu with a mix of foreign and local foods, typically costing about 150 baht per dish. The plates aren't huge so I'd usually get a couple of things, but even that doesn't break the bank. This should be the first place you go when you come to Huahin.
-
-<ImageGallery images={huahinVeganImages} />
-
-### Veggie Tales
-
-<MapLink name='11/60 soi 43' url='https://maps.app.goo.gl/ViUriQA9mD3ivgSp8' />
-
-Given the distance from where I've stayed in Huahin, right on the other side of town, I've only made it to Veggie Tales a couple of times. That's a shame because it's a really great place.
-
-Despite its name, it's not actually a vegetarian restaurant. The menu is split into pesco vegetarian, lacto-ovo vegetarian and vegan. Or to use normal words, fish, vegetarian and vegan. Vegan items therefore are very clearly labelled, so you can be confident in what you're ordering. The food they offer is a mix of Thai and western, with Thai probably dominating the menu slightly, although it's a big menu so there are plenty of non-Thai offerings if you've had enough of Thai food. All that I ordered was really high quality, and it's pretty cheap as well. I didn't have anything here that cost more than 120 baht, so you can order a few items without breaking the bank.
-
-It's situated down a residential soi north of the city centre, and is an extension of what feels like a family home. While there is a non-air conditioned indoor area, the majority of tables are outside. It's a beautiful, very tranquil garden to sit in, and on both my visits I was the only customer so it was very relaxing, though being outdoors I'd be wary of coming here at mosquito time.
-
-<ImageGallery images={veggieTalesImages} />
-
-### S and S Indian Restarant
-
-<MapLink name='75/1 33 Phet Kasem Rd' url='https://maps.app.goo.gl/MuqYx1PT1FSNbRKw9' />
-
-I first visited S&S in 2016, and at that point it was a rinky-dink restaurant on soi 94 with cheap looking furniture and three boys very loudly playing video games. While the food was decent, the atmosphere was not.
-
-Fast-forward eight years to 2024, S&S has now moved onto the main road to a huge premises with two floors of beautiful wooden tables, and seems to be doing rather well for itself. The menu has 27 vegetarian curries on it, of which all but the seven paneer curries can be made vegan. Each one costs 175 baht. Frustratingly they aren't marked on the menu as vegan, but the staff speak fluent English and understand what vegan means, so are very accommodating.
-
-As it was close to my accommodation for my most recent visit to Huahin, I came here a lot so tried six of the curries, all of which I thought were excellent. There are five vegan rices on the menu (from 70 baht each), as well as two vegan breads (from 25 baht each). That's curry, rice and bread for 270 baht and it's a decent-sized meal.
-
-I've been to at least three other Indian restaurants in Huahin, and none of them are as good, so if you have an inkling for Indian food while you're in Huahin, make the trip out here. It's worth it.
-
-<ImageGallery images={sAndSImages} />
-
-### Ogen
-
-<MapLink name='250/89 Soi 94' url='https://maps.app.goo.gl/UvMZ7ppd7rEKjGJw9' />
-
-In a more vegan-friendly city, Ogen wouldn't make it onto my list. It's a little expensive by Thai standards and there isn't too much on the menu that's vegan.
-
-That being said, vegan choices are marked on the menu, which is always big for me. I like to be able to order without asking staff which items I can have. And they do really good hummus, and if you know me, I do like good hummus. Forget about love, money and romantic gestures, hummus is the key to my heart.
-
-They're located on soi 94, right before the railway track and the subsequent bar area, so it's a good place to come for a pre-beer feed. Staff are friendly, and there's plenty of seating at all times except peak dinner time, when it becomes popular with couples which can be entertaining, as many of these are over-the-hill, wealthy foreign retirees, trying to make conversation with out-of-their-league young Thai girls who have no interest in anything but their money, and just sit there looking at the their phone the whole time, ignoring them.
-
 <ImageGallery images={ogenImages} />
 
 ## Where to run in Huahin
@@ -591,6 +568,21 @@ The beach has some busy spots and the main road includes bottlenecks of gormless
 
 Apparently the mountains you can see from town can be run up, but I'm yet to make it.
 
+export const runningImages = [
+  {
+    src: `${imagePath}/running/strava-beach.jpeg`,
+    alt: 'Huahin beach Strava map',
+    caption: "My one barefoot run in Huahin. Later that day I'd go onto sprain my ankle. Ah, the memories.",
+    url: 'https://www.strava.com/activities/8767224942',
+  },
+  {
+    src: `${imagePath}/running/strava-road.jpeg`,
+    alt: 'Huahin beach and road Strava map',
+    caption: "What I eventually settled on as the best way to run in Huahin was to start by running along the beach, but to finish on the road once I'd had enough of going backwards and forwards. Neither place are ideal for running.",
+    url: 'https://www.strava.com/activities/10784053580',
+  },
+]
+
 <ImageGallery images={runningImages} />
 
 ## Being sociable in Huahin
@@ -604,5 +596,13 @@ Another area is <ExternalLink url='https://maps.app.goo.gl/r8MLzPgoX2sQtfdN9'>so
 The bar area at the centre of town starts from <ExternalLink url='https://maps.app.goo.gl/dc6gJdB6FGQDb2a1A'>soi Bintabaht</ExternalLink> and goes out from there. Like soi 80, I've always found it uncomfortably quiet so not an especially enjoyable place to get a drink as you get hassled. I have met some interesting people there, but I'd recommend soi 94 out of the three of these. It's the funner and more relaxed of these areas.
 
 You'll find that most bars close by 2am (some at 1am), but as some have paid sufficient bribes, with a bit of searching you can always find somewhere to drink through the night, which is always fun until the next morning.
+
+export const socialImages = [
+  {
+    src: `${imagePath}/social/chang-market.jpeg`,
+    alt: 'Chang Market',
+    caption: "If you go down soi 88 far enough that you cross the railway tracks you get to Chang Market. I don't recommend it, the music was terrible when I went and it was so loud that you wouldn't be able to have a conversation with your friends even if you had any, I just thought this was a nice picture.",
+  },
+]
 
 <ImageGallery images={socialImages} />
