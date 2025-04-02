@@ -5,6 +5,7 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
@@ -573,9 +574,31 @@ export const skyVillaHuaHinGuesthouseStays = [
       },
     },
   },
+  {
+    dates: {
+      checkIn: '2025-04-03',
+      checkOut: '2025-04-17',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/sky-villa-hua-hin-guesthouse-adults-only.html',
+    },
+    roomType: 'Deluxe Double Room with Balcony',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 20373.83,
+        '7% VAT': 1426.17,
+        'booking.com pays': -1962,
+      },
+    },
+  },
 ]
 
 <AccommodationTable stays={skyVillaHuaHinGuesthouseStays} />
+
+TODO: Rewrite this
 
 On booking.com, Sky Villa is named _'Sky Villa Hua Hin Guesthouse - Adults-Only'_. When I booked I took the 'Adults-Only' part to mean that they don't want children running around, making a mess and disturbing people who're relaxing by the pool. It was only once I arrived and saw the information folder in the bedroom, with 'The Hotel for Single Travellers' written in big writing next to pictures of scantily-clad women that I was like oh... I'm staying at a sex hotel. Or at least that's the way they're trying to market it.
 
@@ -655,7 +678,19 @@ export const skyVillaImages = [
 
 ## Summary of Huahin
 
-TODO
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
 
 ## Final thoughts
 
