@@ -14,6 +14,7 @@ export const countries = {
   laos: 'Laos',
   mexico: 'Mexico',
   netherlands: 'Netherlands',
+  northMacedonia: 'North Macedonia',
   paraguay: 'Paraguay',
   peru: 'Peru',
   romania: 'Romania',
@@ -175,6 +176,9 @@ export const places = {
   [countries.netherlands]: {
     amsterdam: 'Amsterdam',
   },
+  [countries.northMacedonia]: {
+    skopje: 'Skopje',
+  },
   [countries.paraguay]: {
     asuncion: 'Asunción',
   },
@@ -222,6 +226,7 @@ export const places = {
     udonThani: 'Udon Thani',
   },
   [countries.unitedKingdom]: {
+    liverpool: 'Liverpool',
     london: 'London',
   },
   [countries.usa]: {

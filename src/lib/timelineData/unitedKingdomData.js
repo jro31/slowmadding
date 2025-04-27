@@ -2,6 +2,14 @@ import { countries, places } from '@/lib/placeNames'
 import { dates, arrival, departure } from '@/lib/timelineData/variables'
 
 export const unitedKingdomData = {
+  [places[countries.unitedKingdom].liverpool]: [
+    {
+      [dates]: {
+        [arrival]: '2025-05-16',
+        [departure]: '2025-05-19',
+      },
+    },
+  ],
   [places[countries.unitedKingdom].london]: [
     {
       [dates]: {
@@ -61,6 +69,18 @@ export const unitedKingdomData = {
       [dates]: {
         [arrival]: '2024-06-14',
         [departure]: '2024-07-06',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2025-04-25',
+        [departure]: '2025-05-16',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2025-05-19',
+        [departure]: '2025-05-23',
       },
     },
   ],
