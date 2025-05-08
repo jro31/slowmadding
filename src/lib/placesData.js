@@ -750,7 +750,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          "Didn't have any connection issues during my stay. It wasn't the fastest connection, but it was good enough for video calls.",
+          "Didn't have any connection issues during my stay. 210mbps download speed, 215mbps upload speed in my room.",
       },
       [running]: {
         [verdict]: true,

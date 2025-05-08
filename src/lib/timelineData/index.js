@@ -18,6 +18,7 @@ import { indonesiaData } from './indonesiaData'
 import { laosData } from './laosData'
 import { mexicoData } from './mexicoData'
 import { netherlandsData } from './netherlandsData'
+import { northMacedoniaData } from './northMacedoniaData'
 import { paraguayData } from './paraguayData'
 import { peruData } from './peruData'
 import { romaniaData } from './romaniaData'
@@ -44,6 +45,7 @@ const timelineData = {
   [countries.laos]: laosData,
   [countries.mexico]: mexicoData,
   [countries.netherlands]: netherlandsData,
+  [countries.northMacedonia]: northMacedoniaData,
   [countries.paraguay]: paraguayData,
   [countries.peru]: peruData,
   [countries.romania]: romaniaData,
