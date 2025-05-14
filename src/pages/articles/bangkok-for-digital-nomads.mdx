@@ -1,3 +1,5 @@
+import Link from 'next/link'
+
 import ArticleLayout from '@/components/ArticleLayout'
 import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
@@ -7,9 +9,9 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-04-24T17:05:00+08:00', // TODO: Update this
+  date: '2025-05-14T17:05:00+01:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
-  description: "Bangkok is the travel hub of South-East Asia so people often use it as nothing more than a stepping stone to get elsewhere. How does it fare for the digital nomad who chooses to stay here?",
+  description: "Despite being one of the key travel hubs in South-East Asia, Bangkok used to be a destination in its own right. In the post-covid world the authorities made concessions to bring the tourists back, of which Bangkok is a victim. Is it still worth coming here as a digital nomad, or is it now no different from any other generic city?",
   keywords: ['Thailand'],
 }
 
@@ -17,29 +19,19 @@ export const imagePath = '/images/articles/bangkok-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Thailand's capital Bangkok is the one of the main travel hubs in South-East Asia. Once upon a time, it was my favourite place in the world. It's a big city, so it can take a little time to find the parts of it that suit you, but once you do it's such a vibrant and energetic place that you'll never be bored again. Accommodation is pretty cheap, there are endless social opportunities, the food scene is incredibly cosmopolitan, there are a couple of nice parks, the tranportation network can take you anywhere and the Internet is fast. What more could you ask for?
+Thailand's capital Bangkok is the one of the main travel hubs in South-East Asia. Once upon a time it was my favourite place in the world. It's a big city, so it can take a little time to find the parts of it you like, but once you do it's such a vibrant and energetic place that you'll never be bored again. Accommodation is pretty cheap, there are endless social opportunities, the food scene is incredibly varied, there are a couple of nice parks, the tranportation network can take you anywhere and the Internet is fast. What more could you ask for?
 
-In Thailand, all roads lead to Bangkok. All railway lines start in Bangkok and most international flights come to Bangkok. If you come to Thailand, you're almost certainly going to come here whether you want to or not. In response to a lull in post-pandemic tourism, the government really pushed to increase the quantity of tourists in Thailand by removing a lot of red tape. In 2022, for example, 11.15 million foreign visitors came to Thailand. By 2024 it was over 35 million, and as almost all of them found themselves in Bangkok for some of their trip, when you're here you can really feel it. And I don't just mean a huge increase in the number of gormless foreigners walking around in flip-flops. You can feel this quantity over quality attitude in the services.
+In Thailand, all roads lead to Bangkok. All railway lines start in Bangkok and most international flights come to Bangkok. If you come to Thailand, you're almost certainly going to come here whether you want to or not. In response to a lull in post-pandemic tourism, the government really pushed to increase the tourist numbers in Thailand by removing a lot of red tape. In 2022, for example, 11.15 million foreign visitors came to Thailand. By 2024 it was over 35 million, and as almost all of them found themselves in Bangkok for some of their trip, when you're in Bangkok you can really feel it. And I don't just mean a huge increase in the number of gormless foreigners walking around in flip-flops. You can feel this quantity over quality attitude in the services.
 
-When there are 35 million people coming each year, there's little incentive for hotels to try to get repeat customers, for example. If they have a shitty rating on Agoda, it's not really going to [affect] them much because there are so many other potential customers. Should we provide a good service, or should we cut costs as much as possible? As I'll get into in the [accommodation section - add link], many now choose the latter. You feel it across other services as well.
+When there are 35 million people coming here each year, there's little incentive for hotels to try to get repeat customers. If they have a shitty rating on Agoda, it's not really going to affect them much because there are so many other potential customers. Should we provide a good service, or should we cut costs as much as possible? As I'll get into in the <Link href='#where-ive-stayed-as-a-digital-nomad-in-bangkok'>accommodation section</Link>, many now choose the latter. You feel it across other services as well.
 
-I used to love what I consider to be the city centre (the area around Asok BTS) and that's where I've mostly stayed when coming here as a digital nomad. Now I'd recommend avoiding it. Go to the outer districts with less tourism, because in the touristy areas the number of tourists is overwhelming.
+I used to love what I consider to be the city centre (the area around Asok BTS) and that's where I've mostly stayed when coming here as a digital nomad. Now I'd recommend avoiding it. Go to the outer districts with less tourism, because in the touristy areas it's become overwhelming.
 
 And while I once loved Bangkok to the point that I lived here for six years, lately I've fallen out of love with it a bit. It attracts so many foreigners that show no interest in learning the language or local customs, and subsequent businesses to cater to them, that it's rapidly becoming little more than a generic tourist city, particularly in the centre.
 
 Take from that what you will. If you're a digital nomad who wants things like in their home country, but cheaper, then you might love it here. But on my latest trip to Thailand I regretted staying in Bangkok so long. I'd much rather have spent more time in the provinces.
 
 export const cityImages = [
-  {
-    src: `${imagePath}/city/bangkok-at-night.jpeg`,
-    alt: 'Bangkok at night',
-    caption: "Bangkok's a colourful city, even at night. This is the non-Sukhumvit end of Sukhumvit soi 22, taken from the balcony of the V Check Inn hotel.",
-  },
-  {
-    src: `${imagePath}/city/sunset.jpeg`,
-    alt: 'Bangkok sunset',
-    caption: 'The great thing about all the pollution in Bangkok is you get some amazing sunsets. This one was taken from the balcony of my room during my second stay at RoomQuest Sukhumvit 36.',
-  },
   {
     src: `${imagePath}/city/for-the-nation-party-billboard.jpeg`,
     alt: 'For the Nation Party billboard',
@@ -55,15 +47,15 @@ Bangkok is more expensive than the rest of Thailand, but still very cheap compar
 
 ## Paying for things in Bangkok
 
-If you don't have a Thai bank account, cash is the primary method for paying for things in Bangkok (and all of Thailand). While large businesses like supermarkets accept card payments and don't charge a fee, many smaller businesses that do accept card tack-on an extra fee (up to 10%). Most smaller businesses, including all street vendors, don't accept card payment, so get used to carrying cash.
+If you don't have a Thai bank account, cash is the primary method for paying for things in Bangkok (and all of Thailand). While large businesses like supermarkets accept card payments and don't charge a fee, many smaller businesses that do accept cards tack-on an extra fee (up to 10%). Most smaller businesses, including all street vendors, don't accept card payments at all, so get used to carrying cash.
 
 Thai ATMs charge a withdrawal fee for using foreign cards. The fee is about 200 baht per transaction (it varies slightly by bank). It's therefore more economical to withdraw large amounts at each withdrawal, although you'll find that ATMs have withdrawal limits, usually 20,000 baht per withdrawal.
 
 That's the bad news. The good news is that if you have or can get a Thai bank account then things are much, much easier.
 
-Not many businesses in Thailand accept card payment, but every single business including street vendors accept payment by QR code. They will show you a QR code that you scan with your bank's app, and what this does is setup a direct transfer. There is no fee to you or to the recipient, so you can pay any amount to anybody in this way.
+Not many businesses in Thailand accept card payments, but every single business including street vendors accept payment by QR code. They will show you a QR code that you scan with your bank's app, and what this does is setup a direct transfer. There is no fee to you or to the recipient, so you can pay any amount to anybody in this way.
 
-Furthermore, withdrawing cash from your Thai bank's ATMs is free of charge, and if you're with a major bank you'll find them all over the place. Using another bank's ATM incurs a small fee, but the amoount is negligible.
+Furthermore, withdrawing cash from your Thai bank's ATMs is free of charge, and if you're with a major bank you'll find them all over the place. Using another bank's ATM incurs a small fee, but the amount is negligible.
 
 In short, if you're able to get a Thai bank account then you'll find paying for things to be really easy, you'll rarely have to pay with cash as you can pay for everything using your phone, ATM withdrawals are free, and you can even do cardless ATM withdrawals. If you can't get a Thai bank acccount, then you'll be mostly paying with cash, and you'll pay each time you withdraw from an ATM.
 
@@ -73,7 +65,7 @@ If you're in Thailand with a work permit, then opening a Thai bank account is pr
 
 The first thing I'll say, is that if you can stand the heat, then Bangkok is a deceptively walkable city.
 
-You might not think it at first given the pollution levels, how hard it can be to cross the road, and the amount of motorcycles that ride on the pavement. Once you get used to that though, there's not really anywhere in the city you can't get to on foot.
+You might not think it at first given the pollution levels, how hard it can be to cross the road, and the amount of motorcycles that ride on the pavement. Once you get used to that, there's not really anywhere in the city you can't get on foot.
 
 For those who aren't so inclined, then you have some options.
 
@@ -89,7 +81,7 @@ If you can speak Thai, or if you can at least pass-off as not being a tourist, t
 
 The first thing you're likely to encounter is that they'll try to use a set fare rather than the metre. This will _usually_ be higher than the metre rate, so insist that they use the metre and make sure they agree before getting into the taxi. The Thai word for 'metre' is conveniently a loanword from English, so just say 'metre' in a Thai accent (such as "mee-terr") and they should understand.
 
-The other issues you might encounter are drivers taking longer routes than necessary, metres having been maniupulated to charge a higher rate, the metre mysteriously breaking mid-journey, or the drivers adding on eronious fees at the end of the trip. These are much rarer scams, and in the event that you encounter one, the simplest solution is to usually just swallow your pride and pay, and if you're so inclined, report the driver after the fact.
+The other issues you might encounter are drivers taking longer routes than necessary, metres having been maniupulated to charge a higher rate, the metre mysteriously breaking mid-journey, or the drivers adding-on eronious fees at the end of the trip. These are much rarer scams, and in the event that you encounter one, the simplest solution is to usually just swallow your pride and pay, and if you're so inclined, report the driver after the fact.
 
 Every once in a while a news story pops-up of a taxi driver getting into an argument with a tourist (just Google something like 'Bangkok taxi driver attacks tourist'), and the tourist rarely ever wins.
 
@@ -99,7 +91,7 @@ You'll see motorcycle taxis all over Bangkok. They're the riders that wear orang
 
 As all Thai people are allergic to walking, motorcycles are necessary to get them to the nearest MRT or BTS station. A fare for such a trip is often just 15 or 20 baht. For such short distances I always walk, so I rarely use them. However if you need to get somewhere further afield quickly, they're the best way as they're far less affected by Bangkok's heavy traffic than cars, buses, taxis and tuk-tuks are.
 
-Going outside of their usual territory you're going to have to negotiate the fare with the rider as there won't be one already set.
+Going outside of their usual territory you're going to have to negotiate the fare with the rider as there won't be one pre-set.
 
 ### Ride-hailing apps
 
@@ -115,11 +107,11 @@ While they're still commonly used by locals in other parts of Thailand, in Bangk
 
 By far the easiest way of getting around Bangkok, the MRT (the subway) and the BTS (the skytrain) have every sign and announcement translated into English, and every worker behind the counter speaks English. That's the good news. The bad news is that, despite connecting together and appearing part of the same service, they're actually run by different companies, and therefore journeys on each require different tickets or different pre-paid cards.
 
-When going to quiet stations, if you don't have a pre-paid card then buying a ticket is easy, either at the counter or at a machine. But if you go to Sukhumvit station during evening rush hour, queues can be huge so I recommend getting a pre-paid card just to be safe.
+When going to quiet stations, if you don't have a pre-paid card then buying a ticket is easy, either at the counter or at a machine. But if you go to Sukhumvit station during evening rush hour, queues can be huge so I recommend getting a pre-paid card just to save queueing for an hour.
 
 On the BTS this is the Rabbit card. The MRT now accepts tap-to-pay with visa cards (but not Mastercard), but if that's not viable then buy an MRT pre-paid card as well.
 
-While it doesn't yet cover the entire city, the network is expanding at an astounding rate. From when I last lived in Bangkok in 2018, there is now about three times as many operational stations, with more under construction, so it'll soon get you anywhere in the city.
+While it doesn't yet cover the entire city, the network is expanding very quickly. From when I last lived in Bangkok in 2018, there is now about three times as many operational stations, with more under construction, so it'll soon get you anywhere in the city.
 
 ### Taking the bus
 
@@ -127,17 +119,17 @@ Taking the bus in Bangkok is much easier than it used to be, but it can still be
 
 It's easier because apps like ViaBus (<ExternalLink url='https://apps.apple.com/us/app/viabus/id1074208600'>AppStore</ExternalLink> / <ExternalLink url='https://play.google.com/store/apps/details?id=com.indyzalab.transitia&hl=en-US'>Play Store</ExternalLink>) mean that figuring-out which bus to take can be done in English, on your phone, as opposed to wandering around Bangkok and writing down which buses stop at which bus stops, which is what I had to do when I first lived here.
 
-To take the bus, you get on at any door and go and find a seat if one's available. The conductor will approach you. On non-air conditioned buses, there's a flat fare no matter your destination. This can vary slightly, but will typically be around 10 baht. If you're unsure and don't want to ask the far, just hand over a 20 baht note and you'll get change.
+To take the bus, you get on at any door and go and find a seat if one's available. The conductor will approach you. On non-air conditioned buses, there's a flat fare no matter your destination. This can vary slightly, but will typically be around 10 baht. If you're unsure and don't want to ask the fare, just hand over a 20 baht note and you'll get change.
 
 On air-conditioned buses the fare varies by destination, which is a bit annoying because I quite like to get on buses and just see where they go, and you also face the occasional embarrassment of getting on the wrong bus and stating a destination that the bus isn't going to.
 
 Assuming you say a destination that actually exists, the conductor will tell you the fare (usually less than 25 baht). Don't expect the conductors to speak any English, so if you don't know Thai then just hand over a couple of 20 baht notes and see how much change you get. Exciting.
 
-Buses go to all corners of Bangkok very cheaply, and are probably the funnest way to travel, so it's worth getting used to how to take them, but it can be a little intimidating at first.
+Buses go to all corners of Bangkok very cheaply, and are probably the funnest way to travel, so it's worth getting used to how to take them, but they can be a little intimidating at first.
 
 ## Is it easy to get by with English in Bangkok?
 
-In the tourist areas, yes, very easy. The further you venture outwards, the less English is used, but this is a city with such a high number of tourists and expats that in very few places is it going to be uncommon to see foreigners, so at the very least, people will be used to dealing with non-Thai speakers, even if they don't speak English.
+In the tourist areas, yes, very easy. The further you venture outwards, the less English is spoken, but this is a city with such a high number of tourists and expats that in very few places is it going to be uncommon to see foreigners, so at the very least people will be used to dealing with non-Thai speakers, even if they don't speak English.
 
 ## Is Bangkok safe?
 
@@ -151,29 +143,29 @@ I have been told first-hand accounts of violent crimes in Bangkok (I had a Thai 
 
 ## Who is Bangkok suitable for?
 
-So long as you're someone that likes big cities, then Bangkok really does have something for everyone. Whether or not you can find what you're looking for is another matter. Of note, Bangkok only has a couple of parks. If you're not used to big cities, or if you're used to European cities with green space dotted all over, then Bangkok may not be for you.
+So long as you're someone that likes big cities, then Bangkok really does have something for everyone. Whether or not you can find what you're looking for is another matter. Of note, Bangkok only has a couple of parks. If you're not used to big cities, or if you're used to European cities with lots of green space, then Bangkok may not be for you.
 
 It's a very easy city to be sociable in. There are many events on Meetup, and there are co-working spaces, so having a social life is easy here.
 
 Some parts of the city, such as around the Sukhumvit area or Khao San Road are renowned for being tourist hot spots. Other areas like Thong Lo, On Nut and Sathorn still have a heavy foreign presence, but more with expats and longer-term visitors. Other areas don't have much foreign presence at all.
 
-The areas with a lot of foreigners are rapidly and regrettably transforming to resemble Europe more than Bangkok, with coffee shops and restaurants serving western food from English menus and English-speaking staff. You'll also find prices in these areas to be higher than elsewhere. But if you're looking for a local experience, this is still somewhat possible in Bangkok (although if you're looking for a local experience, I don't know why you'd stay in Bangkok at all).
+The areas with a lot of foreigners are rapidly and regrettably transforming to resemble Europe more than Bangkok, with coffee shops and restaurants serving western food from English menus and English-speaking staff. You'll also find prices in these areas to be higher than elsewhere. But if you're looking for a local experience, this is still somewhat possible in the outer areas of the city (although if you're looking for a local experience, I don't know why you'd stay in Bangkok at all).
 
 ## Is the tap water drinkable in Bangkok?
 
 No, but it's not a huge issue.
 
-When the water leaves the plant in Bangkok it's drinkable, but the pipes in Bangkok are old and broken, so by the time it reaches your tap, especially if you're staying in an old building, then it's not considered safe for drinking. But don't go overboard.
+When the water leaves the plant in Bangkok it's drinkable, but the pipes in Bangkok are old and broken, so by the time it reaches your tap, especially if you're staying in an old building, then it's not considered safe for consumption, but don't go overboard.
 
 I've used it for many years to brush my teeth with and to cook with and never had an issue. I've never checked with the bar/restaurant I'm in if the ice has come from the tap, and I even had a friend who regularly drank the tap water, and last I heard he was still alive.
 
-Bottled water is cheap in Bangkok (a six-litre bottle is 41 baht in 7-11) and you'll see many water filter machines dotted all over, where you can fill-up your bottles for roughly 1 baht per litre. There's also a growing number of water fountains popping-up around the city where you can get drinking water for free.
+Bottled water is cheap in Bangkok (a six-litre bottle is 41 baht in 7-11) and you'll see water filter machines all over the place, where you can fill-up your bottles for roughly 1 baht per litre. There's also a growing number of water fountains around the city where you can get drinking water for free.
 
 ## Where to buy tea in Bangkok
 
 I don't know, and it drives me up the wall.
 
-If you've read any of the other articles I've written about Thailand, you'll know that my quest for reasonably-priced local tea is an ongoing issue. Thailand has some amazing, local teas that when you can find them will cost little more than one baht per tea bag. But none of the major supermarkets stock them, favouring overpriced, imported teas that are more like 150 baht for a pack of twenty. So in every city I go to I have to just wander around until you find a local shop that stocks them.
+If you've read any of the other articles I've written about Thailand, you'll know that my quest for reasonably-priced local tea is an ongoing issue. Thailand has some amazing, local teas that when you can find them will cost little more than one baht per tea bag. But none of the major supermarkets stock them, favouring overpriced, imported teas that are more like 150 baht for a pack of twenty. So in every city I go to I have to just wander around until I find a local shop that stocks them.
 
 The best I've found in Bangkok is the Gateway Ekkamai branch of <ExternalLink url='https://maps.app.goo.gl/xTCwf1gVAuEwAkmp9'>MaxValu</ExternalLink>. They have a small selection of Thai teas for 35 baht for twenty tea bags. But it's only this branch, I tried in other branches of MaxValu, and they didn't stock them.
 
@@ -183,7 +175,7 @@ export const teaImages = [
   {
     src: `${imagePath}/tea/maxvalu-gateway-ekkamai-local-tea.jpeg`,
     alt: 'MaxValu Gateway Ekkamai local teas',
-    caption: "The best place I've found to buy local tea in Bangkok is the Gateway Ekkamai branch of MaxValu. They have a small selection at 35 baht for twenty tea bags. Seeing as I've found shops with whole aisles of local tea in much smaller cities around Thailand, it's a continual annoyance to me that I haven't found anywhere better in Bangkok. There must be somewhere. This is not over.",
+    caption: "The best place I've found to buy local tea in Bangkok is the Gateway Ekkamai branch of MaxValu. They have a small selection at 35 baht for twenty tea bags. Seeing as I've found shops with whole aisles of local tea in much smaller cities in Thailand, it's a continual annoyance to me that I haven't found anywhere better in Bangkok. There must be somewhere. This is not over.",
   },
 ]
 
@@ -191,15 +183,15 @@ export const teaImages = [
 
 ## Things I don't like about Bangkok
 
-There are two main things that I don't like in Bangkok. The first is that it has some of the worst traffic in the world, which is an annoyance in itself if you ever want to take a bus or a taxi to get somewhere. But a consequence of the endless idling cars is that it's a quite heavily polluted city, which is never ideal.
+There are two main things that I don't like in Bangkok. The first is that it has some of the worst traffic in the world, which is an annoyance in itself if you ever want to take a bus or a taxi to get somewhere. But a consequence of the endless idling cars is that it's a quite heavily polluted city.
 
-The second is the sheer volume of tourists making large areas of the city unpleasant and rather souless as businesses switch to target these wealthy foreigners. I actively avoid areas that were pleasant just a couple of years ago.
+The second is the sheer volume of tourists making large areas of the city unpleasant and rather souless as businesses switch to target these free-spending foreigners. I now actively avoid areas that I considered pleasant just a couple of years ago.
 
 ## Being sociable in Bangkok
 
-There are few places in the world that I've found it easier to be sociable than Bangkok. The Meetup community in Bangkok is really active, so you can find an event that you want to attend pretty much seven days per week. And unlike some cities, it's not limited to drinking. There are running clubs, meeting people over coffee, yoga and language exchange (where people actually do speak different languages). But you can also find plenty for going out and getting shit-faced. And for whatever reason, I've found that the people I met at Meetups in Bangkok are more open to staying in touch and being subsequently social than in many other places in the world.
+There are few places in the world that I've found it easier to be sociable than Bangkok. The Meetup community in Bangkok is really active, so you can find an event that you want to attend pretty much seven days per week. And unlike some cities, it's not limited to drinking. There are running clubs, meeting people over coffee, yoga, and language exchange (where people actually do speak different languages). But you can also find plenty for going out and getting shit-faced. And for whatever reason, I've found that the people I met at Meetups in Bangkok are more open to staying in touch and being subsequently social than in many other places in the world.
 
-While I suggest searching for exactly what it is you're looking for, some of the groups that I've attended and can vouch for are the <ExternalLink url='https://www.meetup.com/lumpini-running-club/'>Lumpini Running Club Bangkok</ExternalLink>, which does a relaxed evening run in Lumphini on two evenings per week, often going out for food or drinks afterwards. The <ExternalLink url='https://www.meetup.com/bangkok-cultural-exchange-meetup/'>Bangkok Cultural Exchange Meetup</ExternalLink> runs language exchange events that actually are about exchanging languages, which is weird, because language exchange is normally just a code-word for getting drunk. The <ExternalLink url='https://www.meetup.com/bangkok-vegan-meetup/'>Bangkok Vegan Meetup</ExternalLink> hosts sporadic events at various vegan eateries in Bangkok, so if you're vegan is a good change to try a restaurant that you might not go to otherwise, and meet some nice people at the same time. <ExternalLink url='https://www.meetup.com/friends-fun-bangkok-ffb'>Fun Friends Bangkok</ExternalLink> hosts a weekly Meetup in a coffee shop, presently in EmQuartier, that is a relaxed way to sit around and chat to some new people.
+While I suggest searching for exactly what it is you're looking for, some of the groups that I've attended and can vouch for are the <ExternalLink url='https://www.meetup.com/lumpini-running-club/'>Lumpini Running Club Bangkok</ExternalLink>, which does a relaxed evening run in Lumphini on two evenings per week, often going out for food or drinks afterwards. The <ExternalLink url='https://www.meetup.com/bangkok-cultural-exchange-meetup/'>Bangkok Cultural Exchange Meetup</ExternalLink> runs language exchange events that actually are about exchanging languages, which is weird, because language exchange is normally just a code-word for getting drunk. The <ExternalLink url='https://www.meetup.com/bangkok-vegan-meetup/'>Bangkok Vegan Meetup</ExternalLink> hosts sporadic events at various vegan eateries in Bangkok, so if you're vegan it's a good chance to try a restaurant that you might not go to otherwise and meet some nice people at the same time. <ExternalLink url='https://www.meetup.com/friends-fun-bangkok-ffb'>Fun Friends Bangkok</ExternalLink> hosts a weekly Meetup in a coffee shop, presently in EmQuartier, that is a relaxed way to sit around and chat to some new people.
 
 Up until recently there was a 'Language Exchange and Activities and Social in Bangkok' group on Meetup that met every Saturday night at 7:30pm at <ExternalLink url='https://maps.app.goo.gl/dAm6JEDpPETKXZd98'>The Hangover</ExternalLink> on Sukhumvit soi 22. I went many times and this was probably the best of all the Meetups I went to in Bangkok for meeting people. They've since been removed from Meetup for unspecified reasons, but WhatsApp messages tell me that the event still goes ahead each week, so it's perhaps one to take a chance on.
 
@@ -227,29 +219,29 @@ export const socialImages = [
 
 ## Where to run in Bangkok
 
-Bangkok has a small number of nice parks to run in, but beyond that it's not a running-friendly city. The traffic, pollution and number of people in the city centre means running along the pavements is pretty unpleasant (although some people do), so I'd suggest getting accommodation in close proximity to a park.
+Bangkok has a small number of nice parks to run in, but beyond that it's not a running-friendly city. The traffic, pollution and number of people in the city centre means running along the pavements is pretty unpleasant (although some people do), so I'd suggest getting accommodation close to a park.
 
 ### Benchasiri Park
 
-<ExternalLink url='https://maps.app.goo.gl/4b8xeZDYRA69TFGn9'>Benchasiri Park</ExternalLink> is a small park next to Emporium shopping mall. It has a roughly 700m circumference, so for a 5k run it's seven laps. Doing any more than that becomes a little cumbersome, and it can get busy in the mornings and evenings with a couple of annoying bottlenecks. However in the daytime it's quiet enough that you can have a pleasant run. There are toilets in the park and three different shops to buy water/snacks at, so if you're still adjusting to the heat in Bangkok, this is a good place to start.
+<ExternalLink url='https://maps.app.goo.gl/4b8xeZDYRA69TFGn9'>Benchasiri Park</ExternalLink> is a small park next to Emporium shopping mall. It has a roughly 700m circumference, so for a 5k run it's seven laps. Doing any more than that becomes a little cumbersome, and it can get busy in the mornings and evenings with a couple of annoying bottlenecks in the circuit. However, in the daytime it's quiet enough that you can have a pleasant run. There are toilets in the park and three different shops to buy water/snacks at, so if you're still adjusting to the heat in Bangkok, this is a good place to start.
 
 ### Lumphini Park, Benchakitti Park and The Green Mile
 
-The most obvious place to run in Bangkok is <ExternalLink url='https://maps.app.goo.gl/7FSSn5voFr8vKV357'>Lumphini Park</ExternalLink>. The primary reason I lived in Sathorn for three years is that I wanted to be close to Lumphini Park, so I've really got many, many laps in there.
+The most obvious place to run in Bangkok is <ExternalLink url='https://maps.app.goo.gl/7FSSn5voFr8vKV357'>Lumphini Park</ExternalLink>. The primary reason I lived in Sathorn for three years is that I wanted to be close to Lumphini Park, so I've really got my laps in there.
 
-Although you can make your own route through the inside of the park if you want to, there's a very established running lap that goes around the outside that is slightly over 2.5km. It's a wide track the whole way around, so even in the mornings and evenings when it gets busy, you still have the space to go at a good pace. As always, I recommend running in the daytime when you'll be the only one running, but for some reason I just love the heat.
+Although you can make your own route through the inside of the park if you want to, there's a very established running lap that goes around the outside that is slightly over 2.5km. It's a wide track the whole way around, so even in the mornings and evenings when it gets busy, you still have the space to go at a good pace. As always, I recommend running in the daytime when you'll be the only one running, but for some reason no one else likes the heat.
 
 Closer to Sukhumvit you'll find <ExternalLink url='https://maps.app.goo.gl/uGXkTLGSqdVtC9yWA'>Benchakitti Park</ExternalLink>. I use the term 'park' slightly loosely, because it's more a lake with a track around it. The track is shared with pedstrians who will inevitably veer into the running lane, but other than that it's pleasant enough. At roughly 1.8km, each lap of the lake is just over a mile.
 
-Until quite recently that was the extent of Benchakitti Park, but it's now expanded to be roughly three times the size with the addition of the connected Benchakitti Forest Park. In the south half of the forest park there's a road that's suitable for runners, and above the park is a skywalk that's good for running along. The rest of the park is a bit zig-zaggy and hard to see where you're going, so not especially runing-friendly, although fine if you're going slowly.
+Until quite recently that was the extent of Benchakitti Park, but it's now expanded to be roughly three times the size with the addition of the connected Benchakitti Forest Park. In the south half of the forest park there's a road that's suitable for runners, and above the park is a skywalk that's also good for running along. The rest of the park is a bit zig-zaggy and hard to see where you're going, so not especially runing-friendly, although fine if you go slowly.
 
 That's all well and good, but wouldn't it be wonderful if you could run between Lumphini Park and Benchakitti Park without having to cross any roads? Well duh-duh-dum duh-duh-dum, you can.
 
 A little known feature of Bangkok is the raised walkway coloquially known as 'The Green Mile' (or known on Google Maps as the <ExternalLink url='https://maps.app.goo.gl/FMgTq66MUDG1MmQW7'>Benchakitti-Lumphini Park Sky Bridge</ExternalLink>). In the past accessing it from the Sukhumvit end was near impossible unless you knew what you were looking for, but with the development of Benchakitti Forest Park it's now much easier to find.
 
-The Green Mile is basically a long walkway open only to pedestrians and cyclists that connects the north-west corner of Benchakitti Park to Thanon Witthayu (Wireless Road), a very short distance from Lumphini Park. So you can connect Lumphini Park, Benchakitti Park, and Benchakitti Forest Park without having to cross a single road or worry about a single car or motorcycle.
+The Green Mile is basically a long walkway open only to pedestrians and cyclists that connects the north-west corner of Benchakitti Park to Thanon Witthayu (Wireless Road), a very short distance from Lumphini Park. So you can go to Lumphini Park, Benchakitti Park, and Benchakitti Forest Park without having to cross a single road or worry about a single car or motorcycle.
 
-A possible route is to start at the south end of Benchakitti Park, do a half-lap before going onto The Green Mile, running to and then doing a lap of Lumphini, before going back onto The Green Mile, turning-off halfway along, onto the Benchakitti Forest Park Skywalk, running down that to the end, and then finishing back at the south end of Benchakitti Park. That route is roughly 7.7km, but you can add-on as you need by doing additional laps of any of the three parks that it takes you through.
+A possible route is to start at the south end of Benchakitti Park, do a half-lap before going onto The Green Mile, running to and then doing a lap of Lumphini, before going back onto The Green Mile, turning-off halfway along onto the Benchakitti Forest Park Skywalk, running down that to the end, and then finishing back at the south end of Benchakitti Park. That route is roughly 7.7km, but you can add-on as you need by doing additional laps of any of the three parks that it takes you through.
 
 It's not really a route to do for speed, largely because The Green Mile includes some staircases, but other than that it's a lovely route to run, and my favourite to do in Bangkok.
 
@@ -265,11 +257,11 @@ export const runningImages = [
 
 ### Chatuchak Park, Queen Sirikit Park and Wachirabenchathat Park
 
-I haven't been here for many years, but when I used to live in Ladprao, I'd run in these three closely connected parks. <ExternalLink url='https://maps.app.goo.gl/YR1yxMN1eL64bNSq7'>Chatuchak Park</ExternalLink> is the best known of them, and is connected to Queen Sirikit Park and Wachirabenchathat Park. Unless it's changed in the eleven years since, this is a great place option for running if you're staying in this area.
+I haven't been there for many years, but when I used to live in Ladprao, I'd run in these three closely connected parks. <ExternalLink url='https://maps.app.goo.gl/YR1yxMN1eL64bNSq7'>Chatuchak Park</ExternalLink> is the best known, and is connected to Queen Sirikit Park and Wachirabenchathat Park. Unless it's changed in the eleven years since, this is a great option for running if you're staying in the area.
 
 ## Getting vegan food in Bangkok
 
-When I first lived in Bangkok in 2012, being vegan was a pain. There were very few vegan-friendly restaurants, and none near to where I was living. In the thirteen years since, Bangkok has morphed into one of the most vegan-friendly cities in the world. It's overflowing with vegan and vegan-friendly restaurants.
+When I first lived in Bangkok in 2012, being vegan was a pain. There were very few vegan-friendly restaurants, and none near to where I lived. In the thirteen years since, Bangkok has morphed into one of the most vegan-friendly cities in the world. It's overflowing with vegan and vegan-friendly restaurants.
 
 I'll recommend my favourites below, but honestly, ignore them. The vegan-scene here is ever-changing. My favourite restaurant from six months ago now sits as a pile of rubble, and at least three I've recommended in previous iterations of this article no longer exist. I don't think that's my fault, but I could recommend a hundred different restaurants and they'd all be worthy, so find what you like rather than listening to me.
 
@@ -294,7 +286,7 @@ export const mayVeggieHomeImages = [
   {
     src: `${imagePath}/vegan-food/may-veggie-home/bbq-cheese-burger.jpeg`,
     alt: 'May Veggie Home BBQ cheese burger',
-    caption: "The BBQ cheese burger, taken at the Asok location in 2018. I was living in Bangkok when it got added to the menu. It was a good day. In the main branch it's still served like this today for 269 baht.",
+    caption: "The BBQ cheese burger, taken at the Asok location in 2018. I was living in Bangkok when it got added to the menu. It was a day I'll never forget. In the main branch it's still served like this today for 269 baht.",
   },
   {
     src: `${imagePath}/vegan-food/may-veggie-home/khao-soi.jpeg`,
@@ -354,7 +346,7 @@ export const veganerieImages = [
   {
     src: `${imagePath}/vegan-food/veganerie/dark-chocolate-smoothie.jpeg`,
     alt: 'Veganerie dark chocolate smoothie',
-    caption: "I'd been travelling all day to get back to Bangkok, and then spent hours stuck in the back of a taxi in the Bangkok traffic when I came on this day, so I wasn't in the best mood. This dark chocolate smoothie was exactly what I needed. A bargain at 175 baht.",
+    caption: "After travelling back to Bangkok from Europe, I then spent hours stuck in the back of a taxi in the Bangkok traffic, so I wasn't in the best mood. This dark chocolate smoothie was exactly what I needed. It brought a smile to my face for just 175 baht.",
   },
   {
     src: `${imagePath}/vegan-food/veganerie/plant-power-teriyaki-burger.jpeg`,
@@ -379,12 +371,12 @@ export const veganerieImages = [
   {
     src: `${imagePath}/vegan-food/veganerie/spicy-fried-v-nuggets-with-rice.jpeg`,
     alt: 'Veganerie spicy fried V-nuggets with rice',
-    caption: "After getting off the plane back in Bangkok in October '23, I opted straight for these spicy fried V-nuggets with rice. It was a good choice. They cost 220 baht.",
+    caption: 'The spicy fried V-nuggets with rice are definitely worth trying. They cost 220 baht.',
   },
   {
     src: `${imagePath}/vegan-food/veganerie/crunchy-monkey-smoothie-bowl.jpeg`,
     alt: 'Veganerie crunchy monkey smoothie bowl',
-    caption: 'They also offer a small selection of healthy smoothie bowls, including this crunchy monkey smoothie bowl for 290 baht.',
+    caption: 'Veganerie have a small selection of healthy smoothie bowls on their menu, including this crunchy monkey smoothie bowl for 290 baht.',
   },
   {
     src: `${imagePath}/vegan-food/veganerie/mixed-berry-yogurt-smoothie.jpeg`,
@@ -399,12 +391,12 @@ export const veganerieImages = [
   {
     src: `${imagePath}/vegan-food/veganerie/teriyaki-rice-bowl-and-miso-soup.jpeg`,
     alt: 'Veganerie teriyaki rice bowl and miso soup',
-    caption: 'One of the better value options on the menu, the teriyaki rice bowl with a bowl of miso soup costs just 195 baht.',
+    caption: 'Another great value option is the teriyaki rice bowl with a bowl of miso soup for 195 baht.',
   },
   {
     src: `${imagePath}/vegan-food/veganerie/strawberry-and-banana-french-toast.jpeg`,
     alt: 'Veganerie strawberry and banana French toast',
-    caption: "Taken at the now defunct Mercury Ville branch in February 2015, Veganerie started as a vegan dessert cafe. This strawberry and banana French toast would have cost you 185 baht back then. It's not available on the present-day menu, so not much point me showing it to you really.",
+    caption: "Taken at the now defunct Mercury Ville branch in February 2015, Veganerie started as a vegan dessert cafe. This strawberry and banana French toast would have cost you 185 baht back then. It's not available on the present-day menu, so not much point showing you this picture really.",
   },
 ]
 
@@ -420,15 +412,15 @@ Death. Taxes. And if you see me in Vegano, I was drinking beer until 3am. This i
 
 Slightly confusingly, Vegano isn't a vegan restaurant. 50% of the menu is non-vegan, with the other 50% being vegan equivalents of the same dishes.
 
-The vegan part of the menu is split into five parts: Pizza, pasta, sandwiches, grain bowls and desserts. I don't really like sweet things, and as no one has ever had a hangover and thought _"I feel like a grain bowl,"_ I've never tried that part of the menu. But the pizza, pasta and sandwiches are some of the best I've ever had. This is top quality junk food.
+The vegan part of the menu is split into five parts: Pizza, pasta, sandwiches, grain bowls and desserts. I don't really like sweet things, and as no one has ever had a hangover and thought _"I feel like a grain bowl,"_ I've never tried them either. But the pizza, pasta and sandwiches are some of the best I've ever had. This is top quality vegan junk food.
 
-The pizzas are available by the slice, as a 12" pizza, or as a 15-16" pizza. About a year ago they raised their prices, but for some reason the pizza slice prices stayed as they were. Most of the 12" pizzas are now listed at 430 baht, but as the slices, which are basically small pizzas, are still no more than 160 baht, then getting two slices is about the same size as a 12" pizza and much better value. Pizza options include the vegan spicy kra prow sausage, vegan tuna, onion and capers and vegan Thai spicy chorizo.
+The pizzas are available by the slice, as a 12" pizza, or as a 15-16" pizza. About a year ago they raised their prices, but for some reason the pizza slice prices stayed as they were. Most of the 12" pizzas are now listed at 430 baht, but as the slices, which are basically small pizzas, are still no more than 160 baht, then getting two slices is about the same size as a 12" pizza and much better value. Pizza options include the vegan spicy kra prow sausage, vegan tuna, onion and capers, and vegan Thai spicy chorizo.
 
-Vegano do delivery with Grab or FoodPanda (with the latter being a bit cheaper). Starting at 190 baht, getting pasta delivered is a very quick, cheap dinner. Options include pesto sauce or mushroom and vegan cream, and if you get wholewheat pasta it's not even that unhealthy. I can't say the same about the sandwiches, but God-damn are they good, including the vegan guacamole burger panino (290 baht), and my favourite, the vegan chicken and guacamole (270 baht).
+Vegano do delivery on Grab or FoodPanda. Starting at 190 baht, getting pasta delivered is a very quick, cheap dinner. Options include pesto sauce or mushroom and vegan cream, and if you get wholewheat pasta it's not even that unhealthy. I can't say the same about the sandwiches. Options include the vegan guacamole burger panino (290 baht), and my favourite, the vegan chicken and guacamole (270 baht).
 
-Being about a mile from the nearest BTS station, getting to Vegano is a bit of a walk, which is kind of what you need when you're hungover, but it doesn't always feel like it. And they break my cardinal rule: They don't include tax in their prices, so however much you think you're going to pay, add 7%.
+Being about a mile from the nearest BTS station, getting to Vegano is a bit of a walk, which is kind of what you need when you're hungover, even though it doesn't always feel like it. And they break my cardinal rule: They don't include tax in their prices, so however much you think you're going to pay, add 7%.
 
-That would normally be enough to stop me going somewhere, but the food is just that good. And I'm just that hungover.
+That would normally be enough to stop me going somewhere, but the food is just that good. And sometimes I'm just that hungover.
 
 export const veganoImages = [
   {
@@ -444,7 +436,7 @@ export const veganoImages = [
   {
     src: `${imagePath}/vegan-food/vegano/vegan-guacamole-burger-panino.jpeg`,
     alt: 'Vegano vegan guacamole burger panino',
-    caption: "While pizzas are definitely the focal point of Vegano's menu, and rightfully so, don't ignore the sandwiches. This is the vegan guacamole burger panino, and it quite amazing on a hangover. At 290 baht, it's cheaper than any of the 12\" pizzas as well.",
+    caption: "While pizzas are definitely the focal point of Vegano's menu, and rightfully so, don't ignore the sandwiches. This is the vegan guacamole burger panino, and it's quite amazing on a hangover. At 290 baht, it's cheaper than any of the 12\" pizzas as well.",
   },
   {
     src: `${imagePath}/vegan-food/vegano/mushroom-and-vegan-cream-pasta.jpeg`,
@@ -464,7 +456,7 @@ export const veganoImages = [
   {
     src: `${imagePath}/vegan-food/vegano/vegan-chicken-and-guacamole-sandwich.jpeg`,
     alt: 'Vegano vegan chicken and guacamole sandwich',
-    caption: "Another of the sandwiches is the vegan chicken and guacamole sandwich for 270 baht. I don't know what they put in their guacamole, but God damn is it addictive.",
+    caption: "Another of the sandwiches is the vegan chicken and guacamole sandwich for 270 baht. I don't know what they put in their guacamole, but it is damn addictive.",
   },
   {
     src: `${imagePath}/vegan-food/vegano/vegan-tuna-onion-and-capers-pizza-slice.jpeg`,
@@ -481,9 +473,9 @@ export const veganoImages = [
 
 Bartels is everything I hate about the world.
 
-There's a reason I left England. I didn't like it very much. So I have a certain resentment of foreigners who come to Thailand and make no attempt to integrate because ultimately, the character of a place will be swayed to the will of those that have the most money. And as more wealthy westerners arrive in Thailand inistent on living just like they did in their own country, slowly Thailand is becoming what I sought to escape in the first place. Bartels is a perfect example.
+There's a reason I left England. I didn't like it very much. So I have a certain resentment of foreigners who come to Thailand and make no attempt to integrate because ultimately, the character of a place will be swayed to the will of those that have the most money. And as more wealthy westerners arrive in Thailand inistent on living just like they did at home, slowly Thailand is becoming what I sought to escape in the first place. Bartels is a perfect example.
 
-When you walk-in, you won't see a local face in here, it's all westerners. The menu is in just English, it doesn't even have any Thai, the staff all speak English, and the atmosphere resembles nothing of Thailand. I should hate it.
+When you walk-in, you won't see a local face in here, it's all westerners. The menu is in just English, the staff all speak English, and the atmosphere resembles nothing of Thailand. I should hate it.
 
 It's just that they do really good bread, and good bread is hard to come by in Asia. It's treated more like a sweet in this part of the world, which if you grew-up eating European bread, is kind of disgusting.
 
@@ -514,7 +506,7 @@ export const bartelsImages = [
   {
     src: `${imagePath}/vegan-food/bartels/grilled-vegan-oh-sweet-tomato.jpeg`,
     alt: 'Bartels grilled vegan oh sweet tomato toastie',
-    caption: "The grilled vegan oh sweet tomato toastie. They're better at making sandwiches than naming them. It costs 250 baht.",
+    caption: "The grilled vegan oh sweet tomato toastie. Luckily they're better at making sandwiches than naming them. It costs 250 baht.",
   },
   {
     src: `${imagePath}/vegan-food/bartels/green-smoothie.jpeg`,
@@ -538,13 +530,13 @@ Bai Plu is a fully vegan restaurant. While they have a mix of cuisines, I'd say 
 
 It's a pretty small place. And although they have a billingual menu, it doesn't aim itself at foreigners like the restaurants above. That's not only reflected in the service and the atmosphere, but also in the prices, which are more than reasonable.
 
-When I'm staying nearby, this is a place that I come everyday.
+When I'm staying nearby, this is a place I come to everyday.
 
 export const baiPluHouseImages = [
   {
     src: `${imagePath}/vegan-food/bai-plu-house/vegan-meatballs-with-rice.jpeg`,
     alt: 'Bai Plu House vegan meatballs with rice',
-    caption: 'Bai Plu have a pretty big menu to choose from, but the vegan meatballs with rice is definitely one of my favourite options. It costs 139 baht.',
+    caption: 'Bai Plu have a pretty big menu to choose from. The vegan meatballs with rice is definitely one of my favourite options. It costs 139 baht.',
   },
   {
     src: `${imagePath}/vegan-food/bai-plu-house/dried-noodles-and-red-roasted-vegan-pork.jpeg`,
@@ -559,12 +551,12 @@ export const baiPluHouseImages = [
   {
     src: `${imagePath}/vegan-food/bai-plu-house/spicy-grilled-vegan-pork-and-sticky-rice.jpeg`,
     alt: 'Bai Plu House spicy grilled vegan pork and sticky rice',
-    caption: "When you get protein with sticky rice like this, it's generally considered Laotian or Isaan cuisine. This is the spicy grilled vegan pork and sticky rice for 99 baht.",
+    caption: "When you get protein with sticky rice like this, it's generally considered Laotian or Isaan food. This is the spicy grilled vegan pork and sticky rice for 99 baht.",
   },
   {
     src: `${imagePath}/vegan-food/bai-plu-house/angel-vegan-chicken-with-sticky-rice.jpeg`,
     alt: 'Bai Plu House angel vegan chicken deep fried with sticky rice',
-    caption: "And you can also get the angel deep-fried vegan chicken with sticky rice for 79 baht. I don't know what the angel has to do with it.",
+    caption: "And you can also get the angel deep-fried vegan chicken with sticky rice for 79 baht. I don't know what an angel has to do with it.",
   },
   {
     src: `${imagePath}/vegan-food/bai-plu-house/coconut-ice-cream-with-sticky-rice.jpeg`,
@@ -616,21 +608,21 @@ export const nandhaHotelStays = [
 
 <AccommodationTable stays={nandhaHotelStays} />
 
-Nandha will forever hold the distinction of being the first place that I stayed as a digital nomad. I'm sure that means a lot to them.
+Nandha will forever hold the distinction of being the first place I stayed as a digital nomad. I'm sure that means a lot to them.
 
-The hotel itself was great. The room was really big, with plenty of space for exercising, the wifi was fast, and everything was very comfortable. And while in previous iterations of this article I've recommended staying here, I'm no longer do simply because the surrounding area has changed so much.
+The hotel itself was great. The room really big, with plenty of space for exercising, the wifi was fast, and everything was very comfortable. And while in previous iterations of this article I've recommended staying here, I no longer do so simply because the surrounding area has changed so much.
 
 In 2022, Sukhumvit soi 33 was a nice, fairly relaxed street in a good area close to the city centre. The hotel is a short walk from Phrom Pong BTS station.
 
-In 2025, the Phrom Pong area has become grossly infested with toursits. The EmSphere shopping mall has since opened, which has made things even worse, and soi 33 has transformed to have little on it but brothels disguised as massage shops.
+In 2025, Phrom Pong area has become grossly infested with toursits. The EmSphere shopping mall has since opened, which has made things worse, and soi 33 has transformed to have little on it but brothels disguised as massage shops.
 
-While I'm sure the hotel is just as nice as it was in 2022, I'd suggest avoiding this area unless you really want to be in the middle of everything.
+While I'm sure the hotel is just as nice as it was in 2022, I'd suggest avoiding this area unless you really like being surrounded by tourists all day.
 
 export const nandhaHotelImages = [
   {
     src: `${imagePath}/accommodation/nandha-hotel/room.jpeg`,
     alt: 'Nandha Hotel Classic Superior Double Room',
-    caption: "It's a pretty big room. Plenty of space for exercise. Out of shot is another table and chairs that makes for a good workstation.",
+    caption: "It's a pretty big room. Plenty of space for exercise. Out of shot is another table and chairs that make a good workstation.",
   }
 ]
 
@@ -666,9 +658,9 @@ export const vCheckInnStays = [
 
 I got attracted to V Check Inn by the large balcony, which is only available for the 5th floor rooms. If you can get one of those then it's a decent value hotel.
 
-It's located at the non-Sukhumvit end of Sukhumvit soi 22. It's quite a long soi, and at the time I stayed here, that meant not many tourists ventured this far down. In 2025 that's no quite true, and the local area is much less appealing than it was then, although there's a good collection of street vendors behind the hotel, and you can walk to the Queen Sirikit end of Benchakitti Park in about 15 minutes, which almost makes it worth it. You're a fairly easy walk from Phrom Pong BTS station, Asok BTS station, and Sukhumvit and Queen Sirikit MRT stations.
+It's located at the non-Sukhumvit end of Sukhumvit soi 22. It's quite a long soi, and at the time I stayed here, that meant not many tourists ventured this far down. In 2025 that's not quite true, and the local area is much less appealing now than it was then, although there's a good collection of street vendors behind the hotel, and you can walk to the Queen Sirikit end of Benchakitti Park in about 15 minutes, which almost makes it worth it. You're a fairly easy walk from Phrom Pong BTS station, Asok BTS station, and Sukhumvit and Queen Sirikit MRT stations.
 
-The room itself is decent. The bed is comfortable and the balcony is a great place if you need some time to sit and think (smoke weed) or if you just want to eat some food. A couple of small grievances that I had were that they don't make-up the room automatically, you have to specifically ask someone on the front desk. That's fine, except there's not always someone at the front desk, which can get annoying when your bin's full and you want to go out.
+The room itself is decent. The bed is comfortable and the balcony is a great place if you need some time to sit and think (smoke weed) or if you just want to eat some food. A couple of small grievances that I had were that they don't make-up the room automatically, you have to specifically ask someone on the front desk. That's fine except there's not always someone at the front desk, which can get annoying when your bin's full and you want to go out.
 
 The other frustration was that there is a very loud water pump. I'm used to sleeping in loud places, but it was significant enough that it bugged me when I first arrived. It goes on for a few seconds, off for a few seconds, on for a few seconds, off for a few seconds, all day and all night long. Like anything consistent you get used to it as background noise, but if you do get easily disturbed, it's something to be aware of.
 
@@ -681,12 +673,17 @@ export const vCheckInnImages = [
   {
     src: `${imagePath}/accommodation/v-check-inn/bed.jpeg`,
     alt: 'V Check Inn bed',
-    caption: 'The bed was comfortable enough.',
+    caption: 'The bed is comfortable enough.',
   },
   {
     src: `${imagePath}/accommodation/v-check-inn/balcony.jpeg`,
     alt: 'V Check Inn balcony',
     caption: "The standout feature of the room is the balcony. It's huge and you get a great view. I'd often come out here to eat, or to sit and think."
+  },
+  {
+    src: `${imagePath}/accommodation/v-check-inn/balcony-view.jpeg`,
+    alt: 'V Check Inn balcony view',
+    caption: "Bangkok's a colourful city, even at night, so you get a beautiful view off the balcony while staying here.",
   },
 ]
 
@@ -817,15 +814,15 @@ export const roomQuestStays = [
 
 <AccommodationTable stays={roomQuestStays} />
 
-When I first stayed here in late 2022 it had a booking.com rating of 8.6. As I write this sentence today, that's gone down to 6.9. I continued to stay here because it was such good value, but on each stay it got worse and worse and worse, and by my sixth and final stay here, I couldn't wait to leave. This place is a perfect example of what I said earlier, where the sheer quantity of tourists in Bangkok now mean that hotels prioritise cost-cutting over service.
+When I first stayed here in late 2022 it had a booking.com rating of 8.6. As I write this sentence today, it's gone down to 6.8. I continued to stay here because it was such good value, but on each stay it got worse and worse and worse, and by my sixth and final stay I couldn't wait to leave. This place is a perfect example of what I said earlier, where the sheer quantity of tourists in Bangkok now means that hotels prioritise cost-cutting over service.
 
 For example, through my earlier stays there was a member of staff at reception 24 hours per day. They weren't always the friendliest or most helpful, but they did exist. By my last, the staff had been replaced by a self-check-in system that didn't seem to work half the time, with a phone number to call if there were any problems.
 
-It was a pretty rundown hotel to begin with, but each time I stayed it seemed to get worse. They'd given-up on actually doing any maintenance and were just letting the place fall apart. The cleanliness standards dropped in a similar fashion, and by my final stay there were so many ants in the room that it was just uncomfortable. Given how much I first liked staying here, I'd have happily paid an increased price for the same level of service, but that wasn't the direction they went.
+It was a pretty rundown hotel to begin with, but each time I stayed it got worse. They gave-up on actually doing any maintenance and were just letting the place fall apart. The cleanliness standards dropped in a similar fashion, and by my final stay there were so many ants in the room that it became uncomfortable. Given how much I liked staying here to begin with, I'd have happily paid an increased price for the same level of service, but that wasn't the direction they decided to go in.
 
-The location is pretty decent, down a soi in Thong Lo. Thong Lo has got a bit touristy recently, but it's definitely not as bad as Phrom Pong. A two-minute walk from the Hotel is <ExternalLink url='https://maps.app.goo.gl/patjJRrnFodbHQyJ9'>Vibe</ExternalLink>, a vegetarian coffee shop that does some good vegan food.
+The location is pretty decent, down a soi in Thong Lo. Thong Lo has got a bit touristy recently, but it's definitely not as bad as Phrom Pong. A short walk from the Hotel is <ExternalLink url='https://maps.app.goo.gl/patjJRrnFodbHQyJ9'>Vibe</ExternalLink>, a vegetarian coffee shop that does some good vegan food.
 
-The reason I kept on returning to RoomQuest, despite the ever-decreasing standards, is that despite being basic, it did the important things well. Decent location, big, comfortable bed, very fast Internet (consistently 500+mbps download and upload speeds), space in the room to exercise, 55" TV, good shower, 7-11 around the corner, cold AC, desk and chair in each room. It's no frills, but it does have the essentials. They've just let both the property and service deteriorate to the extent that the rooms are no longer comfortable, and that's kind of a shame.
+The reason I kept on returning to RoomQuest, despite the ever-decreasing standards, is that despite being basic, it does the important things well. Decent location, big, comfortable bed, very fast Internet (consistently 500+mbps download and upload speeds), space in the room to exercise, 55" TV, good shower, 7-11 around the corner, cold AC, desk and chair in each room. It's no frills, but it does have the essentials. They've just let both the property and service deteriorate to the extent that the rooms are no longer comfortable, and that's kind of a shame.
 
 There are three types of room in this hotel. Just to be confusing they're named differently on booking.com and Agoda, but they either start with standard, superior or deluxe.
 
@@ -869,6 +866,11 @@ export const roomQuestImages = [
     alt: 'RoomQuest Sukhumvit 36 deluxe room bathroom',
     caption: "The bathroom's still shit.",
   },
+  {
+    src: `${imagePath}/accommodation/room-quest/balcony-sunset-view.jpeg`,
+    alt: 'RoomQuest Sukhumvit 36 balcony sunset view',
+    caption: 'The great thing about all the pollution in Bangkok is you get some amazing sunsets. This one was taken from the balcony during my second stay here.',
+  },
 ]
 
 <ImageGallery images={roomQuestImages} />
@@ -904,9 +906,9 @@ export const parvenaHotelSathornStays = [
 
 I used to live about a 20-minute walk from Parvena. Despite being so close, I wouldn't come to this area very often. My work was in a different direction, the city centre was in a different direction, the supermarkets I went to were in a different direction. I just had very little reason to come here, but every time I did I always thought to myself _"Wow! What a fun, vibrant area."_ Then I wouldn't come back for another six months. So with the freedom of a digital nomad, I decided that I'd stay here and get to know this area properly, and I really love this area.
 
-Although there are a few expats mulling around, as there are anywhere in Bangkok, it's a pretty local area. There's loads going on with street food and other vendors lining all along the road outside the hotel, which gives it a very bustling, fun vibe. It also means that you can get everything you need just metres from the hotel entrance. There's a 7-11 twenty metres away, and if you're willing to walk for five minutes you'll pass five of them. Two of my recommended vegan restaurants from above (Bai Plu House and Bartels) are a short walk, and there are several laundrettes, quite a few weed shops, and when you venture a bit further you can get to Silom and all it offers. And for those who're really lazy, the hotel offers a free tuk-tuk to anywhere within 3 miles (which includes Silom or Lumphini MRT stations). I only used this service once, preferring to walk.
+Although there are a few expats mulling around, as there are anywhere in Bangkok, it's a pretty local area. There's loads going on with street food and other vendors lining all along the road outside the hotel, which gives it a very bustling, fun vibe. It also means that you can get everything you need just metres from the hotel entrance. There's a 7-11 twenty metres away, and if you're willing to walk for five minutes you'll pass five of them. Two of my recommended vegan-friendly restaurants from above (Bai Plu House and Bartels) are a short walk, and there are several laundrettes, quite a few weed shops, and if you venture a bit further you can get to Silom and all it offers. And for those who're really lazy, the hotel offers a free tuk-tuk to anywhere within 3 miles (which includes Silom or Lumphini MRT stations). I only used this service once, preferring to walk.
 
-As for the hotel itself, I liked it. I was up on the top (8th) floor, so had good views and was well away from the traffic below. The room is spacious, if not huge. I could do yoga at least. The bed was comfy, it included a large fridge and had a kettle (although no cups). The TV was a decent size, the AC worked really well, it has a balcony that's big enough to sit on, and the shower is hot and powerful.
+As for the hotel itself, I liked it. I was up on the top (8th) floor, so had good views and was well away from the traffic below. The room is spacious, if not huge. Enough space to do yoga at least. The bed was comfy, it included a large fridge and had a kettle (although no cups). The TV was a decent size, the AC worked really well, it has a balcony that's big enough to sit on, and the shower is hot and powerful.
 
 For all the above I loved this place, however there are a couple of deal-breakers that would stop me from staying here again.
 
@@ -993,7 +995,7 @@ Check-in was a bit of a mess as the guy on the desk seemed a little confused abo
 
 I didn't want to come across as a problem guest having only just arrived, so on complaining that the blind had fallen down, I omitted that the kettle in the room worked... a little too well. If it was on the stand, it was boiling whether it was turned-on or not. As someone who gets through about ten cups of tea per day, this was really annoying as I couldn't put the kettle on and go and do something else, because if I forgot about it, it'd just boil and boil and boil until it burned the hotel down, so I just got used to standing next to it instead.
 
-It also took me a bit of time to get used to the design of the room. Which sucks. There's very little surface space in the room - a couple of bedside tables, a tiny desk, and some shelves. Which is why it's completely bemusing that the room's safe is attached to the only shelf that's at a reasonable height. I therefore had to store my clothes on a high shelf that I couldn't really see comfortably, and I had to make my tea and my daily smoothies on shelf that was so low that I couldn't see without bending down.
+It also took me a bit of time to get used to the design of the room. Which sucks. There's very little surface space in the room - a couple of bedside tables, a tiny desk, and some shelves. Which is why it's completely bemusing that the room's safe is attached to the only shelf that's at a reasonable height. I therefore had to store my clothes on a high shelf that I couldn't really see on, and I had to make my tea and my daily smoothies on a shelf that was so low that I couldn't see it without bending down.
 
 The view out of the room was non-existent as, despite being on the top (fifth) floor, I was facing the drab, windowless sides of the EmSphere building. To be fair, it's better than it having windows because at least this way I could sleep with the blinds open, confident that no one could see in. But still, I was envious of the rooms on the other side of the hotel, which I assume look over, among other things, Benjasiri Park.
 
@@ -1007,11 +1009,11 @@ About 45 minutes into the lesson, the room phone rings. It's someone from recept
 
 After the class was finished, I went down to reception and asked the guy... _"what the fuck?"_ I politely explained to him that I was speaking in a normal voice within daytime hours, so what's he bothering me for?
 
-And he agreed. _"Yes, I know, it's very stupid,"_ he told me. The person in the other room shouldn't be complaining just because they can hear someone.
+And he agreed. _"Yes, I know, it's very stupid,"_ he told me, continuing that the person in the other room shouldn't be complaining just because they can hear someone.
 
-Well if you know, then why did you call me to tell me? Every hotel has morons staying in it. When they make a stupid complaint, you ignore them. You don't call me and tell me about it. And if me speaking in a normal voice is audible in the adjacent rooms, then that's more of an indictment on the hotel than anything else.
+Well if you know, then why did you call to tell me? Every hotel has morons staying in it. When they make a stupid complaint, you ignore them. You don't call me and tell me about it. And if me speaking in a normal voice is audible in the adjacent rooms, that's more of an indictment on the hotel than on me.
 
-I left the phone unplugged for the remainder of my stay so they'd have to knock on my door next time they wanted to relay a stupid complaint, but it still pissed me off that it had even got back to me. If you're someone who ever has to make phone calls or video calls, then don't stay here. You apparently can't make normal volume calls without the staff calling your room to tell you about it. Of all the things wrong with this hotel, this was the one that bugged me the most. You kind of want the staff to have a bit of common sense.
+I left the phone unplugged for the remainder of my stay so they'd have to knock on my door next time they wanted to relay a stupid complaint, but it still pissed me off that it had even got back to me. If you're someone who ever has to make phone calls or video calls, then don't stay here. You apparently can't make normal volume calls without the staff calling your room to tell you about it. Of all the things wrong with this hotel, this was the one that bugged me the most. You want the staff to have a bit more common sense.
 
 If I haven't put you off yet, then there are some positives about staying here too. The wifi is decent enough. 66mbps download speed and 49mbps upload speed on the one speed test I did, and it was a stable connection, which is more important. The room just about has the space for some (slightly cramped) exercise, and the bed is comfortable. The location, for better or worse, is very, very central.
 
@@ -1019,11 +1021,11 @@ You're literally next door to EmSphere; one of the three shopping malls that com
 
 Rezt is down an alleyway off soi 22, and right opposite the end of the alleyway is Makro, a budget supermarket. At the entrance to EmSphere is Gourmet Market, another supermarket. So you can get basically anything within a two minute walk. 7-11 and other shops are also very nearby.
 
-The hotel is located only about 50m from Benjasiri Park, as the crow flies. Unfortunately there's no way to cut-through the back of the alleyway, so instead the quickest way to the park is to cut around past the EmSphere service entrance, but even then it's only five minutes until you're in the park, which is amazing for going for your midday run. Veganerie, one my favourite vegan restaurants in Bangkok, is a short walk through the park, and in the fourth floor food court of Emporium is Talalaks, one of the better budget vegan restaurants.
+The hotel is located only about 50m from Benjasiri Park, as the crow flies. Unfortunately there's no way to cut-through the back of the alleyway, so instead the quickest way to the park is to cut around past the EmSphere service entrance, but even then it's only five minutes until you're in the park, which is amazing for going for your midday run. Veganerie, one my favourite vegan restaurants in Bangkok, is a short walk through the park, and in the fourth floor food court of Emporium is <ExternalLink url='https://maps.app.goo.gl/FoHzPqbBks2fag5M6'>Talalaks</ExternalLink>, one of the better budget vegan restaurants in Bangkok.
 
-I'll reiterate that the north end of Sukhumvit 22 is very, very touristy. And when there are tourists, services pop-up to meet their needs. What I mean is there are a lot of adult services on offer in the alley Rezt is on and in the surrounding area of soi 22. If you're a man you'll get hollered-at every time you walk down the street, which is fine, but just be aware that it's not a family-friendly area. You might not want to stay here with kids. Or a jealous girlfriend.
+I'll reiterate that the north end of Sukhumvit 22 is very, very touristy. And when there are tourists, services pop-up to meet their needs. What I mean is there are a lot of adult services on offer in the alley Rezt is down and in the surrounding area of soi 22. If you're a man you'll get hollered-at every time you walk down the street, which is fine, but just be aware that it's not a family-friendly area. You might not want to stay here with kids. Or a jealous girlfriend.
 
-My stay at Rezt was a bit disappointing. I had hoped for better, but I guess when it comes down to it, for a digital nomad you want a reliable Internet connection. It has that. You want convenience. It definitely has that. You want a park nearby. It has that. It ticks the boxes of all the essentials. Even so, I have no intention of staying here again.
+My stay at Rezt was disappointing. I had hoped for better, but I guess when it comes down to it, for a digital nomad you want a reliable Internet connection. It has that. You want convenience. It definitely has that. You want a park nearby. It has that. It ticks the boxes of all the essentials. Even so, I have no intention of staying here again.
 
 export const reztBangkokImages = [
   {
@@ -1039,7 +1041,7 @@ export const reztBangkokImages = [
   {
     src: `${imagePath}/accommodation/rezt-bangkok/shelves.jpeg`,
     alt: 'Rezt Bangkok shelves',
-    caption: "Which is why it's so egregious that the room's safe is attached to the only shelf that's at a reasonable height. There's nothing in the cupboard, so I had to keep my clothes on the shelf above the safe, and to make tea and my smoothies on the shelf below, neither of which were very comfortable.",
+    caption: "Which is why it's so egregious that the room's safe is attached to the only shelf that's at a reasonable height. There's nothing in the cupboard, so I had to keep my clothes on the shelf above the safe, and to make tea and my smoothies on the shelf below, neither of which were at an ideal height.",
   },
   {
     src: `${imagePath}/accommodation/rezt-bangkok/view.jpeg`,
@@ -1084,9 +1086,9 @@ export const sereineStays = [
 
 <AccommodationTable stays={sereineStays} />
 
-I arrived at Sereine in a good mood. It was the last time I'd smile for 21 nights. Welcome to Hell.
+I arrived at Sereine in a good mood. It was the last time I'd smile for three weeks. Welcome to Hell.
 
-I got to the hotel at 12:30pm. I went to reception and was told by the woman behind the desk, _"I've upgraded you to a bigger room for your first night, then you check into your room tomorrow."_
+I got to the hotel at 12:30pm. I went to reception and was told by the woman behind the desk, _"I've upgraded you to a bigger room for your first night, then you can check into your room tomorrow."_
 
 That's not an upgrade, that's a pain in the arse. _"Why can't I check-into my room today?"_ I asked.
 
@@ -1098,7 +1100,7 @@ _"Ok, you can check-into your room at 2pm,"_ was the response, _"then you can mo
 
 _"Why would I want to move-into another room tomorrow?"_ I asked. _"What's wrong with this room?"_ There was clearly something going on, but this woman wasn't being straight with me about it and was instead giving me this baloney about giving me an upgrade for a night, which really put my back up. Anyway, I left and went for lunch, and came back a little after 2pm. In the time I'd been away, they'd managed to get the last guest out and had cleaned the room. I wasn't thrilled about being on the ground floor with hotel workers continually going past the window, nor with the lack of daylight that got through the windows, but ok, it'll do. Until I lay down on the bed and it felt like it had a pole down the middle of it.
 
-It wasn't a double bed, like I'd booked, it was two single beds that they'd pushed together, and then put a double sheet over the two mattresses to make it look like a double, but it wasn't remotely comfortable. That was she knew I was going to want to change rooms.
+It wasn't a double bed, like I'd booked, it was two single beds that they'd pushed together. They'd then put a double sheet over the two mattresses to make it look like a double, but it wasn't remotely comfortable. That was how she knew I was going to want to change rooms.
 
 I kind of lost my shit at this point. I don't often complain, but I already hated this woman on the front desk for not being straight with me, and this was the excuse I needed to release some anger in her direction. So I did. I asked her quite frankly, why did you sell me a double room that's not a double room?
 
@@ -1110,11 +1112,11 @@ Which again took me back to _"Well why did you sell rooms that you don't have? I
 
 Eventually we very loudly agreed that I'd stay in this room tonight, and then once someone checks-out of a double room tomorrow, I'll move into that room. It wasn't the situation that bothered me, mistakes happen. It was the lack of ownership, or any kind of apology or remorse that made me hate her fucking guts. I couldn't unpack this evening, because I was going to have to move rooms tomorrow. And I didn't want to go grocery shopping, because it'd just be more stuff to move in the morning. I essentially lost a day, and yet apparently this was the fault of all the other guests, for booking the rooms at this hotel.
 
-All I knew for the next day was I'd get a get a call at 'some point' when a guest had checked-out and I could move-into my room, which made planning this day impossible as well. Luckily that call came at 8:45am, so I didn't lose much of the day. And as I hadn't even bothered taking the padlock off my suitcase, it only took me thirty seconds to throw on yesterday's clothes and be out of the room. With nothing else to do, I'd spent most of the evening sitting there thinking about ways I could kill the receptionist and get away with it, and by the look on her face she'd been thinking the same about me. Alas, no words were spoken but we were able to exchange key cards absent of murder.
+All I knew for the next day was I'd get a get a call at 'some point' when a guest had checked-out and I could move-into my room, which made planning this next day impossible. Luckily that call came at 8:45am, so I didn't lose much of the day. And as I hadn't even bothered taking the padlock off my suitcase, it only took me thirty seconds to throw on yesterday's clothes and be out of the room. Having had nothing else to do, I'd spent most of the previous evening sitting there thinking about ways I could kill the receptionist and get away with it, and by the look on her face she'd been thinking the same about me. Alas, no words were spoken but we were able to exchange key cards absent of murder.
 
-This next room, now on the second floor, at least had a double bed instead of two singles pretending to be a double. And it included a hob, which kind of annoyed me because she'd tried to previously make me stay in a room without cooking facilities. But then I got even more annoyed because they hadn't provided enough equipment to make it useful.
+This next room, now on the second floor, at least had a double bed instead of two singles pretending to be a double. And it included a hob, which kind of annoyed me because she'd tried to previously make me stay in a room without cooking facilities. But then I got even more annoyed because they hadn't provided enough equipment to make having a hob useful.
 
-The design of this room was what really got me though. If you read almost any article I've written, one thing I preach again and again is the importance of daylight. There's a very obvious correlation for me between the amount of daylight I get in my room, and my mood. And this room had large, floor-to-ceiling windows, which you might be thinking _"that's great."_ Except there was a building directly opposite, so in order to have any privacy whatsoever, I had to keep the curtains closed. Oh, and it only has blackout curtains. No drapes, or anything sensible where you can get some daylight while maintaining your privacy. Just blackout curtains. So you either have people looking-in at you all day, and I do mean all day because the people that work in the building opposite take their cigarette breaks right outside the window. Or you close the blackout curtains and live in a cave.
+The design of this room really bugged me though. If you read almost any article I've written, one thing I preach again and again is the importance of daylight. There's a very obvious correlation for me between the amount of daylight I get in my room, and my mood. And this room had large, floor-to-ceiling windows, which you might be thinking _"that's great."_ Except there was a building directly opposite, so in order to have any privacy whatsoever, I had to keep the curtains closed. Oh, and it only has blackout curtains. No drapes, or anything sensible where you can get some daylight while maintaining your privacy. Just blackout curtains. So you either have people looking-in at you all day, and I do mean all day because the people that work in the building opposite take their cigarette breaks right outside the window. Or you close the blackout curtains and live in a cave.
 
 If you want to know what Hell looks like, just stay at this hotel. This is what Hell looks like.
 
@@ -1122,11 +1124,11 @@ I heard the _"Good news, we've upgraded you to a bigger room for your first nigh
 
 Sereine has a score of 8.5 on Agoda, which blows my mind because I saw a lot of unhappy people complaining during my stay. But I guess if you happen to be lucky enough to get put into the right room on your first night, and you happen to be in a room that people can't see in from outside, then it might not be the worst place in the world. But even then I didn't like it.
 
-They have the weakest bum guns in all of Thailand. Barely even worth using. The TV was dog shit. The picture's ok, but to stop the speakers from constantly rattling, you have to turn the volume so low that you can't actually hear what it is you're watching. The Internet's quite fast, so it's fine for browsing, but the connection's so unstable that video calls have continual drop-outs. The housekeepers keep a very odd schedule where it's potluck if your room will be cleaned within reasonable hours or not, and whether you can find someone at reception or not is hit-and-miss too.
+They have the weakest bum guns in all of Thailand. Barely even worth using. The TV was dog shit. The picture's ok, but to stop the speakers from constantly rattling you have to turn the volume so low that you can't actually hear what it is you're watching. The Internet's quite fast, so it's fine for browsing, but the connection's so unstable that video calls have continual drop-outs. The housekeepers keep a very odd schedule where it's potluck if your room will be cleaned within reasonable hours or not, and whether you can find someone at reception or not is hit-and-miss too.
 
 I checked-out at about 9:15am, and had to wait more than five minutes for the housekeepers I enlisted to go and hunt-down the receptionist, just so I could get my 1,000 baht deposit back.
 
-The fittings in the hotel are actually quite nice and the place is quite well put together, so they don't actually have to do that much to be a nice place to stay. They just seem to fuck-up everything else. Staying here was a genuinely awful experience. The only good thing about staying here was that I got to leave. There was a feeling of euphoria walking away from this hotel for the last time and I was on a high for days afterwards. No matter what happened I was thinking _"well at least I don't have to go back to Sereine tonight."_
+The fittings in the hotel are actually quite nice and the place is quite well put together, so they don't actually have to do that much to make it a nice place to stay. They just seem to fuck-up everything else. Staying here was a genuinely awful experience. The only good thing about staying here was that I got to leave. There was a feeling of euphoria walking away from this hotel for the last time and I was on a high for days afterwards. No matter what happened I was thinking _"well at least I don't have to go back to Sereine tonight."_
 
 I had a subsequent stay booked for a month after this. Needless to say, I cancelled it. I would never stay here again, and I suggest you don't either.
 
@@ -1154,7 +1156,7 @@ export const sereineImages = [
   {
     src: `${imagePath}/accommodation/sereine/bathroom.jpeg`,
     alt: 'Sereine Sukhumvit 39 studio room bathroom',
-    caption: 'The weakest bum guns in all of Thailand.',
+    caption: 'They have weakest bum guns in all of Thailand too.',
   },
   {
     src: `${imagePath}/accommodation/sereine/gym.jpeg`,
@@ -1164,7 +1166,7 @@ export const sereineImages = [
   {
     src: `${imagePath}/accommodation/sereine/twin-beds.jpeg`,
     alt: 'Sereine Sukhumvit 39 twin beds',
-    caption: 'The room I was put in for my first night. The twin beds were pushed together with a double sheet over the bed to make it look like a double. It was only once you lay-down and it felt like there was a pole down the middle you realised it was two single mattresses.',
+    caption: 'The room I was put in for my first night. The twin beds were pushed together with a double sheet over the bed to make it look like a double. It was only once I lay-down and it felt like there was a pole down the middle I realised it was two single mattresses.',
   },
 ]
 
@@ -1202,41 +1204,41 @@ export const mittHausStays = [
 
 Mitt Haus is much more an apartment than it is a hotel. It's self check-in, and apart from the housekeeper who's there for a couple of hours on most days and doesn't speak any English, there are no staff present. I prefer that, but it's something to keep in mind if you like to have a reception desk to ask questions to.
 
-When I checked-in here, I was immediately [wow'd] by how nice the room was and how much natural light gets in. There is only one room per floor at Mitt Haus, meaning that you have floor-to-ceiling windows at both ends of the apartment so a lot of light gets in from sunrise to sundown.
+When I checked-in here, I was immediately wowed by how nice the room was and how much natural light gets in. There is only one room per floor at Mitt Haus, meaning that you have floor-to-ceiling windows at both ends of the apartment so a lot of light gets in from sunrise to sundown.
 
-That feeling of euphoria lasted for about two minutes, when I realised that the room doesn't include a kettle. Having to go down to the communal kitchen might not sound that troubling, but as someone that drinks about ten cups of tea per day, not being able to do so in my room was an unexpected and unwelcome change.
+That feeling of euphoria lasted for about two minutes, when I realised that the room doesn't include a kettle. Having to go down to the communal kitchen might not sound that troubling, but as someone that drinks about ten cups of tea per day, not being able to do so in my room was an unwelcome inconvenience.
 
 A couple of minutes after that I realised that the room doesn't have a fridge either. And as someone that makes a fruit smoothie every morning and night, being able to store my fruit is imperetive. These two revelations really took the wind out of my sails for how I felt about Mitt Haus.
 
-It's located in Ladprao, and I absolutely love Ladprao. I lived here from 2012 to 2014. And while the skyline is now a bit different with new skyscrapers popping-up since I was last here, the feeling of it as a place remains the same. That means it's a place with very little tourism. You will see a few expats around, so it's not like there aren't any foreign faces, but little here is aimed at tourists, which for me is far more comfortable than staying closer to the city centre.
+It's located in Ladprao, and I love Ladprao. I lived here from 2012 to 2014, and while the skyline is now a bit different with new skyscrapers having popped-up since I was last here, the feeling of it as a place remains the same. It's an area that gets very little tourism. You will see a few expats around, so it's not like there aren't any foreign faces, but little here is aimed at tourists, which for me is far more comfortable than staying closer to the city centre.
 
 That being said, the transport links here are amazing. The apartment is easy walking distance to Phahon Yothin MRT station and Ha Yaek Lat Phrao BTS station, and it's only a little bit further to Lat Phrao MRT station, allowing you to easily access the new yellow line.
 
-I lived right there when I was staying in Ladprao over ten years ago, and back then the yellow line didn't exist, so seeing Ladprao Road with a skytrain and accompanying concrete pillars down the middle of it felt like a bit of a glitch in the matrix to me, but you can't deny that it's convenient.
+I lived right by there when I was in Ladprao over ten years ago, and back then the yellow line didn't exist, so seeing Ladprao Road with a skytrain and accompanying concrete pillars down the middle of it felt a bit like a glitch in the matrix to me, but you can't deny that it's convenient.
 
 There are also plenty of buses on Ladprao Road, and if you go out at night in Sukhumvit and sit there drinking until after the MRT and BTS have stopped running, then getting a Grab Bike back to the room costs 126 baht.
 
-The lack of tourism in this area also means that, especially compared to the city centre, Ladprao is not great for getting vegan food. <ExternalLink url='https://maps.app.goo.gl/qvtoqC5prYuYtfkw9'>So Vegan</ExternalLink> in the second floor food court of Lotus's is a God-send in that regard as it's pretty cheap, has a huge menu, can be walked to in less than 20 minutes from Mitt Haus (if you figure-out the route down some side roads, through a hidden gate and across the ground floor of a multi-storey car park). You can also get delievery from Grab in about 25 minutes.
+The lack of tourism in this area also means that, especially compared to the city centre, Ladprao is not great for getting vegan food. <ExternalLink url='https://maps.app.goo.gl/qvtoqC5prYuYtfkw9'>So Vegan</ExternalLink> in the second floor food court of Lotus's is a God-send in that regard as it's pretty cheap, has a huge menu, can be walked to in less than 20 minutes from Mitt Haus (if you figure-out the route down some side roads, through a hidden gate and across the ground floor of a multi-storey car park). You can also get delivery from them on Grab in about 25 minutes.
 
-Apart from the lack of a kettle and a fridge, the apartment is really nice. It's really spacious, the bed is comfortable, and it's nicely decorated. Considering that, it makes me wonder why they went to all this effort to make it so comfortable, but then neglected to include a kettle and fridge. Two items that there is space for, and that are comparatively cheap.
+Apart from the lack of a kettle and a fridge, the apartment is really nice. It's really spacious, the bed is comfortable, and it's nicely decorated. Considering that, it makes me wonder why they went to all this effort to make it so comfortable, but then neglected to include a kettle and fridge. Two items that there is space for, and that aren't very expensive.
 
-There's a desk and chair to work at in the room, with the caveat that they're located directly underneath the air conditioner. As I've seen my share of air conditioners leaking in Thailand, I wasn't willing to risk using my laptop on that desk, but maybe give it a shot if you want some excitement in your day. I instead typically worked from the bed, but a little from the sofa as well.
+There's a desk and chair to work at in the room, with the caveat that they're located directly underneath the air conditioner. As I've seen my share of air conditioners leaking in Thailand, I wasn't willing to risk using my laptop on that desk, but maybe give it a shot if you want some excitement while you work. I instead typically worked from the bed, but a little from the sofa as well.
 
-You don't get any keys when you check-in here. Instead you get a nine-digit keypad code for the main entrance, and another nine-digit keypad code for your room door. That seemed a bit excessive, and it took me until my fifth day here until I had both codes memorised so could get into my room without having to look at my phone. As the keypads seem heat-sensitive, and I often arrived back very hot and covered in sweat, getting into the building and the room could be a little troublesome, but I always managed eventually. Entering two nine-digit keypad codes when drunk was not fun.
+You don't get any keys when you check-in here. Instead you get a nine-digit keypad code for the main entrance, and another nine-digit keypad code for your room door. That seems a bit excessive, and it took me until my fifth day here until I had both codes memorised so could get into my room without having to look at my phone. As the keypads seem heat-sensitive, and I often arrived back very hot and covered in sweat, getting into the building and the room could be a little troublesome, but I always managed eventually. Entering two nine-digit keypad codes when drunk was not fun though.
 
 It's worth noting that there's no way to lock the bedroom door from the inside. That was never a problem during my stay, but anyone who knows the code to your room can get in, even when you're inside, so it doesn't feel overly secure. I'd prefer if there was a way of securing the door from the inside.
 
-There's a TV in the room, but note that it's the only TV in the world I've ever encoutered that doesn't have an HDMI port. I didn't even know it was possible to buy TVs without an HDMI port, but it meant I couldn't plug-in my Apple TV to the room's TV. Luckily I coincidentally bought my first ever iPad on my first day staying here, so it gave me an excuse to use my iPad for workouts instead, so it kind of worked-out.
+There's a TV in the room, but note that it's the only TV in the world I've ever encoutered that doesn't have an HDMI port. I didn't even know it was possible to buy TVs without an HDMI port, but it meant I couldn't plug-in my Apple TV. Luckily I coincidentally bought my first ever iPad while staying here, so it gave me an excuse to use my iPad for workouts, so I guess it was for the best.
 
 The wifi here is lightning fast. I clocked it at 615mbps download speed, and 600mbps upload speed when I did a speed test. It's reliable as well, as I had no stability issues during my stay. In the communal kitchen downstairs, there are some free snacks for guests, but the real prize is that there's free bottled water.
 
-As I consume an ungodly amount of water each day, I still bought my own from 7-11, because I thought it'd be unfair on the hosts to drink as much water as I usually do and expect them to pay for it all, but I still got through my share of free water, which saved me a bit of money and a number of trips to 7-11.
+As I consume an ungodly amount of water each day, I still bought my own from 7-11, because I thought it'd be unfair on the hosts to drink as much water as I usually do and expect them to pay for it all, but I got through my share of free water as well, which saved me a bit of money and too many trips to 7-11.
 
-You're only about a five-minute walk from a big Big C staying here, so getting groceries is incredibly convenient.
+You're only about a five-minute walk from a big Big C, so getting groceries is incredibly convenient.
 
 My feelings about Mitt Haus are that once I adjusted to not having a kettle and a fridge in the room, I really enjoyed staying here. I love the area, I love how confortable the room is, and I love how much daylight gets in. That being said, not having a kettle and a fridge is a deal-breaker for me. I wouldn't have booked here in the first place if I'd realised it, and I probably won't stay here again because of it. Which makes me very sad, because as you can tell by the number of places I've stayed in Bangkok, I've struggled to find somewhere in Bangkok that I actually like to be, and this place is a kettle and a fridge away from being perfect for me.
 
-I need my tea though. It's too important to me that I can make a cup of green tea in my underwear the second I wake-up each morning, and Mitt Haus doesn't give me that opportunity, so onto the next one.
+I need my tea though. It's too important to me that I can make a cup of green tea in my underwear the second I wake-up each morning, and Mitt Haus doesn't afford me that opportunity, so onto the next one.
 
 export const mittHausImages = [
   {
@@ -1247,7 +1249,7 @@ export const mittHausImages = [
   {
     src: `${imagePath}/accommodation/mitt-haus/room.jpeg`,
     alt: 'Mitt Haus room',
-    caption: "You also get a sofa (which flattens-out into another bed) and a desk and chair, although I didn't use the desk for working as I was too scared of the AC unit directly above it. Working in bed and on the sofa was sufficient.",
+    caption: "You also get a sofa (which flattens-out into another bed) and a desk and chair, although I didn't use the desk for working at as I was too scared of the AC unit directly above it. Working in bed and on the sofa was sufficient.",
   },
   {
     src: `${imagePath}/accommodation/mitt-haus/tv.jpeg`,
@@ -1262,7 +1264,7 @@ export const mittHausImages = [
   {
     src: `${imagePath}/accommodation/mitt-haus/balcony.jpeg`,
     alt: 'Mitt Haus balcony',
-    caption: "There is a balcony in the room. And while it does make for a nice photos, it's very small and kind of dirty, so I wouldn't give having it much credence.",
+    caption: "There is a balcony in the room. And while it does make for a nice photos, it's very small and kind of dirty, so I wouldn't give it much credence.",
   },
   {
     src: `${imagePath}/accommodation/mitt-haus/communal-kitchen.jpeg`,
@@ -1277,7 +1279,7 @@ export const mittHausImages = [
   {
     src: `${imagePath}/accommodation/mitt-haus/outside.jpeg`,
     alt: 'Mitt Haus outside',
-    caption: "While Ladprao is quite a bustling area, Mitt Haus is far enough down the soi 5 that noise isn't an issue.",
+    caption: "While Ladprao is quite a bustling area, Mitt Haus is far enough down soi 5 that noise isn't an issue.",
   },
   {
     src: `${imagePath}/accommodation/mitt-haus/so-vegan.jpeg`,
@@ -1296,19 +1298,20 @@ export const summaryPoints = {
     'Endless nightlife options',
     'The travel hub of Thailand',
     'Very convenient public transport',
-    'TODO: Add any more?',
+    'Comparatively safe for a big city',
+    'Pretty walkable',
   ],
   neutral: [
     'A small number of good options for running',
     'Not too expensive (but more expensive than the rest of Thailand)',
-    'TODO: Add any more?',
   ],
   negative: [
     'Very heavy traffic',
     'Pollution',
     'Central areas way too crowded with toursits',
     'Becoming a bit souless',
-    'TODO: Add any more?',
+    'Quality of accommodation is very patchy',
+    'Were do you buy local tea?',
   ]
 }
 
@@ -1316,8 +1319,8 @@ export const summaryPoints = {
 
 ## Do I want to come back again?
 
-If I'd been asked that two years ago, I'd have given an unequivocal 'yes'. For many years Bangkok was my favourite place in the world, and was the main focus of my trips to Thailand. Lately though, it's lost its shine.
+If I'd been asked that two years ago, I'd have given an unequivocal 'yes'. For many years Bangkok was my favourite place in the world, and was the main focus of my trips to Thailand. Lately though, it's lost its shine, in my eyes at least.
 
-There are too many tourists, and the central areas of the city are becoming very generic and are losing what made Bangkok Bangkok to begin with. And while you can still get a more local lifestyle if you head out of the city centre, my question would be why bother? If you want that local lifestyle you can find it in many cities in Thailand without having to avoid the city centre.
+There are too many tourists, and the central areas of the city are becoming very generic and are losing what made Bangkok Bangkok to begin with. And while you can still get a more local lifestyle if you head out of the city centre, my question would be why bother? If you want a local lifestyle you can find it in many cities in Thailand without having to steer clear of the city centre.
 
-As I have a five-year Thai visa and as Bangkok is the travel hub of Thailand, I can say with near-certainty that I will be back in Bangkok before the end of the year. I don't look forward to it like I used to though.
+As I have a five-year Thai visa and as Bangkok is the travel hub of Thailand, I can say with near-certainty that I will be back in Bangkok before the end of the year. I definitely don't look forward to it like I used to though.
