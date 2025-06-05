@@ -9,5 +9,11 @@ export const taiwanData = {
         [departure]: '2024-06-13',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-08-07',
+        [departure]: '2025-10-30',
+      },
+    },
   ],
 }

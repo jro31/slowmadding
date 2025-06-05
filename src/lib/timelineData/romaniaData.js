@@ -9,5 +9,11 @@ export const romaniaData = {
         [departure]: '2023-07-13',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-07-09',
+        [departure]: '2025-08-06',
+      },
+    },
   ],
 }

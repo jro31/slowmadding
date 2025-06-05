@@ -181,4 +181,10 @@ export const bangkokData = [
       [departure]: '2025-04-24',
     },
   },
+  {
+    [dates]: {
+      [arrival]: '2025-10-30',
+      [departure]: '2025-11-13',
+    },
+  },
 ]

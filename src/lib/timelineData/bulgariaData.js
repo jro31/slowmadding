@@ -9,5 +9,11 @@ export const bulgariaData = {
         [departure]: '2023-08-10',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-06-26',
+        [departure]: '2025-07-09',
+      },
+    },
   ],
 }
