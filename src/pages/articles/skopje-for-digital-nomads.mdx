@@ -19,7 +19,50 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-TODO: Add photos
+export const cityImages = [
+  {
+    src: `${imagePath}/city/storm-view.jpeg`,
+    alt: 'Skopje during a storm',
+    caption: 'Skopje is surrounded by mountains, which means that when the conditions are right you get some beautfiul views. I took this one from the window of my Airbnb.',
+  },
+  {
+    src: `${imagePath}/city/alexander-statue.jpeg`,
+    alt: 'Alexander the Great statue',
+    caption: 'The most famous Macedonian, Alexander the Great has a fitting tribute that dominates the town centre.',
+  },
+  {
+    src: `${imagePath}/city/the-bridge-of-civilisations-in-macedonia.jpeg`,
+    alt: 'The Bridge of Civilisations in Macedonia',
+    caption: 'I found that the people here were lovely.',
+  },
+  {
+    src: `${imagePath}/city/cafe-samo-queen.jpeg`,
+    alt: 'Café Samo',
+    caption: "So that's what really happened to her.",
+  },
+  {
+    src: `${imagePath}/city/archaeological-museum.jpeg`,
+    alt: 'Archaeologic Museum',
+    caption: "I probably should care more about the buildings that I take pictures of, but I just thought it was a nice building. Google Maps tells me it an archaeological museum.",
+  },
+  {
+    src: `${imagePath}/city/st-clement-cathedral.jpeg`,
+    alt: "Archbishop's Cathedral St. Clement of Ohrid",
+    caption: "And this one is the Archbishop's Cathedral St. Clement of Ohrid. Or AC-SCOO for short.",
+  },
+  {
+    src: `${imagePath}/city/trash-sign.jpeg`,
+    alt: 'Paradise Food trash sign',
+    caption: "Just in case you weren't sure.",
+  },
+  {
+    src: `${imagePath}/city/skopje-fortress.jpeg`,
+    alt: 'Skopje Fortress',
+    caption: 'All of my runs in Skopje were along the riverside, and with good reason - it sure is beautiful. Apart from all the trash.',
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Why did I come to Skopje?
 
@@ -40,6 +83,16 @@ TODO
 ## Registering in Skopje
 
 TODO
+
+export const registeringImages = [
+  {
+    src: `${imagePath}/registering/registration-card.jpeg`,
+    alt: 'North Macedonia registration card',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={registeringImages} />
 
 ## Paying for things in Skopje
 
@@ -98,6 +151,16 @@ TODO
 ## Getting around Skopje
 
 TODO
+
+export const gettingAroundImages = [
+  {
+    src: `${imagePath}/getting-around/bus.jpeg`,
+    alt: 'Skopje bus',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={gettingAroundImages} />
 
 ## Being sociable in Skopje
 
