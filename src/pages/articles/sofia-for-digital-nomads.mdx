@@ -8,7 +8,7 @@ import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-08-18T15:50:00+03:00',
+  date: '2025-07-10T15:50:00+03:00', // TODO: Update this
   title: 'Sofia for Digital Nomads',
   description: "Bulgaria doesn't spring to mind when you think of tourist destinations in Europe, and its capital, Sofia, doesn't spring to mind when you think of tourist destinations in Bulgaria. Does that mean that it's not a good place for a digital nomad?",
   keywords: ['Bulgaria'],
@@ -17,6 +17,8 @@ export const meta = {
 export const imagePath = '/images/articles/sofia-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO: Rewrite this
 
 You know who the worst people in the world are?
 
@@ -69,6 +71,8 @@ export const cityImages = [
 
 ## Being sociable in Sofia
 
+TODO: Rewrite this?
+
 There's really not that much going on from a perspective of events designed for meeting new people in Sofia. The only group running regular events on Meetup is the <ExternalLink url='https://www.meetup.com/sofia-international-friends-and-language-exchange/'>Sofia International Friends and Language exchange
 </ExternalLink> group. I attended three of their events, and they were quite curious affairs. The "organiser" didn't show up to any of them, and according to the people I met, doesn't ever show up to any of them, yet he continually updates the number of guests he's bringing to each event on the app, which inflates the number of attendees to make it look really popular.
 
@@ -83,6 +87,8 @@ My assumption is that once they got comfortable with each other and the alcohol 
 If you're a very socially-needy person then Sofia might not be for you.
 
 ## Where to run in Sofia
+
+TODO: Rewrite this?
 
 In my month in Bucharest prior to coming here, I got back into interval running. That's short bursts of high-speed running, rather than long, slow runs as people typically do. My hope before coming to Sofia was that I would continue doing at least some interval running, but what that requires is a flat, even, unimpeded surface, preferably in a loop.
 
@@ -138,6 +144,8 @@ export const runningImages = [
 <ImageGallery images={runningImages} />
 
 ## Where to get vegan food in Sofia
+
+TODO: Rewrite this
 
 Unlike in Bucharest, where I'd been prior, mainstream supermarkets in Sofia don't cater well to vegans. There are no vegan sections, you just have to wander around and pick-out the odd vegan item they happen to have.
 
@@ -275,7 +283,7 @@ export const boleroFitburgerImages = [
 
 <MapLink name='Neofit Rilski 20' url='https://goo.gl/maps/BzNezHrddTxiU1JR9' />
 
-export const apartmentStays = [
+export const neofitRilskiApartmentStays = [
   {
     dates: {
       checkIn: '2023-07-13',
@@ -298,7 +306,9 @@ export const apartmentStays = [
   },
 ]
 
-<AccommodationTable stays={apartmentStays} />
+<AccommodationTable stays={neofitRilskiApartmentStays} />
+
+TODO: Tweak this?
 
 Evolution: "I've spent 3.5 billion years perfecting a biological rhythm where people rise and sleep with daylight."
 
@@ -328,7 +338,7 @@ My favourite vegan restaurant here, Edgy Veggy, is a 150 metre walk. My gym when
 
 The gym was so close that I'd walk there in my workout clothes, go straight from the gym to Edgy Veggy, which conveniently sells protein shakes to have with your lunch, and be back at my room within an hour. The location was amazing, and made-up for the frustrations of the room, however slight they were.
 
-export const apartmentImages = [
+export const neofitRilskiApartmentImages = [
   {
     src: `${imagePath}/apartment/bed.jpeg`,
     alt: 'Apartment bed',
@@ -361,4 +371,37 @@ export const apartmentImages = [
   },
 ]
 
-<ImageGallery images={apartmentImages} />
+<ImageGallery images={neofitRilskiApartmentImages} />
+
+### Snow White Home NDK
+
+<MapLink name='Lyuben Karavelov 67' url='https://maps.app.goo.gl/P7F23XM2tisSPAEx7' />
+
+export const lyubenKaravelovApartmentStays = [
+  {
+    dates: {
+      checkIn: '2025-06-26',
+      checkOut: '2025-07-09',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/30216681',
+    },
+    roomType: 'Entire rental unit in Sofia, Bulgaria',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 415.24,
+        'Weekly stay discount': -40.04,
+        'Service fee': 73.82,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={lyubenKaravelovApartmentStays} />
+
+TODO
+
+TODO: Add photos
