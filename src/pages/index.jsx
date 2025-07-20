@@ -18,29 +18,35 @@ const description =
 const imagePath = '/images/homepage-photos'
 const images = [
   {
-    src: `${imagePath}/yoga-in-the-park.jpeg`,
-    alt: 'Yoga in the Park in Chiang Mai',
+    src: `${imagePath}/yun-hsien-resort-archery.jpeg`,
+    alt: 'Archery at Yun Hsien Resort in Wulai, Taiwan',
   },
   {
-    src: `${imagePath}/sukhumvit-22-at-night.jpeg`,
-    alt: 'Sukhumvit soi 22 in Bangkok at night, taken from the balcony of V Check Inn hotel',
+    src: `${imagePath}/khao-soi-with-tofu-noodles.jpeg`,
+    alt: 'Khao soi with tofu noodles at Veganerie in Bangkok',
   },
   {
-    src: `${imagePath}/reform-kafe-smoothie-bowl.jpeg`,
-    alt: 'Smoothie bowl at Reform Kafe in Chiang Mai',
+    src: `${imagePath}/philopappos-hill-selfie.jpeg`,
+    alt: 'Philopappos Hill sunset selfie in Athens',
   },
   {
-    src: `${imagePath}/sihanouk-norodom-at-night.jpeg`,
-    alt: 'Statue of Sihanouk Norodom in Phnom Penh at night',
+    src: `${imagePath}/yinyom-beach.jpeg`,
+    alt: 'Yinyom Beach in Jomtien, Thailand',
   },
   {
-    src: `${imagePath}/saikaew-resort-lake.jpeg`,
-    alt: 'The lake at Saikaew Resort in Chiang Rai',
+    src: `${imagePath}/qingtiangang-grassland.jpeg`,
+    alt: 'Qingtiangang Grassland in Taiwan',
   },
 ]
 
 const Photos = () => {
-  let rotations = ['rotate-2', '-rotate-2', 'rotate-2', 'rotate-2', '-rotate-2']
+  let rotations = [
+    'rotate-3',
+    '-rotate-2',
+    'rotate-2',
+    '-rotate-3',
+    '-rotate-2',
+  ]
 
   return (
     <div className="mt-16 sm:mt-20">
