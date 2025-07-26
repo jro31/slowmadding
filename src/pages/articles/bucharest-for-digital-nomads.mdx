@@ -16,6 +16,8 @@ export const imagePath = '/images/articles/bucharest-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
+TODO: Rewrite this?
+
 When I arrived in Bucharest it was my first time in eastern Europe, and you know what it felt like?
 
 Eastern Europe.
@@ -90,104 +92,81 @@ export const cityImages = [
 
 <ImageGallery images={cityImages} />
 
-## Where I stayed
+## How money works in Bucharest
 
-### Flexible Check-In/Out apartment
+TODO: Update/Remove this?
 
-<MapLink name='Strada Vânători 5-11' url='https://goo.gl/maps/g6Q2c21rnBmnV7na8' />
+I found money a little ridiculous in Bucharest, so I thought this section worth adding. What I'd read prior to coming here was that while cards are accepted in some places, cash is still king and you need to carry it with you. I found this to be almost entirely false. Through my entire month in Bucharest, I only had to make one transaction by cash, because card was accepted everywhere else I went. That transaction was ironically the most expensive thing I bought, which was my one-month gym membership.
 
-export const apartmentStays = [
+The part that I find ridiculous, is that while cards are accepted almost everywhere, in places where tipping is expected, you cannot tip via the card machine. It doesn't give you the option, so you have to carry an appropriate amount of cash with you if you have any intention of leaving a tip, only adding fuel to my fire to eradicate tipping from the world.
+
+I didn't realise this at the start. I just thought that because it wasn't possible to tip via card that tipping wasn't expected, but then I got told otherwise. That was the point that I mostly stopped eating out, because as I wasn't making any cash transactions, I never had any change for tipping, so going to a restaurant suddenly had extra steps.
+
+Whether you choose to heed this advice or whether you choose to feign ignorance as a good excuse to not leave any tips is up to you (I'd suggest the latter), but it is worth noting that tipping is expected, but you can't leave a tip when paying by card because that would make sense.
+
+## Being sociable in Bucharest
+
+TODO: Update this?
+
+The social scene for expats/digital nomads in Bucharest isn't completely dead, but it is a bit sickly.
+
+I found Facebook to be a clutter of adverts disguised as events, and the bars I saw didn't appeal to me as places to go for a beer by myself. Therefore, I found my social life here limited to the couple of active Meetup groups in Bucharest.
+
+<ExternalLink url='https://www.meetup.com/bucharest-digital-nomads/'>Bucharest Digital Nomads</ExternalLink> holds fortnightly events at differing bars around Bucharest, although they seem to have now settled on Expiriat, which is a bar/club south of the city centre. I went to a couple of these events and they were very well attended so a very good way to get to know people.
+
+<ExternalLink url='https://www.meetup.com/expatsinromania/'>Expats in Romania</ExternalLink> holds events with less regularity, and you can expect them to be a bit more chilled than Bucharest Digital Nomads, likely being in a restaurant rather than a bar.
+
+I'm thankful for these two Meetups. They're each organised by one person, and were they not to exist, then Bucharest might have got a bit lonely for me, so long may they continue. Hopefully by the time I return some more groups will have popped-up.
+
+export const socialImages = [
   {
-    dates: {
-      checkIn: '2023-06-14',
-      checkOut: '2023-07-13',
-    },
-    platform: {
-      name: 'Airbnb',
-      url: 'https://www.airbnb.com/rooms/746858708994370465',
-    },
-    roomType: 'Entire condo hosted by Alexandru',
-    price: {
-      currencyPrefix: null,
-      currencySuffix: 'lei',
-      sections: {
-        Room: 8178.00,
-        '45% monthly price discount': -3680.10,
-        'Service fee': 501.85,
-      },
-    },
+    src: `${imagePath}/social/drunken-lords.jpeg`,
+    alt: 'Drunken Lords',
+    caption: "In 'Drunken Lords', which is a bar/nightclub in the old town.",
+  },
+  {
+    src: `${imagePath}/social/tribes-by-nelz.jpeg`,
+    alt: 'Tribes by Nelz',
+    caption: "This photo is of an 'Expats in Romania' Meetup at 'Tribes by Nelz' African restaurant. Always good to try some local cuisine.",
   },
 ]
 
-<AccommodationTable stays={apartmentStays} />
+<ImageGallery images={socialImages} />
 
-Welcome to the world's most perfect Airbnb. I loved this place.
+## Where to run in Bucharest
 
-Starting with the location, which to me is the most important thing, this room is near to the city centre while still being in a local area. It is a very short walk to Izvor Park, which is a good place to go for a run, a walk, or to just sit with a book. At the end of the park is <ExternalLink url='https://goo.gl/maps/UDasTPaVpx1GyQ3cA'>Underground Gym</ExternalLink>, which just to be difficult is not underground. I signed-up there for a month when I came to Bucharest and went there almost every other day. There are many smaller convenience stores nearby, and the large Carrefour supermarket is about a fifteen minute walk from the room. Izvor and Piața Unirii metro stations are both about an eight minute walk away, and two of Bucharest's four vegan restaurants are also easy walking distance. If you need anything more than that, then you're more demanding than me.
+TODO: Update this
 
-As for the room, it's on the third floor of an apartment block. From the outside the apartment block doesn't look all that, especially if you're used to places that favour glamorous architecture. Once you're inside it's perfectly lovely.
+When I chose my Airbnb in Bucharest, I did so partially because Izvor Park was so nearby, and from what I could tell on Google Maps, it looked a good place to run. It was, so I didn't feel the need to run anywhere else. Even so I'd say that Bucahrest is a very running-friendly city.
 
-It's a one-bedroom place, but the living area has ample space for yoga and other exercise. There's a TV and an air conditioner in both the bedroom and the living area. The sofa is sufficiently comfortable that I often worked on it when on my laptop, but there's also a dining table and four chairs should you want to setup and actual workspace. The wifi is the fastest I've ever used, there's a kitchen that includes a large fridge/freezer, an oven and a cooker, and more cooking tools/utensils than you'd expect to find in an Airbnb. In the bedroom you have a comfortable double bed with plenty of storage space, and there's a balcony that's really pleasant to sit on with a book and a cup of tea, provided the people on adjacent balconies aren't smoking.
+The pavements are wide and quiet, as are the roads, so crossing the road is usually quick and there's very little pollution coming from vehicles. If you don't happen to be staying near a park, I'd say that you can pretty much run anywhere. If you happen to be near Tineretului Park, it's big and has many people running in it.
 
-That alone would make it a five-star Airbnb, but what I really loved about this place is how much every little detail had been thought about by the host. So many snacks and drinks are included with the room. That includes nineteen different types of craft beer, one bottle of whiskey, two bottles of wine, many soft drinks, peanuts, crisps, chocolate, popcorn and even fresh fruit. If you then go into the bathroom cupboard you'll find every chemical you could need, from things you might expect like laundry detergent and shampoo, to things you're never going to need, like nail polish remover. In the bedroom cupboard you'll find more clean towels and sheets than you'll know what to do with, and even a laundry basket, and search around the apartment and you'll find extension cords and converter plugs.
+As for Izvor Park, it's a lot smaller. A loop of the park is 1.25km (so four laps to do a 5k). Like everywhere in Bucharest, people smoke without consideration so expect to have to hold your breath while running through their plumes. Other than that, the only downside to Izvor Park is that if you come at the wrong time of day, as I did a couple of times, there are packs of poorly attended children. My guess is that a nearby school/nursery takes the kids there when they can't be arsed to entertain them anymore and just lets them run wild. When you're gasping for air having to navigate this melee can be a tad frustrating, but for most of my runs they were nowhere to be seen.
 
-I carry everything that I need with me, just because many hosts aren't so thoughtful, but even I still appreciated how much thought had gone into making my stay as comfortable here as it could be.
-
-My only criticism, and it's one that echoes around my entire sentiment of Bucharest, is that people in other apartments smoke on the balconies. If you happen to have the windows open and the person next door starts smoking, the smoke blows-in. So where I might have preferred to keep the windows open and the AC turned-off, I generally kept the windows closed.
-
-Unless you find a detached house in the middle of Bucharest, that's going to be a problem anywhere. This is still up there as the best Airbnb I've stayed at. I look forward to staying again.
-
-export const apartmentImages = [
+export const runningImages = [
   {
-    src: `${imagePath}/apartment/living-area.jpeg`,
-    alt: 'Apartment living area',
-    caption: "The living area is very spacious, especially if you're alone. Plenty of space to do yoga. Probably enough space for two people to do yoga.",
+    src: `${imagePath}/running/izvor-park-strava.jpeg`,
+    alt: 'Izvor Park Strava map',
+    caption: "Izvor Park is about 1.25km, so it's four laps to do a 5k.",
+    url: 'https://www.strava.com/activities/9312921791',
   },
   {
-    src: `${imagePath}/apartment/kitchen.jpeg`,
-    alt: 'Apartment kitchen',
-    caption: "The kitchen was very well equipped, and the dining table and chairs weren't only nice for eating at, but made for a great workspace too. Out of shot there's an air-conditioner.",
+    src: `${imagePath}/running/izvor-park.jpeg`,
+    alt: 'Palace of Parliament from Izvor Park',
+    caption: "Izvor Park is right in front of the Palace of Parliament, so you get a nice view while you run. Although if you have the energy to look at it then you're not running fast enough.",
   },
   {
-    src: `${imagePath}/apartment/fridge.jpeg`,
-    alt: 'Apartment fridge',
-    caption: 'The apartment comes with loads and loads of complimentary snacks. This was the fridge as I arrived at the room. It includes 19 craft beers, a bottle of wine and a bottle of whiskey. Outside of the fridge was another bottle of wine and an entire cupboard full of snacks. Although not all vegan, none of them contained any meat, which I appreciated.',
-  },
-  {
-    src: `${imagePath}/apartment/bed.jpeg`,
-    alt: 'Apartment bed',
-    caption: 'The bed was really comfortable, and out of view is another air-conditioner.',
-  },
-  {
-    src: `${imagePath}/apartment/bedroom.jpeg`,
-    alt: 'Apartment bedroom',
-    caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there was a second TV in the bedroom.",
-  },
-  {
-    src: `${imagePath}/apartment/bathroom.jpeg`,
-    alt: 'Apartment bathroom',
-    caption: "The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kid, and laundry detergent and fabric softener (there's a washing machine with drying rack just outside the bathroom).",
-  },
-  {
-    src: `${imagePath}/apartment/balcony.jpeg`,
-    alt: 'Apartment balcony',
-    caption: "The balcony, accessed from the living area, is pleasant to step-out onto or to sit with a cup of tea.",
-  },
-  {
-    src: `${imagePath}/apartment/view.jpeg`,
-    alt: 'Apartment view',
-    caption: 'The view from the balcony is nice if you look in the right direction.',
-  },
-  {
-    src: `${imagePath}/apartment/building.jpeg`,
-    alt: 'Apartment building',
-    caption: "The building from the outside.",
+    src: `${imagePath}/running/tineretului-park.jpeg`,
+    alt: 'Tineretului Park',
+    caption: "Although I didn't run here myself, when I came to Tineretului Park to walk there were a lot of people that were running. It's a lot bigger than Izvor Park, so a good place to come for a longer run.",
   },
 ]
 
-<ImageGallery images={apartmentImages} />
+<ImageGallery images={runningImages} />
 
 ## Where to get vegan food in Bucharest
+
+TODO: Update this
 
 Getting vegan food in Bucharest is so easy that I considered removing this section. While there are only four fully-vegan restaurants in Bucharest, the attitude here has become like that of the UK, where pretty much every restaurant has _something_ vegan on the menu, so you're really not going to struggle.
 
@@ -310,68 +289,101 @@ export const supermarketsImages = [
 
 <ImageGallery images={supermarketsImages} />
 
-## How money works in Bucharest
+## Where I stayed
 
-I found money a little ridiculous in Bucharest, so I thought this section worth adding. What I'd read prior to coming here was that while cards are accepted in some places, cash is still king and you need to carry it with you. I found this to be almost entirely false. Through my entire month in Bucharest, I only had to make one transaction by cash, because card was accepted everywhere else I went. That transaction was ironically the most expensive thing I bought, which was my one-month gym membership.
+### Flexible Check-In/Out apartment
 
-The part that I find ridiculous, is that while cards are accepted almost everywhere, in places where tipping is expected, you cannot tip via the card machine. It doesn't give you the option, so you have to carry an appropriate amount of cash with you if you have any intention of leaving a tip, only adding fuel to my fire to eradicate tipping from the world.
+TODO: Update this?
 
-I didn't realise this at the start. I just thought that because it wasn't possible to tip via card that tipping wasn't expected, but then I got told otherwise. That was the point that I mostly stopped eating out, because as I wasn't making any cash transactions, I never had any change for tipping, so going to a restaurant suddenly had extra steps.
+<MapLink name='Strada Vânători 5-11' url='https://goo.gl/maps/g6Q2c21rnBmnV7na8' />
 
-Whether you choose to heed this advice or whether you choose to feign ignorance as a good excuse to not leave any tips is up to you (I'd suggest the latter), but it is worth noting that tipping is expected, but you can't leave a tip when paying by card because that would make sense.
-
-## Where to run in Bucharest
-
-When I chose my Airbnb in Bucharest, I did so partially because Izvor Park was so nearby, and from what I could tell on Google Maps, it looked a good place to run. It was, so I didn't feel the need to run anywhere else. Even so I'd say that Bucahrest is a very running-friendly city.
-
-The pavements are wide and quiet, as are the roads, so crossing the road is usually quick and there's very little pollution coming from vehicles. If you don't happen to be staying near a park, I'd say that you can pretty much run anywhere. If you happen to be near Tineretului Park, it's big and has many people running in it.
-
-As for Izvor Park, it's a lot smaller. A loop of the park is 1.25km (so four laps to do a 5k). Like everywhere in Bucharest, people smoke without consideration so expect to have to hold your breath while running through their plumes. Other than that, the only downside to Izvor Park is that if you come at the wrong time of day, as I did a couple of times, there are packs of poorly attended children. My guess is that a nearby school/nursery takes the kids there when they can't be arsed to entertain them anymore and just lets them run wild. When you're gasping for air having to navigate this melee can be a tad frustrating, but for most of my runs they were nowhere to be seen.
-
-export const runningImages = [
+export const apartmentStays = [
   {
-    src: `${imagePath}/running/izvor-park-strava.jpeg`,
-    alt: 'Izvor Park Strava map',
-    caption: "Izvor Park is about 1.25km, so it's four laps to do a 5k.",
-    url: 'https://www.strava.com/activities/9312921791',
-  },
-  {
-    src: `${imagePath}/running/izvor-park.jpeg`,
-    alt: 'Palace of Parliament from Izvor Park',
-    caption: "Izvor Park is right in front of the Palace of Parliament, so you get a nice view while you run. Although if you have the energy to look at it then you're not running fast enough.",
-  },
-  {
-    src: `${imagePath}/running/tineretului-park.jpeg`,
-    alt: 'Tineretului Park',
-    caption: "Although I didn't run here myself, when I came to Tineretului Park to walk there were a lot of people that were running. It's a lot bigger than Izvor Park, so a good place to come for a longer run.",
+    dates: {
+      checkIn: '2023-06-14',
+      checkOut: '2023-07-13',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/746858708994370465',
+    },
+    roomType: 'Entire condo hosted by Alexandru',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'lei',
+      sections: {
+        Room: 8178.00,
+        '45% monthly price discount': -3680.10,
+        'Service fee': 501.85,
+      },
+    },
   },
 ]
 
-<ImageGallery images={runningImages} />
+<AccommodationTable stays={apartmentStays} />
 
-## Being sociable in Bucharest
+Welcome to the world's most perfect Airbnb. I loved this place.
 
-The social scene for expats/digital nomads in Bucharest isn't completely dead, but it is a bit sickly.
+Starting with the location, which to me is the most important thing, this room is near to the city centre while still being in a local area. It is a very short walk to Izvor Park, which is a good place to go for a run, a walk, or to just sit with a book. At the end of the park is <ExternalLink url='https://goo.gl/maps/UDasTPaVpx1GyQ3cA'>Underground Gym</ExternalLink>, which just to be difficult is not underground. I signed-up there for a month when I came to Bucharest and went there almost every other day. There are many smaller convenience stores nearby, and the large Carrefour supermarket is about a fifteen minute walk from the room. Izvor and Piața Unirii metro stations are both about an eight minute walk away, and two of Bucharest's four vegan restaurants are also easy walking distance. If you need anything more than that, then you're more demanding than me.
 
-I found Facebook to be a clutter of adverts disguised as events, and the bars I saw didn't appeal to me as places to go for a beer by myself. Therefore, I found my social life here limited to the couple of active Meetup groups in Bucharest.
+As for the room, it's on the third floor of an apartment block. From the outside the apartment block doesn't look all that, especially if you're used to places that favour glamorous architecture. Once you're inside it's perfectly lovely.
 
-<ExternalLink url='https://www.meetup.com/bucharest-digital-nomads/'>Bucharest Digital Nomads</ExternalLink> holds fortnightly events at differing bars around Bucharest, although they seem to have now settled on Expiriat, which is a bar/club south of the city centre. I went to a couple of these events and they were very well attended so a very good way to get to know people.
+It's a one-bedroom place, but the living area has ample space for yoga and other exercise. There's a TV and an air conditioner in both the bedroom and the living area. The sofa is sufficiently comfortable that I often worked on it when on my laptop, but there's also a dining table and four chairs should you want to setup and actual workspace. The wifi is the fastest I've ever used, there's a kitchen that includes a large fridge/freezer, an oven and a cooker, and more cooking tools/utensils than you'd expect to find in an Airbnb. In the bedroom you have a comfortable double bed with plenty of storage space, and there's a balcony that's really pleasant to sit on with a book and a cup of tea, provided the people on adjacent balconies aren't smoking.
 
-<ExternalLink url='https://www.meetup.com/expatsinromania/'>Expats in Romania</ExternalLink> holds events with less regularity, and you can expect them to be a bit more chilled than Bucharest Digital Nomads, likely being in a restaurant rather than a bar.
+That alone would make it a five-star Airbnb, but what I really loved about this place is how much every little detail had been thought about by the host. So many snacks and drinks are included with the room. That includes nineteen different types of craft beer, one bottle of whiskey, two bottles of wine, many soft drinks, peanuts, crisps, chocolate, popcorn and even fresh fruit. If you then go into the bathroom cupboard you'll find every chemical you could need, from things you might expect like laundry detergent and shampoo, to things you're never going to need, like nail polish remover. In the bedroom cupboard you'll find more clean towels and sheets than you'll know what to do with, and even a laundry basket, and search around the apartment and you'll find extension cords and converter plugs.
 
-I'm thankful for these two Meetups. They're each organised by one person, and were they not to exist, then Bucharest might have got a bit lonely for me, so long may they continue. Hopefully by the time I return some more groups will have popped-up.
+I carry everything that I need with me, just because many hosts aren't so thoughtful, but even I still appreciated how much thought had gone into making my stay as comfortable here as it could be.
 
-export const socialImages = [
+My only criticism, and it's one that echoes around my entire sentiment of Bucharest, is that people in other apartments smoke on the balconies. If you happen to have the windows open and the person next door starts smoking, the smoke blows-in. So where I might have preferred to keep the windows open and the AC turned-off, I generally kept the windows closed.
+
+Unless you find a detached house in the middle of Bucharest, that's going to be a problem anywhere. This is still up there as the best Airbnb I've stayed at. I look forward to staying again.
+
+export const apartmentImages = [
   {
-    src: `${imagePath}/social/drunken-lords.jpeg`,
-    alt: 'Drunken Lords',
-    caption: "In 'Drunken Lords', which is a bar/nightclub in the old town.",
+    src: `${imagePath}/apartment/living-area.jpeg`,
+    alt: 'Apartment living area',
+    caption: "The living area is very spacious, especially if you're alone. Plenty of space to do yoga. Probably enough space for two people to do yoga.",
   },
   {
-    src: `${imagePath}/social/tribes-by-nelz.jpeg`,
-    alt: 'Tribes by Nelz',
-    caption: "This photo is of an 'Expats in Romania' Meetup at 'Tribes by Nelz' African restaurant. Always good to try some local cuisine.",
+    src: `${imagePath}/apartment/kitchen.jpeg`,
+    alt: 'Apartment kitchen',
+    caption: "The kitchen was very well equipped, and the dining table and chairs weren't only nice for eating at, but made for a great workspace too. Out of shot there's an air-conditioner.",
+  },
+  {
+    src: `${imagePath}/apartment/fridge.jpeg`,
+    alt: 'Apartment fridge',
+    caption: 'The apartment comes with loads and loads of complimentary snacks. This was the fridge as I arrived at the room. It includes 19 craft beers, a bottle of wine and a bottle of whiskey. Outside of the fridge was another bottle of wine and an entire cupboard full of snacks. Although not all vegan, none of them contained any meat, which I appreciated.',
+  },
+  {
+    src: `${imagePath}/apartment/bed.jpeg`,
+    alt: 'Apartment bed',
+    caption: 'The bed was really comfortable, and out of view is another air-conditioner.',
+  },
+  {
+    src: `${imagePath}/apartment/bedroom.jpeg`,
+    alt: 'Apartment bedroom',
+    caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there was a second TV in the bedroom.",
+  },
+  {
+    src: `${imagePath}/apartment/bathroom.jpeg`,
+    alt: 'Apartment bathroom',
+    caption: "The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kid, and laundry detergent and fabric softener (there's a washing machine with drying rack just outside the bathroom).",
+  },
+  {
+    src: `${imagePath}/apartment/balcony.jpeg`,
+    alt: 'Apartment balcony',
+    caption: "The balcony, accessed from the living area, is pleasant to step-out onto or to sit with a cup of tea.",
+  },
+  {
+    src: `${imagePath}/apartment/view.jpeg`,
+    alt: 'Apartment view',
+    caption: 'The view from the balcony is nice if you look in the right direction.',
+  },
+  {
+    src: `${imagePath}/apartment/building.jpeg`,
+    alt: 'Apartment building',
+    caption: "The building from the outside.",
   },
 ]
 
-<ImageGallery images={socialImages} />
+<ImageGallery images={apartmentImages} />
