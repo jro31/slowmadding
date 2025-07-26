@@ -309,12 +309,12 @@ export const stradaVanatoriApartmentStays = [
     },
     roomType: 'Entire condo hosted by Alexandru',
     price: {
-      currencyPrefix: null,
-      currencySuffix: 'lei',
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
       sections: {
-        Room: 8178.00,
-        '45% monthly price discount': -3680.10,
-        'Service fee': 501.85,
+        Room: 1455.06,
+        '45% monthly price discount': -654.78,
+        'Service fee': 89.29,
       },
     },
   },
@@ -387,3 +387,37 @@ export const stradaVanatoriApartmentImages = [
 ]
 
 <ImageGallery images={stradaVanatoriApartmentImages} />
+
+### Central Exquisite Gold
+
+<MapLink name='Bulevardul Dimitrie Cantemir 22' url='https://maps.app.goo.gl/BmJyDvkyp19MUbWu8' />
+
+export const bulevardulDimitrieCantemirApartmentStays = [
+  {
+    dates: {
+      checkIn: '2025-07-09',
+      checkOut: '2025-08-06',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/733835857097230841',
+    },
+    roomType: 'Entire condo in Bucharest, Romania',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1379.74,
+        'Monthly stay discount': -407.40,
+        'Service fee': 170.84,
+        'Service fee savings': -34.04,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={bulevardulDimitrieCantemirApartmentStays} />
+
+TODO
+
+TODO: Add photos
