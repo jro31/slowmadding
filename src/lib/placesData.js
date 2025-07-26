@@ -35,17 +35,17 @@ export const placesData = [
       [affordable]: {
         [verdict]: false,
         [description]:
-          "While cheap compared to the likes of London or New York, there's a noticeable hike in prices compared to similar cities in neighbouring countries. I paid €46/night for the cheaper of my rooms here, a beer in a bar is around €5, expect to pay around €8-10 for a meal in a restaurant (without a drink).",
+          'Noticeably more expensive than capital cities in surrounding countries. Expect to pay about €55 per night for a nice room and €10 for a meal in a restaurant (without a drink).',
       },
       [internet]: {
-        [verdict]: false,
-        [description]:
-          "In my first room the connection was very slow. In my second room it was faster but unreliable as it went out for 48 hours at one point. The mobile networks are ok, but a pain if you don't speak Greek as the apps aren't in English.",
-      },
-      [running]: {
         [verdict]: true,
         [description]:
-          'There are a small number of parks suitable for running (not as many as in other European cities), and the streets are quiet enough to run along comfortably.',
+          "Not the fastest Internet in the world, but it's fast enough and reliable enough to work from, including video calls.",
+      },
+      [running]: {
+        [verdict]: false,
+        [description]:
+          "While there are a small number of parks suitable for running and the streets are ok for running, there's nowhere very inspiring.",
       },
       [veganFood]: {
         [verdict]: true,
@@ -55,7 +55,7 @@ export const placesData = [
       [safe]: {
         [verdict]: true,
         [description]:
-          "I walked around late at night a lot and never saw or thought I was going to have an issue. Other people told me they didn't feel it was a safe city, but I never experienced it myself.",
+          "I've walked around late at night a lot and have never seen or thought I was going to have an issue. Other people told me they didn't feel it was a safe city, but I never experienced it myself.",
       },
       [social]: {
         [verdict]: true,
@@ -97,17 +97,17 @@ export const placesData = [
       [safe]: {
         [verdict]: true,
         [description]:
-          "I've spent about six years in Bangkok and never had an issue. It's a city I feel safe walking around at all hours of the night.",
+          "I've spent about seven years in Bangkok and never had an issue. It's a city I feel safe walking around at all hours of the night.",
       },
       [social]: {
         [verdict]: true,
         [description]:
-          "There's an embarrassment of Meetup events in Bangkok. On Meetup alone you'll be able to find something that interests you pretty much 7 days per week. Plus, there's plenty of lonely old men sat around in bars to chat to.",
+          "There's an embarrassment of Meetup events in Bangkok. You'll be able to find something that interests you pretty much 7 days per week.",
       },
       [walking]: {
         [verdict]: true,
         [description]:
-          "This might not be an opinion shared with those who aren't used to the heat or to sharing the pavement with motorcycles, but in my years in Bangkok, I've walked all over this city and not had an issue. Despite the number of vehicles, pollution doesn't bother me here.",
+          "This might not be an opinion shared with those who aren't used to the heat or to sharing the pavement with motorcycles, but in my years in Bangkok, I've walked all over this city and not had an issue.",
       },
     },
     [articlePath]: '/articles/bangkok-for-digital-nomads',
@@ -124,7 +124,7 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'My Airbnb wifi consistently had download speeds over 600mbps, and upload speeds over 500mbps. 4G is available throughout the city and is fast enough to do video calls.',
+          'Very fast and reliable wifi in both of my Airbnbs here.',
       },
       [running]: {
         [verdict]: true,
@@ -134,7 +134,7 @@ export const placesData = [
       [veganFood]: {
         [verdict]: true,
         [description]:
-          'There are only 4 fully vegan restaurants in Bucharest, but many restaurants have vegan offerings, and supermarkets here are pretty vegan friendly, often having vegan sections.',
+          'Fully-vegan restaurants are lacking, but many non-vegan restaurants have vegan offerings. The supermarkets here are very vegan-friendly.',
       },
       [safe]: {
         [verdict]: true,
@@ -235,7 +235,7 @@ export const placesData = [
           "It's a calm city and the traffic isn't overwhelming, so it's very comfortable to walk around.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/buriram-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].chiangMai,
@@ -374,22 +374,22 @@ export const placesData = [
       [internet]: {
         [verdict]: true,
         [description]:
-          'The Internet in my first room was garbage, but in my second it was fast and reliable so I blame the room rather than the city.',
+          'The city offers fast Internet, but not all rooms take advantage of it. Choose your room carefully.',
       },
       [running]: {
         [verdict]: false,
         [description]:
-          "The roads aren't ideal with traffic and having to cross a lot of intersections, and on the beach the sand gave me blisters running bare foot, but in places the sea covers the entire beach so wearing shoes isn't suitable either.",
+          "The beach is the only decent place I've found for running, but parts of it get blocked by the sea at high tide.",
       },
       [veganFood]: {
         [verdict]: false,
         [description]:
-          "It's not the worst city to be vegan, but there isn't an abundance of choice either. I found myself going to the same places repeatedly.",
+          "It's not the worst city to be vegan, but there isn't an abundance of choice either. I find myself going to the same places repeatedly.",
       },
       [safe]: {
         [verdict]: true,
         [description]:
-          'I felt entirely safe wandering around the streets in the middle of the night.',
+          'I feel entirely safe wandering around the streets in the middle of the night here.',
       },
       [social]: {
         [verdict]: false,
@@ -519,7 +519,8 @@ export const placesData = [
       },
       [social]: {
         [verdict]: false,
-        [description]: 'Nothing going on.',
+        [description]:
+          'No organised events with only one foreigner-aimed bar in town. There are a lot of craft beer bars, which are nice to have a beer by yourself.',
       },
       [walking]: {
         [verdict]: true,
@@ -541,22 +542,22 @@ export const placesData = [
       [internet]: {
         [verdict]: false,
         [description]:
-          "The wifi in my first room had a login page and I'd get quickly logged-out on putting my device down, in my second room the connection was too slow for video calls. I had to tether to my phone, which also had a poor/unstable connection here.",
+          "Both places I've stayed in Pattaya have had diabolical connections.",
       },
       [running]: {
         [verdict]: true,
         [description]:
-          'Running to and along the beach I found to be a pretty pleasant route. You can run in most of Pattaya without issue, especially out of the city centre.',
+          "Running to and along the beach I found to be a pretty pleasant route. You can run in most of Pattaya without issue once you're outside the city centre.",
       },
       [veganFood]: {
         [verdict]: true,
         [description]:
-          'There are a couple of fully vegan restaurants here, and several other vegetarian places.',
+          'There are a couple of fully vegan restaurants here, with the many Indian and Middle-Eastern restaurants having vegan options.',
       },
       [safe]: {
         [verdict]: true,
         [description]:
-          "I was out late pretty much every night, often walking home alone. Didn't have an issue.",
+          "It's a city full of drunk people from all over the world. Bar fights definitely happen, but that's about it.",
       },
       [social]: {
         [verdict]: false,
@@ -655,43 +656,82 @@ export const placesData = [
     [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
   {
+    [place]: places[countries.northMacedonia].skopje,
+    [country]: countries.northMacedonia,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          "The only place I've been that's cheaper than South-East Asia. Perhaps the cheapest capital city in Europe.",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          "The Internet's not lightning fast, but it's fast enough to comfortably work on, including video calls.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'The riverside and City Park are good places for flat runs, Vodno is good for trail running.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are a couple of vegan restaurant, but variety is lacking. The supermarkets aren't very vegan-friendly.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]: 'I sensed no safety concerns during my five weeks here.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There's a tame meetup that takes place every Sunday night at a cafe, other than that it's limited to irregular events.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]: 'Very easy and comfortable to walk all over the city.',
+      },
+    },
+    [articlePath]: '/articles/skopje-for-digital-nomads',
+  },
+  {
     [place]: places[countries.bulgaria].sofia,
     [country]: countries.bulgaria,
     [criteria]: {
       [affordable]: {
         [verdict]: true,
         [description]:
-          'I was paying around 60 lev per night for a decent Airbnb, a local beer will cost around 5 lev in a bar, expect to pay about 20 lev for a meal with a drink in a western restaurant.',
+          'I paid around 60 lev per night for my first room here, a local beer will cost around 5 lev in a bar, expect to pay about 20 lev for a meal with a drink in a western restaurant.',
       },
       [internet]: {
         [verdict]: true,
         [description]:
-          'The connection in my room was 100% reliable and sufficient for video calls (roughly 45mbps download speed, 30mbps upload).',
+          'Fast enough and reliable enough to comfortably work from.',
       },
       [running]: {
         [verdict]: true,
         [description]:
-          'Running along the pavement is comfortable and there a couple of really good parks for running.',
+          'Three parks that are very suitable for running, apart from all the people smoking.',
       },
       [veganFood]: {
         [verdict]: false,
         [description]:
-          "There are a couple of very good vegan restaurants, but Sofia could do with more. Supermarkets don't really cater to vegans.",
+          "Minimal restaurant options and the supermarkets don't really cater to vegans.",
       },
       [safe]: {
         [verdict]: true,
         [description]:
-          'Not so much as an inkling of feeling unsafe while I was here.',
+          "Not so much as an inkling of feeling unsafe while I've been here.",
       },
       [social]: {
         [verdict]: false,
-        [description]:
-          "Meetup only has one regular event here, and the organiser never shows up, so it's unpredictable. I didn't find much else going on.",
+        [description]: 'Not much going on in terms of organised events.',
       },
       [walking]: {
         [verdict]: true,
         [description]:
-          'Really beautfiul streets in the old town; the best way to explore the city.',
+          "Really beautiful streets in the old town, but the whole city's very walkable.",
       },
     },
     [articlePath]: '/articles/sofia-for-digital-nomads',
@@ -778,7 +818,7 @@ export const placesData = [
           "A very easy city to walk around. The traffic doesn't move very quickly.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/ubon-ratchathani-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].udonThani,
