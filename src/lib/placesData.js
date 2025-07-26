@@ -235,7 +235,7 @@ export const placesData = [
           "It's a calm city and the traffic isn't overwhelming, so it's very comfortable to walk around.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/buriram-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].chiangMai,
@@ -655,6 +655,46 @@ export const placesData = [
     [articlePath]: '/articles/siem-reap-for-digital-nomads',
   },
   {
+    [place]: places[countries.northMacedonia].skopje,
+    [country]: countries.northMacedonia,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          "The only place I've been that's cheaper than South-East Asia. Perhaps the cheapest capital city in Europe.",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          "The Internet's not lightning fast, but it's fast enough to comfortably work on, including video calls.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'The riverside and City Park are good places for flat runs, Vodno is good for trail running.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are a couple of vegan restaurant, but variety is lacking. The supermarkets aren't very vegan-friendly.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]: 'I sensed no safety concerns during my five weeks here.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "There's a tame meetup that takes place every Sunday night at a cafe, other than that it's limited to irregular events.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]: 'Very easy and comfortable to walk all over the city.',
+      },
+    },
+    [articlePath]: '/articles/skopje-for-digital-nomads',
+  },
+  {
     [place]: places[countries.bulgaria].sofia,
     [country]: countries.bulgaria,
     [criteria]: {
@@ -778,7 +818,7 @@ export const placesData = [
           "A very easy city to walk around. The traffic doesn't move very quickly.",
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/ubon-ratchathani-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].udonThani,
