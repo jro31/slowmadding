@@ -7,7 +7,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-08-06T13:05:00+03:00', // TODO: Update this
+  date: '2025-08-13T13:05:00+08:00', // TODO: Update this
   title: 'Bucharest for Digital Nomads',
   description: "Romania is one of cheapest countries in the EU, yet it's capital, Bucharest, doesn't attract many digital nomads. Should you add it onto your list?",
   keywords: ['Romania'],
@@ -80,9 +80,9 @@ In my first room here in 2023, the download speeds were over 600mbps and upload 
 
 ## Getting in and out of Bucharest
 
-If you're arriving or departing Bucharest by air, you'll likely be doing so at <ExternalLink url='https://maps.app.goo.gl/VX59Ksh2zRwTHDcN9'>Henri Coandă International Airport</ExternalLink>, Bucharest's main airport, located 16.5km north of the city centre. The most hassle-free way of getting there from the city centre is on the airport train, which runs 24 hours per day, departing in each direction between the airport and <ExternalLink url='https://maps.app.goo.gl/6LxR7ufhRRZ7poRX7'>Gara de Nord</ExternalLink> every 40 minutes. The journey time takes 20 minutes and tickets cost [6 lei].
+If you're arriving or departing Bucharest by air, you'll likely be doing so at <ExternalLink url='https://maps.app.goo.gl/VX59Ksh2zRwTHDcN9'>Henri Coandă International Airport</ExternalLink>, Bucharest's main airport, located 16.5km north of the city centre. The most hassle-free way of getting there from the city centre is on the airport train, which runs 24 hours per day, departing in each direction between the airport and <ExternalLink url='https://maps.app.goo.gl/6LxR7ufhRRZ7poRX7'>Gara de Nord</ExternalLink> every 40 minutes. The journey time takes 20 minutes and tickets cost 6 lei.
 
-[TODO: Add how to buy tickets and catch the train]
+While it's possible to buy tickets at the ticket office before boarding, it's completely unnecessary. Once the train leaves, English-speaking conductors walk down the train taking payment and printing tickets for passengers, so it's much simpler to get on without a ticket. They accept card or cash payment.
 
 Gara de Nord is on lines 1 and 4 of the metro, so taking the underground from here to wherever you're staying is easy.
 
@@ -90,24 +90,34 @@ If arriving or departing by bus, there are two main bus terminals. <ExternalLink
 
 export const gettingInAndOutImages = [
   {
-    src: `${imagePath}/getting-in-and-out/gara-de-nord-airport-train.jpeg`,
-    alt: 'Gara de Nord airport train',
-    caption: 'TODO',
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-departures-board.jpeg`,
+    alt: 'Gara de Nord departures board',
+    caption: "At Gara de Nord, look for the departures board. The airport train is labelled 'AEROPORT H COANDĂ' and leaves every 40 minutes.",
   },
   {
-    src: `${imagePath}/getting-in-and-out/gara-de-nord-metro-entrance.jpeg`,
-    alt: 'Gara de Nord metro entrance',
-    caption: 'TODO',
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-airport-train.jpeg`,
+    alt: 'Gara de Nord airport train',
+    caption: 'From my limited experience (twice) it always leaves from platform 9.',
   },
   {
     src: `${imagePath}/getting-in-and-out/gara-de-nord-ticket-office.jpeg`,
     alt: 'Gara de Nord ticket office',
-    caption: 'TODO',
+    caption: "If you want to buy a ticket before boarding, the ticket office is quite inconspicuous. This is what you're looking for, next to McDonalds.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/airport-train-ticket.jpeg`,
+    alt: 'Airport train ticket',
+    caption: "However it's completely unnecessary. It's much simpler to just board and buy your ticket from the conductor.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-metro-entrance.jpeg`,
+    alt: 'Gara de Nord metro entrance',
+    caption: "If you arrive in Gara de Nord and want to take the metro, look for the 'M' sign through the KFC archway - it marks the escalator down to the metro. As you come into the main station from the platform it'll be on your left.",
   },
   {
     src: `${imagePath}/getting-in-and-out/obor-metro-station.jpeg`,
     alt: 'Obor metro station',
-    caption: 'TODO',
+    caption: "The metro is a very easy way to get around Bucharest for an English-speaker. You can pay with Apple Pay so don't even need to buy tickets.",
   },
 ]
 
@@ -215,7 +225,7 @@ export const tineretuluiParkImages = [
   {
     src: `${imagePath}/running/tineretului-park/birds.jpeg`,
     alt: 'Tineretului lake birds',
-    caption: "There are no real bottlenecks in the circuit, with the exception of one corner that home to a lot of birds. They tend to stay off the park until some unless someone shows up with some food. Then good luck.",
+    caption: "There are no real bottlenecks in the circuit, with the exception of one corner that home to a lot of birds. They tend to stay off the path until someone shows up with some food. Then good luck.",
   },
   {
     src: `${imagePath}/running/tineretului-park/sunset.jpeg`,
