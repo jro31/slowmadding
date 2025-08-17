@@ -6,7 +6,7 @@ import ImageGallery from '@/components/ImageGallery'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-07-10T20:15:00+02:00',
+  date: '2025-10-30T20:15:00+07:00', // TODO: Update this
   title: 'Taipei for Digital Nomads',
   description: "Ever considered Taiwan's capital Taipei as your next destination? Then perhaps you should.",
   keywords: ['Taiwan'],
@@ -1178,3 +1178,38 @@ export const zhongshanApartmentImages = [
 ]
 
 <ImageGallery images={zhongshanApartmentImages} />
+
+### Lofted Studio 10 min Walk to 101
+
+<MapLink name='No. 316, Wenchang Street' url='https://maps.app.goo.gl/eS9wPKJS992eaieA8' />
+
+export const xinyiAnheApartmentStays = [
+  {
+    dates: {
+      checkIn: '2025-08-07',
+      checkOut: '2025-09-18',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/846112557784786546',
+    },
+    roomType: 'Entire rental unit in Xinyi District, Taiwan',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 2189.75,
+        'Monthly stay discount': -559.86,
+        'Service fee': 286.34,
+        'Service fee savings': -57.05,
+        'Taxes': 81.49,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={xinyiAnheApartmentStays} />
+
+TODO
+
+TODO: Add photos
