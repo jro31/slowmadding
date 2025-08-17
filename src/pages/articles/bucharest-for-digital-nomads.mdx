@@ -3,16 +3,478 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-07-26T13:05:00+03:00',
+  date: '2025-08-17T18:45:00+08:00',
   title: 'Bucharest for Digital Nomads',
-  description: "Romania is one of cheapest countries in the EU, so appealing to anyone with a European passport, but it's not in the Schengen zone, making it an ideal cooling-off destination for non-Europeans who've used their 90-day Schengen visa. What does its capital, Bucharest, offer for digital nomads?",
+  description: "Romania is one of the cheapest countries in the EU, yet its capital, Bucharest, doesn't attract many digital nomads. Should you add it onto your list?",
   keywords: ['Romania'],
 }
 
-export const apartmentStays = [
+export const imagePath = '/images/articles/bucharest-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Bucharest is the capital of Romania, one of the cheapest countries in the EU. With a population of almost 2 million people, it's oddly ignored by most digital nomads who choose instead to venture to more expensive, less welcoming cities.
+
+I recently returned for my second visit, and it did nothing to sway my positive opinion. I love it here. Let me tell you why.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/palace-of-parliament-evening.jpeg`,
+    alt: 'Palace of Parliament in the evening',
+    caption: 'The architecture in Bucharest is surprisingly stunning. This is the east side of the Palace of Parliament in the evening.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## How affordable is Bucharest?
+
+Very. It's the best-value capital city within the EU. You'll pay less than 230 lei per night for really nice Airbnbs here. If you're on a budget you can find accommodation cheaper than that. A beer in a bar will cost you around 18 lei and a single trip on the metro is 5 lei.
+
+## Paying for things in Bucharest
+
+The currency of Romania is the Romanian leu, which has the plural form lei and is what you'll commonly see prices suffixed with. In international currency the abbreviation is RON.
+
+Card payments including Apple Pay are accepted basically everywhere. That includes being able to pay for metro tickets using your phone.
+
+During my first visit in 2023 a small number of businesses were still cash-only - I specifically remember having to pay for my gym membership in cash. During my 2025 visit I didn't have to use cash once. Everything that I paid for was with Apple Pay.
+
+## What language is spoken in Bucharest?
+
+Romanian.
+
+## Is it easy to get by with English in Bucharest?
+
+One advantage that Romania has over many of its neighbours is that it uses the Roman alphabet. Even if you don't know a word of Romanian, which I don't, it comes across to me as a mish-mash of other European languages, so if you speak English and have only a rudimentary knowledge of other European languages, you might find that you can understand more written Romanian than you'd expect.
+
+If you go to the supermarket and see 'produse vegane', I probably don't need to tell you that indicates the vegan section. Or if you see 'Acces Parcare' and 'Nu blocati accesul în parcare', it won't take you too long to understand that means 'car park access' and 'don't block access to the car park'. 'Ceai verde' means green tea, 'case de bilete' means ticket office, and I'll give you one guess how to say 'carp' in Romanian.
+
+This doesn't mean that you'll be able to understand everything that you read - you won't, not even close, but you won't feel as lost as you do in other countries in this region that don't use the Roman alphabet.
+
+In terms of how widely English is spoken, you shouldn't expect it from everyone, but most people that you're likely to deal with, for example those working in restaurants or in barber shops, typically speak some English. I find it pretty easy to get by here.
+
+export const englishImages = [
+  {
+    src: `${imagePath}/english/crap.jpeg`,
+    alt: 'Crap',
+    caption: 'Salted carp egg spread anyone?',
+  },
+  {
+    src: `${imagePath}/english/acces-parcare.jpeg`,
+    alt: 'Acces Parcare',
+    caption: "Being a European language that uses the Latin alphabet, you'll be able to understand more written Romanian than you might expect.",
+  },
+]
+
+<ImageGallery images={englishImages} />
+
+## How is the Internet in Bucharest?
+
+Lightning-fast and reliable.
+
+In my first room here in 2023, the download speeds were over 600mbps and upload speeds over 500mbps. In my second room in 2025 I had 400mbps download and 425mbps upload speeds. I've had no reliability issues, and haven't been anywhere in the city without strong mobile coverage.
+
+## Getting in and out of Bucharest
+
+If you're arriving or departing Bucharest by air, you'll likely be doing so at <ExternalLink url='https://maps.app.goo.gl/VX59Ksh2zRwTHDcN9'>Henri Coandă International Airport</ExternalLink>, Bucharest's main airport, located 16.5km north of the city centre. The most hassle-free way of getting there from the city centre is on the airport train, which runs 24 hours per day, departing in each direction between the airport and <ExternalLink url='https://maps.app.goo.gl/6LxR7ufhRRZ7poRX7'>Gara de Nord</ExternalLink> every 40 minutes. The journey takes 20 minutes and tickets cost 6 lei.
+
+While it's possible to buy tickets at the ticket office before boarding, it's not necessary. Once the train leaves, English-speaking conductors walk down the train taking payment and printing tickets for passengers, so it's much simpler to get on without a ticket. They accept card or cash payment.
+
+Gara de Nord is also likely to be the station you arrive at in Bucharest if you come by train, and it's on lines 1 and 4 of the metro, so taking the underground from here to wherever you're staying is easy.
+
+If arriving or departing by bus, there are two main bus terminals. <ExternalLink url='https://maps.app.goo.gl/sa1vwkV6kBtCnXMH8'>Autogara Militari</ExternalLink> is west of the city centre, but an easy walk from Păcii metro station on line 3. When I took a bus to Sofia in 2023, this is where it departed from. I've never had to go there myself, but I understand that <ExternalLink url='https://maps.app.goo.gl/V5sQmoAwpWeunxkr9'>Autogara Filaret</ExternalLink> also has long-distance buses.
+
+export const gettingInAndOutImages = [
+  {
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-departures-board.jpeg`,
+    alt: 'Gara de Nord departures board',
+    caption: "At Gara de Nord, look for the departures board. The airport train is labelled 'AEROPORT H COANDĂ' and leaves every 40 minutes.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-airport-train.jpeg`,
+    alt: 'Gara de Nord airport train',
+    caption: 'From my limited experience (twice) it always leaves from platform 9.',
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-ticket-office.jpeg`,
+    alt: 'Gara de Nord ticket office',
+    caption: "If you want to buy a ticket before boarding, the ticket office is quite inconspicuous. This is what you're looking for, next to McDonalds.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/airport-train-ticket.jpeg`,
+    alt: 'Airport train ticket',
+    caption: "However it's completely unnecessary. It's much simpler to just board and buy your ticket from the conductor.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/gara-de-nord-metro-entrance.jpeg`,
+    alt: 'Gara de Nord metro entrance',
+    caption: "If you arrive in Gara de Nord and want to take the metro, look for the 'M' sign through the KFC archway - it marks the escalator down to the metro. As you come into the main station from the platform it'll be on your left.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/obor-metro-station.jpeg`,
+    alt: 'Obor metro station',
+    caption: "The metro is a very easy way to get around Bucharest for an English-speaker. You can pay with Apple Pay so don't even need to buy tickets.",
+  },
+]
+
+<ImageGallery images={gettingInAndOutImages} />
+
+## Is Bucharest safe?
+
+I've seen nothing to make me think that it's not, and that includes wandering the streets drunk in the middle of the night.
+
+The one thing to be aware of is that Bucharest has a very evident problem with drug addiction. You will be asked for money a lot, and you'll see a lot of people clearly off their tits. I've never felt threatened by them though.
+
+## Who is Bucharest suitable for?
+
+Being in the EU and being as affordable as it is, Bucharest is most suited to EU passport holders on a budget. As of 2025 Romania is a fully-fledged member of the Schengen Area, meaning that it's no longer suitable for nomads looking for a Schengen cool-off.
+
+It's got a lot of green space, so it's very suited to those who like to get outside a lot, and it's a very vegan-friendly city.
+
+The social scene here is a little underwhelming. While it does exist, it's not as vibrant as in other places, so it's perhaps not suited for nomads who're very socially-needy.
+
+So basically if you're a poor, vegan, introvert who likes the outdoors and has an EU passport, you're going to love it here. It's why I came back again.
+
+## Is the tap water drinkable in Bucharest?
+
+Very much so.
+
+## Things I don't like about Bucharest
+
+### Smoking
+
+Bucharest hasn't escaped the plague that infects the rest of Eastern Europe, with an uncomfortably high proportion of the population doing what they can to give everyone else cancer.
+
+Men smoke. Women smoke. Children smoke.
+
+I'm not joking, I saw a school trip and half the kids had cigarettes. Smoking is at least banned indoors, but good luck trying to breathe clean air while walking down the street.
+
+### Drug addiction
+
+Particularly in the city centre, although certainly not limited to it, you'll see a lot of evidence of drug addiction. People trying to fly, that kind of thing.
+
+That means that firstly, you're going to have a lot of people ask you for money. And secondly, there are a lot of people behaving erratically. I've never seen any violence directed towards other people, but I did see one guy get into a fight with a trash can. That kind of unpredictability can put you on edge.
+
+### Emergency messages
+
+The Bucharest authorities are way, way too trigger happy with those emergency messages that get sent to your phone, where even if it's on silent and on do not disturb, it'll start wailing at you. On multiple occasions I've been in the middle of video calls with my phone on do not disturb when they've been sent, which is pretty embarrassing when you're on a work call.
+
+If these messages were being sent for legitimate reasons I wouldn't mind, but the first one I received during my second stay in Bucharest was because someone had misplaced their child.
+
+Ok, great. Thanks for telling me.
+
+There was another one when everyone was told to seek emergency shelter from an incoming storm. It didn't even rain. Multiple others came telling me about a heatwave. It wasn't even that hot, it only got to 38°C. That's good running weather.
+
+My guess is that the authorities are so paranoid that they'll face criticism if anything happens and they didn't send out an emergency message, that they just send them out for anything, but fucking Hell they get annoying.
+
+export const dislikesImages = [
+  {
+    src: `${imagePath}/dislikes/missing-child-alert.jpeg`,
+    alt: 'Missing child alert emergency message',
+    caption: "Missing Child Alert. All that's done is alert the local paedophiles that there's an unattended child somewhere in town.",
+  },
+]
+
+<ImageGallery images={dislikesImages} />
+
+## Being sociable in Bucharest
+
+The social scene for digital nomads in Bucharest isn't completely dead, but it's certainly a bit sickly.
+
+Facebook is a clutter of adverts disguised as events, and there aren't many bars that are appealing to go for a beer by yourself. I find my social life here limited to a small number of active Meetup groups in Bucharest, such as <ExternalLink url='https://www.meetup.com/bucharest-digital-nomads/'>Bucharest Digital Nomads</ExternalLink>, which holds events at different bars around Bucharest.
+
+If having an active social life is important to you, then Bucharest might not be for you.
+
+export const socialImages = [
+  {
+    src: `${imagePath}/social/drunken-lords.jpeg`,
+    alt: 'Drunken Lords',
+    caption: "In 'Drunken Lords' bar in the old town.",
+  },
+]
+
+<ImageGallery images={socialImages} />
+
+## Running in Bucharest
+
+Like many cities in Europe, Bucharest is very running-friendly. While the pavements are quiet enough and the pollution insignificant enough that you can comfortably run along the roads here, there's really no need as there are some really great parks in Bucharest.
+
+### Tineretului Park
+
+<ExternalLink url='https://maps.app.goo.gl/AgPQKS9SuYQrxYSJ6'>Tineretului Park</ExternalLink> is a big park south of the city centre. During my second visit to Bucharest, when I was staying intentionally close by, I came here pretty much everyday to either walk, run, or just get outside and get some sun.
+
+The most obvious running route here is to do laps of the lake, one circumference of which is 2.8km. It's got a wide path all the way around, shared by runners, cyclists, walkers, rollerbladers and electric scooters. Apart from one small corner that's home to a lot of birds that stay off the path unless some genius parents decide to take their kids to feed them, there are no real bottlenecks, so you can comfortably run in either direction.
+
+At the north-eastern tip of the lake you'll find a drinking fountain, with a few others dotted around the park. Even if you don't want to run, this is a great place for a lunchtime walk. There are hundreds of benches all over the park if you want to relax, or quite well hidden on top of a hill is a <ExternalLink url='https://maps.app.goo.gl/mhBRpvGwHoEn455F9'>calisthenics area</ExternalLink> where you can come to do some pull-ups.
+
+The one obvious and expected deficiency in this park is the number of people that smoke, where they make every effort to annoy as many people that are exercising as possible. Given the size of the park, it isn't as bad as in some other parks in Eastern Europe.
+
+export const tineretuluiParkImages = [
+  {
+    src: `${imagePath}/running/tineretului-park/lake.jpeg`,
+    alt: 'Tineretului lake',
+    caption: "Tineretului park centres around Lacul Tineretului, which translates to 'Lake Tineretului'. You're welcome.",
+  },
+  {
+    src: `${imagePath}/running/tineretului-park/path.jpeg`,
+    alt: 'Tineretului lake path',
+    caption: 'A path goes all the way around the lake and is the most popular place in the park to run. One lap is 2.8km.',
+  },
+  {
+    src: `${imagePath}/running/tineretului-park/birds.jpeg`,
+    alt: 'Tineretului lake birds',
+    caption: "There are no real bottlenecks in the circuit, with the exception of one corner that's home to a lot of birds. They tend to stay off the path until someone shows up with some food. Then good luck.",
+  },
+  {
+    src: `${imagePath}/running/tineretului-park/sunset.jpeg`,
+    alt: 'Tineretului lake sunset',
+    caption: "Even if you don't want to run I suggest coming to Tineretului Park. Just to walk or to relax outside it's wonderful, apart from all the nobheads smoking.",
+  },
+  {
+    src: `${imagePath}/running/tineretului-park/calisthenics-area.jpeg`,
+    alt: 'Tineretului Park calisthenics area',
+    caption: "It's quite well hidden on top of a hill, but there's a calisthenics area in the park to come for a bodyweight workout.",
+  },
+  {
+    src: `${imagePath}/running/tineretului-park/map.jpeg`,
+    alt: 'Tineretului Park running route map',
+    caption: 'Coming into the park from the northern-most tip, this is a possible route. This run included two full laps of the lake and came to 9.07km.',
+  },
+]
+
+<ImageGallery images={tineretuluiParkImages} />
+
+### Văcărești Natural Park
+
+<ExternalLink url='https://maps.app.goo.gl/vBE64sfmxc3QRcgQ8'>Văcărești Natural Park</ExternalLink> is probably my favourite place in Bucharest. It's a slightly peculiar place, because it's surrounded by this big, concrete bowl, and as typically happens when you build something out of concrete, people graffitied all over it. That makes it slightly unwelcoming, made even more so by how inconspicuous the entrances are.
+
+It perhaps explains why there's barely ever anyone else here, but I love it. The presumed intention of the bowl is to keep all pollution, including noise pollution, out of the park, which it does very effectively. The park is bordered on two sides by a main road, but once you're inside you wouldn't know it. It's a very peaceful, untamed area of parkland within easy reach of Bucharest city centre. For walking or running, I suggest having it on your list of places to come in Bucharest.
+
+If you're running here you've got two options. You can either go down into the park where there are some trails that are suitable. Or you can run around the edge of the bowl. I prefer the latter.
+
+The top of the bowl has a path that goes all the way around it, with one lap being 5.14km. The downside of this is that being on top of the bowl you're not protected from the noise of the nearby roads, and you're also out in the open with little shade.
+
+As Văcărești is fairly close to Tineretului Park, you can easily combine them into a longer run, the only downside being that to get between the parks you have to cross a couple of main roads that can take a little while.
+
+export const vacarestiNaturalParkImages = [
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/lake.jpeg`,
+    alt: 'Văcărești Natural Park lake',
+    caption: 'Văcărești is a beautiful nature park within easy reach of the city centre and my favourite place in Bucharest.',
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/inner-path.jpeg`,
+    alt: 'Văcărești Natural Park path',
+    caption: "Once you're inside the park there are some trails that are comfortable for both walking and running.",
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/bowl.jpeg`,
+    alt: 'Văcărești Natural Park outer bowl',
+    caption: "Oddly, the park is set within a large, concrete bowl. Ignoring how unsightly it is, this means that there's little pollution of any kind within the park. It's worth noting that, apart from entrance A, where they've built a little walkway, to get in or out of the park you have to walk down the side of the bowl, so it's worth having shoes with decent grip.",
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/outer-path.jpeg`,
+    alt: 'Văcărești Natural Park outer bowl path',
+    caption: 'The other advantage of this concrete bowl is that it has a path going all the way around, which is good for running. One lap is 5.14km.',
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/bench.jpeg`,
+    alt: 'Văcărești Natural Park bench',
+    caption: "Forget about running, Văcărești is a great place to just come and get away from everything. There aren't too many benches here, but there aren't many people either, so you can easily find somewhere secluded to come and relax.",
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/map.jpeg`,
+    alt: 'Văcărești Natural Park running map',
+    caption: 'Văcărești, on the right, is nearby to Tineretului Park, so you can easily combine them for a longer run. This route, that started at the northern-most tip of Tineretului Park, went to Văcărești for one lap on the edge of the bowl, before going back to Tineretului Park for a half lap of the lake, came to 10.93km.',
+  },
+  {
+    src: `${imagePath}/running/vacaresti-natural-park/seasons-sign.jpeg`,
+    alt: 'Văcărești Natural Park seasons sign',
+    caption: "I've only been here in the summer, but this sign near entrance A shows Văcărești through the seasons. It looks just as beautiful in the winter.",
+  },
+]
+
+<ImageGallery images={vacarestiNaturalParkImages} />
+
+### Izvor Park
+
+Izvor Park is much smaller than the two parks mentioned above, with one loop being just 1.25km, but as it was so close to my first room in Bucharest, I really put my laps in here. If you're staying near the city centre and can't be arsed to go to Tineretului Park, it's probably your best bet.
+
+Unsurprisingly it's full of nobheads smoking, which is good cardio training as you have to hold your breath while running past them. And if you come at the wrong time of day, there are packs of poorly attended children. I think a local school or nursery takes them there sometimes, which is annoying because you have to kick them out of the way. Other than that it's a nice place to do laps, and being right in front of the Palace of Parliament is a bonus.
+
+export const izvorParkImages = [
+  {
+    src: `${imagePath}/running/izvor-park/palace-of-parliament.jpeg`,
+    alt: 'Palace of Parliament from Izvor Park',
+    caption: 'Izvor Park is right in front of the Palace of Parliament, so you get a nice view while you run.',
+  },
+]
+
+<ImageGallery images={izvorParkImages} />
+
+## Getting vegan food in Bucharest
+
+Being vegan in Bucharest is as easy as anywhere else that I've been.
+
+While there are only two fully-vegan restaurants in the city centre, and not many more further-out, most restaurants here have something vegan on the menu, so you're not going to struggle.
+
+Even better is the supermarkets are very vegan friendly - you'll find a lot of intentionally vegan items while you're shopping. This is definitely a city to get accommodation with a kitchen if you can.
+
+### Level Up
+
+<MapLink name='Strada Sfânta Vineri 10' url='https://maps.app.goo.gl/cBRwMsvA9qnLtvYw5' />
+
+Level Up is one of the two fully-vegan restaurants in the city centre. It serves vegan takes of a mix of foreign and local foods, with burgers and pizzas dominating the menu. It's definitely not a place to come to be healthy.
+
+From the outside it looks tiny, but that's because most of the seating is downstairs in a really comfortable room that includes six sofas. The staff are really friendly, they speak English, and there's an English copy of the menu. It's all good with one notable caveat: They only open at 2pm. They've got to be the only restaurant in the world that opens right after the lunch-rush.
+
+export const levelUpImages = [
+  {
+    src: `${imagePath}/vegan-food/level-up/double-burger.jpeg`,
+    alt: 'Level Up Double Burger',
+    caption: 'So good that even the burger is licking his lips, this is the double burger for 29 lei, with salad and fries for an extra 9 lei.',
+  },
+  {
+    src: `${imagePath}/vegan-food/level-up/super-duper-veg-mici.jpeg`,
+    alt: 'Level Up Super-Duper VegMici',
+    caption: "They call this the 'Super-Duper VegMici'. It's described as an \"ultra-Romanian dish\". It was a bit weird, but at least it's different. It costs 29 lei.",
+  },
+  {
+    src: `${imagePath}/vegan-food/level-up/no-chicken-strips-la-farfurie.jpeg`,
+    alt: 'Level Up NoChicken Strips la farfurie',
+    caption: "The 'NoChicken Strips la farfurie'. No, I don't know what that means either, and no it wasn't healthy, but I'd do it again. This plate cost 37 lei.",
+  },
+  {
+    src: `${imagePath}/vegan-food/level-up/downstairs.jpeg`,
+    alt: 'Level Up downstairs',
+    caption: "From the street the restaurant looks very small. That's because most of the seating is downstairs, and it's a really nice place to come and sit for a while.",
+  },
+]
+
+<ImageGallery images={levelUpImages} />
+
+### Sublimme
+
+<MapLink name='Splaiul Independenței' url='https://maps.app.goo.gl/cvE1tSVHAbAbSXtB7' />
+
+Sublimme is the other fully-vegan restaurant that you'll find in the city centre. It's much more health-focused than Level Up.
+
+On weekdays they have a menu of the day, which for 49 lei includes a soup and a main dish. I recommend that simply because service can otherwise be a bit slow. And while they do open each day at 11am, wait until midday before coming here. If you come at 11:15am like I did one day, they'll complain that they haven't had time to get ready yet, like that's your fault.
+
+The restaurant itself is pretty comfortable. It has three sofas, although one is always occupied by a staff member's laptop. Once the food arrives, it's always very good.
+
+export const sublimmeImages = [
+  {
+    src: `${imagePath}/vegan-food/sublimme/proteic-bowl-first-visit.jpeg`,
+    alt: 'Sublimme Proteic Bowl 2023',
+    caption: "On the menu they have something called a proteic bowl (I assume that's a typo of protein). On my first visit to Bucharest in 2023 it looked like this, which is kind of what I was expecting. I came back here in 2025 and ordered it again expecting the same thing, except this time...",
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/proteic-bowl-second-visit.jpeg`,
+    alt: 'Sublimme Proteic Bowl 2025',
+    caption: '...it had turned-into a pad Thai. It was still actually pretty good, but not exactly what I imagine for a salad bowl. It costs 44 lei.',
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/pumpkin-soup.jpeg`,
+    alt: 'Sublimme pumpkin cream soup with coconut cream',
+    caption: 'Every weekday they have a menu of the day that includes a soup. This is the pumpkin cream soup with coconut cream.',
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/toasted-wrap.jpeg`,
+    alt: 'Sublimme toasted wrap',
+    caption: "The menu of the day also includes a main dish. On Fridays that's a toasted wrap with sweet smoked chilli sauce.",
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/seitan-and-veggie-wrap.jpeg`,
+    alt: 'Sublimme seitan and veggie wrap',
+    caption: "Or on Thursday it's this seitan and veggie wrap. It's not as healthy as some of the other options, so I recommend skipping Thursday.",
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/barbecue-vegan-burger.jpeg`,
+    alt: 'Sublimme barbecue vegan burger with baked potatoes',
+    caption: 'The burgers are definitely worth trying too. This is the barbecue vegan burger with baked potatoes, which costs 48 lei.',
+  },
+  {
+    src: `${imagePath}/vegan-food/sublimme/inside.jpeg`,
+    alt: 'Sublimme inside',
+    caption: 'Sublimme is a pleasant enough place to come and have lunch, if you can get one of the sofas at least. The plastic chairs are less appealing.',
+  },
+]
+
+<ImageGallery images={sublimmeImages} />
+
+### Groceries
+
+Vegan grocery shopping in Bucharest is as easy as anywhere else that I've been.
+
+The main city centre supermarket is <ExternalLink url='https://goo.gl/maps/e6bqcvrrVywAj3YK6'>Carrefour</ExternalLink>. It has two floors, and up on the second floor it has a large 'free-from' section that includes many vegan items like protein bars, that aren't available in the supermarkets of other major cities in this region. It also has dedicated vegan parts in the chilled and frozen sections.
+
+Even more vegan-friendly than Carrefour is Mega Image - they have small to medium-sized branches all over the city, and just in those you're going to find a lot of intentionally vegan items. Sausages, nuggets, even cheesecake and other things to make yourself fat.
+
+If for some reason you can't find what you need in these stores, Mega Image has some larger branches like the one on <ExternalLink url='https://maps.app.goo.gl/DdN1Qi3P3RWMLvSF7'>General Gheorghe Magheru street</ExternalLink>, which is spread over two floors. It's as good of a place to do vegan grocery shopping as anywhere I've come across in this part of the world.
+
+Between Carrefour and Mega Image you're well covered for groceries, but I was going through a bit of a fitness-kick during my second stay in Bucharest, meaning I wanted vegan multivitamins and vegan protein powders. For those and other vegan supplements, I found that <ExternalLink url='https://maps.app.goo.gl/ABxhC8Fxw4pKX1P49'>Bebe Tei</ExternalLink> was the best place.
+
+It's a slightly odd store, in that from the outside it looks like a mother and baby store. Their logo is a pram and the items most prominently on display are children's toys, buggies, cots and high chairs. I felt a bit odd walking in here for the first time as a lone, childless man. However, once you get past the mothering section, they have a health food section that includes some vegan foods that you might not be able to find elsewhere, but also an overwhelming amount of supplements, including many that are vegan-friendly.
+
+export const groceriesImages = [
+  {
+    src: `${imagePath}/vegan-food/groceries/carrefour-vegan-fridge.jpeg`,
+    alt: 'Carrefour vegan fridge',
+    caption: "Unlike in other cities in this region, you'll find dedicated vegan sections in the supermarkets in Bucharest, like here in Carrefour.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/carrefour-vegan-protein-bars.jpeg`,
+    alt: 'Carrefour vegan protein bars',
+    caption: "On the upstairs floor of Carrefour you'll even find vegan protein bars.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/mega-image-inside.jpeg`,
+    alt: 'Inside Mega Image on General Gheorghe Magheru',
+    caption: 'Mega Image is even more vegan-friendly than Carrefour. This is the second floor of their Gheorghe Magheru street branch.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/bebe-tei-outside.jpeg`,
+    alt: 'Bebe Tei from outside',
+    caption: "For vegan supplements, the best place I found in Bucharest is Bebe Tei. From the outside it looks like a mother and baby store, but don't let that put you off.",
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/bebe-tei-vegan-multivitamin.jpeg`,
+    alt: 'Bebe Tei vegan multivitamin',
+    caption: 'Once you go inside and through all the child-friendly crap, they have a huge-selection of health foods and supplements, including vegan multivitamins and vegan protein powders.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/falafel-baguettes.jpeg`,
+    alt: 'Falafel baguettes',
+    caption: 'Because of how easy it is to do vegan grocery shopping in Bucharest, I recommend staying something with a good kitchen. These freshly-baked falafel and hummus baguettes were made with ingredients from a medium-sized branch of Mega Image.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/hummus-toast.jpeg`,
+    alt: 'Hummus toast',
+    caption: 'As was this hummus wholewheat toast.',
+  },
+  {
+    src: `${imagePath}/vegan-food/groceries/hummus-pasta.jpeg`,
+    alt: 'Hummus pasta',
+    caption: 'Hummus pasta. You might be seeing a theme here.',
+  },
+]
+
+<ImageGallery images={groceriesImages} />
+
+## Where I stayed
+
+Either through luck or skill, I've had two absolutely amazing Airbnbs in Bucharest. I don't have a bad word to say about either of them. Finding them on Airbnb wasn't a struggle like in other places - there seems to just be a lot of really high quality accommodation in Bucharest.
+
+### Flexible Check-In/Out apartment
+
+<MapLink name='Strada Vânători 5-11' url='https://goo.gl/maps/g6Q2c21rnBmnV7na8' />
+
+export const stradaVanatoriApartmentStays = [
   {
     dates: {
       checkIn: '2023-06-14',
@@ -24,354 +486,215 @@ export const apartmentStays = [
     },
     roomType: 'Entire condo hosted by Alexandru',
     price: {
-      currencyPrefix: null,
-      currencySuffix: 'lei',
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
       sections: {
-        Room: 8178.00,
-        '45% monthly price discount': -3680.10,
-        'Service fee': 501.85,
+        Room: 1455.06,
+        '45% monthly price discount': -654.78,
+        'Service fee': 89.29,
       },
     },
   },
 ]
 
-export const imagePath = '/images/articles/bucharest-for-digital-nomads'
+<AccommodationTable stays={stradaVanatoriApartmentStays} />
 
-export const cityImages = [
-  {
-    src: `${imagePath}/city/palace-of-parliament-evening.jpeg`,
-    alt: 'Palace of Parliament in the evening',
-    caption: 'Knowing very little about Romania before arriving here, I was stunned by the Bucharest architecture. This is the east side of the Palace of Parliament, taken in the evening.',
-  },
-  {
-    src: `${imagePath}/city/vacaresti-nature-park.jpeg`,
-    alt: 'Văcărești Nature Park',
-    caption: 'Perhaps my favourite place in Bucharest is the Văcărești Nature Park. Right in the middle of the city you have this big area of untamed parkland.',
-  },
-  {
-    src: `${imagePath}/city/underground-gym.jpeg`,
-    alt: 'Underground Gym',
-    caption: "One thing that I had to get used to in Bucharest was how understated businesses are. This is the entrance to my gym. The sign above the door says 'Indaco Software Development' (which is on the floor above). To know there's a gym here, you just have to know.",
-  },
-  {
-    src: `${imagePath}/city/constantin-brancoveanu-metro-station.jpeg`,
-    alt: 'Constantin Brancoveanu metro station',
-    caption: 'Bucharest has an extensive transport network that can take you pretty much anywhere in the city. This is the Constantin Brancoveanu metro station.',
-  },
-  {
-    src: `${imagePath}/city/central-university-library-carol-I.jpeg`,
-    alt: 'Central University Libary Carol I',
-    caption: "The Central University Library Carol I building. I didn't go in there, I just thought it was a nice photo.",
-  },
-  {
-    src: `${imagePath}/city/palace-of-parliament-morning.jpeg`,
-    alt: 'Palace of Parliament in the morning',
-    caption: "The north side of the Palace of Parliament taken in the early morning.",
-  },
-  {
-    src: `${imagePath}/city/tribes-by-nelz-painting.jpeg`,
-    alt: 'Tribes by Nelz painting',
-    caption: "This painting was in the 'Tribes by Nelz' restaurant. I don't know what the meaning is and it doesn't have much else to do with Bucharest, I just thought it was a cool painting.",
-  },
-]
+This was the first place that I stayed in Bucharest, and it was perfect.
 
-export const apartmentImages = [
+It's very near to the city centre while still being in a local area. Izvor Park is a short walk away, giving you some nearby green space. The large Carrefour supermarket in the centre of town is about a fifteen minute walk from the room. Izvor and Piața Unirii metro stations are both about an eight minute walk away, and two of Bucharest's vegan restaurants are also an easy walk.
+
+The room is on the third floor of an apartment block. From the outside the apartment block doesn't look great, but once you're inside it's lovely. It's a one-bedroom apartment, but the living area has ample space for yoga and other exercise. There's a TV and an air conditioner in both the bedroom and the living room, and the sofa is sufficiently comfortable that I often worked on it when on my laptop, even though there's a dining table and four chairs that you can use to setup an actual workspace. The wifi here in 2023 was the fastest I'd ever used, consistently having over 600mbps and 500mbps download and upload speeds respectively. The kitchen includes a large fridge/freezer, an oven and a cooker, and more cooking tools/utensils than you'd expect to find in an Airbnb. In the bedroom you have a comfortable double bed with plenty of storage space, and there's a balcony that's really pleasant to sit on with a book and a cup of tea, provided the people on adjacent balconies aren't smoking (which they normally are).
+
+That alone would make it a five-star Airbnb, but what I really loved about this place is how much every little detail had been thought about by the host. So many snacks and drinks are included with the room. That includes nineteen different types of craft beer, one bottle of whiskey, two bottles of wine, many soft drinks, peanuts, crisps, chocolate, popcorn and even fresh fruit. If you then go into the bathroom cupboard you'll find every chemical you could need, from things you might expect like laundry detergent and shampoo, to things you're never going to need, like nail polish remover. In the bedroom cupboard you'll find more clean towels and sheets than you'll know what to do with, and search around the apartment and you'll find extension cords and converter plugs.
+
+I carry everything that I need with me, just because many hosts aren't so thoughtful, but even I still appreciated how much thought had gone into making my stay as comfortable as it could be.
+
+My only criticism is the people in other apartments smoking on their balconies. If you happen to have the windows open and the person next door starts smoking, the smoke blows-in. So where I might have preferred to keep the windows open and the AC turned-off, I generally kept the windows closed.
+
+Unless you find a detached house in the middle of Bucharest, that's going to be a problem anywhere. This is still up there among the best Airbnbs I've stayed at.
+
+export const stradaVanatoriApartmentImages = [
   {
-    src: `${imagePath}/apartment/living-area.jpeg`,
-    alt: 'Apartment living area',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/living-area.jpeg`,
+    alt: 'Strada Vânători apartment living area',
     caption: "The living area is very spacious, especially if you're alone. Plenty of space to do yoga. Probably enough space for two people to do yoga.",
   },
   {
-    src: `${imagePath}/apartment/kitchen.jpeg`,
-    alt: 'Apartment kitchen',
-    caption: "The kitchen was very well equipped, and the dining table and chairs weren't only nice for eating at, but made for a great workspace too. Out of shot there's an air-conditioner.",
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/kitchen.jpeg`,
+    alt: 'Strada Vânători apartment kitchen',
+    caption: "The kitchen is very well equipped, and the dining table and chairs weren't only nice for eating at, they made for a great workspace too. Out of shot is an air-conditioner.",
   },
   {
-    src: `${imagePath}/apartment/fridge.jpeg`,
-    alt: 'Apartment fridge',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/fridge.jpeg`,
+    alt: 'Strada Vânători apartment fridge',
     caption: 'The apartment comes with loads and loads of complimentary snacks. This was the fridge as I arrived at the room. It includes 19 craft beers, a bottle of wine and a bottle of whiskey. Outside of the fridge was another bottle of wine and an entire cupboard full of snacks. Although not all vegan, none of them contained any meat, which I appreciated.',
   },
   {
-    src: `${imagePath}/apartment/bed.jpeg`,
-    alt: 'Apartment bed',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/bed.jpeg`,
+    alt: 'Strada Vânători apartment bed',
     caption: 'The bed was really comfortable, and out of view is another air-conditioner.',
   },
   {
-    src: `${imagePath}/apartment/bedroom.jpeg`,
-    alt: 'Apartment bedroom',
-    caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there was a second TV in the bedroom.",
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/bedroom.jpeg`,
+    alt: 'Strada Vânători apartment bedroom',
+    caption: "There's more than enough storage space in the cupboard, which also includes plenty of towels and spare bedding, and although I never used it, there's a second TV in the bedroom.",
   },
   {
-    src: `${imagePath}/apartment/bathroom.jpeg`,
-    alt: 'Apartment bathroom',
-    caption: "The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kid, and laundry detergent and fabric softener (there's a washing machine with drying rack just outside the bathroom).",
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/bathroom.jpeg`,
+    alt: 'Strada Vânători apartment bathroom',
+    caption: "The bathroom was nice, and the cupboard below the sink has all kinds of useful things, such as shampoo and shower gel, cleaning products, more toilet paper than your arse will know what to do with, a hair dryer, a first aid kit, and laundry detergent and fabric softener (there's a washing machine with drying rack just outside the bathroom).",
   },
   {
-    src: `${imagePath}/apartment/balcony.jpeg`,
-    alt: 'Apartment balcony',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/balcony.jpeg`,
+    alt: 'Strada Vânători apartment balcony',
     caption: "The balcony, accessed from the living area, is pleasant to step-out onto or to sit with a cup of tea.",
   },
   {
-    src: `${imagePath}/apartment/view.jpeg`,
-    alt: 'Apartment view',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/view.jpeg`,
+    alt: 'Strada Vânători apartment view',
     caption: 'The view from the balcony is nice if you look in the right direction.',
   },
   {
-    src: `${imagePath}/apartment/building.jpeg`,
-    alt: 'Apartment building',
+    src: `${imagePath}/accommodation/strada-vanatori-apartment/building.jpeg`,
+    alt: 'Strada Vânători apartment building',
     caption: "The building from the outside.",
   },
 ]
 
-export const levelUpImages = [
-  {
-    src: `${imagePath}/level-up/double-burger.jpeg`,
-    alt: 'Level Up Double Burger',
-    caption: 'So good that even the burger is licking his lips. This is the double burger for 29 lei, with salad and fries for an extra 9 lei.',
-  },
-  {
-    src: `${imagePath}/level-up/super-duper-veg-mici.jpeg`,
-    alt: 'Level Up Super-Duper VegMici',
-    caption: "They call this the 'Super-Duper VegMici'. It's allegedly an \"ultra-Romanian dish\". It was a bit weird, but you've got to sample the culture, right? It costs 29 lei.",
-  },
-  {
-    src: `${imagePath}/level-up/downstairs.jpeg`,
-    alt: 'Level Up downstairs',
-    caption: "From the street the restaurant looks very small, but most of the seating is downstairs, and it's a really nice place to come and sit. With all the sofas, it's a great place to come and listen to a podcast. Or to come and sit with friends if you have any.",
-  },
-  {
-    src: `${imagePath}/level-up/no-chicken-strips-la-farfurie.jpeg`,
-    alt: 'Level Up NoChicken Strips la farfurie',
-    caption: "The 'NoChicken Strips la farfurie'. No, I don't know what that means either, and no it wasn't healthy. I'd just got out the gym though. That's how it works, right? This plate costs 37 lei.",
-  },
-]
+<ImageGallery images={stradaVanatoriApartmentImages} />
 
-export const sublimmeImages = [
+### Central Exquisite Gold
+
+<MapLink name='Bulevardul Dimitrie Cantemir 22' url='https://maps.app.goo.gl/BmJyDvkyp19MUbWu8' />
+
+export const bulevardulDimitrieCantemirApartmentStays = [
   {
-    src: `${imagePath}/sublimme/proteic-bowl.jpeg`,
-    alt: 'Sublimme Protiec Bowl',
-    caption: "This is the protiec bowl with rice, tofu and vegetables. I have no idea if proteic is actually a word or it's supposed to be protein and they just mispelled it on the menu. Either way it's a really good, healthy lunch for 38 lei.",
-  },
-  {
-    src: `${imagePath}/sublimme/pumpkin-soup.jpeg`,
-    alt: 'Sublimme pumpkin cream soup with coconut cream',
-    caption: 'Every weekday they have a menu of the day for 42 lei that includes a main and a soup. On Tuesdays the soup is this pumpkin cream soup with coconut cream.',
-  },
-  {
-    src: `${imagePath}/sublimme/toasted-wrap.jpeg`,
-    alt: 'Sublimme toasted wrap',
-    caption: 'The main from the Tuesday menu of the day is this toasted wrap with sweet smoked chilli sauce.',
-  },
-  {
-    src: `${imagePath}/sublimme/barbecue-vegan-burger.jpeg`,
-    alt: 'Sublimme barbecue vegan burger with baked potatoes',
-    caption: 'Even the burgers somehow look healthy here. This is the barbecue vegan burger with baked potatoes, which costs 39 lei.',
-  },
-  {
-    src: `${imagePath}/sublimme/inside.jpeg`,
-    alt: 'Sublimme inside',
-    caption: "It's a pleasant place to come and get lunch.",
+    dates: {
+      checkIn: '2025-07-09',
+      checkOut: '2025-08-06',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/733835857097230841',
+    },
+    roomType: 'Entire condo in Bucharest, Romania',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1379.74,
+        'Monthly stay discount': -407.40,
+        'Service fee': 170.84,
+        'Service fee savings': -34.04,
+      },
+    },
   },
 ]
 
-export const supermarketsImages = [
+<AccommodationTable stays={bulevardulDimitrieCantemirApartmentStays} />
+
+I was so dejected at my previous accommodation being unavailable when I decided to come back to Bucharest that I almost changed my plans to go to another city altogether. Eventually I decided that I'd come back and stay here instead, and that was a good move. This is a great apartment.
+
+It perhaps doesn't have quite as many of the nice little touches as the room above, but I was still very impressed by how much was included. Many different teas, oil, salt and pepper to cook with, more toilet roll than I would use in a year, and even a bottle of wine in the fridge.
+
+It's a gold-themed room, which I really liked. The walls are gold, the lights are gold, the taps are gold, the cutlery is gold, even the bum gun is gold. Yes, I did say that.
+
+To the uninitiated, a bum gun is a water hose that sits behind the toilet and is used like a handheld bidet. They're behind every toilet in South-East Asia, and my biggest frustration when I come back to Europe each year is that they don't exist here and I have to use toilet paper instead. Except one exists in this apartment, and not only is the bum gun gold, but it has a temperature control, meaning you can spray hot or cold water up your arse. Even Thailand isn't that advanced yet.
+
+The location of this apartment is perfect. Tineretului Park is just a short walk away, and there's not one, but two medium-sized branches of Mega Image a 5-10 minute walk away, including on the way back from the park, so getting groceries while staying here is easy, as is cooking them seeing as the kitchen contains just about every utensil that you're going to need. Tineretului metro station is just outside the apartment, and you're about a 25-minute walk from the town centre.
+
+The living room here is really comfortable. It has a very long and comfortable sofa, which is great for working from, and it faces a large TV. There's plenty of floor space to workout on, and there's a desk that includes an external monitor. Both the living room and the bedroom have air conditioning units.
+
+There is no balcony, but that's the only criticism I could level. I loved this room, and given its location, might even rate it ahead of the one above.
+
+export const bulevardulDimitrieCantemirApartmentImages = [
   {
-    src: `${imagePath}/supermarkets/carrefour-vegan-fridge.jpeg`,
-    alt: 'Carrefour vegan fridge',
-    caption: 'Carrefour sells a lot of vegan produce. These are the vegan dairy alternatives (butter, cheese, yogurt).',
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/bed.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment bed',
+    caption: "It's a gold-themed room, if you couldn't tell.",
   },
   {
-    src: `${imagePath}/supermarkets/mega-image-outside.jpeg`,
-    alt: 'Mega Image on General Gheorghe Magheru from outside',
-    caption: "This Mega Image on General Gheorghe Magheru street was the best supermarket I found in Bucharest for vegan food. There are many other Mega Image stores dotted around Bucharest, although I didn't go to enough of them to know if this branch is an outlier, or if they're all this vegan-friendly.",
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/wardrobe.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment wardrobe',
+    caption: 'That wardrobe has plenty of space to store your things, and the mirror faces the bed, so you can lie there looking at yourself if you feel like.',
   },
   {
-    src: `${imagePath}/supermarkets/mega-image-inside.jpeg`,
-    alt: 'Inside Mega Image on General Gheorghe Magheru',
-    caption: "Inside Mega Image on General Gheorghe Magheru street. It's not a vegan supermarket, it sells all kinds of produce, however it has a focus on 'free from' foods (vegan, gluten-free, wheat-free etc).",
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/sofa.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment sofa',
+    caption: "The living room is just as gold. That sofa's really comfortable, and moving the coffee table gives you plenty of floor space for exercise.",
   },
   {
-    src: `${imagePath}/supermarkets/hummus-pasta.jpeg`,
-    alt: 'Hummus pasta',
-    caption: 'Hummus pasta - fry an onion, cook some wholewheat pasta, mix them together with a pot of hummus and half a cup of the pasta cooking water, and you too can be flabby and out of shape like me. All ingredients available at Carrefour.',
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/living-room.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment living room',
+    caption: "The TV's a good size, and in the corner is a workstation that includes an external monitor.",
   },
   {
-    src: `${imagePath}/supermarkets/falafel-wrap.jpeg`,
-    alt: 'Falafel wrap',
-    caption: 'Falafel wrap - Cook the falafel according to the package instructions, spread some hummus on those wrap things that they sell in Carrefour, add whichever veg is on special offer, roll it all up, bon appetit.',
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/kitchen.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment kitchen',
+    caption: "The kitchen is equipped with all you need, including gold cutlery, and it has the only porcelain electric kettle I've ever come across.",
+  },
+  {
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/bathroom.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment bathroom',
+    caption: 'The bathroom has a gold shower, and even a gold bin.',
+  },
+  {
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/bum-gun.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment toilet and bum gun',
+    caption: 'But best of all, is the gold bum gun. This was my favourite thing about the apartment.',
+  },
+  {
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/hallway.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment hallway',
+    caption: 'The front door is the door on the right here, the bedroom is at the end of the hall, the room to the left of that is the living room, the bathroom is next to that, and then out-of-shot to the left of the camera is the kitchen.',
+  },
+  {
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/view.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment view',
+    caption: 'The bedroom and living room windows face roughly west, which makes for some nice views in the evening.',
+  },
+  {
+    src: `${imagePath}/accommodation/bulevardul-dimitrie-cantemir-apartment/outside.jpeg`,
+    alt: 'Bulevardul Dimitrie Cantemir apartment from outside',
+    caption: 'The building from outside.',
   },
 ]
 
-export const runningImages = [
-  {
-    src: `${imagePath}/running/izvor-park-strava.jpeg`,
-    alt: 'Izvor Park Strava map',
-    caption: "Izvor Park is about 1.25km, so it's four laps to do a 5k.",
-    url: 'https://www.strava.com/activities/9312921791',
-  },
-  {
-    src: `${imagePath}/running/izvor-park.jpeg`,
-    alt: 'Palace of Parliament from Izvor Park',
-    caption: "Izvor Park is right in front of the Palace of Parliament, so you get a nice view while you run. Although if you have the energy to look at it then you're not running fast enough.",
-  },
-  {
-    src: `${imagePath}/running/tineretului-park.jpeg`,
-    alt: 'Tineretului Park',
-    caption: "Although I didn't run here myself, when I came to Tineretului Park to walk there were a lot of people that were running. It's a lot bigger than Izvor Park, so a good place to come for a longer run.",
-  },
-]
-
-export const socialImages = [
-  {
-    src: `${imagePath}/social/drunken-lords.jpeg`,
-    alt: 'Drunken Lords',
-    caption: "In 'Drunken Lords', which is a bar/nightclub in the old town.",
-  },
-  {
-    src: `${imagePath}/social/tribes-by-nelz.jpeg`,
-    alt: 'Tribes by Nelz',
-    caption: "This photo is of an 'Expats in Romania' Meetup at 'Tribes by Nelz' African restaurant. Always good to try some local cuisine.",
-  },
-]
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-When I arrived in Bucharest it was my first time in eastern Europe, and you know what it felt like?
-
-Eastern Europe.
-
-Sometimes you go places and they surprise you. When I first went to China it was nothing like I expected. Bucharest though, I got off the plane and was like _"Oh look, eastern Europe."_
-
-I'm not sure what it is that makes it feel like eastern Europe, whether it's the accents and mannerisms of the people, the cars that look distinctively eastern European, the architecture, a combination of these or something else altogether, but if you've never been to Bucharest and you're reading this article to get an idea what it's like, then it's just like you're imagining.
-
-Bucharest centers around the Old Town, which unfortunately has fallen the way of other European cities in catering to British stag parties. I didn't spend much time in the Old Town after dark, but even during the daytime, the neo-Brancovean architecture is mired by the signs for adult entertainment. When you branch-out from the overtly touristy town centre, Bucharest quickly becomes a gratifyingly habitable and at times pleasant place to be.
-
-In their own way, Bucureștean people are friendly and welcoming. Perhaps not as obviously as elsewhere, but I can appreciate displays of true emotion as opposed to false smiles. When you return somewhere that people have got to know you, they become warmer with each visit.
-
-It's a city that feels very clean and open. The roads are wide and largely void of heavy traffic, so it's a pleasant place to walk around, even though the public transport network goes to all corners of the city. Plus, if you really want to get away there are a couple of large parks within easy reach of the city centre. To go for a run or a relaxing walk, Tineretului Park is what you expect a city centre park to be. For a bit more wilderness, head to Văcărești Nature Park, which is largely untouched and brimming with wildlife.
-
-One thing that took me a bit of getting used to, is how subtle and non-descript many businesses are. It's a feature of western capitalism that a business shout louder than its competitors to attract custom. Every business on a high-street in London has colourful signage to declare their presence and to draw your attention from elsewhere. In Bucharest it's not like that. There are bars that from the outside do little to indicate that there are dozens of people buying drinks on the rooftop. The gym which I signed-up to has no signage whatsoever. It was only thanks to Google Maps that I knew there was a gym there at all, and when I happened to see someone in workout clothes, I followed them.
-
-Romania uses the Latin alphabet, which unlike several nearby countries, makes it very easy for an English speaker. Not speaking a word of Romanian myself, I could understand roughly one in every ten words I read, just because they were similar to English words, or to the few French/Spanish/Italian words that I know. It also means that Google Translate is pretty much 100% accurate when pointing your phone at something, so even buying food where the packaging is only written in Romanian, it's still easy to understand the ingredients.
-
-In terms of its affordability, I won't hide that I came to Bucharest simply because Romania is one of the cheapest countries in the EU, and it didn't disappoint. It's a bit more expensive than south-east Asian countries, so don't come here expecting to get by on what you paid in Bangkok, but compared to somewhere like London, Bucharest is gloriously cheap, and it doesn't come at the cost of infrastructure.
-
-I paid €6 for a 4G SIM with 100GB of data that lasted me the entire month I was here. Tethering my laptop to my mobile hotspot, this was comfortably fast enough for video calls. The wifi that I had in my room was the fastest I've ever used, consistently having upload and download speeds exceeding 500mbps.
-
-Bucharest is truly a great place for a digital nomad, particularly one with an EU passport. There were though, two things that I didn't like here.
-
-The first was that there's very evident drug addiction in the city. You regularly walk past people spazzed-out on whatever it is they've taken. And while that didn't cause me any issues directly, I like the comfort of being surrounded by rational and predictable behaviour.
-
-The second was that everyone smokes in Bucharest, and I do mean everyone. Men smoke, women smoke, children smoke.
-
-I'm not joking, I saw a school trip and half the kids had cigarettes. And you know the one thing in the world I hate?
-
-Smoking.
-
-It is at least confined to outdoor areas, or to areas that can be perceived as outdoors, so you don't have to worry about someone lignting-up if you're sitting indoors at a restaurant, but if you go to an outdoor bar? If you go for a run in the park? If you walk down the street? Smoking everywhere.
-
-<ImageGallery images={cityImages} />
-
-## Where I stayed
-
-### Flexible Check-In/Out apartment
-
-<MapLink name='Strada Vânători 5-11' url='https://goo.gl/maps/g6Q2c21rnBmnV7na8' />
-
-<AccommodationTable stays={apartmentStays} />
-
-Welcome to the world's most perfect Airbnb. I loved this place.
-
-Starting with the location, which to me is the most important thing, this room is near to the city centre while still being in a local area. It is a very short walk to Izvor Park, which is a good place to go for a run, a walk, or to just sit with a book. At the end of the park is <ExternalLink url='https://goo.gl/maps/UDasTPaVpx1GyQ3cA'>Underground Gym</ExternalLink>, which just to be difficult is not underground. I signed-up there for a month when I came to Bucharest and went there almost every other day. There are many smaller convenience stores nearby, and the large Carrefour supermarket is about a fifteen minute walk from the room. Izvor and Piața Unirii metro stations are both about an eight minute walk away, and two of Bucharest's four vegan restaurants are also easy walking distance. If you need anything more than that, then you're more demanding than me.
-
-As for the room, it's on the third floor of an apartment block. From the outside the apartment block doesn't look all that, especially if you're used to places that favour glamorous architecture. Once you're inside it's perfectly lovely.
-
-It's a one-bedroom place, but the living area has ample space for yoga and other exercise. There's a TV and an air conditioner in both the bedroom and the living area. The sofa is sufficiently comfortable that I often worked on it when on my laptop, but there's also a dining table and four chairs should you want to setup and actual workspace. The wifi is the fastest I've ever used, there's a kitchen that includes a large fridge/freezer, an oven and a cooker, and more cooking tools/utensils than you'd expect to find in an Airbnb. In the bedroom you have a comfortable double bed with plenty of storage space, and there's a balcony that's really pleasant to sit on with a book and a cup of tea, provided the people on adjacent balconies aren't smoking.
-
-That alone would make it a five-star Airbnb, but what I really loved about this place is how much every little detail had been thought about by the host. So many snacks and drinks are included with the room. That includes nineteen different types of craft beer, one bottle of whiskey, two bottles of wine, many soft drinks, peanuts, crisps, chocolate, popcorn and even fresh fruit. If you then go into the bathroom cupboard you'll find every chemical you could need, from things you might expect like laundry detergent and shampoo, to things you're never going to need, like nail polish remover. In the bedroom cupboard you'll find more clean towels and sheets than you'll know what to do with, and even a laundry basket, and search around the apartment and you'll find extension cords and converter plugs.
-
-I carry everything that I need with me, just because many hosts aren't so thoughtful, but even I still appreciated how much thought had gone into making my stay as comfortable here as it could be.
-
-My only criticism, and it's one that echoes around my entire sentiment of Bucharest, is that people in other apartments smoke on the balconies. If you happen to have the windows open and the person next door starts smoking, the smoke blows-in. So where I might have preferred to keep the windows open and the AC turned-off, I generally kept the windows closed.
-
-Unless you find a detached house in the middle of Bucharest, that's going to be a problem anywhere. This is still up there as the best Airbnb I've stayed at. I look forward to staying again.
-
-<ImageGallery images={apartmentImages} />
-
-## Where to get vegan food in Bucharest
-
-Getting vegan food in Bucharest is so easy that I considered removing this section. While there are only four fully-vegan restaurants in Bucharest, the attitude here has become like that of the UK, where pretty much every restaurant has _something_ vegan on the menu, so you're really not going to struggle.
-
-Still, some places are better than others. Below were my regular spots to find vegan food.
-
-### Level Up
-
-<MapLink name='Strada Sfânta Vineri 10' url='https://maps.app.goo.gl/cBRwMsvA9qnLtvYw5' />
-
-Level Up is one of the four fully-vegan restaurants in Bucharest, and it was my favourite place to get food while I was here.
-
-It serves vegan takes of a mix of foreign and local foods, with several burgers and pizzas dominating the menu. It's definitely not a place to come to be healthy, but that's just extra motivation to go for a run tomorrow.
-
-From the outside it looks tiny, but that's because most of the seating is downstairs in a really comfortable room that has at least six sofas. That's my kind of restaurant. The staff were always really friendly, they speak English, and there's an English copy of the menu. If you only have time to eat out at one restaurant in Bucharest, make it this one.
-
-<ImageGallery images={levelUpImages} />
-
-### Sublimmme
-
-<MapLink name='Splaiul Independenței' url='https://maps.app.goo.gl/cvE1tSVHAbAbSXtB7' />
-
-Sublimme is another of Bucharest's fully-vegan restaurants, but apart from selling a load of cakes, is much more health-focussed than Level Up.
-
-On weekdays they have a menu of the day, which for 42 lei consists of a soup and a main dish. I recommend that because it means you'll be served more quickly. The amount of time other dishes take seemed to vary a bit more, and it could occasionally feel like they were a little overwhelmed, despite the restaurant being quiet. I'm not sure if that's because they had loads of take-away orders, or if they were just really unorganised.
-
-The restaurant itself is pretty comfortable. It has three sofas (although one was often taken by a staff member's laptop), which is probably the main thing I look for in a restaurant. If the sofas are taken, the remaining plastic chairs are less appealing, but thankfully I never had to put myself through that. Definitely another one to visit if you have the time in Bucharest.
-
-<ImageGallery images={sublimmeImages} />
-
-### Supermarkets
-
-Having got used to being in parts of the world where the supermarkets don't cater to vegans, I found going shopping in Bucharest easy. Almost too easy. I didn't realise until I came here that I like the challenge of having to source food.
-
-Due to its proximity to my room, I did most of my shopping at <ExternalLink url='https://goo.gl/maps/e6bqcvrrVywAj3YK6'>Carrefour</ExternalLink>. It's a two storey supermarket, and on the left as you go to the second floor is a large area of 'free from' type foods. Not all vegan, some of it is gluten free or keto or whatever, but plenty of vegan things too, like vegan milks, vegan protein bars etc.
-
-On the ground floor, which is more for fresh produce, they have one refrigerator for vegan dairy-alternatives; vegan cheeses, spreads, yogurts. A couple of aisles down they have another refrigerator of vegan meat alternatives. There is less here than you'd expect in a modern UK supermarket, but you can get vegan sausages, burgers, nuggets etc., as well as hummus and falafel. Another aisle down is a freezer that includes a small amount of frozen vegan foods, like vegan pizza.
-
-This is on top of the usual vegan things that you'll find in any supermarket around the world (rice, pasta etc). From the ingredients I could find in Carrefour, I made things like hummus pasta, tofu stir-fry with black rice and falafel wraps.
-
-If you can't find what you need in Carrefour, I found that the <ExternalLink url='https://maps.app.goo.gl/DdN1Qi3P3RWMLvSF7'>Mega Image on General Gheorghe Magheru street</ExternalLink> is even better-suited for vegans, and is an entire supermarket focussed on free-from type foods. Sadly it was a bit of way from my room so I didn't come here often, but it was the best place I came across in Bucharest to buy vegan ingredients to cook with. Worth a visit if you can't find what you need in Carrefour.
-
-<ImageGallery images={supermarketsImages} />
-
-## How money works in Bucharest
-
-I found money a little ridiculous in Bucharest, so I thought this section worth adding. What I'd read prior to coming here was that while cards are accepted in some places, cash is still king and you need to carry it with you. I found this to be almost entirely false. Through my entire month in Bucharest, I only had to make one transaction by cash, because card was accepted everywhere else I went. That transaction was ironically the most expensive thing I bought, which was my one-month gym membership.
-
-The part that I find ridiculous, is that while cards are accepted almost everywhere, in places where tipping is expected, you cannot tip via the card machine. It doesn't give you the option, so you have to carry an appropriate amount of cash with you if you have any intention of leaving a tip, only adding fuel to my fire to eradicate tipping from the world.
-
-I didn't realise this at the start. I just thought that because it wasn't possible to tip via card that tipping wasn't expected, but then I got told otherwise. That was the point that I mostly stopped eating out, because as I wasn't making any cash transactions, I never had any change for tipping, so going to a restaurant suddenly had extra steps.
-
-Whether you choose to heed this advice or whether you choose to feign ignorance as a good excuse to not leave any tips is up to you (I'd suggest the latter), but it is worth noting that tipping is expected, but you can't leave a tip when paying by card because that would make sense.
-
-## Where to run in Bucharest
-
-When I chose my Airbnb in Bucharest, I did so partially because Izvor Park was so nearby, and from what I could tell on Google Maps, it looked a good place to run. It was, so I didn't feel the need to run anywhere else. Even so I'd say that Bucahrest is a very running-friendly city.
-
-The pavements are wide and quiet, as are the roads, so crossing the road is usually quick and there's very little pollution coming from vehicles. If you don't happen to be staying near a park, I'd say that you can pretty much run anywhere. If you happen to be near Tineretului Park, it's big and has many people running in it.
-
-As for Izvor Park, it's a lot smaller. A loop of the park is 1.25km (so four laps to do a 5k). Like everywhere in Bucharest, people smoke without consideration so expect to have to hold your breath while running through their plumes. Other than that, the only downside to Izvor Park is that if you come at the wrong time of day, as I did a couple of times, there are packs of poorly attended children. My guess is that a nearby school/nursery takes the kids there when they can't be arsed to entertain them anymore and just lets them run wild. When you're gasping for air having to navigate this melee can be a tad frustrating, but for most of my runs they were nowhere to be seen.
-
-<ImageGallery images={runningImages} />
-
-## Being sociable in Bucharest
-
-The social scene for expats/digital nomads in Bucharest isn't completely dead, but it is a bit sickly.
-
-I found Facebook to be a clutter of adverts disguised as events, and the bars I saw didn't appeal to me as places to go for a beer by myself. Therefore, I found my social life here limited to the couple of active Meetup groups in Bucharest.
-
-<ExternalLink url='https://www.meetup.com/bucharest-digital-nomads/'>Bucharest Digital Nomads</ExternalLink> holds fortnightly events at differing bars around Bucharest, although they seem to have now settled on Expiriat, which is a bar/club south of the city centre. I went to a couple of these events and they were very well attended so a very good way to get to know people.
-
-<ExternalLink url='https://www.meetup.com/expatsinromania/'>Expats in Romania</ExternalLink> holds events with less regularity, and you can expect them to be a bit more chilled than Bucharest Digital Nomads, likely being in a restaurant rather than a bar.
-
-I'm thankful for these two Meetups. They're each organised by one person, and were they not to exist, then Bucharest might have got a bit lonely for me, so long may they continue. Hopefully by the time I return some more groups will have popped-up.
-
-<ImageGallery images={socialImages} />
+<ImageGallery images={bulevardulDimitrieCantemirApartmentImages} />
+
+## Summary of Bucharest
+
+export const summaryPoints = {
+  positive: [
+    'High quality, good value accommodation',
+    'Lots of green space',
+    'Very vegan-friendly',
+    'Some good options for running',
+    'Safe',
+    'Very walkable',
+    'Low pollution',
+    'Berries are cheap',
+    'Several branches of Decathlon',
+  ],
+  neutral: [
+    'Slightly lacklustre social scene',
+  ],
+  negative: [
+    'High number of drug addicts asking for money',
+    'Smoking everywhere',
+    'Annoying emergency messages',
+    'Drivers are very fond of their car horns',
+  ],
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Do I want to come back to Bucharest again?
+
+I absolutely love my life as a digital nomad and I'll live out the rest of my days like this if I can. Unfortunately, at some point reality is going to bring me back down to earth.
+
+Whether it's for financial reasons, for medical reasons, because I can't find remote work anymore, or some other reason altogether, a day is going to come when I have to settle down and live like a normal person again. And when that time comes, Bucharest is going to be at the top of my list. For what I look for in a city, it has it all.
+
+It's affordable, it's very vegan-friendly, it's got loads of open, green space, it's got low pollution levels, the people are mostly friendly, and it's in the EU, meaning I can stay here forever without any red tape.
+
+I hope that day is a long way off, but in the meantime I will for sure be back in Bucharest again. I love it here.
