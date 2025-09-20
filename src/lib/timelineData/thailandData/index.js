@@ -55,6 +55,12 @@ export const thailandData = {
         [departure]: '2022-11-17',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2025-12-18',
+        [departure]: '2026-01-02',
+      },
+    },
   ],
   [places[countries.thailand].chiangRai]: [
     {
@@ -154,6 +160,14 @@ export const thailandData = {
       },
     },
   ],
+  [places[countries.thailand].lampang]: [
+    {
+      [dates]: {
+        [arrival]: '2025-11-27',
+        [departure]: '2025-12-11',
+      },
+    },
+  ],
   [places[countries.thailand].loei]: [
     {
       [dates]: {
@@ -213,6 +227,14 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2025-01-08',
         [departure]: '2025-01-23',
+      },
+    },
+  ],
+  [places[countries.thailand].nan]: [
+    {
+      [dates]: {
+        [arrival]: '2025-12-11',
+        [departure]: '2025-12-18',
       },
     },
   ],
