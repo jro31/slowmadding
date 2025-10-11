@@ -617,22 +617,85 @@ export const groceryStoreImages = [
     alt: 'Wholewheat spaghetti in Fresh Mart supermarket in Far Eastern Sogo Taipei Zhongxiao',
     caption: 'I eat a lot of wholewheat pasta, and finding it in Taipei is much harder than it should be. Your best bet is Fresh Mart on the B2 floor of Far Eastern Sogo.',
   },
-
 ]
 
 <ImageGallery images={groceryStoreImages} />
 
 ## Getting vegan supplements in Taipei
 
-TODO
+When it comes to buying vegan supplements in Taipei, what I've found is that you are able to find everything that you need, you just might have to search for a while.
+
+Watsons, Cosmed and Poya are three cosmetics chain stores that you'll find all over Taipei, and each branch has a supplements section. These are your best starting point when looking for something, although dont expect the labels to be in English nor the staff to speak English, and don't expect them to be labelled as vegan - I've spent a lot of time in these shops taking photos of Chinese ingredients labels on pill bottles and sending them off to ChatGPT for analysis to determine if they're both vegan, and actually any good.
 
 ### Protein
 
-TODO
+By far the best place I've found to buy protein supplements in Taipei is <ExternalLink url='https://maps.app.goo.gl/UepP1ZSueMgFW2oC9'>Noemi</ExternalLink>. They stock multiple brands of vegan protein powders, and have other high-protein products like protein bars and crisps, if they ever get them back in stock.
+
+Some of these are local brands, so the prices are very fair. Expect to pay NT$800 for 1kg of protein powder.
+
+If you don't want to go all the way to Noemi, more centrally-located is <ExternalLink url='https://maps.app.goo.gl/JyENPHbZbv1hBP4j7'>Spark Protein</ExternalLink>. They make their own products, and when I went here they did have a couple of vegan proteins, although the selection wasn't great.
+
+export const veganProteinImages = [
+  {
+    src: `${imagePath}/vegan-supplements/protein/noemi-the-vegan-protein-powder.jpeg`,
+    alt: 'Noemi The Vegan protein powders',
+    caption: "You'll find a pretty wide selection of protien powders at Noemi, like these from 'The Vegan'. Expect to pay NT$799/kg.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/protein/noemi-plants-b-protein-powder.jpeg`,
+    alt: 'Noemi Plants B protein powders',
+    caption: "Another brand that I quite liked was Plants B. It's a bit more expensive at NT$449/500g, but I really liked the peanut rice milk flavour.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/protein/noemi-protein-bars.jpeg`,
+    alt: 'Noemi The Vegan protein bars',
+    caption: "If you want something other than powders, then these high-protein bars by 'The Vegan' are a good bet at NT$45 each.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/protein/noemi-protein-crisps.jpeg`,
+    alt: 'Noemi The Vegan soy chips',
+    caption: 'As are these soy crisps at NT$39/pack.',
+  },
+  {
+    src: `${imagePath}/vegan-supplements/protein/spark-protein.jpeg`,
+    alt: 'Spark Protein',
+    caption: "If you can't make it out to Noemi then give Spark Protein a look. The selection isn't quite as good, but they do have a small number of vegan options.",
+  },
+]
+
+<ImageGallery images={veganProteinImages} />
 
 ### Multivitamins
 
-TODO
+The best vegan multivitamin I found in Taipei is <ExternalLink url='https://maps.app.goo.gl/aK4DDvkFDpdzBXJY6'>Leezen's</ExternalLink> own-brand multivitamin. At NT$650 for 60 capsules (30 days) it's not the cheapest. That honour belongs to Decathlon of all places, who sell a vegan multivitamin at NT$299 for 30 days.
+
+I took the Decthlon one for three weeks, but after noticing a change in how I was feeling compared to before, I asked ChatGPT to compare it to the vitamin I'd been taking previously (that I'd brought with me from Europe). It told me that it was lacking in key ingredients for testosterone production (including zinc, magnesium, selenium and iron) and that I should switch over to the Leezen multivitamin, which was much more suitable.
+
+I did, and within a week I was feeling a lot better.
+
+Coincidence? Perhaps, but there's definitely a reason it only costs NT$299. I'd avoid it unless you're on a very tight budget, or just cheap like me.
+
+Watsons also stock a vegan multivitamin with very pretty packaging, but not only is it more nutrient deficient than the Decathlon, it's three times the price.
+
+export const veganMultivitaminImages = [
+  {
+    src: `${imagePath}/vegan-supplements/multivitamin/leezen.jpeg`,
+    alt: "Leezen vegan men's multivitamin",
+    caption: "Leezen's own-brand multi is the best vegan multivitamin that I found in Taipei. This is the men's version, but they have an equivalent for women. 30 days costs NT$650.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/multivitamin/decathlon.jpeg`,
+    alt: 'Decathlon vegan multivitamin',
+    caption: "For something cheaper, head to Decathlon. Here you'll find a vegan multivitamin for just NT$299, but there's a reason for that.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/multivitamin/watsons.jpeg`,
+    alt: 'Watsons vegan multivitamin',
+    caption: "Or you can go to Watsons and pay NT$890 for one that's just as bad.",
+  },
+]
+
+<ImageGallery images={veganMultivitaminImages} />
 
 ### Algae oil
 
