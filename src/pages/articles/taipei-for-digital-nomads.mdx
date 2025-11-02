@@ -7,9 +7,9 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-10-30T20:15:00+07:00', // TODO: Update this
+  date: '2025-11-02T20:15:00+07:00', // TODO: Update this
   title: 'Taipei for Digital Nomads',
-  description: "Ever considered Taiwan's capital Taipei as your next destination? Then perhaps you should.", // TODO: Update this?
+  description: "Ever considered Taiwan's capital Taipei as your next destination? Then perhaps you should.",
   keywords: ['Taiwan'],
 }
 
@@ -17,21 +17,11 @@ export const imagePath = '/images/articles/taipei-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-Taiwan's capital Taipei has a lot to offer any digital nomad that chooses to venture here. It's a modern city with an exciting backdrop of mountains and hiking trails. It offers an extensive and affordable network of public transportation, and is clean, spacious and offers a wide array of foods.
+Taiwan's capital Taipei has a lot to offer any digital nomad that chooses to venture here. It's a modern city with an exciting backdrop of mountains and hiking trails. It offers an extensive and affordable network of public transportation, is clean, spacious and offers a wide array of foods.
 
 If you come here from South-East Asia you'll feel like you've taken a giant step up the social ladder. Everything is cleaner, everything is quieter, the people are more patient and the law is seen as more than just a suggestion. On the flip-side, it doesn't feel like it's really been "discovered" as a tourism destination. There is a small amount of tourism here - you won't be the only foreign face, but there's not enough that it's really changed for tourists.
 
 export const cityImages = [
-  {
-    src: `${imagePath}/city/lingxiao-palace.jpeg`,
-    alt: 'Lingxiao Palace',
-    caption: 'Lingxiao Palace is on a hillside and offers amazing views of the city. I rather liked this dragon.',
-  },
-  {
-    src: `${imagePath}/city/graffiti-area.jpeg`,
-    alt: 'Keelung River graffiti area',
-    caption: 'On the banks of the Keelung River, having a communal graffiti area is such a good idea. The best thing about it is no one will try and use it to make political statements.',
-  },
   {
     src: `${imagePath}/city/taipei-101.jpeg`,
     alt: 'Taipei 101',
@@ -41,6 +31,11 @@ export const cityImages = [
     src: `${imagePath}/city/daan-park.jpeg`,
     alt: "Da'an Park bench",
     caption: "Da'an Park is the main city centre park, and if you can find a quiet time to come here (weekdays are usually ok, weekends it's full of old people) it's a really pleasant place to sit in the sun or read a book.",
+  },
+  {
+    src: `${imagePath}/city/graffiti-area.jpeg`,
+    alt: 'Keelung River graffiti area',
+    caption: 'On the banks of the Keelung River, having a communal graffiti area is such a good idea. The best thing about it is no one will try and use it to make political statements.',
   },
   {
     src: `${imagePath}/city/chiang-kai-shek-memorial-hall.jpeg`,
@@ -55,7 +50,12 @@ export const cityImages = [
   {
     src: `${imagePath}/city/guandu-wharf.jpeg`,
     alt: 'View from Guandu Wharf',
-    caption: "If you cycle from the town centre to Tamsui, you'll pass Guandu Wharf, which among other things offers great views at sunset.",
+    caption: "If you cycle from the town centre to Tamsui, you'll pass Guandu Wharf, which among other things offers a beautiful sunset.",
+  },
+  {
+    src: `${imagePath}/city/lingxiao-palace.jpeg`,
+    alt: 'Lingxiao Palace',
+    caption: 'Lingxiao Palace is on a hillside and has amazing views of the city below, but I rather liked this dragon.',
   },
   {
     src: `${imagePath}/city/zhinan-temple.jpeg`,
@@ -70,7 +70,7 @@ export const cityImages = [
   {
     src: `${imagePath}/city/fulong-coastline.jpeg`,
     alt: 'Fulong',
-    caption: "Another good day-trip is to take the train to Fulong station, cut through the Old Caoling Tunnel, and then cycle back along the coastline. You'll see some breath-taking views along the way.",
+    caption: "Another good day-trip is to take the train to Fulong station, cut through the Old Caoling Tunnel, and then cycle back along the coastline.",
   },
 ]
 
@@ -88,9 +88,9 @@ Let me start by saying who Taipei is not suitable for. It is not a place to come
 
 When local people go out to bars, they typically only have one or two drinks. And while there are bars you can go to if you want to get drunk, unlike in many other places in the world, if you do it here you'll be the outlier.
 
-It's also not a place where you really see people sitting in coffee shops on their laptops all day either. Being an island, Covid didn't affect Taiwan to the extent it did other places, so remote working isn't really a thing among local people, and it doesn't attract many digital nomads. So if you're a person that's attracted to the usual digital nomad hubs that offer a faux local culture that caters to foreigners, then Taipei isn't for you.
+It's also not a place where you really see people sitting in coffee shops on their laptops all day either. Being an island, Covid didn't affect Taiwan to the extent it did other places, so remote working isn't really a thing among local people and Taiwan doesn't attract many digital nomads. So if you're a person that's attracted to the usual digital nomad hubs that offer a faux local culture that caters to foreigners, then Taipei isn't for you.
 
-The people that Taipei is suitable for are those that are active. Almost all activities I did here were hiking or running or cycling or snorkelling etc. It's surrounded by mountains, so there is no end of hikes you can go on and places to explore.
+The people that Taipei is suitable for are those that are active. Almost all activities I do here are hiking or running or cycling or snorkelling etc. It's surrounded by mountains, so there is no end of hikes you can go on and places to explore.
 
 Within the city itself, it's a place very comfortable with foreigners, but not to the extent the it's changed to cater to them. It's not a place where you're completely off the beaten path - if you want that then look elsewhere in Taiwan. On the other hand, if you want to go to a tourist-aimed city where everything is easy and translated to English, then it's not for you either. It sits in the middle. Comfortable and welcoming to foreigners, but not catering to them.
 
@@ -104,12 +104,12 @@ export const suitabilityImages = [
   {
     src: `${imagePath}/suitability/rowing.jpeg`,
     alt: 'Rowing in Yun Hsien Lake in Wulai',
-    caption: 'Yun Hsien Lake has rowing boats for hire, which was pretty fun.',
+    caption: 'Yun Hsien Resort also has rowing boats for hire.',
   },
   {
     src: `${imagePath}/suitability/bitoujiao-trail.jpeg`,
     alt: 'Bitoujiao Trail',
-    caption: 'This is the Bitoujiao Trail - an easy and at times breathtaking trail in north-east Taiwan.',
+    caption: 'This is the Bitoujiao Trail - an easy trail but with breathtaking views in north-east Taiwan.',
   },
   {
     src: `${imagePath}/suitability/tingtao-cafe.jpeg`,
@@ -119,7 +119,7 @@ export const suitabilityImages = [
   {
     src: `${imagePath}/suitability/heping-island-geopark.jpeg`,
     alt: 'Heping Island Geopark pagoda',
-    caption: 'Heping Island Geopark is somewhat ruined by the volume of tourists, but still offers some nice views.',
+    caption: 'Heping Island Geopark is somewhat ruined by the volume of visitors.',
   },
   {
     src: `${imagePath}/suitability/alishan-tree.jpeg`,
@@ -162,11 +162,11 @@ Payment systems in Taipei are a bit of a mess, as that there's no universal paym
 
 A lot of businesses allow payment by card, but unless you have a Taiwanese card these are not reliable. I had my UK card, that I've used without issue the world over, get rejected in multiple places because it was not issued by a Taiwanese bank.
 
-Apple Pay is available in Taiwan, and in my experience is 100% reliable. You'll be able to use it at larger businesses like supermarkets, but it's certainly not widely available.
+Apple Pay is available in Taiwan, and in my experience is 100% reliable. You'll be able to use it at larger businesses like supermarkets, but it's certainly not widely available. Oddly PX Mart, one of the two major supermarket chains in Taipei don't accept it, or foreign cards so you need to pay with cash.
 
 Similarly EasyCard (see below) is accepted in some bigger businesses, most notably 7-11, but is far from universal.
 
-The most commonly accepted payment method is cash, and the good news is that the Bank of Taiwan offers free ATM withdrawals with a foreign card. That means that so long as you aren't charged by your home bank, you can at least get your hands on cash for free and cash is accepted at 99% of businesses. The issue I ran into on a couple of occasions, is there are a minority of businesses that don't accept cash.
+The most commonly accepted payment method is cash, and the good news is that the Bank of Taiwan offers free ATM withdrawals with a foreign card. That means that so long as you aren't charged by your home bank, you can get your hands on your money for free and cash is accepted at 99% of businesses. The issue I ran into on a couple of occasions, is there are a minority of businesses trying to go cashless.
 
 One was a bicycle rental shop where, on returning our bikes, we were told the price and offered the payment methods of Line Pay, card payment or EasyCard. I tried to pay by card but it got rejected for not being issued by a Taiwanese bank, I don't have Line Pay, and I didn't have sufficient funds on my EasyCard.
 
@@ -188,7 +188,7 @@ It doesn't run through the night, so if going to or from the airport late at nig
 
 ## Getting around Taipei
 
-Taipei is such an incredibly easy city get around. Not only does it have an extensive and affordable MRT and bus network that can be easily navigated by English speakers, but YouBike, Taipei's bike sharing scheme, is by far the best I've ever used. Between these, everywhere in Taipei's accessible.
+Taipei is a very easy city get around. Not only does it have an extensive and affordable MRT and bus network that can be easily navigated by English speakers, but YouBike, Taipei's bike sharing scheme, is by far the best I've ever used. Between these, everywhere in Taipei's accessible.
 
 ### YouBike
 
@@ -196,26 +196,26 @@ YouBike (also Ubike) is my favourite thing about Taipei, and that's a pretty big
 
 YouBike docks are everywhere. You can't walk five minutes without running into one, so no matter where you want to start or end your journey, you're going to be able to find a place to collect and return a YouBike. You can rent a bike with an EasyCard. You have to register on the app, but once you have, getting a bike is so easy. Press a button, scan your card, and you're away. To return it, place the bike into the dock, scan your card again, and that's it.
 
-In order to encourage people to ditch their cars in favour of cycling, as of March '24 rentals of less than 30 minutes are free, and most of the time you get a YouBike, it's going to be for less than 30 minutes. I make 4+ YouBike trips everyday when I'm in Taipei; it's just how I get around, and even if you do rent the bike for longer than 30 minutes, the cost is negligible. It's an incredibly cheap way to travel.
+In order to encourage people to ditch their cars in favour of cycling, as of March '24 rentals of less than 30 minutes are free, and most of the time you get a YouBike, it's going to be for less than 30 minutes. I make 4+ YouBike trips everyday when I'm in Taipei - it's just how I get around, and I barely pay for any of them. And even if you do rent the bike for longer than 30 minutes, the cost is negligible. It's an incredibly cheap way to travel.
 
-The bikes are made by Giant, and Taipei is the most cycling-friendly city I've ever been to outside of Europe. Many pavements include cycle lanes, and cyclists are allowed (and expected) to use the pavements throughout the city. While you can cycle in the road if you choose, it's rarely necessary in the city centre.
+The bikes are made by Giant, and Taipei is the most cycle-friendly city I've ever been to outside of Europe. Many pavements include cycle lanes, and cyclists are allowed (and expected) to use the pavements throughout the city. While you can cycle in the road if you choose, it's rarely necessary in the city centre.
 
 A perhaps intentional side-effect of this, is that by making every pavement in Taipei cycle-friendly, it also makes Taipei the most wheelchair-friendly place I've ever been to. If you don't have legs you'll love it here.
 
-In order to use YouBike, you need to download the YouBike app (<ExternalLink url='https://apps.apple.com/tw/app/youbike%E5%BE%AE%E7%AC%91%E5%96%AE%E8%BB%8A-2-0/id1483423095'>AppStore</ExternalLink>/<ExternalLink url='https://play.google.com/store/apps/details?id=tw.com.youbike.plus&hl=zh_TW&gl=US'>PlayStore</ExternalLink>). It can be set to English. On the app you can register your EasyCard (provided that you have a local phone number), see real-time maps of available YouBikes and empty docks, read some useful guides about how to use YouBike, and many other things. It's a very user-friendly app, even for English speakers.
+In order to use YouBike, you need to download the YouBike app (<ExternalLink url='https://apps.apple.com/tw/app/youbike%E5%BE%AE%E7%AC%91%E5%96%AE%E8%BB%8A-2-0/id1483423095'>AppStore</ExternalLink>/<ExternalLink url='https://play.google.com/store/apps/details?id=tw.com.youbike.plus&hl=zh_TW&gl=US'>PlayStore</ExternalLink>). It can be set to English. On the app you can register your EasyCard (provided that you have a local phone number), see real-time maps of available YouBikes and empty docks, read some useful guides about how to use YouBike, and many other things.
 
-Registering and renting a YouBike is a fairly straight forward process. If you're struggling, firstly look up the guides on the app. If they don't help enough, Googling how to use YouBike will yield some quite detailed articles that people have written. Unless you're really quite special, you'll be renting a YouBike in no time, and it's a joy. Fresh air, exercise, and you get to know the city so much better than travelling underground on the MRT.
+Registering and renting a YouBike is a fairly straight forward process. If you're struggling, firstly look up the guides on the app. If they don't help enough, Googling how to use YouBike will yield some quite detailed articles that people have written. Unless you're really quite special, you'll be renting a YouBike in no time, and it's a joy. Fresh air, exercise, and you get to know the city so much better than travelling on the MRT.
 
 export const youbikeImages = [
   {
     src: `${imagePath}/getting-around/youbike/youbike.jpeg`,
     alt: 'Jinzhou Street and Jilin Road intersection YouBike docks',
-    caption: 'YouBike docks are all over Taipei. This one is at the Jinzhou Street/Jilin Road intersection, right outside my third room in Taipei.',
+    caption: 'YouBike docks are all over Taipei. This one is at the Jinzhou Street/Jilin Road intersection.',
   },
   {
     src: `${imagePath}/getting-around/youbike/youbike-sign.jpeg`,
     alt: 'YouBike sign',
-    caption: 'YouBike is my favourite thing about Taipei, so this is pretty much a church for me.',
+    caption: 'YouBike is my favourite thing about Taipei, so this is pretty much a church to me.',
   },
   {
     src: `${imagePath}/getting-around/youbike/bench.jpeg`,
@@ -238,9 +238,9 @@ export const youbikeImages = [
 
 ### MRT
 
-If you don't want to take a YouBike then the MRT is the easiest way to get around Taipei. Every sign and every map is translated to English, and on the rare occasions I had to deal with a human person (like when I bought my EasyCard) they spoke English.
+If you don't want to take a YouBike then the MRT is the easiest way to get around Taipei. Every sign and every map is translated to English, and on the rare occasions I've had to deal with a human person (like when I bought my EasyCard) they've spoken English.
 
-Fares range from NT$20 to NT$65 (not including to/from the airport, which costs NT$160), with trains going walking distance to basically anywhere you're likely to want to go within the city. The trains are fairly modern, and while you can't always guarantee you're going to get a seat, I never experienced them getting so busy they were uncomfortable to travel on, even when travelling with luggage.
+Fares range from NT$20 to NT$65 (not including to/from the airport, which costs NT$160), with trains going walking distance to basically anywhere you're likely to want to go within the city. The trains are fairly modern, and while you can't always guarantee you're going to get a seat, I've never experienced them getting so busy they were uncomfortable to travel on, even when travelling with luggage.
 
 With signs in English, taking the MRT is pretty self-explanatory, but to give yourself a head-start, the Go! Taipei Metro app (<ExternalLink url='https://apps.apple.com/us/app/go-taipei-metro/id1111078688'>AppStore</ExternalLink>/<ExternalLink url='https://play.google.com/store/apps/details?id=tw.com.trtc.is.androideng&hl=en_GB'>PlayStore</ExternalLink>) includes a map, travel times, fares and other information.
 
@@ -254,17 +254,17 @@ Taking the bus is easy - you get on at any door and you'll see a machine to scan
 
 Not very.
 
-Once you're in Taipei, restaurants, groceries and transport are pretty cheap. You'll pay around NT$300 per restaurant meal in mid-range places, but if you eat in local restaurants you easily can pay less than NT$100. YouBike is free for the first thirty minutes, and even after that the cost is negligible, and apart from going to the airport, the maximum fare on the MRT is NT$65. The thing that's really going to hurt your wallet is accommodation.
+Once you're in Taipei, restaurants, groceries and transport are pretty cheap. You'll pay around NT$300 for a restaurant meal in mid-range places, but if you eat in local restaurants you can easily pay less than NT$100. YouBike is free for the first thirty minutes, and even after that the cost is negligible, and apart from going to the airport, the maximum fare on the MRT is NT$65. The thing that's really going to hurt your wallet is accommodation.
 
-What I paid for accommodation was on par with a mid-tier European city. Think of accommodation prices being equivalent to  Athens or Budapest - cheaper than Western Europe or North America, but much more expensive than Eastern Europe and South East Asia - in the region of NT1,900 per night (see below for the exact prices I've paid). And what you get for that money is comparatively unimpressive. Studio rooms with make-shift or non-existent kitchens.
+What I've paid for accommodation is on par with a mid-tier European city. Think of accommodation prices being equivalent to  Athens or Budapest - cheaper than Western Europe or North America, but much more expensive than Eastern Europe and South East Asia - in the region of NT1,900 per night. And what you get for that money is comparatively unimpressive. Studio rooms with make-shift or non-existent kitchens.
 
 ## Is Taipei safe?
 
-I don't even know if crime exists in Taipei. I'm usually very paranoid about the security of my possessions, but in Taipei I get very complacent because it's such a safe place.
+I don't even know that crime exists in Taipei. I'm usually very paranoid about the security of my possessions, but in Taipei I get very complacent because it's such a safe place.
 
 In a city of 2.7 million people, it's mad to me that I would go out cycling with local people, and we'd just leave our bikes unlocked at the side of the road to go wandering around for a couple of hours, and I was the only person who feared they wouldn't be there when we returned. They always were.
 
-It's a city where you can leave your wallet on the table while you go to the toilet, and it'll still be there when you get back. In that sense, I've never been to a place this safe before.
+It's a city where you can leave your wallet on the table while you go to the toilet and it'll still be there when you get back. In that sense, I've never been to a place this safe before.
 
 There are two safety concerns that hang-over Taipei, neither of which should worry you or stop you coming here.
 
@@ -288,25 +288,21 @@ One morning, shortly after I first arrived in Taiwan, I was brushing my teeth wh
 
 Apart from a couple of almost unnoticeable tremors, I'd never experienced an earthquake before, but I'd timed it to be in Taipei for the biggest one in 25 years. It left me a little shaken.
 
-The Taiwan <ExternalLink url='https://www.cwa.gov.tw/V8/E/E/index.html'>Central Weather Administration</ExternalLink> reports all earthquakes, and from that point forth for the duration of my stay it reported regular aftershocks in Hualien - the site of the initial quake. Most of these were imperceptible in Taipei, but with ever-decreasing regularity through the duration of my stay, my room would just shake for a few seconds. By the end of my time here it had just become normal.
+The Taiwan <ExternalLink url='https://www.cwa.gov.tw/V8/E/E/index.html'>Central Weather Administration</ExternalLink> reports all earthquakes, and from that point forth for the duration of my stay it reported regular aftershocks in Hualien - the epicentre of the initial quake. Most of these were imperceptible in Taipei, but with ever-decreasing regularity through the duration of my stay, my room would just shake for a few seconds. By the end of my time here it had just become normal and I wouldn't really stop what I was doing or pay attention to it.
 
 Taiwan is particularly vulnerable to earthquakes, and as such is one of the countries most prepared for them, employing very strict building codes. So if you are going to get caught in an earthquake, this is one of the best places to do it.
 
 ## Should I get an eSim or a physical SIM in Taipei?
 
-Typically I'd suggest just going with whichever is easier for you, but in Taipei I specifically suggest getting a physical SIM.
+Typically I'd suggest just going with whichever is easier for you, but in Taipei I specifically suggest getting a physical SIM. Why? Because to rent YouBikes with your EasyCard, which I do 4+ times everyday when I'm in Taipei, you need to have a local phone number, and with many eSIM operators you don't get one.
 
-Why?
-
-Because to rent YouBikes with your EasyCard, which I do 4+ times everyday, you need to have a local phone number, and with many eSIM operators you don't get a local phone number.
-
-Not to mention that local networks offer phenomenal packages that you won't get with an eSIM.
+Not to mention that local networks offer great value packages that you won't get with an eSIM.
 
 ## Getting a SIM card in Taipei
 
-My suggestion for most countries in the world, is to ignore airport vendors selling SIM cards in airports because they typically sell tourist SIMs at inflated prices, whereas if you wait until your in town, you can instead get local deals.
+My suggestion for most countries in the world, is to ignore vendors selling SIM cards in airports because they typically sell tourist SIMs at inflated prices, whereas if you wait until you're in town, you can get local deals instead.
 
-I did that on my first stay here, making getting to my room a little troublesome with no network. Then I went to a Chunghwa branch (the biggest network operator in Taiwan), and not only would they only sell me a tourist SIM anyway as I was in the country on a tourist visa, but it took bloody ages because they weren't used to dealing with foreigners.
+I did that on my first stay in Taipei, which made getting to my room a little troublesome with no network. Then I went to a branch of Chunghwa (the biggest network operator in Taiwan), and not only would they only sell me a tourist SIM anyway as I was in the country on a tourist visa, but it took bloody ages because they weren't used to dealing with foreigners.
 
 Don't do that in Taipei - the SIMs that you buy in the airport are the exact same packages at the exact same prices as you can in the city, and it's a Hell of a lot quicker.
 
@@ -365,7 +361,7 @@ export const languageImages = [
 
 ## Is it easy to get by with English in Taipei?
 
-Yes and no. It's easy enough to survive here with just English. The MRT is all in English, Google maps makes taking the bus easy, and in mid-range restaurants you'll typically find a menu in English. So you can get around and eat no problem.
+Yes and no. It's easy enough to survive here with just English. The MRT is all in English, Google maps makes taking the bus easy, and in mid-range restaurants you'll typically find a menu in English, so you can get around and eat no problem.
 
 That being said, the staff in supermarkets rarely speak English, nor do the building security guards, and in cheaper local restaurants the staff won't speak any English and the menu will only be in Chinese.
 
@@ -375,7 +371,7 @@ If you want to go to more local places (which you should), then try to make frie
 
 ## How is the Internet in Taipei?
 
-Mostly good, although in my last room it was utter dog shit. So although the infrastructure exists for fast connections, some places that you can stay will have cheaped-out on making the most of it, so double-check before booking.
+Mostly good, although in my last room it was utter shit. So although the infrastructure exists for fast connections, some places that you can stay will have cheaped-out on making the most of it, so double-check before booking.
 
 If you get an unlimited SIM then using your mobile hotspot makes things a bit more bearable.
 
@@ -383,9 +379,9 @@ If you get an unlimited SIM then using your mobile hotspot makes things a bit mo
 
 After checking-into my first room in Taipei, I received a message from my Airbnb host telling me I had to throw away my rubbish in the correct government-issued bags, and if I didn't it would be returned to me by use of the building's CCTV. These bags weren't provided by the host, and finding where to buy them was the biggest source of stress for my first week in Taipei. I could not figure-out where to get these government-issued trash bags, so just kept all my rubbish in my room with me. I went to multiple supermarkets, 7-11s and Family Mart stores and looked in the usual places, but I could not find them anywhere.
 
-Turns-out they store them behind the counter, and I eventually found some in Carrefour; see the picture below. So hopefully that prevents you having the same issue.
+Turns-out they store them behind the counter, and I eventually found some in Carrefour - see the picture below. Hopefully that prevents you having the same issue.
 
-If you're staying in an apartment, that will likely be the end of your trash-related troubles because you'll be able to dispose of your rubbish in a communal area, and the building staff will take care of it from there. If not, well once you arrive here, you might notice what sounds like a loud ice cream van playing its music late into the evening. On my first night here I was trying to sleep thinking _"who on earth wants ice cream now?"_ It turns-out that is the sound played by the garbage truck so people know that it's nearby. And whereas in most places in the world you just leave your rubbish at the side of the road, in Taipei you have to put it into the truck yourself.
+If you're staying in an apartment, that will likely be the end of your trash-related troubles because you'll be able to dispose of your rubbish in a communal area, and the building staff will take care of it from there. If not, well once you arrive here, you might notice what sounds like a loud ice cream van playing its music late into the evening. On my first night here I was trying to sleep thinking _"who on earth wants ice cream now?"_ It turns-out this is the sound played by the garbage truck so people know that it's nearby. And whereas in most places in the world you just leave your rubbish at the side of the road, in Taipei you have to put it into the truck yourself.
 
 There will be two trucks in fact; one for rubbish and one for recycling. And if you're staying somewhere that doesn't take care of garbage communally, then every night or two, you're going to have to be out on the side of the road with the locals, waiting for the sound of Für Elise or another tune to indicate the garbage truck's nearby.
 
@@ -399,7 +395,7 @@ export const trashImages = [
   {
     src: `${imagePath}/trash/trash-bags-in-carrefour.jpeg`,
     alt: 'Blue trash bags in Carrefour',
-    caption: "The first few days I was in Taipei my biggest stressor was trying to find blue government-issued trash bags. The mistake I was making was looking on the shelves. In actuality they're kept behind the counter with the cigarettes and alcohol, such is their value. This is the Carrefour local to my first room. The trash bags are the two shelves of blue things, behind those yellow crates.",
+    caption: "The first week I was in Taipei my biggest stressor was trying to find blue government-issued trash bags. The mistake I was making was looking on the shelves. In actuality they're kept behind the counter with the cigarettes and alcohol, such is their value. This is the Carrefour local to my first room. The trash bags are the two shelves of blue things, behind those yellow crates.",
   },
 ]
 
@@ -415,17 +411,17 @@ It was also explained to me that Taipei city produces clean, drinkable water, bu
 
 So should you drink the water then?
 
-The routine I've had during my 24 weeks here, is when drinking straight water, I drink only bottled water. Six-litre bottles are available at any supermarket for about NT$40. For everything else, including cups of tea, I use tap water. I've never had any issues.
+The routine I've had during my 24 weeks here, is when drinking straight water, I drink only bottled water. Six-litre bottles are available at any supermarket for about NT$45. For everything else, including cups of tea, I use tap water. I've never had any issues.
 
 ## Hiking in Taipei
 
 I go hiking when I'm in Taipei like I go drinking when I'm in Bangkok - it's the main activity to here.
 
-I won't go into great detail of any specific hikes - that would be an article on its own and there are other websites that cover that topic already. But if you do plan on hiking here, firstly get some appropriate clothes and shoes to wear. While some of the trails here are easy, the best ones aren't so you're going to want a proper pair of hiking shoes.
+I won't go into great detail of any specific hikes - that would be an article on its own. But if you do plan on hiking here, firstly get some appropriate clothes and shoes to wear. While some of the trails here are easy, the best ones aren't so you're going to want a proper pair of hiking shoes.
 
 There are several branches of Decathlon in Taipei, and you can get a decent pair of hiking shoes for NT$1,400 or less, as well as any other clothing you might need.
 
-You can find hiking trails by Googling or asking ChatGPT or using one of many apps - I normally just search for hiking trails on Google Maps though. They're well-reviewed and people upload photos so you can easily gage how long and how difficult a hike will be. And then once you've decided, Google Maps is great for directions in Taiwan. It'll figure-out the best public transport so you can easily navigate to some very out-of-the-way places.
+You can find hiking trails by Googling or asking ChatGPT or using one of many apps - I normally just search for hiking trails on Google Maps though. They're well-reviewed and people upload photos so you can easily gage how long and how difficult a hike will be. And then once you've decided, Google Maps is great for directions to the trailhead. It'll figure-out the best public transport so you can easily navigate to some very out-of-the-way places.
 
 The climate here lends itself to great hiking. And while the drinking scene might be a bit lacking in Taipei, make up for it by getting outdoors.
 
@@ -448,12 +444,12 @@ export const hikingImages = [
   {
     src: `${imagePath}/hiking/wuliaojian.jpeg`,
     alt: 'Wuliaojian',
-    caption: 'This hike in Wulioajian is one of the more challenging ones, particularly after God defies the weather forecast and decides for no reason all day, making already at times vertical rock climbs all the more exciting.',
+    caption: 'This hike in Wulioajian is one of the more challenging ones, particularly after God defies the weather forecast and decides to make it rain all day, making the vertical rock climbs all the more exciting.',
   },
   {
     src: `${imagePath}/hiking/caoling.jpeg`,
     alt: 'Caoling',
-    caption: "Perhaps my favourite hike is in Caoling. It's not got the highest difficulty, but it's long, fresh, has great views, lots of stairs, and lots of buffalo",
+    caption: "Perhaps my favourite hike is in Caoling. It's not got the highest difficulty, but it's long, fresh, has great views, lots of stairs, and lots of buffalo (who are terrifying).",
   },
   {
     src: `${imagePath}/hiking/neiwan.jpeg`,
@@ -468,31 +464,31 @@ export const hikingImages = [
 
 Taipei has big, wide pavements, traffic is minimal for a large Asian city, and the air quality is good. So I know what you're thinking: Taipei must be a city you can run anywhere in, right?
 
-Not so fast. You forgot that it takes anywhere from 3-5 days anytime you want to cross the road, so running around the city is pretty much a no-go unless you really don't care about having a very stop-start, mostly stop, run.
+Not so fast. Remember that it takes anywhere from 3-5 days anytime you want to cross the road here, so running around the city is pretty much a no-go unless you really don't care about having a very stop-start, mostly stop, run.
 
-That's the bad news. The good news is that there are many good alternatives all around Taipei that are away from the roads. By far the best of these is the **riverside** - pretty much any riverside, because they all have paved cycle paths along the side that you can run along. And if you don't want to do an out-and-back run, I often ride a YouBike to a start point 10km-ish from where I want to finish, and then run back along the river.
+That's the bad news. The good news is that there are many good alternatives all around Taipei that are away from the roads. By far the best of these is the **riverside** - pretty much any riverside, because they all have paved cycle paths along the side that you can run along. And if you don't want to do an out-and-back run, take a YouBike to a start point and then run back along the river.
 
 You won't have to cross any roads, and apart from occasional bottlenecks like in Songshan where they do some dumbass water show (someone turns on a hose) that attracts large crowds, you'll have plenty of space to run freely at any speed.
 
-Everyone in Taipei suffers from the disease of lookingattheirphonestoofuckingmuch. And while this has spread to most of the world (North Korea doesn't seem to suffer from it), it feels worse here because I cycle everywhere in Taipei. And nobheads staring at their phone while walking down the street is ten times more annoying when you're on a bike than when you're walking.
+Everyone in Taipei suffers from the disease of lookingattheirphonestoofuckingmuch. And while this has spread to most of the world (North Korea doesn't seem to have from it) it feels worse here because I cycle everywhere in Taipei. And nobheads staring at their phone while walking down the street is ten times more annoying when you're on a bike than when you're walking.
 
-The one and only place I've found in the city where it's not such an issue, is the riverside, particularly after dark. People there, apart from in these bottlenecks, tend to go for exercise, and it's so nice be around people who are able to somehow cycle, run and walk without looking at their phones the whole time.
+The one and only place I've found in the city where it's not such an issue is the riverside, particularly after dark. People there, apart from in these bottlenecks, tend to go for exercise, and it's so nice be around people who are able to somehow cycle, run and walk without looking at their phones the whole time.
 
 Every riverside that I've been to in Taipei is runnable. For me starting in Songshan and going as far as I feel like is always a good run. I didn't ever run <ExternalLink url='https://maps.app.goo.gl/QRQovfE1q2jAWsWQ6'>all the way to Tamsui MRT</ExternalLink>, but I have cycled it, and the entire-thing is running-friendly, and you can do this 25km without having to cross a single road. And if you really want to show off, you could run back again as well.
 
-A riverside is easily accessible by YouBike from pretty much anywhere in the city, and that's what I recommend, but if instead you like going around in circles, then you'll find lots of publicly accessible **running tracks**. The two I've run at are the absolutely gorgeous blue running track at <ExternalLink url='https://maps.app.goo.gl/d27A3fXhUnzYmkBh8'>NTU</ExternalLink>, which is a well-maintained 400m track, and the 200m track at <ExternalLink url='https://maps.app.goo.gl/vRTSQVCrP6U32Ha39'>National Taipei University of Technology</ExternalLink>, which pools water when it rains and is worn-out or bubbling in places.
+A riverside is easily accessible by YouBike from pretty much anywhere in the city, and that's what I recommend, but if instead you like going around in circles, then you'll find lots of publicly accessible **running tracks**. The two I've run at are the absolutely gorgeous blue running track at <ExternalLink url='https://maps.app.goo.gl/d27A3fXhUnzYmkBh8'>NTU</ExternalLink>, which is a well-maintained 400m track, and the 200m track at <ExternalLink url='https://maps.app.goo.gl/vRTSQVCrP6U32Ha39'>National Taipei University of Technology</ExternalLink>, which pools water when it rains and is worn-out and bubbling in places.
 
-Both of these have buildings with toilets in right by the running track, as do most or all of the many other running tracks that you can find all over Taipei.
+Both of these have buildings with toilets in right by the running track, as do most or all of the many other running tracks that you can find around Taipei.
 
 The last place that I've run in Taipei, is the place that all locals will recommend to you if you say that you want to find somewhere to go running: **Da'an Park**.
 
 If I ever meet the person that designed Da'an Park, then I hope I'm carrying a mirror, because they need to have a long, hard look at themselves.
 
-It has a jogging track, but for some reason they decided that it only needed to go around three quarters of the park. After that it just ends. That's great. And even where it does exist, the very narrow track is not respected as a running track at all - it's full of walkers, old people, people in wheelchairs, groups of people, all of whom impair its ability to function as a running track. Not to mention that they decided to make it out of some very dusty clay, which you'll enjoy breathing as you're gasping for air and which makes a nice mess of your previously clean running shoes.
+It has a jogging track, but for some reason they decided that it only needed to go around three quarters of the park. After that it just ends. That's great. And even where it does exist, the very narrow track is not respected as a running track at all - it's full of walkers, old people, people in wheelchairs, groups of people, all of whom impair its ability to function as a running track. Not to mention that they decided to make it out of some very dusty clay, which you'll enjoy inhaling as you're gasping for air and which makes a nice mess of your running shoes.
 
-On weekends especially, it also gets uncomfortably busy.
+On weekends especially, Da'an Park gets uncomfortably busy.
 
-Da'an Park is a lovely park to come and sit with a book or to go for a leisurely stroll, but I don't recommend coming here to run. You'll notice that more people run on the pavement outside the park, than run in the park. That's with good reason.
+It's a lovely park to come and sit with a book or to go for a leisurely stroll, but I don't recommend coming here to run. You'll notice that more people run on the pavement outside the park than in it. That's with good reason.
 
 export const runningImages = [
   {
@@ -503,7 +499,7 @@ export const runningImages = [
   {
     src: `${imagePath}/running/ntu-running-track.jpeg`,
     alt: 'National Taiwan University Sports Field running track',
-    caption: "I don't know what it is about blue running tracks that make you want to run fast, but blue running tracks make you want to run fast. This is a nine lane, 400m running track at NTU.",
+    caption: "I don't know what it is about blue running tracks that make you want to run fast, but blue running tracks make you want to run fast. This is the gorgeous nine lane, 400m running track at NTU.",
   },
   {
     src: `${imagePath}/running/national-taipei-university-of-technology-running-track.jpeg`,
@@ -523,7 +519,7 @@ export const runningImages = [
 
 There is a very active Meetup community in Taipei. Pretty much everyone I got to know here, I either met at a Meetup, or I met through someone that I met at a Meetup.
 
-While there are some events centred around alcohol, they are in the minority with hiking and outdoor activity groups, fitness groups, and language exchange groups being much more popular. I've attended many of the events from the <ExternalLink url='https://www.meetup.com/language-friendship/'>Hiking, Cycling, Fun Activities and Social Events</ExternalLink> group consistently for both of my visits to Taipei. Some of these event attract upwards of sixty people, so it really is a great way to get to know people.
+While there are some events centred around alcohol, they are in the minority with hiking and outdoor activity groups, fitness groups, and language exchange groups being much more prevalent. I've attended many of the events from the <ExternalLink url='https://www.meetup.com/language-friendship/'>Hiking, Cycling, Fun Activities and Social Events</ExternalLink> group consistently for both of my visits to Taipei. Some of these attract upwards of sixty attendees, so it really is a great way to get to know people.
 
 The only real downside is that almost every group has its events on the weekend (usually Saturday). On weekdays there isn't that much going on.
 
@@ -549,7 +545,7 @@ export const sociableImages = [
 
 ## Things I didn't like about Taipei
 
-Taipei is one of my favourite places in the world, but that doesn't mean it's perfect. There's still plenty here to annoy you.
+Taipei is one of my favourite places in the world, but that doesn't mean it's perfect. There's still plenty to annoy you here.
 
 Firstly, **the elderly** - Taipei has the worst old people I've ever encountered.
 
@@ -557,30 +553,28 @@ In most of the world people have respect for their elders, but in Taipei it's ju
 
 On every MRT train for example, one quarter of the seats are dark blue priority seats. But even on full trains, these just sit their empty unless an old person gets on, because young people see it as disrespectful to sit in the old people chairs, even when they're empty. And if there are no priority seats available, you'll see old people get on, and stand uncomfortably close to a seated young person until they get up for them. They're often not even that old.
 
-Or you'll see long queues of people waiting for a bus, and when it pulls up, some old people who haven't been queuing will just push to the front like they have some divine right to get on first. It's just a weird sense of entitlement that I haven't to an extent that I haven't seen anywhere else in the world.
+Or you'll see long queues of people waiting for a bus, and when it pulls up, some old people who haven't been queuing will just push to the front like they have some divine right to get on first. It's just a sense of entitlement to an extent that I haven't seen anywhere else in the world.
 
 Secondly, fuck **crossing the road** in Taipei.
 
-This is the safest big city that I've ever been to, mainly because the law is strictly obeyed. That's great 99% of the time, but when people just stand there for minutes on end, refusing to walk across empty roads because the signal is red, it's just weird. You _can_ be given a fine for jay-walking, although it's rare (I have a local friend who got one). But unless you want to stand-out as a dumb foreigner, you too are going to have to spend half your life, quite literally, waiting to cross the road.
+This is the safest big city that I've ever been to, mainly because the law is strictly obeyed. That's great 99% of the time, but when people just stand there for minutes on end, refusing to walk across empty roads because the signal is red, it's just sad. You _can_ be given a fine for jay-walking, although it's rare (I have a local friend who got one). But unless you want to stand-out as a dumb foreigner, you too are going to have to spend half your life, quite literally, waiting to cross the road.
 
-My third grievance, is why do people here **treat dogs like babies**? It's weird.
+My third grievance, is why do people here **treat dogs like babies**?
 
-Perfectly healthy and able-bodied dogs that can and want to walk are being pushed around in buggies all over Taipei.
+Perfectly healthy and able-bodied dogs that can and want to walk are being pushed around in buggies all over Taipei. That exists everywhere in the world nowadays, but in Taipei they've taken it to a whole new level, and there's an entire industry dedicated to pretending dogs are babies.
 
-That exists everywhere in the world nowadays, but in Taipei they've taken it to a whole new level, and there's an entire industry dedicated to pretending dogs are babies.
-
-Taipei also has the worst **urinals** in the world - they build them like slides your shins always get wet when you pee, **110v elecricity supply** means I can't use my blender in Taipei, and fuck anybody who leaves their **trash in YouBike baskets**, which happens a lot.
+Taipei also has the worst **urinals** in the world - they build them like slides so your shins always get wet when you pee, the **110v elecricity supply** means I can't use my blender in Taipei, and fuck anybody who leaves their **trash in YouBike baskets**, which happens a lot.
 
 export const dislikesImages = [
   {
     src: `${imagePath}/dislikes/old-woman-swearing.jpeg`,
     alt: 'Old woman swearing while waiting to cross Zhongxiao E Rd',
-    caption: 'Most people in Taipei are really happy. For some reason this woman seemed determined to give the middle finger to as many people as possible. When she started cycling again, she did so one-handed just so she could keep going.',
+    caption: "Most people in Taipei are really happy, but there's a segment of old people that are really bitter and entitled. For some reason this woman seemed determined to give the middle finger to as many people as possible. When she started cycling again, she did so one-handed just so she could keep going.",
   },
   {
     src: `${imagePath}/dislikes/dog-in-buggy-ad.jpeg`,
     alt: 'Dog in buggy advert',
-    caption: "Treating dogs like babies has been taken to a whole new level in Taipei. Just look at the size of this advert for a dog pram. Why can't they walk, they're dogs, you idiots.",
+    caption: "Treating dogs like babies has been taken to a whole new level in Taipei. Just look at the size of this advert for a dog pram. Why can't they walk, they're dogs?",
   },
 ]
 
@@ -594,13 +588,13 @@ A peculiarity about Taipei restaurants that I hate, is that almost all all of th
 
 More to my liking is that almost all restaurant provide free drinking water, and there's no expectation of buying a drink when you eat somewhere. Tipping is also not done in Taipei, and I've even seen locals get annoyed with a European we were with for suggesting that we leave a tip, because it's a custom that they don't want brought here. So when you go out, you pay for the food that you eat and nothing more, although note that some restaurants, usually more expensive ones, may add a mandatory 10% service charge.
 
-There's such a breadth of vegan restaurants in Taipei that I couldn't even begin to detail all of them, but my most visited restaurant here is without doubt <ExternalLink url='https://maps.app.goo.gl/tH7mRBdQqkZ91Qcg8'>Yuli Your Home</ExternalLink>. They're a fully vegan restaurant that serves local food. It's definitely not cheap, and since my first time in Taipei they've started adding 10% onto the menu price, which is one of my pet peeves. But still, I love the food here and it's an easy place to come if you don't speak Chinese because the menu is translated into English and the staff speak good English, so I still come here at least once per week when I'm in Taipei.
+There's such a breadth of vegan restaurants in Taipei that I couldn't even begin to detail all of them, but my most visited restaurant here is without doubt <ExternalLink url='https://maps.app.goo.gl/tH7mRBdQqkZ91Qcg8'>Yuli Your Home</ExternalLink>. They're a fully vegan restaurant that serves local food. It's definitely not cheap, and since my first time in Taipei they've started adding 10% onto the menu price, which is one of my pet peeves. Even so, I love the food here and it's an easy place to come if you don't speak Chinese because the menu is translated into English and the staff speak good English, so I still come here at least once per week when I'm in Taipei.
 
-Just around the corner from Yuli is <ExternalLink url='https://maps.app.goo.gl/SkJWg1NumruDyEoD6'>Loving Hut</ExternalLink>. They're a vegan chain that have branches of varying menus and quality all over the world, and if you dig-into them you'll find that some people condider them as an offshoot of a cult. That may or may not be true, but I find the food in this branch, a mix of local and Asian, really good quality, and decent value as well. The menu is translated to English and the staff speak some English. This is another of my regulars in Taipei.
+Just around the corner from Yuli is <ExternalLink url='https://maps.app.goo.gl/SkJWg1NumruDyEoD6'>Loving Hut</ExternalLink>. They're a vegan chain that have branches of varying menus and quality all over the world, and if you dig-into them you'll find that some people condider them as an offshoot of a cult. That may or may not be true, but I find the food in this branch, a mix of local and Asian, really good, and decent value as well. The menu is translated to English and the staff speak English. This is another of my regular places in Taipei.
 
-During my first stay in Taipei I tore my calf muscle and couldn't walk very well for a while. However, I could cycle without issue, so started seeking-out far flung vegan food to cycle to so that I could stay active, and one of those was <ExternalLink url='https://maps.app.goo.gl/kk97aRCgZVQLKgmAA'>Burger Su Veggie</ExternalLink> in Beitou, north of the river. They're a vegetarian, rather than vegan restaurant, but 90% of the menu, which is translated into English, is vegan, and they're the best vegan burgers I've found in Taipei. Even once my leg was healed and throughout my second stay in Taipei I came back here again and again. It's a beautiful cycle along the river to get here, and the food is top quality junk food.
+During my first stay in Taipei I tore my calf muscle and couldn't walk very well for a while. However, I could cycle so started seeking-out far flung vegan food to cycle to so I could stay active, and one of those places was <ExternalLink url='https://maps.app.goo.gl/kk97aRCgZVQLKgmAA'>Burger Su Veggie</ExternalLink> in Beitou, north of the river. They're a vegetarian, rather than vegan restaurant, but 90% of the menu, which is translated into English, is vegan, and they're the best vegan burgers I've found in Taipei. Even once my leg was healed and throughout my second stay I came back here again and again. It's a beautiful cycle along the river to get here, and the food is top quality junk food.
 
-If you fancy some good Indian food, then <ExternalLink url='https://maps.app.goo.gl/K5UXgwkVyRDXg2Nn6'>Mayur</ExternalLink> is part of a chain, however only this particular branch is vegetarian only. <ExternalLink url='https://maps.app.goo.gl/3YrF2yJibMerbG7LA'>Falafel King</ExternalLink> is the best and only place I've found for falafel/hummus type dishes. It's a vegetarian restaurant, but their small menu has a couple of really good vegan options. <ExternalLink url='https://maps.app.goo.gl/sRZpdGWsPAeerXXC7'>Vege Creek</ExternalLink> has several branches around Taipei, mostly located in food courts that are uncomfortably crowded at busy times, but come at a quieter times for a healthy feed. It's fully vegan, and you go in and put any items that you want from the fridge, into a shopping bag. You take it up and pay, and they'll make your items into a soup bowl.
+If you fancy some good Indian food, then <ExternalLink url='https://maps.app.goo.gl/K5UXgwkVyRDXg2Nn6'>Mayur</ExternalLink> is part of a chain, however only this particular branch is vegetarian only. <ExternalLink url='https://maps.app.goo.gl/3YrF2yJibMerbG7LA'>Falafel King</ExternalLink> is the best and only place I've found for falafel/hummus type dishes. It's a vegetarian restaurant, but their small menu has a couple of good vegan options. <ExternalLink url='https://maps.app.goo.gl/sRZpdGWsPAeerXXC7'>Vege Creek</ExternalLink> has several branches around Taipei, mostly located in food courts that get uncomfortably crowded at busy times, but come at a quieter times for a healthy feed. It's fully vegan, and you go in and put any items that you want from the fridge, into a shopping bag. You take it up and pay, and they'll make your items into a soup bowl.
 
 export const veganFoodImages = [
   {
@@ -621,7 +615,7 @@ export const veganFoodImages = [
   {
     src: `${imagePath}/vegan-food/mayur-indian-kitchen.jpeg`,
     alt: 'Mayur Indian Kitchen madras masala dosa',
-    caption: 'Mayur Indian Kitchen have several branches around Taipei, but they have only one vegetarian branch (MIK-3), a short walk from Zhongxiao Xinsheng MRT station. Vegan items are clearly marked on the menu, and the food is really high quality, like this madras masala dosa for NT$230.',
+    caption: 'Mayur Indian Kitchen have several branches around Taipei, but they have only one vegetarian branch (MIK-3), a short walk from Zhongxiao Xinsheng MRT station. Vegan items are clearly marked on the menu, and the food is really good, like this madras masala dosa for NT$230 + 10%.',
   },
   {
     src: `${imagePath}/vegan-food/falafel-king.jpeg`,
@@ -641,22 +635,22 @@ export const veganFoodImages = [
   {
     src: `${imagePath}/vegan-food/plants.jpeg`,
     alt: 'Plants lentil falafel plate',
-    caption: "One of the better-known (and more expensive) vegan restaurants in Taipei is 'Plants' in Da'an. The food is really good, but NT480 for this lentil falafel plate with chickpea flatbread is definitely more than you'd pay for equivalent dishes in other restaurants.",
+    caption: "One of the better-known (and more expensive) vegan restaurants in Taipei is 'Plants' in Da'an. The food is really good, but NT480 for this lentil falafel plate with chickpea flatbread is definitely more than you'd pay for an equivalent dish in other restaurants.",
   },
   {
     src: `${imagePath}/vegan-food/ooh-cha-cha.jpeg`,
     alt: 'Ooh Cha Cha B.L.M.T sandwich',
-    caption: "Ooh Cha Cha is a vegan cafe/coffee shop. Seating is limited, so come at a quiet time. This is vegan B.L.M.T sandwich (smoky yuba, lettuce, mozzarella, sliced tomato and sour cream) served by dyslexics for just NT$170.",
+    caption: "Ooh Cha Cha is a vegan cafe/coffee shop. Seating is limited, so come at a quiet time. This is vegan B.L.M.T sandwich (smoky yuba, lettuce, mozzarella, sliced tomato and sour cream) served by dyslexics for NT$170.",
   },
   {
     src: `${imagePath}/vegan-food/lai-xin-vegan-restaurant.jpeg`,
     alt: 'Lai Xin Vegan Restaurant mixed dumplings',
-    caption: "Lai Xin Vegan Restaurant is a local place specialising in dumplings. From the outside it looks quite unfriendly to people that don't speak Chinese, but when I went in I was greeted incredibly warmly. They gave me an English menu, and one of the ladies working there spoke good English and told me about the food in great detail, asking me about what I like and making recommendations. As well as dumplings they offer noodle dishes, rice dishes and soups, each costing about NT$80 each. Dumplings are NT$80 for 10, and if you can't decide which to get you can get a mixed plate, as I did here.",
+    caption: "Lai Xin Vegan Restaurant is a local place specialising in dumplings. From the outside it looks quite unfriendly to people that don't speak Chinese, but when I went in I was greeted incredibly warmly. They gave me an English menu, and one of the ladies working there spoke good English and told me about the food in great detail, asking me about what I like and making recommendations. As well as dumplings they offer noodle dishes, rice dishes and soups, each costing about NT$80 each. Dumplings are NT$80 for 10, and if you can't decide which to get you can get a mixed plate, like I did here.",
   },
   {
     src: `${imagePath}/vegan-food/hexin-health-food.jpeg`,
     alt: 'Hexin Health Food Restaurant (禾欣養生膳坊) plate from the buffet',
-    caption: "If you've ever been to Thailand you'll be aware of the local เจ (jay/vegan) buffet restaurants located all over the country, where they have a point-and-hope buffet and you get several items with rice. I took this photo in Hexin Health Food Restaurant; it's the closest equivalent I found in Taipei. The one member of staff wasn't especially patient with my lack of Chinese, but we got there. This plate was only NT$85, so recommended for those on a budget.",
+    caption: "If you've ever been to Thailand you'll be aware of the local vegan buffet restaurants located all over the country, where they have a point-and-hope buffet and you get several items with rice. I took this photo in Hexin Health Food Restaurant; it's the closest equivalent to this that I've found in Taipei. The one member of staff wasn't especially patient with my lack of Chinese, but we got there. This plate was only NT$85, so recommended for those on a budget.",
   },
 ]
 
@@ -664,13 +658,13 @@ export const veganFoodImages = [
 
 ## Getting vegan groceries in Taipei
 
-There's good news and bad news when it comes to vegan grocery shopping in Taipei. The bad news is that there are two main supermarket chains here with branches all over the city - PX Mart and Carrefour, and neither are very vegan-friendly. You'll find the odd intentionally-vegan item, but in the main they do not cater to vegans at all, so beyond staple foods they aren't very good. Nor is Mia C'bon, a more upmarket but less plentiful supermarket chain in Taipei.
+There's good news and bad news when it comes to vegan grocery shopping in Taipei. The bad news is that there are two main supermarket chains here with branches all over the city - PX Mart and Carrefour, and neither are very vegan-friendly. You'll find the odd intentionally-vegan item, but in the main they do not cater to vegans, so beyond staple foods they aren't very good. Nor is Mia C'bon, a more upmarket but less plentiful supermarket chain in Taipei.
 
 The good news is there are some stores in Taipei that are very vegan-friendly, you just have to know where to look. For example, <ExternalLink url='https://maps.app.goo.gl/UepP1ZSueMgFW2oC9'>Noemi</ExternalLink> is a vegetarian supermarket located within Plantarium (a complex that also includes a vegan restaurant, vegan cooking classes, and a few other plant-based things). Noemi do sell a small number of items that include dairy or egg, however these are very clearly marked (in English) on the price labels, so you can know that if it doesn't say otherwise, what you're buying is vegan. The one downside that I found to Noemi, is that once they're out-of-stock of something, they never seem to get it back again. As I'm a creature of habit I found that frustrating.
 
-Another place to checkout is <ExternalLink url='https://maps.app.goo.gl/aK4DDvkFDpdzBXJY6'>Leezen</ExternalLink> - a chain of almost-vegan stores with several branches throughout Taipei. They have annoyingly helpful staff who I wish would let you shop in peace, who on my first visit they told me that everything in store is vegan. That is not true, I found items containing milk so be slightly careful, but almost everything they sell is vegan. If you search for "Leezen" on Google Maps it takes you to a municipality in Germany, so search by its Chinese name, <ExternalLink url='https://maps.app.goo.gl/hGkmUrXuUuHAvnF26'>里仁</ExternalLink> to find the branch nearest to you.
+Another place to checkout is <ExternalLink url='https://maps.app.goo.gl/aK4DDvkFDpdzBXJY6'>Leezen</ExternalLink> - a chain of almost-vegan stores with several branches throughout Taipei. They have annoyingly helpful staff who I wish would let you shop in peace, and who on my first visit told me that everything in store is vegan. That is not true, I found items containing milk so be slightly careful, but almost everything they sell is vegan. If you search for "Leezen" on Google Maps it takes you to a municipality in Germany, so search by its Chinese name, <ExternalLink url='https://maps.app.goo.gl/hGkmUrXuUuHAvnF26'>里仁</ExternalLink> to find the branch nearest to you.
 
-Some more good news is that if you're someone who eats a lot of nuts, and they make up most of my diet, then for some reason nuts are really good value in Taipei - I don't know why. Normally when I travel my nut expenditure takes up a concerning amount of my budget, but here you get a little respite. In PX Mart, for example, a 1.13kg tub of unsalted nuts is just NT$579.
+Some more good news is that if you're someone who eats a lot of nuts, and they make up most of my diet, then for some reason nuts are really good value in Taipei - I don't know why. Normally when I travel my nut expenditure takes up a concerning amount of my total budget, but here you get a little respite. In PX Mart, for example, a 1.13kg tub of unsalted mixed nuts is just NT$579.
 
 The other thing to be mindful of here is that if you eat a lot of fruit, then the supermarkets aren't the best place to buy it. Your better bet is to go to the local fruit and veg shops that you'll find located every couple of blocks, where the selection is wider, the quality better, and the prices lower.
 
@@ -688,7 +682,7 @@ export const groceryStoreImages = [
   {
     src: `${imagePath}/vegan-groceries/px-mart-nuts.jpeg`,
     alt: 'PX Mart nuts',
-    caption: "Taipei is the only place in the world I've been where nuts actually seem reasonably-priced. This special offer in PX Mart where a 1.13kg tub of unsalted nuts is NT$579 has spanned both of my stays in Taipei.",
+    caption: "Taipei is the only place in the world I've been where nuts are actually reasonably-priced. This special offer in PX Mart where a 1.13kg tub of unsalted nuts is NT$579 has spanned both of my stays in Taipei.",
   },
   {
     src: `${imagePath}/vegan-groceries/xinyi-fruit-shop.jpeg`,
@@ -698,7 +692,7 @@ export const groceryStoreImages = [
   {
     src: `${imagePath}/vegan-groceries/wholewheat-spaghetti.jpeg`,
     alt: 'Wholewheat spaghetti in Fresh Mart supermarket in Far Eastern Sogo Taipei Zhongxiao',
-    caption: 'I eat a lot of wholewheat pasta, and finding it in Taipei is much harder than it should be. Your best bet is Fresh Mart on the B2 floor of Far Eastern Sogo.',
+    caption: 'I eat a lot of wholewheat pasta, and finding it in Taipei is much harder than it should be. Your best bet is Fresh Mart on the B2 floor of Far Eastern Sogo that sells wholewheat spaghetti. A very limited number of Carrefour branches also have wholewheat pasta.',
   },
   {
     src: `${imagePath}/vegan-groceries/vegan-noodles.jpeg`,
@@ -713,7 +707,7 @@ export const groceryStoreImages = [
 
 When it comes to buying vegan supplements in Taipei, what I've found is that you are able to find everything that you need, you just might have to search for a while.
 
-Watsons, Cosmed and Poya are three cosmetics chain stores that you'll find all over Taipei, and each branch has a supplements section. These are your best starting point when looking for something, although dont expect the labels to be in English nor the staff to speak English, and don't expect them to be labelled as vegan - I've spent a lot of time in these shops taking photos of Chinese ingredients labels on pill bottles and sending them off to ChatGPT for analysis to determine if they're both vegan, and actually any good.
+Watsons, Cosmed and Poya are three cosmetics chain stores that you'll find all over Taipei, and each branch has a supplements section. These are your best starting point when looking for something, although don't expect the labels to be in English nor the staff to speak English, and don't expect them to be labelled as vegan - I've spent a lot of time in these shops taking photos of Chinese ingredients labels on pill bottles and sending them off to ChatGPT for analysis to determine if they're both vegan, and actually any good.
 
 ### Protein
 
@@ -757,24 +751,22 @@ export const veganProteinImages = [
 
 The best vegan multivitamin I found in Taipei is <ExternalLink url='https://maps.app.goo.gl/aK4DDvkFDpdzBXJY6'>Leezen's</ExternalLink> own-brand multivitamin. At NT$650 for 60 capsules (30 days) it's not the cheapest. That honour belongs to Decathlon of all places, who sell a vegan multivitamin at NT$299 for 30 days.
 
-I took the Decthlon one for three weeks, but after noticing a change in how I was feeling, I asked ChatGPT to compare it to the vitamin I'd been taking previously (that I'd brought with me from Europe). It told me that it was lacking in key ingredients for testosterone production (including zinc, magnesium, selenium and iron) and that I should switch over to the Leezen multivitamin, which was much more suitable.
-
-I did, and within a week I was feeling a lot better.
+I took the Decthlon one for three weeks, but after noticing a change in how I was feeling, I asked ChatGPT to compare it to the vitamin I'd been taking previously (that I'd brought with me from Europe). It told me that it was lacking in key ingredients for testosterone production (including zinc, magnesium, selenium and iron) and that I should switch over to the Leezen multivitamin, which was much more suitable. I did, and within a week I was feeling a lot better.
 
 Coincidence? Perhaps, but there's definitely a reason it only costs NT$299. I'd avoid it unless you're on a very tight budget, or just cheap like me.
 
-Watsons also stock a vegan multivitamin with pretty packaging, but not only is it more nutrient deficient than Decathlon's, it's three times the price.
+Watsons also stock a vegan multivitamin with pretty packaging, but not only is it just as nutrient deficient as Decathlon's, it's three times the price.
 
 export const veganMultivitaminImages = [
   {
     src: `${imagePath}/vegan-supplements/multivitamin/leezen.jpeg`,
     alt: "Leezen vegan men's multivitamin",
-    caption: "Leezen's own-brand multi is the best vegan multivitamin that I found in Taipei. This is the men's version, but they have a women's equivalent. 30 days costs NT$650.",
+    caption: "Leezen's own-brand multi is the best vegan multivitamin that I've found in Taipei. This is the men's version, but they have a women's equivalent. 30 days costs NT$650.",
   },
   {
     src: `${imagePath}/vegan-supplements/multivitamin/decathlon.jpeg`,
     alt: 'Decathlon vegan multivitamin',
-    caption: "For something cheaper, head to Decathlon. Here you'll find a vegan multivitamin for just NT$299, but that's for a good reason.",
+    caption: "For something cheaper, head to Decathlon. Here you'll find a vegan multivitamin for just NT$299, but there's a reason for that.",
   },
   {
     src: `${imagePath}/vegan-supplements/multivitamin/watsons.jpeg`,
@@ -806,7 +798,7 @@ export const veganAlgaeOilImages = [
 
 ### Calcium
 
-The only place I've found to buy vegan calcium, is of all places, PX Mart, where in bigger branches you find a decent-sized supplement sections.
+The only place I've found to buy vegan calcium, is of all places, PX Mart, where in bigger branches you find decent-sized supplement sections.
 
 The packaging only says vegetarian, but ChatGPT insists that it's vegan, and I haven't found anything else in Taipei. 60 tablets costs NT$741, and they recommend taking four per day, but that's excessive. I took two per day, so they lasted me 30 days.
 
@@ -857,13 +849,13 @@ export const veganZincImages = [
 
 Accommodation takes-up a disproportionate amount of your budget in Taipei. While things like transport, groceries and restaurants are really good value here, accommodation is not - at least not for short-term visitors. All of my stays have been in Airbnbs, but if you don't want to pay their vastly inflated prices, you could try your luck on Facebook groups like <ExternalLink url='https://www.facebook.com/share/g/19MjMmyc2r'>Short-term Apartment in Taipei</ExternalLink>.
 
-I've stayed in different areas around Taipei, and have loved all of them. With the exception of Ximen, I haven't been anywhere in Taipei that I didn't like. Xinyi in particular, I like, although I've never stayed around Da'an having not found suitable accommodation there, that would perhaps be my ideal area.
+I've stayed in different areas around Taipei, and have loved all of them. With the exception of Ximen, I haven't been anywhere in Taipei that I don't like. Xinyi in particular is a great area to stay.
 
-It has a park, NTU is nearby making it a relaxed, studenty area and the campus has a great running track, and my two most-visited vegan restaurants are nearby. With YouBike though, anywhere in the city is quickly and cheaply accessible, so I'd focus more on the accommodation than its location.
+I've never stayed in Da'an having not found suitable accommodation there, but that would perhaps be my ideal area. It has a park, NTU is nearby making it a relaxed, studenty area and the campus has a great running track, and my two most-visited vegan restaurants are there. With YouBike though, anywhere in the city is quickly and cheaply accessible, so I'd focus more on the accommodation than its location.
 
 As for why I don't recommend Ximen - I only went there one time. It was to check-out the area as I'd found that accommodation there was cheaper than in other parts of the city. With good reason. It's crowded, full of tourists and homeless people, and is generally awful. Unless you like shopping, and I hate shopping, there's nothing nice about it.
 
-The reason that the rest of Taipei is so nice, is that all the shit bits of Taipei are in Ximen.
+The reason that the rest of Taipei is so nice, is that all the shit bits are in Ximen.
 
 ## Where I stayed
 
@@ -904,7 +896,7 @@ Nah, accommodation in Taipei is just expensive. It's tiny, but it does have all 
 
 The number one thing I look for when choosing accommodation is that it gets a lot of daylight. Nothing puts me on the path to depression quicker than waking up in a dingy room, and with its big windows I thought this room would be sufficient. And it is, with one caveat.
 
-The room is in the centre of a horseshoe of rooms. With the bed right next to the window, if you leave the blackout blinds open, people in the adjacent rooms can look in and watch you sleep, so staying here is a bit of a battle between leaving the blinds open enough that daylight gets in, but not so much that you wake up with people looking at you. Closing the left blind completely and half-closing the right one was the best middle-ground I found, but even then people in some of the higher rooms can still look down at you in bed, which is a bit weird.
+The room is in the centre of a horseshoe of rooms. With the bed right next to the window, if you leave the blackout blinds open, people in the adjacent rooms can look in and watch you sleep, so staying here is a bit of a battle between leaving the blinds open enough that daylight gets in, but not so much that you wake up with people staring at you. Closing the left blind completely and half-closing the right one was the best middle-ground I found, but even then people in some of the higher rooms can still look down at you in bed, which is a bit weird.
 
 That aside, I'd say that this room has everything that you need... but only just. For example, there isn't a kitchen but there is a plug-in hob and a pan that you can use on the desk. That desk is the only surface in the apartment, so you have a workstation and you have a kitchen, just not at the same time.
 
@@ -914,9 +906,9 @@ And while it is a compact room, by laying my mat diagonally I had space to exerc
 
 If you search on Airbnb, you will find bigger rooms for cheaper. One thing you're paying for to stay here is the great location, and it is a great location. Zhongxiao Xinsheng MRT station is a short walk away. That's on the blue line just two stops from Taipei Main Station, so everything in Taipei is within easy access, but most things you need are actually walking distance.
 
-The street that the apartment's on, including the building that it's in, is almost solely electronics shops, so if you like tech you'll be living your wet dream. There are loads of little eateries nearby, including the vegetarian branch of Mayur Indian Kitchen if you want vegan/vegetarian food, as well as a Carrefour supermarket. It's very close to the National Taipei University of Technology, making it a studenty area, but more importantly being walking distance to the university's running track. Da'an Park is a slightly longer walk (or a short YouBike ride) but is still easily accessible on foot.
+The street that the apartment's on, including the building that it's in, is almost solely electronics shops, so if you like tech you'll be living your wet dream. There are loads of little eateries nearby, including the vegetarian branch of Mayur Indian Kitchen if you want vegan/vegetarian food, as well as a branch of Carrefour. It's very close to the National Taipei University of Technology, making it a studenty area, but more importantly being walking distance to the university's running track. Da'an Park is a slightly longer walk (or a short YouBike ride) but is still easily accessible.
 
-I at no point felt I was living a life of luxury when I stayed here. For the price I perhaps should have done. But it had everything I needed so I was comfortable for my month here.
+I at no point felt I was living a life of luxury when I stayed here. For the price I perhaps should have done, but I had everything I needed for my month here.
 
 export const zhongzhengApartmentImages = [
   {
@@ -927,7 +919,7 @@ export const zhongzhengApartmentImages = [
   {
     src: `${imagePath}/accommodation/zhongzheng-apartment/sofa.jpeg`,
     alt: 'Zhongzheng apartment sofa and living area',
-    caption: "The biggest downside to Taipei is that accommodation is not cheap, especially if you're used to places like Eastern Europe and South-East Asia (as I am). Here you pay more for a tiny room than you do for a large apartment in either of those places, but it at least has all the essentials. As there's only one surface in the apartment, the desk serves as both a workstation and a kitchen surface. On top of the microwave it an electric hob that you can bring down to the desk for cooking, and in the cabinet under the desk are a couple of pans. A limited amount of utensils and crockery are provided, although I think they just threw-in whatever they had lying around because it includes two dinner knives, but no forks. Luckily I'm a seasoned nomad and carry a lot of my own kitchenware to overcome such shortcomings.",
+    caption: "The biggest downside to Taipei is that accommodation is not cheap, especially if you're used to places like Eastern Europe and South-East Asia (as I am). Here you pay more for a tiny room than you do for a large apartment in either of those places, but it at least has all the essentials. As there's only one surface in the apartment, the desk serves as both a workstation and a kitchen surface. On top of the microwave it an electric hob that you can bring down to the desk for cooking, and in the cabinet under the desk are a couple of pans. A limited amount of utensils and crockery are provided, although I think they just threw-in whatever they had lying around because it includes two dinner knives, but no forks. Luckily I carry a lot of my own kitchenware in my suitcase",
   },
   {
     src: `${imagePath}/accommodation/zhongzheng-apartment/wall.jpeg`,
@@ -947,7 +939,7 @@ export const zhongzhengApartmentImages = [
   {
     src: `${imagePath}/accommodation/zhongzheng-apartment/outside.jpeg`,
     alt: 'Zhongzheng apartment from outside',
-    caption: "This is the apartment building from the outside. You go in through the doors in the middle of this picture, then the apartment is up on the first floor. I really loved the area, it's in a great location. The street the apartment is on has a tonne of electronic shops, so if you're into tech you'll love it.",
+    caption: "This is the apartment building from the outside. You go in through the doors in the middle of this picture, then the apartment is up on the first floor. I really loved the area. The street the apartment is on has a tonne of electronic shops, so if you're into tech you'll love it.",
   },
 ]
 
@@ -986,9 +978,9 @@ export const xinyiApartmentStays = [
 
 This room has the same Airbnb hosts as the room above and costs almost exactly the same. Which is better then? Well it's actually quite hard to pick between them.
 
-This room is in Xinyi, about a 5 minute walk from the Taipei 101/World Trade Center MRT station. That's a less central, but equally vibrant location. The apartment is on a main road with everything you need within an easy walk. Restaurants galore, and the nearest supermarket (PX Mart) is only 2 minutes away. There's a small park about 30 metres from the building entrance, that contains some very convenient YouBike docks. It's not the nicest park in the world so had little significance to me, until I injured my leg and became very immobile. At that point being able to hobble around the corner to this park and sit there reading my book while getting some daylight became invaluable to my mental health.
+This room is in Xinyi, about a 5 minute walk from the Taipei 101/World Trade Center MRT station. That's a less central, but equally vibrant location. The apartment is on a main road with everything you need within an easy walk. Restaurants galore, and the nearest supermarket (PX Mart) is only 2 minutes away. There's a small park about 30 metres from the building entrance that contains some very convenient YouBike docks. It's not the nicest park in the world so had little significance to me, until I injured my leg and became very immobile. At that point being able to hobble around the corner to this park and sit there reading my book while getting some daylight became invaluable to my mental health.
 
-If you look at the pictures below, you might think that with its large windows, this apartment gets loads of natural light. Bzzzz, wrong. The sign for a business covers the top half of the window severely limiting the light that gets in (and the view to the outside), and as this room's only on the first floor, for any privacy you need to keep the blinds at least partially shut as well, so I found myself getting less light than in the room above. Where it does exceed my previous room, is that it's just that little bit more spacious, and that little bit better equipped.
+If you look at the pictures below, you might think that with its large windows, this apartment gets loads of natural light. Bzzzz, wrong. The sign for a business covers the top half of the windows, severely limiting the light that gets in (and the view to the outside), and as this room's only on the first floor, for any privacy you need to keep the blinds at least partially shut as well, so I found myself getting less light than in the room above. Where it does exceed my previous room, is that it's just that little bit more spacious, and that little bit better equipped.
 
 Moving the coffee table out of the way, there's ample floor space to exercise here. It also has a desk, and a separate kitchen area including sink, so you can have a workstation setup, cook your lunch, and brush your teeth all at the same time like some kind of king. Although worth noting that the washing machine in this room firstly doesn't use any hot water, so my clothes never came out very clean, and secondly isn't a drying machine. There's a hanging rail and loads of coat hangers which is a sufficient alternative.
 
@@ -1000,7 +992,7 @@ export const xinyiApartmentImages = [
   {
     src: `${imagePath}/accommodation/xinyi-apartment/apartment.jpeg`,
     alt: 'Xinyi apartment',
-    caption: "It's a decent-sized apartment. Moving the coffee table out the way makes for a good-sized exercise area in front of the TV and beneath the air conditioner, and while the chair leaves a little to be desired, the desk makes a good workstation. I was able to work there for eight hours on consecutive days without feeling any discomfort. Unfortunately none of the windows open. As the apartment is on a main road, you probably wouldn't want them open much anyway, but I did miss being able to get outside air in from anywhere other than the air conditioner.",
+    caption: "It's a decent-sized apartment. Moving the coffee table out the way makes for a good-sized exercise area in front of the TV, and while the chair leaves a little to be desired, the desk makes a good workstation. I was able to work there for eight hours on consecutive days without feeling any discomfort. Unfortunately none of the windows open. As the apartment is on a main road, you probably wouldn't want them open much anyway, but I did miss being able to get outside air in from anywhere other than the air conditioner.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-apartment/bed.jpeg`,
@@ -1020,12 +1012,12 @@ export const xinyiApartmentImages = [
   {
     src: `${imagePath}/accommodation/xinyi-apartment/bathroom.jpeg`,
     alt: 'Xinyi apartment bathroom',
-    caption: "The bathroom's simple but does everything you need. The shower is hot and powerful, which is nice after you get caught in one of Taipei's many, many showers.",
+    caption: "The bathroom's simple but has everything you need. The shower is hot and powerful, which is nice after you get caught in one of Taipei's many, many showers.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-apartment/washing-machine.jpeg`,
     alt: 'Xinyi apartment washing machine',
-    caption: "Beyond the living area you have a separate laundry room. Or laundry corridor. Plenty of coat hangers are provided, so that bar attached to the ceiling makes drying clothes very convenient. The room also includes a dehumidifyer. Putting that in here with the extractor fan on (that hole in the ceiling behind the washing machine) I found got everything dry really quickly, despite Taipei's humidity. Unfortunately the washing machine only uses cold water so I didn't find it to be very efficient at actually cleaning my clothes, but you can't have everything.",
+    caption: "Beyond the living area you have a separate laundry room. Or laundry corridor. Plenty of coat hangers are provided, so that bar attached to the ceiling makes drying clothes very convenient. The room also includes a dehumidifyer. Putting that in here with the extractor fan on (that hole in the ceiling behind the washing machine) I found got everything dry quickly, despite Taipei's humidity. Unfortunately the washing machine only uses cold water so I didn't find it to be very efficient at actually cleaning my clothes, but you can't have everything.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-apartment/outside.jpeg`,
@@ -1078,7 +1070,7 @@ It's below the TV. I thought about trying to move it, but there wasn't really an
 
 There are no washing facilities in the room, but there's a washer and dryer shared by the rooms on the sixth floor. The washer is free with detergent provided, the dryer costs NT$50 (you need 5x NT$10 coins). As there's a clothes horse in the room, unless you're in a rush you're not going to need the dryer.
 
-The location of the room is pretty awesome. A PX Mart supermarket is literally just across the street, with a YouBike dock being similarly close. Xingtian Temple MRT station is about a five minute walk from the room. There are a couple of fruit shops less than ten minutes walking from the room, and a limited amount of vegan food available nearby. When I wanted to run I'd grab a YouBike from outside the room, cycle for ten minutes and drop it <ExternalLink url='https://maps.app.goo.gl/bVL8dsK1gyYrP1AbA'>opposite the Fine Arts Park</ExternalLink>, then walk to the river from there.
+The location of the room is pretty awesome. A PX Mart supermarket is literally just across the street, with a YouBike dock being similarly close. Xingtian Temple MRT station is about a five minute walk from the room. There are a couple of fruit shops less than ten minutes walking from the room, and a limited amount of vegan food available nearby. When I wanted to run I'd grab a YouBike from outside the room, cycle for ten minutes and drop it <ExternalLink url='https://maps.app.goo.gl/bVL8dsK1gyYrP1AbA'>opposite the Fine Arts Park</ExternalLink>, then walk to the riverside from there.
 
 Considering staying here was a last minute decision I was pretty happy with how it turned out - in many ways it's a really nice room. Just be aware that the sanctity of your stay will be determined by the bedtime and the thoughtfulness of the people in the adjacent rooms. If you're unlucky enough to have noisy neighbours that stay up late each night, you're probably not going to have a good time.
 
@@ -1167,23 +1159,23 @@ My stay in this Xinyi Anhe apartment got off to a shaky start. The host, Steve, 
 
 I was then told that it was really important that his friend come and show me how to dispose of my garbage while I'm here. But as she was only available on a day I was out hiking all day, it suddenly became much less important and I was left to figure it out for myself.
 
-All of this while communicating with someone in a California timezone was a bit of a ballache, but we got there. And I grew to like this room, but what I will say, is it feels like a room managed by someone 6,000 miles away. What I mean, is that is was cleaned before I arrived, but to about the minimum acceptable standard. If I was a cleaner working on minimum wage and I knew that the person paying me was out of the country, I'd probably do the minimum as well.
+All of this while communicating with someone on a California timezone was a bit of a ballache, but we got there. And I grew to like this room, but what I will say, is it feels like a room managed by someone 6,000 miles away. What I mean, is that is was cleaned before I arrived, but to about the minimum acceptable standard. If I was a cleaner working on minimum wage and I knew that the person paying me was out of the country, I'd probably do the minimum as well.
 
-There are two air conditioners in the room - one in the living area, and one in front of the bed. The latter is in deperate need of a service as it rattles loudly enough to keep you up at night, turns-off spordically, and doesn't really pump-out much cold air. That's the kind of thing that a host would check and notice were they to ever come to the room. And you were very aware of the presence of previous guests here.
+There are two air conditioners in the room - one in the living area, and one in front of the bed. The latter is in deperate need of a service as it rattles loudly enough to keep you up at night, turns-off spordically, and doesn't really pump-out much cold air. That's the kind of thing that a host would check were they to ever come to the room. And you were very aware of the presence of previous guests here.
 
 For example, a lot of food had been left by previous tenants, and I'm not just talking about useful things like salt and pepper and oil. There was a jar of apricots in the cupboard, except there were no apricots left in it, just the water that they came in. Something that would have been handled by a cleaner that was held accountable, but as the host's not in the country...
 
 That was the introduction to this room, but once I was past that, it's a pretty decent place.
 
-It's in Xinyi, which is one of my favourite parts of Taipei. Of my 24 weeks staying in Taipei, 12 have been in Xinyi, and that's not an accident. Despite being close to Taipei 101, it doesn't have very many tourists here, and I like the vibe of this area. The MRT, buses and YouBikes are very easily accessible from the room. And the room itself is decent.
+It's in Xinyi, which is one of my favourite parts of Taipei. Despite being close to Taipei 101, it doesn't have very many tourists here, and I like the vibe of this area. The MRT, buses and YouBikes are very easily accessible from the room. And the room itself is decent.
 
-It's up on the 11th floor, but don't expect any kind of view unless you really enjoy looking at the building opposite. It's also worth noting that construction is ongoing on a new building outside the window, but despite this being audible, it was never loud enough that it bothered me.
+It's up on the 11th floor, but don't expect any kind of view unless you really enjoy looking at the building opposite. It's also worth noting that construction is ongoing on a new building outside the window, but despite this being audible, the noise of this construction was never loud enough to bother me.
 
 You have to get used to pretty basic accommodation in Taipei - that's just the way it is here. You can't expect amenities like you'd find in a European Airbnb. Understanding that caveat, you have everything you need here.
 
-I didn't have any issues with the wifi during my stay. On my one speedtest it recoreded a 469mbps download speed and a 46mbps upload speed, but more importantly, it was a stable connection. There's a desk and a chair that you can comfortably work and eat at, but I also found both the sofa and the armchair by the window comfortable to sit at on my laptop too. The armchair is next to a large window, which gets a bit of direct sunlight in the morning, but is mostly blocked by the building opposite. The bed is up on a raised platform. You get some daylight up there at daybreak if you like to rise with the sunrise like I do, but it could definitely do with a bit more.
+I didn't have any issues with the wifi during my stay. On my one speedtest it recorded a 469mbps download speed and a 46mbps upload speed, but more importantly, it was a stable connection. There's a desk and a chair that you can comfortably work and eat at, but I also found both the sofa and the armchair by the window comfortable to sit on my laptop. The armchair is next to a large window, which gets a bit of direct sunlight in the morning, but is mostly blocked by the building opposite. The bed is up on a raised platform. You get some daylight up there at daybreak if you like to rise with the sunrise like I do, but it could definitely do with a bit more.
 
-The room has a kitchen with a kettle, one hob, and a couple of pans. It's sufficient for minimal cooking, but again temper your expectations if you're used to European Airbnbs. There's also a washer/dryer that works great, except it doesn't like to give you your clothes back again. The only way that I found to open the door was with anger. If I kicked it enough, eventually it would give-up and open so that I could get my clothes out. Through no amount of waiting did it ever release on its own.
+The room has a kitchen with a kettle, one hob, and a couple of pans. It's sufficient for minimal cooking, but again temper your expectations if you're used to European Airbnbs. There's also a washer/dryer that works great, except it doesn't like to give you your clothes back again. The only way that I found to open the door was with anger. If I kicked it enough, eventually it would give-up and open so that I could get my clothes back. Through no amount of waiting did it ever release on its own.
 
 Moving the coffee table out of the way, in the space between the sofa and the TV is enough space to exercise.
 
@@ -1198,7 +1190,7 @@ export const xinyiAnheApartmentImages = [
   {
     src: `${imagePath}/accommodation/xinyi-anhe-apartment/sleeping-platform.jpeg`,
     alt: 'Xinyi Anhe apartment sleeping platform',
-    caption: "The bed is up on a raised platform. While there is an AC unit up there, it's in need of a service. In those cupboards you'll find a few useful things like a fan and about twenty packs of toilet paper.",
+    caption: "The bed is up on a raised platform. While there is an AC unit up there, it's in dire need of a service. In those cupboards you'll find a few useful things like a fan and about twenty packs of toilet paper.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-anhe-apartment/kitchen.jpeg`,
@@ -1213,12 +1205,12 @@ export const xinyiAnheApartmentImages = [
   {
     src: `${imagePath}/accommodation/xinyi-anhe-apartment/bed.jpeg`,
     alt: 'Xinyi Anhe apartment bed',
-    caption: "The bed is little more than a mattress, but it's comfortable enough. Below the little table is an extention lead, so you can charge your devices up here during the night.",
+    caption: "The bed is little more than a mattress, but it's comfortable enough. Below the little table is an extension lead, so you can charge your devices up here during the night.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-anhe-apartment/bathroom.jpeg`,
     alt: 'Xinyi Anhe apartment bathroom',
-    caption: "You need to double-flush the toilet occasionally, but take that as a good thing. It means you're good at shitting.",
+    caption: "You'll need to double-flush the toilet occasionally, but take that as a positive. It means you're good at shitting.",
   },
   {
     src: `${imagePath}/accommodation/xinyi-anhe-apartment/shower.jpeg`,
@@ -1260,15 +1252,13 @@ export const songjiangNanjingApartmentStays = [
 
 <AccommodationTable stays={songjiangNanjingApartmentStays} />
 
-This room is more expensive than my previous stays, but given its then-high rating on Airbnb, coupled with how big, well-equipped and well-located it is, I figured it would be worth it, for a stress-free stay.
+This room is more expensive than my previous stays, but given its high rating on Airbnb, coupled with how big, well-equipped and well-located it is, I figured it would be worth it for a stress-free stay.
 
-And it's all those things. It noticeably larger than any of my previous rooms. Even having a desk and chair, a separate dining table, and a sofa with coffee table, it still has more empty space than any of my other rooms. The kitchen here is more complete than anywhere else I've stayed in Taipei, with not only a hob and pots and pans, but a microwave and even a toaster oven too. And the location is really decent, depending on what you're looking for.
+And it's all those things. It noticeably larger than any of my previous rooms. Even having a desk and chair, a separate dining table, and a sofa with coffee table, it still has more empty space than any of my other rooms. The kitchen here is more complete than anywhere else I've stayed in Taipei, with not only a hob and pots and pans, but a microwave and even a toaster oven too. And the location is really decent.
 
 I'd say that I prefer the vibe of staying in Xinyi - it feels more local, but this is by no means a bad area, and its central location is much easier for getting around. It has excellent local infrastructure including two nearby MRT stations serving the green, yellow and brown lines, a busy bus stop just around the corner, and a couple of easily-walkable YouBike docks, as well as nearby restaurants, several local supermarkets, and branches of Watsons, Cosmed, Poya and even LeeZen within a very easy walk. With all that being said, do I recommend staying here?
 
-Absofuckinglutely not.
-
-Why? Because the Internet sucks.
+Absofuckinglutely not. Why? Because the Internet sucks.
 
 With all the effort that's gone into making this such a nice place to stay, it's bewildering that they've cheaped-out on the wifi, but the connection here is God-awful.
 
@@ -1278,7 +1268,7 @@ For my entire six-week stay, at least three times per day my neighbours got used
 
 My blood pressure went through the roof when I was staying here. It's a connection that's inexcusably bad in 2025. And I assume that if you're reading this article then you're a digital nomad who needs a good connection, so do not stay here.
 
-Everything else about the room is great. It's spacious, nicely decorated and well-equipped with pretty much everything you're going to need, and has the best toilet I've ever had (although I wasn't given enough of many essentials like toilet paper or laundry detergent for a six-week stay, so had to buy them myself). It even has loads of cat decorations and Nintendo memorabilia, which is being stored here disguised as decoration, but is still quite nice.
+Everything else about the room is great. It's spacious, nicely decorated and well-equipped with pretty much everything you're going to need, and has the best toilet I've ever had (although I wasn't given enough of many essentials like toilet paper or laundry detergent for a six-week stay, so had to buy them myself). It even has loads of cat knickknacks and Nintendo memorabilia, which is being stored here disguised as decoration, but is still quite nice.
 
 But I would not stay here again simply for how shit the wifi is, and I recommend that you don't either.
 
@@ -1311,7 +1301,7 @@ export const songjiangNanjingApartmentImages = [
   {
     src: `${imagePath}/accommodation/songjiang-nanjing-apartment/stairs.jpeg`,
     alt: 'Sonjiang Nanjing apartment stairs',
-    caption: "The bed is on the platform up these stairs. One annoyance is that the stairs protrude further into the room than anything else, which if you plan on doing yoga in front of the TV like I do, then you'll find them getting in your way.",
+    caption: "The bed is on the platform up these stairs. One annoyance is that the stairs protrude further into the room than anything else, which if you plan on doing yoga in front of the TV like I do, you'll find them getting in your way.",
   },
   {
     src: `${imagePath}/accommodation/songjiang-nanjing-apartment/bed.jpeg`,
@@ -1331,7 +1321,7 @@ export const songjiangNanjingApartmentImages = [
   {
     src: `${imagePath}/accommodation/songjiang-nanjing-apartment/toilet.jpeg`,
     alt: 'Sonjiang Nanjing apartment toilet',
-    caption: "But this is the best thing about this apartment. It has a heated toilet seat that sprays water up your arse. You'll be the princess with the cleanest rectum in all the land!",
+    caption: "But this is the best thing about this apartment. It has a heated toilet seat that sprays water up your arse. You'll be the princess with the cleanest rectum in all the land.",
   },
 ]
 
@@ -1353,13 +1343,11 @@ export const summaryPoints = {
     'No tipping',
     'Free ATM withdrawals for foreign cards',
     'Several branches of Decathlon',
-    'TODO',
   ],
   neutral: [
     'Tap water is sort of drinkable',
     'Apple Pay is accepted in some places',
     'Sorting and throwing away your trash is a pain, but good for the environment',
-    'TODO',
   ],
   negative: [
     'Accommodation is expensive and small',
@@ -1370,7 +1358,6 @@ export const summaryPoints = {
     'Dogs being treated like babies is weird',
     'Most restaurants close mid-afternoon',
     'Wholewheat pasta and hummus are not very plentiful',
-    'TODO',
   ],
 }
 
@@ -1390,8 +1377,8 @@ Perhaps that's just me.
 
 If you're unsure whether to come to Taipei or not, ask yourself one question:
 
-Am I willing to stay in small, expensive under-equipped accommodation?
+Am I willing to stay in small, expensive, under-equipped accommodation?
 
-That's the main downside to coming here, and if you're used to staying in Eastern Europe, for example, the standard of accommodation here for higher prices is very underwhelming. If you can live with that, then for how safe it is, how easy it is to have a social life, how easy it is to be vegan, and for YouBike, then coming here is a no-brainer. Do it.
+That's the main downside to coming here, and if you're used to staying in Eastern Europe for example, the standard of accommodation here for higher prices is very underwhelming. If you can live with that, then for how safe it is, how easy it is to have a social life, how easy it is to be vegan, and for YouBike, then coming here is a no-brainer. Do it.
 
-While I'm certainly not a fan of the accommodation in Taipei, I can live with it, and I expect to be back again once I've grown fed-up of angry people and cars trying to run me over again. It really is a great place to come.
+While I'm certainly not a fan of the accommodation in Taipei, I can live with it, and I expect to be back again once I've grown fed-up of angry people and cars trying to run me over. It really is a great place.
