@@ -1,0 +1,119 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2025-12-11T20:45:00+07:00', // TODO: Update this
+  title: 'Lampang for Digital Nomads',
+  description: 'TODO',
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/lampang-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add photos
+
+## WHy did I come to Lampang?
+
+TODO
+
+## How affordable is Lampang?
+
+TODO
+
+## Is it easy to get by with English in Lampang?
+
+TODO
+
+## Is Lampang safe?
+
+TODO
+
+## Who is Lampang suitable for?
+
+TODO
+
+## Things I don't like about Lampang
+
+TODO
+
+## Being sociable in Lampang
+
+TODO
+
+## Where to run in Lampang
+
+TODO
+
+## Getting vegan food in Lampang
+
+TODO
+
+## Where I stayed in Lampang
+
+### Le Neuf Nakorn Lampang
+
+<MapLink name='353/4 Mengrai Road' url='https://maps.app.goo.gl/rDdK2gBVMyQ4SNov6' />
+
+export const leNeufStays = [
+  {
+    dates: {
+      checkIn: '2025-11-27',
+      checkOut: '2025-12-11',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/le-neuf-nakorn-lampang.html',
+    },
+    roomType: 'Standard King Room With Sofa',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 11542.91,
+        '7% VAT': 808.00,
+        '10% property service charge': 1235.09,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={leNeufStays} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Lampang
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
+
+TODO
+
+## Do I want to come back again?
+
+TODO
