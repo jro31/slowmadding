@@ -58,7 +58,7 @@ export const thailandData = {
     {
       [dates]: {
         [arrival]: '2025-12-18',
-        [departure]: '2026-01-02',
+        [departure]: '2026-01-08',
       },
     },
   ],
@@ -383,6 +383,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2024-12-11',
         [departure]: '2025-01-08',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2026-01-08',
+        [departure]: '2026-02-05',
       },
     },
   ],
