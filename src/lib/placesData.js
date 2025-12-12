@@ -447,6 +447,47 @@ export const placesData = [
     [articlePath]: '/articles/khon-kaen-for-digital-nomads',
   },
   {
+    [place]: places[countries.thailand].lampang,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'A very cheap city, even by Thai standards. Expect to pay 50 baht for a plate of food in a local restaurant, 100 baht for large beer in a bar, and as little as 400 baht per night for accommodation.',
+      },
+      [internet]: {
+        [verdict]: false,
+        [description]:
+          'The wifi was a little shaky in the hotel I stayed in - perhaps other places are better.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'Kelang Nakhon Public Park is a good enough spot for running.',
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          'There are a few good options for vegan food dotted around Lampang.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]: 'Very, very safe. No hint of crime during my stay.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          'I found little sociable to do here other than going and sitting in a bar.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "Many of the roads have pavements, and those that don't are still fine for walking. It's a great city to walk around, just don't expect any local people to join you.",
+      },
+    },
+    [articlePath]: '/articles/lampang-for-digital-nomads',
+  },
+  {
     [place]: places[countries.thailand].loei,
     [country]: countries.thailand,
     [criteria]: {
