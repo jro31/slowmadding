@@ -1,0 +1,114 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2025-12-18T17:00:00+07:00', // TODO: Update this
+  title: 'Nan for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/nan-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add photos
+
+## How affordable is Nan?
+
+TODO
+
+## Is it easy to get by with English in Nan?
+
+TODO
+
+## What is the vibe of Nan?
+
+TODO
+
+## Is Nan safe?
+
+TODO
+
+## Who is Nan suitable for?
+
+TODO
+
+## Being sociable in Nan
+
+TODO: Omit this?
+
+## Where to run in Nan
+
+TODO
+
+## Getting vegan food in Nan
+
+TODO
+
+## Where I stayed in Nan
+
+### Phuhunsa Boutique Hotel
+
+<MapLink name='45/15 Phakong Road Soi 3' url='https://maps.app.goo.gl/7nLP7ERxsf9TCxT1A' />
+
+export const phuhunsaBoutiqueHotelStays = [
+  {
+    dates: {
+      checkIn: '2025-12-11',
+      checkOut: '2025-12-18',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/phuhunsa-boutique-hotel-h905641/hotel/nan-th.html',
+    },
+    roomType: 'Superior Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 5708.92,
+        'Taxes and fees': 1009.68,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={phuhunsaBoutiqueHotelStays} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Nan
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thougs
+
+TODO: Omit this?
+
+## Do I want to come back again?
+
+TODO
