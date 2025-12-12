@@ -1,0 +1,321 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2025-12-12T17:00:00+07:00',
+  title: 'Lampang for Digital Nomads',
+  description: "Just two hours' drive from Chiang Mai but barely visited by foreigners, what does Lampang offer to digital nomads?",
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/lampang-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Lampang is the third largest city in Northern Thailand behind Chiang Mai and Chiang Rai. Yet unlike its contemporaries, it's barely visited by foreign tourists so retains its peace and authenticity.
+
+It's a very relaxed, very safe city, and a far cry from what you'd consider a typical digital nomad destination. But if you're in this region and cannot stand the spurious lifestyle offered by the tourist hot spots like Chiang Mai or Pai, maybe you should consider coming to Lampang instead.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/wat-chiang-rai.jpeg`,
+    alt: 'Wat Chiang Rai',
+    caption: "Wat Chiang Rai. I didn't go in, I've seen enough temples in my life, but it's nice from the outside.",
+  },
+  {
+    src: `${imagePath}/city/clock-tower.jpeg`,
+    alt: 'Lampang clock tower',
+    caption: "The city centre is marked by the Lampang Clock Tower, although it's such a peaceful place, you wouldn't know it.",
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## How affordable is Lampang?
+
+It's cheap. It's not quite Isaan cheap, but it's not much more expensive.
+
+You'll pay in the region of 50 baht for a plate of food in a local restaurant, a large bottle of beer in a bar will cost 100 baht, and wandering around the city I saw private accommodation being loudly advertised at 400 baht per night.
+
+## Is it easy to get by with English in Lampang?
+
+Some people speak English and you can definitely get by, but as someone learning Thai, I enjoyed being here because a lot of people I met either didn't speak English, or their English was at least worse than my Thai, so I had a lot of opportunity to practice.
+
+Definitely don't come here expecting everyone to speak English like in Chiang Mai. They don't.
+
+## What is the vibe of Lampang?
+
+I came here after a month in Bangkok, and I loved being here because it's such a peaceful place, and I really needed that.
+
+The air is clean (at least it was when I was here, perhaps not in burning season), there's not really any traffic because there aren't that many cars on the road, things move slowly, and the people are very, very friendly.
+
+Nothing exciting really happened when I was here, but after Bangkok, it was so nice that everything was so relaxed. I didn't once witness anyone raise their voice or get angry, even after seeing two motorbikes collide with each other.
+
+## Is Lampang safe?
+
+Yes, very. The people are relaxed, the cars don't speed and I didn't see any kind of crime during my visit.
+
+## Who is Lampang suitable for?
+
+People that want to get away from a hectic city life for a while and be a bit isolated.
+
+I came here right as I was starting a new coding project, and it was a great place to come and be focussed for a while, with little distraction. The staff at the one Starbucks in town all knew my name by the time I left which is a bit embarrassing, but a consequence of going there so many times to sit on my laptop.
+
+When I checked-into my hotel, the owner looked a little aghast that I was staying for two weeks, because I think most guests only stay for a night or two, but for me two weeks was the perfect length.
+
+It's not a place to come if you want tourist sites and partying. If you want that go to Chiang Mai.
+
+## Being sociable in Lampang
+
+Like with any non-touristy city in Thailand, there isn't really much of a social scene here for foreigners. The most sociable thing that I did was go and sit at the bar in <ExternalLink url='https://maps.app.goo.gl/WkzabXxEuB5Y2AyJ9'>Forest Bar</ExternalLink> for an evening - that's a little bar near to Central.
+
+I was the only customer for the whole evening, and as the girl working at the bar didn't speak any English, I had a whole evening speaking Thai. It was perfect.
+
+If sitting in bars by yourself isn't your thing, then good luck.
+
+## Where to run in Lampang
+
+All of my runs in Lampang were at <ExternalLink url='https://maps.app.goo.gl/Bg4ANnQGuE7PhnRU9'>Kelang Nakhon Public Park</ExternalLink>, a little park a two-minute walk from my hotel.
+
+One circuit of the park is less than 700m, so you're going to get your laps in. The path is pretty wide all the way around, so there aren't any real bottlenecks, but it does get very busy in the evenings, as all parks do in Thailand.
+
+Running in the middle of the day there are very few other people. There's also a load of workout equipment all around the park.
+
+If you can't get here, then the riverside might be an option, and I noticed on Google Maps that there's <ExternalLink url='https://maps.app.goo.gl/wdKYTgR7ViTKXDPh7'>something that looks like a running track</ExternalLink>, but I haven't run at either place.
+
+export const kelangNakhonParkImages = [
+  {
+    src: `${imagePath}/running/kelang-nakhon-park/running-path.jpeg`,
+    alt: 'Kelang Nakhon Public Park running path',
+    caption: 'The outer path of Kelang Nakhon Park is pretty wide the whole way around, although it does get busy in the evenings. One lap is a little under 700m.',
+  },
+  {
+    src: `${imagePath}/running/kelang-nakhon-park/workout-area.jpeg`,
+    alt: 'Kelang Nakhon Public Park workout area',
+    caption: "You'll find a load of fitness equipment all around the park, and there's even an indoor gym in one of the buildings.",
+  },
+]
+
+<ImageGallery images={kelangNakhonParkImages} />
+
+## Getting vegan food in Lampang
+
+There are a small number of 'jay' (veganish) restaurants dotted around Lampang - ร้านอาหารเจ means 'jay restaurant' in Thai, so search for that on Google Maps to get an idea, although be aware that not all results are vegan.
+
+Also worth noting that the times listed for restaurants on Google Maps are almost all wrong. I found that out the hard way on the day I arrived when, having not eaten all day, I went out at 3:30pm to a jay restaurant listed as closing at 7pm. It was already closed. So I crossed the river and went to another one listed as closing at 7pm. It too was closed. So I walked back across the river, went to another jay restaurant listed as closing at 6pm, which too was closed, at which point I gave up, went to Big C and bought some food to take back to my room. Expect many restaurants to close by mid-afternoon.
+
+When they are open, there are two places in Lampang that really stand out to me for getting vegan food.
+
+### Guan-im Veggie
+
+<MapLink name='Bahnchaiengrai Rd' url='https://maps.app.goo.gl/i4oyWYbGSr3FkGVy6' />
+
+Guan-im Veggie says 'Vegan' in big writing when you go in, but as you'll find in Thailand, there isn't a direct translation of the word vegan to Thai so it's often misused, so places that describe themselves as vegan actually serve food with dairy or eggs, and I believe that's the case here.
+
+I at one point asked (in Thai) if the pizza was made with dairy, and while I understood enough of the response to know that they would make it without dairy for me, I couldn't tell if it was always made vegan or not, so perhaps be slightly wary. 99% of the menu here is vegan though, and it's translated into English, which makes things easier.
+
+And while they do serve a small number of western dishes like pizza and burgers, it's mostly Thai food. The most expensive items on the menu are 99 baht, but most dishes are 50-60 baht.
+
+export const guanImVeggieImages = [
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/hot-yamabushitake-mushroom-steaks.jpeg`,
+    alt: 'Guan-im Veggie hot yamabushitake mushroom steaks',
+    caption: "These hot yamabushitake mushroom steaks for 99 baht are one of my favourite dishes on the menu, even if I don't know what it means.",
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/khao-soi.jpeg`,
+    alt: 'Guan-im Veggie khao soi',
+    caption: 'Perhaps my favourite Thai dish is the traditional northern dish, khao soi, which here costs 55 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/mapo-tofu.jpeg`,
+    alt: 'Guan-im Veggie mapo tofu',
+    caption: "When I ordered mapo tofu this wasn't exactly what I was expecting, but it was still good. 50 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/bbq-vegan-pork.jpeg`,
+    alt: 'Guan-im Veggie barbecued vegan pork with rice',
+    caption: 'The barbecued vegan pork with rice is also 50 baht and comes with a soup.',
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/veggie-pizza.jpeg`,
+    alt: 'Guan-im Veggie veggie pizza',
+    caption: 'This is the veggie pizza that I specifically requested be made without dairy, which it may or may not be normally. It costs 99 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/vegan-pork-satay.jpeg`,
+    alt: 'Guan-im Veggie vegan pork satay',
+    caption: 'Vegan pork satay for 59 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/pad-thai.jpeg`,
+    alt: 'Guan-im Veggie pad Thai',
+    caption: "Pad Thai is probably the most well known Thai dish to foreigners, but I've never understood why. I keep on eating it expecting it to get better, but it never does. Here it's 50 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/guan-im-veggie/vegan-tonkatsu-with-curry.jpeg`,
+    alt: 'Guan-im Veggie vegan tonkatsu on rice with curry',
+    caption: "Vegan tonkatsu on rice with curry is 89 baht, and no, I don't know what a tonkatsu is either.",
+  },
+]
+
+<ImageGallery images={guanImVeggieImages} />
+
+### Saladboy
+
+<MapLink name='Tipchang Road' url='https://maps.app.goo.gl/Zt1JLg9r2yiA529q6' />
+
+Saladboy is another place where you can get caught-out by items being marked as vegan, but actually containing dairy or eggs.
+
+Their menu is translated into English and "vegan" items are highlighted in green, but they're not all vegan. I bought a vegan salad and it came with a boiled egg on top, and some other vegan items are even listed as containing yogurt.
+
+That being said, the vegan items that are actually vegan are really good, and I ended up coming here a lot because it's really healthy food, and they're one of the few vegan-friendly restaurants that actually is open late.
+
+The appetisingly-named 'anti-cancer salad' is a great choice, as is the vegan wrap.
+
+export const saladboyImages = [
+  {
+    src: `${imagePath}/vegan-food/saladboy/anti-cancer-salad.jpeg`,
+    alt: 'Saladboy anti-cancer salad',
+    caption: "If you're short on vitamins then the anti-cancer salad for 120 baht will top you up.",
+  },
+  {
+    src: `${imagePath}/vegan-food/saladboy/vegan-wrap.jpeg`,
+    alt: 'Saladboy vegan wrap',
+    caption: "They also sell a vegan wrap, imaginatively named 'vegan wrap', for 109 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/saladboy/kiwi-soda.jpeg`,
+    alt: 'Saladboy kiwi soda',
+    caption: 'They have some good drinks too, like this kiwi soda for 25 baht, that actually includes a piece of kiwi, which is weird.',
+  },
+]
+
+<ImageGallery images={saladboyImages} />
+
+## Where I stayed in Lampang
+
+### Le Neuf Nakorn Lampang
+
+<MapLink name='353/4 Mengrai Road' url='https://maps.app.goo.gl/rDdK2gBVMyQ4SNov6' />
+
+export const leNeufStays = [
+  {
+    dates: {
+      checkIn: '2025-11-27',
+      checkOut: '2025-12-11',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/le-neuf-nakorn-lampang.html',
+    },
+    roomType: 'Standard King Room With Sofa',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 11542.91,
+        '7% VAT': 808.00,
+        '10% property service charge': 1235.09,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={leNeufStays} />
+
+There are a lot of things that annoyed me about Le Neuf, so I'm going to give you a long list of things I didn't like, but ultimately tell you that I quite liked staying here, so strap-in.
+
+Once upon a time, when I arrived here at 1:30pm, I was told that my room wasn't ready yet, but the cleaners were working really quickly to get it clean and it should be ready in about an hour.
+
+Well that's bollocks, it doesn't take an hour to clean a room. Check-in time is at 2pm, so I'll wait thank you. No I don't want to store my bag.
+
+Considering they have a sign at the front desk saying that early check-in or late check-out is charged at 99 baht per hour, then shouldn't you be refunding me for not being able to check into my room on time?
+
+I was able to check into the room at about 2:20pm. Not being able to check in on time was the first thing that annoyed me about staying here. The next was that I had booked and paid extra for what is described as a 'Standard King Room With Sofa'. I'd done that because I often work from a sofa when coding. Well it turns-out that their definition of a sofa, is a single bed with some cushions on, and seeing as I already had a double bed in the room, what use do I have for a single bed? I just used it to keep my things on. I'd have honestly rather had the extra space.
+
+I'm someone that needs daylight - nothing puts me on a path to depression quicker than waking up in a dark room every morning, and the next thing that bugged me was that I'd completely misjudged how much natural light gets into the room. Despite being in a room with three walls facing outdoors, and the other the hallway, there was but a solitary sliding glass door to let in daylight. And while it's not quite so dark that it's depressing, you definitely don't get enough daylight in the room when you stay here.
+
+Next - fuck the cleaners who work here. They seem to have about a three-second window each day when they're willing to make up your room, and if you're not out of the room with the 'Make up room' sign on the door by then, then fuck you, your room's not getting cleaned. It was genuinely infuriating to me, because every single day that I stayed here, I went out and put the 'Make up room' sign on my door. Some of those days the cleaners were in other rooms on the same floor and would see me going out and putting the sign on the door, so it's not like they'd finished working for the day. Yet the room only got made up perhaps five times during my two week stay.
+
+That was annoying for a couple of reasons. Firstly, I eat a lot of fruit, and when the bin doesn't get changed for 3-4 days, then you get ants in the room. Lots of them. And secondly, they don't give you soap/shampoo dispensers here, they give you two sachets each time they clean the room, so I'd continually run out of shampoo (which I also use as body wash), partly because they weren't getting stocked-up, but partly because despite being basically bald, the cleaners kept on giving me conditioner sachets instead.
+
+Also worth noting that, while the Internet here is usable, I wouldn't describe it as stable. Video calls were ok, but definitely a bit patchy.
+
+So after not being able to check in on time, and being given a single bed as a sofa, and not getting enough daylight for two weeks, and struggling to ever get the room cleaned, and having ants in the room, and never having enough shampoo to shower with, and having a dodgy Internet connection, why did I like it here?
+
+Honestly, I don't know. One thing I absolutely loved is that Kelang Nakhon Park is a two-minute walk away. If you ask Google Maps for directions it directs you on some odd route, but the park is two minutes away. I went there almost every day that I stayed here, either for a walk or a run, and some days I even took my iPad there to study Thai. It's so nice having a park so close by.
+
+The two vegan restaurants that I recommended above are an easy walk to, so Le Neuf definitely benefits from its location.
+
+I think it also benefits from the fact that I loved Lampang and so was in a good mood throughout my stay despite staying here, rather than because of it.
+
+The 9.3 rating that Le Neuf has on booking.com defies reality, because I'm typically a low maintenance guest, so if I found this many things to get annoyed about, then I'm surprised that other people like it so much. But it could be worse. The location is amazing, and Lampang is such a happy place that it's going to paper-over a lot of the shortcomings of wherever you stay. I'd consider staying here again.
+
+export const leNeufImages = [
+  {
+    src: `${imagePath}/accommodation/le-neuf/bed.jpeg`,
+    alt: 'Le Neuf bed',
+    caption: "Despite three of the walls in the room facing the outside, this window lets in the only daylight that gets into the room. Other than that it's comfortable. The bed is really nice.",
+  },
+  {
+    src: `${imagePath}/accommodation/le-neuf/sofa.jpeg`,
+    alt: 'Le Neuf sofa',
+    caption: 'Oh look, a sofa.',
+  },
+  {
+    src: `${imagePath}/accommodation/le-neuf/desk.jpeg`,
+    alt: 'Le Neuf desk',
+    caption: 'I typically worked from the bed, but this desk was good for doing video calls and for making my smoothies every day.',
+  },
+  {
+    src: `${imagePath}/accommodation/le-neuf/bathroom.jpeg`,
+    alt: 'Le Neuf bathroom',
+    caption: "I'm not sure why they put the best window in the bathroom. If that window had been above the bed, it would have been a much more welcoming room. The shower here's decent.",
+  },
+  {
+    src: `${imagePath}/accommodation/le-neuf/balcony.jpeg`,
+    alt: 'Le Neuf balcony',
+    caption: 'I found little use for the balcony, although it includes a little clothes horse, so is good for drying your clothes after a run.',
+  },
+]
+
+<ImageGallery images={leNeufImages} />
+
+## Summary of Lampang
+
+export const summaryPoints = {
+  positive: [
+    'Very peaceful and relaxed',
+    'Cheap',
+    'Safe',
+    'Virtually no tourists',
+    'The locals are very friendly',
+  ],
+  neutral: [
+    'A decent amount of vegan food for a non-touristy city',
+    'One nice, little park',
+  ],
+  negative: [
+    'Not much to do socially',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Do I want to come back again?
+
+I really do.
+
+The vibe here reminded me of Ubon Ratchathani. There's nothing really exciting here, and it's hard to get excited about going somewhere where nothing's exciting. But sometimes you just need peace and quiet, and Lampang is a great place to come to get away from things.
+
+I was working on a new coding project while here, so coded pretty much every day. I needed somewhere without distraction, and Lampang was a perfect place to come and focus.
+
+Whence I next crave some peace and anonymity, Lampang will be one of the places at the top of my list.
