@@ -19,9 +19,34 @@ export const imagePath = '/images/articles/nan-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-TODO
+The city of Nan in northern Thailand is renowned among Thai people for its beauty, but it rarely appears on the itinerary of many foreign tourists. That's evidenced when you come here. You'll see a fair amount of tourism, but it's almost all Thai people. If you don't speak Thai, certainly don't come here expecting things to be easy like in Chiang Mai.
 
-TODO: Add photos
+It's a peaceful, friendly town - I really enjoyed my week here. And its reputation for beauty is certainly well-founded. There are temples all around the town, particularly in the city centre, so if that's what you like you'll love it here. I don't really, so I don't have too many photos of them to share, but I still really loved wandering around the town here. It's a really pleasant place to spend a bit of time.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/wat-phrathat-chang-kham-worawihan.jpeg`,
+    alt: 'Wat Phrathat Chang Kham Worawihan',
+    caption: "Just wandering around the city you'll encounter a higher density of temples than just about anywhere else I've been in Thailand, particularly in the centre. This is Wat Phrathat Chang Kham Worawihan, according to Google Maps.",
+  },
+  {
+    src: `${imagePath}/city/wat-ming-mueang.jpeg`,
+    alt: 'Wat Ming Mueang',
+    caption: 'I cannot image how much of a pain it is to keep Wat Ming Mueang this white.',
+  },
+  {
+    src: `${imagePath}/city/wat-hua-khuang.jpeg`,
+    alt: 'Wat Hua Khuang',
+    caption: 'I passed Wat Hua Khuang almost everyday I was here.',
+  },
+  {
+    src: `${imagePath}/city/wat-phumin.jpeg`,
+    alt: 'Wat Phumin',
+    caption: "I'm not a big temple guy - I've seen so many of them, but I did enjoy walking the grounds of Wat Phumin.",
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## How affordable is Nan?
 
@@ -159,7 +184,7 @@ export const veganFoodImages = [
   {
     src: `${imagePath}/vegan-food/nan-artisan-pizza-sourdough.jpeg`,
     alt: 'Nan Artisan Pizza sourdough',
-    caption: "On my final day in Nan I went to Nan Artisan Pizza. If you're used to European standards then good quality bread isn't easy to come by in Asia, so I quite enjoyed these two slices of sourdough, even though they costs 120 baht.",
+    caption: "On my final day in Nan I went to Nan Artisan Pizza. If you're used to European standards then good quality bread isn't easy to come by in Asia, so I quite enjoyed these two slices of sourdough, even though they cost 120 baht.",
   },
   {
     src: `${imagePath}/vegan-food/nan-artisan-pizza-menu.jpeg`,
