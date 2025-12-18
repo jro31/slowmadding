@@ -1,0 +1,305 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2025-12-18T10:05:00+07:00',
+  title: 'Nan for Digital Nomads',
+  description: 'Nan is a city in northern Thailand seldom visited by foreigners. What can you expect if you come here as a digital nomad?',
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/nan-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+The city of Nan in northern Thailand is renowned among Thai people for its beauty, but it rarely appears on the itinerary of foreign tourists. That's evidenced when you come here. You'll see a fair amount of tourism, but it's almost all Thai people. If you don't speak Thai, certainly don't come here expecting things to be easy like in Chiang Mai.
+
+It's a peaceful, friendly town - I really enjoyed my week here. And its reputation for beauty is certainly well-founded. There are temples all around the town, particularly in the city centre, so if that's what you like you'll love it here. I don't really, so I don't have too many photos of them to share, but I still really loved wandering around the city. It's a pleasant place to spend a bit of time.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/wat-phrathat-chang-kham-worawihan.jpeg`,
+    alt: 'Wat Phrathat Chang Kham Worawihan',
+    caption: "Just wandering around the city you'll encounter a higher density of temples than just about anywhere else I've been in Thailand, particularly in the centre. This is Wat Phrathat Chang Kham Worawihan, according to Google Maps.",
+  },
+  {
+    src: `${imagePath}/city/wat-ming-mueang.jpeg`,
+    alt: 'Wat Ming Mueang',
+    caption: 'I cannot imagine how much of a pain it is to keep Wat Ming Mueang this white.',
+  },
+  {
+    src: `${imagePath}/city/wat-hua-khuang.jpeg`,
+    alt: 'Wat Hua Khuang',
+    caption: 'I passed Wat Hua Khuang almost every day I was here.',
+  },
+  {
+    src: `${imagePath}/city/wat-phumin.jpeg`,
+    alt: 'Wat Phumin',
+    caption: "I'm not a big temple guy - I've seen so many of them, but I did enjoy lingering in the grounds of Wat Phumin.",
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## How affordable is Nan?
+
+It's cheap. I stayed in a really nice hotel and still paid under 1,000 baht per night, and you can easily find meals for 50 baht.
+
+## Is it easy to get by with English in Nan?
+
+I was definitely glad that I speak (some) Thai while I was here. You can always get by with caveman noises, but this isn't Chiang Mai - a lot of signs are in Thai only and a lot of people don't speak English.
+
+I got my hair cut here - the barber only spoke Thai. When I did my laundry, the person working in the launderette only spoke Thai. When I would buy fruit in the night market, the vendors only spoke Thai.
+
+It's pretty common to have to deal with people that don't speak English. If you want things to be easy this isn't the place to come.
+
+## Is Nan safe?
+
+Completely. It's very relaxed, I saw no kind of crime while I was here, and the cars drive sensibly.
+
+## Who is Nan suitable for?
+
+People that want to go somewhere that hasn't changed very much to cater to foreigners.
+
+You don't find too many non-Thai people here, and there aren't many bars either, so it's definitely not a place to come if you're looking to party. Come here if you want to get away from all that. If you want to spend some time alone, a bit more isolated. Great if you're starting a new coding project.
+
+## Where to run in Nan
+
+I only found two good places for running in Nan, and they're both the <ExternalLink url='https://maps.app.goo.gl/eukfzwSwaTvz1ibk6'>Nan Provincial Sport Stadium</ExternalLink>.
+
+Inside the stadium itself is a 400m running track that's open to the public. I ran here one time when doing a fast 5k. It was great for the first couple of laps, and then about 30 young people showed up, supervised by a couple of adults, and started getting in the way a bit, but it was still alright. Serves me right for coming here on a Sunday morning I guess.
+
+More popular with walkers and runners, is the dedicated path that goes around the outside of the stadium grounds. One lap measures 1.22km, and it's less mundane and more enjoyable than running on the track, unless you're doing a fast run. Although worth noting that I came here on a weekday lunchtime one day, and there were kids everywhere. I'm unsure where from - there must be a school either on the grounds or nearby. And to be fair, they weren't really on the path at all and they completely left me alone, which wasn't always the case when I walked past other schools in Nan, given the scarcity of foreigners here, so that shouldn't put you off, but something to be aware of.
+
+The stadium is open from 4am to 9pm every day, and on the walk here it starts to feel a little rural, so it's actually quite pleasant.
+
+I didn't really go anywhere else in Nan that I'd describe as good for running, but the riverside might be another option - I never made it there.
+
+export const nanProvincialStadiumImages = [
+  {
+    src: `${imagePath}/running/nan-provincial-stadium/running-track.jpeg`,
+    alt: 'Nan Provincial Sport Stadium running track',
+    caption: 'If you time it right, then the 400m running track is perfect for a faster run.',
+  },
+  {
+    src: `${imagePath}/running/nan-provincial-stadium/running-track-with-kids.jpeg`,
+    alt: 'Nan Provincial Sport Stadium running track (being used)',
+    caption: "Or if you time it wrong like I did, then there'll be a bunch of kids on there instead.",
+  },
+  {
+    src: `${imagePath}/running/nan-provincial-stadium/outer-path.jpeg`,
+    alt: 'Nan Provincial Sport Stadium outer jogging path',
+    caption: 'More popular with runners than the running track, is this path which goes in a 1.22km loop around the outside of the stadium grounds.',
+  },
+  {
+    src: `${imagePath}/running/nan-provincial-stadium/toilets.jpeg`,
+    alt: 'Nan Provincial Sport Stadium toilets',
+    caption: "If you run on this path, you find three different public toilets on your route, which is great if you drank too much water before your run.",
+  },
+  {
+    src: `${imagePath}/running/nan-provincial-stadium/opening-hours.jpeg`,
+    alt: 'Nan Provincial Sport Stadium opening hours',
+    caption: 'The stadium and grounds are open from 4am to 9pm everyday.',
+  },
+]
+
+<ImageGallery images={nanProvincialStadiumImages} />
+
+## Getting vegan food in Nan
+
+Nan isn't immediately a very vegan-friendly place - you have to figure out where you can eat here. As I typically only eat one meal per day (apart from my morning and evening smoothies), I'm just going to detail every meal I ate in Nan, and hopefully that can help you if you're struggling to find vegan food.
+
+On day 1 I arrived here having been sat on a bus for hours and it was pissing down with rain, so I couldn't be arsed to go exploring. Instead I just had a couple of the vegan frozen meals from 7-11, so ignore day 1.
+
+On day 2 I went to <ExternalLink url='https://maps.app.goo.gl/tv6HdEuPuAwxPDeh9'>Khao Soi Luke Jan</ExternalLink>, which is a meat-serving restaurant with a small vegetarian section (4 items). I got the Khao soi with mushroom and tofu, and forgot to request it be made egg-free (as it says that you should on the menu), so I'm uncertain if the noodles were vegan or not, so make sure you're more awake than I was. The staff here don't really speak English, but the menu is translated into English, so you can point at least.
+
+On day 3 I went to <ExternalLink url='https://maps.app.goo.gl/rsZAyXNsRcwBxkJe9'>เฮือนเจ เมืองน่าน</ExternalLink>, which translates roughly to 'vegan house in Nan'. It's a local little 'jay' restaurant where there's no pre-made buffet to point at and there is no menu, you just tell the chef what you want, and she doesn't speak English. Luckily my Thai is at a point that I can get by at places like this now, but if you don't speak any, this will be an awkward place to order. I got the khao soi. It was rather small, and as there is no menu she can just make up prices on the spot. I feel like I wouldn't have been charged 80 baht if I was a local, which put me off coming back again.
+
+On day 4 I went to <ExternalLink url='https://maps.app.goo.gl/PZmnQ6zYVdbtohH86'>Hot Bread</ExternalLink>. This is the easiest place to get vegan food that I went to in Nan. The menu is in English, vegetarian items are highlighted green, and the staff speak English. It's priced a little higher than other restaurants, but if you just want a decent selection and an easy meal that you're sure is vegan, come here.
+
+On day 5 I went to <ExternalLink url='https://maps.app.goo.gl/SQ6eqcjQkzzLuWqh9'>Gin Ploen Salad</ExternalLink>, which is a little salad shop near to the stadium. I noticed them on Grab when I first arrived in Nan, but if ordering on Grab they frustratingly require you to order a non-vegan protein with one of their vegan salads, so I initially gave up until I stumbled upon their physical premises when scouting-out the stadium. If you come here in person you can order their vegan salads without any protein. On their menu of six salads, three are vegan. Note that none of the sauces are, as they all contain egg, and be aware that the menu is only in Thai, and the person working here only speaks Thai. I got the fruit salad for 89 baht and the cereal salad for 69 baht. But despite getting two of them, they still felt a little light, so I had a protein soy milk from 7-11 to go with them.
+
+On day 6 my intention was to go to Nan Artisan Pizza, a pizza shop with a vegan marinara pizza on its menu that I'd discovered on my wanderings. Unfortunately it got updated to 'permanently closed' on Google Maps, and as it was in the opposite direction of where I was going today, I went back to Khao Soi Luke Jan instead, and got a couple more of the items of the vegetarian section of their menu, which were a little uninspiring, but at least they existed.
+
+By day 7, <ExternalLink url='https://maps.app.goo.gl/NZ5ZYeGpsx4xYyMN9'>Nan Artisan Pizza</ExternalLink> was no longer permanently closed. I went there and got two slices of the sourdough bread for 120 baht, and the marinara pizza for 99 baht, which is explicitly stated in the menu, in English, as being vegan, which is comforting, right? When my pizza came, there was a very light dusting of what looked like some kind of grated cheese. I couldn't be arsed to make a fuss, so just assumed it was vegan and ate it, even though I'm pretty sure it wasn't. The staff here speak some English, so explicitly tell them that you want it vegan, because otherwise they might decorate your vegan pizza with something non-vegan. Other than that I liked this restaurant.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/khao-soi-luke-jan-khao-soi.jpeg`,
+    alt: 'Khao Soi Luke Jan khao soi',
+    caption: 'My first meal outside of 7-11 came at Khao Soi Luke Jan where I got this Khao Soi for 55 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/khao-soi-luke-jan-vegetarian-menu.jpeg`,
+    alt: 'Khao Soi Luke Jan vegetarian menu',
+    caption: 'Remember to explicitly say that you want it without eggs, as the menu even tells you to do.',
+  },
+  {
+    src: `${imagePath}/vegan-food/vegan-house-nan-khao-soi.jpeg`,
+    alt: 'เฮือนเจ เมืองน่าน khao soi',
+    caption: "On day 3 I got another khao soi at เฮือนเจ เมืองน่าน. It was very nice but quite small, and I couldn't help but feel that at 80 baht, I got given non-local pricing.",
+  },
+  {
+    src: `${imagePath}/vegan-food/hot-bread-red-curry.jpeg`,
+    alt: 'Hot Bread red curry',
+    caption: "I ate at Hot Bread on day 4, and it's the easiest place that I went in Nan to buy vegan food. Here I got the red curry made with tofu for 120 baht, with the rice being an extra 20.",
+  },
+  {
+    src: `${imagePath}/vegan-food/hot-break-red-smoothie.jpeg`,
+    alt: 'Hot Bread red smoothie',
+    caption: 'When I ordered the red smoothie for 85 baht, I was expecting it to be pre-made, but I actually heard the blenders whirring in the kitchen and it tasted really fresh.',
+  },
+  {
+    src: `${imagePath}/vegan-food/hot-bread-menu.jpeg`,
+    alt: 'Hot Bread lunch menu',
+    caption: "The reason that Hot Bread is so easy to eat at, is the menu is in English, vegetarian items are highlighted green, and the staff speak English. Just beware that you're going to pay for that privilege, with prices higher that you'll find elsewhere.",
+  },
+  {
+    src: `${imagePath}/vegan-food/gin-ploen-salad-salads.jpeg`,
+    alt: 'Gin Ploen Salad fruit salad and cereal salad',
+    caption: 'No meal I had in Nan was healthier than these salads that I got from Git Ploen Salad on day 5. If you look at their Facebook page, they even appear to grow some or all of their own veg. The fruit salad on the left costs 89 baht, while the cereal salad costs 69 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/gin-ploen-salad-menu.jpeg`,
+    alt: 'Gin Ploen Salad menu',
+    caption: "Just be aware that at Gin Ploen the menu is only in Thai and the person working here only speaks Thai. On the left menu, the two wraps both contain meat, and the four dressings all contain egg. On the right menu, the top left salad is the cereal salad, the bottom left salad is the vegetable salad, and the top middle salad is the fruit salad. These three are vegan. The other three aren't.",
+  },
+  {
+    src: `${imagePath}/vegan-food/gin-ploen-salad-premises.jpeg`,
+    alt: 'Git Ploen Salad premises',
+    caption: "Up by the stadium, the premises for Gin Ploen Salad is a little out of the way. This is what you're looking for. The green sign lists their hours as Monday to Friday, 8:30am to 1pm and 4:30pm to 7pm, and on Saturday 10am to 7pm.",
+  },
+  {
+    src: `${imagePath}/vegan-food/khao-soi-luke-jan-dishes.jpeg`,
+    alt: 'Khao Soi Luke Jan mushroom basil with rice and stir fried vegetables and tofu with rice',
+    caption: "On day 6 I was back at Khao Soi Luke Jan where I got the 'mushroom and basil with rice', and the 'stir-fried vegetable and tofu with rice', each for 50 baht. Honestly, I don't really recommend either.",
+  },
+  {
+    src: `${imagePath}/vegan-food/nan-artisan-pizza-sourdough.jpeg`,
+    alt: 'Nan Artisan Pizza sourdough',
+    caption: "On my final day in Nan I went to Nan Artisan Pizza. If you're used to European standards then good quality bread isn't easy to come by in Asia, so I quite enjoyed these two slices of sourdough, even though they cost 120 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/nan-artisan-pizza-menu.jpeg`,
+    alt: 'Nan Artisan Pizza menu',
+    caption: 'On the menu at Nan Artisan Pizza, the marinara pizza is explicitly listed as vegan, meaning you can order it without having to worry, right? Right?',
+  },
+  {
+    src: `${imagePath}/vegan-food/nan-artisan-pizza-marinara-pizza.jpeg`,
+    alt: 'Nan Artisan Pizza marinara pizza',
+    caption: "I chose to believe it was something else, but I'm pretty sure the chef added a dusting of cheese to my marinara pizza, just to piss me off (or pizz me off), so be explicit if you come here. The staff speak some English.",
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
+
+## Where I stayed in Nan
+
+### Phuhunsa Boutique Hotel
+
+<MapLink name='45/15 Phakong Road Soi 3' url='https://maps.app.goo.gl/7nLP7ERxsf9TCxT1A' />
+
+export const phuhunsaBoutiqueHotelStays = [
+  {
+    dates: {
+      checkIn: '2025-12-11',
+      checkOut: '2025-12-18',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/phuhunsa-boutique-hotel-h905641/hotel/nan-th.html',
+    },
+    roomType: 'Superior Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 5708.92,
+        'Taxes and fees': 1009.68,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={phuhunsaBoutiqueHotelStays} />
+
+I really don't have a bad word to say about Phuhunsa - this is my kind of hotel.
+
+Firstly, not only is the room big, but more importantly they haven't filled it with all kinds of useless crap. There's lots of empty space in the room so you don't have to rearrange the furniture to do your morning workout. It also has big windows that let-in a tonne of natural light. Unfortunately all rooms at this hotel face west, so you don't get to wake up with the sun on your face, but still, you can't complain when so much light gets in.
+
+All rooms have a decent-sized balcony, with seating, that looks over the pool, which I kept on meaning to swim in, but never got around to. There's also a desk with chair in the room, which is good for video calls, the bed is perfectly comfortable for working from, and there's a not quite so comfortable sofa that's better than nothing when you want a change.
+
+Something else that I loved about being here, is that the reception is off in this little side building, meaning that you don't have to walk past the reception desk every time you go out. That can drive me crazy in other hotels, when I just want to go out to 7-11 to buy some soy milk, but the receptionist insists on trying to make small talk with me when I leave, and when I come back again five minutes later.
+
+Here it's not a problem. No one tries to talk to you, which is exactly what I look for in people.
+
+The hotel is located a very short walk from the night market, which includes all kinds of food. Importantly from my perspective, there are a couple of vendors there selling pre-cut fruit, and there's also a fruit shop on the same street that's open all day. The nearest 7-11 is about a five-minute walk from the hotel, the nearest launderette is about ten minutes away, and it takes about fifteen minutes to walk to the stadium.
+
+The wifi was fast and 99% reliable during my stay. It got occasionally patchy, but that's to be expected anywhere in this region. It never got bad to the point that I couldn't complete a video call.
+
+I don't really have anything negative to add - I thought this was a great place to stay, and I'd happily come back again when I'm next in Nan.
+
+export const phuhunsaBoutiqueHotelImages = [
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/room.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel room',
+    caption: "The room is huge and they haven't filled it up with unnecessary crap - there's just lots of lovely empty space.",
+  },
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/bed.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel bed',
+    caption: 'The bed is comfortable - apart from on video calls, all the time that I worked on my laptop while staying here was from the bed.',
+  },
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/desk.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel desk, TV and sofa',
+    caption: 'The desk and chair are great for doing video calls, the sofa is better than nothing, and the room vitally comes with a fridge and kettle.',
+  },
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/shower.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel shower',
+    caption: 'Apart from being in a really narrow space, the shower is great too. So powerful it was like getting a massage every morning.',
+  },
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/balcony.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel balcony',
+    caption: "And the decent-sized balcony included some seating that was nice for having a green tea in the mornings.",
+  },
+  {
+    src: `${imagePath}/accommodation/phuhunsa-boutique-hotel/pool.jpeg`,
+    alt: 'Phuhunsa Boutique Hotel pool',
+    caption: "Unfortunately the balcony faces west so you don't get to wake up with the sun on your face, but it does mean you get some nice views over the pool later in the day.",
+  },
+]
+
+<ImageGallery images={phuhunsaBoutiqueHotelImages} />
+
+## Summary of Nan
+
+export const summaryPoints = {
+  positive: [
+    'Loads of public toilets everywhere',
+    'The stadium is great for running',
+    'Lots of temples, if you like them',
+    'Cheap',
+    'Very safe and relaxed',
+  ],
+  negative: [
+    'Getting vegan food is a bit of a pain',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Do I want to come back again?
+
+I really do.
+
+It's perhaps not a place that I'd go out of my way to come back to, but if I'm in northern Thailand anyway, then Nan will definitely be on my itinerary. It's a great place to relax and get away from things.
