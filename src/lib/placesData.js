@@ -572,6 +572,46 @@ export const placesData = [
     [articlePath]: '/articles/nakhon-ratchasima-for-digital-nomads',
   },
   {
+    [place]: places[countries.thailand].nan,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'My hotel had a huge room and a pool and was still under 1,000 baht per night, restaurant meals start at about 50 baht.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          "Wifi in my room got occasionally patchy, but was fast and 99% reliable. It never got so bad that I couldn't do a video call.",
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'The Nan Provincial Stadium is walking distance from the city centre and open from 4am everyday.',
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "Vegan food is available in Nan, but it's not very plentiful or easy to find.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]: 'I felt no sense of danger here whatsoever.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]: 'Fuck-all to do in Nan from a social perspective.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'I walked everywhere while I was here. I was mostly alone in doing so, but I still found it a comfortable place to walk around.',
+      },
+    },
+    [articlePath]: '/articles/nan-for-digital-nomads',
+  },
+  {
     [place]: places[countries.thailand].pattaya,
     [country]: countries.thailand,
     [criteria]: {
