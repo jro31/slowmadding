@@ -3,18 +3,21 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
   date: '2026-01-08T15:13:00+07:00', // TODO: Update this
   title: 'Chiang Mai for Digital Nomads',
-  description: "What's it like being a digital nomad in Chiang Mai? Read my thoughts on Chiang Mai as a digital nomad city, where I stayed, what the food was like, how to be sociable and where to run.",
+  description: "What's it like being a digital nomad in Chiang Mai? Read my thoughts on Chiang Mai as a digital nomad city, where I stayed, what the food was like, how to be sociable and where to run.", // TODO: Rewrite this?
   keywords: ['Thailand'],
 }
 
 export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO: Rewrite this
 
 If you spend any amount of time on digital nomad forums, you'll notice the same cities come up over and over again. Medellin, Mexico City and Lisbon are three of the most prominent right now, but Chiang Mai features just as often, and for the life of me I can't figure-out why.
 
@@ -40,7 +43,41 @@ That could be remedied with a nice, open green space within the city. Unfortunat
 
 Hopefully this is a temporary blip, and in a couple of years once it's had the time to recover from the pandemic, I can rewrite this article with the glowing sentiment that I once held for Chiang Mai. For now I would suggest avoiding it, as it feels a shadow of its pre-pandemic self.
 
+## Why did I come back to Chiang Mai?
+
+TODO: Omit this section?
+
+## How affordable is Chiang Mai?
+
+TODO
+
+### Is it worth it?
+
+TODO
+
+## Is it easy to get by with English in Chiang Mai?
+
+TODO
+
+## How is the Internet in Chiang Mai?
+
+TODO
+
+## Is Chiang Mai safe?
+
+TODO
+
+## Who is Chiang Mai suitable for?
+
+TODO
+
+## Things I don't like about Chiang Mai
+
+TODO
+
 ## Being sociable in Chiang Mai
+
+TODO: Rewrite this
 
 Unlike in Bangkok, Meetup isn't really used in Chiang Mai, however there are some active Facebook groups organising events, so you have plenty of opportunity to meet people.
 
@@ -78,6 +115,8 @@ The reality is that everyone just speaks English, and I think there was even a s
 
 ## Where to run in Chiang Mai
 
+TODO: Rewrite this
+
 Within Chiang Mai city, the only place I would deem any good for running, is Chiang Mai University, and that's on the very edge of the city.
 
 Especailly in the early mornings, you will often see people running a lap of the old town, around the outside of the moat. I don't know what the attraction is because the air is incredibly polluted there and there are many busy road crossings to negotiate. I guess that if you can't make it out to the university, then it's the best you're going to get, but I think running that route would be worse than not running at all.
@@ -109,6 +148,8 @@ export const runnningImages = [
 <ImageGallery images={runnningImages} />
 
 ## Getting vegan food in Chiang Mai
+
+TODO: Rewrite this
 
 This is where Chiang Mai shines. It has the highest concentration and variety of quality vegan restaurants that I've come across anywhere in the world. For all its other flaws, you will enjoy eating here.
 
@@ -213,7 +254,7 @@ export const salsaKitchenImages = [
 
 <ImageGallery images={salsaKitchenImages} />
 
-## Where I stayed
+## Where I stayed in Chiang Mai
 
 ### DewyHouse
 
@@ -243,6 +284,8 @@ export const dewyHouseStays = [
 ]
 
 <AccommodationTable stays={dewyHouseStays} />
+
+TODO: Rewrite this?
 
 I paid a lot more than I had to in order to stay here. Chiang Mai has much cheaper beds, but from the photos and the positive reviews, I decided it would be worth spending extra to stay at DewyHouse.
 
@@ -283,3 +326,61 @@ export const dewyHouseImages = [
 ]
 
 <ImageGallery images={dewyHouseImages} />
+
+### Oldy De Garden
+
+<MapLink name='242/28 Maneenopparat Road' url='https://maps.app.goo.gl/uiD72PNq7AqzeYXm7' />
+
+export const oldyDeGardenStays = [
+  {
+    dates: {
+      checkIn: '2025-12-18',
+      checkOut: '2026-01-08',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/oldy-de-garden.html',
+    },
+    roomType: 'Deluxe Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 21355.93,
+        '7% VAT': 1494.92,
+        '10% Property service charge': 2135.59,
+        '1% City tax': 213.56,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={oldyDeGardenStays} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Chiang Mai
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
+
+TODO
+
+## Do I want to come back to Chiang Mai again?
+
+TODO
