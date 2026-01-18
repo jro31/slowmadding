@@ -3,14 +3,255 @@ import MapLink from '@/components/MapLink'
 import AccommodationTable from '@/components/AccommodationTable'
 import ExternalLink from '@/components/ExternalLink'
 import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2023-02-03T15:13:00+07:00',
+  date: '2026-01-18T19:35:00+07:00',
   title: 'Chiang Mai for Digital Nomads',
-  description: "What's it like being a digital nomad in Chiang Mai? Read my thoughts on Chiang Mai as a digital nomad city, where I stayed, what the food was like, how to be sociable and where to run.",
+  description: 'Thinking of coming to Chiang Mai as a digital nomad? Think again.',
   keywords: ['Thailand'],
 }
+
+export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Chiang Mai is Thailand's second largest city and is known as the "rose of the north". It falls into the same category as places like Bali, Medellin, Mexico City and Lisbon, as somewhere that, for reasons I've never understood, has become a digital nomad hub. Digital nomads, and tourists in general, flock here like bees to honey.
+
+That's not usually my kind of place - I like isolation. But if there's one digital nomad hub that is going to be up my alley, it's going to be the one in Thailand - a country I've spent seven of the past fifteen years in. So should you come here too? Or is it a place to be avoided at all costs? Read on to find out.
+
+It's a place that should be avoided at all costs. I hate Chiang Mai.
+
+In life, we all have some hills that we're willing to die on, where we just say _"I'm not crazy, it's everyone else that's crazy."_ Chiang Mai is one of mine. Other people seem to love it here, but I just don't get it. There's not even any Thai people in Chiang Mai.
+
+Apart from those working in the bars, restaurants and other services catering to tourists, the only people anywhere near the centre of Chiang Mai are tourists. There's no Thai culture here, there's nothing authentic about it. There's just a fake local culture that's used to make money off foreigners. It's essentially a big tourist resort.
+
+I don't understand the motivation of British people for example, to fly halfway around the world, to go to British style bars and hang out with other British people speaking English. You could have done that at home. It's easier to get western food in Chiang Mai than it is Thai food.
+
+I didn't like Chiang Mai on my previous visit in 2022, but at least that was right after Covid, before tourism had really picked back up. Even so, I wouldn't have come back but for two of my Thai teachers living here - I thought that it would be cool to meet in person. And it was.
+
+Other than that? I would avoid Chiang Mai. It's one of my least favourite places on earth. There are many wonderful cities to visit in Thailand, and Chiang Mai is not among them.
+
+Or if you do come here, at least understand what it is you're coming to: A faux local culture to make money off foreigners, where you will see twenty times more white faces than you will Thai.
+
+If that's what you're looking for, then this probably isn't the app for you.
+
+## How affordable is Chiang Mai?
+
+Relative to the rest of Thailand, Chiang Mai falls in the middle. It's cheaper than Bangkok, roughly comparable to the other tourist honey pots in the country like Pattaya, but more expensive than the non-touristy parts of the country.
+
+Expect to pay over 1,000 baht per night for a nice room, a meal in a local restaurant will be upwards of 50 baht, but in a western restaurant will be more like 150 to 200. A small local bottle of beer in a bar will usually be less than 100 baht.
+
+### Is it worth it?
+
+Absolutely not. You can find much better value in much nicer places in Thailand. Lampang for example, in the north of Thailand, or one of several cities in Isaan.
+
+## Is it easy to get by with English in Chiang Mai?
+
+Yes. Any Thai person that you encounter in the city centre is only there because they have a tourist-facing job, so will have the English to accompany it. Every menu in every restaurant is in English. Good luck finding one in Thai.
+
+## How is the Internet in Chiang Mai?
+
+Fast and stable - I've had no issues here.
+
+## Is Chiang Mai safe?
+
+Pretty much. Crossing the road isn't always so easy, and given the mesh of people from around the world that come here, a lot of them intent on drinking, it can be a bit rowdy after dark, but all in all is very safe.
+
+## Who is Chiang Mai suitable for?
+
+People that want to come to Thailand and experience as little Thai culture as possible. If you want to meet other foreigners, eat western food, and have everything in English, come to Chiang Mai.
+
+## Being sociable in Chiang Mai
+
+You'll have no trouble meeting people in Chiang Mai. Several Meetup groups now exist in Chiang Mai, and if you can't find what you're looking for on there, there's a very active community on Facebook.
+
+One such example is <ExternalLink url='https://www.facebook.com/groups/289951174859604'>Yoga in the Park</ExternalLink>, which does yoga classes every morning in <ExternalLink url='https://goo.gl/maps/AnzfgXquWXGUkgXK8'>Nong Buak Haad Park</ExternalLink>. They're completely free and run by volunteers, although can fill-up so it's worth going early to get a spot. If you don't have a yoga mat, you can rent a grass mat for 15 baht, although they don't provide much padding. It's a great way to start your day and a good way to meet new people.
+
+Another good option is the <ExternalLink url='https://www.facebook.com/groups/349933706518867'>Chiang Mai Language Exchange Party</ExternalLink>, which takes place on the top floor of <ExternalLink url='https://goo.gl/maps/vaFKKwWwzaMFxwuT9'>The Moat House</ExternalLink> every Tuesday.
+
+It's called a language exchange - the reality is that everyone speaks English and gets drunk, but that can be fun too.
+
+export const sociableImages = [
+  {
+    src: `${imagePath}/sociable/yoga-in-the-park.jpeg`,
+    alt: 'Yoga in the Park',
+    caption: 'Yoga in the Park takes place every morning in Nong Buak Haad Park',
+  },
+]
+
+<ImageGallery images={sociableImages} />
+
+## Where to run in Chiang Mai
+
+Chiang Mai isn't a great city for runners, especially if you don't have your own transportation.
+
+You'll often see people running around the moat that surrounds the old town, but this isn't a good route. The pavement is at times blocked, you have to cross a lot of roads, and there's a lot of pollution from running beside traffic.
+
+The only place that I've found close to the city centre that's good for running is the <ExternalLink url='https://maps.app.goo.gl/nPuMB9RpoKGahjRWA'>Chiang Mai Municipal Stadium</ExternalLink>. It's the stadium of Chiangmai F.C., so perhaps coming here on matchday isn't recommended, but for the rest of the time is has a 400m running track that looks like it was recently relaid. There's also a road that goes around the outside of the stadium, of which one side is blocked-off for walkers and runners, and you get as many people running on this as you do the track itself, although it's narrow enough that it can be a pain to pass people that are running in groups.
+
+That's the best place within the city centre, however if you can make it out there, then running laps of <ExternalLink url='https://maps.app.goo.gl/CGbWzVD35ZLtaBVx7'>the lake at Chiang Mai University</ExternalLink> is perhaps preferable. The whole campus is absolutely gorgeous in fact. The downside being that if you don't have your own transport, then to walk here, even from the north edge of the old town, is about 45 minutes along a main road.
+
+I've not gone up them myself, but from the university I'm pretty sure you can get onto the paths that go up the mountains behind the university if you want to turn it into a trail run.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/chiang-mai-municipal-stadium-running-track.jpeg`,
+    alt: 'Chiang Mai Municipal Stadium running track',
+    caption: "The Chiang Mai Municipal Stadium has a gorgeous running track in great condition, and if you run here in the daytime you'll likely have the whole thing to yourself.",
+  },
+  {
+    src: `${imagePath}/running/university-lake.jpeg`,
+    alt: 'Chiang Mai University lake',
+    caption: "The lake at Chiang Mai University is a beautiful place to come regardless of if you're running here or not.",
+  }
+]
+
+<ImageGallery images={runningImages} />
+
+## Getting vegan food in Chiang Mai
+
+If I was going to give one reason to actually come to Chiang Mai, this is it. Travelling around Thailand as a vegan, you can often find yourself limited to little more than 'jay' buffet restaurants, the mundanity of which can wear you down.
+
+With nothing but tourists in Chiang Mai, all the food here is aimed at foreigners, and so the vegan scene is vast and very diverse.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/salsa-kitchen-vegan-carnitas.jpeg`,
+    alt: 'Salsa Kitchen vegan carnitas',
+    caption: 'Salsa Kitchen is a meat-serving Mexican restaurant with several vegan options on their menu. These vegan carnitas and guacamole soft tacos cost 249 baht, and you will not regret it.',
+  },
+  {
+    src: `${imagePath}/vegan-food/healthy-junk-salad.jpeg`,
+    alt: 'Healthy Junk make your own salad',
+    caption: "Healthy Junk offer a 'make your own salad' with, among other options, tofu, tempeh and vegan cheese",
+  }
+]
+
+<ImageGallery images={veganFoodImages} />
+
+### Reform Kafe
+
+<MapLink name='1/4 Sripoom Rd' url='https://maps.app.goo.gl/FAzyN6Mz9AJxaNaDA' />
+
+Right at the top of my list of vegan restaurants in Chiang Mai is Reform Kafe. I love this place. It's part of the Green Tiger House hotel, which itself is a vegan hotel.
+
+I don't know what that means.
+
+Reform Kafe takes up a large space on the ground floor. It's open air with a beautiful water feature and some cats wandering around. The menu includes smoothie bowls, burgers and some really good cakes.
+
+export const reformKafeImages = [
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/falafel-avocado-bowl.jpeg`,
+    alt: 'Reform Kafe falafel avocado bowl',
+    caption: "Even though there's plenty to make you fat on the menu, you can also be healthy here. This falafel avocado bowl costs 190 baht",
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/mushroom-cheese-burger.jpeg`,
+    alt: 'Reform Kafe mushroom cheese burger',
+    caption: 'But fuck that, because a mushroom cheese burger (vegan cheese) is 240 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/four-seasons-smoothie.jpeg`,
+    alt: 'Reform Kafe four seasons smoothie',
+    caption: "You'll find several smoothies on the menu too, like the four seasons smoothie for 120 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/pancakes.jpeg`,
+    alt: 'Reform Kafe mango pancakes',
+    caption: 'Gluten-free pancakes with mango, good at any time of day for 170 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/berry-love-smoothie-bowl.jpeg`,
+    alt: 'Reform Kafe berry Love smoothie bowl',
+    caption: "As is the 'Berry Love' smoothie bowl for 180 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/massaman-bowl.jpeg`,
+    alt: 'Reform Kafe massaman bowl',
+    caption: 'Another healthier option is the massaman bowl for 190 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/reform-kafe/mango-passion-fruit-smoothie.jpeg`,
+    alt: 'Reform Kafe mango passion fruit smoothie',
+    caption: 'Or perhaps get the mango passion fruit smoothie for 120 baht.',
+  },
+]
+
+<ImageGallery images={reformKafeImages} />
+
+### Rad Rabbit
+
+<MapLink name='27, 2 Moon Muang Rd Soi 9' url='https://maps.app.goo.gl/REgMMjzVuSpTryqj8' />
+
+Another of my favourites is Rad Rabbit. It's a fully vegan restaurant that serves, among other things, pizza, pasta and sandwiches. I haven't eaten anything here that I didn't like. It's amazing vegan food and great service.
+
+export const radRabbitImages = [
+  {
+    src: `${imagePath}/vegan-food/rad-rabbit/rad-pesto-pizza.jpeg`,
+    alt: 'Rad Rabbit Rad pesto pizza',
+    caption: "All of the food at Rad Rabbit is good, but I especially recommend their pizzas. They're either tomato based or pesto based, and you have a choice of four crusts. The 12\" Rad pesto pizza with wholewheat crust is 205 baht. I had at least three while I was in Chiang Mai. And grew tits.",
+  },
+  {
+    src: `${imagePath}/vegan-food/rad-rabbit/veatball-panuozzo.jpeg`,
+    alt: 'Rad Rabbit veatball panuozzo',
+    caption: 'The veatball panuozzo (no idea) was an amazing sandwich. So rich, and only 189 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/rad-rabbit/fresh-farm-pizza.jpeg`,
+    alt: 'Rad Rabbit fresh farm pizza',
+    caption: 'The farm fresh pizza is one of the tomato-based pizzas. With the traditional thick crust it costs 229 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/rad-rabbit/tea-leaf-salad.jpeg`,
+    alt: 'Rad Rabbit tea leaf salad',
+    caption: "I'd never even heard of a tea leaf salad before going for lunch with one of my Thai teachers, who told me I had to try it. And she was right - I got it in every restaurant I went to thereafter. It's a Burmese dish that's found its way onto menus in Chiang Mai. At Rad Rabbit it costs 80 baht, and was as good as anywhere else I had it.",
+  },
+  {
+    src: `${imagePath}/vegan-food/rad-rabbit/farm-villa-pizza.jpeg`,
+    alt: 'Rad Rabbit farm villa pizza',
+    caption: 'The farm villa pizza with wholewheat crust is 239 baht.',
+  },
+]
+
+<ImageGallery images={radRabbitImages} />
+
+### Kinphak Cafe
+
+<MapLink name='50/5 Hassadisewi Rd' url='https://maps.app.goo.gl/dFS6tWw3yvmEHgX86' />
+
+I almost don't recommend getting Thai food in Chiang Mai, because if you're like me and spending most of your time in non-touristy parts of the country where the only vegan food you can get is Thai food, then Chiang Mai offers you some respite. However, if you are going to get any local food, then perhaps go to Kinphak Cafe.
+
+It's a fully vegan Thai restaurant. The menus are in English of course, and the staff speak English, but this is Chiang Mai, what do you expect? The food is Thai - that's what I mean.
+
+Dishes are all 50 to 75 baht, and if you like khao soi like I like khao soi, then get the khao soi.
+
+export const kinphakCafeImages = [
+  {
+    src: `${imagePath}/vegan-food/kinphak-cafe/khow-soi.jpeg`,
+    alt: 'Kinphak Cafe khao soi',
+    caption: "Khao soi is my favourite Thai dish, and seeing as it's a northern Thai dish, when I'm in northern Thailand I get it a lot. At Kinphak it costs 55 baht.",
+  },
+  {
+    src: `${imagePath}/vegan-food/kinphak-cafe/fried-rice-with-vegetables.jpeg`,
+    alt: 'Kinphak Cafe five colour veggies fried rice',
+    caption: 'Five colour veggies fried rice costs 60 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/kinphak-cafe/vegan-red-pork-with-rice.jpeg`,
+    alt: 'Vegan red pork with rice at Kinphak Cafe',
+    caption: 'Or how about vegan red pork with rice for 60 baht?',
+  },
+]
+
+<ImageGallery images={kinphakCafeImages} />
+
+## Where I stayed in Chiang Mai
+
+### DewyHouse
+
+<MapLink name='19/2 Charoensuk Rd' url='https://goo.gl/maps/pJzR7m9bw8yWEvZ97' />
 
 export const dewyHouseStays = [
   {
@@ -35,251 +276,132 @@ export const dewyHouseStays = [
   },
 ]
 
-export const imagePath = '/images/articles/chiang-mai-for-digital-nomads'
+<AccommodationTable stays={dewyHouseStays} />
+
+For whatever reason, I didn't really take to Dewyhouse. It was very new when I stayed here, and it kind of felt like it.
+
+At first glance, the room looked really nice, but it somewhat flattered to deceive, and I felt like a lot of its contents was there to give the illusion of grandeur, rather than having any practicality. For example, I had a bathtub in the room, but there were no taps to fill it with, or even a plug. And there was a big kitchen space, but absolutely no facilities to cook with. And there was a nice picture above the mirror, but it had been placed with so little care that it was upside down. And the bedside table just got in the way of the chair's wheels when you were sat at the desk.
+
+There were also little annoying things in the room, that didn't really warrant complaining about, but that bugged me after two weeks of staying here.
+
+The first was that the TV had a fault where the screen had a purple hue. It wasn't so bad that I couldn't use it for my workouts, and I figured that to complain would require workmen coming into the room either to repair or replace it, and I couldn't really be bothered with that, but by the time I left I was bored of everything being purple.
+
+The other was that the shower dripped constantly, every few seconds. I also didn't want to have to deal with a plumber coming into the room, so I again opted to ignore it, but fuck in Hell I was bored of the constant dripping by the time I left.
+
+The staff here were lovely, the location is good, and the Internet was fast and reliable, but I didn't ever really enjoy my stay here.
 
 export const dewyHouseImages = [
   {
-    src: `${imagePath}/dewy-house/bed.jpeg`,
+    src: `${imagePath}/accommodation/dewy-house/bed.jpeg`,
     alt: 'DewyHouse bed',
     caption: "The bed is comfortable and there's good space in front of it to do yoga.",
   },
   {
-    src: `${imagePath}/dewy-house/desk-and-kitchen.jpeg`,
+    src: `${imagePath}/accommodation/dewy-house/desk-and-kitchen.jpeg`,
     alt: 'DewyHouse room',
-    caption: "There's a decent desk to work at, and although the kitchen lacks any practical value, it's at least nice to have the space.",
+    caption: "There's a decent desk to work at, and there's space for a kitchen, so it's kind of a shame there's not a kitchen.",
   },
   {
-    src: `${imagePath}/dewy-house/bathroom.jpeg`,
+    src: `${imagePath}/accommodation/dewy-house/bathroom.jpeg`,
     alt: 'DewyHouse bathroom',
-    caption: "There aren't any taps to fill it up with, but it's always nice to have a bathtub I guess.",
+    caption: "There aren't any taps to fill it up with, but for some reason you have a bathtub anyway.",
   }
 ]
-
-export const reformKafeImages = [
-  {
-    src: `${imagePath}/reform-kafe/berry-love-smoothie-bowl.jpeg`,
-    alt: 'Berry Love smoothie bowl at Reform Kafe',
-    caption: 'There are plenty of healthy options on the menu. This "Berry Love" smoothie bowl costs 170 baht.',
-  },
-  {
-    src: `${imagePath}/reform-kafe/mushroom-cheese-burger.jpeg`,
-    alt: 'Mushroom cheese burger at Reform Kafe',
-    caption: 'This mushroom cheese burger is one of several burgers on offer. It costs 240 baht.',
-  },
-  {
-    src: `${imagePath}/reform-kafe/pancakes.jpeg`,
-    alt: 'Pancakes at Reform Kafe',
-    caption: 'Gluten-free pancakes with mango, good at any time of day for 150 baht.',
-  },
-  {
-    src: `${imagePath}/reform-kafe/banana-smoothie.jpeg`,
-    alt: 'Banana smoothie at Reform Kafe',
-    caption: 'A banana smoothie for 95 baht.',
-  },
-  {
-    src: `${imagePath}/reform-kafe/tables.jpeg`,
-    alt: 'Reform Kafe restaurant',
-    caption: 'Some of the tables are right next to this water feature, which makes them an incredibly relaxing place to sit.',
-  },
-  {
-    src: `${imagePath}/reform-kafe/french-bread-sandwich.jpeg`,
-    alt: 'French bread sandwich at Reform Kafe',
-    caption: 'French bread sandwich for 165 baht.',
-  },
-]
-
-export const kinphakCafeImages = [
-  {
-    src: `${imagePath}/kinphak-cafe/vegan-red-pork-with-rice.jpeg`,
-    alt: 'Vegan red pork with rice at Kinphak Cafe',
-    caption: 'Vegan red pork with rice for 60 baht.',
-  },
-  {
-    src: `${imagePath}/kinphak-cafe/khow-soi.jpeg`,
-    alt: 'Khow Soi at Kinphak Cafe',
-    caption: 'Khow soi is one of the first things I think of when I think of Northern Thai food. This vegan khow soi costs 50 baht.',
-  },
-  {
-    src: `${imagePath}/kinphak-cafe/fried-rice-with-vegetables.jpeg`,
-    alt: 'Fried brown rice with 5 colour vegetables at Kinphak Cafe',
-    caption: 'Fried brown rice with 5 colour vegetables costs 50 baht.',
-  }
-]
-
-export const salsaKitchenImages = [
-  {
-    src: `${imagePath}/salsa-kitchen/vegan-carnitas.jpeg`,
-    alt: 'Vegan carnitas at Salsa Kitchen',
-    caption: 'These vegan carnitas and guacamole soft tacos were so good that I neglected to try most of the other vegan options, opting to have these every time. They cost 249 baht.',
-  }
-]
-
-export const runnningImages = [
-  {
-    src: `${imagePath}/running/strava.jpeg`,
-    alt: 'Strava map',
-    caption: 'My first run in Chiang Mai',
-    url: 'https://www.strava.com/activities/8069804856',
-  },
-  {
-    src: `${imagePath}/running/lake.jpeg`,
-    alt: 'Chiang Mai University lake',
-    caption: "The lake at Chiang Mai University is a beautiful place to come regardless of if you're running here or not.",
-  }
-]
-
-export const yogaInTheParkImages = [
-  {
-    src: `${imagePath}/yoga-in-the-park/group-photo.jpeg`,
-    alt: 'Yoga in the Park',
-    caption: 'Yoga in the Park',
-  }
-]
-
-export default (props) => <ArticleLayout meta={meta} {...props} />
-
-If you spend any amount of time on digital nomad forums, you'll notice the same cities come up over and over again. Medellin, Mexico City and Lisbon are three of the most prominent right now, but Chiang Mai features just as often, and for the life of me I can't figure-out why.
-
-When I lived in Bangkok, I used to come here a lot. I would describe it as a break from Thailand, because you come here and everything is in English and everything is geared towards tourists. I lived in a local area in Bangkok where that wasn't really the case, so when I wanted a break from the big city, and for everything to just be easy for a few days, I'd come to Chiang Mai.
-
-I don't know if it's changes that were forced due to the pandemic, or the fact that I had changed and had different needs when coming back here as a digital nomad, but I just didn't really enjoy it.
-
-I noticed that a lot of businesses had closed since my prior visit in 2018; restaurants that I used to like going to, for example. When a city so reliant on tourism goes through a pandemic, that is unsurprising.
-
-When I came this time, in 2022, I would guess that tourist numbers were at about 25% of pre-pandemic levels. Many of the businesses that had survived were looking a little sorry for themselves. For example, there's this little area of bars/clubs that you can hear from the pumping music 100 metres away.
-
-I was just exploring at that moment, so I figured I'd check it out, maybe grab a beer. Yet when I got there, all of these bars; at least a dozen of them with DJs and lights flashing, barely had a customer between them. They were desperately crying-out for customers that no longer existed like an old woman trying to recapture her lost beauty.
-
-I'll add the caveat that I generally avoid motorcycles. From a 2011 visit to Northern Thailand, I have the scars to prove that they aren't altogether safe. Now somewhat older and wiser, having heard stories of people who got into biking accidents in Thailand so severe that their parents back home had to remortgage their house just to pay the medical bills, I tend to steer clear of them.
-
-Licences don't matter much in Thailand. Whether you've got a licence or not, you can rent a motorcycle. However, being on one without a licence would invalidate my travel insurance were I to have an accident, so I don't take the chance.
-
-The reason that matters, is that's just how people get around in Chiang Mai, and if you don't have a motorcycle you are somewhat limited in being able to get out of the city.
-
-Chiang Mai city is fairly unattractive, but the mountains surrounding it are gorgeous if you can readily get to them. So a person willing to ride a motorcycle is going to have a very different experience from that I'm describing. As it is, I walked everywhere when I was here, and I found the pollution levels to be a little smothering. There are fewer vehicles here than in Bangkok, but for some reason the pollution just sits. Someone suggested to me that it's because the surrounding mountains make the city like a bowl. After a day of walking here, you feel it in your throat.
-
-That could be remedied with a nice, open green space within the city. Unfortunately there isn't one. There are a couple of parks so small that you cannot escape the noise of the nearby main roads, but you have to go all the way up to the university to find anything that resembles being in nature.
-
-Hopefully this is a temporary blip, and in a couple of years once it's had the time to recover from the pandemic, I can rewrite this article with the glowing sentiment that I once held for Chiang Mai. For now I would suggest avoiding it, as it feels a shadow of its pre-pandemic self.
-
-## Where I stayed
-
-### DewyHouse
-
-<MapLink name='19/2 Charoensuk Rd' url='https://goo.gl/maps/pJzR7m9bw8yWEvZ97' />
-
-<AccommodationTable stays={dewyHouseStays} />
-
-I paid a lot more than I had to in order to stay here. Chiang Mai has much cheaper beds, but from the photos and the positive reviews, I decided it would be worth spending extra to stay at DewyHouse.
-
-It wasn't.
-
-It has everything that you typically look for. The wifi is fast and reliable, the location is really good, it's clean and spacious, the bed is comfortable and there's even a desk and chair to work at. So to actually pinpoint why I didn't like it here isn't so easy, but I think there were a couple of reasons.
-
-The first is that I felt like many of the included items simply flattered to deceive. Their presence in the room was to give the illusion of grandeur, but little thought had actually gone into them being there. For example, it has a bathtub, but it doesn't have any taps to fill it, or even a plug. And there's a big kitchen space, but no facilities to cook with. There's a nice picture above the mirror, but it was placed with so little care, that it's upside down. Or there's a bedside table, but its placement means that it just gets in the way of the chair's wheels when you're sat at the desk.
-
-Everything feels like it's there to be aesthetically pleasing, but there's been very little thought into the practicalities of staying here. I'm someone who cares little for how something looks, but who cares greatly about practicality, so the way this room had been built to simply look nice just annoyed me.
-
-The second reason was there were a couple of issues with the room that felt too minor to complain about, but that after 2 weeks of staying here were incredibly frustrating.
-
-The first was that the TV screen had a purple hue. This wasn't a setting on the TV, it was a technical fault. I figured to complain about it would either require the TV being removed to be repaired, or a new TV being ordered, neither of which were likely to happen quickly, if at all, so I decided to just live with it.
-
-Although it wasn't sufficiently distorting to the picture to stop me using the TV to do Peloton workouts, it was sufficient to stop me using it to watch Netflix, so I found myself using my phone to watch Netflix instead. This was a minor annoyance when it was just the hour or two that I typically watch Netflix in the evenings, but I got quite sick during my stay and was bed-bound for a couple of days when being able to watch Netflix all day would have been tremendous respite to how I was feeling. As it was, I had to resort to my tiny phone screen.
-
-The other issue was the shower dripped. Constantly. Every few seconds. I didn't think it warranted a complaint, or the subsequent plumber coming around to fix it, so I decided I'd just live with it. I was kind of hoping that the maid would notice and do something about it when cleaning the room one day. She didn't. So after two weeks, I couldn't wait to not have to listen to this dripping tap all day and all night long.
-
-I feel bad saying it, because the staff here were lovely, and any grievance I had definitely wasn't intentional, but I just didn't really enjoy staying here. At no point did it ever feel like home.
 
 <ImageGallery images={dewyHouseImages} />
 
-## Where to get vegan food in Chiang Mai
+### Oldy De Garden
 
-This is where Chiang Mai shines. It has the highest concentration and variety of quality vegan restaurants that I've come across anywhere in the world. For all its other flaws, you will enjoy eating here.
+<MapLink name='242/28 Maneenopparat Road' url='https://maps.app.goo.gl/uiD72PNq7AqzeYXm7' />
 
-### Reform Kafe
+export const oldyDeGardenStays = [
+  {
+    dates: {
+      checkIn: '2025-12-18',
+      checkOut: '2026-01-08',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/oldy-de-garden.html',
+    },
+    roomType: 'Deluxe Double Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 21355.93,
+        '7% VAT': 1494.92,
+        '10% Property service charge': 2135.59,
+        '1% City tax': 213.56,
+      },
+    },
+  },
+]
 
-<MapLink name='1/4 Sripoom Rd' url='https://maps.app.goo.gl/FAzyN6Mz9AJxaNaDA' />
+<AccommodationTable stays={oldyDeGardenStays} />
 
-Right at the top of my list is Reform Kafe. This is my favourite restaurant in Chiang Mai.
+Just north of the old town, Oldy De Garden is a very leafy property well away from the main road and any noise. If you want to get the feeling that you're staying among nature while actually being in Chiang Mai, this is a good place for it. The room is very spacious, and it includes a balcony with a chair on it if you want to sit outside amongst the flora.
 
-It's part of the Green Tiger House hotel, which itself is a vegan hotel. I don't know what that means, but I do know it commits to being eco-friendly and sustainable. Had it been within my price range, I'd have loved to have stayed here.
+That sounds lovely on paper. In reality I tried sitting out there to code one day but only lasted about fifteen minutes because I was getting bitten by mosquitoes. And all the trees combined with the balcony covering, mean that very little daylight actually gets into the room, which is something I hate. For me there's no greater correlation to depression than a lack of natural light in the room that I'm staying in. If that's not an issue for you, then I can't really complain about anything else here.
 
-Reform Kafe takes up a large space on the ground floor. It's open air, and reminds me of a Japanese Garden. There's a large water feature that gives you the therapeutic sound of dripping water in the background. Given the rest of the layout, which includes a large tree in the middle of the garden and a pretty chilled cat, I would always leave here feeling relaxed, no matter how I felt when I arrived.
+The Internet is fast and reliable, it's peaceful, Lotus and 7-11 have branches nearby, and you're an easy walk from all the vegan restaurants that I recommended above. It's a lovely place with a certain rustic charm.
 
-It offers a similar menu to its sister restaurant, <ExternalLink url='https://maps.app.goo.gl/xKTTVRBXZfokDQZj9'>Goodsouls</ExternalLink>, which I recommended in itself. However I prefer Reform Kafe. Goodsouls is inside and air conditioned, and could occasionally be a little frantic, where as Reform Kafe is outdoors, natural and relaxed. And the food is amazing.
+export const oldyDeGardenImages = [
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/bed.jpeg`,
+    alt: 'Oldy De Garden bed',
+    caption: "Oldy De Garden is more rustic than fancy. That's right up my alley, so I really liked it.",
+  },
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/desk.jpeg`,
+    alt: 'Oldy De Garden desk',
+    caption: 'You have a desk to work at, loads of empty space for a workout, and even a bean bag, although I kept on forgetting about it and never ended up using it.',
+  },
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/window.jpeg`,
+    alt: 'Oldy De Garden window',
+    caption: "Oldy De Garden is actually a very good name for this property, as it's rustic and full of trees. The downside to that is that not much daylight gets in, and the room can feel a bit dingy.",
+  },
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/kitchen.jpeg`,
+    alt: 'Oldy De Garden kitchen',
+    caption: "You have a semi-kitchen in the room. No hobs or oven or anything, but there's a rice cooker and a microwave, and some plates and cutlery.",
+  },
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/bathroom.jpeg`,
+    alt: 'Oldy De Garden bathroom',
+    caption: 'The bathroom.',
+  },
+  {
+    src: `${imagePath}/accommodation/oldy-de-garden/balcony.jpeg`,
+    alt: 'Oldy De Garden balcony',
+    caption: 'You have your own balcony, which is one of those things that always sounds nice. I only sat out there one time before I got annoyed with the mosquitoes so went inside again.',
+  },
+]
 
-The menu has plenty of variety, from sandwiches and pancakes, to smoothie bowls and burgers, so you can always find what you're in the mood for, and the quality is always excellent. It really is the complete package.
+<ImageGallery images={oldyDeGardenImages} />
 
-<ImageGallery images={reformKafeImages} />
+## Summary of Chiang Mai
 
-### Kinphak Cafe
+export const summaryPoints = {
+  positive: [
+    'Vegan food',
+    'Safe',
+    'Easy to be sociable',
+  ],
+  neutral: [
+    'A couple of running options',
+  ],
+  negative: [
+    'No resemblance of Thai culture',
+    'Tourists everywhere',
+    'Lots of traffic pollution',
+    'Even more pollution during burning season',
+  ]
+}
 
-<MapLink name='50/5 Hassadisewi Rd' url='https://maps.app.goo.gl/dFS6tWw3yvmEHgX86' />
+<Summary summaryPoints={summaryPoints} />
 
-I was very fortunate that Kinphak Cafe was only a 5-minute walk from where I was staying. It's the best "local" restaurant that I found in Chiang Mai.
+## Do I want to come back to Chiang Mai again?
 
-It's not "local" in the sense of only having Thai menus and catering to locals. The clientele here is mainly tourists, and the menu is written in English. What I mean is that it sells Thai dishes at (more or less) local prices. Pretty much everything on the menu is 50 to 60 baht.
-
-Each dish is a meal in itself. I tended to get two just because I'm greedy, but I'd leave very full having only spent about 100 baht.
-
-It's 100% vegan, and the menu is pretty huge, so it's the kind of place that you can come to everyday, always eat something new, never have to worry about the quality (because it's always good), and never have to worry about how much you're paying.
-
-<ImageGallery images={kinphakCafeImages} />
-
-### Salsa Kitchen
-
-<MapLink name='26/4 Huay Kaew Rd' url='https://maps.app.goo.gl/pdUQTmWxQzq1M3c77' />
-
-There are so many vegan restaurants in Chiang Mai that you have absolutely no need to go anywhere that serves meat. However, if you are going to, make it this place.
-
-I tend to stick to fully-vegan restaurants when they're available, but I came here out of necessity one evening when everywhere else had closed (Salsa Kitchen is open until 11pm), and I'm so glad that I did. I got a vegan cheese burrito that impressed me so much that I came back a couple of days later to try something else. On that occasion I got the vegan carnitas and guacamole soft tacos that were even better. So good that I had them on the further two occasions that I came here during my stay in Chiang Mai, ignoring the rest of the vegan part of the menu, which is fairly extensive.
-
-It's one page long, and includes quesadillas, nachos, a chimichanga (whatever that is), two kinds of burritos, and two kinds of tacos. Having been to Mexico, it's perhaps concerning that the best Mexican food I've ever eaten is in Chiang Mai, but it's just really, really good.
-
-<ImageGallery images={salsaKitchenImages} />
-
-## Where to run in Chiang Mai
-
-Within Chiang Mai city, the only place I would deem any good for running, is Chiang Mai University, and that's on the very edge of the city.
-
-Especailly in the early mornings, you will often see people running a lap of the old town, around the outside of the moat. I don't know what the attraction is because the air is incredibly polluted there and there are many busy road crossings to negotiate. I guess that if you can't make it out to the university, then it's the best you're going to get, but I think running that route would be worse than not running at all.
-
-There are also a couple of very small parks within the city, but again, I would deem them too small to be any good for running. For me the university is the only viable place within the city, but without your own transport, it's a pain to get to.
-
-I was staying outside the old town on the side of the university, and it still took me 45 minutes in each direction to walk there, and it's a walk up a very busy and unpleasant main road.
-
-I did look for alternative routes, but I found many smaller roads had gates or dead ends that weren't on Google Maps, so in the end it was better to just go up the main road. I also encoutered people who jogged up this main road. It was so busy and polluted that I preferred to walk.
-
-Once you make it to the university, it's a beautiful campus. So much so that back in my days as an English teacher, I looked quite seriously into getting a job here, for no other reason than I thought it would be a nice place to be. For running, or even just to come for a walk or to relax, the lake is perfect.
-
-Beware that you can't _quite_ run all the way around it. There are some buildings that get in the way, so you have to slightly learn the route, rather than relying on having water next to you. Honestly though, the campus is so nice that there is no real downside to getting lost.
-
-<ImageGallery images={runnningImages} />
-
-## Being sociable in Chiang Mai
-
-Unlike in Bangkok, Meetup isn't really used in Chiang Mai, however there are some active Facebook groups organising events, so you have plenty of opportunity to meet people.
-
-As I got ill during my stay in Chiang Mai, I wasn't able to go to as many events as I wanted, so maybe after a future visit, I'll be able to update this list.
-
-### Yoga in the Park
-
-This is such a great initiative. Every morning at 8am, Yoga in the Park takes place in <ExternalLink url='https://goo.gl/maps/AnzfgXquWXGUkgXK8'>Nong Buak Haad Park</ExternalLink>, in the south-west corner of old town.
-
-It is completely free and run by volunteers, and every time I came, was completely full (so get there 15 minutes early to make sure you get a spot). Equipment isn't provided. You can rent a grass mat for 15 baht, but I wouldn't recommend it. They don't provide much cushioning, so bring your own mat if you have one.
-
-It's all friendly people, and is such a good way to start your day, doing some outdoor yoga and socialising. Probably my favourite thing about my visit to Chiang Mai.
-
-<ImageGallery images={yogaInTheParkImages} />
-
-<ExternalLink url='https://www.facebook.com/groups/289951174859604'>Visit Yoga in the Park on Facebook</ExternalLink>
-
-### Chiang Mai Language Exchange Party
-
-One thing I've learned in my time nomadding, is that "language exchange" roughly translates to "everyone speaks English and gets drunk," so if you can find a language exchange to go to, it's usually a great way to meet people. This one is no different.
-
-It takes place on the top floor of <ExternalLink url='https://goo.gl/maps/vaFKKwWwzaMFxwuT9'>The Moat House</ExternalLink> every Tuesday. As you arrive, you'll be given stickers for every language that you speak, that you stick to your t-shirt in order of proficiency, the rationale being that people who want to practice a language that you speak will be able to see what you speak from the stickers, and come and talk to you.
-
-The reality is that everyone just speaks English, and I think there was even a special offer on beer, because I definitely drank a lot of it.
-
-<ExternalLink url='https://www.facebook.com/groups/349933706518867'>Visit Chiang Mai Lanugage Exchange Party on Facebook</ExternalLink>
+No.
