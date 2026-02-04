@@ -216,6 +216,7 @@ export const places = {
     loei: 'Loei',
     lopburi: 'Lopburi',
     maeHongSon: 'Mae Hong Son',
+    mahaSarakham: 'Maha Sarakham',
     nakhonRatchasima: 'Nakhon Ratchasima',
     nan: 'Nan',
     nongKhai: 'Nong Khai',

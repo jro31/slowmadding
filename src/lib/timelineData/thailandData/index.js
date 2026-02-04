@@ -135,6 +135,12 @@ export const thailandData = {
         [departure]: '2024-12-11',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2026-02-05',
+        [departure]: '2026-02-19',
+      },
+    },
   ],
   [places[countries.thailand].kohPhiPhi]: [
     {
@@ -195,6 +201,14 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2011-09-29',
         [departure]: '2011-10-01',
+      },
+    },
+  ],
+  [places[countries.thailand].mahaSarakham]: [
+    {
+      [dates]: {
+        [arrival]: '2026-02-19',
+        [departure]: '2026-02-28',
       },
     },
   ],
@@ -363,6 +377,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2025-01-23',
         [departure]: '2025-02-06',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2026-02-28',
+        [departure]: '2026-03-12',
       },
     },
   ],
