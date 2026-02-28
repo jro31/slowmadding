@@ -1,0 +1,19 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-02-28T17:00:00+07:00', // TODO: Update this
+  title: 'Taking a Bus from Maha Sarakham to Ubon Ratchathani',
+  description: 'TODO',
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/taking-a-bus-from-maha-sarakham-to-ubon-ratchathani'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+
