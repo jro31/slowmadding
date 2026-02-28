@@ -1,0 +1,123 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-02-28T21:25:00+07:00',
+  title: 'Taking a Bus from Maha Sarakham to Ubon Ratchathani',
+  description: 'Everything you need to know about taking a direct bus from Maha Sarakham to Ubon Ratchathani.',
+  keywords: ['Thailand'],
+}
+
+export const imagePath = '/images/articles/taking-a-bus-from-maha-sarakham-to-ubon-ratchathani'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Maha Sarakham in central Isaan is a small city with few foreign visitors. And while Ubon Ratchathani is a bit bigger, it's tucked-away in the corner of Thailand, not really on the way anywhere, so also doesn't see too many foreigners. If you want to take a bus between them, the information for doing so is not only sparse, but it's largely inaccurate.
+
+Maha Sarakham opened a second bus terminal in November 2024. What little information I could find online about making this trip was from before this date, and the times and locations of many buses have since changed, so be very wary about what you find online. I ended up having to visit both bus terminals in person to figure everything out. This is what I learned.
+
+## Where are Maha Sarakham's two bus terminals?
+
+<ExternalLink url='https://maps.app.goo.gl/iPeZoDRu8MZKQMKB7'>Bus Terminal 1</ExternalLink> is the original, older bus terminal. It's very convenient, and easily walkable from the city centre.
+
+<ExternalLink url='https://maps.app.goo.gl/4GTxTzx1DagRA7Th7'>Bus Terminal 2</ExternalLink> is out about 4km outside of the city centre, down a main road with no pavements (not a very walking-friendly route), out in the middle of nowhere. To give you some context, it's more than a kilometre away from the nearest 7-11, and when I came here I tried to take a Grab bike back again. There weren't even any Grab motorcycles in range of the bus terminal - I had to take a taxi.
+
+There are a couple of small kiosks selling snacks here, but if you need anything else stock-up before coming.
+
+export const busTerminal2Images = [
+  {
+    src: `${imagePath}/bus-terminal-2/outside.jpeg`,
+    alt: 'Outside Maha Sarakham bus terminal 2',
+    caption: "Bus Terminal 2 is very new and shiny, but is out in the arse-end of nowhere. Apart from the couple of kiosks you can see here, and a couple more you can't, there's nowhere to buy anything nearby, so come prepared before travelling.",
+  },
+]
+
+<ImageGallery images={busTerminal2Images} />
+
+## Which bus terminal has direct buses to Ubon Ratchathani?
+
+They both do, but at Bus Terminal 1, the first departure of the day is at 2pm. As the trip will take you about four hours, unless you want to arrive in the evening, you're going to have to go to Bus Terminal 2.
+
+## Buses to Ubon from Bus Terminal 1
+
+At times like this, I'm very thankful that I can now speak and read Thai, because there isn't much English signage at Bus Terminal 1.
+
+You will see Ubon Ratchathani written as either อุบล, อุบลฯ (both of which just read 'Ubon') or อุบลราชธานี (the full Ubon Ratchathani). And in the south-east corner of Bus Terminal 1 (the far left corner when coming from the main road), you'll find one company, Chok Lam Loet, who run Bangkok to Ubon buses that pass through Maha Sarakham.
+
+They have a blue banner with yellow writing, and the scheduled departure times from Maha Sarakham to Ubon are 14:00, 16:00 and 18:00. Their phone number is 095-6686321, although I would doubt that the person who answers speaks English.
+
+Note that I came here in the morning (about 11:15am) on a Wednesday and there was no one in the ticket office, so presumably someone only arrives near departure times.
+
+export const busTerminal1TicketImages = [
+  {
+    src: `${imagePath}/bus-terminal-1-tickets/chok-lam-loet-ticket-office.jpeg`,
+    alt: 'Maha Sarakham Bus Terminal 1 Chok Lam Loet ticket office',
+    caption: 'The ticket office for Chok Lam Loet is in a far-left corner of the bus terminal when coming from the main road. Buses to Ubon leave at 14:00, 16:00 and 18:00.',
+  },
+]
+
+<ImageGallery images={busTerminal1TicketImages} />
+
+## Buses to Ubon from Bus Terminal 2
+
+The newer Bus Terminal 2 is a little more foreigner-friendly. You will find some English signage at least, but figuring-out how to buy tickets to Ubon isn't as straightforward as you'd think it would be.
+
+When you go into the bus terminal you'll be greeted by a large ticket counter, and above each window is the destinations that they serve (in Thai and English). Two such windows (number 2 and number 8) list Ubon Ratchathani as a destination. I went up to counter 8 and asked in Thai what times the buses to Ubon were.
+
+_"7:30am"_ was the response (in Thai). This company was Phetprasert who I know from previous dealings, run a bus service from Chiang Mai to Ubon. I assume that this would be joining that bus mid-journey.
+
+I then asked if there were any later buses, and he motioned me to go around the corner, although I was unclear exactly where.
+
+So I asked at counter 2, and he didn't even give me a time, he too just motioned me to go around the corner. The fuck are they all talking about?
+
+Again, being able to read Thai proved pivotal to understanding what was going on, because through the waiting room, on the forecourt where the buses stop, I saw a standalone kiosk that, from the back only had Thai writing, of which I could see อุบล (Ubon). This was kiosk number 4. On the front of this kiosk they do have a small amount of English writing, but good luck finding it if you don't know what you're looking for seeing as it only faces buses. The company name is Sanguan Chai Ubon, and their phone number 061-474-8225, but note that the guy in the kiosk didn't speak English.
+
+I asked about buses to Ubon on the day I wanted to travel, and was shown the departure times of 08:20, 09:50, 11:00, 12:30, 13:00, 14:00, 15:30 and 17:30, but he then told me that some of them weren't actually running.
+
+I don't remember precisely which weren't running, but can say with confidence that the 08:20, 09:50 and 11:00 buses were all running. Some were VIP, others were 1st class. I have no idea what the difference is.
+
+I ended up buying a ticket on the 08:20 VIP bus. The price was 227 baht. No ID was required.
+
+export const busTerminal2TicketImages = [
+  {
+    src: `${imagePath}/bus-terminal-2-tickets/ticket-counter.jpeg`,
+    alt: 'Maha Sarakham Bus Terminal 2 ticket counter',
+    caption: "When you walk into the bus terminal you'll be faced by this ticket counter, which you may think is where you buy your ticket, but apparently not.",
+  },
+  {
+    src: `${imagePath}/bus-terminal-2-tickets/sanguan-chai-ubon-kiosk-from-waiting-room.jpeg`,
+    alt: 'Maha Sarakham Bus Terminal 2 Sanguan Chai Ubon kiosk from the waiting room',
+    caption: 'The Sanguan Chai Ubon kiosk is actually through the waiting room and on the forecourt. You want kiosk number 4, which is straight ahead of you when you walk through the waiting room. On the back it has no English writing.',
+  },
+  {
+    src: `${imagePath}/bus-terminal-2-tickets/sanguan-chai-ubon-kiosk.jpeg`,
+    alt: 'Maha Sarakham Bus Terminal 2 Sanguan Chai Ubon kiosk front',
+    caption: "On the front, facing the buses, you will at least find that it says 'Ubon Ratchathani' in English.",
+  },
+  {
+    src: `${imagePath}/bus-terminal-2-tickets/maha-sarakham-to-ubon-bus-times.jpeg`,
+    alt: 'Maha Sarakham Bus Terminal 2 Sanguan Chai Ubon bus times',
+    caption: 'The times for buses to Ubon Ratchathani are posted on the window, but be warned that on the day I was travelling not all of the buses were running.',
+  },
+  {
+    src: `${imagePath}/bus-terminal-2-tickets/maha-sarakham-to-ubon-ticket.jpeg`,
+    alt: 'Maha Sarakham to Ubon Ratchathani bus ticket',
+    caption: 'Your ticket too lacks any English, but the key parts are that the destination says Ubon (อุบลฯ), the date (in my case the 28th), the departure time (8:20), your seat number (11) and the price (227 baht).',
+  },
+]
+
+<ImageGallery images={busTerminal2TicketImages} />
+
+## On the bus from Maha Sarakham to Ubon
+
+I spent a lot more time and energy figuring-out how and where to take the bus to Ubon, than I did on the journey itself. It was a very easy journey to make.
+
+The bus leaves from right in front of the ticket kiosk. It had started its journey in Khon Kaen, and arrived at the bus terminal 5-10 minutes late, but was very efficient thereafter.
+
+Passengers had assigned seats, of which some people abided by, and others ignored, but there were enough empty seats on the bus that this wasn't a problem. The seats were big and comfortable, they gave every passenger a small bottle of water, and it only made a couple of short stops en route to Ubon. There were no piss breaks. There were a couple of USB ports per seat... on the ceiling. So unless you have a really long charging cable, you're probably not going to use them.
+
+We arrived at the <ExternalLink url='https://maps.app.goo.gl/7KnAcqaEMrtysoLV7'>Ubon Ratchathani Bus Terminal</ExternalLink> at 12:20pm after a journey time of just about four hours. It's a way out of the city centre, but there were a tonne of Grab taxis lingering around so getting into the city centre from there was easy.
