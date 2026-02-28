@@ -11,6 +11,12 @@ export const thailandData = {
         [departure]: '2025-02-13',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2026-03-07',
+        [departure]: '2026-03-14',
+      },
+    },
   ],
   [places[countries.thailand].chiangMai]: [
     {
@@ -105,6 +111,12 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2025-04-03',
         [departure]: '2025-04-17',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2026-04-03',
+        [departure]: '2026-04-17',
       },
     },
   ],
@@ -382,7 +394,7 @@ export const thailandData = {
     {
       [dates]: {
         [arrival]: '2026-02-28',
-        [departure]: '2026-03-12',
+        [departure]: '2026-03-07',
       },
     },
   ],
