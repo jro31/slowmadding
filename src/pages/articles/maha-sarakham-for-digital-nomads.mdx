@@ -23,7 +23,30 @@ My motivation for coming here was primarily that one of my Thai teachers lives h
 
 If you're a digital nomad looking to go to a lesser-visited town, what can you expect if you come here?
 
-TODO: Add images
+export const cityImages = [
+  {
+    src: `${imagePath}/city/clock-tower-at-night.jpeg`,
+    alt: 'Maha Sarakham clock tower at night',
+    caption: "You want to know the interesting thing about this clock tower? The clock's wrong. And it goes bong every hour, but as it's ten minutes fast, it happens at ten to the hour instead.",
+  },
+  {
+    src: `${imagePath}/city/phra-phratan-kantharawichai-at-night.jpeg`,
+    alt: 'Phra Phratan Kantharawichai at night',
+    caption: "You'll pass Phra Phratan Kantharawichai if you walk to Health Park. It's right next to the juvenile and family court.",
+  },
+  {
+    src: `${imagePath}/city/nakhon-sawan-road.jpeg`,
+    alt: 'Nakhon Sawan Road',
+    caption: "Maha Sarakham is not like I was expecting Maha Sarakham to be. It's beautifully developed, but still has a lot of trees that line the town. Something often missing in other places.",
+  },
+  {
+    src: `${imagePath}/city/legal-execution.jpeg`,
+    alt: 'Legal execution office',
+    caption: "I'm actually kind of curious what happens at the legal execution office. It's probably not as fun as it sounds.",
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Getting to Maha Sarakham from Khon Kaen
 
@@ -81,7 +104,15 @@ I'm unaware of any foreigner-aimed bars in town, or any bars at all where you ca
 
 I highly doubt there are any English-language events in town for meeting new people.
 
-TODO: Add photos
+export const socialImages = [
+  {
+    src: `${imagePath}/social/bus-station-cafe.jpeg`,
+    alt: 'Bus Station Cafe',
+    caption: "This photo was at Bus Station Cafe, which is a really fun, bus station themed bar (no really). Perhaps not great if you're alone, but it's a lot of fun if you have any friends.",
+  },
+]
+
+<ImageGallery images={socialImages} />
 
 ## Where to run in Maha Sarakham
 
@@ -97,7 +128,15 @@ According to Google Maps it's open until 9pm, but on the one occasion I was here
 
 There isn't much traffic in Maha Sarakham and some roads have wide pavements, so I'd say that running along the roads, pariculaly that run along the <ExternalLink url='https://maps.app.goo.gl/RVXQyWJxkXo7tEFS8'>canal</ExternalLink> that goes through a lot of the city is perfectly viable too, although I didn't see anyone running outside of Health Park.
 
-TODO: Add photos
+export const runningImages = [
+  {
+    src: `${imagePath}/running/health-park.jpeg`,
+    alt: 'Health Park',
+    caption: "Health Park is small, but it's a perfectly pleasant place to come for a run, and the trees mean that you get some shade, even running in the middle of the day.",
+  },
+]
+
+<ImageGallery images={runningImages} />
 
 ## Where to get vegan food in Maha Sarakham
 
@@ -107,7 +146,20 @@ One reason that I stayed where I did was there was <ExternalLink url='https://ma
 
 On my wanderings I also found one more 'jay' restaurant <ExternalLink url='https://maps.app.goo.gl/qvYUfykkEAqXNR6t6'>here</ExternalLink>. The restaurant itself isn't labelled on Google Maps, but that's the location.
 
-TODO: Add photos
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/im-bun-1.jpeg`,
+    alt: 'Im Bun Grab delivery',
+    caption: 'One of my Grab orders from Im Bun, we have dumplings for 59 baht, a fried Isaan vegetarian sausage, also for 59 baht, and a vegetarian spicy pork salad (made very spicy) for 139 baht.',
+  },
+  {
+    src: `${imagePath}/vegan-food/im-bun-2.jpeg`,
+    alt: 'Im Bun Grab delivery',
+    caption: "And in this one is fried tofu for 74 baht, stir-fried noodles for 79 baht, and tofu in dried red curry sauce for 125 baht. I'd do it again.",
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
 
 ## Where I stayed
 
@@ -159,32 +211,32 @@ export const tj4711ResidenceImages = [
   {
     src: `${imagePath}/accommodation/tj-4711-residence/bed.jpeg`,
     alt: 'TJ 4711 Residence bed',
-    caption: 'TODO',
+    caption: 'My room here was very spacious. More than enough floor space for a workout.',
   },
   {
     src: `${imagePath}/accommodation/tj-4711-residence/cupboard.jpeg`,
     alt: 'TJ 4711 Residence cupboard',
-    caption: 'TODO',
+    caption: 'Although putting in a cupboard but then blocking its doors with a sofa definitely a decision.',
   },
   {
     src: `${imagePath}/accommodation/tj-4711-residence/desk.jpeg`,
     alt: 'TJ 4711 Residence desk',
-    caption: 'TODO',
+    caption: "The best thing about being in a corner room is that you get two sets of windows. In my room the window next to the bed faced east so got loads of daylight in the morning. Unfortunately being on only the fourth floor meant I was at the same height as the building next door, but you can't have everything.",
   },
   {
     src: `${imagePath}/accommodation/tj-4711-residence/window.jpeg`,
     alt: 'TJ 4711 Residence window',
-    caption: 'TODO',
+    caption: 'The other window led out onto the balcony.',
   },
   {
     src: `${imagePath}/accommodation/tj-4711-residence/balcony.jpeg`,
     alt: 'TJ 4711 Residence balcony',
-    caption: 'TODO',
+    caption: 'Which has a decent view, and a second sink, although I never used it.',
   },
   {
     src: `${imagePath}/accommodation/tj-4711-residence/bathroom.jpeg`,
     alt: 'TJ 4711 Residence bathroom',
-    caption: 'TODO',
+    caption: "I found the cleanliness standards slightly lacking, but I've had worse.",
   },
 ]
 
