@@ -9,7 +9,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-03-12T16:45:00+07:00',
+  date: '2026-03-07T16:45:00+07:00', // TODO: Update this
   title: 'Ubon Ratchathani for Digital Nomads',
   description: "Being out on its own in the east of Thailand, Ubon Ratchathani isn't on any backpacker trail or tourist itinerary. What does that isolation mean if you choose to come here as a digital nomad?",
   keywords: ['Thailand'],
@@ -477,6 +477,63 @@ export const theOutsideInnImages = [
 ]
 
 <ImageGallery images={theOutsideInnImages} />
+
+### B2 Ubon Airport Premier Hotel
+
+<MapLink name='287 Luang Road' url='https://maps.app.goo.gl/rzj1tDbEh2UQ4xmt9' />
+
+export const b2UbonAirportPremierHotelStays = [
+  {
+    dates: {
+      checkIn: '2026-02-28',
+      checkOut: '2026-03-07',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/b2-ubon-airport-premier-hotel/hotel/ubon-ratchathani-th.html',
+    },
+    roomType: 'Luxury Premier Room',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 7419.92,
+        'Taxes & fees': 1440.43,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={b2UbonAirportPremierHotelStays} />
+
+I said after staying at The Outside Inn that next time I'm in Ubon that _"I'll look for a more standard hotel... even if it means paying three times the price."_ That's pretty much what I did by staying here.
+
+TODO
+
+export const b2UbonAirportPremierHotelImages = [
+  {
+    src: `${imagePath}/accommodation/b2-ubon-airport-premier-hotel/bed.jpeg`,
+    alt: 'B2 Ubon Airport Premier Hotel Luxury Premier Room bed',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/b2-ubon-airport-premier-hotel/room.jpeg`,
+    alt: 'B2 Ubon Airport Premier Hotel Luxury Premier Room',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/b2-ubon-airport-premier-hotel/bathroom.jpeg`,
+    alt: 'B2 Ubon Airport Premier Hotel Luxury Premier Room bathroom',
+    caption: 'I had a disabled bathroom, and I loved that. I always try to use disabled toilets because they have so much more space, but here I had an entire disabled toilet all to myself. And those bars are really useful for putting towels on and doing dips.',
+  },
+  {
+    src: `${imagePath}/accommodation/b2-ubon-airport-premier-hotel/breakfast-menu.jpeg`,
+    alt: 'B2 Ubon Airport Premier Hotel breakfast menu',
+    caption: "Breakfast is included in the price here, but it's not a standard hotel breakfast, instead you pre-order a wrap and a drink to collect the next morning. But if you're a vegan who doesn't drink coffee (as I am), then there's fuck all on the menu for you, so it's really rather a let down.",
+  },
+]
+
+<ImageGallery images={b2UbonAirportPremierHotelImages} />
 
 ## Summary of Ubon Ratchathani
 
