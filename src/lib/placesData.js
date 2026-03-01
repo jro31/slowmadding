@@ -530,6 +530,47 @@ export const placesData = [
     [articlePath]: '/articles/loei-for-digital-nomads',
   },
   {
+    [place]: places[countries.thailand].mahaSarakham,
+    [country]: countries.thailand,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'As you expect anywhere in Isaan, Maha Sarakham is very affordable. You can easily get a room for less than 1,000 baht per night, and a meal for less than 100 baht.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'The Internet in my hotel was reliable and fast enough for everything I needed.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          "There's a small park in the town centre that's good for running, as well suitable roads and a big lake a bit out of town.",
+      },
+      [veganFood]: {
+        [verdict]: false,
+        [description]:
+          "There are three 'jay' restaurants in town that I'm aware of. These are fine so you won't go hungry, but the lack of variety isn't ideal.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]: 'Absolutely no safety concerns here.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          "Very few other foreigners in town, and not much English spoken, so it's not an easy place to meet people if you come here alone.",
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          "Wide pavements and slow traffic. It's a very pleasant city to walk around, even if you're the only one.",
+      },
+    },
+    [articlePath]: '/articles/maha-sarakham-for-digital-nomads',
+  },
+  {
     [place]: places[countries.thailand].nakhonRatchasima,
     [country]: countries.thailand,
     [criteria]: {
