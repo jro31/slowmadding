@@ -7,7 +7,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-03-07T18:40:00+07:00',
+  date: '2026-03-14T18:40:00+07:00', // TODO: Update this
   title: 'Buriram for Digital Nomads',
   description: 'Buriram is a small, studenty town in Isaan a couple of hours east of Korat. What does it offer for digital nomads?',
   keywords: ['Thailand', 'Buri Ram'],
@@ -118,6 +118,8 @@ And the last thing that annoyed me a bit here, was how out-of-date or inaccurate
 
 ## Where to run in Buriram
 
+TODO: Update this
+
 <ExternalLink url='https://maps.app.goo.gl/GzjdyME3hNzL4j4k6'>Khlong Lalom</ExternalLink> is an 1,800 year old moat that was once dug as a defensive barrier for what is now Buriram. I assume back then it hadn't been dissected into five different parts by roads crossing over it, because that would have made it a bit pointless, but that's how it is now.
 
 If you run a full lap of Khlong Lalom it has a total distance of 5.36km, however the fact that it's cut into sections means that you'll have crossed roads eight different times by the time you get back to your starting point. None of them are especially busy or hard to cross so it's not really as issue on relaxed runs. If you want to come here and do a faster run without crossing any roads, then each of the five sections can be done as a lap on its own. The middle of the five sections is by far the biggest, although worth noting that the people that built the path only knew how to build right-angles, so there are some oddly sharp corners seeing as it's a path meandering around what's now a large lake.
@@ -169,6 +171,8 @@ export const runningImages = [
 <ImageGallery images={runningImages} />
 
 ## Getting vegan food in Buriram
+
+TODO: Rewrite this
 
 This was definitely my least favourite thing about Buriram. Freshly cut fruit is readily available from vendors all over the place, more so than anywhere I've been in Thailand apart from Bangkok, so that's helpful. As for getting an actual meal? I only came across three different vegan-friendly options.
 
@@ -324,43 +328,104 @@ In a town like Buriram there aren't that many options, so you take what you can 
 
 export const snowHouseBuriramImages = [
   {
-    src: `${imagePath}/snow-house-buriram/room.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/room.jpeg`,
     alt: 'Snow House Buriram standard room',
     caption: 'One of the best things here was the floor-to-ceiling east-facing windows. So much daylight streamed through the windows in the mornings. I loved it.',
   },
   {
-    src: `${imagePath}/snow-house-buriram/bed.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/bed.jpeg`,
     alt: 'Snow House Buriram standard room bed',
     caption: 'Unfortunately, the room is just a little too small to be comfortable. This was the position of the bed as I checked-in. I pushed it about a foot closer to the window, and that made the space at the bottom right of this photo just about sufficient for exercise, but it did always feel very cramped.',
   },
   {
-    src: `${imagePath}/snow-house-buriram/storage-space.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/storage-space.jpeg`,
     alt: 'Snow House Buriram standard room storage space',
     caption: 'You have plenty of storage space, as well as a fridge and a kettle. Unfortunately the wall behind them is annoyingly thin, and you can expect to be able to hear quite clearly what your neighbours are up to.',
   },
   {
-    src: `${imagePath}/snow-house-buriram/bathroom.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/bathroom.jpeg`,
     alt: 'Snow House Buriram bathroom',
     caption: 'The bathroom is pretty standard.',
   },
   {
-    src: `${imagePath}/snow-house-buriram/balcony.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/balcony.jpeg`,
     alt: 'Snow House Buriram balcony',
     caption: "While the room has a balcony, pretend that it doesn't. It was so filthy out there with cigarette butts and other stains on the floor and in the sink that it was basically unusable. Despite this being very obvious, the housekeepers didn't clean it through the duration of my stay.",
   },
   {
-    src: `${imagePath}/snow-house-buriram/outside.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/outside.jpeg`,
     alt: 'Snow House Buriram from outside',
     caption: "Snow House isn't hard to spot, but can be surrounded by some quite aggressive dogs at night-time.",
   },
   {
-    src: `${imagePath}/snow-house-buriram/monthly-rental-prices.jpeg`,
+    src: `${imagePath}/accommodation/snow-house-buriram/monthly-rental-prices.jpeg`,
     alt: 'Snow House Buriram monthly rental prices',
     caption: 'One thing to be aware of is that Snow House offer monthly rental prices. While these exclude the cost of electricity and water, it only costs 6,000 baht to stay for a month, or 5,000 baht per month if you stay for longer. At the rate I paid to stay here, it would have only taken me staying for eleven nights until it would have been cheaper to just pay for a whole month, so if you do plan on a longer stay, contact them first.',
   },
 ]
 
 <ImageGallery images={snowHouseBuriramImages} />
+
+### Jiahaus Hotel Apartment
+
+<MapLink name='560 Tambon Krasang' url='https://maps.app.goo.gl/3JvMqBwJ1iXdD2qcA' />
+
+export const jaihausStays = [
+  {
+    dates: {
+      checkIn: '2026-03-07',
+      checkOut: '2026-03-14',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/jiahaus-hotel-apartment/hotel/buriram-th.html',
+    },
+    roomType: 'Superior',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 5107.62,
+        'Taxes & fees': 1011.50,
+        'Cashback (paid after 60 days)': -96.28,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={jaihausStays} />
+
+TODO
+
+export const jiahausImages = [
+  {
+    src: `${imagePath}/accommodation/jiahaus/room.jpeg`,
+    alt: 'Jiahaus Hotel Apartment room',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/jiahaus/tv.jpeg`,
+    alt: 'Jiahaus Hotel Apartment TV',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/jiahaus/bed.jpeg`,
+    alt: 'Jiahaus Hotel Apartment bed',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/jiahaus/balcony.jpeg`,
+    alt: 'Jiahaus Hotel Apartment balcony',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/accommodation/jiahaus/bathroom.jpeg`,
+    alt: 'Jiahaus Hotel Apartment bathroom',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={jiahausImages} />
 
 ## Summary of Buriram
 
