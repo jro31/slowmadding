@@ -9,7 +9,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-11-27T20:45:00+07:00',
+  date: '2026-04-24T20:45:00+07:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
   description: 'Bangkok is one of the travel hubs of South-East Asia, but is it worth stopping here as a digital nomad?',
   keywords: ['Thailand'],
@@ -907,6 +907,39 @@ export const siamPlaengnaImages = [
 ]
 
 <ImageGallery images={siamPlaengnaImages} />
+
+### The Square 101
+
+<MapLink name='58 Punnawithi 30' url='https://maps.app.goo.gl/2XAxUK4XdrtocvpJ7' />
+
+export const theSquare101Stays = [
+  {
+    dates: {
+      checkIn: '2026-03-14',
+      checkOut: '2026-04-03',
+    },
+    platform: {
+      name: 'Agoda',
+      url: 'https://www.agoda.com/the-square-101/hotel/bangkok-th.html',
+    },
+    roomType: 'Suite',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 23361.80,
+        'Taxes & fees': 4135.40,
+        'Cashback (paid after 60 days)': -427.20,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={theSquare101Stays} />
+
+TODO
+
+TODO: Add photos
 
 ## Summary of Bangkok
 
