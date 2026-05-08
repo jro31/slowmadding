@@ -9,6 +9,12 @@ export const unitedKingdomData = {
         [departure]: '2025-05-19',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2026-05-16',
+        [departure]: '2026-05-18',
+      },
+    },
   ],
   [places[countries.unitedKingdom].london]: [
     {
@@ -81,6 +87,18 @@ export const unitedKingdomData = {
       [dates]: {
         [arrival]: '2025-05-19',
         [departure]: '2025-05-23',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2026-04-24',
+        [departure]: '2026-05-16',
+      },
+    },
+    {
+      [dates]: {
+        [arrival]: '2026-05-18',
+        [departure]: '2026-05-28',
       },
     },
   ],

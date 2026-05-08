@@ -147,6 +147,7 @@ export const places = {
   },
   [countries.greece]: {
     athens: 'Athens',
+    thessaloniki: 'Thessaloniki',
   },
   [countries.hungary]: {
     budapest: 'Budapest',

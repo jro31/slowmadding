@@ -16,4 +16,12 @@ export const greeceData = {
       },
     },
   ],
+  [places[countries.greece].thessaloniki]: [
+    {
+      [dates]: {
+        [arrival]: '2026-05-28',
+        [departure]: '2026-07-02',
+      },
+    },
+  ],
 }
