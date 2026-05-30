@@ -1,0 +1,162 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-07-02T15:35:00+01:00', // TODO: Update this
+  title: 'Thessaloniki for Digital Nomads',
+  description: '', // TODO
+  keywords: ['Greece', 'Θεσσαλονίκη', 'Salonika', 'Thessalonica', 'Salonica', 'Thessalonika', 'Saloniki', 'Thessalonike', 'Thessalonice'],
+}
+
+export const imagePath = '/images/articles/thessaloniki-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add photos
+
+## Why did I come to Thessaloniki?
+
+TODO: Omit this section?
+
+## Arriving in Thessaloniki
+
+TODO
+
+## How affordable is Thessaloniki?
+
+TODO
+
+### Is it worth it?
+
+TODO
+
+## Paying for things in Thessaloniki
+
+TODO
+
+## Getting around Thessaloniki
+
+TODO: Omit this section?
+
+## What language is spoken in Thessaloniki?
+
+TODO
+
+## Is it easy to get by with English in Thessaloniki?
+
+TODO
+
+## How is the Internet in Thessaloniki?
+
+TODO
+
+## Is Thessaloniki safe?
+
+TODO
+
+## What is the vibe of Thessaloniki?
+
+TODO
+
+## Who is Thessaloniki suitable for?
+
+TODO
+
+## Is the tap water drinkable in Thessaloniki?
+
+TODO
+
+## Being sociable in Thessaloniki
+
+TODO
+
+## Things I don't like about Thessaloniki
+
+TODO
+
+## Where to run in Thessaloniki
+
+TODO
+
+## Vegan-friendly restaurants in Thessaloniki
+
+TODO
+
+## Getting vegan groceries in Thessaloniki
+
+TODO
+
+## Getting vegan supplements in Thessaloniki
+
+TODO: Omit this section?
+
+## Where I stayed as a digital nomad in Thessaloniki
+
+### Cozy central apartment!
+
+<MapLink name='Ag. Dimitriou 141' url='https://maps.app.goo.gl/rBAzWv57hmN1aQkv5' />
+
+export const dgiouDimitriouApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-05-28',
+      checkOut: '2026-07-02',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/1194335084700622322',
+    },
+    roomType: 'Entire rental unit in Thessaloniki, Greece',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1679.75,
+        'Monthly stay discount': -503.93,
+        'Airbnb service fee': 206.56,
+        'Airbnb service fee savings': -41.14,
+        Taxes: 241.80,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={dgiouDimitriouApartmentStays} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Thessaloniki
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts / How do I feel about Thessaloniki? TODO: Delete as necessary
+
+TODO: Omit this section?
+
+
+## Do I want to come back to Thessaloniki again?
+
+TODO
