@@ -195,6 +195,8 @@ export const places = {
   },
   [countries.romania]: {
     bucharest: 'Bucharest',
+    clujNapoca: 'Cluj-Napoca',
+    timisoara: 'Timișoara',
   },
   [countries.singapore]: {
     singapore: 'Singapore',
