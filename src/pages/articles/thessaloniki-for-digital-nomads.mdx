@@ -31,6 +31,16 @@ Greeks are a quite fiery bunch which meant there was a lot of shouting, but we g
 
 After that, getting into the town was easy. Bus 01X runs from the airport every ~20 minutes from the bus stop out the front of the airport (bus 01N at nighttime). You can buy tickets from the ticket machine next to the bus stop for €2, paying by card or contactless, and it takes about 40 minutes to get into town. It couldn't be easier.
 
+export const arrivingImages = [
+  {
+    src: `${imagePath}/arriving/immigration.jpeg`,
+    alt: 'Immigration',
+    caption: "Thessaloniki Airport is relatively small, so when the computers go down for 90 minutes, things get backed-up quickly. While I was fortunate to be at the front of the queue and inside with AC, some weren't so lucky as it snaked out the door.",
+  },
+]
+
+<ImageGallery images={arrivingImages} />
+
 ## How affordable is Thessaloniki?
 
 I'd rate it as fairly affordable as major EU cities go, but if cost really matters to you, then you can find cheaper EU cities to go to.
@@ -97,7 +107,25 @@ In the mornings you get some shade from the trees that line the path, in the eve
 
 The only downside, is that for about a week during the middle of my stay, for some reason they were releasing a lot of sewage into the sea along this route, which was very unsightly, absolutely stank, and in places even washed-up onto the pathway. I did not enjoy those runs, but the rest of the time it was really pleasant.
 
-TODO: Add photos
+export const runningImages = [
+  {
+    src: `${imagePath}/running/waterfront.jpeg`,
+    alt: 'Thessaloniki waterfront',
+    caption: 'Running along the waterfront you have a big, wide path. In the mornings the trees provide some shade.',
+  },
+  {
+    src: `${imagePath}/running/sunset.jpeg`,
+    alt: 'Thessaloniki sunset',
+    caption: 'By the afternoon the shade is gone as the sun goes out over the water, but the beauty compensates for the extra heat.',
+  },
+  {
+    src: `${imagePath}/running/sewage.jpeg`,
+    alt: 'Thessaloniki sewage discharge',
+    caption: "Except on days when they're releasing sewage into the sea, which absolutely stinks and in places splashes onto the path.",
+  },
+]
+
+<ImageGallery images={runningImages} />
 
 ## Things I didn't like about Thessaloniki
 
