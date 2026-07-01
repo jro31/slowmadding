@@ -21,7 +21,30 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
-TODO: Add photos
+export const cityImages = [
+  {
+    src: `${imagePath}/city/emilianos-lazaridis-grevena-bishop-monument.jpeg`,
+    alt: 'Emilianos Lazaridis, Grevena Bishop Monument',
+    caption: "While it got progressively filled with tourists throughout my time in Thessaloniki, when the crowds aren't driving you mad, the Thessaloniki has a quite pleasing city centre. This is the \"Emilianos Lazaridis, Grevena Bishop Monument\", apparently.",
+  },
+  {
+    src: `${imagePath}/city/holy-church-of-saint-paul-the-apostle.jpeg`,
+    alt: "Holy Church of Saint Paul the Apostle from Pasha's Gardens",
+    caption: "While I was scouting the best places to run in Thessaloniki I walked up to Pasha's Gardens. And while it's not very suitable for running, it does offer some quite nice views. Here looking at the Holy Church of Saint Paul the Apostle.",
+  },
+  {
+    src: `${imagePath}/city/waterfront.jpeg`,
+    alt: 'Thessaloniki waterfront',
+    caption: 'The city centre stretches out to the waterfront, where tourists annoy the locals by walking along the cycle lane.',
+  },
+  {
+    src: `${imagePath}/city/street-art.jpeg`,
+    alt: 'Thessaloniki street art',
+    caption: 'You find some quite nice graffiti around Thessaloniki.',
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Arriving in Thessaloniki
 
@@ -74,6 +97,16 @@ Very. I didn't sense crime of any kind while I was here, and felt very safe thro
 ## What is the vibe of Thessaloniki?
 
 Thessaloniki has a big university, so it's got a young, studenty vibe. In the city centre it feels a lot more touristy, but I found it to be a very upbeat place.
+
+export const vibeImages = [
+  {
+    src: `${imagePath}/vibe/kill-a-tourist.jpeg`,
+    alt: 'Kill a tourist graffiti',
+    caption: "Someone went to a lot of effort to graffiti \"Kill a tourist - Fuck Rbnbs\" all over the place. I saw this same thing far and wide in Thessaloniki. I feel a bit bad that they went to all that trouble, but didn't know how to spell Airbnb. I thought about going around and correcting them all.",
+  },
+]
+
+<ImageGallery images={vibeImages} />
 
 ## Who is Thessaloniki suitable for?
 
