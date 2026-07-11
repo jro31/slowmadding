@@ -12,14 +12,28 @@ const adjustedDepartureDate = (departureDate) =>
   new Date(departureDate) > new Date(usersDate) ? usersDate : departureDate
 
 const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
-  let stayOrderFirst = true
   const numberOfNights = useNumberOfNights()
+
+  const pastTimelineData = timelineData
+    .filter((countryVisit) =>
+      countryVisit.stays.some(
+        (stay) => new Date(stay[arrival]) < new Date(usersDate)
+      )
+    )
+    .map((countryVisit) => {
+      return {
+        ...countryVisit,
+        stays: countryVisit.stays.filter(
+          (stay) => new Date(stay[arrival]) < new Date(usersDate)
+        ),
+      }
+    })
 
   const lineClasses = (countryIterator, stayIterator, stays) => {
     if (countryIterator === 0 && stayIterator === 0) {
       return 'top-1/2 h-1/2'
     } else if (
-      countryIterator === Object.keys(timelineData).length - 1 &&
+      countryIterator === pastTimelineData.length - 1 &&
       stayIterator === stays.length - 1
     ) {
       return 'bottom-1/2 h-1/2'
@@ -30,25 +44,17 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
 
   const orderedArray = (array) => (ascending ? [...array].reverse() : array)
 
-  const removeFutureCountries = () =>
-    (timelineData = timelineData.filter((countryVisit) =>
-      countryVisit.stays.some(
-        (stay) => new Date(stay[arrival]) < new Date(usersDate)
-      )
-    ))
+  const orderedCountries = orderedArray(pastTimelineData)
 
-  const removeFutureStays = () =>
-    (timelineData = timelineData.map((countryVisit) => {
-      return {
-        ...countryVisit,
-        stays: countryVisit.stays.filter(
-          (stay) => new Date(stay[arrival]) < new Date(usersDate)
-        ),
-      }
-    }))
+  // Stays alternate sides down the timeline, so a stay's side is set by the
+  // parity of its position in the flattened, rendered stay order
+  const stayIsOrderFirst = (countryIterator, stayIterator) => {
+    const staysBefore = orderedCountries
+      .slice(0, countryIterator)
+      .reduce((total, countryVisit) => total + countryVisit.stays.length, 0)
 
-  removeFutureCountries()
-  removeFutureStays()
+    return (staysBefore + stayIterator) % 2 === 0
+  }
 
   return (
     <div className="relative flex flex-col gap-5">
@@ -56,7 +62,7 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
         <div className="hidden shrink grow basis-1/2 border-r-2 border-inherit lg:block"></div>
         <div className="hidden shrink grow basis-1/2 border-l-2 border-inherit lg:block"></div>
       </div>
-      {orderedArray(timelineData).map((countryVisit, countryIterator) => {
+      {orderedCountries.map((countryVisit, countryIterator) => {
         return (
           <div
             key={`country-${countryIterator}-section`}
@@ -70,10 +76,10 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
               {countryVisit[country]}
             </h3>
             {orderedArray(countryVisit.stays).map((stay, stayIterator) => {
-              stayOrderFirst =
-                countryIterator === 0 && stayIterator === 0
-                  ? true
-                  : !stayOrderFirst
+              const stayOrderFirst = stayIsOrderFirst(
+                countryIterator,
+                stayIterator
+              )
 
               return (
                 <div

@@ -1,4 +1,4 @@
-import { useEffect, useRef } from 'react'
+import { useState } from 'react'
 
 import Footer from '@/components/Footer'
 import Header from '@/components/Header'
@@ -7,13 +7,15 @@ import '@/styles/tailwind.css'
 import 'focus-visible'
 
 function usePrevious(value) {
-  let ref = useRef()
+  let [previous, setPrevious] = useState(null)
+  let [current, setCurrent] = useState(value)
 
-  useEffect(() => {
-    ref.current = value
-  }, [value])
+  if (value !== current) {
+    setPrevious(current)
+    setCurrent(value)
+  }
 
-  return ref.current
+  return previous
 }
 
 export default function App({ Component, pageProps, router }) {

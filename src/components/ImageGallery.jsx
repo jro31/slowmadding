@@ -8,7 +8,7 @@ let previousImageIndex
 
 const ImageGallery = ({ images }) => {
   const imageOverlayRef = useRef()
-  const imageRefs = useRef(images.map(() => React.createRef()))
+  const [imageRefs] = useState(() => images.map(() => React.createRef()))
 
   const [imageIndex, setImageIndex] = useState(0)
   const imageIndexRef = useRef(imageIndex)
@@ -247,7 +247,7 @@ const ImageGallery = ({ images }) => {
             <CSSTransition
               in={index === imageIndex || index >= nextImageIndex}
               key={`${image.src}-image`}
-              nodeRef={imageRefs.current[index]}
+              nodeRef={imageRefs[index]}
               timeout={{
                 enter: 200,
                 exit: 300,
@@ -265,7 +265,7 @@ const ImageGallery = ({ images }) => {
               onExited={() => setImageIndex(nextImageIndex)}
             >
               <img
-                ref={imageRefs.current[index]}
+                ref={imageRefs[index]}
                 src={image.src}
                 alt={image.alt}
                 className={`absolute h-full w-auto transition-all duration-[400ms] ${

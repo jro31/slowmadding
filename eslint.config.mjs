@@ -9,12 +9,6 @@ export default defineConfig([
     rules: {
       'react/no-unescaped-entities': 'off',
       '@next/next/no-img-element': 'off',
-
-      // New rules introduced by eslint-config-next 16 that flag long-standing
-      // patterns in this codebase; disabled to keep the upgrade behavior-neutral
-      'react-hooks/refs': 'off',
-      'react-hooks/static-components': 'off',
-      'react-hooks/immutability': 'off',
     },
   },
 ])
