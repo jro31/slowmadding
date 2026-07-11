@@ -23,21 +23,12 @@ const ArrowLeftIcon = (props) => {
   )
 }
 
-const ArticleLayout = ({
-  children,
-  meta,
-  isRssFeed = false,
-  previousPathname,
-}) => {
+const ArticleContent = ({ children, meta, previousPathname }) => {
   // To get article headings from an article:
   // const articleHeadings = useArticleHeadings()
   // console.log(articleHeadings(renderToString(children)))
 
   let router = useRouter()
-
-  if (isRssFeed) {
-    return children
-  }
 
   return (
     <>
@@ -82,6 +73,25 @@ const ArticleLayout = ({
         <BackToTopLink />
       </Container>
     </>
+  )
+}
+
+const ArticleLayout = ({
+  children,
+  meta,
+  isRssFeed = false,
+  previousPathname,
+}) => {
+  // The RSS feed renders articles outside of a Next.js router context, so it
+  // must return before ArticleContent's useRouter() call
+  if (isRssFeed) {
+    return children
+  }
+
+  return (
+    <ArticleContent meta={meta} previousPathname={previousPathname}>
+      {children}
+    </ArticleContent>
   )
 }
 
