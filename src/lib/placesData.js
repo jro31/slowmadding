@@ -901,6 +901,47 @@ export const placesData = [
     [articlePath]: '/articles/taipei-for-digital-nomads',
   },
   {
+    [place]: places[countries.greece].thessaloniki,
+    [country]: countries.greece,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: false,
+        [description]:
+          "I paid €53 per night for my Airbnb - that's really where your money will go. Expect to pay €5 for a beer in a bar, €6-€7 for a plate of food in a restaurant, and I spent €50-€60 per week on groceries.",
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'The wifi I had in my room here was fast enough and stable. Mobile data was patchy and unreliable.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]: 'Good running along the waterfront.',
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          'Not many fully-vegan places, but many restaurants offer vegan options.',
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          "Very chilled vibe, and I didn't see or even sense any kind of crime here.",
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          'I found next to nothing in terms of organised events for meeting new people here.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Very little pollution and comfortably walkable pavements.',
+      },
+    },
+    [articlePath]: null, // TODO
+  },
+  {
     [place]: places[countries.thailand].ubonRatchathani,
     [country]: countries.thailand,
     [criteria]: {
