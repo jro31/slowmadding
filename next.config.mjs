@@ -15,7 +15,7 @@ const withMDX = nextMDX({
     // Plugins are referenced by name so the config stays serializable,
     // which Turbopack requires
     remarkPlugins: ['remark-gfm'],
-    rehypePlugins: ['@mapbox/rehype-prism', 'rehype-slug'],
+    rehypePlugins: ['rehype-slug'],
   },
 })
 
