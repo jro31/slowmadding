@@ -22,7 +22,7 @@ const CircledIcon = ({ platform }) => {
         }
       default:
         throw new Error(
-          `Platform '${platform}' not recognised in CircledIcon component`
+          `Platform '${platform}' not recognised in CircledIcon component`,
         )
     }
   }
@@ -31,7 +31,7 @@ const CircledIcon = ({ platform }) => {
     <Link
       href={platformDetails()[url]}
       target="_blank"
-      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
+      className="relative z-10 flex h-9 w-9 items-center justify-center rounded-full bg-white shadow-md ring-1 shadow-zinc-800/5 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0"
     >
       <Image
         src={platformDetails()[logoSrc]}

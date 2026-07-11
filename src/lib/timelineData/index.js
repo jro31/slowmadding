@@ -73,7 +73,7 @@ const orderedTimelineArray = (startDate, endDate) => {
     if (new Date(stay[dates][departure]) <= new Date(stay[dates][arrival]))
       throw new Error(
         `Timeline ${place} ${country} stay arrival date of ${stay[dates][arrival]}
-        is not before departure date of ${stay[dates][departure]}`
+        is not before departure date of ${stay[dates][departure]}`,
       )
   }
 
@@ -114,7 +114,7 @@ const checkDateOverlap = (staysArray) => {
           stayObject[departure]
         } overlaps with ${staysArray[iterator - 1][place]} arrival date of ${
           staysArray[iterator - 1][arrival]
-        } `
+        } `,
       )
     }
   })

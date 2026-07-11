@@ -25,7 +25,7 @@ const useArticleHeadings = () => {
       headingElements().map((headingElement) => {
         if (`h${headingLevel(headingElement)}Headings` in returnVariable) {
           returnVariable[`h${headingLevel(headingElement)}Headings`].push(
-            extractHeading(headingElement)
+            extractHeading(headingElement),
           )
         } else {
           returnVariable[`h${headingLevel(headingElement)}Headings`] = [

@@ -24,7 +24,7 @@ const fetchArticleFilenames = async () =>
 export const getAllArticles = async () => {
   const articleFilenames = await fetchArticleFilenames()
   const articles = await Promise.all(
-    articleFilenames.map((filename) => importArticle(filename))
+    articleFilenames.map((filename) => importArticle(filename)),
   )
 
   return articles.sort((a, z) => new Date(z.date) - new Date(a.date))
@@ -34,7 +34,7 @@ export const getAllArticlePaths = async () => {
   const articleFilenames = await fetchArticleFilenames()
 
   const articlePaths = await Promise.all(
-    articleFilenames.map((filename) => importArticle(filename, true))
+    articleFilenames.map((filename) => importArticle(filename, true)),
   )
 
   return articlePaths

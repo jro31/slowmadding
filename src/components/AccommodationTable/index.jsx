@@ -28,7 +28,7 @@ const AccommodationTable = ({ stays }) => {
     const totalNights = stays.reduce(
       (sum, stay) =>
         sum + numberOfNights(stay.dates.checkIn, stay.dates.checkOut),
-      0
+      0,
     )
 
     return (

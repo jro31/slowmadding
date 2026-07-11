@@ -10,7 +10,7 @@ const getStaticPagePaths = async () => {
   const pageFilenames = await fetchPageFilenames()
 
   const filteredPageFilenames = pageFilenames.filter(
-    (filename) => filename.slice(0, 1) !== '_' && !filename.includes('.xml')
+    (filename) => filename.slice(0, 1) !== '_' && !filename.includes('.xml'),
   )
 
   const parsedPageFilenames = filteredPageFilenames.map((filename) =>
@@ -18,7 +18,7 @@ const getStaticPagePaths = async () => {
       .replace('/index.jsx', '')
       .replace('index.jsx', '')
       .replace('.jsx', '')
-      .replace(/^/, '/')
+      .replace(/^/, '/'),
   )
 
   return parsedPageFilenames
