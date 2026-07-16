@@ -939,7 +939,7 @@ export const placesData = [
           'Very little pollution and comfortably walkable pavements.',
       },
     },
-    [articlePath]: null, // TODO
+    [articlePath]: '/articles/thessaloniki-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].ubonRatchathani,
