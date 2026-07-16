@@ -1,0 +1,361 @@
+import Link from 'next/link'
+
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-07-16T20:30:00+03:00',
+  title: 'Thessaloniki for Digital Nomads',
+  description: "Thessaloniki, Greece's second city, gets overshadowed by Athens. From a digital nomad perspective that isn't necessarily a bad thing.",
+  keywords: ['Greece', 'Θεσσαλονίκη', 'Salonika', 'Thessalonica', 'Salonica', 'Thessalonika', 'Saloniki', 'Thessalonike', 'Thessalonice'],
+}
+
+export const imagePath = '/images/articles/thessaloniki-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Thessaloniki, Greece's second city, sits in the north of the country. If you've been to Athens, then in many ways it feels like Athens. It has similar architecture and the people sound the same (to me at least) and have the same mannerisms.
+
+The key difference is that while it does attract some tourism, it's far less overwhelming here. Thessaloniki still feels like a much more local place. For some people that might be a reason to come here, for others it might be a reason not to.
+
+Thessaloniki has a big university, and resultingly has a nice studenty vibe to it, but I found it lacking in events for meeting new people, so for me it was quite a lonely stay. It's definitely not for everyone. For certain types of nomads though, it could be a place that you might want on your itinerary.
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/emilianos-lazaridis-grevena-bishop-monument.jpeg`,
+    alt: 'Emilianos Lazaridis, Grevena Bishop Monument',
+    caption: "While it got progressively filled with tourists throughout my time in Thessaloniki, when the crowds aren't driving you mad, Thessaloniki has a quite pleasing city centre. This is the \"Emilianos Lazaridis, Grevena Bishop Monument\", apparently.",
+  },
+  {
+    src: `${imagePath}/city/holy-church-of-saint-paul-the-apostle.jpeg`,
+    alt: "Holy Church of Saint Paul the Apostle from Pasha's Gardens",
+    caption: "While I was scouting the best places to run in Thessaloniki I walked up to Pasha's Gardens. And while it's not very suitable for running, it does offer some quite nice views. Here looking at the Holy Church of Saint Paul the Apostle.",
+  },
+  {
+    src: `${imagePath}/city/waterfront.jpeg`,
+    alt: 'Thessaloniki waterfront',
+    caption: 'The city centre stretches out to the waterfront, where tourists annoy the locals by walking along the cycle lane.',
+  },
+  {
+    src: `${imagePath}/city/street-art.jpeg`,
+    alt: 'Thessaloniki street art',
+    caption: 'You find some quite nice graffiti around Thessaloniki.',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## Arriving in Thessaloniki
+
+My arrival was marred by technical issues at Thessaloniki Airport, where the computers at immigration were down for about 90 minutes, in which no one, locals included, was allowed through, to the point that they started handing out drinking water to everyone.
+
+Greeks are quite a fiery bunch which meant there was a lot of shouting, but we got there eventually.
+
+After that, getting into the town was easy. Bus 01X runs from the airport every ~20 minutes from the bus stop out the front of the airport (bus 01N at nighttime). You can buy tickets from the ticket machine next to the bus stop for €2 (or from the machine on board), paying by card or contactless - just remember to validate your ticket. It takes about 40 minutes to get into town and couldn't be easier.
+
+export const arrivingImages = [
+  {
+    src: `${imagePath}/arriving/immigration.jpeg`,
+    alt: 'Immigration',
+    caption: "Thessaloniki Airport is relatively small, so when the computers go down for 90 minutes, things get backed up quickly. While I was fortunate to be at the front of the queue and inside with AC, some weren't so lucky as it snaked out the door.",
+  },
+]
+
+<ImageGallery images={arrivingImages} />
+
+## How affordable is Thessaloniki?
+
+I'd rate it as fairly affordable as major EU cities go, but if cost really matters to you, then you can find cheaper EU cities to go to.
+
+My (very comfortable) Airbnb cost me £45 GBP per night. That's less than what you'll pay for an equivalent room in Athens or in Budapest, but more than in Bucharest or Sofia. You can get a decent-sized meal in a cafe for €6-€7, and a half-litre of local beer in a bar costs about €5.
+
+I cooked almost everything I ate while I was here, and was spending around €50-€60 per week on groceries.
+
+## Paying for things in Thessaloniki
+
+There wasn't a single thing that I bought during my visit that I didn't pay for with Apple Pay. Card and contactless are accepted everywhere. I didn't see any business that had gone cashless, so you're fine paying by cash as well.
+
+## What language is spoken in Thessaloniki?
+
+Greek.
+
+## Is it easy to get by with English in Thessaloniki?
+
+Mostly, yes. In the city centre in particular, you'll find that most things are translated into English and that most people you encounter will speak English. Outside the centre it's less so, and you will find menus in Greek only and people that don't speak English, but it's a pretty easy place to get by.
+
+## How is the Internet in Thessaloniki?
+
+The Internet in my Airbnb was sufficiently fast for everything I needed (around 101mbps download speed and 10mbps upload speed) and 99% reliable - I had only one video call during my stay where the feed was patchy and I was getting notifications from Google that my connection was unstable.
+
+Mobile data I found to be very unreliable. I was using Nova, which was the network that my UK SIM automatically connected to, and it was dog shit. Even in the city centre I'd continually find myself in places where the network didn't reach, which meant shopping for things, particularly things with Greek-only packaging, was a massive pain.
+
+## Is Thessaloniki safe?
+
+Very. I didn't sense crime of any kind while I was here, and felt very safe throughout my stay.
+
+## What is the vibe of Thessaloniki?
+
+Thessaloniki has a big university, so it's got a young, studenty vibe. In the city centre it feels a lot more touristy, but I found it to be a very upbeat place.
+
+export const vibeImages = [
+  {
+    src: `${imagePath}/vibe/kill-a-tourist.jpeg`,
+    alt: 'Kill a tourist graffiti',
+    caption: "Someone went to a lot of effort to graffiti \"Kill a tourist - Fuck Rbnbs\" all over the place. I saw this same thing far and wide in Thessaloniki. I feel a bit bad that they went to all that trouble, but didn't know how to spell Airbnb. I thought about going around and correcting them all.",
+  },
+]
+
+<ImageGallery images={vibeImages} />
+
+## Who is Thessaloniki suitable for?
+
+Thessaloniki really lacks in outdoor green space. But with its student population, it has a very chilled vibe of funky restaurants and coffee shops. As I'll get to below, I found it quite a difficult place to meet new people.
+
+So if you're a loner hipster who's comfortable in their own company and doesn't care much for parks, you'll probably like it. If being sociable is important to you, or if you need to be surrounded by greenery, then look elsewhere.
+
+## Is the tap water drinkable in Thessaloniki?
+
+Yes, and it tastes really good as well.
+
+## Being sociable in Thessaloniki
+
+This is where Thessaloniki really fell down for me - I had basically no social life while I was here.
+
+The only event I came across for meeting new people was the monthly <ExternalLink url='https://www.facebook.com/share/1BACo1FQHp/'>BlaBla Language Exchange</ExternalLink> at Rehab Pub. It's a recurring event that renews automatically on Facebook.
+
+I went along to the one that was scheduled for my time in Thessaloniki - I got there right at its scheduled start time of 8:30pm. I asked the bar staff about it - they had no idea, apart from telling me that someone had come about 30 minutes earlier asking about it. I decided to sit at the bar and have a beer anyway, to see if anyone would show up.
+
+No one did.
+
+I'm not the most extroverted person, so I'm quite happy sitting at a bar by myself, but this was the only scheduled event for meeting new people that I found. Beyond that, there are several Thessaloniki Facebook groups you can check, but I didn't find it easy to have a social life here. It's not really a city that attracts a lot of individuals trying to meet others.
+
+## Where to run in Thessaloniki
+
+All of my runs in Thessaloniki were down on the waterfront.
+
+I would walk straight down to the water from my room, which would leave me in front of <ExternalLink url='https://maps.app.goo.gl/pwo93YgncdhnwYH17'>Starbucks</ExternalLink>. From there I'd run south, along the wide, waterfront pathway, which lasts a little over 4km until you pass <ExternalLink url='https://maps.app.goo.gl/nkeAgw8d2n9W2Qnc8'>this car park</ExternalLink>. I'd turn around and run back again.
+
+As I was doing a lot of zone 2 running while I was here, that was the perfect distance for me to do a one-hour zone 2 run. It's a flat, wide open space.
+
+In the mornings you get some shade from the trees that line the path, in the evenings when the sun's out over the water, you get none, but fuck it's beautiful running at sunset.
+
+The only downside is that for about a week during the middle of my stay, for some reason they were releasing a lot of sewage into the sea along this route, which was very unsightly, absolutely stank, and in places even washed up onto the pathway. I did not enjoy those runs, but the rest of the time it was really pleasant.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/waterfront.jpeg`,
+    alt: 'Thessaloniki waterfront',
+    caption: 'Running along the waterfront you have a big, wide path. In the mornings the trees provide some shade.',
+  },
+  {
+    src: `${imagePath}/running/sunset.jpeg`,
+    alt: 'Thessaloniki sunset',
+    caption: 'By the afternoon the shade is gone as the sun goes out over the water, but the beauty compensates for the extra heat.',
+  },
+  {
+    src: `${imagePath}/running/sewage.jpeg`,
+    alt: 'Thessaloniki sewage discharge',
+    caption: "Except on days when they're releasing sewage into the sea, which absolutely stinks and in places splashes onto the path.",
+  },
+]
+
+<ImageGallery images={runningImages} />
+
+## Things I didn't like about Thessaloniki
+
+The lack of a social life and sewage on my running route were probably my two main grievances about being here. There was also a noticeable increase in tourism over the duration of my stay, which made the city centre progressively less pleasant.
+
+I didn't enjoy the lack of public toilets around town, even finding myself going back to my room on one occasion just to take a piss. And it's a city where many shops and businesses, including every supermarket, are closed on Sundays, which feels a little archaic.
+
+## Being vegan in Thessaloniki
+
+Thessaloniki is a very easy city to be vegan in.
+
+As I was on a bit of a health kick, I cooked most of my meals myself, but even not eating out very often I'd still notice a ton of cafes proudly advertising vegan options just wandering around the town, so you really won't have any issues eating here.
+
+The one fully-vegan place that I did visit on multiple occasions is <ExternalLink url='https://maps.app.goo.gl/CjXAvqwJQtiwEEwSA'>Handwich</ExternalLink>, which does various vegan junk foods wrapped in pita breads. It's definitely not healthy, but it is good on a cheat day.
+
+For getting groceries, there are several different supermarket chains that you'll see around town, and they're all fairly equivalent in what they stock. I did most of my shopping at <ExternalLink url='https://maps.app.goo.gl/L68sqzhSH6PJaxeb8'>Sklavenitis</ExternalLink>, in large part because it was right across the street from my room. There aren't many intentionally vegan items, although you will find vegan cheese, but they do stock lots of breads, rice, fruit and veg, pulses, hummus etc., and other naturally vegan items which can be made into many different healthy dishes. You'll also find a lot of local delis around Thessaloniki that are worth a visit.
+
+In terms of supplements, I was able to get everything that I needed while here at <ExternalLink url='https://maps.app.goo.gl/v9AFY6ED8QmnaCEj8'>Holland & Barrett</ExternalLink>, which was a slightly odd find. I'd only ever encountered them in the UK before, but they seem to have branched out to Thessaloniki as well. They stock lots of clearly-marked vegan vitamins as well as vegan protein powders and even some useful foods like high protein muesli.
+
+export const veganFoodImages = [
+  {
+    src: `${imagePath}/vegan-food/poke-bowl.jpeg`,
+    alt: 'Homemade poke bowl',
+    caption: 'Being vegan is pretty easy in Thessaloniki. While I was here I cooked almost everything that I ate, like this poke bowl (plate) kind of thing, which is hummus, brown rice, kidney beans and some veg. Everything here was bought at Sklavenitis.',
+  },
+  {
+    src: `${imagePath}/vegan-food/hummus-toast.jpeg`,
+    alt: 'Hummus toast',
+    caption: 'Hummus and tomatoes toasted on rye bread.',
+  },
+  {
+    src: `${imagePath}/vegan-food/hummus-pasta.jpeg`,
+    alt: 'Hummus pasta',
+    caption: 'Mixing together hummus and wholewheat pasta is one of my go-to meals anywhere in the world, here made with boiled spinach. All ingredients here were from Sklavenitis.',
+  },
+  {
+    src: `${imagePath}/vegan-food/burritos.jpeg`,
+    alt: 'Burritos',
+    caption: 'More of the same, but this time eaten in wraps. Believe it or not I ate all three, and then had the audacity to wonder why my weight was up the next morning.',
+  },
+  {
+    src: `${imagePath}/vegan-food/handwich.jpeg`,
+    alt: 'Handwich - Tu-nah handwich',
+    caption: "If you don't want to cook, then eating out is easy - you'll find vegan food all over town, although Handwich is one of the few fully-vegan places. They sell various fillings wrapped in pita breads. This is the \"Tu-nah Handwich\", which costs €7.20 if you have it with chips.",
+  },
+  {
+    src: `${imagePath}/vegan-food/protein-powder.jpeg`,
+    alt: 'Holland & Barrett pea protein powder',
+    caption: 'I was able to get all the supplements that I needed during my stay at Holland & Barrett. They have a pretty big selection of vegan-marked items, including several protein powders. This 500g organic pea protein at €18.81 was, for me at least, the best combination of health and value.',
+  },
+  {
+    src: `${imagePath}/vegan-food/solgar-magnesium.jpeg`,
+    alt: 'Solgar chelated magnesium',
+    caption: 'Solgar is a good brand to look out for. They sell a lot of products clearly-marked as vegan, like these chelated magnesium tablets at €22.99 in Holland & Barrett.',
+  },
+]
+
+<ImageGallery images={veganFoodImages} />
+
+## Where I stayed as a digital nomad in Thessaloniki
+
+### Cozy central apartment!
+
+<MapLink name='Ag. Dimitriou 141' url='https://maps.app.goo.gl/rBAzWv57hmN1aQkv5' />
+
+export const agiouDimitriouApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-05-28',
+      checkOut: '2026-07-02',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/1194335084700622322',
+    },
+    roomType: 'Entire rental unit in Thessaloniki, Greece',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1679.75,
+        'Monthly stay discount': -503.93,
+        'Airbnb service fee': 206.56,
+        'Airbnb service fee savings': -41.14,
+        Taxes: 241.80,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={agiouDimitriouApartmentStays} />
+
+With the exception of a bit of a lack of natural light getting into the room, I really can't fault this room. I felt very comfortable for my five weeks here.
+
+I'm a pretty low maintenance and self-sufficient guest, and I loved how once I'd confirmed to the host that I'd checked into the room, I didn't hear from him for more than four weeks, until I sent him a copy of a bill that got delivered to the room. That's my kind of host, and it perhaps exemplifies the room - it's a very chilled place.
+
+The sofa in the living room is so comfortable. I'd work on my laptop from it all day without ever feeling uncomfortable. The downside is that very little natural light gets into the living room, so you need to have the lights on, even in the middle of the day.
+
+The bedroom is a bit better, as it has glass double doors that lead out onto a balcony. They were the reason that I decided this room would get enough natural light for me to stay here, but sadly the surrounding buildings block so much direct sunlight that the bedroom was still a bit dingy for my liking.
+
+It wasn't awful - some light did get in at least, and the bed was comfortable to work from as well. For a workstation or for video calls, the dining table worked really well and has a plug next to it.
+
+The kitchen is pretty well equipped with everything you'd expect... except a bin. That's a bit odd. There is no kitchen bin, just a plastic bag that hangs off the cupboard. Which is fine and which works, but slightly odd all the same.
+
+There is a toaster oven/hob combo, which is something I've never encountered before, but it actually works really well. I felt no hindrance using it compared to if I'd had an installed cooker.
+
+The wifi in the room is 99% reliable - just one occasion where it was unstable while I was on a video call. The bathroom is very nicely decorated and has a hot, powerful shower. The balcony is nice to sit on and have a cup of tea, so long as people in the nearby rooms aren't on their balconies smoking.
+
+The living room and bedroom have slightly creaky hardwood floors. These didn't really concern me, but I did feel a bit bad for the people in the room below, should they exist, when I was working out in the room.
+
+Locationally, this room is pretty perfect. There's a supermarket literally across the street from the building entrance, which is on a main road, but as the apartment is at the back of the building, noise is a non-issue. The old town is a short walk away (5-10 minutes) and you can be at the waterfront in about a 15-minute walk.
+
+All in all I'd say that if you can handle the slightly limited natural light that gets into the room, then I really don't have much negative to say about it. Once I'd adjusted to the light I really enjoyed my stay here.
+
+export const agiouDimitriouApartmentImages = [
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/apartment.jpeg`,
+    alt: 'Agiou Dimitriou apartment',
+    caption: 'The apartment is a pretty decent size. Here you can see the living area, then the partially separated dining area, then the door into the bedroom.',
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/sofa.jpeg`,
+    alt: 'Agiou Dimitriou apartment sofa',
+    caption: "This sofa is so comfortable. I'd work on my laptop here all day and never feel uncomfortable. Moving the coffee table out of the way made enough space to exercise.",
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/tea.jpeg`,
+    alt: 'Agiou Dimitriou apartment tea/coffee station',
+    caption: "There's also a little coffee/tea making station. I don't drink coffee and I have my own tea cup, but it was nice that the kettle didn't take up space in the kitchen at least.",
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/bed.jpeg`,
+    alt: 'Agiou Dimitriou apartment bed',
+    caption: "I generally try to avoid beds with bars at the end because it means I can't dangle my feet off the end, but this bed was long enough so that I, at a hair under six-foot, could sleep comfortably. Out of shot you also have another AC unit in the room. The biggest downside was that while some natural light gets in, it's quite minimal.",
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/kitchen.jpeg`,
+    alt: 'Agiou Dimitriou apartment kitchen',
+    caption: "I've never seen a toaster oven that has a hob on top, but that's what you have here, and it actually works really well. Very oddly, considering how well equipped this room is, there's no kitchen bin - just a bag that hangs off the cupboard. It works just as well as a bin I guess.",
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/bathroom.jpeg`,
+    alt: 'Agiou Dimitriou apartment bathroom',
+    caption: 'The bathroom is pretty nice. Really good shower.',
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/balcony.jpeg`,
+    alt: 'Agiou Dimitriou apartment balcony',
+    caption: "The apartment has two balconies - one through the kitchen, and the other through the bedroom. The one through the kitchen is tiny and only has cleaning equipment on, but this one, through the bedroom, is very pleasant to come and sit on with a cup of tea. It gets a lot of pigeons, so also a lot of pigeon shit, but apart from that it's really pleasant.",
+  },
+  {
+    src: `${imagePath}/accommodation/dgiou-dimitriou-apartment/candy.jpeg`,
+    alt: 'Agiou Dimitriou apartment complimentary candy',
+    caption: 'Hosts often provide you with complimentary items when you stay in an Airbnb, and I appreciated that here everything they left me was vegan.',
+  },
+]
+
+<ImageGallery images={agiouDimitriouApartmentImages} />
+
+## Summary of Thessaloniki
+
+export const summaryPoints = {
+  positive: [
+    'Very fun, happy vibe',
+    'Easy to be vegan',
+    'Very safe',
+    'Apple Pay accepted everywhere',
+    'The waterfront is good for running',
+  ],
+  neutral: [
+    'Not overly expensive',
+  ],
+  negative: [
+    'Not an easy place to have a social life',
+    'Lots of shit in the sea',
+    'Very few public toilets',
+    'Many businesses close on Sundays',
+    'More tourists than is comfortable',
+    'Not much green space',
+    'Cruise ships occasionally dock and overrun the town',
+  ]
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Do I want to come back to Thessaloniki again?
+
+I really enjoyed the vibe of Thessaloniki, and I'd love to come back but under a couple of conditions.
+
+Firstly would be that from when I arrived in late May, to when I left in early July, there had been a noticeable increase in the number of tourists, which only got exacerbated when cruise ships docked. I assume that tourist numbers would continue growing through July and August, then start to ease off again in September.
+
+So I'd only want to come back here between October and May, when the city would be more relaxed and enjoyable.
+
+And then secondly, I don't think I'd want to come back here alone - I found it too hard to have a social life. It's got such a fun, chilled vibe that I think it'd be an amazing place to come with friends or a girlfriend. But alone? I think it's unlikely I'll be back again.
