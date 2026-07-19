@@ -46,8 +46,6 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
 
   const orderedCountries = orderedArray(pastTimelineData)
 
-  // Stays alternate sides down the timeline, so a stay's side is set by the
-  // parity of its position in the flattened, rendered stay order
   const stayIsOrderFirst = (countryIterator, stayIterator) => {
     const staysBefore = orderedCountries
       .slice(0, countryIterator)
