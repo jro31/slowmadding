@@ -36,7 +36,7 @@ const ImageGallery = ({ images }) => {
     handleImageChange(
       direction === 'right'
         ? imageIndexRef.current + 1
-        : imageIndexRef.current - 1
+        : imageIndexRef.current - 1,
     )
   }
 
@@ -65,10 +65,10 @@ const ImageGallery = ({ images }) => {
         imageTouchStartYRef.current
       ) {
         let XDifference = Math.abs(
-          event.changedTouches[0].screenX - imageTouchStartXRef.current
+          event.changedTouches[0].screenX - imageTouchStartXRef.current,
         )
         let YDifference = Math.abs(
-          event.changedTouches[0].screenY - imageTouchStartYRef.current
+          event.changedTouches[0].screenY - imageTouchStartYRef.current,
         )
 
         if (YDifference - XDifference > 10) {
@@ -176,7 +176,7 @@ const ImageGallery = ({ images }) => {
     return () => {
       currentImageOverlay.removeEventListener(
         'touchstart',
-        handleImageTouchStart
+        handleImageTouchStart,
       )
       currentImageOverlay.removeEventListener('touchmove', handleImageTouchMove)
       window.removeEventListener('touchmove', handleWindowTouchMove)
@@ -253,11 +253,9 @@ const ImageGallery = ({ images }) => {
                 exit: 300,
               }}
               classNames={{
-                enter: 'translate-x-[-100%] translate-y-[-5%] rotate-[-25deg]',
-                enterActive: 'translate-x-0 translate-y-0 rotate-0',
-                exit: 'translate-x-0 translate-y-0 rotate-0',
+                enter: '-translate-x-full translate-y-[-5%] rotate-[-25deg]',
                 exitActive:
-                  'translate-x-[-100%] translate-y-[-25%] rotate-[-50deg]',
+                  '-translate-x-full translate-y-[-25%] rotate-[-50deg]',
               }}
               mountOnEnter
               unmountOnExit
@@ -268,7 +266,7 @@ const ImageGallery = ({ images }) => {
                 ref={imageRefs[index]}
                 src={image.src}
                 alt={image.alt}
-                className={`absolute h-full w-auto transition-all duration-[400ms] ${
+                className={`absolute h-full w-auto transition-all duration-400 ${
                   index === imageIndex ? 'opacity-100' : 'opacity-0'
                 }`}
               />

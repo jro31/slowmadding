@@ -65,12 +65,12 @@ const PlacesTable = () => {
       {/* Consider replacing h-[75vh] with an absolute height - this is jerky on mobile browsers when the menu hides and the viewport changes height - The downside is the table shouldn't be bigger than the viewport, as it makes scrolling difficult */}
       <div
         ref={placesTableRef}
-        className="no-scrollbar relative h-[75vh] max-h-[54rem] overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pl-0 pt-0 dark:border-zinc-700/40"
+        className="relative no-scrollbar h-[75vh] max-h-216 overflow-scroll scroll-smooth rounded-2xl border border-zinc-100 p-6 pt-0 pl-0 dark:border-zinc-700/40"
       >
         <div
-          className={`grid w-min ${gridColsClass} items-center justify-items-center gap-y-6 gap-x-2`}
+          className={`grid w-min ${gridColsClass} items-center justify-items-center gap-x-2 gap-y-6`}
         >
-          <div className="sticky left-0 top-0 z-10 h-full w-full bg-white px-6 pt-6 dark:bg-zinc-900"></div>
+          <div className="sticky top-0 left-0 z-10 h-full w-full bg-white px-6 pt-6 dark:bg-zinc-900"></div>
           {Object.values(criteriaHeadings).map((heading) => (
             <div
               key={`${heading}-table-heading`}
@@ -157,11 +157,11 @@ const PlacesDetails = () => {
                       >
                         {placeData[criteria][criterion][description]}
                       </PlaceDetail>
-                    )
+                    ),
                 )}
               </ul>
             </PlaceSection>
-          )
+          ),
       )}
     </div>
   )

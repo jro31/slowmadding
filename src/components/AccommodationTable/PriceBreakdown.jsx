@@ -17,7 +17,7 @@ const PriceBreakdown = ({
 
   const totalPrice = Object.values(sectionsObject).reduce(
     (acc, curr) => acc + curr,
-    0
+    0,
   )
 
   const nightlyPrice = () =>
@@ -27,7 +27,7 @@ const PriceBreakdown = ({
     `(${currencyAmount(nightlyPrice())} per night)`
 
   const tableRowString = (item, value, bold = false) => `
-    <tr class='[&>td]:first:pt-0 border-b-0 [&:nth-last-child(2)]:border-b-2 [&>td]:py-0.5 [&>td]:[&:nth-last-child(2)]:pb-2 [&>td]:last:py-2 ${
+    <tr class='[&>td]:first:pt-0 border-b-0 nth-last-2:border-b-2 [&>td]:py-0.5 [&>td]:nth-last-2:pb-2 [&>td]:last:py-2 ${
       bold ? 'font-black' : ''
     }'>
       <td>${item}</td>
@@ -46,7 +46,7 @@ const PriceBreakdown = ({
           <div>${currencyAmount(totalPrice)}</div>
           <div class='font-normal'>${nightlyPriceString()}</div>
         `,
-        true
+        true,
       )}
     </table>
   `

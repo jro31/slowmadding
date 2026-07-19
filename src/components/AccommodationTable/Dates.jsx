@@ -12,7 +12,7 @@ const Dates = ({ dates }) => {
   const contentString = () => {
     return `<div>${formatDateRange(
       checkIn,
-      checkOut
+      checkOut,
     )}</div><div>${numberOfNightsString()}</div>`
   }
 

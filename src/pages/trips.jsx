@@ -84,7 +84,7 @@ export async function getStaticProps() {
       introText: introText[timelineName],
       timelineData: parsedTimelineData(
         timelineDates[timelineName][startDate],
-        timelineDates[timelineName][endDate]
+        timelineDates[timelineName][endDate],
       ),
     }
   })

@@ -7,7 +7,7 @@ const parsedDateAsString = (parsedDate) =>
 // 2023-11-01T17:58:49.084Z
 const usersDateTime = (UTCDatetime = new Date()) =>
   new Date(
-    new Date(UTCDatetime).getTime() + -new Date().getTimezoneOffset() * 60000
+    new Date(UTCDatetime).getTime() + -new Date().getTimezoneOffset() * 60000,
   )
 
 export const usersDate = parsedDateAsString(usersDateTime())
@@ -51,7 +51,7 @@ const dateStringIsToday = (dateString) =>
 export const formatDateRange = (
   startDateString,
   endDateString,
-  includeOrdinals = true
+  includeOrdinals = true,
 ) => {
   let formattedStartDate = formatDate(startDateString, includeOrdinals)
   const formattedEndDate = formatDate(endDateString, includeOrdinals)
