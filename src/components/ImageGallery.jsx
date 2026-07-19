@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from 'react'
+import clsx from 'clsx'
 import { CSSTransition } from 'react-transition-group'
 
 import useScreenWidth from '@/hooks/use-screen-width'
@@ -232,9 +233,10 @@ const ImageGallery = ({ images }) => {
   return (
     <>
       <div
-        className={`relative select-none h-[${galleryHeight}px]${
-          images.length > 1 ? ' mb-0' : ''
-        }`}
+        className={clsx(
+          `relative select-none h-[${galleryHeight}px]`,
+          images.length > 1 && 'mb-0',
+        )}
       >
         <div
           ref={imageOverlayRef}
