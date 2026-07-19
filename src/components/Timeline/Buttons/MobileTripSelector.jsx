@@ -1,4 +1,4 @@
-import { Popover } from '@headlessui/react'
+import { PopoverButton } from '@headlessui/react'
 
 import OverlayMenu from '@/components/OverlayMenu'
 
@@ -12,12 +12,12 @@ const MobileTripSelector = ({
       <OverlayMenu title={currentTimeline}>
         {Object.keys(timelines).map((timelineName) => (
           <li key={`${timelineName}-timeline-mobile-link`}>
-            <Popover.Button
+            <PopoverButton
               className="block py-2"
               onClick={(e) => setCurrentTimeline(e.target.textContent)}
             >
               {timelineName}
-            </Popover.Button>
+            </PopoverButton>
           </li>
         ))}
       </OverlayMenu>
