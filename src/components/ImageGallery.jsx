@@ -254,8 +254,6 @@ const ImageGallery = ({ images }) => {
               }}
               classNames={{
                 enter: '-translate-x-full translate-y-[-5%] rotate-[-25deg]',
-                enterActive: 'translate-x-0 translate-y-0 rotate-0',
-                exit: 'translate-x-0 translate-y-0 rotate-0',
                 exitActive:
                   '-translate-x-full translate-y-[-25%] rotate-[-50deg]',
               }}
