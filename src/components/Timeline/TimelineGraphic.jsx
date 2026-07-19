@@ -85,7 +85,7 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
                   className="flex"
                 >
                   <div
-                    className={`relative hidden shrink grow lg:block basis-1/2${
+                    className={`relative hidden shrink grow lg:block basis-1/2 ${
                       stayOrderFirst ? 'lg:order-last' : ''
                     } order-first`}
                   >
@@ -138,7 +138,7 @@ const TimelineGraphic = ({ timelineData, ascending, compactMode }) => {
                       )}`}
                     />
                     <div
-                      className={`h-5 w-5${
+                      className={`h-5 w-5 ${
                         stayOrderFirst
                           ? 'lg:order-last lg:translate-x-2.5'
                           : 'lg:-translate-x-2.5'
