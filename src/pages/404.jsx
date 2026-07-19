@@ -1,30 +1,23 @@
 import Head from 'next/head'
 
-import { Button } from '@/components/Button'
-import { Container } from '@/components/Container'
-
 const NotFound = () => {
   return (
     <>
       <Head>
-        <title>404: Page not found</title>
+        <title>404: This page could not be found</title>
       </Head>
-      <Container className="flex h-full items-center pt-16 sm:pt-32">
-        <div className="flex flex-col items-center">
-          <p className="text-base font-semibold text-zinc-400 dark:text-zinc-500">
+      <div className="flex h-screen flex-col items-center justify-center text-center text-zinc-800 dark:text-zinc-100">
+        <div className="leading-[48px]">
+          <h1 className="mr-5 inline-block border-r border-black/30 pr-[23px] align-top text-2xl leading-[48px] font-medium dark:border-white/30">
             404
-          </p>
-          <h1 className="mt-4 text-4xl font-bold tracking-tight text-zinc-800 sm:text-5xl dark:text-zinc-100">
-            Page not found
           </h1>
-          <p className="mt-4 text-base text-zinc-600 dark:text-zinc-400">
-            Sorry, we couldn&apos;t find the page you&apos;re looking for.
-          </p>
-          <Button href="/" variant="secondary" className="mt-4">
-            Go back home
-          </Button>
+          <div className="inline-block">
+            <h2 className="text-sm leading-[28px] font-normal">
+              This page could not be found.
+            </h2>
+          </div>
         </div>
-      </Container>
+      </div>
     </>
   )
 }
