@@ -82,8 +82,6 @@ const ArticleLayout = ({
   isRssFeed = false,
   previousPathname,
 }) => {
-  // The RSS feed renders articles outside of a Next.js router context, so it
-  // must return before ArticleContent's useRouter() call
   if (isRssFeed) {
     return children
   }

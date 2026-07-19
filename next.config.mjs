@@ -12,8 +12,6 @@ const nextConfig = {
 const withMDX = nextMDX({
   extension: /\.mdx?$/,
   options: {
-    // Plugins are referenced by name so the config stays serializable,
-    // which Turbopack requires
     remarkPlugins: ['remark-gfm'],
     rehypePlugins: ['rehype-slug'],
   },
