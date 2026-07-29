@@ -7,7 +7,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2025-08-17T18:45:00+08:00',
+  date: '2026-07-31T18:45:00+08:00', // TODO: Update this
   title: 'Bucharest for Digital Nomads',
   description: "Romania is one of the cheapest countries in the EU, yet its capital, Bucharest, doesn't attract many digital nomads. Should you add it onto your list?",
   keywords: ['Romania'],
@@ -16,6 +16,8 @@ export const meta = {
 export const imagePath = '/images/articles/bucharest-for-digital-nomads'
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO: Update this?
 
 Bucharest is the capital of Romania, one of the cheapest countries in the EU. With a population of almost 2 million people, it's oddly ignored by most digital nomads who choose instead to venture to more expensive, less welcoming cities.
 
@@ -80,6 +82,8 @@ In my first room here in 2023, the download speeds were over 600mbps and upload 
 
 ## Getting in and out of Bucharest
 
+TODO: Update this
+
 If you're arriving or departing Bucharest by air, you'll likely be doing so at <ExternalLink url='https://maps.app.goo.gl/VX59Ksh2zRwTHDcN9'>Henri Coandă International Airport</ExternalLink>, Bucharest's main airport, located 16.5km north of the city centre. The most hassle-free way of getting there from the city centre is on the airport train, which runs 24 hours per day, departing in each direction between the airport and <ExternalLink url='https://maps.app.goo.gl/6LxR7ufhRRZ7poRX7'>Gara de Nord</ExternalLink> every 40 minutes. The journey takes 20 minutes and tickets cost 6 lei.
 
 While it's possible to buy tickets at the ticket office before boarding, it's not necessary. Once the train leaves, English-speaking conductors walk down the train taking payment and printing tickets for passengers, so it's much simpler to get on without a ticket. They accept card or cash payment.
@@ -122,6 +126,10 @@ export const gettingInAndOutImages = [
 ]
 
 <ImageGallery images={gettingInAndOutImages} />
+
+## Getting around Bucharest
+
+TODO
 
 ## Is Bucharest safe?
 
@@ -300,6 +308,10 @@ export const vacarestiNaturalParkImages = [
 
 <ImageGallery images={vacarestiNaturalParkImages} />
 
+### King Mihai I Park
+
+TODO
+
 ### Izvor Park
 
 Izvor Park is much smaller than the two parks mentioned above, with one loop being just 1.25km, but as it was so close to my first room in Bucharest, I really put my laps in here. If you're staying near the city centre and can't be arsed to go to Tineretului Park, it's probably your best bet.
@@ -316,7 +328,7 @@ export const izvorParkImages = [
 
 <ImageGallery images={izvorParkImages} />
 
-## Getting vegan food in Bucharest
+## Vegan-friendly restaurants in Bucharest
 
 Being vegan in Bucharest is as easy as anywhere else that I've been.
 
@@ -407,7 +419,11 @@ export const sublimmeImages = [
 
 <ImageGallery images={sublimmeImages} />
 
-### Groceries
+### Sara Green
+
+TODO
+
+## Getting vegan groceries in Bucharest
 
 Vegan grocery shopping in Bucharest is as easy as anywhere else that I've been.
 
@@ -465,6 +481,10 @@ export const groceriesImages = [
 ]
 
 <ImageGallery images={groceriesImages} />
+
+## Getting vegan supplements in Bucharest
+
+TODO
 
 ## Where I stayed
 
@@ -661,6 +681,40 @@ export const bulevardulDimitrieCantemirApartmentImages = [
 ]
 
 <ImageGallery images={bulevardulDimitrieCantemirApartmentImages} />
+
+### Luxury Spacious Apartment in the heart of the city
+
+<MapLink name='Bulevardul Iancu de Hunedoara 29' url='https://maps.app.goo.gl/6bj7ovr7sF46qna59' />
+
+export const bulevardulIancuDeHunedoaraApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-07-02',
+      checkOut: '2026-07-30',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/551407568406348507',
+    },
+    roomType: 'Entire condo in Bucharest, Romania',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 2127.06,
+        'Monthly stay discount': -937.73,
+        'Service fee': 208.96,
+        'Service fee savings': -41.63,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={bulevardulIancuDeHunedoaraApartmentStays} />
+
+TODO
+
+TODO: Add photos
 
 ## Summary of Bucharest
 
