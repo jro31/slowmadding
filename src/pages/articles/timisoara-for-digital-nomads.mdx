@@ -19,6 +19,31 @@ export default (props) => <ArticleLayout meta={meta} {...props} />
 
 TODO
 
+export const cityImages = [
+  {
+    src: `${imagePath}/city/strada-9-mai.jpeg`,
+    alt: 'Strada 9 Mai',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/city/union-square.jpeg`,
+    alt: 'Piața Unirii',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/city/ribbon-factory.jpeg`,
+    alt: 'Pasmatex Timişoara',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/city/three-holy-hierarchs-metropolitan-cathedral.jpeg`,
+    alt: 'Catedrala Mitropolitană',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={cityImages} />
+
 ## Why did I come to Timișoara?
 
 TODO: Omit this section?
@@ -31,9 +56,39 @@ TODO
 
 TODO
 
+export const gettingInAndOutImages = [
+  {
+    src: `${imagePath}/getting-in-and-out/airport-bus-stop.jpeg`,
+    alt: 'Timișoara Airport bus stop',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/e4-timetable.jpeg`,
+    alt: 'E4 bus timetable',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/e4b-timetable.jpeg`,
+    alt: 'E4b bus timetable',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={gettingInAndOutImages} />
+
 ## Getting around Timișoara
 
 TODO
+
+export const gettingaroundImages = [
+  {
+    src: `${imagePath}/getting-around/on-board-bus-ticket-machines.jpeg`,
+    alt: 'On board bus ticket machines',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={gettingaroundImages} />
 
 ## How affordable is Timișoara?
 
@@ -88,6 +143,11 @@ export const runningImages = [
   {
     src: `${imagePath}/running/botanic-park-main-path.jpeg`,
     alt: 'Botanic Park main path',
+    caption: 'TODO',
+  },
+  {
+    src: `${imagePath}/running/riverside.jpeg`,
+    alt: 'Timișoara riverside',
     caption: 'TODO',
   },
 ]
@@ -287,6 +347,16 @@ export const summaryPoints = {
 }
 
 <Summary summaryPoints={summaryPoints} />
+
+export const summaryImages = [
+  {
+    src: `${imagePath}/summary/decathlon.jpeg`,
+    alt: 'Decathlon Timișoara',
+    caption: 'TODO',
+  },
+]
+
+<ImageGallery images={summaryImages} />
 
 ## Final thoughts
 
