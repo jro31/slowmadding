@@ -2,9 +2,10 @@ import glob from 'fast-glob'
 import * as path from 'path'
 
 const importArticle = async (articleFilename, pathOnly = false) => {
-  const { meta, default: component } = await import(
+  const { default: component } = await import(
     `../pages/articles/${articleFilename}`
   )
+  const { meta } = component
   const url = `/articles/${articleFilename.replace(/(\/index)?\.mdx$/, '')}`
 
   if (pathOnly) return url
