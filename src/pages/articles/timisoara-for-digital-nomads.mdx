@@ -1,0 +1,460 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-09-06T19:40:00+03:00',
+  title: 'Timișoara for Digital Nomads',
+  description: "Timișoara is Romania's third largest city, but gets largely ignored by tourists and digital nomads alike, despite its beauty. Why is that? What does it offer those who choose to come here?",
+  keywords: ['Romania', 'Timisoara'],
+}
+
+export const imagePath = '/images/articles/timisoara-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+Timișoara is Romania's third largest city. It's so far in the west of the country that it's closer to Belgrade, Budapest, Sarajevo, Pristina and Sofia than it is to Bucharest.
+
+It has a beautiful city centre. I'm not a big architecture guy so I'm not sure about all the fancy words, but there are some cool as fuck buildings here. Yet for reasons uncertain, it just doesn't attract tourists. The city centre almost feels like a return to Covid it's so empty, but I mean that in a good way. I hate tourists.
+
+It's not like the city centre is completely dead. There are lots of restaurants, it just seems that getting delivery has taken over from going out to eat, so you see more delivery drivers on electric bikes in the city centre than you do people.
+
+I quite like that to be honest, and another benefit is how clean the city centre is, because with no people, there are no people throwing litter on the ground.
+
+All of this is great, but none of it really affects if you should come here or not. What is Timișoara actually like for a digital nomad?
+
+export const cityImages = [
+  {
+    src: `${imagePath}/city/strada-9-mai.jpeg`,
+    alt: 'Strada 9 Mai',
+    caption: 'The city centre is absolutely gorgeous with some beautiful architecture. Yet there are very few other people here that you have to share it with.',
+  },
+  {
+    src: `${imagePath}/city/union-square.jpeg`,
+    alt: 'Piața Unirii',
+    caption: 'This is the main square in the city centre. It reminded me a little bit of the centre of Mexico City in terms of architecture, but just without all the people.',
+  },
+  {
+    src: `${imagePath}/city/ribbon-factory.jpeg`,
+    alt: 'Pasmatex Timișoara',
+    caption: 'I thought that this mural was cool, so I stopped to take a picture. A woman passing on a bike stopped to tell me that it was once a ribbon factory.',
+  },
+  {
+    src: `${imagePath}/city/three-holy-hierarchs-metropolitan-cathedral.jpeg`,
+    alt: 'Catedrala Mitropolitană',
+    caption: "The Metropolitan Cathedral is perhaps the centrepiece of the city. It's quite a stunning building, I'm just bad at photography.",
+  },
+]
+
+<ImageGallery images={cityImages} />
+
+## Getting in and out of Timișoara
+
+If arriving by plane as I did, you'll be arriving at the <ExternalLink url='https://maps.app.goo.gl/3doqiHmagdSG4ymo8'>Timișoara International Airport</ExternalLink>, north-east of the city centre. Getting to the city centre by public transport from here, your only option is the public bus - either the E4 or the E4b.
+
+The bus stop is right outside the arrivals terminal, but it's a little inconspicuous - it's just a couple of timetable signs attached to a pole. The first E4 of the day leaves at 4:55am (or 6:15am on holidays), and they run until 10:59pm (or 10:07pm on holidays), with 1-2 every hour. The E4b is less frequent, but runs until 11:25pm (except on holidays).
+
+I just missed an E4b when I arrived, so took the next E4 to its terminal stop, <ExternalLink url='https://maps.app.goo.gl/WmcMUPU7A8pQz7y38'>Bastion</ExternalLink>. The fare was 5 lei, I was able to pay on board with contactless, there were only two other passengers for the entire ride, and it took 15-20 minutes.
+
+The E4b goes a slightly longer route and ends up near the Gara Timișoara Nord train station.
+
+When I left Timișoara it was on a Flixbus. That departed from <ExternalLink url='https://maps.app.goo.gl/DZ5hRpKCcY6hs9Qa6'>Autogara Normandia</ExternalLink>, which is basically just a car park with a couple of ticket offices made out of shipping containers. Getting here is easy as there's a tram stop right outside.
+
+export const gettingInAndOutImages = [
+  {
+    src: `${imagePath}/getting-in-and-out/airport-bus-stop.jpeg`,
+    alt: 'Timișoara Airport bus stop',
+    caption: "The bus stop at Timișoara Airport is a little inconspicuous if you don't know what you're looking for as it's just a couple of timetable signs attached to a pole. It's right outside the arrivals terminal.",
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/e4-timetable.jpeg`,
+    alt: 'E4 bus timetable',
+    caption: 'The E4 bus is the more frequent of the two buses that serve the airport. It leaves once or twice per hour.',
+  },
+  {
+    src: `${imagePath}/getting-in-and-out/e4b-timetable.jpeg`,
+    alt: 'E4b bus timetable',
+    caption: 'The E4b is a little less frequent, but goes a bit further - to the Gara Timișoara Nord train station.',
+  },
+]
+
+<ImageGallery images={gettingInAndOutImages} />
+
+## Getting around Timișoara
+
+Taking public transport in Timișoara is easy. Apart from on my final day here where the onboard POS machines were bugging out and not accepting contactless payments (which was catching a lot of people out), I was always able to pay on board with Apple Pay. And even if you can't, I didn't see a ticket inspector through my whole stay.
+
+The easiest way to figure out which buses/trams to get is with Google Maps, which I found to be 99% reliable - the one exception being when it told me to take a bus from a stop that didn't exist. You can also check out <ExternalLink url='https://stpt.ro/en/'>Transport Public Timișoara</ExternalLink> which has information about all the lines, including a frustratingly well-hidden <ExternalLink url='https://live.stpt.ro/'>travel planner</ExternalLink>.
+
+Every journey I took cost 5 lei.
+
+export const gettingAroundImages = [
+  {
+    src: `${imagePath}/getting-around/on-board-bus-ticket-machines.jpeg`,
+    alt: 'On board bus ticket machines',
+    caption: "You'll often be faced with three different ticket machines on board. The one for contactless here is the top one, on the left of the picture.",
+  },
+]
+
+<ImageGallery images={gettingAroundImages} />
+
+## How affordable is Timișoara?
+
+My comfortable apartment in Timișoara cost me the equivalent of about 233 lei per night, a plate of food in a restaurant will cost around 40 lei, one trip on public transport is 5 lei, and I spent around 350 lei per week on groceries, although you could easily spend less.
+
+It's a little cheaper than Bucharest, but not by much.
+
+## Paying for things in Timișoara
+
+I didn't buy a single thing in Timișoara that I didn't pay for with Apple Pay. Contactless is basically universal.
+
+## What language is spoken in Timișoara?
+
+Romanian.
+
+## Is it easy to get by with English in Timișoara?
+
+Relatively, yes. Most people that I interacted with spoke some basic English, but certainly don't expect it from everyone.
+
+## How is the Internet in Timișoara?
+
+I had no issues. The wifi in my room was 100% reliable, scoring 583mbps download and 486mbps upload speeds on the speed test that I did. I had no connection issues with mobile data throughout town.
+
+## Is Timișoara safe?
+
+I'd say so, yes.
+
+There is a lot of evidence of homelessness, and the expected number of crazies that usually brings. But I didn't experience anything remotely threatening during my stay.
+
+## Who is Timișoara suitable for?
+
+I had zero social life while I was here.
+
+I'm pretty introverted, and don't do well at meeting people outside of organised events such as Meetups, of which there are none here, so my time in Timișoara was very isolated.
+
+I enjoy that, but if you do not, then beware that meeting new people here isn't easy.
+
+The city is architecturally beautiful, and feels quite big and open, so it's a pleasant place to be outdoors, but I'd say there's not too much here to get excited about.
+
+So if you like nice buildings, and you like being outside, and you don't like people, then Timișoara might be for you.
+
+## Is the tap water drinkable in Timișoara?
+
+I hope so.
+
+## Things I don't like about Timișoara
+
+Apart from the things already mentioned, my only other frustration here was the same as in every Eastern European city: Smoking. People smoke here. A lot.
+
+And while it is limited to outdoor areas thankfully, I'm convinced that smokers intentionally seek out places to smoke that will cause the maximum annoyance to others.
+
+Oh, there's a nice park where people are exercising and children are playing? That's the perfect place for me to sit and smoke cigarettes all day.
+
+## Where to run in Timișoara
+
+Honestly, anywhere.
+
+It's such a big, open, peaceful city that you can run, even in the city centre without issue, so long as you don't mind waiting to cross the road sometimes.
+
+Throughout my stay I was only doing two kinds of runs - zone 2 runs and timed fast runs, neither of which are conducive to pedestrian crossings, so all of my runs in Timișoara came in the <ExternalLink url='https://maps.app.goo.gl/uvTrCqdM2Wi6TrcL8'>Botanic Park</ExternalLink>, for the sole reason that it was a two-minute walk from my room.
+
+What makes it a botanic park, and not a normal park I'm not sure, because it looked just like a normal park to me.
+
+It's fairly small, with one lap being 800-900m depending on your exact route.
+
+Being so close to my room, I came here almost every day, whether to run or to walk or to just get outside, and it's quite fascinating how different it gets at various times of day. Earlier in the day it can attract a lot of drugged-up hobos, so can feel like a real-life version of Zombies, Run! By the evening it basically turns into a dirt track for kids and teens on bicycles and electric scooters.
+
+For running, it's pretty unexciting, but if you need a place to do loops without crossing any roads, then it is that.
+
+export const runningImages = [
+  {
+    src: `${imagePath}/running/botanic-park.jpeg`,
+    alt: 'Botanic Park',
+    caption: 'The Botanic Park has various paths snaking through it, although in the middle of the park these are a little hilly - not ideal for zone 2 runs or fast runs.',
+  },
+  {
+    src: `${imagePath}/running/botanic-park-main-path.jpeg`,
+    alt: 'Botanic Park main path',
+    caption: "In which case you'll instead find yourself doing loops of the path around the outside of the park, which is perfectly pleasant, but having done hundreds of laps here, I'm quite glad to see the back of it.",
+  },
+  {
+    src: `${imagePath}/running/riverside.jpeg`,
+    alt: 'Timișoara riverside',
+    caption: "If you're instead looking to just get outside and go for a run without timing yourself or holding your heart-rate in a specific zone, then you can honestly run anywhere in Timișoara - it's such a quiet, open place. This is the riverside, if you couldn't tell.",
+  },
+]
+
+<ImageGallery images={runningImages} />
+
+## Vegan-friendly restaurants in Timișoara
+
+I mostly cooked in Timișoara so didn't get around to too many restaurants here, but it's a pretty easy place to be vegan if you do want to eat out.
+
+One thing I learned while here, which is slightly concerning seeing as this is my third time in Romania, is that 'de post' essentially means vegan - it means food that contains no meat, dairy or eggs. So look out for eateries that advertise 'de post'. Once you know that, you realise that a lot of places are vegan-friendly.
+
+By far my favourite restaurant of the places that I did go was <ExternalLink url='https://maps.app.goo.gl/tTc6kq8hDRnnwyYZ7'>Biofresh</ExternalLink> in the city centre. It's listed as a vegetarian restaurant, but everything I asked about on the menu was confirmed vegan. It's freshly cooked, healthy food.
+
+Another place that I went to multiple times was <ExternalLink url='https://maps.app.goo.gl/1qX1X1jYXtATz6237'>Falafel King</ExternalLink> in the Iulius Town food court. It's a falafel-based restaurant surprisingly, and they have an entire 'de post' menu. The food is decent - it's vegan at least, but the people making it do like to be a bit over-enthusiastic with the sauce, so temper your expectations.
+
+export const veganRestaurantImages = [
+  {
+    src: `${imagePath}/vegan-restaurants/biofresh-wrap-with-hummus-salsa-and-spinach.jpeg`,
+    alt: 'Biofresh wrap with hummus, salsa and spinach',
+    caption: 'The wrap with hummus, salsa and spinach at Biofresh is 39 lei.',
+  },
+  {
+    src: `${imagePath}/vegan-restaurants/biofresh-spinach-soup.jpeg`,
+    alt: 'Biofresh spinach soup',
+    caption: 'And the spinach soup is just 20 lei. They also have a daily menu which is even cheaper.',
+  },
+  {
+    src: `${imagePath}/vegan-restaurants/falafel-king-four-season-salad.jpeg`,
+    alt: 'Falafel King four seasons salad',
+    caption: 'The four seasons salad at Falafel King for 42 lei. If you really look closely, there is some salad there underneath all the sauce.',
+  },
+]
+
+<ImageGallery images={veganRestaurantImages} />
+
+## Getting vegan groceries in Timișoara
+
+All roughly an equal distance from my room were a branch of <ExternalLink url='https://maps.app.goo.gl/FJkTkpdgLwDatLMw6'>Lidl</ExternalLink>, a smallish <ExternalLink url='https://maps.app.goo.gl/fui6dDC5rFXoAQhv9'>Carrefour</ExternalLink>, and a big <ExternalLink url='https://maps.app.goo.gl/pNmhMwh6d2TGtteF6'>Mega Image</ExternalLink>. Between the three of them I was able to get everything I needed in Timișoara.
+
+Lidl was the best for fruit and for mixed nuts, but not much else. Carrefour had the best quality and best value soy milk, the biggest range of tofu and of rice, and was the best place for more specific nuts and seeds. Everything else I needed I got at Mega Image, which is always very vegan-friendly.
+
+Vegan grocery shopping in Timișoara is pretty easy.
+
+export const veganGroceriesImages = [
+  {
+    src: `${imagePath}/vegan-groceries/red-lentil-and-tofu-dal.jpeg`,
+    alt: 'Red lentil and tofu dal',
+    caption: 'I was on a bit of a protein kick in Timișoara, so was cooking high protein meals like this red lentil and tofu dal with brown rice. The onion, brown rice and tofu all came from Carrefour, the lentils and spices from Mega Image.',
+  },
+  {
+    src: `${imagePath}/vegan-groceries/chickpea-and-tofu-curry.jpeg`,
+    alt: 'Chickpea and tofu curry',
+    caption: 'In the same vein is this chickpea and tofu curry. All ingredients were from Mega Image and Carrefour.',
+  },
+  {
+    src: `${imagePath}/vegan-groceries/mega-image-soia-texturat.jpeg`,
+    alt: 'Mega Image soia texturat',
+    caption: "Soia texturat is Romanian for textured soy protein, which I'd never cooked with before coming to Timișoara, but on finding it in Mega Image and seeking high protein meals, I thought I'd give it a go.",
+  },
+  {
+    src: `${imagePath}/vegan-groceries/soia-texturat-bolognese.jpeg`,
+    alt: 'Soia texturat bolognese',
+    caption: "I used it along with tofu to make this bolognese. Not that I'm obsessive about details or anything but there's 59.633g of protein on that plate and just 929.325kcal. That's 15.584kcal per gram of protein, which is nice.",
+  },
+]
+
+<ImageGallery images={veganGroceriesImages} />
+
+## Getting vegan supplements in Timișoara
+
+Coming here from Bucharest where I'd stocked up, I didn't have to buy too many supplements in Timișoara.
+
+The one thing that I did need was vegan protein powder, and the best that I found was in <ExternalLink url='https://maps.app.goo.gl/pj5f9zfvqX9m2Py49'>Vitabolic</ExternalLink>, which is a local brand with corresponding prices. 750g of really good vegan protein powder only costs 80 lei. They had a tonne of other stuff on their shelves, so worth coming here for a look. The staff speak English.
+
+The only other supplement I bought was an opportune purchase of creatine in <ExternalLink url='https://maps.app.goo.gl/WoiPs78tjUSQajM57'>Decathlon</ExternalLink>. They also sell vegan protein powder, but it's almost twice the price of that at Vitabolic, costing 150 lei for 750g.
+
+Very frustratingly I stumbled across a shop called Enigma Plant in <ExternalLink url='https://maps.app.goo.gl/yum8G8bguaPNchQY7'>Iulius Town</ExternalLink> opposite Primark, on my final day in Timișoara. I had a quick look round and it looked like a shop that, had I not been leaving the next morning, I would have shopped at a lot.
+
+The name is misleading as it's not all plant supplements - they sell whey protein, for example, but it seemed to be mainly plant-based supplements and health foods.
+
+export const veganSupplementImages = [
+  {
+    src: `${imagePath}/vegan-supplements/vitabolic-vegan-protein.jpeg`,
+    alt: 'Vitabolic vegan protein powder',
+    caption: 'The best vegan protein powder I found in Timișoara was this Vitabolic vegan protein powder for 80 lei.',
+  },
+  {
+    src: `${imagePath}/vegan-supplements/vitabolic-shop.jpeg`,
+    alt: 'Vitabolic shop in Galeria 1',
+    caption: 'Vitabolic have a shop in the Galeria 1 shopping centre, near to Iulius Town. The staff speak English.',
+  },
+  {
+    src: `${imagePath}/vegan-supplements/decathlon-creatine-monohydrate.jpeg`,
+    alt: 'Decathlon creatine monohydrate',
+    caption: 'Decathlon is rarely a good place to get supplements, but they do have own-brand creatine, clearly marked as vegan.',
+  },
+  {
+    src: `${imagePath}/vegan-supplements/decathlon-vegan-protein.jpeg`,
+    alt: 'Decathlon Weider vegan protein',
+    caption: "They also sell vegan protein powder but at 150 lei for 750g it's not good value.",
+  },
+  {
+    src: `${imagePath}/vegan-supplements/enigma-plant.jpeg`,
+    alt: 'Enigma Plant shop',
+    caption: "Had I found Enigma Plant earlier I would have been a regular there through my stay. It's in Iulius Town, opposite Primark.",
+  },
+]
+
+<ImageGallery images={veganSupplementImages} />
+
+## Where I stayed in Timișoara
+
+### Luke Apartment
+
+<MapLink name='Aleea Ionel Perlea 11' url='https://maps.app.goo.gl/j1Rb1Ao3BmnYMUXx6' />
+
+export const aleeaIonelPerleaApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-07-30',
+      checkOut: '2026-09-03',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/1187541546013687941',
+    },
+    roomType: 'Entire rental unit in Timișoara, Romania',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1442.00,
+        'Monthly stay discount': -288.40,
+        'Service fee': 217.97,
+        'Service fee savings': -40.37,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={aleeaIonelPerleaApartmentStays} />
+
+This is a great place - I really enjoyed my stay here.
+
+It's slightly north of the city centre, but it's an easy walk. Instead this room is across the street from Iulius Town shopping mall, which includes Starbucks, Primark and a food court. You're also a very short walk away from the Botanic Park, giving you an open green space on your doorstep for whenever you want to get outside. A big branch of Mega Image, a smallish branch of Carrefour and a normal-sized Lidl are all within a fifteen-minute walk.
+
+As for the room itself, it has everything you need, including fast and stable wifi. The living room includes a desk that's good for video calls, and a sofa that's comfortable to work from the rest of the time, as well as a big enough floor space to workout in.
+
+The bedroom faces northeastish, so gets plenty of daylight in the mornings, but not directly onto the bed, which is perfect. My circadian rhythm loved being here. Outside the bedroom is a "balcony", as it's called by the host, but I'm not sure if I'd call it that when it's indoors. Regardless, I found it of little use other than to set up the clothes drying rack on.
+
+The kitchen, I'll be honest, felt a little lacking. It had all the utensils I needed, but it didn't have a tea towel, or any especially impressive knives. I have my own, so it's not a problem, but if I'd arrived here without my own tea towel, I'd have felt a little frustrated. As it was, it has a gas cooker, an electric oven and a microwave, with enough pots and pans that you can comfortably cook, so I was ultimately very happy.
+
+There's a dining table with four chairs in the kitchen, but one thing that's missing is a blind on the kitchen window, because by about 11am each morning, the sun streams in and there's little escape from it if you're sitting at the table. The bathroom was equipped with everything I needed.
+
+One peculiarity about this apartment is that there's only one AC unit, and it's in the hallway. I actually liked that because I didn't have to switch AC units when going into a different room - I just kept the one unit on all day, and it kept the kitchen, the bathroom, the living room and the bedroom equally cool, but it was a little bit odd.
+
+The apartment has very good soundproofing from outside noise if you keep the windows closed. If you have them open at all then beware that the room is on a main road. Timișoara has its share of boy-racer types with their loud engines and small penises, and this room is also near to a hospital, so ambulances go past with their sirens blaring all day.
+
+In the area outside the apartment are some benches that residents will congregate at every day, and one of these has a very yappy dog who will bark at any other dog walking past. So if you are sensitive to noise, be prepared to have the windows closed.
+
+I am not; I've lived in loud places before so basic noise doesn't really bother me. However there were two occasions while staying here that even I was disturbed.
+
+I'm pretty sure that the room downstairs is also an Airbnb, because I would hear voices down there, then it'd be quiet for a few days, then I'd hear different voices. On two occasions I got woken up by drunken idiots in the room downstairs in the middle of the night.
+
+The first of these was on a Thursday night, when at about 2am a group of lads started loudly and drunkenly singing along to some music they were playing in a language I couldn't identify. This went on until about 4am. The next week on the Friday there was no music, just one guy who was drunk enough that he felt like he needed to shout everything.
+
+Other than this there were no issues, and I actually really enjoyed my stay in this room. It was worth the couple of noisy nights for the 33 other nights here where I slept well and got woken each morning with the sun streaming into the room, and for being so close to a park. I would gladly stay again.
+
+export const aleeaIonelPerleaApartmentImages = [
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/bed.jpeg`,
+    alt: 'Luke Apartment bed',
+    caption: 'I found the bed to be very comfortable.',
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/bedroom.jpeg`,
+    alt: 'Luke Apartment bedroom',
+    caption: "The real prize in the bedroom though, is how much daylight streams through the windows in the mornings. It's also sufficiently private that you can open the drapes with little worry that anyone's going to be able to see in.",
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/balcony.jpeg`,
+    alt: 'Luke Apartment balcony',
+    caption: "This is the balcony, as the host calls it. Whatever you call it, I didn't find much use for it other than for drying my clothes. You can smoke out here if you're retarded, but for normal people there are more comfortable places to sit in this apartment.",
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/living-room.jpeg`,
+    alt: 'Luke Apartment living room',
+    caption: 'Like this sofa in the living room. 90% of the time I was working while here was on that sofa. Moving the coffee table gives plenty of space for exercising too.',
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/desk.jpeg`,
+    alt: 'Luke Apartment desk',
+    caption: "I used the desk whenever I was video calling. It's small, but it's big enough to set up your laptop with a second monitor.",
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/kitchen.jpeg`,
+    alt: 'Luke Apartment kitchen',
+    caption: 'The kitchen is decent, but it is slightly lacking in essentials, like tea towels and good knives.',
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/dining-table.jpeg`,
+    alt: 'Luke Apartment dining table',
+    caption: 'The dining table is a good place to sit and eat, except it has no blinds on the windows and it can get covered in direct sunlight in the late morning and early afternoon.',
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/bathroom.jpeg`,
+    alt: 'Luke Apartment bathroom',
+    caption: "The bathroom has all you need. You can't see it in this photo, but it has one of those rain showers, which I love.",
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/hallway.jpeg`,
+    alt: 'Luke Apartment hallway',
+    caption: "To give you an idea of the layout, this photo is taken from the bathroom. To the right of here, out of shot, is the front door. The room at the end of the hallway is the kitchen - you can see the dining table. Next to that is the bedroom, and the closest room on the left is the living room. You can only see the very bottom of it, but opposite the bedroom door is the apartment's one air conditioner. Below that is a pantry that includes the washing machine.",
+  },
+  {
+    src: `${imagePath}/accommodation/aleea-ionel-perle-apartment/outside.jpeg`,
+    alt: 'Luke Apartment outside',
+    caption: "The building from the outside. The apartment is on the second floor. The nearest set of windows is the bedroom, with the windows to the right of that being the living room. The small window on the left, between the red bricks, is the kitchen window. Every time I walked past, I couldn't help but wonder how the people on the higher floors felt about having their bedroom and living room windows covered by a giant AnimaWings advert.",
+  },
+]
+
+<ImageGallery images={aleeaIonelPerleaApartmentImages} />
+
+## Summary of Timișoara
+
+export const summaryPoints = {
+  positive: [
+    'Fascinating architecture',
+    'Big, open city',
+    'Very few tourists',
+    'Clean',
+    'Good for running',
+    'Cheaper than Bucharest',
+    'Very safe',
+    'Good public transport',
+    'Apple Pay accepted everywhere',
+    'Fast, reliable Internet',
+    "There's a branch of Decathlon",
+    'And Primark',
+  ],
+  neutral: [
+    'Some options for vegan restaurants',
+  ],
+  negative: [
+    'Not much going on socially',
+    'Lots of homelessness',
+    'Smoking',
+  ],
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+export const summaryImages = [
+  {
+    src: `${imagePath}/summary/decathlon.jpeg`,
+    alt: 'Decathlon Timișoara',
+    caption: 'My favourite part of Timișoara',
+  },
+]
+
+<ImageGallery images={summaryImages} />
+
+## Do I want to come back to Timișoara again?
+
+Timișoara goes onto my ever-growing list of places that aren't very exciting, but that are very pleasant and affordable. And you need such places as a digital nomad.
+
+People often mistake being a digital nomad for being a long holiday, asking you _"what do you do there?"_ whenever you go somewhere. And for me the answer more often than not, is exactly the same things that I do everywhere else I go.
+
+Life cannot be one long holiday - you need places to recharge and focus on yourself, and to do that you need places like Timișoara. So do I want to come back to Timișoara again?
+
+Not especially, but I gladly would.
+
+It's hard to be excited to return to somewhere that's not very exciting, but if I need another month sometime in the future to just get away from everything, Timișoara is as good a place as anywhere else that I've been, so I'd happily come back and not talk to anyone again.
