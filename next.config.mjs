@@ -1,4 +1,5 @@
 import nextMDX from '@next/mdx'
+import { fileURLToPath } from 'node:url'
 
 /** @type {import('next').NextConfig} */
 const nextConfig = {
@@ -14,6 +15,13 @@ const withMDX = nextMDX({
   options: {
     remarkPlugins: ['remark-gfm'],
     rehypePlugins: ['rehype-slug'],
+    // Absolute path: Turbopack requires plugins as strings, and the MDX loader
+    // resolves them relative to the article's directory.
+    recmaPlugins: [
+      fileURLToPath(
+        new URL('./src/lib/recmaMdxStaticExports.mjs', import.meta.url),
+      ),
+    ],
   },
 })
 
