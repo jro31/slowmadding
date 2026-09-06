@@ -119,12 +119,11 @@ export const placesData = [
       [affordable]: {
         [verdict]: true,
         [description]:
-          'I paid 172 lei per night for a really nice Airbnb, a beer in a bar will be around 18 lei, expect to pay 50 lei for a meal with a drink in a restaurant.',
+          'I paid less than 300 lei per night for a my most recent Airbnb, a beer in a bar will be around 25 lei, expect to pay 70 lei for a meal with a drink in a restaurant.',
       },
       [internet]: {
         [verdict]: true,
-        [description]:
-          'Very fast and reliable wifi in both of my Airbnbs here.',
+        [description]: 'Very fast and reliable wifi in all of my Airbnbs here.',
       },
       [running]: {
         [verdict]: true,
@@ -940,6 +939,48 @@ export const placesData = [
       },
     },
     [articlePath]: '/articles/thessaloniki-for-digital-nomads',
+  },
+  {
+    [place]: places[countries.romania].timisoara,
+    [country]: countries.romania,
+    [criteria]: {
+      [affordable]: {
+        [verdict]: true,
+        [description]:
+          'My room cost about 233 lei per night here, a plate of food in a restaurant is about 40 lei, taking the bus is 5 lei.',
+      },
+      [internet]: {
+        [verdict]: true,
+        [description]:
+          'The Internet in my Airbnb was fast and stable and my mobile data was available everywhere in the city.',
+      },
+      [running]: {
+        [verdict]: true,
+        [description]:
+          'There are some small parks suitable for running, but the streets are wide, quiet and clean so also very running-friendly.',
+      },
+      [veganFood]: {
+        [verdict]: true,
+        [description]:
+          "There aren't any fully-vegan restaurants, but there is one very good vegetarian, mostly vegan restaurant, and many other places advertise 'de post' (vegan) food.",
+      },
+      [safe]: {
+        [verdict]: true,
+        [description]:
+          'Lots of homelessness, but never in a threatening way, it feels a very safe city.',
+      },
+      [social]: {
+        [verdict]: false,
+        [description]:
+          'Absolutely fuck all going on socially from the perspective of meeting new people.',
+      },
+      [walking]: {
+        [verdict]: true,
+        [description]:
+          'Wide pavements, clean, not busy, traffic obeys the rules.',
+      },
+    },
+    [articlePath]: '/articles/timisoara-for-digital-nomads',
   },
   {
     [place]: places[countries.thailand].ubonRatchathani,
