@@ -1,0 +1,146 @@
+import ArticleLayout from '@/components/ArticleLayout'
+import MapLink from '@/components/MapLink'
+import AccommodationTable from '@/components/AccommodationTable'
+import ExternalLink from '@/components/ExternalLink'
+import ImageGallery from '@/components/ImageGallery'
+import Summary from '@/components/Summary'
+
+export const meta = {
+  author: 'Jethro Williams',
+  date: '2026-10-02T19:40:00+03:00', // TODO: Update this
+  title: 'Cluj-Napoca for Digital Nomads',
+  description: 'TODO',
+  keywords: ['Romania', 'Cluj'],
+}
+
+export const imagePath = '/images/articles/cluj-napoca-for-digital-nomads'
+
+export default (props) => <ArticleLayout meta={meta} {...props} />
+
+TODO
+
+TODO: Add photos
+
+## Why did I come to Cluj?
+
+TODO
+
+### Did it live up to my expectations?
+
+TODO
+
+## Getting in and out of Cluj
+
+TODO
+
+## Getting around Cluj
+
+TODO
+
+## How affordable is Cluj?
+
+TODO
+
+## Paying for things in Cluj
+
+TODO
+
+## What language is spoken in Cluj?
+
+Romanian.
+
+## Is it easy to get by with English in Cluj?
+
+TODO
+
+## How is the Internet in Cluj?
+
+TODO
+
+## Is Cluj safe?
+
+TODO
+
+## Who is Cluj suitable for?
+
+TODO
+
+## Is the tap water drinkable in Cluj?
+
+TODO
+
+## Being sociable in Cluj
+
+TODO: Omit this section?
+
+## Things I don't like about Cluj
+
+TODO
+
+## Where to run in Cluj
+
+TODO
+
+## Being vegan in Cluj
+
+TODO
+
+## Where I stayed in Cluj
+
+### Brand NEW Central Park Apartment
+
+<MapLink name='Strada General Dragalina nr 8' url='https://maps.app.goo.gl/bYsgp5nkanx3aeKq8' />
+
+export const stradaGeneralDragalinaApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-09-03',
+      checkOut: '2026-10-01',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/910780545560575196',
+    },
+    roomType: 'Entire rental unit in Cluj-Napoca, Romania',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1104.00,
+        'Monthly stay discount': -163.52,
+        'Service fee': 165.24,
+        'Service fee savings': -32.92,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={stradaGeneralDragalinaApartmentStays} />
+
+TODO
+
+TODO: Add photos
+
+## Summary of Cluj
+
+export const summaryPoints = {
+  positive: [
+    'TODO',
+  ],
+  neutral: [
+    'TODO',
+  ],
+  negative: [
+    'TODO',
+  ],
+}
+
+<Summary summaryPoints={summaryPoints} />
+
+## Final thoughts
+
+TODO: Omit this?
+
+## Do I want to come back to Cluj again?
+
+TODO
