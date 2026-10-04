@@ -21,7 +21,30 @@ Cluj-Napoca is Romania's second most populus city behind Bucharest.
 
 Known more commonly as Cluj, it sits in the northwest of the country attracting some tourists but very few digital nomads. I was kind of curious why so I came to have a look.
 
-TODO: Add photos
+export const cityImages = [
+  {
+    src: `${imagePath}/city/parcul-cetatuia-view.jpeg`,
+    alt: 'Parcul Cetățuia view',
+    caption: "From atop Parcul Cetățuia you can get magnificent views of Cluj, including of Saint Michael's Church.",
+  },
+  {
+    src: `${imagePath}/city/st-michaels-church.jpeg`,
+    alt: "Saint Michael's Church",
+    caption: 'And here it is up close. From the side.',
+  },
+  {
+    src: `${imagePath}/city/dormition-of-the-mother-of-god-metropolitan-cathedral.jpeg`,
+    alt: 'Dormition of the Mother of God Metropolitan Cathedral',
+    caption: "In the distance you can see the Dormition of the Mother of God Metropolitan Cathedral, because I couldn't be arsed to walk any closer to it.",
+  },
+  {
+    src: `${imagePath}/city/piata-mihai-viteazu.jpeg`,
+    alt: 'Piața Mihai Viteazu',
+    caption: "And here's a street that I had to cross to get to Carrefour.",
+  },
+]
+
+<ImageGallery images={cityImages} />
 
 ## Why did I come to Cluj?
 
@@ -125,7 +148,15 @@ Adding in Parcul Central and Parcul Cetățuia I was able to make it into a 10km
 
 It was a very pleasant route, and preferable to doing repetetive laps of Parcul Central, but it did involve crossing a few roads.
 
-TODO: Add photos
+export const runningImages = [
+  {
+    src: `${imagePath}/running/parcul-central.jpeg`,
+    alt: 'Parcul Central',
+    caption: 'Parcul Central is a lovely park for walking, running or just sitting and relaxing, apart from when some selfish cunts are trying to get married.',
+  },
+]
+
+<ImageGallery images={runningImages} />
 
 ## Being vegan in Cluj
 
@@ -140,6 +171,46 @@ There are several supermarkets dotted around the city centre, but these vary gre
 For supplements I went out to the <ExternalLink url='https://maps.app.goo.gl/wQybXdvDXXy6Hur79'>Bebe Tei</ExternalLink> in Iulius Mall, which has pretty much any supplement you're going to need, and reaonsably-priced. I needed vegan protein powder, algae oil, vegan multivitamins, and calcium during my stay, and I could get all these here.
 
 Smaller shops such as <ExternalLink url='https://maps.app.goo.gl/W5GdbcP6TqiFgeYz9'>Naturland</ExternalLink> and a couple of branches of <ExternalLink url='https://maps.app.goo.gl/nHQsCNc97no3xZRo7'>Vitamix</ExternalLink> exist in the city centre if you don't want to go all the way out to Iulius Mall, but the selection isn't as great.
+
+export const veganImages = [
+  {
+    src: `${imagePath}/vegan/carrefour-soy-milk.jpeg`,
+    alt: 'Carrefour soy milk',
+    caption: "This soy milk is probably my favourite thing about Romania. Sold in Carrefour it's just 5.85 lei, contains 38g of protein with just 7g of sugar. Perfect for when you're trying to lose your bitch tits.",
+  },
+  {
+    src: `${imagePath}/vegan/soy-protein-bolognese.jpeg`,
+    alt: 'Textured soy protein bolognese',
+    caption: "I made this bolognese with tofu and textured soy protein, meaning it's got a lot of protein and is fairly low calorie. Does it look like dog food? Yes. Does it taste like dog food? Somewhat.",
+  },
+  {
+    src: `${imagePath}/vegan/chickpea-tofu-curry.jpeg`,
+    alt: 'Chickpea tofu curry',
+    caption: 'The ingredients for everything that I cooked in Cluj came from either Carrefour or Mega Image, including this chickpea, tofu curry.',
+  },
+  {
+    src: `${imagePath}/vegan/lentil-bolognese.jpeg`,
+    alt: 'Lentil, tofu bolognese',
+    caption: "And this lentil and tofu bolognese. I'm not sure if you're seeing a theme here.",
+  },
+  {
+    src: `${imagePath}/vegan/bebe-tei-vegan-protein-powder.jpeg`,
+    alt: 'Bebe Tei ISO soy protein powder',
+    caption: 'At 79.50 lei at Bebe Tei, this soy protein powder is excellent value, but beware that only the chololate and vanilla flavours are vegan. The two berry flavours are not.',
+  },
+  {
+    src: `${imagePath}/vegan/naturland.jpeg`,
+    alt: 'Naturland',
+    caption: "If you can't make it out to Bebe Tei then you've got some options in the city centre, like Naturland.",
+  },
+  {
+    src: `${imagePath}/vegan/vitamix.jpeg`,
+    alt: 'Vitamix',
+    caption: 'And Vitamix.',
+  },
+]
+
+<ImageGallery images={veganImages} />
 
 ## Where I stayed in Cluj
 
@@ -199,47 +270,47 @@ export const stradaGeneralDragalinaApartmentImages = [
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/bed.jpeg`,
     alt: 'Strada General Dragalina apartment bed',
-    caption: 'TODO',
+    caption: 'The bedroom gets a lot of natural light in the mornings, which makes it a very pleasant place to wake up.',
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/drawers.jpeg`,
     alt: 'Strada General Dragalina apartment drawers',
-    caption: 'TODO',
+    caption: "None of those boxes on the shelves have anything in. I'm really not sure what they're doing there.",
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/living-room.jpeg`,
     alt: 'Strada General Dragalina apartment living room',
-    caption: 'TODO',
+    caption: 'I would typically work from the sofa. I could sit there all day and not really feel uncomfortable.',
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/desk.jpeg`,
     alt: 'Strada General Dragalina apartment desk',
-    caption: 'TODO',
+    caption: "There's also a desk for doing video calls, and a load of useless crap on the shelves. The space in front of the desk was big enough for working out.",
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/kitchen.jpeg`,
     alt: 'Strada General Dragalina apartment kitchen',
-    caption: 'TODO',
+    caption: "Despite being on the third floor, the building being built into a hill means that you don't get much privacy in the kitchen while you're cooking in your underwear. That hedge lines a path. The cooker is both the most impressive and most frustrating I've ever used.",
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/bathroom.jpeg`,
     alt: 'Strada General Dragalina apartment bathroom',
-    caption: 'TODO',
+    caption: "The bathroom's perfectly nice, but beware of using that shelf behind the toilet. It's quite easy to drop things into the toilet.",
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/apartment.jpeg`,
     alt: 'Strada General Dragalina apartment hallway',
-    caption: 'TODO',
+    caption: 'To give you an idea of the layout, this photo was taken with my back to the front door. The kitchen is on the left of this picture, with the living room on the right. The bedroom is the room with the bed in, and bathroom is next to that.',
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/outside.jpeg`,
     alt: 'Strada General Dragalina apartment outside',
-    caption: 'TODO',
+    caption: "The building from the front. Unfortunately the apartment's around the back, so doesn't get the balcony or the nice view.",
   },
   {
     src: `${imagePath}/accommodation/strada-general-dragalina-apartment/surrounding-area.jpeg`,
     alt: 'Strada General Dragalina apartment surrounding area',
-    caption: 'TODO',
+    caption: 'Taken from Parcul Cetățuia, the building is on this side of the river in the centre of the picture. The kitchen window is the third window from the top on the left hand side. Across the river on the right of the photo is Parcul Central. If you look closely you can also see the footbridge over to it, meaning you can have two parks within a two minute walk of the apartment.',
   },
 ]
 
