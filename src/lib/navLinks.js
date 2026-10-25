@@ -8,10 +8,6 @@ const navLinks = [
     text: 'Articles',
   },
   {
-    path: '/places',
-    text: 'Places',
-  },
-  {
     path: '/about',
     text: 'About',
   },
