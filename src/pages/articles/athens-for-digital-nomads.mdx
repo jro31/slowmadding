@@ -7,7 +7,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2024-10-30T19:00:00+02:00',
+  date: '2026-10-28T19:00:00+02:00', // TODO: Update this
   title: 'Athens for Digital Nomads',
   description: 'Known for its ruins and its history, how does Athens fare for the more modern lifestyle of a digital nomad?',
   keywords: ['Greece'],
@@ -476,6 +476,12 @@ export const groceriesImages = [
 
 <ImageGallery images={groceriesImages} />
 
+## Getting vegan supplements in Athens
+
+TODO
+
+TODO: Add pictures
+
 ## Is the tap water drinkable in Athens?
 
 Yes, and it's oddly delicious.
@@ -936,6 +942,41 @@ export const kallitheaApartmentImages = [
 ]
 
 <ImageGallery images={kallitheaApartmentImages} />
+
+### Charming and Comfortable Nea Smyrni Apartment
+
+<MapLink name='Nikolaou Plastira 46' url='https://maps.app.goo.gl/r6mBWVKLb9FBJ9NT9' />
+
+export const neaSmirniApartmentStays = [
+  {
+    dates: {
+      checkIn: '2026-10-01',
+      checkOut: '2026-10-29',
+    },
+    platform: {
+      name: 'Airbnb',
+      url: 'https://www.airbnb.com/rooms/42164264',
+    },
+    roomType: 'Entire condo in Nea Smyrni, Greece',
+    price: {
+      currencyPrefix: '£',
+      currencySuffix: 'GBP',
+      sections: {
+        Room: 1354.19,
+        'Monthly stay discount': -265.72,
+        'Service fee': 165.71,
+        'Service fee savings': -38.10,
+        Taxes: 25.52,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={neaSmirniApartmentStays} />
+
+TODO
+
+TODO: Add pictures
 
 ## Summary
 
