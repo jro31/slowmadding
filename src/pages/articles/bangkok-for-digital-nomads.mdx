@@ -9,7 +9,7 @@ import Summary from '@/components/Summary'
 
 export const meta = {
   author: 'Jethro Williams',
-  date: '2026-04-30T15:35:00+01:00',
+  date: '2026-11-30T15:35:00+01:00', // TODO: Update this
   title: 'Bangkok for Digital Nomads',
   description: 'Bangkok is one of the travel hubs of South-East Asia, but is it worth stopping here as a digital nomad?',
   keywords: ['Thailand'],
@@ -1128,6 +1128,40 @@ export const samutprakarnHotelImages = [
 ]
 
 <ImageGallery images={samutprakarnHotelImages} />
+
+### Olive Hotel Bangkok 64
+
+<MapLink name='8 Soi Sukhumvit 64' url='https://maps.app.goo.gl/UFa8QR2uevFqdRSF8' />
+
+export const oliveHotelBangkokStays = [
+  {
+    dates: {
+      checkIn: '2026-10-30',
+      checkOut: '2026-11-19',
+    },
+    platform: {
+      name: 'booking.com',
+      url: 'https://www.booking.com/hotel/th/olive-residence.html',
+    },
+    roomType: 'Studio',
+    price: {
+      currencyPrefix: null,
+      currencySuffix: 'THB',
+      sections: {
+        Room: 21306.37,
+        '7% VAT': 1491.45,
+        '10% Property service charge': 2279.78,
+        'booking.com pays': -2130.64,
+      },
+    },
+  },
+]
+
+<AccommodationTable stays={oliveHotelBangkokStays} />
+
+TODO
+
+TODO: Add photos
 
 ## Summary of Bangkok
 
