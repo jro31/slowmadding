@@ -355,6 +355,12 @@ export const thailandData = {
         [departure]: '2025-04-03',
       },
     },
+    {
+      [dates]: {
+        [arrival]: '2026-12-10',
+        [departure]: '2026-12-24',
+      },
+    },
   ],
   [places[countries.thailand].phitsanulok]: [
     {
@@ -381,6 +387,14 @@ export const thailandData = {
       [dates]: {
         [arrival]: '2013-05-23',
         [departure]: '2013-05-25',
+      },
+    },
+  ],
+  [places[countries.thailand].siRacha]: [
+    {
+      [dates]: {
+        [arrival]: '2026-11-19',
+        [departure]: '2026-12-10',
       },
     },
   ],

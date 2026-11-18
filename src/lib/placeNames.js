@@ -228,6 +228,7 @@ export const places = {
     pattaya: 'Pattaya',
     phitsanulok: 'Phitsanulok',
     phuketTown: 'Phuket Town',
+    siRacha: 'Si Racha',
     ubonRatchathani: 'Ubon Ratchathani',
     udonThani: 'Udon Thani',
   },
